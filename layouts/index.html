@@ -1,0 +1,95 @@
+{{ define "main" }}
+<div class="timeline-container">
+    <div class="container">
+        <header class="page-header">
+            <h1>AI Timeline</h1>
+            <p class="subtitle">A chronological journey through the most important developments in artificial intelligence</p>
+        </header>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <div class="filter-group">
+                <label for="tag-filter">Filter by Tag:</label>
+                <select id="tag-filter">
+                    <option value="">All Tags</option>
+                    {{ range .Site.Taxonomies.tags }}
+                    <option value="{{ .Page.Title }}">{{ .Page.Title }} ({{ .Count }})</option>
+                    {{ end }}
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="organization-filter">Filter by Organization:</label>
+                <select id="organization-filter">
+                    <option value="">All Organizations</option>
+                    {{ range .Site.Taxonomies.organizations }}
+                    <option value="{{ .Page.Title }}">{{ .Page.Title }} ({{ .Count }})</option>
+                    {{ end }}
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="year-filter">Filter by Year:</label>
+                <select id="year-filter">
+                    <option value="">All Years</option>
+                    {{ range .Site.RegularPages.GroupByDate "2006" }}
+                    <option value="{{ .Key }}">{{ .Key }}</option>
+                    {{ end }}
+                </select>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            {{ range .Site.RegularPages.ByDate.Reverse }}
+            <div class="timeline-item" 
+                 data-tags="{{ delimit .Params.tags " " }}"
+                 data-organizations="{{ delimit .Params.organizations " " }}"
+                 data-year="{{ .Date.Format "2006" }}">
+                <div class="timeline-date">
+                    <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h3>
+                    <p class="timeline-description">{{ .Description }}</p>
+                    
+                    <div class="timeline-meta">
+                        {{ if .Params.tags }}
+                        <div class="tags">
+                            {{ range .Params.tags }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.organizations }}
+                        <div class="organizations">
+                            {{ range .Params.organizations }}
+                            <span class="organization">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.models }}
+                        <div class="models">
+                            {{ range .Params.models }}
+                            <span class="model">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    
+                    {{ if .Params.external_link }}
+                    <a href="{{ .Params.external_link }}" class="external-link" target="_blank" rel="noopener">
+                        Learn More →
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }} 

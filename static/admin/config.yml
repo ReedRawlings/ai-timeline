@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "events"
+    label: "AI Timeline Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Weight", name: "weight", widget: "number", default: 0}
+      - {label: "External Link", name: "external_link", widget: "string", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", field: {label: "Tag", name: "tag", widget: "string"}}
+      - {label: "Organizations", name: "organizations", widget: "list", field: {label: "Organization", name: "organization", widget: "string"}}
+      - {label: "Models", name: "models", widget: "list", field: {label: "Model", name: "model", widget: "string"}}
+      - {label: "Categories", name: "categories", widget: "list", field: {label: "Category", name: "category", widget: "string"}}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"} 

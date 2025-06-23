@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "images/favicon.ico" | relURL }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                </div>
+                <ul class="nav-menu">
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with <a href="https://gohugo.io">Hugo</a>.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ "js/main.js" | relURL }}"></script>
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html> 

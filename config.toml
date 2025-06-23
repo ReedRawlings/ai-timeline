@@ -1,0 +1,40 @@
+baseURL = "https://yourusername.github.io/ai-timeline/"
+languageCode = "en-us"
+title = "AI Timeline"
+theme = "ananke"
+
+[params]
+  description = "A chronological timeline of important AI developments"
+  author = "AI Timeline Team"
+  github = "https://github.com/yourusername/ai-timeline"
+  
+[menu]
+  [[menu.main]]
+    identifier = "timeline"
+    name = "Timeline"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+[taxonomies]
+  tag = "tags"
+  organization = "organizations"
+  model = "models"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed" 
