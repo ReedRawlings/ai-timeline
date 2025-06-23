@@ -1,0 +1,5 @@
+baseURL = "https://yourusername.github.io/ai-timeline/"
+languageCode = "en-us"
+title = "AI Timeline"
+theme = "ananke"
+paginate = 50
