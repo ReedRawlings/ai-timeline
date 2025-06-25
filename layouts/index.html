@@ -43,49 +43,28 @@
         <div class="timeline">
             {{ range .Site.RegularPages.ByDate.Reverse }}
             <div class="timeline-item" 
-                 data-tags="{{ delimit .Params.tags " " }}"
-                 data-organizations="{{ delimit .Params.organizations " " }}"
+                 data-tags="{{ if .Params.tags }}{{ delimit .Params.tags " " }}{{ end }}"
+                 data-organizations="{{ if .Params.organizations }}{{ delimit .Params.organizations " " }}{{ end }}"
                  data-year="{{ .Date.Format "2006" }}">
-                <div class="timeline-date">
-                    <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
-                </div>
                 <div class="timeline-content">
                     <h3 class="timeline-title">
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </h3>
-                    <p class="timeline-description">{{ .Description }}</p>
-                    
-                    <div class="timeline-meta">
-                        {{ if .Params.tags }}
-                        <div class="tags">
-                            {{ range .Params.tags }}
-                            <span class="tag">{{ . }}</span>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        
-                        {{ if .Params.organizations }}
-                        <div class="organizations">
-                            {{ range .Params.organizations }}
-                            <span class="organization">{{ . }}</span>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        
-                        {{ if .Params.models }}
-                        <div class="models">
-                            {{ range .Params.models }}
-                            <span class="model">{{ . }}</span>
-                            {{ end }}
-                        </div>
-                        {{ end }}
+                    <div class="timeline-date">
+                        <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
                     </div>
-                    
-                    {{ if .Params.external_link }}
-                    <a href="{{ .Params.external_link }}" class="external-link" target="_blank" rel="noopener">
-                        Learn More →
-                    </a>
-                    {{ end }}
+                    <!-- Hover expansion content -->
+                    <div class="timeline-expansion">
+                        <div class="expansion-content">
+                            <p class="timeline-description">{{ .Description }}</p>
+                            
+                            {{ if .Params.external_link }}
+                            <a href="{{ .Params.external_link }}" class="learn-more-btn" target="_blank" rel="noopener">
+                                Learn More →
+                            </a>
+                            {{ end }}
+                        </div>
+                    </div>
                 </div>
             </div>
             {{ end }}
