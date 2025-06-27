@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">{{ .Site.Title }}</h1>
+            <p class="site-description">{{ .Site.Params.description }}</p>
+        </div>
+    </header>
+
+    <main class="timeline-container">
+        <div class="timeline">
+            {{ $events := sort .Site.RegularPages "Date" "asc" }}
+            {{ $currentYearMonth := "" }}
+            {{ $groupOpen := false }}
+            
+            {{ range $events }}
+                {{ $date := .Date }}
+                {{ $yearMonth := printf "%s %d" ($date.Format "January") ($date.Year) }}
+                
+                {{ if ne $yearMonth $currentYearMonth }}
+                    {{ if $groupOpen }}
+                        </div>
+                        </div>
+                    {{ end }}
+                    
+                    <div class="timeline-group" data-year-month="{{ printf "%d-%02d" ($date.Year) ($date.Format "01") }}">
+                        <div class="group-label">{{ $yearMonth }}</div>
+                        <div class="group-events">
+                    {{ $groupOpen = true }}
+                    {{ $currentYearMonth = $yearMonth }}
+                {{ end }}
+                
+                <div class="event-card" data-event-date="{{ $date.Format "2006-01-02" }}">
+                    <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
+                    <div class="event-title">{{ .Title }}</div>
+                    
+                    <div class="event-description">
+                        {{ .Content }}
+                    </div>
+                    
+                    <div class="event-metadata">
+                        {{ if .Params.organizations }}
+                        <div class="metadata-item">
+                            <span class="metadata-label">Organizations:</span>
+                            <span class="metadata-value">{{ delimit .Params.organizations ", " }}</span>
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.models }}
+                        <div class="metadata-item">
+                            <span class="metadata-label">Models:</span>
+                            <span class="metadata-value">{{ delimit .Params.models ", " }}</span>
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.link }}
+                        <a href="{{ .Params.link }}" class="external-link" target="_blank" rel="noopener">
+                            Learn more
+                        </a>
+                        {{ end }}
+                    </div>
+                    
+                    <div class="event-tags">
+                        {{ range .Params.tags }}
+                            <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            {{ end }}
+            
+            {{ if $groupOpen }}
+                </div>
+                </div>
+            {{ end }}
+        </div>
+    </main>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html> 

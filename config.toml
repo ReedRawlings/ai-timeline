@@ -1,11 +1,12 @@
-baseURL = "https://yourusername.github.io/ai-timeline/"
+baseURL = "https://ReedR.github.io/ai-timeline/"
 languageCode = "en-us"
 title = "AI Timeline"
+theme = "ai-timeline-theme"
 
 [params]
   description = "A chronological timeline of important AI developments"
   author = "AI Timeline Team"
-  github = "https://github.com/yourusername/ai-timeline"
+  github = "https://github.com/ReedR/ai-timeline"
   
 [menu]
   [[menu.main]]

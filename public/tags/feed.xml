@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AI Timeline</title>
-    <link>http://localhost:57235/ai-timeline/tags/</link>
+    <link>http://localhost:1313/ai-timeline/tags/</link>
     <description>Recent content in Tags on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57235/ai-timeline/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/ai-timeline/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Language Model</title>
-      <link>http://localhost:57235/ai-timeline/tags/language-model/</link>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/tags/language-model/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Multimodal</title>
-      <link>http://localhost:57235/ai-timeline/tags/multimodal/</link>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/tags/multimodal/</guid>
+      <title>Model</title>
+      <link>http://localhost:1313/ai-timeline/tags/model/</link>
+      <pubDate>Mon, 13 May 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/tags/model/</guid>
       <description></description>
     </item>
     <item>
       <title>Product</title>
-      <link>http://localhost:57235/ai-timeline/tags/product/</link>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/tags/product/</guid>
+      <link>http://localhost:1313/ai-timeline/tags/product/</link>
+      <pubDate>Mon, 13 May 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/tags/product/</guid>
       <description></description>
     </item>
     <item>
-      <title>AI Assistant</title>
-      <link>http://localhost:57235/ai-timeline/tags/ai-assistant/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/tags/ai-assistant/</guid>
+      <title>Multimodal</title>
+      <link>http://localhost:1313/ai-timeline/tags/multimodal/</link>
+      <pubDate>Tue, 14 Mar 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/tags/multimodal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social</title>
+      <link>http://localhost:1313/ai-timeline/tags/social/</link>
+      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/tags/social/</guid>
       <description></description>
     </item>
   </channel>

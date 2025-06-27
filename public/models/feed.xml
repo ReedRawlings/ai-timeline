@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Models on AI Timeline</title>
-    <link>http://localhost:57235/ai-timeline/models/</link>
+    <link>http://localhost:1313/ai-timeline/models/</link>
     <description>Recent content in Models on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57235/ai-timeline/models/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/ai-timeline/models/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPT-4o</title>
+      <link>http://localhost:1313/ai-timeline/models/gpt-4o/</link>
+      <pubDate>Mon, 13 May 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/models/gpt-4o/</guid>
+      <description></description>
+    </item>
     <item>
       <title>GPT-4</title>
-      <link>http://localhost:57235/ai-timeline/models/gpt-4/</link>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/models/gpt-4/</guid>
+      <link>http://localhost:1313/ai-timeline/models/gpt-4/</link>
+      <pubDate>Tue, 14 Mar 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/models/gpt-4/</guid>
       <description></description>
     </item>
     <item>
       <title>ChatGPT</title>
-      <link>http://localhost:57235/ai-timeline/models/chatgpt/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/models/chatgpt/</guid>
+      <link>http://localhost:1313/ai-timeline/models/chatgpt/</link>
+      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/models/chatgpt/</guid>
       <description></description>
     </item>
     <item>
       <title>GPT-3.5</title>
-      <link>http://localhost:57235/ai-timeline/models/gpt-3.5/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/models/gpt-3.5/</guid>
+      <link>http://localhost:1313/ai-timeline/models/gpt-3.5/</link>
+      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/models/gpt-3.5/</guid>
       <description></description>
     </item>
   </channel>

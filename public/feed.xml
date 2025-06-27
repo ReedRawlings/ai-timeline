@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Timeline</title>
-    <link>http://localhost:57235/ai-timeline/</link>
+    <link>http://localhost:1313/ai-timeline/</link>
     <description>Recent content on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57235/ai-timeline/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/ai-timeline/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About AI Timeline</title>
-      <link>http://localhost:57235/ai-timeline/about/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/about/</guid>
-      <description>&lt;h1 id=&#34;about-ai-timeline&#34;&gt;About AI Timeline&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the AI Timeline, a comprehensive chronological journey through the most significant developments in artificial intelligence. Our mission is to document and showcase the evolution of AI technology, from early research breakthroughs to modern applications that are shaping our world.&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h2&gt;&#xA;&lt;p&gt;We believe that understanding the history of AI is crucial for appreciating its current capabilities and anticipating its future impact. This timeline serves as a resource for:&lt;/p&gt;</description>
+      <title>GPT-4o Release</title>
+      <link>http://localhost:1313/ai-timeline/events/gpt-4o-release/</link>
+      <pubDate>Mon, 13 May 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/gpt-4o-release/</guid>
+      <description>&lt;p&gt;On May 13, 2024, OpenAI announced GPT-4o, a new flagship model that can reason across audio, vision, and text in real time. It is available in the free tier and to Plus users with higher message limits.&lt;/p&gt;&#xA;&lt;p&gt;Content of the event goes here.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>GPT-4 Released by OpenAI</title>
-      <link>http://localhost:57235/ai-timeline/events/gpt-4-release/</link>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/events/gpt-4-release/</guid>
-      <description>&lt;h2 id=&#34;event-details&#34;&gt;Event Details&lt;/h2&gt;&#xA;&lt;p&gt;On March 14, 2023, OpenAI released GPT-4, the successor to GPT-3.5 and the foundation for ChatGPT. GPT-4 represented a significant leap forward in AI capabilities, introducing multimodal processing and improved reasoning abilities.&lt;/p&gt;&#xA;&lt;p&gt;The model was initially available through ChatGPT Plus and the OpenAI API, with multimodal capabilities (image and text processing) released later in the year.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-improvements&#34;&gt;Key Improvements&lt;/h2&gt;&#xA;&lt;p&gt;GPT-4 brought several major advancements:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multimodal Capabilities&lt;/strong&gt;: Could process and understand images alongside text&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enhanced Reasoning&lt;/strong&gt;: Significantly improved performance on complex reasoning tasks&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Better Safety&lt;/strong&gt;: More robust safety measures and reduced harmful outputs&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Academic Performance&lt;/strong&gt;: Achieved high scores on various academic and professional exams&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Creative Capabilities&lt;/strong&gt;: Enhanced ability for creative writing, coding, and analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt;: Transformer-based language model&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Data&lt;/strong&gt;: Trained on a diverse dataset including text and images&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Parameters&lt;/strong&gt;: Exact size not disclosed, but significantly larger than GPT-3.5&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Context Window&lt;/strong&gt;: 8,192 tokens (later expanded to 32,768 tokens)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multimodal&lt;/strong&gt;: Can process images, diagrams, and text simultaneously&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;impact-on-industry&#34;&gt;Impact on Industry&lt;/h2&gt;&#xA;&lt;p&gt;The release of GPT-4 accelerated AI adoption across industries:&lt;/p&gt;</description>
+      <title>GPT-4 Release</title>
+      <link>http://localhost:1313/ai-timeline/events/gpt-4-release/</link>
+      <pubDate>Tue, 14 Mar 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/gpt-4-release/</guid>
+      <description>&lt;p&gt;On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>ChatGPT Released by OpenAI</title>
-      <link>http://localhost:57235/ai-timeline/events/chatgpt-release/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57235/ai-timeline/events/chatgpt-release/</guid>
-      <description>&lt;h2 id=&#34;event-details&#34;&gt;Event Details&lt;/h2&gt;&#xA;&lt;p&gt;On November 30, 2022, OpenAI released ChatGPT, a conversational AI assistant based on the GPT-3.5 architecture. The model was made available to the public as a free research preview, marking a significant milestone in the development of conversational AI.&lt;/p&gt;&#xA;&lt;p&gt;ChatGPT demonstrated unprecedented capabilities in natural language understanding, reasoning, and generation. Users could engage in conversations on a wide range of topics, from casual chat to complex problem-solving tasks.&lt;/p&gt;</description>
+      <title>ChatGPT Release</title>
+      <link>http://localhost:1313/ai-timeline/events/chatgpt-release/</link>
+      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/chatgpt-release/</guid>
+      <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claude Release</title>
+      <link>http://localhost:1313/ai-timeline/events/claude-release/</link>
+      <pubDate>Sat, 05 Nov 2022 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/claude-release/</guid>
+      <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
