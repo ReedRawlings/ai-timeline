@@ -9,12 +9,152 @@ document.addEventListener('DOMContentLoaded', function() {
         card.setAttribute('aria-label', `View details for ${card.querySelector('.event-title').textContent}`);
     });
     
+    // Filter System
+    const filterSystem = {
+        filters: {
+            models: '',
+            organizations: '',
+            keyFigures: '',
+            impactAreas: ''
+        },
+        
+        init() {
+            this.bindEvents();
+        },
+        
+        bindEvents() {
+            // Bind filter change events
+            document.getElementById('model-filter').addEventListener('change', (e) => {
+                this.filters.models = e.target.value;
+                this.applyFilters();
+            });
+            
+            document.getElementById('organization-filter').addEventListener('change', (e) => {
+                this.filters.organizations = e.target.value;
+                this.applyFilters();
+            });
+            
+            document.getElementById('key-figure-filter').addEventListener('change', (e) => {
+                this.filters.keyFigures = e.target.value;
+                this.applyFilters();
+            });
+            
+            document.getElementById('impact-area-filter').addEventListener('change', (e) => {
+                this.filters.impactAreas = e.target.value;
+                this.applyFilters();
+            });
+            
+            // Bind clear filters button
+            document.getElementById('clear-filters').addEventListener('click', () => {
+                this.clearAllFilters();
+            });
+        },
+        
+        applyFilters() {
+            const eventCards = document.querySelectorAll('.event-card');
+            let visibleCount = 0;
+            
+            eventCards.forEach(card => {
+                const shouldShow = this.shouldShowEvent(card);
+                
+                if (shouldShow) {
+                    this.showEvent(card);
+                    visibleCount++;
+                } else {
+                    this.hideEvent(card);
+                }
+            });
+            
+            this.updateTimelineGroups();
+        },
+        
+        shouldShowEvent(card) {
+            // Check if event matches all active filters
+            if (this.filters.models && !this.matchesFilter(card, 'data-models', this.filters.models)) {
+                return false;
+            }
+            
+            if (this.filters.organizations && !this.matchesFilter(card, 'data-organizations', this.filters.organizations)) {
+                return false;
+            }
+            
+            if (this.filters.keyFigures && !this.matchesFilter(card, 'data-key-figures', this.filters.keyFigures)) {
+                return false;
+            }
+            
+            if (this.filters.impactAreas && !this.matchesFilter(card, 'data-impact-areas', this.filters.impactAreas)) {
+                return false;
+            }
+            
+            return true;
+        },
+        
+        matchesFilter(card, dataAttribute, filterValue) {
+            const dataValue = card.getAttribute(dataAttribute);
+            if (!dataValue) return false;
+            
+            const values = dataValue.split('|');
+            return values.includes(filterValue);
+        },
+        
+        showEvent(card) {
+            card.classList.remove('filtered-out');
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        },
+        
+        hideEvent(card) {
+            card.classList.add('filtered-out');
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        },
+        
+        updateTimelineGroups() {
+            const timelineGroups = document.querySelectorAll('.timeline-group');
+            
+            timelineGroups.forEach(group => {
+                const visibleEvents = group.querySelectorAll('.event-card:not(.filtered-out)');
+                
+                if (visibleEvents.length === 0) {
+                    group.classList.add('empty-group');
+                } else {
+                    group.classList.remove('empty-group');
+                }
+            });
+        },
+        
+        clearAllFilters() {
+            // Reset all filter selects
+            document.getElementById('model-filter').value = '';
+            document.getElementById('organization-filter').value = '';
+            document.getElementById('key-figure-filter').value = '';
+            document.getElementById('impact-area-filter').value = '';
+            
+            // Reset filter state
+            this.filters = {
+                models: '',
+                organizations: '',
+                keyFigures: '',
+                impactAreas: ''
+            };
+            
+            // Show all events
+            const eventCards = document.querySelectorAll('.event-card');
+            eventCards.forEach(card => {
+                this.showEvent(card);
+            });
+            
+            this.updateTimelineGroups();
+        }
+    };
+    
+    // Initialize filter system
+    filterSystem.init();
+    
     // Stack events that occur on the same day or within a short time window
     function stackCloseEvents() {
         const timelineGroups = document.querySelectorAll('.timeline-group');
         
         timelineGroups.forEach(group => {
-            const events = group.querySelectorAll('.event-card');
+            const events = group.querySelectorAll('.event-card:not(.filtered-out)');
             const eventDates = Array.from(events).map(event => {
                 const dateStr = event.getAttribute('data-event-date');
                 return {
@@ -55,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add keyboard navigation for timeline
     document.addEventListener('keydown', function(event) {
-        const eventCards = document.querySelectorAll('.event-card');
+        const eventCards = document.querySelectorAll('.event-card:not(.filtered-out)');
         const currentIndex = Array.from(eventCards).findIndex(card => 
             card === document.activeElement || card.contains(document.activeElement)
         );
@@ -79,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const currentGroup = eventCards[currentIndex]?.closest('.timeline-group');
                 if (currentGroup && currentGroup.previousElementSibling) {
                     const prevGroup = currentGroup.previousElementSibling;
-                    const prevEvents = prevGroup.querySelectorAll('.event-card');
+                    const prevEvents = prevGroup.querySelectorAll('.event-card:not(.filtered-out)');
                     if (prevEvents.length > 0) {
                         prevEvents[0].focus();
                     }
@@ -91,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const currentGroupDown = eventCards[currentIndex]?.closest('.timeline-group');
                 if (currentGroupDown && currentGroupDown.nextElementSibling) {
                     const nextGroup = currentGroupDown.nextElementSibling;
-                    const nextEvents = nextGroup.querySelectorAll('.event-card');
+                    const nextEvents = nextGroup.querySelectorAll('.event-card:not(.filtered-out)');
                     if (nextEvents.length > 0) {
                         nextEvents[0].focus();
                     }
@@ -178,4 +318,62 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize stacking on page load
     stackCloseEvents();
+
+    // Grab-and-drag horizontal scrolling for timeline
+    const timelineContainer = document.querySelector('.timeline-container');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    if (timelineContainer) {
+        timelineContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            timelineContainer.classList.add('grabbing');
+            startX = e.pageX - timelineContainer.offsetLeft;
+            scrollLeft = timelineContainer.scrollLeft;
+        });
+        timelineContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            timelineContainer.classList.remove('grabbing');
+        });
+        timelineContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            timelineContainer.classList.remove('grabbing');
+        });
+        timelineContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - timelineContainer.offsetLeft;
+            const walk = (x - startX) * 1.2; // scroll-fast
+            timelineContainer.scrollLeft = scrollLeft - walk;
+        });
+        // Touch support
+        let touchStartX = 0;
+        let touchScrollLeft = 0;
+        timelineContainer.addEventListener('touchstart', (e) => {
+            isDown = true;
+            timelineContainer.classList.add('grabbing');
+            touchStartX = e.touches[0].pageX;
+            touchScrollLeft = timelineContainer.scrollLeft;
+        });
+        timelineContainer.addEventListener('touchend', () => {
+            isDown = false;
+            timelineContainer.classList.remove('grabbing');
+        });
+        timelineContainer.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            const x = e.touches[0].pageX;
+            const walk = (x - touchStartX) * 1.2;
+            timelineContainer.scrollLeft = touchScrollLeft - walk;
+        });
+        // Mouse wheel horizontal scroll for timeline
+        timelineContainer.addEventListener('wheel', function(e) {
+            if (e.deltaY === 0) return;
+            // Only scroll horizontally if there is overflow
+            if (this.scrollWidth > this.clientWidth) {
+                e.preventDefault();
+                this.scrollLeft += e.deltaY;
+            }
+        }, { passive: false });
+    }
 }); 

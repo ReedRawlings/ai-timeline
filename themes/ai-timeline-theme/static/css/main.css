@@ -24,7 +24,7 @@ body {
     color: white;
     padding: 2rem 0;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .site-title {
@@ -40,13 +40,85 @@ body {
     margin: 0 auto;
 }
 
+/* Filter System Styles */
+.filter-container.compact {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    margin: 0 20px 0 20px;
+    padding: 0.5rem 0 0.25rem 0;
+}
+
+.filter-bar.compact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.filter-select {
+    padding: 0.35rem 0.75rem;
+    border: 2px solid #e9ecef;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    background: white;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+    height: 2.1rem;
+}
+
+.clear-filters-btn {
+    padding: 0.35rem 0.9rem;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: 2.1rem;
+    margin-left: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .filter-bar.compact {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.4rem;
+    }
+    .clear-filters-btn {
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+}
+
+/* Remove unused filter label and group styles */
+.filter-group, .filter-group label, .filter-results, #results-count {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* Timeline container */
 .timeline-container {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     margin: 0 20px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.timeline-container::-webkit-scrollbar {
+    display: none;
 }
 
 .timeline {
@@ -56,7 +128,7 @@ body {
     position: relative;
     background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
     align-items: flex-start;
-    gap: 40px;
+    gap: 8px;
 }
 
 /* Timeline line */
@@ -121,6 +193,21 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 100%;
+}
+
+/* Filtered event styles */
+.event-card.filtered-out {
+    opacity: 0.3;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+.timeline-group.hidden-group {
+    display: none;
+}
+
+.timeline-group.empty-group {
+    display: none;
 }
 
 /* Stacked event styles */
@@ -294,23 +381,12 @@ body {
     font-size: 0.8rem;
 }
 
-/* Scrollbar styling */
-.timeline-container::-webkit-scrollbar {
-    height: 8px;
+/* Drag-to-scroll cursor feedback */
+.timeline-container.grabbing {
+    cursor: grabbing !important;
 }
-
-.timeline-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.timeline-container::-webkit-scrollbar-thumb {
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    border-radius: 4px;
-}
-
-.timeline-container::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(90deg, #5a6fd8, #6a4190);
+.timeline-container {
+    cursor: grab;
 }
 
 /* Responsive design for timeline groups */

@@ -16,6 +16,199 @@
         </div>
     </header>
 
+    
+    <div class="filter-container compact">
+        <div class="container">
+            <div class="filter-bar compact">
+                <select id="model-filter" class="filter-select">
+                    <option value="">All Models</option>
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                    
+                        <option value="Deepseek">Deepseek</option>
+                    
+                        <option value="GPT-4o">GPT-4o</option>
+                    
+                        <option value="Gemini">Gemini</option>
+                    
+                        <option value="DALL·E 3">DALL·E 3</option>
+                    
+                        <option value="Llama 2">Llama 2</option>
+                    
+                        <option value="Claude">Claude</option>
+                    
+                        <option value="GPT-4">GPT-4</option>
+                    
+                        <option value="ChatGPT">ChatGPT</option>
+                    
+                        <option value="GPT-3.5">GPT-3.5</option>
+                    
+                </select>
+                <select id="organization-filter" class="filter-select">
+                    <option value="">All Organizations</option>
+                    
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                    
+                        <option value="OpenAI">OpenAI</option>
+                    
+                        <option value="Google">Google</option>
+                    
+                        <option value="Meta">Meta</option>
+                    
+                        <option value="Anthropic">Anthropic</option>
+                    
+                </select>
+                <select id="key-figure-filter" class="filter-select">
+                    <option value="">All Key Figures</option>
+                    
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                    
+                        <option value="MrBeast">MrBeast</option>
+                    
+                        <option value="Jacksepticeye">Jacksepticeye</option>
+                    
+                </select>
+                <select id="impact-area-filter" class="filter-select">
+                    <option value="">All Impact Areas</option>
+                    
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                    
+                        <option value="Creator Economy">Creator Economy</option>
+                    
+                        <option value="Public Perception">Public Perception</option>
+                    
+                        <option value="Ethics">Ethics</option>
+                    
+                        <option value="Search">Search</option>
+                    
+                        <option value="Productivity">Productivity</option>
+                    
+                        <option value="Visual Art">Visual Art</option>
+                    
+                        <option value="Creative Tools">Creative Tools</option>
+                    
+                        <option value="Open Source">Open Source</option>
+                    
+                        <option value="Research">Research</option>
+                    
+                </select>
+                <button id="clear-filters" class="clear-filters-btn">Clear All</button>
+            </div>
+        </div>
+    </div>
+
     <main class="timeline-container">
         <div class="timeline">
             
@@ -29,68 +222,6 @@
                 
                     
                     
-                    <div class="timeline-group" data-year-month="2022-%!d(string=03)">
-                        <div class="group-label">March 2022</div>
-                        <div class="group-events">
-                    
-                    
-                
-                
-                <div class="event-card" data-event-date="2022-03-14">
-                    <div class="event-date">Mar 14, 2022</div>
-                    <div class="event-title">Claude Release</div>
-                    
-                    <div class="event-description">
-                        <p>On March 14, 2022, Anthropic introduced Claude, an AI assistant built using Constitutional AI training methods. Claude was designed to be helpful, harmless, and honest, with a focus on safety and alignment. The model demonstrated strong conversational abilities while being trained to avoid harmful outputs through constitutional AI techniques.</p>
-
-                    </div>
-                    
-                    <div class="event-metadata">
-                        
-                        <div class="metadata-item">
-                            <span class="metadata-label">Organizations:</span>
-                            <span class="metadata-value">Anthropic</span>
-                        </div>
-                        
-                        
-                        
-                        <div class="metadata-item">
-                            <span class="metadata-label">Models:</span>
-                            <span class="metadata-value">Claude</span>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <a href="https://www.anthropic.com/news/introducing-claude" class="external-link" target="_blank" rel="noopener">
-                            Learn more
-                        </a>
-                        
-                    </div>
-                    
-                    <div class="event-tags">
-                        
-                            <span class="tag">Model</span>
-                        
-                            <span class="tag">Product</span>
-                        
-                            <span class="tag">Safety</span>
-                        
-                    </div>
-                </div>
-            
-                
-                
-                
-                
-                    
-                        </div>
-                        </div>
-                    
-                    
                     <div class="timeline-group" data-year-month="2022-%!d(string=11)">
                         <div class="group-label">November 2022</div>
                         <div class="group-events">
@@ -98,7 +229,12 @@
                     
                 
                 
-                <div class="event-card" data-event-date="2022-11-30">
+                <div class="event-card" 
+                     data-event-date="2022-11-30"
+                     data-models="ChatGPT|GPT-3.5"
+                     data-organizations="OpenAI"
+                     data-key-figures=""
+                     data-impact-areas="">
                     <div class="event-date">Nov 30, 2022</div>
                     <div class="event-title">ChatGPT Release</div>
                     
@@ -160,7 +296,68 @@
                     
                 
                 
-                <div class="event-card" data-event-date="2023-03-14">
+                <div class="event-card" 
+                     data-event-date="2023-03-14"
+                     data-models="Claude"
+                     data-organizations="Anthropic"
+                     data-key-figures=""
+                     data-impact-areas="">
+                    <div class="event-date">Mar 14, 2023</div>
+                    <div class="event-title">Claude Release</div>
+                    
+                    <div class="event-description">
+                        <p>On March 14, 2023, Anthropic introduced Claude, an AI assistant built using Constitutional AI training methods. Claude was designed to be helpful, harmless, and honest, with a focus on safety and alignment. The model demonstrated strong conversational abilities while being trained to avoid harmful outputs through constitutional AI techniques.</p>
+
+                    </div>
+                    
+                    <div class="event-metadata">
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Organizations:</span>
+                            <span class="metadata-value">Anthropic</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Models:</span>
+                            <span class="metadata-value">Claude</span>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://www.anthropic.com/news/introducing-claude" class="external-link" target="_blank" rel="noopener">
+                            Learn more
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="event-tags">
+                        
+                            <span class="tag">Model</span>
+                        
+                            <span class="tag">Product</span>
+                        
+                            <span class="tag">Safety</span>
+                        
+                    </div>
+                </div>
+            
+                
+                
+                
+                
+                
+                <div class="event-card" 
+                     data-event-date="2023-03-14"
+                     data-models="GPT-4"
+                     data-organizations="OpenAI"
+                     data-key-figures=""
+                     data-impact-areas="">
                     <div class="event-date">Mar 14, 2023</div>
                     <div class="event-title">GPT-4 Release</div>
                     
@@ -215,6 +412,222 @@
                         </div>
                     
                     
+                    <div class="timeline-group" data-year-month="2023-%!d(string=07)">
+                        <div class="group-label">July 2023</div>
+                        <div class="group-events">
+                    
+                    
+                
+                
+                <div class="event-card" 
+                     data-event-date="2023-07-18"
+                     data-models="Llama 2"
+                     data-organizations="Meta"
+                     data-key-figures=""
+                     data-impact-areas="Open Source|Research">
+                    <div class="event-date">Jul 18, 2023</div>
+                    <div class="event-title">Llama 2 Release</div>
+                    
+                    <div class="event-description">
+                        <p>Meta released Llama 2, an open-source large language model that quickly became a popular foundation for research and commercial use.</p>
+
+                    </div>
+                    
+                    <div class="event-metadata">
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Organizations:</span>
+                            <span class="metadata-value">Meta</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Models:</span>
+                            <span class="metadata-value">Llama 2</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Impact Areas:</span>
+                            <span class="metadata-value">Open Source, Research</span>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://ai.meta.com/blog/llama-2/" class="external-link" target="_blank" rel="noopener">
+                            Learn more
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="event-tags">
+                        
+                            <span class="tag">Model</span>
+                        
+                            <span class="tag">Product</span>
+                        
+                            <span class="tag">Open Source</span>
+                        
+                    </div>
+                </div>
+            
+                
+                
+                
+                
+                    
+                        </div>
+                        </div>
+                    
+                    
+                    <div class="timeline-group" data-year-month="2023-%!d(string=09)">
+                        <div class="group-label">September 2023</div>
+                        <div class="group-events">
+                    
+                    
+                
+                
+                <div class="event-card" 
+                     data-event-date="2023-09-20"
+                     data-models="DALL·E 3"
+                     data-organizations="OpenAI"
+                     data-key-figures=""
+                     data-impact-areas="Visual Art|Creative Tools">
+                    <div class="event-date">Sep 20, 2023</div>
+                    <div class="event-title">DALL·E 3 Release</div>
+                    
+                    <div class="event-description">
+                        <p>OpenAI released DALL·E 3, a text-to-image model that produces high-quality illustrations and integrates with ChatGPT for prompt generation.</p>
+
+                    </div>
+                    
+                    <div class="event-metadata">
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Organizations:</span>
+                            <span class="metadata-value">OpenAI</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Models:</span>
+                            <span class="metadata-value">DALL·E 3</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Impact Areas:</span>
+                            <span class="metadata-value">Visual Art, Creative Tools</span>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://openai.com/research/dall-e-3" class="external-link" target="_blank" rel="noopener">
+                            Learn more
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="event-tags">
+                        
+                            <span class="tag">Model</span>
+                        
+                            <span class="tag">Product</span>
+                        
+                            <span class="tag">Generative Art</span>
+                        
+                    </div>
+                </div>
+            
+                
+                
+                
+                
+                    
+                        </div>
+                        </div>
+                    
+                    
+                    <div class="timeline-group" data-year-month="2023-%!d(string=12)">
+                        <div class="group-label">December 2023</div>
+                        <div class="group-events">
+                    
+                    
+                
+                
+                <div class="event-card" 
+                     data-event-date="2023-12-06"
+                     data-models="Gemini"
+                     data-organizations="Google"
+                     data-key-figures=""
+                     data-impact-areas="Search|Productivity">
+                    <div class="event-date">Dec 6, 2023</div>
+                    <div class="event-title">Gemini 1.0 Release</div>
+                    
+                    <div class="event-description">
+                        <p>Google introduced Gemini 1.0, a multimodal model (formerly known as Bard) that incorporates text, images, and code to enhance Google’s search and productivity tools.</p>
+
+                    </div>
+                    
+                    <div class="event-metadata">
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Organizations:</span>
+                            <span class="metadata-value">Google</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Models:</span>
+                            <span class="metadata-value">Gemini</span>
+                        </div>
+                        
+                        
+                        
+                        <div class="metadata-item">
+                            <span class="metadata-label">Impact Areas:</span>
+                            <span class="metadata-value">Search, Productivity</span>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://blog.google/technology/ai/google-gemini-ai/" class="external-link" target="_blank" rel="noopener">
+                            Learn more
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="event-tags">
+                        
+                            <span class="tag">Model</span>
+                        
+                            <span class="tag">Product</span>
+                        
+                            <span class="tag">Multimodal</span>
+                        
+                    </div>
+                </div>
+            
+                
+                
+                
+                
+                    
+                        </div>
+                        </div>
+                    
+                    
                     <div class="timeline-group" data-year-month="2024-%!d(string=05)">
                         <div class="group-label">May 2024</div>
                         <div class="group-events">
@@ -222,7 +635,12 @@
                     
                 
                 
-                <div class="event-card" data-event-date="2024-05-13">
+                <div class="event-card" 
+                     data-event-date="2024-05-13"
+                     data-models="GPT-4o"
+                     data-organizations="OpenAI"
+                     data-key-figures=""
+                     data-impact-areas="">
                     <div class="event-date">May 13, 2024</div>
                     <div class="event-title">GPT-4o Release</div>
                     
@@ -282,7 +700,12 @@
                     
                 
                 
-                <div class="event-card" data-event-date="2025-01-20">
+                <div class="event-card" 
+                     data-event-date="2025-01-20"
+                     data-models="Deepseek"
+                     data-organizations=""
+                     data-key-figures=""
+                     data-impact-areas="">
                     <div class="event-date">Jan 20, 2025</div>
                     <div class="event-title">Deepseek R1 Release</div>
                     
@@ -337,7 +760,12 @@
                     
                 
                 
-                <div class="event-card" data-event-date="2025-06-26">
+                <div class="event-card" 
+                     data-event-date="2025-06-26"
+                     data-models=""
+                     data-organizations=""
+                     data-key-figures="MrBeast|Jacksepticeye"
+                     data-impact-areas="Creator Economy|Public Perception|Ethics">
                     <div class="event-date">Jun 26, 2025</div>
                     <div class="event-title">MrBeast AI Thumbnail Tool Controversy</div>
                     

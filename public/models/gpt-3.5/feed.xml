@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/ai-timeline/events/chatgpt-release/</guid>
       <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Claude Release</title>
-      <link>http://localhost:1313/ai-timeline/events/claude-release/</link>
-      <pubDate>Sat, 05 Nov 2022 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/events/claude-release/</guid>
-      <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

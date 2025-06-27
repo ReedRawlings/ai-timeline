@@ -6,27 +6,13 @@
     <description>Recent content in Social on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Jun 2025 22:29:39 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 30 Nov 2022 10:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/ai-timeline/tags/social/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deepseek R1 Release</title>
-      <link>http://localhost:1313/ai-timeline/events/deepseek-r1-release/</link>
-      <pubDate>Thu, 26 Jun 2025 22:29:39 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/events/deepseek-r1-release/</guid>
-      <description>&lt;p&gt;Brief description of the AI event and its significance.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>ChatGPT Release</title>
       <link>http://localhost:1313/ai-timeline/events/chatgpt-release/</link>
       <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/ai-timeline/events/chatgpt-release/</guid>
-      <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Claude Release</title>
-      <link>http://localhost:1313/ai-timeline/events/claude-release/</link>
-      <pubDate>Sat, 05 Nov 2022 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/events/claude-release/</guid>
       <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
     </item>
   </channel>

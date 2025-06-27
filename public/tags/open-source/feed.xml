@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Meta on AI Timeline</title>
-    <link>http://localhost:1313/ai-timeline/organizations/meta/</link>
-    <description>Recent content in Meta on AI Timeline</description>
+    <title>Open Source on AI Timeline</title>
+    <link>http://localhost:1313/ai-timeline/tags/open-source/</link>
+    <description>Recent content in Open Source on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Jul 2023 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/ai-timeline/organizations/meta/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ai-timeline/tags/open-source/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Llama 2 Release</title>
       <link>http://localhost:1313/ai-timeline/events/llama-2-release/</link>
