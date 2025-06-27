@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethics on AI Timeline</title>
+    <link>http://localhost:1313/ai-timeline/tags/ethics/</link>
+    <description>Recent content in Ethics on AI Timeline</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jun 2025 10:00:00 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/ai-timeline/tags/ethics/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MrBeast AI Thumbnail Tool Controversy</title>
+      <link>http://localhost:1313/ai-timeline/events/mrbeast-ai-controversy/</link>
+      <pubDate>Thu, 26 Jun 2025 10:00:00 -0800</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/mrbeast-ai-controversy/</guid>
+      <description>&lt;p&gt;MrBeast, a prominent YouTuber with over 408 million subscribers, faced significant backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism and ethical concerns from other creators like Jacksepticeye.&lt;/p&gt;&#xA;&lt;p&gt;In response to the criticism, MrBeast decided to remove the AI thumbnail tool from his ViewStats platform and instead introduced a feature where creators can commission real thumbnail artists, aiming to support the artistic community and address the ethical issues raised.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gemini on AI Timeline</title>
+    <link>http://localhost:50539/ai-timeline/models/gemini/</link>
+    <description>Recent content in Gemini on AI Timeline</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jun 2025 22:16:54 -0700</lastBuildDate>
+    <atom:link href="http://localhost:50539/ai-timeline/models/gemini/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mrbeast Ai Controversy</title>
+      <link>http://localhost:50539/ai-timeline/events/mrbeast-ai-controversy/</link>
+      <pubDate>Thu, 26 Jun 2025 22:16:54 -0700</pubDate>
+      <guid>http://localhost:50539/ai-timeline/events/mrbeast-ai-controversy/</guid>
+      <description>&lt;p&gt;Brief description of the AI event and its significance.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-details&#34;&gt;Key Details&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;What&lt;/strong&gt;: What was released/announced/discovered&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Impact&lt;/strong&gt;: Why this event was important for AI development&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: What led to this event or what followed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h2&gt;&#xA;&lt;p&gt;Any other relevant details, technical specifications, or historical context.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,22 @@
     <description>Recent content in Product on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2024 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 22:29:39 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/ai-timeline/tags/product/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deepseek R1 Release</title>
+      <link>http://localhost:1313/ai-timeline/events/deepseek-r1-release/</link>
+      <pubDate>Thu, 26 Jun 2025 22:29:39 -0700</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/deepseek-r1-release/</guid>
+      <description>&lt;p&gt;Brief description of the AI event and its significance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MrBeast AI Thumbnail Tool Controversy</title>
+      <link>http://localhost:1313/ai-timeline/events/mrbeast-ai-controversy/</link>
+      <pubDate>Thu, 26 Jun 2025 10:00:00 -0800</pubDate>
+      <guid>http://localhost:1313/ai-timeline/events/mrbeast-ai-controversy/</guid>
+      <description>&lt;p&gt;MrBeast, a prominent YouTuber with over 408 million subscribers, faced significant backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism and ethical concerns from other creators like Jacksepticeye.&lt;/p&gt;&#xA;&lt;p&gt;In response to the criticism, MrBeast decided to remove the AI thumbnail tool from his ViewStats platform and instead introduced a feature where creators can commission real thumbnail artists, aiming to support the artistic community and address the ethical issues raised.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GPT-4o Release</title>
       <link>http://localhost:1313/ai-timeline/events/gpt-4o-release/</link>
@@ -32,7 +46,7 @@
     <item>
       <title>Claude Release</title>
       <link>http://localhost:1313/ai-timeline/events/claude-release/</link>
-      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
+      <pubDate>Sat, 05 Nov 2022 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/ai-timeline/events/claude-release/</guid>
       <description>&lt;p&gt;On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.&lt;/p&gt;</description>
     </item>

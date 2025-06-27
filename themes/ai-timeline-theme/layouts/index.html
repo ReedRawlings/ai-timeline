@@ -61,6 +61,20 @@
                         </div>
                         {{ end }}
                         
+                        {{ if .Params.impact_areas }}
+                        <div class="metadata-item">
+                            <span class="metadata-label">Impact Areas:</span>
+                            <span class="metadata-value">{{ delimit .Params.impact_areas ", " }}</span>
+                        </div>
+                        {{ end }}
+                        
+                        {{ if .Params.key_figures }}
+                        <div class="metadata-item">
+                            <span class="metadata-label">Key Figures:</span>
+                            <span class="metadata-value">{{ delimit .Params.key_figures ", " }}</span>
+                        </div>
+                        {{ end }}
+                        
                         {{ if .Params.link }}
                         <a href="{{ .Params.link }}" class="external-link" target="_blank" rel="noopener">
                             Learn more

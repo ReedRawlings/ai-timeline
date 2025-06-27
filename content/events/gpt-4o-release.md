@@ -8,5 +8,3 @@ link = "https://openai.com/index/hello-gpt-4o/"
 +++
 
 On May 13, 2024, OpenAI announced GPT-4o, a new flagship model that can reason across audio, vision, and text in real time. It is available in the free tier and to Plus users with higher message limits.
-
-Content of the event goes here. 

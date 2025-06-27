@@ -25,6 +25,8 @@ theme = "ai-timeline-theme"
   organization = "organizations"
   model = "models"
   category = "categories"
+  impact_area = "impact-areas"
+  key_figure = "key-figures"
 
 [markup]
   [markup.goldmark]
