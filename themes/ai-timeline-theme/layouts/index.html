@@ -100,54 +100,38 @@
                      data-models="{{ if .Params.models }}{{ delimit .Params.models "|" }}{{ end }}"
                      data-organizations="{{ if .Params.organizations }}{{ delimit .Params.organizations "|" }}{{ end }}"
                      data-key-figures="{{ if .Params.key_figures }}{{ delimit .Params.key_figures "|" }}{{ end }}"
-                     data-impact-areas="{{ if .Params.impact_areas }}{{ delimit .Params.impact_areas "|" }}{{ end }}">
-                    <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
-                    <div class="event-title">{{ .Title }}</div>
-                    
-                    <div class="event-description">
-                        {{ .Content }}
+                     data-impact-areas="{{ if .Params.impact_areas }}{{ delimit .Params.impact_areas "|" }}{{ end }}"
+                     data-description="{{ .Summary | plainify | htmlEscape }}"
+                     data-link="{{ .Params.link }}"
+                     data-tags="{{ delimit .Params.tags "|" }}">
+                    <div class="card-content">
+                        <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
+                        <div class="event-title">{{ .Title }}</div>
                     </div>
-                    
-                    <div class="event-metadata">
-                        {{ if .Params.organizations }}
-                        <div class="metadata-item">
-                            <span class="metadata-label">Organizations:</span>
-                            <span class="metadata-value">{{ delimit .Params.organizations ", " }}</span>
+                    <div class="card-detail" style="display:none;">
+                        <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
+                        <div class="event-title">{{ .Title }}</div>
+                        <div class="event-description">{{ .Content }}</div>
+                        <div class="event-metadata">
+                            {{ if .Params.organizations }}
+                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">{{ delimit .Params.organizations ", " }}</span></div>
+                            {{ end }}
+                            {{ if .Params.models }}
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">{{ delimit .Params.models ", " }}</span></div>
+                            {{ end }}
+                            {{ if .Params.impact_areas }}
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">{{ delimit .Params.impact_areas ", " }}</span></div>
+                            {{ end }}
+                            {{ if .Params.key_figures }}
+                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">{{ delimit .Params.key_figures ", " }}</span></div>
+                            {{ end }}
+                            {{ if .Params.link }}
+                            <a href="{{ .Params.link }}" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            {{ end }}
                         </div>
-                        {{ end }}
-                        
-                        {{ if .Params.models }}
-                        <div class="metadata-item">
-                            <span class="metadata-label">Models:</span>
-                            <span class="metadata-value">{{ delimit .Params.models ", " }}</span>
+                        <div class="event-tags">
+                            {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
                         </div>
-                        {{ end }}
-                        
-                        {{ if .Params.impact_areas }}
-                        <div class="metadata-item">
-                            <span class="metadata-label">Impact Areas:</span>
-                            <span class="metadata-value">{{ delimit .Params.impact_areas ", " }}</span>
-                        </div>
-                        {{ end }}
-                        
-                        {{ if .Params.key_figures }}
-                        <div class="metadata-item">
-                            <span class="metadata-label">Key Figures:</span>
-                            <span class="metadata-value">{{ delimit .Params.key_figures ", " }}</span>
-                        </div>
-                        {{ end }}
-                        
-                        {{ if .Params.link }}
-                        <a href="{{ .Params.link }}" class="external-link" target="_blank" rel="noopener">
-                            Learn more
-                        </a>
-                        {{ end }}
-                    </div>
-                    
-                    <div class="event-tags">
-                        {{ range .Params.tags }}
-                            <span class="tag">{{ . }}</span>
-                        {{ end }}
                     </div>
                 </div>
             {{ end }}

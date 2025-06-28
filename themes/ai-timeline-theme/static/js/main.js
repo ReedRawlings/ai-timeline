@@ -376,4 +376,63 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, { passive: false });
     }
+
+    // Portal overlay for event cards
+    function createEventOverlay(card, eventData) {
+        // Remove any existing overlay
+        const existing = document.getElementById('event-card-portal-overlay');
+        if (existing) existing.remove();
+
+        // Create overlay element
+        const overlay = document.createElement('div');
+        overlay.id = 'event-card-portal-overlay';
+        overlay.style.position = 'absolute';
+        overlay.style.zIndex = '9999';
+        overlay.style.minWidth = '280px';
+        overlay.style.maxWidth = '320px';
+        overlay.style.width = '320px';
+        overlay.style.padding = '16px';
+        overlay.style.borderRadius = '12px';
+        overlay.style.boxShadow = '0 20px 40px rgba(0,0,0,0.2)';
+        overlay.style.border = '2px solid #764ba2';
+        overlay.style.background = 'white';
+        overlay.style.pointerEvents = 'auto';
+        overlay.style.transition = 'opacity 0.2s';
+
+        // Fill overlay content
+        overlay.innerHTML = eventData;
+
+        document.body.appendChild(overlay);
+
+        // Position overlay over the card
+        const rect = card.getBoundingClientRect();
+        overlay.style.left = `${rect.left + window.scrollX + rect.width / 2 - 160}px`;
+        overlay.style.top = `${rect.top + window.scrollY - 10}px`;
+
+        // Remove overlay on mouseleave/blur
+        function removeOverlay() {
+            overlay.remove();
+            overlay.removeEventListener('mouseleave', removeOverlay);
+            card.removeEventListener('blur', removeOverlay);
+        }
+        overlay.addEventListener('mouseleave', removeOverlay);
+        card.addEventListener('blur', removeOverlay);
+    }
+
+    // Attach overlay events to all event cards
+    function attachEventCardOverlays() {
+        document.querySelectorAll('.event-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const detailHTML = card.querySelector('.card-detail').innerHTML;
+                createEventOverlay(card, detailHTML);
+            });
+            card.addEventListener('focus', function() {
+                const detailHTML = card.querySelector('.card-detail').innerHTML;
+                createEventOverlay(card, detailHTML);
+            });
+        });
+    }
+
+    // We are already inside DOMContentLoaded, so call directly
+    attachEventCardOverlays();
 }); 

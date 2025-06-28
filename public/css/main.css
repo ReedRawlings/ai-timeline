@@ -116,48 +116,40 @@ body {
     position: relative;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    min-height: 60vh;
 }
 .timeline-container::-webkit-scrollbar {
     display: none;
 }
 
+/* Timeline - refactor to CSS Grid */
 .timeline {
-    display: flex;
-    min-width: max-content;
-    padding: 60px 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+    gap: 12px;
+    padding: 80px 40px;
     position: relative;
     background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
-    align-items: flex-start;
-    gap: 8px;
+    min-height: 100%;
+    align-items: start;
+    overflow: visible;
 }
 
-/* Timeline line */
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    z-index: 1;
-    border-radius: 2px;
-    display: none;
-}
-
-/* Timeline groups */
+/* Timeline groups - grid items */
 .timeline-group {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
     min-width: 200px;
     z-index: 2;
+    overflow: visible;
 }
 
 .group-label {
-    position: absolute;
-    top: -30px;
+    position: relative;
+    top: 0;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     padding: 8px 16px;
@@ -165,49 +157,51 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    white-space: nowrap;
-    z-index: 5;
-}
-
-.group-events {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+    white-space: normal;
     width: 100%;
-    padding-top: 20px;
+    text-align: center;
+    z-index: 5;
+    justify-self: center;
 }
 
-/* Event cards - very compact by default */
+/* Group events - grid container for cards */
+.group-events {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    align-content: start;
+    overflow: visible;
+}
+
+/* Event cards - compact style only, no overlay or hover expansion */
 .event-card {
     position: relative;
     background: white;
     border: 2px solid #667eea;
     border-radius: 8px;
     padding: 8px;
-    min-width: 140px;
-    max-width: 180px;
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
     z-index: 2;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: 100%;
+    overflow: visible;
+    grid-column: 1;
+    justify-self: stretch;
 }
 
-/* Filtered event styles */
-.event-card.filtered-out {
-    opacity: 0.3;
-    transform: scale(0.95);
-    pointer-events: none;
+.card-content {
+    padding: 0;
 }
 
-.timeline-group.hidden-group {
-    display: none;
-}
-
-.timeline-group.empty-group {
-    display: none;
+/* Remove all .card-overlay, .event-card:hover, and related rules */
+.card-overlay, .event-card:hover .card-overlay, .event-card:focus-within .card-overlay, .event-card:hover .card-content {
+    display: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    pointer-events: auto !important;
 }
 
 /* Stacked event styles */
@@ -247,18 +241,6 @@ body {
     border-left-color: #ff5722;
 }
 
-.event-card:hover,
-.event-card.touch-expanded {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    border-color: #764ba2;
-    z-index: 10;
-    min-width: 280px;
-    max-width: 320px;
-    padding: 16px;
-    border-radius: 12px;
-}
-
 /* Event content */
 .event-date {
     font-size: 0.8rem;
@@ -275,11 +257,28 @@ body {
     line-height: 1.1;
 }
 
-.event-card:hover .event-title,
-.event-card.touch-expanded .event-title {
+.event-card:hover .event-title {
     font-size: 1rem;
     margin-bottom: 10px;
     line-height: 1.2;
+}
+
+.event-card:hover .event-description {
+    display: block;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.event-card:hover .event-metadata {
+    display: block;
+}
+
+.event-card:hover .event-tags {
+    display: flex;
+}
+
+.event-card:hover .external-link {
+    display: inline-flex;
 }
 
 /* Event description - completely hidden by default */
@@ -392,12 +391,13 @@ body {
 /* Responsive design for timeline groups */
 @media (max-width: 768px) {
     .timeline {
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 2px;
         padding: 40px 20px;
     }
     
     .timeline-group {
-        min-width: 150px;
+        min-width: 80px;
     }
     
     .group-events {
@@ -405,13 +405,35 @@ body {
     }
     
     .event-card {
-        min-width: 120px;
+        min-width: 80px;
         max-width: 150px;
     }
     
-    .event-card:hover,
-    .event-card.touch-expanded {
+    .event-card:hover {
         min-width: 240px;
         max-width: 280px;
+        width: 280px;
     }
+
+    .card-overlay {
+        min-width: 180px;
+        max-width: 95vw;
+        width: 95vw;
+        left: 2.5vw;
+        transform: none;
+    }
+}
+
+#event-card-portal-overlay .event-description,
+#event-card-portal-overlay .event-metadata,
+#event-card-portal-overlay .event-tags,
+#event-card-portal-overlay .external-link {
+    display: block !important;
+}
+
+#event-card-portal-overlay .event-tags {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
 }
