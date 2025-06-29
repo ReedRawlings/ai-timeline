@@ -248,17 +248,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Add smooth scrolling for timeline navigation
-    function scrollToEvent(eventId) {
-        const eventCard = document.querySelector(`[data-event-id="${eventId}"]`);
-        if (eventCard) {
-            eventCard.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
-        }
-    }
-    
     // Add loading animation for timeline
     window.addEventListener('load', function() {
         const timeline = document.querySelector('.timeline');

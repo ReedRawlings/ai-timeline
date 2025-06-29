@@ -96,14 +96,6 @@ body {
     }
 }
 
-/* Remove unused filter label and group styles */
-.filter-group, .filter-group label, .filter-results, #results-count {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 /* Timeline container */
 .timeline-container {
     background: white;
@@ -194,14 +186,6 @@ body {
 
 .card-content {
     padding: 0;
-}
-
-/* Remove all .card-overlay, .event-card:hover, and related rules */
-.card-overlay, .event-card:hover .card-overlay, .event-card:focus-within .card-overlay, .event-card:hover .card-content {
-    display: none !important;
-    opacity: 1 !important;
-    filter: none !important;
-    pointer-events: auto !important;
 }
 
 /* Stacked event styles */
@@ -414,14 +398,6 @@ body {
         max-width: 280px;
         width: 280px;
     }
-
-    .card-overlay {
-        min-width: 180px;
-        max-width: 95vw;
-        width: 95vw;
-        left: 2.5vw;
-        transform: none;
-    }
 }
 
 #event-card-portal-overlay .event-description,
@@ -436,4 +412,11 @@ body {
     flex-wrap: wrap;
     gap: 4px;
     margin-top: 8px;
+}
+
+.event-card.filtered-out {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
