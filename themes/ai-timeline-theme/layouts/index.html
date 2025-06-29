@@ -22,9 +22,9 @@
                 <select id="model-filter" class="filter-select">
                     <option value="">All Models</option>
                     {{ $models := slice }}
-                    {{ range .Site.RegularPages }}
-                        {{ if .Params.models }}
-                            {{ $models = $models | append .Params.models }}
+                    {{ range .Site.Data.events }}
+                        {{ if .models }}
+                            {{ $models = $models | append .models }}
                         {{ end }}
                     {{ end }}
                     {{ range uniq $models }}
@@ -34,9 +34,9 @@
                 <select id="organization-filter" class="filter-select">
                     <option value="">All Organizations</option>
                     {{ $organizations := slice }}
-                    {{ range .Site.RegularPages }}
-                        {{ if .Params.organizations }}
-                            {{ $organizations = $organizations | append .Params.organizations }}
+                    {{ range .Site.Data.events }}
+                        {{ if .organizations }}
+                            {{ $organizations = $organizations | append .organizations }}
                         {{ end }}
                     {{ end }}
                     {{ range uniq $organizations }}
@@ -46,9 +46,9 @@
                 <select id="key-figure-filter" class="filter-select">
                     <option value="">All Key Figures</option>
                     {{ $keyFigures := slice }}
-                    {{ range .Site.RegularPages }}
-                        {{ if .Params.key_figures }}
-                            {{ $keyFigures = $keyFigures | append .Params.key_figures }}
+                    {{ range .Site.Data.events }}
+                        {{ if .key_figures }}
+                            {{ $keyFigures = $keyFigures | append .key_figures }}
                         {{ end }}
                     {{ end }}
                     {{ range uniq $keyFigures }}
@@ -58,12 +58,24 @@
                 <select id="impact-area-filter" class="filter-select">
                     <option value="">All Impact Areas</option>
                     {{ $impactAreas := slice }}
-                    {{ range .Site.RegularPages }}
-                        {{ if .Params.impact_areas }}
-                            {{ $impactAreas = $impactAreas | append .Params.impact_areas }}
+                    {{ range .Site.Data.events }}
+                        {{ if .impact_areas }}
+                            {{ $impactAreas = $impactAreas | append .impact_areas }}
                         {{ end }}
                     {{ end }}
                     {{ range uniq $impactAreas }}
+                        <option value="{{ . }}">{{ . }}</option>
+                    {{ end }}
+                </select>
+                <select id="tag-filter" class="filter-select">
+                    <option value="">All Tags</option>
+                    {{ $tags := slice }}
+                    {{ range .Site.Data.events }}
+                        {{ if .tags }}
+                            {{ $tags = $tags | append .tags }}
+                        {{ end }}
+                    {{ end }}
+                    {{ range uniq $tags }}
                         <option value="{{ . }}">{{ . }}</option>
                     {{ end }}
                 </select>
@@ -74,12 +86,12 @@
 
     <main class="timeline-container">
         <div class="timeline">
-            {{ $events := sort .Site.RegularPages "Date" "asc" }}
+            {{ $events := sort .Site.Data.events "date" "asc" }}
             {{ $currentYearMonth := "" }}
             {{ $groupOpen := false }}
             
             {{ range $events }}
-                {{ $date := .Date }}
+                {{ $date := time .date }}
                 {{ $yearMonth := printf "%s %d" ($date.Format "January") ($date.Year) }}
                 
                 {{ if ne $yearMonth $currentYearMonth }}
@@ -97,40 +109,40 @@
                 
                 <div class="event-card" 
                      data-event-date="{{ $date.Format "2006-01-02" }}"
-                     data-models="{{ if .Params.models }}{{ delimit .Params.models "|" }}{{ end }}"
-                     data-organizations="{{ if .Params.organizations }}{{ delimit .Params.organizations "|" }}{{ end }}"
-                     data-key-figures="{{ if .Params.key_figures }}{{ delimit .Params.key_figures "|" }}{{ end }}"
-                     data-impact-areas="{{ if .Params.impact_areas }}{{ delimit .Params.impact_areas "|" }}{{ end }}"
-                     data-description="{{ .Summary | plainify | htmlEscape }}"
-                     data-link="{{ .Params.link }}"
-                     data-tags="{{ delimit .Params.tags "|" }}">
+                     data-models="{{ if .models }}{{ delimit .models "|" }}{{ end }}"
+                     data-organizations="{{ if .organizations }}{{ delimit .organizations "|" }}{{ end }}"
+                     data-key-figures="{{ if .key_figures }}{{ delimit .key_figures "|" }}{{ end }}"
+                     data-impact-areas="{{ if .impact_areas }}{{ delimit .impact_areas "|" }}{{ end }}"
+                     data-tags="{{ if .tags }}{{ delimit .tags "|" }}{{ end }}"
+                     data-description="{{ .description | plainify | htmlEscape }}"
+                     data-link="{{ .link }}">
                     <div class="card-content">
                         <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
-                        <div class="event-title">{{ .Title }}</div>
+                        <div class="event-title">{{ .title }}</div>
                     </div>
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">{{ $date.Format "Jan 2, 2006" }}</div>
-                        <div class="event-title">{{ .Title }}</div>
-                        <div class="event-description">{{ .Content }}</div>
+                        <div class="event-title">{{ .title }}</div>
+                        <div class="event-description">{{ .description }}</div>
                         <div class="event-metadata">
-                            {{ if .Params.organizations }}
-                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">{{ delimit .Params.organizations ", " }}</span></div>
+                            {{ if .organizations }}
+                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">{{ delimit .organizations ", " }}</span></div>
                             {{ end }}
-                            {{ if .Params.models }}
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">{{ delimit .Params.models ", " }}</span></div>
+                            {{ if .models }}
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">{{ delimit .models ", " }}</span></div>
                             {{ end }}
-                            {{ if .Params.impact_areas }}
-                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">{{ delimit .Params.impact_areas ", " }}</span></div>
+                            {{ if .impact_areas }}
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">{{ delimit .impact_areas ", " }}</span></div>
                             {{ end }}
-                            {{ if .Params.key_figures }}
-                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">{{ delimit .Params.key_figures ", " }}</span></div>
+                            {{ if .key_figures }}
+                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">{{ delimit .key_figures ", " }}</span></div>
                             {{ end }}
-                            {{ if .Params.link }}
-                            <a href="{{ .Params.link }}" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            {{ if .link }}
+                            <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             {{ end }}
                         </div>
                         <div class="event-tags">
-                            {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+                            {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
                         </div>
                     </div>
                 </div>

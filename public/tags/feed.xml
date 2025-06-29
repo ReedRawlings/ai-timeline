@@ -6,69 +6,19 @@
     <description>Recent content in Tags on AI Timeline</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Jun 2025 10:00:00 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/ai-timeline/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ethics</title>
-      <link>http://localhost:1313/ai-timeline/tags/ethics/</link>
-      <pubDate>Thu, 26 Jun 2025 10:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/ethics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Product</title>
-      <link>http://localhost:1313/ai-timeline/tags/product/</link>
-      <pubDate>Thu, 26 Jun 2025 10:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/product/</guid>
+      <title>Safety</title>
+      <link>http://localhost:1313/ai-timeline/tags/safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai-timeline/tags/safety/</guid>
       <description></description>
     </item>
     <item>
       <title>Social Media</title>
       <link>http://localhost:1313/ai-timeline/tags/social-media/</link>
-      <pubDate>Thu, 26 Jun 2025 10:00:00 -0800</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ai-timeline/tags/social-media/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Model</title>
-      <link>http://localhost:1313/ai-timeline/tags/model/</link>
-      <pubDate>Mon, 20 Jan 2025 22:29:39 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/model/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Multimodal</title>
-      <link>http://localhost:1313/ai-timeline/tags/multimodal/</link>
-      <pubDate>Wed, 06 Dec 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/multimodal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Generative Art</title>
-      <link>http://localhost:1313/ai-timeline/tags/generative-art/</link>
-      <pubDate>Wed, 20 Sep 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/generative-art/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source</title>
-      <link>http://localhost:1313/ai-timeline/tags/open-source/</link>
-      <pubDate>Tue, 18 Jul 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Safety</title>
-      <link>http://localhost:1313/ai-timeline/tags/safety/</link>
-      <pubDate>Tue, 14 Mar 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/safety/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Social</title>
-      <link>http://localhost:1313/ai-timeline/tags/social/</link>
-      <pubDate>Wed, 30 Nov 2022 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/ai-timeline/tags/social/</guid>
       <description></description>
     </item>
   </channel>

@@ -25,8 +25,6 @@
                     
                     
                         
-                    
-                        
                             
                         
                     
@@ -58,24 +56,26 @@
                             
                         
                     
+                        
                     
-                        <option value="Deepseek">Deepseek</option>
-                    
-                        <option value="GPT-4o">GPT-4o</option>
-                    
-                        <option value="Gemini">Gemini</option>
-                    
-                        <option value="DALL·E 3">DALL·E 3</option>
-                    
-                        <option value="Llama 2">Llama 2</option>
-                    
-                        <option value="Claude">Claude</option>
-                    
-                        <option value="GPT-4">GPT-4</option>
                     
                         <option value="ChatGPT">ChatGPT</option>
                     
                         <option value="GPT-3.5">GPT-3.5</option>
+                    
+                        <option value="GPT-4">GPT-4</option>
+                    
+                        <option value="Claude">Claude</option>
+                    
+                        <option value="GPT-4o">GPT-4o</option>
+                    
+                        <option value="DALL-E 3">DALL-E 3</option>
+                    
+                        <option value="Gemini 1.0">Gemini 1.0</option>
+                    
+                        <option value="Llama 2">Llama 2</option>
+                    
+                        <option value="DeepSeek R1">DeepSeek R1</option>
                     
                 </select>
                 <select id="organization-filter" class="filter-select">
@@ -83,10 +83,6 @@
                     
                     
                         
-                    
-                        
-                    
-                        
                             
                         
                     
@@ -112,16 +108,24 @@
                     
                         
                             
+                        
+                    
+                        
+                            
+                        
+                    
                         
                     
                     
                         <option value="OpenAI">OpenAI</option>
                     
+                        <option value="Anthropic">Anthropic</option>
+                    
                         <option value="Google">Google</option>
                     
                         <option value="Meta">Meta</option>
                     
-                        <option value="Anthropic">Anthropic</option>
+                        <option value="DeepSeek">DeepSeek</option>
                     
                 </select>
                 <select id="key-figure-filter" class="filter-select">
@@ -129,29 +133,27 @@
                     
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                         
                     
                     
                         <option value="MrBeast">MrBeast</option>
-                    
-                        <option value="Jacksepticeye">Jacksepticeye</option>
                     
                 </select>
                 <select id="impact-area-filter" class="filter-select">
@@ -163,7 +165,15 @@
                         
                     
                         
+                            
+                        
                     
+                        
+                            
+                        
+                    
+                        
+                            
                         
                     
                         
@@ -179,11 +189,25 @@
                         
                     
                         
-                    
+                            
                         
                     
                         
+                            
+                        
                     
+                    
+                        <option value="Multimodal AI">Multimodal AI</option>
+                    
+                        <option value="Product Development">Product Development</option>
+                    
+                        <option value="Image Generation">Image Generation</option>
+                    
+                        <option value="Open Source">Open Source</option>
+                    
+                        <option value="Reasoning AI">Reasoning AI</option>
+                    
+                        <option value="Research">Research</option>
                     
                         <option value="Creator Economy">Creator Economy</option>
                     
@@ -191,17 +215,57 @@
                     
                         <option value="Ethics">Ethics</option>
                     
-                        <option value="Search">Search</option>
+                </select>
+                <select id="tag-filter" class="filter-select">
+                    <option value="">All Tags</option>
                     
-                        <option value="Productivity">Productivity</option>
                     
-                        <option value="Visual Art">Visual Art</option>
+                        
+                            
+                        
                     
-                        <option value="Creative Tools">Creative Tools</option>
+                        
+                            
+                        
                     
-                        <option value="Open Source">Open Source</option>
+                        
+                            
+                        
                     
-                        <option value="Research">Research</option>
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                    
+                        <option value="Model">Model</option>
+                    
+                        <option value="Product">Product</option>
+                    
+                        <option value="Social">Social</option>
+                    
+                        <option value="Multimodal">Multimodal</option>
+                    
+                        <option value="Image Generation">Image Generation</option>
+                    
+                        <option value="Reasoning">Reasoning</option>
                     
                 </select>
                 <button id="clear-filters" class="clear-filters-btn">Clear All</button>
@@ -234,11 +298,10 @@
                      data-models="ChatGPT|GPT-3.5"
                      data-organizations="OpenAI"
                      data-key-figures=""
-                     data-impact-areas=""
-                     data-description="On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.
-"
-                     data-link="https://openai.com/blog/chatgpt"
-                     data-tags="Model|Product|Social">
+                     data-impact-areas="Multimodal AI"
+                     data-tags="Model|Product|Social"
+                     data-description="On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks."
+                     data-link="https://openai.com/blog/chatgpt">
                     <div class="card-content">
                         <div class="event-date">Nov 30, 2022</div>
                         <div class="event-title">ChatGPT Release</div>
@@ -246,8 +309,7 @@
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Nov 30, 2022</div>
                         <div class="event-title">ChatGPT Release</div>
-                        <div class="event-description"><p>On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.</p>
-</div>
+                        <div class="event-description">On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks.</div>
                         <div class="event-metadata">
                             
                             <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">OpenAI</span></div>
@@ -255,6 +317,8 @@
                             
                             <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">ChatGPT, GPT-3.5</span></div>
                             
+                            
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Multimodal AI</span></div>
                             
                             
                             
@@ -285,38 +349,38 @@
                 
                 <div class="event-card" 
                      data-event-date="2023-03-14"
-                     data-models="Claude"
-                     data-organizations="Anthropic"
+                     data-models="GPT-4"
+                     data-organizations="OpenAI"
                      data-key-figures=""
-                     data-impact-areas=""
-                     data-description="On March 14, 2023, Anthropic introduced Claude, an AI assistant built using Constitutional AI training methods. Claude was designed to be helpful, harmless, and honest, with a focus on safety and alignment. The model demonstrated strong conversational abilities while being trained to avoid harmful outputs through constitutional AI techniques.
-"
-                     data-link="https://www.anthropic.com/news/introducing-claude"
-                     data-tags="Model|Product|Safety">
+                     data-impact-areas="Multimodal AI"
+                     data-tags="Model|Product"
+                     data-description="On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs."
+                     data-link="https://openai.com/research/gpt-4">
                     <div class="card-content">
                         <div class="event-date">Mar 14, 2023</div>
-                        <div class="event-title">Claude Release</div>
+                        <div class="event-title">GPT-4 Release</div>
                     </div>
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Mar 14, 2023</div>
-                        <div class="event-title">Claude Release</div>
-                        <div class="event-description"><p>On March 14, 2023, Anthropic introduced Claude, an AI assistant built using Constitutional AI training methods. Claude was designed to be helpful, harmless, and honest, with a focus on safety and alignment. The model demonstrated strong conversational abilities while being trained to avoid harmful outputs through constitutional AI techniques.</p>
-</div>
+                        <div class="event-title">GPT-4 Release</div>
+                        <div class="event-description">On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs.</div>
                         <div class="event-metadata">
                             
-                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">Anthropic</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">OpenAI</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Claude</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">GPT-4</span></div>
+                            
+                            
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Multimodal AI</span></div>
                             
                             
                             
-                            
-                            <a href="https://www.anthropic.com/news/introducing-claude" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://openai.com/research/gpt-4" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Safety</span>
+                            <span class="tag">Model</span><span class="tag">Product</span>
                         </div>
                     </div>
                 </div>
@@ -328,38 +392,38 @@
                 
                 <div class="event-card" 
                      data-event-date="2023-03-14"
-                     data-models="GPT-4"
-                     data-organizations="OpenAI"
+                     data-models="Claude"
+                     data-organizations="Anthropic"
                      data-key-figures=""
-                     data-impact-areas=""
-                     data-description="On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs.
-"
-                     data-link="https://openai.com/research/gpt-4"
-                     data-tags="Model|Product|Multimodal">
+                     data-impact-areas="Multimodal AI"
+                     data-tags="Model|Product"
+                     data-description="Anthropic released Claude, an AI assistant designed with safety and helpfulness in mind, featuring constitutional AI principles."
+                     data-link="https://www.anthropic.com/claude">
                     <div class="card-content">
                         <div class="event-date">Mar 14, 2023</div>
-                        <div class="event-title">GPT-4 Release</div>
+                        <div class="event-title">Claude Release</div>
                     </div>
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Mar 14, 2023</div>
-                        <div class="event-title">GPT-4 Release</div>
-                        <div class="event-description"><p>On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs.</p>
-</div>
+                        <div class="event-title">Claude Release</div>
+                        <div class="event-description">Anthropic released Claude, an AI assistant designed with safety and helpfulness in mind, featuring constitutional AI principles.</div>
                         <div class="event-metadata">
                             
-                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">OpenAI</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">Anthropic</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">GPT-4</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Claude</span></div>
+                            
+                            
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Multimodal AI</span></div>
                             
                             
                             
-                            
-                            <a href="https://openai.com/research/gpt-4" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://www.anthropic.com/claude" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Multimodal</span>
+                            <span class="tag">Model</span><span class="tag">Product</span>
                         </div>
                     </div>
                 </div>
@@ -385,11 +449,10 @@
                      data-models="Llama 2"
                      data-organizations="Meta"
                      data-key-figures=""
-                     data-impact-areas="Open Source|Research"
-                     data-description="Meta released Llama 2, an open-source large language model that quickly became a popular foundation for research and commercial use.
-"
-                     data-link="https://ai.meta.com/blog/llama-2/"
-                     data-tags="Model|Product|Open Source">
+                     data-impact-areas="Open Source"
+                     data-tags="Model"
+                     data-description="Meta released Llama 2, an open-source large language model with improved performance and safety features."
+                     data-link="https://ai.meta.com/blog/llama-2/">
                     <div class="card-content">
                         <div class="event-date">Jul 18, 2023</div>
                         <div class="event-title">Llama 2 Release</div>
@@ -397,8 +460,7 @@
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Jul 18, 2023</div>
                         <div class="event-title">Llama 2 Release</div>
-                        <div class="event-description"><p>Meta released Llama 2, an open-source large language model that quickly became a popular foundation for research and commercial use.</p>
-</div>
+                        <div class="event-description">Meta released Llama 2, an open-source large language model with improved performance and safety features.</div>
                         <div class="event-metadata">
                             
                             <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">Meta</span></div>
@@ -407,7 +469,7 @@
                             <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Llama 2</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Open Source, Research</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Open Source</span></div>
                             
                             
                             
@@ -415,7 +477,7 @@
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Open Source</span>
+                            <span class="tag">Model</span>
                         </div>
                     </div>
                 </div>
@@ -429,49 +491,47 @@
                         </div>
                     
                     
-                    <div class="timeline-group" data-year-month="2023-%!d(string=09)">
-                        <div class="group-label">September 2023</div>
+                    <div class="timeline-group" data-year-month="2023-%!d(string=10)">
+                        <div class="group-label">October 2023</div>
                         <div class="group-events">
                     
                     
                 
                 
                 <div class="event-card" 
-                     data-event-date="2023-09-20"
-                     data-models="DALL·E 3"
+                     data-event-date="2023-10-17"
+                     data-models="DALL-E 3"
                      data-organizations="OpenAI"
                      data-key-figures=""
-                     data-impact-areas="Visual Art|Creative Tools"
-                     data-description="OpenAI released DALL·E 3, a text-to-image model that produces high-quality illustrations and integrates with ChatGPT for prompt generation.
-"
-                     data-link="https://openai.com/research/dall-e-3"
-                     data-tags="Model|Product|Generative Art">
+                     data-impact-areas="Image Generation"
+                     data-tags="Model|Product|Image Generation"
+                     data-description="OpenAI released DALL-E 3, an advanced image generation model with improved text-to-image capabilities and better prompt understanding."
+                     data-link="https://openai.com/dall-e-3">
                     <div class="card-content">
-                        <div class="event-date">Sep 20, 2023</div>
-                        <div class="event-title">DALL·E 3 Release</div>
+                        <div class="event-date">Oct 17, 2023</div>
+                        <div class="event-title">DALL-E 3 Release</div>
                     </div>
                     <div class="card-detail" style="display:none;">
-                        <div class="event-date">Sep 20, 2023</div>
-                        <div class="event-title">DALL·E 3 Release</div>
-                        <div class="event-description"><p>OpenAI released DALL·E 3, a text-to-image model that produces high-quality illustrations and integrates with ChatGPT for prompt generation.</p>
-</div>
+                        <div class="event-date">Oct 17, 2023</div>
+                        <div class="event-title">DALL-E 3 Release</div>
+                        <div class="event-description">OpenAI released DALL-E 3, an advanced image generation model with improved text-to-image capabilities and better prompt understanding.</div>
                         <div class="event-metadata">
                             
                             <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">OpenAI</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">DALL·E 3</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">DALL-E 3</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Visual Art, Creative Tools</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Image Generation</span></div>
                             
                             
                             
-                            <a href="https://openai.com/research/dall-e-3" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://openai.com/dall-e-3" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Generative Art</span>
+                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Image Generation</span>
                         </div>
                     </div>
                 </div>
@@ -494,14 +554,13 @@
                 
                 <div class="event-card" 
                      data-event-date="2023-12-06"
-                     data-models="Gemini"
+                     data-models="Gemini 1.0"
                      data-organizations="Google"
                      data-key-figures=""
-                     data-impact-areas="Search|Productivity"
-                     data-description="Google introduced Gemini 1.0, a multimodal model (formerly known as Bard) that incorporates text, images, and code to enhance Google’s search and productivity tools.
-"
-                     data-link="https://blog.google/technology/ai/google-gemini-ai/"
-                     data-tags="Model|Product|Multimodal">
+                     data-impact-areas="Multimodal AI"
+                     data-tags="Model|Product"
+                     data-description="Google released Gemini 1.0, a multimodal AI model designed to understand and work with text, images, audio, and video."
+                     data-link="https://deepmind.google/technologies/gemini/">
                     <div class="card-content">
                         <div class="event-date">Dec 6, 2023</div>
                         <div class="event-title">Gemini 1.0 Release</div>
@@ -509,25 +568,78 @@
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Dec 6, 2023</div>
                         <div class="event-title">Gemini 1.0 Release</div>
-                        <div class="event-description"><p>Google introduced Gemini 1.0, a multimodal model (formerly known as Bard) that incorporates text, images, and code to enhance Google’s search and productivity tools.</p>
-</div>
+                        <div class="event-description">Google released Gemini 1.0, a multimodal AI model designed to understand and work with text, images, audio, and video.</div>
                         <div class="event-metadata">
                             
                             <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">Google</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Gemini</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Gemini 1.0</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Search, Productivity</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Multimodal AI</span></div>
                             
                             
                             
-                            <a href="https://blog.google/technology/ai/google-gemini-ai/" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://deepmind.google/technologies/gemini/" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Multimodal</span>
+                            <span class="tag">Model</span><span class="tag">Product</span>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                
+                
+                
+                    
+                        </div>
+                        </div>
+                    
+                    
+                    <div class="timeline-group" data-year-month="2024-%!d(string=01)">
+                        <div class="group-label">January 2024</div>
+                        <div class="group-events">
+                    
+                    
+                
+                
+                <div class="event-card" 
+                     data-event-date="2024-01-15"
+                     data-models="DeepSeek R1"
+                     data-organizations="DeepSeek"
+                     data-key-figures=""
+                     data-impact-areas="Reasoning AI|Research"
+                     data-tags="Model|Product|Reasoning"
+                     data-description="DeepSeek released R1, a reasoning-focused AI model designed for complex problem-solving tasks."
+                     data-link="https://www.deepseek.com/">
+                    <div class="card-content">
+                        <div class="event-date">Jan 15, 2024</div>
+                        <div class="event-title">DeepSeek R1 Release</div>
+                    </div>
+                    <div class="card-detail" style="display:none;">
+                        <div class="event-date">Jan 15, 2024</div>
+                        <div class="event-title">DeepSeek R1 Release</div>
+                        <div class="event-description">DeepSeek released R1, a reasoning-focused AI model designed for complex problem-solving tasks.</div>
+                        <div class="event-metadata">
+                            
+                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">DeepSeek</span></div>
+                            
+                            
+                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">DeepSeek R1</span></div>
+                            
+                            
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Reasoning AI, Research</span></div>
+                            
+                            
+                            
+                            <a href="https://www.deepseek.com/" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            
+                        </div>
+                        <div class="event-tags">
+                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Reasoning</span>
                         </div>
                     </div>
                 </div>
@@ -553,11 +665,10 @@
                      data-models="GPT-4o"
                      data-organizations="OpenAI"
                      data-key-figures=""
-                     data-impact-areas=""
-                     data-description="On May 13, 2024, OpenAI announced GPT-4o, a new flagship model that can reason across audio, vision, and text in real time. It is available in the free tier and to Plus users with higher message limits.
-"
-                     data-link="https://openai.com/index/hello-gpt-4o/"
-                     data-tags="Model|Product">
+                     data-impact-areas="Multimodal AI|Product Development"
+                     data-tags="Model|Product|Multimodal"
+                     data-description="OpenAI released GPT-4o, a faster and more efficient version of GPT-4 with improved multimodal capabilities."
+                     data-link="https://openai.com/index/gpt-4o/">
                     <div class="card-content">
                         <div class="event-date">May 13, 2024</div>
                         <div class="event-title">GPT-4o Release</div>
@@ -565,8 +676,7 @@
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">May 13, 2024</div>
                         <div class="event-title">GPT-4o Release</div>
-                        <div class="event-description"><p>On May 13, 2024, OpenAI announced GPT-4o, a new flagship model that can reason across audio, vision, and text in real time. It is available in the free tier and to Plus users with higher message limits.</p>
-</div>
+                        <div class="event-description">OpenAI released GPT-4o, a faster and more efficient version of GPT-4 with improved multimodal capabilities.</div>
                         <div class="event-metadata">
                             
                             <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">OpenAI</span></div>
@@ -575,65 +685,15 @@
                             <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">GPT-4o</span></div>
                             
                             
-                            
-                            
-                            <a href="https://openai.com/index/hello-gpt-4o/" class="external-link" target="_blank" rel="noopener">Learn more</a>
-                            
-                        </div>
-                        <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span>
-                        </div>
-                    </div>
-                </div>
-            
-                
-                
-                
-                
-                    
-                        </div>
-                        </div>
-                    
-                    
-                    <div class="timeline-group" data-year-month="2025-%!d(string=01)">
-                        <div class="group-label">January 2025</div>
-                        <div class="group-events">
-                    
-                    
-                
-                
-                <div class="event-card" 
-                     data-event-date="2025-01-20"
-                     data-models="Deepseek"
-                     data-organizations=""
-                     data-key-figures=""
-                     data-impact-areas=""
-                     data-description="Brief description of the AI event and its significance.
-"
-                     data-link="https://example.com"
-                     data-tags="Model|Product">
-                    <div class="card-content">
-                        <div class="event-date">Jan 20, 2025</div>
-                        <div class="event-title">Deepseek R1 Release</div>
-                    </div>
-                    <div class="card-detail" style="display:none;">
-                        <div class="event-date">Jan 20, 2025</div>
-                        <div class="event-title">Deepseek R1 Release</div>
-                        <div class="event-description"><p>Brief description of the AI event and its significance.</p>
-</div>
-                        <div class="event-metadata">
-                            
-                            
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">Deepseek</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Multimodal AI, Product Development</span></div>
                             
                             
                             
-                            
-                            <a href="https://example.com" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://openai.com/index/gpt-4o/" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Model</span><span class="tag">Product</span>
+                            <span class="tag">Model</span><span class="tag">Product</span><span class="tag">Multimodal</span>
                         </div>
                     </div>
                 </div>
@@ -658,21 +718,19 @@
                      data-event-date="2025-06-26"
                      data-models=""
                      data-organizations=""
-                     data-key-figures="MrBeast|Jacksepticeye"
+                     data-key-figures="MrBeast"
                      data-impact-areas="Creator Economy|Public Perception|Ethics"
-                     data-description="MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering
-"
-                     data-link="https://www.dexerto.com/youtube/mrbeast-removes-controversial-ai-thumbnail-tool-after-wave-of-backlash-3220101/"
-                     data-tags="Social Media|Ethics|Product">
+                     data-tags=""
+                     data-description="MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering."
+                     data-link="https://www.youtube.com/watch?v=example">
                     <div class="card-content">
                         <div class="event-date">Jun 26, 2025</div>
-                        <div class="event-title">MrBeast AI Thumbnail Tool Controversy</div>
+                        <div class="event-title">MrBeast AI Controversy</div>
                     </div>
                     <div class="card-detail" style="display:none;">
                         <div class="event-date">Jun 26, 2025</div>
-                        <div class="event-title">MrBeast AI Thumbnail Tool Controversy</div>
-                        <div class="event-description"><p>MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering</p>
-</div>
+                        <div class="event-title">MrBeast AI Controversy</div>
+                        <div class="event-description">MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering.</div>
                         <div class="event-metadata">
                             
                             
@@ -680,14 +738,14 @@
                             <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">Creator Economy, Public Perception, Ethics</span></div>
                             
                             
-                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">MrBeast, Jacksepticeye</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">MrBeast</span></div>
                             
                             
-                            <a href="https://www.dexerto.com/youtube/mrbeast-removes-controversial-ai-thumbnail-tool-after-wave-of-backlash-3220101/" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="https://www.youtube.com/watch?v=example" class="external-link" target="_blank" rel="noopener">Learn more</a>
                             
                         </div>
                         <div class="event-tags">
-                            <span class="tag">Social Media</span><span class="tag">Ethics</span><span class="tag">Product</span>
+                            
                         </div>
                     </div>
                 </div>

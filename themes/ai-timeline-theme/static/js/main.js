@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
             models: '',
             organizations: '',
             keyFigures: '',
-            impactAreas: ''
+            impactAreas: '',
+            tags: ''
         },
         
         init() {
@@ -41,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             document.getElementById('impact-area-filter').addEventListener('change', (e) => {
                 this.filters.impactAreas = e.target.value;
+                this.applyFilters();
+            });
+            
+            document.getElementById('tag-filter').addEventListener('change', (e) => {
+                this.filters.tags = e.target.value;
                 this.applyFilters();
             });
             
@@ -86,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 return false;
             }
             
+            if (this.filters.tags && !this.matchesFilter(card, 'data-tags', this.filters.tags)) {
+                return false;
+            }
+            
             return true;
         },
         
@@ -127,13 +137,15 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('organization-filter').value = '';
             document.getElementById('key-figure-filter').value = '';
             document.getElementById('impact-area-filter').value = '';
+            document.getElementById('tag-filter').value = '';
             
             // Reset filter state
             this.filters = {
                 models: '',
                 organizations: '',
                 keyFigures: '',
-                impactAreas: ''
+                impactAreas: '',
+                tags: ''
             };
             
             // Show all events

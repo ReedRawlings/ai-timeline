@@ -1,0 +1,89 @@
+- title: "ChatGPT Release"
+  date: "2022-11-30T10:00:00-07:00"
+  tags: ["Model", "Product", "Social"]
+  organizations: ["OpenAI"]
+  models: ["ChatGPT", "GPT-3.5"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: []
+  link: "https://openai.com/blog/chatgpt"
+  description: "On November 30, 2022, OpenAI launched ChatGPT, a conversational AI model that quickly gained widespread popularity for its ability to generate human-like text, answer questions, and assist with a wide range of tasks."
+
+- title: "GPT-4 Release"
+  date: "2023-03-14T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: []
+  link: "https://openai.com/research/gpt-4"
+  description: "On March 14, 2023, OpenAI released GPT-4, a large multimodal model that can solve difficult problems with greater accuracy than previous models, thanks to its broader general knowledge and problem-solving abilities. It can accept image and text inputs and emit text outputs."
+
+- title: "Claude Release"
+  date: "2023-03-14T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: []
+  link: "https://www.anthropic.com/claude"
+  description: "Anthropic released Claude, an AI assistant designed with safety and helpfulness in mind, featuring constitutional AI principles."
+
+- title: "GPT-4o Release"
+  date: "2024-05-13T10:00:00-07:00"
+  tags: ["Model", "Product", "Multimodal"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4o"]
+  impact_areas: ["Multimodal AI", "Product Development"]
+  key_figures: []
+  link: "https://openai.com/index/gpt-4o/"
+  description: "OpenAI released GPT-4o, a faster and more efficient version of GPT-4 with improved multimodal capabilities."
+
+- title: "DALL-E 3 Release"
+  date: "2023-10-17T10:00:00-07:00"
+  tags: ["Model", "Product", "Image Generation"]
+  organizations: ["OpenAI"]
+  models: ["DALL-E 3"]
+  impact_areas: ["Image Generation"]
+  key_figures: []
+  link: "https://openai.com/dall-e-3"
+  description: "OpenAI released DALL-E 3, an advanced image generation model with improved text-to-image capabilities and better prompt understanding."
+
+- title: "Gemini 1.0 Release"
+  date: "2023-12-06T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google"]
+  models: ["Gemini 1.0"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: []
+  link: "https://deepmind.google/technologies/gemini/"
+  description: "Google released Gemini 1.0, a multimodal AI model designed to understand and work with text, images, audio, and video."
+
+- title: "Llama 2 Release"
+  date: "2023-07-18T10:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["Meta"]
+  models: ["Llama 2"]
+  impact_areas: ["Open Source"]
+  key_figures: []
+  link: "https://ai.meta.com/blog/llama-2/"
+  description: "Meta released Llama 2, an open-source large language model with improved performance and safety features."
+
+- title: "DeepSeek R1 Release"
+  date: "2024-01-15T10:00:00-07:00"
+  tags: ["Model", "Product", "Reasoning"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek R1"]
+  impact_areas: ["Reasoning AI", "Research"]
+  key_figures: []
+  link: "https://www.deepseek.com/"
+  description: "DeepSeek released R1, a reasoning-focused AI model designed for complex problem-solving tasks."
+
+- title: "MrBeast AI Controversy"
+  date: "2025-06-26T10:00:00-08:00"
+  tags: []
+  organizations: []
+  models: []
+  impact_areas: ["Creator Economy", "Public Perception", "Ethics"]
+  key_figures: ["MrBeast"]
+  link: "https://www.youtube.com/watch?v=example"
+  description: "MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering." 
