@@ -389,9 +389,10 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.id = 'event-card-portal-overlay';
         overlay.style.position = 'absolute';
         overlay.style.zIndex = '9999';
-        overlay.style.minWidth = '280px';
-        overlay.style.maxWidth = '320px';
-        overlay.style.width = '320px';
+        const overlayWidth = 400; // wider overlay for better readability
+        overlay.style.minWidth = overlayWidth + 'px';
+        overlay.style.maxWidth = overlayWidth + 'px';
+        overlay.style.width    = overlayWidth + 'px';
         overlay.style.padding = '16px';
         overlay.style.borderRadius = '12px';
         overlay.style.boxShadow = '0 20px 40px rgba(0,0,0,0.2)';
@@ -407,7 +408,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Position overlay over the card
         const rect = card.getBoundingClientRect();
-        overlay.style.left = `${rect.left + window.scrollX + rect.width / 2 - 160}px`;
+        overlay.style.left = `${rect.left + window.scrollX + rect.width / 2 - overlayWidth / 2}px`;
         overlay.style.top = `${rect.top + window.scrollY - 10}px`;
 
         // Remove overlay on mouseleave/blur

@@ -6,10 +6,6 @@
   </url><url>
     <loc>http://localhost:1313/ai-timeline/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/ai-timeline/models/gpt-3.5/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ai-timeline/models/gpt-4o/</loc>
-  </url><url>
     <loc>http://localhost:1313/ai-timeline/impact-areas/</loc>
   </url><url>
     <loc>http://localhost:1313/ai-timeline/key-figures/</loc>
@@ -17,10 +13,6 @@
     <loc>http://localhost:1313/ai-timeline/models/</loc>
   </url><url>
     <loc>http://localhost:1313/ai-timeline/organizations/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ai-timeline/tags/safety/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ai-timeline/tags/social-media/</loc>
   </url><url>
     <loc>http://localhost:1313/ai-timeline/tags/</loc>
   </url>

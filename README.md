@@ -6,15 +6,15 @@
 
 ---
 
-## ✅ Completed Features
+##  Completed Features
 
-### 🏗️ Core Infrastructure
+###  Core Infrastructure
 - **Static Site Generator**: Hugo configured and running
 - **Hosting**: GitHub Pages with GitHub Actions CI/CD pipeline
 - **Custom Theme**: `ai-timeline-theme` with horizontal scroll layout
 - **Content Structure**: Markdown-based events in `/content/events/`
 
-### 🎨 Timeline Implementation
+###  Timeline Implementation
 - **Horizontal Scroll Layout**: Timeline displays events in chronological order
 - **Time Grouping**: Events grouped by month and year with labeled headers
 - **Event Cards**: Compact cards showing event name and date
@@ -22,18 +22,13 @@
 - **Interactive Cards**: Hover/touch to expand with full details
 - **Responsive Design**: Mobile-friendly with touch interactions
 
-### 📝 Content Management
+###  Content Management
 - **Event Structure**: Each event includes:
   - Date and title
   - Tags (Model, Product, Social, etc.)
   - Related Models (ChatGPT, GPT-4, Claude, etc.)
   - Related Organizations (OpenAI, Google, Microsoft, etc.)
   - External links
-- **Sample Events**: 4 AI events already created:
-  - ChatGPT Release (Nov 2022)
-  - GPT-4 Release (Mar 2023)
-  - Claude Release (Mar 2023)
-  - GPT-4o Release (May 2024)
 
 ### 🔧 Technical Features
 - **Taxonomies**: Tags, organizations, models, and categories

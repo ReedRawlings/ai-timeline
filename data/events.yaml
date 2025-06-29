@@ -80,10 +80,40 @@
 
 - title: "MrBeast AI Controversy"
   date: "2025-06-26T10:00:00-08:00"
-  tags: []
+  tags: ["Social"]
   organizations: []
   models: []
   impact_areas: ["Creator Economy", "Public Perception", "Ethics"]
   key_figures: ["MrBeast"]
   link: "https://www.youtube.com/watch?v=example"
-  description: "MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering." 
+  description: "MrBeast, faced backlash for launching an AI thumbnail tool that allowed users to generate thumbnails by referencing existing YouTube channels without consent, leading to accusations of plagiarism. He quickly pulled the offering."
+
+- title: "Meta Hires OpenAI Researchers"
+  date: "2025-06-28T17:45:00-08:00"
+  tags: ["Corporate"]
+  organizations: ["Meta", "OpenAI"]
+  models: []
+  impact_areas: ["Research", "Market Competition", "Enterprise AI"]
+  key_figures: ["Mark Zuckerberg", "Sam Altman"]
+  link: "https://www.reuters.com/business/meta-hires-three-openai-researchers-wsj-reports-2025-06-26/"
+  description: "Between June 25-28, 2025, Meta hired eight OpenAI researchers including Trapit Bansal (key contributor to OpenAI's o1 reasoning model), three researchers from OpenAI's Zurich office (Lucas Beyer, Alexander Kolesnikov, Xiaohua Zhai), and four additional researchers (Shengjia Zhao, Jiahui Yu, Shuchao Bi, Hongyu Ren) to join Meta's superintelligence team. This unprecedented recruiting blitz involved Zuckerberg personally offering up to $100 million compensation packages as Meta seeks to compete with OpenAI following disappointing performance of its Llama 4 models."
+
+- title: "Gemma 3n Release"
+  date: "2025-06-26T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Gemma-3n"]
+  impact_areas: ["Multimodal AI", "Open Source"]
+  key_figures: []
+  link: "https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/"
+  description: "On June 26, 2025, Google announced the full release of Gemma 3n following May's preview, featuring a mobile-first architecture with MatFormer technology that enables 2B and 4B effective parameter models to run efficiently on devices with multimodal capabilities (text, audio, video, image), supported by major partners including Hugging Face, AMD, NVIDIA, and others, alongside a $150,000 Impact Challenge competition."
+
+- title: "FLI Letter for Pause on AI Research"
+  date: "2023-03-29T00:00:00-00:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception", "Research"]
+  key_figures: ["Elon Musk", "Yuval Noah Harari", "Yoshua Bengio", "Steve Wozniak"]
+  link: "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+  description: "The Future of Life Institute published an open letter calling for all AI labs to immediately pause training of AI systems more powerful than GPT-4 for at least 6 months, citing risks from human-competitive AI systems and the need for shared safety protocols."
