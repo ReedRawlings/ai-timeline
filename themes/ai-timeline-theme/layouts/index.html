@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="site-header">
+        <canvas id="neural-network" aria-hidden="true"></canvas>
         <div class="container">
             <h1 class="site-title">{{ .Site.Title }}</h1>
             <p class="site-description">{{ .Site.Params.description }}</p>
@@ -156,5 +157,6 @@
     </main>
 
     <script src="{{ "js/main.js" | relURL }}"></script>
+    <script src="{{ "js/neural-network.js" | relURL }}"></script>
 </body>
 </html> 

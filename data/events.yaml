@@ -2,7 +2,7 @@
   date: "2022-11-30T10:00:00-07:00"
   tags: ["Model", "Product", "Social"]
   organizations: ["OpenAI"]
-  models: ["ChatGPT", "GPT-3.5"]
+  models: ["GPT-3.5"]
   impact_areas: ["Multimodal AI"]
   key_figures: []
   link: "https://openai.com/blog/chatgpt"
@@ -117,3 +117,13 @@
   key_figures: ["Elon Musk", "Yuval Noah Harari", "Yoshua Bengio", "Steve Wozniak"]
   link: "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
   description: "The Future of Life Institute published an open letter calling for all AI labs to immediately pause training of AI systems more powerful than GPT-4 for at least 6 months, citing risks from human-competitive AI systems and the need for shared safety protocols."
+
+- title: "MAI-DxO Medical Superintelligence Research"
+  date: "2025-06-30T00:00:00-08:00"
+  tags: ["Research", "Medical"]
+  organizations: ["Microsoft", "New England Journal of Medicine"]
+  models: ["o3"]
+  impact_areas: ["Healthcare", "Economics"]
+  key_figures: []
+  link: "https://microsoft.ai/new/the-path-to-medical-superintelligence/"
+  description: "Microsoft AI researchers published findings showing their AI Diagnostic Orchestrator (MAI-DxO) correctly diagnoses 85% of complex medical cases from the New England Journal of Medicine, achieving four times higher accuracy than experienced physicians while reducing diagnostic costs."
