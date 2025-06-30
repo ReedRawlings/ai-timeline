@@ -77,15 +77,7 @@ Based on the events.yaml file, the current database includes:
 - **Models**: ["ChatGPT"]
 - **Impact Areas**: ["Security", "Public Safety"]
 - **Description**: A soldier used ChatGPT to help plan an explosive attack involving a Tesla Cybertruck outside the Trump Hotel in Las Vegas, marking one of the first documented cases of AI assistance in terrorism planning.
-
-#### Palm Springs Bombing AI Planning
-- **Date**: May 2025
-- **Tags**: ["Security", "AI Misuse", "Criminal Activity"]
-- **Organizations**: []
-- **Models**: []
-- **Impact Areas**: ["Security", "Public Safety", "AI Misuse"]
-- **Description**: FBI investigation revealed suspects used AI chat programs to research bomb-making techniques for an attack on a Palm Springs fertility clinic, demonstrating AI's potential misuse in criminal activities.
-
+  
 ### 3. Corporate and Strategic Events
 
 #### Meta's $14.3B Scale AI Investment
@@ -173,49 +165,6 @@ Based on the events.yaml file, the current database includes:
 - **Models**: []
 - **Impact Areas**: ["Research", "Industry Trends", "Risk Assessment"]
 - **Description**: Stanford's comprehensive AI Index Report revealed a 56.4% increase in AI-related incidents in 2024, with concerning gaps between risk awareness and implementation of safeguards.
-
-## Recommendations for Event Categories to Prioritize
-
-### 1. High Priority Additions
-- **AI Safety Incidents**: Critical for understanding real-world AI risks
-- **Major Model Releases**: Core to tracking AI capability progression
-- **Regulatory Milestones**: Essential for compliance and governance tracking
-- **Corporate Strategic Moves**: Important for market dynamics understanding
-
-### 2. Medium Priority Additions
-- **AI Misuse Cases**: Important for security awareness
-- **International Policy Developments**: Relevant for global AI governance
-- **Technical Breakthroughs**: Valuable for capability tracking
-
-### 3. Event Selection Criteria
-- **Impact Scope**: Events affecting multiple stakeholders or industries
-- **Precedent Setting**: First-of-kind events that establish new patterns
-- **Risk Significance**: Events highlighting new or emerging risks
-- **Market Influence**: Events that substantially affect AI industry dynamics
-
-## Data Quality Considerations
-
-### Missing Information Patterns
-- Many events lack specific key figures attribution
-- Impact areas could be more granular and specific
-- Links to primary sources are sometimes incomplete
-- Geographic scope and jurisdiction information often missing
-
-### Suggested Schema Enhancements
-- Add "geographic_scope" field for regional impact tracking
-- Include "severity_level" for risk and incident events
-- Add "stakeholder_groups" affected by events
-- Consider "regulatory_status" for policy events
-- Include "technical_details" for model releases
-
-## Sources and Methodology
-
-This research was conducted through analysis of:
-- Recent AI industry reports and news coverage
-- Academic publications on AI safety and governance
-- Government and regulatory body announcements
-- Corporate press releases and SEC filings
-- Security research reports and incident databases
 
 The findings prioritize events that demonstrate similar characteristics to existing events.yaml entries in terms of:
 - Industry significance and impact
