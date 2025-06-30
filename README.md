@@ -2,7 +2,7 @@
 
 **Goal**: A public website that displays a chronological timeline of AI developments, with tags, filters, and optional admin editing via a CMS.
 
-**Live Site**: [https://ReedR.github.io/ai-timeline/](https://ReedR.github.io/ai-timeline/)
+**Live Site**: [https://reedrawlings.github.io/ai-timeline/](https://reedrawlings.github.io/ai-timeline/)
 
 ---
 
