@@ -128,7 +128,7 @@
   link: "https://microsoft.ai/new/the-path-to-medical-superintelligence/"
   description: "Microsoft AI researchers published findings showing their AI Diagnostic Orchestrator (MAI-DxO) correctly diagnoses 85% of complex medical cases from the New England Journal of Medicine, achieving four times higher accuracy than experienced physicians while reducing diagnostic costs."
 
-- title: "Judge Rules Anthropic's AI Training is Fair Use"
+- title: "Judge Rules AI Training is Fair Use"
   date: "2025-06-23T23:59:59-08:00"
   tags: ["Legal"]
   organizations: ["Anthropic", "U.S. District Court"]
@@ -138,7 +138,7 @@
   link: "https://www.npr.org/2025/06/25/nx-s1-5445242/federal-rules-in-ai-companys-favor-in-landmark-copyright-infringement-lawsuit-authors-bartz-graeber-wallace-johnson-anthropic"
   description: "U.S. District Judge William Alsup delivered a landmark split ruling in the Bartz v. Anthropic case: he found that training Claude on copyrighted books without permission constituted fair use under copyright law, calling it 'quintessentially transformative' like 'any reader aspiring to be a writer,' but simultaneously ruled that Anthropic's acquisition and storage of over 7 million pirated books in a 'central library' was copyright infringement not protected by fair use. The judge ordered a December trial to determine damages for the piracy violations, noting that purchasing books later would not absolve Anthropic of liability for the initial theft, though it may affect statutory damages up to $150,000 per work."
 
-- title: "Judge Rules Against Music Publishers Injunction"
+- title: "Judge Rules Against Music Publishers"
   date: "2025-03-25T00:00:00-08:00"
   tags: ["Legal"]
   organizations: ["Anthropic"]
@@ -148,7 +148,7 @@
   link: "https://www.bakerlaw.com/concord-music-group-inc-v-anthropic-pbc/"
   description: "U.S. District Judge Eumi Lee denied music publishers' request for a preliminary injunction to block Anthropic from using copyrighted song lyrics to train its AI models, ruling that the publishers failed to demonstrate irreparable harm and that their request was overly broad, while noting that fair use questions remain unsettled."
 
-- title: "Judge Rules For Thomson Reuters Copyright Case"
+- title: "Judge Rules For Thomson Reuters Copyright"
   date: "2025-02-11T00:00:00-05:00"
   tags: ["Legal"]
   organizations: ["Thomson Reuters", "U.S. District Court"]
@@ -158,7 +158,7 @@
   link: "https://www.wired.com/story/thomson-reuters-ai-copyright-lawsuit/"
   description: "U.S. Circuit Judge Stephanos Bibas ruled that defunct AI legal research firm Ross Intelligence's use of Thomson Reuters' Westlaw headnotes to train its competing AI platform was not protected by fair use under copyright law, marking the first major U.S. ruling against an AI company's fair use defense. The court found that Ross directly copied over 2,200 copyrighted headnotes through intermediary 'bulk memos' to create a competing legal search product, distinguishing this non-generative AI case from generative AI training scenarios."
 
-- title: "Human Authorship Required for Copyright - D.C. Circuit Court"
+- title: "Human Authorship Required for Copyright"
   date: "2025-03-18T00:00:00-04:00"
   tags: ["Legal", "Social"]
   organizations: ["U.S. Court of Appeals", "U.S. Copyright Office"]
@@ -167,3 +167,13 @@
   key_figures: []
   link: "https://www.clearygottlieb.com/news-and-insights/publication-listing/thaler-v-perlmutter-further-confirms-human-authorship-required-for-copyright-protection"
   description: "The U.S. Court of Appeals for the D.C. Circuit unanimously affirmed that AI-generated artwork cannot receive copyright protection when AI is listed as the sole author, ruling that the Copyright Act requires 'human authorship' as a bedrock requirement. The court upheld the Copyright Office's denial of Stephen Thaler's application for his 'Creativity Machine' artwork, while leaving open questions about the degree of human involvement needed for AI-assisted works to qualify for copyright protection."  
+
+- title: "Beijing Grants Copyright to AI Image"
+  date: "2023-11-27T00:00:00+08:00"
+  tags: ["Legal", "Social"]
+  organizations: ["Beijing Internet Court"]
+  models: ["Stable Diffusion"]
+  impact_areas: ["Regulation"]
+  key_figures: []
+  link: "https://copyrightblog.kluweriplaw.com/2024/02/02/beijing-internet-court-grants-copyright-to-ai-generated-image-for-the-first-time/"
+  description: "The Beijing Internet Court ruled in Li v. Liu that an AI-generated image created using Stable Diffusion with over 150 prompts constitutes a copyrightable work under Chinese Copyright Law, granting authorship rights to the human prompter based on their intellectual contribution through deliberate prompt selection, arrangement, and parameter adjustment. This landmark decision contrasts sharply with U.S. Copyright Office rulings that reject copyright protection for AI-prompted works, establishing China as taking a more permissive approach to AI-generated content copyright eligibility."

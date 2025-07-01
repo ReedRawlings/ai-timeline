@@ -119,6 +119,7 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     min-height: 60vh;
+    width: 100%;
 }
 .timeline-container::-webkit-scrollbar {
     display: none;
@@ -128,14 +129,15 @@ body {
 .timeline {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 200px;
+    grid-auto-columns: 280px;
     gap: 12px;
-    padding: 20px 40px;
+    padding: 20px 80px;
     position: relative;
     background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
     min-height: 100%;
     align-items: start;
     overflow: visible;
+    min-width: max-content;
 }
 
 /* Timeline groups - grid items */
@@ -144,7 +146,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 8px;
-    min-width: 200px;
+    min-width: 280px;
     z-index: 2;
     overflow: visible;
 }
