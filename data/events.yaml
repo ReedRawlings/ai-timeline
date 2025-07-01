@@ -237,3 +237,43 @@
   key_figures: []
   link: "https://copyrightblog.kluweriplaw.com/2024/02/02/beijing-internet-court-grants-copyright-to-ai-generated-image-for-the-first-time/"
   description: "The Beijing Internet Court ruled in Li v. Liu that an AI-generated image created using Stable Diffusion with over 150 prompts constitutes a copyrightable work under Chinese Copyright Law, granting authorship rights to the human prompter based on their intellectual contribution through deliberate prompt selection, arrangement, and parameter adjustment. This landmark decision contrasts sharply with U.S. Copyright Office rulings that reject copyright protection for AI-prompted works, establishing China as taking a more permissive approach to AI-generated content copyright eligibility."
+
+- title: "Meta's $14.3 Billion Scale AI Investment"
+  date: "2025-06-12T09:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["Meta"]
+  models: []
+  impact_areas: ["Market Competition"]
+  key_figures: ["Mark Zuckerberg", "Alexandr Wang"]
+  link: "https://ai.plainenglish.io/meta-pays-14-3-billion-for-superintelligence-28-year-old-college-dropout-ceo-in-charge-3fc950b6e12a"
+  description: "Meta Platforms announced a landmark $14.3 billion investment to acquire a 49% stake in Scale AI, valuing the data-labeling startup at over $29 billion. As part of the deal, Scale's 28-year-old co-founder and CEO Alexandr Wang joined Meta to lead a new 'Superintelligence' lab focused on achieving artificial general intelligence (AGI). This acquisition represents one of the largest AI-focused investments in history and signals Meta's aggressive push to compete with OpenAI and Google in the race for advanced AI capabilities, particularly following disappointing performance of its Llama 4 models."
+
+- title: "OpenAI o1 and o1-mini Release"
+  date: "2024-09-12T10:00:00-07:00"
+  tags: ["Model", "Product", ]
+  organizations: ["OpenAI"]
+  models: ["o1", "o1-mini"]
+  impact_areas: ["Reasoning AI", "Multimodal AI"]
+  key_figures: []
+  link: "https://openai.com/index/introducing-openai-o1-preview/"
+  description: "OpenAI released o1 (codenamed 'Strawberry') and o1-mini, breakthrough reasoning models that spend more time thinking before responding. The o1 model demonstrated remarkable performance improvements, scoring 83% on International Mathematics Olympiad qualifying exams compared to GPT-4o's 13%, and ranking in the 89th percentile on competitive programming questions. These models represent a significant advancement in AI's ability to tackle complex multi-step problems in mathematics, science, and coding through enhanced chain-of-thought reasoning."
+
+- title: "Claude 3.5 Sonnet Release"
+  date: "2024-06-20T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude 3.5 Sonnet"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-3-5-sonnet"
+  description: "Anthropic released Claude 3.5 Sonnet, setting new industry benchmarks for intelligence while operating at twice the speed of Claude 3 Opus. The model achieved graduate-level reasoning performance (59.4% on GPQA) and undergraduate-level knowledge (88.7% on MMLU), with particularly strong coding capabilities (64% on HumanEval). Claude 3.5 Sonnet excelled in visual reasoning tasks like interpreting charts and graphs, making it highly effective for business analytics and software development applications."
+
+- title: "Claude 4 Opus and Sonnet Release"
+  date: "2025-05-14T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude 4 Opus", "Claude 4 Sonnet"]
+  impact_areas: ["Reasoning AI", "Multimodal AI"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-4"
+  description: "Anthropic launched Claude 4, featuring both Opus and Sonnet variants with enhanced reasoning capabilities and safety features. Claude 4 Opus represents Anthropic's most powerful model with superior reasoning and advanced coding abilities, while Claude 4 Sonnet offers high-performance capabilities with exceptional efficiency. Both models feature extended thinking capabilities, improved safety guardrails, and enhanced multimodal processing, setting new standards in complex reasoning and advanced coding tasks."
