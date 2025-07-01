@@ -217,3 +217,13 @@
   key_figures: ["Sarah Silverman", "Ta-Nehisi Coates", "Vince Chhabria"]
   link: "https://www.wired.com/story/meta-scores-victory-ai-copyright-case/"
   description: "Federal Judge Vince Chhabria ruled in favor of Meta in a copyright lawsuit brought by 13 authors including Sarah Silverman and Ta-Nehisi Coates, finding that Meta's use of their books to train Llama AI models constituted fair use under copyright law, though the judge emphasized the ruling was limited to this specific case."
+
+- title: "Superintelligence Strategy Proposes MAIM Framework"
+  date: "2025-03-01T12:00:00-08:00"
+  tags: ["Research", "Policy", "Safety"]
+  organizations: []
+  models: []
+  impact_areas: ["Research", "Regulation", "Ethics"]
+  key_figures: ["Dan Hendrycks", "Eric Schmidt", "Thomas Wang"]
+  link: "https://www.nationalsecurity.ai/"
+  description: "Researchers published a superintelligence strategy framework introducing 'Mutual Assured AI Malfunction' (MAIM), a deterrence regime analogous to nuclear MAD where nations would sabotage rivals' destabilizing AI projects, alongside nonproliferation and competitiveness strategies to navigate the transformative risks of superintelligence."
