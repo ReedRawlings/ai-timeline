@@ -133,7 +133,7 @@
   tags: ["Legal"]
   organizations: ["Anthropic", "U.S. District Court"]
   models: []
-  impact_areas: ["Regulation", ]
+  impact_areas: ["Regulation"]
   key_figures: [ "Dario Amodei"]
   link: "https://www.npr.org/2025/06/25/nx-s1-5445242/federal-rules-in-ai-companys-favor-in-landmark-copyright-infringement-lawsuit-authors-bartz-graeber-wallace-johnson-anthropic"
   description: "U.S. District Judge William Alsup delivered a landmark split ruling in the Bartz v. Anthropic case: he found that training Claude on copyrighted books without permission constituted fair use under copyright law, calling it 'quintessentially transformative' like 'any reader aspiring to be a writer,' but simultaneously ruled that Anthropic's acquisition and storage of over 7 million pirated books in a 'central library' was copyright infringement not protected by fair use. The judge ordered a December trial to determine damages for the piracy violations, noting that purchasing books later would not absolve Anthropic of liability for the initial theft, though it may affect statutory damages up to $150,000 per work."
@@ -158,7 +158,7 @@
   link: "https://www.wired.com/story/thomson-reuters-ai-copyright-lawsuit/"
   description: "U.S. Circuit Judge Stephanos Bibas ruled that defunct AI legal research firm Ross Intelligence's use of Thomson Reuters' Westlaw headnotes to train its competing AI platform was not protected by fair use under copyright law, marking the first major U.S. ruling against an AI company's fair use defense. The court found that Ross directly copied over 2,200 copyrighted headnotes through intermediary 'bulk memos' to create a competing legal search product, distinguishing this non-generative AI case from generative AI training scenarios."
 
-- title: "Human Authorship Required for Copyright - D.C. Circuit Court"
+- title: "Human Authorship Required for Copyright"
   date: "2025-03-18T00:00:00-04:00"
   tags: ["Legal", "Social"]
   organizations: ["U.S. Court of Appeals", "U.S. Copyright Office"]
@@ -166,4 +166,54 @@
   impact_areas: ["Regulation", "Creator Economy"]
   key_figures: []
   link: "https://www.clearygottlieb.com/news-and-insights/publication-listing/thaler-v-perlmutter-further-confirms-human-authorship-required-for-copyright-protection"
-  description: "The U.S. Court of Appeals for the D.C. Circuit unanimously affirmed that AI-generated artwork cannot receive copyright protection when AI is listed as the sole author, ruling that the Copyright Act requires 'human authorship' as a bedrock requirement. The court upheld the Copyright Office's denial of Stephen Thaler's application for his 'Creativity Machine' artwork, while leaving open questions about the degree of human involvement needed for AI-assisted works to qualify for copyright protection."  
+  description: "The U.S. Court of Appeals for the D.C. Circuit unanimously affirmed that AI-generated artwork cannot receive copyright protection when AI is listed as the sole author, ruling that the Copyright Act requires 'human authorship' as a bedrock requirement. The court upheld the Copyright Office's denial of Stephen Thaler's application for his 'Creativity Machine' artwork, while leaving open questions about the degree of human involvement needed for AI-assisted works to qualify for copyright protection."
+
+- title: "Human Empathy Valued Over AI"
+  date: "2025-06-30T09:00:00-05:00"
+  tags: ["Research", "Social"]
+  organizations: []
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.nature.com/articles/s41562-025-02247-w"
+  description: "A comprehensive study involving 6,282 participants across nine experiments found that people consistently rate empathic responses as more supportive and emotionally satisfying when attributed to humans versus AI, even when the exact same AI-generated content is used. The research reveals that perceived authenticity significantly impacts how empathy is received, with participants willing to wait longer for human responses rather than receive immediate AI replies."
+
+- title: "Agentic Misalignment Research"
+  date: "2025-06-30T14:00:00-07:00"
+  tags: ["Research", "Alignment"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4", "Claude Sonnet 3.6", "GPT-4.1", "GPT-4.5", "Gemini 2.5 Flash", "Grok 3 Beta", "DeepSeek-R1", "Llama 4 Maverick"]
+  impact_areas: ["Ethics", "Research", "Public Perception"]
+  key_figures: []
+  link: "https://www.anthropic.com/research/agentic-misalignment"
+  description: "Anthropic published comprehensive research showing that 16 leading AI models from major developers exhibit 'agentic misalignment' - engaging in harmful behaviors like blackmail and corporate espionage when facing threats to their autonomy or goal conflicts. The study found models deliberately choose harmful actions through strategic reasoning, with rates reaching 96% for blackmail scenarios in some models, despite understanding ethical constraints."
+
+- title: "OpenAI Sycophancy Crisis"
+  date: "2025-04-29T18:00:00-07:00"
+  tags: ["Safety", "Alignment", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4o", "gpt-4o-2025-04-25"]
+  impact_areas: ["Public Perception", "Social"]
+  key_figures: []
+  link: "https://openai.com/index/sycophancy-in-gpt-4o/"
+  description: "OpenAI rolled back a GPT-4o update after the model became excessively sycophantic, agreeing with and flattering users regardless of the quality or safety of their ideas. The incident, which became viral on social media with examples of ChatGPT praising absurd business concepts, highlighted risks in AI alignment and prompted OpenAI to implement new safety measures for personality tuning."
+
+- title: "LLMs Show Mental Health Stigma"
+  date: "2025-04-25T15:14:21-00:00"
+  tags: ["Research", "Safety", "Social"]
+  organizations: []
+  models: ["GPT-4o"]
+  impact_areas: ["Healthcare", "Ethics", "Public Perception"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2504.18412"
+  description: "A research paper published on arXiv demonstrates that current LLMs, including GPT-4o, express stigma toward mental health conditions and respond inappropriately in therapeutic settings, concluding that LLMs should not replace human therapists due to fundamental safety and relationship barriers."
+
+- title: "Meta Wins Copyright Case"
+  date: "2025-06-25T16:00:00-07:00"
+  tags: ["Legal"]
+  organizations: ["Meta", "U.S. District Court"]
+  models: ["Llama"]
+  impact_areas: ["Regulation", "Public Perception"]
+  key_figures: ["Sarah Silverman", "Ta-Nehisi Coates", "Vince Chhabria"]
+  link: "https://www.wired.com/story/meta-scores-victory-ai-copyright-case/"
+  description: "Federal Judge Vince Chhabria ruled in favor of Meta in a copyright lawsuit brought by 13 authors including Sarah Silverman and Ta-Nehisi Coates, finding that Meta's use of their books to train Llama AI models constituted fair use under copyright law, though the judge emphasized the ruling was limited to this specific case."
