@@ -277,3 +277,53 @@
   key_figures: []
   link: "https://www.anthropic.com/news/claude-4"
   description: "Anthropic launched Claude 4, featuring both Opus and Sonnet variants with enhanced reasoning capabilities and safety features. Claude 4 Opus represents Anthropic's most powerful model with superior reasoning and advanced coding abilities, while Claude 4 Sonnet offers high-performance capabilities with exceptional efficiency. Both models feature extended thinking capabilities, improved safety guardrails, and enhanced multimodal processing, setting new standards in complex reasoning and advanced coding tasks."
+
+- title: "ChatGPT: Educational Friend or Foe?"
+  date: "2023-01-09T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT"]
+  impact_areas: ["Education", "Public Perception"]
+  key_figures: ["Kathy Hirsh-Pasek", "Elias Blinkoff"]
+  link: "https://www.brookings.edu/blog/education-plus-development/2023/01/09/chatgpt-educational-friend-or-foe/"
+  description: "Brookings fellows examine early classroom reactions to ChatGPT, weighing its potential to support critical-thinking pedagogy against risks of plagiarism and over-reliance on AI-generated text."
+
+- title: "AI and the Next Digital Divide in Education"
+  date: "2023-07-10T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT", "Generative AI (general)"]
+  impact_areas: ["Education", "Access & Equity"]
+  key_figures: ["Michael Trucano"]
+  link: "https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/"
+  description: "This analysis warns that unequal access to AI-driven learning tools could create a 'third digital divide' where affluent students benefit from both technology and human guidance while disadvantaged peers receive only the tech."
+
+- title: "Should Schools Ban or Integrate Generative AI in the Classroom?"
+  date: "2023-08-07T00:00:00-05:00"
+  tags: ["Policy", "Thinkpiece"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT", "Generative AI (general)"]
+  impact_areas: ["Education", "Regulation"]
+  key_figures: ["Regina Ta", "Darrell M. West"]
+  link: "https://www.brookings.edu/articles/should-schools-ban-or-integrate-generative-ai-in-the-classroom/"
+  description: "Surveying U.S. K-12 districts, Brookings outlines three emerging strategies—ban, integrate, or review—and recommends guiding principles and teacher training to harness generative AI while mitigating plagiarism and bias."
+
+- title: "What ChatGPT Can't Do: Educating for Curiosity and Creativity"
+  date: "2023-08-22T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT"]
+  impact_areas: ["Education", "Skills Development"]
+  key_figures: ["Natalie Evans", "Jamie Jirout", "Kathy Hirsh-Pasek"]
+  link: "https://www.brookings.edu/articles/what-chatgpt-cant-do-educating-for-curiosity-and-creativity/"
+  description: "Researchers argue that future-ready schooling must prioritize curiosity and creativity—skills AI cannot replicate—calling for classroom practices that encourage student questioning and divergent thinking."
+
+- title: "UNESCO Guidance on Generative AI in Education and Research"
+  date: "2023-09-07T00:00:00+02:00"
+  tags: ["Policy", "Guidance"]
+  organizations: ["UNESCO"]
+  models: ["Generative AI (general)"]
+  impact_areas: ["Education", "Regulation", "Ethics"]
+  key_figures: ["Audrey Azoulay"]
+  link: "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+  description: "UNESCO releases the first global guidance calling on governments to regulate generative AI in schools, set a minimum usage age of 13, and provide teacher training to ensure human-centered, equitable adoption."
