@@ -80,6 +80,10 @@
                         <option value="{{ . }}">{{ . }}</option>
                     {{ end }}
                 </select>
+                <select id="grouping-mode" class="filter-select">
+                    <option value="month" selected>By Month</option>
+                    <option value="week">By Week</option>
+                </select>
                 <button id="clear-filters" class="clear-filters-btn">Clear All</button>
             </div>
         </div>
@@ -101,7 +105,7 @@
                         </div>
                     {{ end }}
                     
-                    <div class="timeline-group" data-year-month="{{ printf "%d-%02d" ($date.Year) ($date.Format "01") }}">
+                    <div class="timeline-group monthly-group" data-year-month="{{ printf "%d-%02d" ($date.Year) ($date.Format "01") }}">
                         <div class="group-label">{{ $yearMonth }}</div>
                         <div class="group-events">
                     {{ $groupOpen = true }}

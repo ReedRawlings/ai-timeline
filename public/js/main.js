@@ -437,4 +437,73 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // We are already inside DOMContentLoaded, so call directly
     attachEventCardOverlays();
+
+    // === Grouping toggle (Month / Week) ===
+    function isoWeekStart(d) {
+        const day = (d.getDay() + 6) % 7; // 0 becomes Monday
+        const res = new Date(d);
+        res.setDate(d.getDate() - day);
+        res.setHours(0, 0, 0, 0);
+        return res;
+    }
+
+    function buildWeeklyGroups() {
+        const timeline = document.querySelector('.timeline');
+        const monthCards = Array.from(document.querySelectorAll('.monthly-group .event-card'));
+        const buckets = new Map();
+
+        monthCards.forEach(card => {
+            const start = isoWeekStart(new Date(card.dataset.eventDate));
+            const key = start.toISOString().slice(0, 10); // YYYY-MM-DD
+            if (!buckets.has(key)) buckets.set(key, []);
+            buckets.get(key).push(card.cloneNode(true));
+        });
+
+        [...buckets.entries()].sort(([a], [b]) => a.localeCompare(b)).forEach(([key, clones]) => {
+            const group = document.createElement('div');
+            group.className = 'timeline-group weekly-group';
+            group.style.display = 'none'; // hidden until toggled
+
+            const label = document.createElement('div');
+            label.className = 'group-label';
+            label.textContent = `${new Date(key).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}`;
+
+            const eventsWrap = document.createElement('div');
+            eventsWrap.className = 'group-events';
+            clones.forEach(c => eventsWrap.appendChild(c));
+
+            group.append(label, eventsWrap);
+            timeline.appendChild(group);
+        });
+
+        // Activate overlays for the cloned cards
+        attachEventCardOverlays();
+    }
+
+    // Build weekly groups once after initial rendering
+    buildWeeklyGroups();
+
+    // Toggle logic
+    const monthGroups = document.querySelectorAll('.monthly-group');
+    const weekGroups = document.querySelectorAll('.weekly-group');
+    const groupingSelect = document.getElementById('grouping-mode');
+
+    function refreshLayout() {
+        filterSystem.updateTimelineGroups();
+        stackCloseEvents();
+    }
+
+    function applyGrouping(mode) {
+        const byWeek = mode === 'week';
+        monthGroups.forEach(g => g.style.display = byWeek ? 'none' : 'grid');
+        weekGroups.forEach(g => g.style.display = byWeek ? 'grid' : 'none');
+        localStorage.setItem('aiTimelineGrouping', mode);
+        refreshLayout();
+    }
+
+    if (groupingSelect) {
+        groupingSelect.addEventListener('change', (e) => applyGrouping(e.target.value));
+        // Initialize on load based on stored preference
+        applyGrouping(localStorage.getItem('aiTimelineGrouping') || 'month');
+    }
 }); 

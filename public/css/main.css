@@ -168,13 +168,21 @@ body {
     justify-self: center;
 }
 
-/* Group events - grid container for cards */
+/* Group events - flex container for cards */
 .group-events {
-    display: grid;
-    gap: 8px;
-    justify-items: center;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: stretch;
+    justify-items: unset;
+    align-content: unset;
     overflow: visible;
+}
+
+.event-card,
+.event-card.stacked-event {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /* Event cards - compact style only, no overlay or hover expansion */
@@ -448,4 +456,9 @@ body {
 .site-header .container {
     position: relative;
     z-index: 1;
+}
+
+/* Week view hidden by default */
+.weekly-group {
+    display: none;
 }

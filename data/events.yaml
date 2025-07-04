@@ -277,3 +277,63 @@
   key_figures: []
   link: "https://www.anthropic.com/news/claude-4"
   description: "Anthropic launched Claude 4, featuring both Opus and Sonnet variants with enhanced reasoning capabilities and safety features. Claude 4 Opus represents Anthropic's most powerful model with superior reasoning and advanced coding abilities, while Claude 4 Sonnet offers high-performance capabilities with exceptional efficiency. Both models feature extended thinking capabilities, improved safety guardrails, and enhanced multimodal processing, setting new standards in complex reasoning and advanced coding tasks."
+
+- title: "AI-Generated Fake Cases"
+  date: "2025-07-02T00:00:00-05:00"
+  tags: ["Legal"]
+  organizations: []
+  models: []
+  impact_areas: ["Regulation"]
+  key_figures: ["Diana Lynch", "Yolanda Parker-Smith"]
+  link: "https://www.ajc.com/news/2025/07/judges-slam-atlanta-divorce-lawyers-apparent-use-of-ai/"
+  description: "Georgia Court of Appeals imposed a $2,500 penalty on attorney Diana Lynch for relying on artificial intelligence to generate fictitious legal cases and citations in divorce proceedings, representing the first known instance of a Georgia appellate court confronting AI hallucination issues in legal practice and highlighting the dangers of unchecked AI use in legal research."
+
+- title: "ChatGPT: Educational Friend or Foe?"
+  date: "2023-01-09T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece", "Education"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT"]
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.brookings.edu/blog/education-plus-development/2023/01/09/chatgpt-educational-friend-or-foe/"
+  description: "Brookings fellows examine early classroom reactions to ChatGPT, weighing its potential to support critical-thinking pedagogy against risks of plagiarism and over-reliance on AI-generated text."
+
+- title: "AI and the Next Digital Divide in Education"
+  date: "2023-07-10T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece", "Education"]
+  organizations: ["Brookings Institution"]
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/"
+  description: "This analysis warns that unequal access to AI-driven learning tools could create a 'third digital divide' where affluent students benefit from both technology and human guidance while disadvantaged peers receive only the tech."
+
+- title: "Should Schools Ban or Integrate Generative AI in the Classroom?"
+  date: "2023-08-07T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece", "Education"]
+  organizations: ["Brookings Institution"]
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.brookings.edu/articles/should-schools-ban-or-integrate-generative-ai-in-the-classroom/"
+  description: "Surveying U.S. K-12 districts, Brookings outlines three emerging strategies—ban, integrate, or review—and recommends guiding principles and teacher training to harness generative AI while mitigating plagiarism and bias."
+
+- title: "What ChatGPT Can't Do: Educating for Curiosity and Creativity"
+  date: "2023-08-22T00:00:00-05:00"
+  tags: ["Research", "Thinkpiece", "Education"]
+  organizations: ["Brookings Institution"]
+  models: ["ChatGPT"]
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.brookings.edu/articles/what-chatgpt-cant-do-educating-for-curiosity-and-creativity/"
+  description: "Researchers argue that future-ready schooling must prioritize curiosity and creativity—skills AI cannot replicate—calling for classroom practices that encourage student questioning and divergent thinking."
+  
+- title: "UNESCO Guidance on Generative AI in Education and Research"
+  date: "2023-09-07T00:00:00+02:00"
+  tags: ["Research", "Education"]
+  organizations: ["UNESCO"]
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
+  description: "UNESCO releases the first global guidance calling on governments to regulate generative AI in schools, set a minimum usage age of 13, and provide teacher training to ensure human-centered, equitable adoption."
