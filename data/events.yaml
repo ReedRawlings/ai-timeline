@@ -277,3 +277,43 @@
   key_figures: []
   link: "https://www.anthropic.com/news/claude-4"
   description: "Anthropic launched Claude 4, featuring both Opus and Sonnet variants with enhanced reasoning capabilities and safety features. Claude 4 Opus represents Anthropic's most powerful model with superior reasoning and advanced coding abilities, while Claude 4 Sonnet offers high-performance capabilities with exceptional efficiency. Both models feature extended thinking capabilities, improved safety guardrails, and enhanced multimodal processing, setting new standards in complex reasoning and advanced coding tasks."
+
+- title: "OpenAI Forms 'Superalignment' Team to Tackle Control of Super-Intelligent AI"
+  date: "2023-07-05T00:00:00-00:00"
+  tags: ["Alignment Research", "Governance"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["AI Safety", "Long-term Governance"]
+  key_figures: ["Ilya Sutskever", "Jan Leike"]
+  link: "https://techcrunch.com/2023/07/05/openai-is-forming-a-new-team-to-bring-superintelligent-ai-under-control/"
+  description: "OpenAI announced a dedicated Superalignment team that will receive 20% of the company's secured compute over the next four years to develop scalable oversight, robustness, and interpretability techniques capable of steering AI systems that exceed human intelligence."
+
+- title: "ChatGPT Code Interpreter Beta Released to All Plus Subscribers"
+  date: "2023-07-06T00:00:00-00:00"
+  tags: ["Product Launch", "Developer Tools"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4 (Code Interpreter)"]
+  impact_areas: ["Data Analysis", "Software Engineering"]
+  key_figures: []
+  link: "https://medium.com/the-ai-archives/chatgpts-new-code-interpreter-and-what-it-means-for-you-998881ee5cc9"
+  description: "OpenAI rolled out the Code Interpreter beta—an interactive Python sandbox with file-upload support—to all ChatGPT Plus users, enabling on-the-fly data analysis, visualization, and code execution directly inside the chat interface."
+
+- title: "Anthropic Releases Claude 2 with Public Beta and API Access"
+  date: "2023-07-11T00:00:00-00:00"
+  tags: ["Model Release"]
+  organizations: ["Anthropic"]
+  models: ["Claude 2"]
+  impact_areas: ["Enterprise AI", "Reasoning Assistants"]
+  key_figures: ["Dario Amodei"]
+  link: "https://techcrunch.com/2023/07/11/anthropic-releases-claude-2-the-second-generation-of-its-ai-chatbot/"
+  description: "Claude 2 delivers stronger reasoning, coding, and math skills, a 100K-token context window, and is now accessible via claude.ai for U.S. and U.K. users as well as through a paid API, positioning Anthropic as a direct competitor to OpenAI's GPT-4."
+
+- title: "OpenAI Adds Function-Calling and 16K Context to GPT-3.5-Turbo and GPT-4"
+  date: "2023-06-13T00:00:00-00:00"
+  tags: ["API Update"]
+  organizations: ["OpenAI"]
+  models: ["GPT-3.5-Turbo-0613", "GPT-4-0613"]
+  impact_areas: ["Tool Integration", "Structured Outputs"]
+  key_figures: []
+  link: "https://cobusgreyling.medium.com/openai-function-calling-98fbf9539d2a"
+  description: "OpenAI introduced native JSON function-calling, model versions fine-tuned for tool use, an optional 16K-token context window for GPT-3.5-Turbo, and price reductions—making it easier for developers to build agentic workflows and plugin-style applications."
