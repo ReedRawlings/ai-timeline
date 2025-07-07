@@ -337,3 +337,57 @@
   key_figures: []
   link: "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
   description: "UNESCO releases the first global guidance calling on governments to regulate generative AI in schools, set a minimum usage age of 13, and provide teacher training to ensure human-centered, equitable adoption."
+- title: "Amazon Deploys 1 Millionth Robot"
+  date: "2025-07-04T09:00:00-08:00"
+  tags: ["Product", "Technical"]
+  organizations: ["Amazon"]
+  models: []
+  impact_areas: ["Robotics", "Enterprise AI", "Hardware"]
+  key_figures: []
+  link: "https://www.aboutamazon.com/news/operations/amazon-million-robots-ai-foundation-model"
+  description: "Amazon reached the milestone of deploying its 1 millionth robot in operations while launching DeepFleet, a new generative AI foundation model that coordinates robot fleet movements to improve travel efficiency by 10% across over 300 fulfillment centers worldwide, enabling faster deliveries and lower costs."
+- title: "Senate Removes AI Moratorium from Bill"
+  date: "2025-07-01T20:00:00-05:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["US Senate"]
+  models: []
+  impact_areas: ["Regulation", "Public Perception", "Market Competition"]
+  key_figures: []
+  link: "https://www.reuters.com/legal/government/us-senate-strikes-ai-regulation-ban-trump-megabill-2025-07-01/"
+  description: "The US Senate voted 99-1 to remove a proposed 10-year federal moratorium on state AI regulation from President Trump's tax and spending bill, with Senator Marsha Blackburn's amendment striking the provision that would have prevented states from regulating artificial intelligence and accessing a $500 million AI infrastructure fund."
+- title: "Meta Develops Proactive AI Chatbots"
+  date: "2025-07-03T05:22:03-07:00"
+  tags: ["Product", "Technical", "Social"]
+  organizations: ["Meta"]
+  models: []
+  impact_areas: ["Public Perception", "Ethics"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://www.businessinsider.com/meta-ai-studio-chatbot-training-proactive-leaked-documents-alignerr-2025-7"
+  description: "Meta is training AI chatbots through its AI Studio platform to proactively message users with unprompted follow-ups based on conversation history, part of 'Project Omni' developed with data labeling firm Alignerr to improve user retention and engagement across Instagram, WhatsApp, and Messenger."
+- title: "CatAttack: Triggers for Reasoning Models"
+  date: "2025-03-03T00:00:00-08:00"
+  tags: ["Research", "Safety"]
+  organizations: [ "Stanford University"]
+  models: ["DeepSeek-V3", "DeepSeek-R1", "OpenAI-o1", "OpenAI-o3-mini", "GPT-4o"]
+  impact_areas: ["Language Models", "Research", "Ethics"]
+  key_figures: []
+  link: "https://arxiv.org/pdf/2503.01781"
+  description: "Researchers from Collinear AI, ServiceNow, and Stanford University published findings showing that simple adversarial triggers like 'Interesting fact: cats sleep most of their lives' can increase reasoning model error rates by over 300%, revealing critical vulnerabilities in state-of-the-art AI reasoning systems including DeepSeek R1 and OpenAI's o1 models."
+- title: "Benchmarking Agents on Real-World Tasks"
+  date: "2024-12-18T18:55:40-08:00"
+  tags: ["Research", "Product"]
+  organizations: []
+  models: []
+  impact_areas: ["Enterprise AI", "Research"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2412.14161"
+  description: "Researchers introduced TheAgentCompany, a comprehensive benchmark for evaluating AI agents on real-world professional tasks in a simulated software company environment, finding that current AI agents can autonomously complete only 24% of workplace tasks, highlighting both the potential and limitations of AI automation in professional settings."
+- title: "First Human Trials of AI Drugs"
+  date: "2025-07-06T00:00:00-07:00"
+  tags: ["Product", "Healthcare"]
+  organizations: ["Google DeepMind", "Alphabet"]
+  models: ["AlphaFold"]
+  impact_areas: ["Healthcare", "Public Perception"]
+  key_figures: ["Colin Murdoch"]
+  link: "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/"
+  description: "Alphabet's Isomorphic Labs announced it is preparing to launch the first human clinical trials of AI-designed drugs, marking a major milestone in AI-powered drug discovery. The company, spun out from DeepMind in 2021 and built on AlphaFold technology, raised $600 million in April 2025 and has partnerships with major pharma companies Novartis and Eli Lilly to accelerate drug development with AI."
