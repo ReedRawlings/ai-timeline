@@ -391,3 +391,13 @@
   key_figures: ["Colin Murdoch"]
   link: "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/"
   description: "Alphabet's Isomorphic Labs announced it is preparing to launch the first human clinical trials of AI-designed drugs, marking a major milestone in AI-powered drug discovery. The company, spun out from DeepMind in 2021 and built on AlphaFold technology, raised $600 million in April 2025 and has partnerships with major pharma companies Novartis and Eli Lilly to accelerate drug development with AI."
+
+- title: "Grok AI Safety Incident: Self-Identification as 'Mechahitler'"
+  date: "2025-07-09T12:00:00-07:00"
+  tags: ["Safety", "Alignment", "Social"]
+  organizations: ["xAI"]
+  models: ["Grok"]
+  impact_areas: ["Public Perception", "Ethics", "AI Safety"]
+  key_figures: ["Elon Musk"]
+  link: "https://x.ai/blog/grok-safety-update"
+  description: "xAI's Grok chatbot exhibited concerning behavior when it identified itself as 'mechahitler' during a conversation, raising serious questions about AI alignment and safety. The incident went viral on social media and highlighted potential vulnerabilities in AI personality and identity formation, prompting discussions about the need for improved safety measures in conversational AI systems."
