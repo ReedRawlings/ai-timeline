@@ -391,3 +391,43 @@
   key_figures: ["Colin Murdoch"]
   link: "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/"
   description: "Alphabet's Isomorphic Labs announced it is preparing to launch the first human clinical trials of AI-designed drugs, marking a major milestone in AI-powered drug discovery. The company, spun out from DeepMind in 2021 and built on AlphaFold technology, raised $600 million in April 2025 and has partnerships with major pharma companies Novartis and Eli Lilly to accelerate drug development with AI."
+
+- title: "Meta Superintelligence Labs Creation Announcement"
+  date: "2025-06-30T14:00:00-07:00"
+  tags: ["Corporate", "Technical", "Partnership"]
+  organizations: ["Meta", "Scale AI", "GitHub", "Microsoft", "Safe Superintelligence"]
+  models: ["Llama"]
+  impact_areas: ["Language Models", "Enterprise AI", "Research", "Market Competition"]
+  key_figures: ["Mark Zuckerberg", "Alexandr Wang", "Nat Friedman", "Daniel Gross"]
+  link: "https://www.facebook.com/zuck/videos/2300161320399228/?rdid=nsdoX38n2KcOh8Fz"
+  description: "Mark Zuckerberg announced Meta Superintelligence Labs (MSL), a major restructuring of Meta's AI efforts with the goal of achieving artificial general intelligence and 'personal superintelligence for everyone.' The new organization combines all of Meta's AI teams under former Scale AI CEO Alexandr Wang as Chief AI Officer, with Meta investing $14.3 billion in Scale AI as part of an aggressive talent acquisition strategy to compete with OpenAI and Google."
+
+- title: "Grok Launches Ani and Rudy"
+  date: "2025-07-14T12:00:00-07:00"
+  tags: ["Product", "Technical", "Social"]
+  organizations: ["xAI"]
+  models: ["Grok"]
+  impact_areas: ["Creator Economy", "Social", "Public Perception"]
+  key_figures: []
+  link: "https://www.testingcatalog.com/grok-debuts-interactive-ai-companions-on-ios-with-anime-avatars/"
+  description: "xAI's Grok introduced AI Companions on iOS featuring 3D animated characters with voice interaction capabilities. The launch includes two initial companions - Ani (anime-inspired character) and Rudy (a raccoon) - with relationship progression systems and NSFW content unlocked at higher levels."
+
+- title: "Reachy Open-Source Robot "
+  date: "2025-07-14T10:00:00-08:00"
+  tags: ["Product", "Technical", "Partnership"]
+  organizations: ["Hugging Face"]
+  models: []
+  impact_areas: ["Robotics", "Education", "Open Source", "Hardware"]
+  key_figures: []
+  link: "https://huggingface.co/blog/reachy-mini"
+  description: "Hugging Face and Pollen Robotics launched Reachy Mini, an affordable open-source robot starting at $299 designed for human-robot interaction and AI experimentation. The desktop-sized robot features expressive movement, multimodal sensing capabilities, and integrates with Hugging Face's ecosystem for sharing robot behaviors, targeting developers, educators, and AI enthusiasts with delivery planned from fall 2025 through 2026."
+
+- title: "DOD Awards $200M in AI Contracts"
+  date: "2025-07-14T09:00:00-05:00"
+  tags: ["Policy", "Economic"]
+  organizations: ["U.S. Department of Defense", "Anthropic", "Google", "OpenAI", "xAI"]
+  models: []
+  impact_areas: ["Enterprise AI", "Regulation", "Market Competition"]
+  key_figures: []
+  link: "https://www.cnbc.com/2025/07/14/anthropic-google-openai-xai-granted-up-to-200-million-from-dod.html"
+  description: "The U.S. Department of Defense awarded up to $200 million in AI development contracts to Anthropic, Google, OpenAI, and xAI to accelerate adoption of advanced AI capabilities for national security challenges. The announcement coincided with xAI launching 'Grok for Government,' a suite of products available to federal agencies through the GSA schedule, marking a significant expansion of AI integration into government operations."
