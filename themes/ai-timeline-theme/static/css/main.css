@@ -56,6 +56,31 @@ body {
     padding: 0 20px;
 }
 
+.filter-info {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 0.5rem;
+}
+
+.filter-info-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.filter-counter {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+.filter-counter span {
+    color: #667eea;
+    font-weight: 600;
+}
+
 .filter-bar.compact {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +104,17 @@ body {
     min-width: 120px;
     height: 2.1rem;
     flex-shrink: 0;
+}
+
+.filter-select.scaffolded {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+}
+
+.filter-select.scaffolded:hover {
+    border-color: #5a6fd8;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
 }
 
 .clear-filters-btn {

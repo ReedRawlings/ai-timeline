@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.setAttribute('aria-label', `View details for ${card.querySelector('.event-title').textContent}`);
     });
     
-    // Filter System
+    // Enhanced Filter System with Scaffolded Filters
     const filterSystem = {
         filters: {
             models: '',
@@ -19,41 +19,216 @@ document.addEventListener('DOMContentLoaded', function() {
             tags: ''
         },
         
+        // Store all available options for each filter type
+        allOptions: {
+            models: new Set(),
+            organizations: new Set(),
+            keyFigures: new Set(),
+            impactAreas: new Set(),
+            tags: new Set()
+        },
+        
+        // Flag to prevent recursive filter updates
+        isUpdatingFilters: false,
+        
         init() {
+            this.collectAllOptions();
             this.bindEvents();
+            this.updateScaffoldedFilters();
+            // Count only events from visible groups
+            let visibleCount = 0;
+            eventCards.forEach(card => {
+                const parentGroup = card.closest('.timeline-group');
+                if (parentGroup && parentGroup.style.display !== 'none') {
+                    visibleCount++;
+                }
+            });
+        },
+        
+        collectAllOptions() {
+            // Collect all unique values from event cards
+            eventCards.forEach(card => {
+                // Models
+                const models = card.getAttribute('data-models');
+                if (models) {
+                    models.split('|').forEach(model => this.allOptions.models.add(model));
+                }
+                
+                // Organizations
+                const organizations = card.getAttribute('data-organizations');
+                if (organizations) {
+                    organizations.split('|').forEach(org => this.allOptions.organizations.add(org));
+                }
+                
+                // Key Figures
+                const keyFigures = card.getAttribute('data-key-figures');
+                if (keyFigures) {
+                    keyFigures.split('|').forEach(figure => this.allOptions.keyFigures.add(figure));
+                }
+                
+                // Impact Areas
+                const impactAreas = card.getAttribute('data-impact-areas');
+                if (impactAreas) {
+                    impactAreas.split('|').forEach(area => this.allOptions.impactAreas.add(area));
+                }
+                
+                // Tags
+                const tags = card.getAttribute('data-tags');
+                if (tags) {
+                    tags.split('|').forEach(tag => this.allOptions.tags.add(tag));
+                }
+            });
         },
         
         bindEvents() {
             // Bind filter change events
             document.getElementById('model-filter').addEventListener('change', (e) => {
+                if (this.isUpdatingFilters) return;
                 this.filters.models = e.target.value;
-                this.applyFilters();
+                this.applyFiltersAndUpdateScaffolding();
             });
             
             document.getElementById('organization-filter').addEventListener('change', (e) => {
+                if (this.isUpdatingFilters) return;
                 this.filters.organizations = e.target.value;
-                this.applyFilters();
+                this.applyFiltersAndUpdateScaffolding();
             });
             
             document.getElementById('key-figure-filter').addEventListener('change', (e) => {
+                if (this.isUpdatingFilters) return;
                 this.filters.keyFigures = e.target.value;
-                this.applyFilters();
+                this.applyFiltersAndUpdateScaffolding();
             });
             
             document.getElementById('impact-area-filter').addEventListener('change', (e) => {
+                if (this.isUpdatingFilters) return;
                 this.filters.impactAreas = e.target.value;
-                this.applyFilters();
+                this.applyFiltersAndUpdateScaffolding();
             });
             
             document.getElementById('tag-filter').addEventListener('change', (e) => {
+                if (this.isUpdatingFilters) return;
                 this.filters.tags = e.target.value;
-                this.applyFilters();
+                this.applyFiltersAndUpdateScaffolding();
             });
             
             // Bind clear filters button
             document.getElementById('clear-filters').addEventListener('click', () => {
                 this.clearAllFilters();
             });
+        },
+        
+        updateScaffoldedFilters() {
+            // Get currently visible events from visible groups only
+            const visibleEvents = Array.from(eventCards).filter(card => {
+                const parentGroup = card.closest('.timeline-group');
+                return !card.classList.contains('filtered-out') && 
+                       parentGroup && parentGroup.style.display !== 'none';
+            });
+            
+            // Collect available options from visible events
+            const availableOptions = {
+                models: new Set(),
+                organizations: new Set(),
+                keyFigures: new Set(),
+                impactAreas: new Set(),
+                tags: new Set()
+            };
+            
+            visibleEvents.forEach(card => {
+                // Models
+                const models = card.getAttribute('data-models');
+                if (models) {
+                    models.split('|').forEach(model => availableOptions.models.add(model));
+                }
+                
+                // Organizations
+                const organizations = card.getAttribute('data-organizations');
+                if (organizations) {
+                    organizations.split('|').forEach(org => availableOptions.organizations.add(org));
+                }
+                
+                // Key Figures
+                const keyFigures = card.getAttribute('data-key-figures');
+                if (keyFigures) {
+                    keyFigures.split('|').forEach(figure => availableOptions.keyFigures.add(figure));
+                }
+                
+                // Impact Areas
+                const impactAreas = card.getAttribute('data-impact-areas');
+                if (impactAreas) {
+                    impactAreas.split('|').forEach(area => availableOptions.impactAreas.add(area));
+                }
+                
+                // Tags
+                const tags = card.getAttribute('data-tags');
+                if (tags) {
+                    tags.split('|').forEach(tag => availableOptions.tags.add(tag));
+                }
+            });
+            
+            // Update filter dropdowns with scaffolded options
+            this.updateFilterDropdown('model-filter', availableOptions.models, this.filters.models);
+            this.updateFilterDropdown('organization-filter', availableOptions.organizations, this.filters.organizations);
+            this.updateFilterDropdown('key-figure-filter', availableOptions.keyFigures, this.filters.keyFigures);
+            this.updateFilterDropdown('impact-area-filter', availableOptions.impactAreas, this.filters.impactAreas);
+            this.updateFilterDropdown('tag-filter', availableOptions.tags, this.filters.tags);
+        },
+        
+        updateFilterDropdown(filterId, availableOptions, currentValue) {
+            const select = document.getElementById(filterId);
+            const currentOptions = Array.from(select.options);
+            
+            // Keep the "All" option
+            const allOption = currentOptions[0];
+            
+            // Clear existing options except "All"
+            select.innerHTML = '';
+            select.appendChild(allOption);
+            
+            // Add available options, sorted alphabetically
+            const sortedOptions = Array.from(availableOptions).sort();
+            sortedOptions.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+            
+            // Restore current selection if it's still valid
+            if (currentValue && availableOptions.has(currentValue)) {
+                this.isUpdatingFilters = true;
+                select.value = currentValue;
+                this.isUpdatingFilters = false;
+            } else {
+                this.isUpdatingFilters = true;
+                select.value = '';
+                this.isUpdatingFilters = false;
+                // Update the filter state if the current value is no longer valid
+                const filterKey = this.getFilterKeyFromId(filterId);
+                if (filterKey) {
+                    this.filters[filterKey] = '';
+                }
+            }
+            
+            // Add visual indicator if this filter is being scaffolded (has fewer options than total)
+            const totalOptions = this.allOptions[this.getFilterKeyFromId(filterId)];
+            if (availableOptions.size < totalOptions.size) {
+                select.classList.add('scaffolded');
+            } else {
+                select.classList.remove('scaffolded');
+            }
+        },
+        
+        getFilterKeyFromId(filterId) {
+            const mapping = {
+                'model-filter': 'models',
+                'organization-filter': 'organizations',
+                'key-figure-filter': 'keyFigures',
+                'impact-area-filter': 'impactAreas',
+                'tag-filter': 'tags'
+            };
+            return mapping[filterId];
         },
         
         applyFilters() {
@@ -65,13 +240,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (shouldShow) {
                     this.showEvent(card);
-                    visibleCount++;
+                    // Only count cards from the currently visible grouping mode
+                    const parentGroup = card.closest('.timeline-group');
+                    if (parentGroup && parentGroup.style.display !== 'none') {
+                        visibleCount++;
+                    }
                 } else {
                     this.hideEvent(card);
                 }
             });
             
             this.updateTimelineGroups();
+        },
+        
+        applyFiltersAndUpdateScaffolding() {
+            // Apply filters first
+            this.applyFilters();
+            
+            // Then update scaffolding without triggering additional filter changes
+            this.isUpdatingFilters = true;
+            this.updateScaffoldedFilters();
+            this.isUpdatingFilters = false;
         },
         
         shouldShowEvent(card) {
@@ -133,11 +322,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         clearAllFilters() {
             // Reset all filter selects
+            this.isUpdatingFilters = true;
             document.getElementById('model-filter').value = '';
             document.getElementById('organization-filter').value = '';
             document.getElementById('key-figure-filter').value = '';
             document.getElementById('impact-area-filter').value = '';
             document.getElementById('tag-filter').value = '';
+            this.isUpdatingFilters = false;
             
             // Reset filter state
             this.filters = {
@@ -150,12 +341,21 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Show all events
             const eventCards = document.querySelectorAll('.event-card');
+            let visibleCount = 0;
             eventCards.forEach(card => {
                 this.showEvent(card);
+                // Only count cards from the currently visible grouping mode
+                const parentGroup = card.closest('.timeline-group');
+                if (parentGroup && parentGroup.style.display !== 'none') {
+                    visibleCount++;
+                }
             });
             
             this.updateTimelineGroups();
-        }
+            this.updateScaffoldedFilters();
+        },
+        
+
     };
     
     // Initialize filter system
@@ -499,6 +699,9 @@ document.addEventListener('DOMContentLoaded', function() {
         weekGroups.forEach(g => g.style.display = byWeek ? 'grid' : 'none');
         localStorage.setItem('aiTimelineGrouping', mode);
         refreshLayout();
+        
+        // Update event counter after grouping change
+        filterSystem.applyFilters();
     }
 
     if (groupingSelect) {

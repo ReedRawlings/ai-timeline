@@ -1,130 +1,77 @@
-# 🧠 AI Timeline Website
+# AI Timeline
 
-**Goal**: A public website that displays a chronological timeline of AI developments, with tags, filters, and optional admin editing via a CMS.
+A comprehensive timeline of significant events in artificial intelligence, built with Hugo and featuring an interactive timeline interface.
 
-**Live Site**: [https://reedrawlings.github.io/ai-timeline/](https://reedrawlings.github.io/ai-timeline/)
+## Features
 
----
+### Interactive Timeline
+- **Visual Timeline**: Events displayed in a horizontal scrolling timeline grouped by month
+- **Event Details**: Click on any event to see detailed information including organizations, models, key figures, and impact areas
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-##  Completed Features
+### Advanced Filtering System
+- **Scaffolded Filters**: Filters dynamically update to show only relevant options based on your current selections
+  - When you select a specific model (e.g., "GPT-4"), the Key Figures filter will only show figures associated with GPT-4 events
+  - Organizations filter updates to show only organizations involved in currently visible events
+  - All filters work together to provide a focused, relevant set of options
+- **Multiple Filter Types**:
+  - **Models**: Filter by specific AI models (GPT-4, Claude, DALL-E, etc.)
+  - **Organizations**: Filter by companies and institutions (OpenAI, Google, Meta, etc.)
+  - **Key Figures**: Filter by important people in AI (Sam Altman, Mark Zuckerberg, etc.)
+  - **Impact Areas**: Filter by areas of impact (Healthcare, Ethics, Regulation, etc.)
+  - **Tags**: Filter by event categories (Model, Product, Legal, Research, etc.)
+- **Real-time Counter**: See how many events match your current filter criteria
+- **Visual Indicators**: Scaffolded filters are highlighted with a special border and background
+- **Clear All**: Reset all filters with one click
 
-###  Core Infrastructure
-- **Static Site Generator**: Hugo configured and running
-- **Hosting**: GitHub Pages with GitHub Actions CI/CD pipeline
-- **Custom Theme**: `ai-timeline-theme` with horizontal scroll layout
-- **Content Structure**: Markdown-based events in `/content/events/`
+### Data Management
+- **YAML-based**: All event data stored in structured YAML format
+- **Validation**: Built-in validation scripts ensure data integrity
+- **Easy Updates**: Add new events by editing the YAML file
 
-###  Timeline Implementation
-- **Horizontal Scroll Layout**: Timeline displays events in chronological order
-- **Time Grouping**: Events grouped by month and year with labeled headers
-- **Event Cards**: Compact cards showing event name and date
-- **Stacking System**: Multiple events on same day stack vertically to prevent overlap
-- **Interactive Cards**: Hover/touch to expand with full details
-- **Responsive Design**: Mobile-friendly with touch interactions
+## Getting Started
 
-###  Content Management
-- **Event Structure**: Each event includes:
-  - Date and title
-  - Tags (Model, Product, Social, etc.)
-  - Related Models (ChatGPT, GPT-4, Claude, etc.)
-  - Related Organizations (OpenAI, Google, Microsoft, etc.)
-  - External links
+1. **Install Hugo**: Make sure you have Hugo installed on your system
+2. **Clone the repository**: `git clone [repository-url]`
+3. **Run the development server**: `hugo server`
+4. **Open your browser**: Navigate to `http://localhost:1313`
 
-### 🔧 Technical Features
-- **Taxonomies**: Tags, organizations, models, and categories
-- **SEO**: Sitemap, RSS feeds, meta descriptions
-- **Accessibility**: Keyboard navigation, ARIA labels, focus management
-- **Performance**: Minified CSS/JS, optimized builds
-- **Auto-deployment**: Push to main branch triggers GitHub Actions build
+## Data Structure
 
----
+Events are stored in `data/events.yaml` with the following structure:
 
-## 🚧 In Progress / Planned Features
-
-### 🔍 Filtering & Navigation
-- [ ] Client-side tag filtering
-- [ ] Year/month navigation controls
-- [ ] Search functionality
-- [ ] Filter by organization or model
-
-### 📊 Enhanced Timeline
-- [ ] Timeline zoom controls
-- [ ] Decade/century view options
-- [ ] Event clustering for dense periods
-- [ ] Timeline navigation arrows
-
-### 🎛️ Admin Interface
-- [ ] Netlify CMS integration
-- [ ] Content editing interface
-- [ ] Access control via Netlify Identity
-- [ ] Image upload support
-
-### 📱 Additional Features
-- [ ] Event sharing functionality
-- [ ] Export timeline data
-- [ ] Dark mode toggle
-- [ ] Timeline comparison views
-
----
-
-## 🚀 Development Workflow
-
-1. **Add Events**: Create new Markdown files in `content/events/`
-2. **Local Development**: Run `hugo server` for live preview
-3. **Push Changes**: Commit to `main` branch
-4. **Auto-Deploy**: GitHub Actions builds and deploys to GitHub Pages
-5. **Live Updates**: Site updates automatically within minutes
-
-### Local Development
-```bash
-# Clone the repository
-git clone https://github.com/ReedR/ai-timeline.git
-cd ai-timeline
-
-# Start local development server
-hugo server -D
-
-# Build for production
-hugo --minify
+```yaml
+- title: "Event Title"
+  date: "2023-01-01T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4"]
+  impact_areas: ["Multimodal AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://example.com"
+  description: "Event description..."
 ```
 
----
+## Filtering Examples
 
-## 📁 Project Structure
+### Scaffolded Filtering in Action
 
-```
-ai-timeline/
-├── content/events/          # Event markdown files
-├── themes/ai-timeline-theme/ # Custom theme
-│   ├── layouts/index.html   # Main timeline template
-│   ├── static/css/main.css  # Timeline styling
-│   └── static/js/main.js    # Interactive features
-├── .github/workflows/       # CI/CD pipeline
-├── config.toml             # Hugo configuration
-└── public/                 # Generated site (auto-created)
-```
+1. **Start with all events visible** - All filters show their complete set of options
+2. **Select "OpenAI" in Organizations** - The Key Figures filter now only shows figures associated with OpenAI events
+3. **Select "GPT-4" in Models** - The Impact Areas filter updates to show only areas impacted by GPT-4 events
+4. **Select "Sam Altman" in Key Figures** - The Tags filter shows only tags for events involving Sam Altman at OpenAI with GPT-4
 
----
+This creates a focused, relevant filtering experience where each selection narrows down the available options in other filters, making it easier to find specific events or explore relationships between different aspects of AI development.
 
-## 🎯 Next Steps
+## Contributing
 
-1. **Add more AI events** to build out the timeline
-2. **Implement filtering system** for better navigation
-3. **Add Netlify CMS** for easier content management
+1. Add new events to `data/events.yaml`
+2. Run validation: `python scripts/validate-yaml.py`
+3. Test your changes locally with `hugo server`
+4. Submit a pull request
 
+## License
 
----
-
-## 🤝 Contributing
-
-This project is open for contributions! Feel free to:
-- Add new AI events to the timeline
-- Improve the design and user experience
-- Add new features and functionality
-- Report bugs or suggest improvements
-
----
-
-**Tech Stack**: Hugo, GitHub Pages, GitHub Actions, Custom CSS/JS
+[Add your license information here]
 
 

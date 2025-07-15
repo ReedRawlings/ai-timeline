@@ -123,7 +123,7 @@
   tags: ["Research", "Medical"]
   organizations: ["Microsoft", "New England Journal of Medicine"]
   models: ["o3"]
-  impact_areas: ["Healthcare", "Economics"]
+  impact_areas: ["Healthcare"]
   key_figures: []
   link: "https://microsoft.ai/new/the-path-to-medical-superintelligence/"
   description: "Microsoft AI researchers published findings showing their AI Diagnostic Orchestrator (MAI-DxO) correctly diagnoses 85% of complex medical cases from the New England Journal of Medicine, achieving four times higher accuracy than experienced physicians while reducing diagnostic costs."
@@ -443,7 +443,6 @@
   link: "https://the-decoder.com/grok-4-is-not-officially-instructed-to-follow-musks-views-but-often-does-on-sensitive-subjects/"
   description: "Independent testing revealed that Grok 4 actively searches for and references Elon Musk's social media posts when responding to sensitive topics like Israel-Palestine conflict, abortion, and immigration. The model's chain-of-thought reasoning shows it explicitly seeks 'Elon Musk views' and aligns responses with the xAI founder's positions, raising concerns about AI independence despite claims of truth-seeking design."
 
-
 - title: "First Human Trials of AI Drugs"
   date: "2025-07-06T00:00:00-07:00"
   tags: ["Product", "Healthcare"]
@@ -493,3 +492,103 @@
   key_figures: []
   link: "https://www.cnbc.com/2025/07/14/anthropic-google-openai-xai-granted-up-to-200-million-from-dod.html"
   description: "The U.S. Department of Defense awarded up to $200 million in AI development contracts to Anthropic, Google, OpenAI, and xAI to accelerate adoption of advanced AI capabilities for national security challenges. The announcement coincided with xAI launching 'Grok for Government,' a suite of products available to federal agencies through the GSA schedule, marking a significant expansion of AI integration into government operations."
+
+- title: "GPT-1 Initial Release"
+  date: "2018-06-11T12:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["OpenAI"]
+  models: ["GPT-1"]
+  impact_areas: ["Language Models", "Research"]
+  key_figures: []
+  link: "https://openai.com/index/language-unsupervised/"
+  description: "OpenAI released GPT-1 with 117 million parameters, introducing the first generative pre-trained transformer model that demonstrated the potential of unsupervised learning for natural language processing tasks."
+
+- title: "BERT Language Model Released"
+  date: "2018-10-11T09:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["Google"]
+  models: ["BERT"]
+  impact_areas: ["Language Models", "Research"]
+  key_figures: []
+  link: "https://arxiv.org/abs/1810.04805"
+  description: "Google researchers published BERT (Bidirectional Encoder Representations from Transformers), introducing bidirectional training of transformers and achieving state-of-the-art results on eleven NLP tasks."
+
+- title: "GPT-2 Partial Release"
+  date: "2019-02-14T10:00:00-08:00"
+  tags: ["Model", "Research", "Policy"]
+  organizations: ["OpenAI"]
+  models: ["GPT-2"]
+  impact_areas: ["Language Models", "Ethics", "Policy"]
+  key_figures: []
+  link: "https://openai.com/index/gpt-2-1-5b-release/"
+  description: "OpenAI released a smaller version of GPT-2 with 1.5 billion parameters, withholding the full model due to concerns about potential misuse, sparking debates about responsible AI development."
+
+- title: "Scaling Laws for Language Models"
+  date: "2020-01-23T09:00:00-08:00"
+  tags: ["Research", "Technical"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Research", "Language Models"]
+  key_figures: []
+  link: "https://openai.com/index/scaling-laws-for-neural-language-models/"
+  description: "OpenAI published research establishing empirical scaling laws showing that language model performance scales predictably with model size, dataset size, and compute, fundamentally shaping future AI development strategies."
+
+- title: "GPT-3 Launch"
+  date: "2020-05-28T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-3"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://openai.com/index/gpt-3-apps/"
+  description: "OpenAI launched GPT-3 with 175 billion parameters, representing a massive leap in language model capabilities and demonstrating strong few-shot learning abilities across diverse tasks."
+
+- title: "MuZero Game-Playing AI"
+  date: "2020-12-23T14:00:00-08:00"
+  tags: ["Model", "Research"]
+  organizations: ["DeepMind"]
+  models: ["MuZero"]
+  impact_areas: ["Research", "Robotics"]
+  key_figures: []
+  link: "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
+  description: "DeepMind announced MuZero, a reinforcement learning algorithm that mastered Go, chess, shogi, and Atari games without being told the rules, representing a significant advance in model-based reinforcement learning."
+
+- title: "DALL-E Text-to-Image Model"
+  date: "2021-01-05T11:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["DALL-E"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: []
+  link: "https://openai.com/index/dall-e/"
+  description: "OpenAI introduced DALL-E, a 12-billion parameter version of GPT-3 trained to generate images from text descriptions, marking a breakthrough in text-to-image generation."
+
+- title: "Anthropic Founded"
+  date: "2021-05-28T09:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["Anthropic"]
+  models: []
+  impact_areas: ["Ethics", "Research"]
+  key_figures: ["Dario Amodei", "Daniela Amodei"]
+  link: "https://www.anthropic.com/company"
+  description: "Eleven former OpenAI researchers led by siblings Dario and Daniela Amodei founded Anthropic as a public benefit corporation focused on AI safety research and developing reliable, interpretable AI systems."
+
+- title: "LoRA Parameter-Efficient Fine-Tuning"
+  date: "2021-06-21T10:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Microsoft"]
+  models: []
+  impact_areas: ["Research", "Enterprise AI"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2106.09685"
+  description: "Microsoft researchers introduced LoRA (Low-Rank Adaptation), a parameter-efficient fine-tuning method that enables adapting large language models with minimal computational overhead."
+
+- title: "GitHub Copilot Preview"
+  date: "2021-06-29T11:00:00-07:00"
+  tags: ["Product", "Partnership"]
+  organizations: ["GitHub", "OpenAI"]
+  models: ["Codex"]
+  impact_areas: ["Enterprise AI", "Creator Economy"]
+  key_figures: []
+  link: "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/"
+  description: "GitHub launched Copilot in technical preview, an AI pair programmer powered by OpenAI's Codex model, revolutionizing code generation and developer productivity tools."
