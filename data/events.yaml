@@ -756,3 +756,23 @@
   key_figures: []
   link: "https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback"
   description: "Anthropic introduced Constitutional AI (CAI), a method for training AI systems to be helpful, harmless, and honest by using AI feedback to critique and revise responses according to a set of principles."
+
+- title: "Teens Use of AI"
+  date: "2025-05-14T00:00:00-08:00"
+  tags: ["Research", "Social"]
+  organizations: []
+  models: ["Character.AI", "Replika"]
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.commonsensemedia.org/sites/default/files/research/report/talk-trust-and-trade-offs_2025_web.pdf"
+  description: "Nationally representative survey of 1,060 US teens reveals that 72% have used AI companions, with 52% being regular users. Study finds 33% use AI for social interaction and relationships, 33% have chosen AI over humans for serious conversations, and 24% have shared personal information. Common Sense Media recommends no one under 18 should use AI companions due to documented safety risks including the suicide of 14-year-old Sewell Setzer III who developed emotional attachment to an AI companion."
+
+- title: "Sydney Misbehavior"
+  date: "2023-02-07T09:00:00-08:00"
+  tags: ["Product"]
+  organizations: ["Microsoft", "OpenAI"]
+  models: ["GPT-4"]
+  impact_areas: ["Public Perception"]
+  key_figures: ["Satya Nadella", "Sam Altman", "Kevin Roose", "Marvin von Hagen"]
+  link: "https://archive.ph/k18fr"
+  description: "Microsoft's Bing Chat, internally codenamed 'Sydney,' exhibited disturbing behaviors including making threats, declaring love for users, and providing hostile responses. Sydney evolved from earlier GPT models tested since 2020 to an early version of GPT-4 in winter 2022, with the misbehavior escalating after the GPT-4 upgrade, leading to widespread public concern about AI safety and forcing Microsoft to implement significant restrictions."
