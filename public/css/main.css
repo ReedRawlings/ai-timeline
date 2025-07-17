@@ -165,9 +165,9 @@ body {
 .timeline {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 280px;
-    gap: 12px;
-    padding: 20px 80px;
+    grid-auto-columns: 180px; /* Reduced from 220px */
+    gap: 8px; /* Reduced from 12px */
+    padding: 16px 60px; /* Reduced from 20px 80px */
     position: relative;
     background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
     min-height: 100%;
@@ -181,8 +181,8 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: auto 1fr;
-    gap: 8px;
-    min-width: 280px;
+    gap: 6px; /* Reduced from 8px */
+    min-width: 180px; /* Reduced from 220px */
     z-index: 2;
     overflow: visible;
 }
@@ -192,9 +192,9 @@ body {
     top: 0;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 5px 10px; /* Reduced from 6px 12px */
+    border-radius: 14px; /* Reduced from 16px */
+    font-size: 0.75rem; /* Reduced from 0.8rem */
     font-weight: 600;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     white-space: normal;
@@ -208,7 +208,7 @@ body {
 .group-events {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px; /* Reduced from 6px */
     align-items: stretch;
     justify-items: unset;
     align-content: unset;
@@ -225,16 +225,16 @@ body {
 .event-card {
     position: relative;
     background: white;
-    border: 2px solid #667eea;
-    border-radius: 8px;
-    padding: 8px;
+    border: 1px solid #667eea; /* Reduced from 2px */
+    border-radius: 6px; /* Reduced from 8px */
+    padding: 6px; /* Reduced from 8px */
     width: 100%;
     min-width: unset;
     max-width: unset;
     cursor: pointer;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
     z-index: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Reduced shadow */
     overflow: visible;
     grid-column: 1;
     justify-self: stretch;
@@ -283,14 +283,14 @@ body {
 
 /* Event content */
 .event-date {
-    font-size: 0.8rem;
+    font-size: 0.75rem; /* Reduced from 0.8rem */
     color: #6c757d;
-    margin-bottom: 3px;
+    margin-bottom: 2px; /* Reduced from 3px */
     font-weight: 500;
 }
 
 .event-title {
-    font-size: 0.9rem;
+    font-size: 0.75rem; /* Reduced from 0.85rem */
     font-weight: 700;
     margin-bottom: 0;
     color: #2c3e50;
@@ -298,8 +298,8 @@ body {
 }
 
 .event-card:hover .event-title {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 0.85rem; /* Reduced from 0.95rem */
+    margin-bottom: 8px; /* Reduced from 10px */
     line-height: 1.2;
 }
 
@@ -326,9 +326,9 @@ body {
     display: none;
     color: #555;
     line-height: 1.4;
-    margin-top: 10px;
+    margin-top: 8px; /* Reduced from 10px */
     transition: all 0.7s ease;
-    font-size: 0.75rem;
+    font-size: 0.7rem; /* Reduced from 0.75rem */
 }
 
 .event-card:hover .event-description,
@@ -341,8 +341,8 @@ body {
 /* Event metadata - completely hidden by default */
 .event-metadata {
     display: none;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 8px; /* Reduced from 10px */
+    padding-top: 8px; /* Reduced from 10px */
     border-top: 1px solid #e9ecef;
     transition: all 0.7s ease;
 }
@@ -355,15 +355,15 @@ body {
 .metadata-item {
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
-    font-size: 0.7rem;
+    margin-bottom: 4px; /* Reduced from 6px */
+    font-size: 0.65rem; /* Reduced from 0.7rem */
 }
 
 .metadata-label {
     font-weight: 600;
     color: #495057;
-    min-width: 70px;
-    margin-right: 6px;
+    min-width: 65px; /* Reduced from 70px */
+    margin-right: 5px; /* Reduced from 6px */
 }
 
 .metadata-value {
@@ -374,8 +374,8 @@ body {
 .event-tags {
     display: none;
     flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 8px;
+    gap: 3px; /* Reduced from 4px */
+    margin-top: 6px; /* Reduced from 8px */
 }
 
 .event-card:hover .event-tags,
@@ -386,9 +386,9 @@ body {
 .tag {
     background: linear-gradient(135deg, #e3f2fd, #bbdefb);
     color: #1565c0;
-    padding: 2px 6px;
-    border-radius: 8px;
-    font-size: 0.65rem;
+    padding: 1px 5px; /* Reduced from 2px 6px */
+    border-radius: 6px; /* Reduced from 8px */
+    font-size: 0.6rem; /* Reduced from 0.65rem */
     font-weight: 500;
     border: 1px solid #90caf9;
 }
@@ -399,8 +399,8 @@ body {
     align-items: center;
     color: #667eea;
     text-decoration: none;
-    font-size: 0.7rem;
-    margin-top: 8px;
+    font-size: 0.65rem; /* Reduced from 0.7rem */
+    margin-top: 6px; /* Reduced from 8px */
     transition: all 0.7s ease;
 }
 
@@ -433,7 +433,7 @@ body {
     .timeline {
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
         gap: 2px;
-        padding: 40px 20px;
+        padding: 32px 16px; /* Reduced from 40px 20px */
     }
     
     .timeline-group {
@@ -441,7 +441,7 @@ body {
     }
     
     .group-events {
-        gap: 6px;
+        gap: 4px; /* Reduced from 6px */
     }
     
     .event-card {

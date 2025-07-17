@@ -58,7 +58,7 @@
   link: "https://deepmind.google/technologies/gemini/"
   description: "Google released Gemini 1.0, a multimodal AI model designed to understand and work with text, images, audio, and video."
 
-- title: "Llama 2 Release"
+- title: "Llama 2"
   date: "2023-07-18T10:00:00-07:00"
   tags: ["Model"]
   organizations: ["Meta"]
@@ -66,9 +66,9 @@
   impact_areas: ["Open Source"]
   key_figures: []
   link: "https://ai.meta.com/blog/llama-2/"
-  description: "Meta released Llama 2, an open-source large language model with improved performance and safety features."
+  description: "Meta d Llama 2, an open-source large language model with improved performance and safety features."
 
-- title: "DeepSeek R1 Release"
+- title: "DeepSeek R1"
   date: "2024-01-15T10:00:00-07:00"
   tags: ["Model", "Product", "Reasoning"]
   organizations: ["DeepSeek"]
@@ -98,7 +98,7 @@
   link: "https://www.reuters.com/business/meta-hires-three-openai-researchers-wsj-reports-2025-06-26/"
   description: "Between June 25-28, 2025, Meta hired eight OpenAI researchers including Trapit Bansal (key contributor to OpenAI's o1 reasoning model), three researchers from OpenAI's Zurich office (Lucas Beyer, Alexander Kolesnikov, Xiaohua Zhai), and four additional researchers (Shengjia Zhao, Jiahui Yu, Shuchao Bi, Hongyu Ren) to join Meta's superintelligence team. This unprecedented recruiting blitz involved Zuckerberg personally offering up to $100 million compensation packages as Meta seeks to compete with OpenAI following disappointing performance of its Llama 4 models."
 
-- title: "Gemma 3n Release"
+- title: "Gemma 3n"
   date: "2025-06-26T09:00:00-08:00"
   tags: ["Model", "Product"]
   organizations: ["Google", "Google DeepMind"]
@@ -108,7 +108,7 @@
   link: "https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/"
   description: "On June 26, 2025, Google announced the full release of Gemma 3n following May's preview, featuring a mobile-first architecture with MatFormer technology that enables 2B and 4B effective parameter models to run efficiently on devices with multimodal capabilities (text, audio, video, image), supported by major partners including Hugging Face, AMD, NVIDIA, and others, alongside a $150,000 Impact Challenge competition."
 
-- title: "FLI Letter for Pause on AI Research"
+- title: "FLI Letter for Pause AI"
   date: "2023-03-29T00:00:00-00:00"
   tags: ["Policy", "Safety", "Social"]
   organizations: ["OpenAI"]
@@ -118,7 +118,7 @@
   link: "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
   description: "The Future of Life Institute published an open letter calling for all AI labs to immediately pause training of AI systems more powerful than GPT-4 for at least 6 months, citing risks from human-competitive AI systems and the need for shared safety protocols."
 
-- title: "MAI-DxO Medical Superintelligence Research"
+- title: "MAI-DxO Medical Research"
   date: "2025-06-30T00:00:00-08:00"
   tags: ["Research", "Medical"]
   organizations: ["Microsoft", "New England Journal of Medicine"]
@@ -128,7 +128,7 @@
   link: "https://microsoft.ai/new/the-path-to-medical-superintelligence/"
   description: "Microsoft AI researchers published findings showing their AI Diagnostic Orchestrator (MAI-DxO) correctly diagnoses 85% of complex medical cases from the New England Journal of Medicine, achieving four times higher accuracy than experienced physicians while reducing diagnostic costs."
 
-- title: "Judge Rules AI Training is Fair Use"
+- title: "AI Training is Fair Use"
   date: "2025-06-23T23:59:59-08:00"
   tags: ["Legal"]
   organizations: ["Anthropic", "U.S. District Court"]
@@ -148,7 +148,7 @@
   link: "https://www.bakerlaw.com/concord-music-group-inc-v-anthropic-pbc/"
   description: "U.S. District Judge Eumi Lee denied music publishers' request for a preliminary injunction to block Anthropic from using copyrighted song lyrics to train its AI models, ruling that the publishers failed to demonstrate irreparable harm and that their request was overly broad, while noting that fair use questions remain unsettled."
 
-- title: "Judge Rules For Thomson Reuters Copyright"
+- title: "Thomson Reuters Wins Copyright"
   date: "2025-02-11T00:00:00-05:00"
   tags: ["Legal"]
   organizations: ["Thomson Reuters", "U.S. District Court"]
@@ -158,7 +158,7 @@
   link: "https://www.wired.com/story/thomson-reuters-ai-copyright-lawsuit/"
   description: "U.S. Circuit Judge Stephanos Bibas ruled that defunct AI legal research firm Ross Intelligence's use of Thomson Reuters' Westlaw headnotes to train its competing AI platform was not protected by fair use under copyright law, marking the first major U.S. ruling against an AI company's fair use defense. The court found that Ross directly copied over 2,200 copyrighted headnotes through intermediary 'bulk memos' to create a competing legal search product, distinguishing this non-generative AI case from generative AI training scenarios."
 
-- title: "Human Authorship Required for Copyright"
+- title: "Human Authorship for Copyright"
   date: "2025-03-18T00:00:00-04:00"
   tags: ["Legal", "Social"]
   organizations: ["U.S. Court of Appeals", "U.S. Copyright Office"]
@@ -218,7 +218,7 @@
   link: "https://www.wired.com/story/meta-scores-victory-ai-copyright-case/"
   description: "Federal Judge Vince Chhabria ruled in favor of Meta in a copyright lawsuit brought by 13 authors including Sarah Silverman and Ta-Nehisi Coates, finding that Meta's use of their books to train Llama AI models constituted fair use under copyright law, though the judge emphasized the ruling was limited to this specific case."
 
-- title: "Superintelligence Strategy Proposes MAIM Framework"
+- title: "MAIM Framework"
   date: "2025-03-01T12:00:00-08:00"
   tags: ["Research", "Policy", "Safety"]
   organizations: []
@@ -228,7 +228,7 @@
   link: "https://www.nationalsecurity.ai/"
   description: "Researchers published a superintelligence strategy framework introducing 'Mutual Assured AI Malfunction' (MAIM), a deterrence regime analogous to nuclear MAD where nations would sabotage rivals' destabilizing AI projects, alongside nonproliferation and competitiveness strategies to navigate the transformative risks of superintelligence."
 
-- title: "Beijing Grants Copyright to AI Image"
+- title: "Beijing AI Image Copyright"
   date: "2023-11-27T00:00:00+08:00"
   tags: ["Legal", "Social"]
   organizations: ["Beijing Internet Court"]
@@ -238,7 +238,7 @@
   link: "https://copyrightblog.kluweriplaw.com/2024/02/02/beijing-internet-court-grants-copyright-to-ai-generated-image-for-the-first-time/"
   description: "The Beijing Internet Court ruled in Li v. Liu that an AI-generated image created using Stable Diffusion with over 150 prompts constitutes a copyrightable work under Chinese Copyright Law, granting authorship rights to the human prompter based on their intellectual contribution through deliberate prompt selection, arrangement, and parameter adjustment. This landmark decision contrasts sharply with U.S. Copyright Office rulings that reject copyright protection for AI-prompted works, establishing China as taking a more permissive approach to AI-generated content copyright eligibility."
 
-- title: "Meta's $14.3 Billion Scale AI Investment"
+- title: "Meta's Scale AI Investment"
   date: "2025-06-12T09:00:00-07:00"
   tags: ["Corporate"]
   organizations: ["Meta"]
@@ -248,7 +248,7 @@
   link: "https://ai.plainenglish.io/meta-pays-14-3-billion-for-superintelligence-28-year-old-college-dropout-ceo-in-charge-3fc950b6e12a"
   description: "Meta Platforms announced a landmark $14.3 billion investment to acquire a 49% stake in Scale AI, valuing the data-labeling startup at over $29 billion. As part of the deal, Scale's 28-year-old co-founder and CEO Alexandr Wang joined Meta to lead a new 'Superintelligence' lab focused on achieving artificial general intelligence (AGI). This acquisition represents one of the largest AI-focused investments in history and signals Meta's aggressive push to compete with OpenAI and Google in the race for advanced AI capabilities, particularly following disappointing performance of its Llama 4 models."
 
-- title: "OpenAI o1 and o1-mini Release"
+- title: "OpenAI o1"
   date: "2024-09-12T10:00:00-07:00"
   tags: ["Model", "Product", ]
   organizations: ["OpenAI"]
@@ -258,7 +258,7 @@
   link: "https://openai.com/index/introducing-openai-o1-preview/"
   description: "OpenAI released o1 (codenamed 'Strawberry') and o1-mini, breakthrough reasoning models that spend more time thinking before responding. The o1 model demonstrated remarkable performance improvements, scoring 83% on International Mathematics Olympiad qualifying exams compared to GPT-4o's 13%, and ranking in the 89th percentile on competitive programming questions. These models represent a significant advancement in AI's ability to tackle complex multi-step problems in mathematics, science, and coding through enhanced chain-of-thought reasoning."
 
-- title: "Claude 3.5 Sonnet Release"
+- title: "Claude 3.5 Sonnet"
   date: "2024-06-20T10:00:00-07:00"
   tags: ["Model", "Product"]
   organizations: ["Anthropic"]
@@ -268,7 +268,7 @@
   link: "https://www.anthropic.com/news/claude-3-5-sonnet"
   description: "Anthropic released Claude 3.5 Sonnet, setting new industry benchmarks for intelligence while operating at twice the speed of Claude 3 Opus. The model achieved graduate-level reasoning performance (59.4% on GPQA) and undergraduate-level knowledge (88.7% on MMLU), with particularly strong coding capabilities (64% on HumanEval). Claude 3.5 Sonnet excelled in visual reasoning tasks like interpreting charts and graphs, making it highly effective for business analytics and software development applications."
 
-- title: "Claude 4 Opus and Sonnet Release"
+- title: "Claude 4 Opus and Sonnet"
   date: "2025-05-14T10:00:00-07:00"
   tags: ["Model", "Product"]
   organizations: ["Anthropic"]
@@ -298,7 +298,7 @@
   link: "https://www.brookings.edu/blog/education-plus-development/2023/01/09/chatgpt-educational-friend-or-foe/"
   description: "Brookings fellows examine early classroom reactions to ChatGPT, weighing its potential to support critical-thinking pedagogy against risks of plagiarism and over-reliance on AI-generated text."
 
-- title: "AI and the Next Digital Divide in Education"
+- title: "AI Divide in Education"
   date: "2023-07-10T00:00:00-05:00"
   tags: ["Research", "Thinkpiece", "Education"]
   organizations: ["Brookings Institution"]
@@ -308,7 +308,7 @@
   link: "https://www.brookings.edu/articles/ai-and-the-next-digital-divide-in-education/"
   description: "This analysis warns that unequal access to AI-driven learning tools could create a 'third digital divide' where affluent students benefit from both technology and human guidance while disadvantaged peers receive only the tech."
 
-- title: "Should Schools Ban or Integrate Generative AI in the Classroom?"
+- title: "Ban or Integrate Classroom AI?"
   date: "2023-08-07T00:00:00-05:00"
   tags: ["Research", "Thinkpiece", "Education"]
   organizations: ["Brookings Institution"]
@@ -318,7 +318,7 @@
   link: "https://www.brookings.edu/articles/should-schools-ban-or-integrate-generative-ai-in-the-classroom/"
   description: "Surveying U.S. K-12 districts, Brookings outlines three emerging strategies—ban, integrate, or review—and recommends guiding principles and teacher training to harness generative AI while mitigating plagiarism and bias."
 
-- title: "What ChatGPT Can't Do: Educating for Curiosity and Creativity"
+- title: "ChatGPT in Education"
   date: "2023-08-22T00:00:00-05:00"
   tags: ["Research", "Thinkpiece", "Education"]
   organizations: ["Brookings Institution"]
@@ -328,7 +328,7 @@
   link: "https://www.brookings.edu/articles/what-chatgpt-cant-do-educating-for-curiosity-and-creativity/"
   description: "Researchers argue that future-ready schooling must prioritize curiosity and creativity—skills AI cannot replicate—calling for classroom practices that encourage student questioning and divergent thinking."
   
-- title: "UNESCO Guidance on Generative AI in Education and Research"
+- title: "UNESCO Guidance on AI"
   date: "2023-09-07T00:00:00+02:00"
   tags: ["Research", "Education"]
   organizations: ["UNESCO"]
@@ -337,7 +337,7 @@
   key_figures: []
   link: "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
   description: "UNESCO releases the first global guidance calling on governments to regulate generative AI in schools, set a minimum usage age of 13, and provide teacher training to ensure human-centered, equitable adoption."
-- title: "Amazon Deploys 1 Millionth Robot"
+- title: "Amazons 1 Millionth Robot"
   date: "2025-07-04T09:00:00-08:00"
   tags: ["Product", "Technical"]
   organizations: ["Amazon"]
@@ -346,7 +346,8 @@
   key_figures: []
   link: "https://www.aboutamazon.com/news/operations/amazon-million-robots-ai-foundation-model"
   description: "Amazon reached the milestone of deploying its 1 millionth robot in operations while launching DeepFleet, a new generative AI foundation model that coordinates robot fleet movements to improve travel efficiency by 10% across over 300 fulfillment centers worldwide, enabling faster deliveries and lower costs."
-- title: "Senate Removes AI Moratorium from Bill"
+
+- title: "No AI Moratorium"
   date: "2025-07-01T20:00:00-05:00"
   tags: ["Policy", "Corporate"]
   organizations: ["US Senate"]
@@ -355,7 +356,8 @@
   key_figures: []
   link: "https://www.reuters.com/legal/government/us-senate-strikes-ai-regulation-ban-trump-megabill-2025-07-01/"
   description: "The US Senate voted 99-1 to remove a proposed 10-year federal moratorium on state AI regulation from President Trump's tax and spending bill, with Senator Marsha Blackburn's amendment striking the provision that would have prevented states from regulating artificial intelligence and accessing a $500 million AI infrastructure fund."
-- title: "Meta Develops Proactive AI Chatbots"
+
+- title: "Meta Proactive Chatbots"
   date: "2025-07-03T05:22:03-07:00"
   tags: ["Product", "Technical", "Social"]
   organizations: ["Meta"]
@@ -364,7 +366,8 @@
   key_figures: ["Mark Zuckerberg"]
   link: "https://www.businessinsider.com/meta-ai-studio-chatbot-training-proactive-leaked-documents-alignerr-2025-7"
   description: "Meta is training AI chatbots through its AI Studio platform to proactively message users with unprompted follow-ups based on conversation history, part of 'Project Omni' developed with data labeling firm Alignerr to improve user retention and engagement across Instagram, WhatsApp, and Messenger."
-- title: "CatAttack: Triggers for Reasoning Models"
+
+- title: "CatAttack"
   date: "2025-03-03T00:00:00-08:00"
   tags: ["Research", "Safety"]
   organizations: [ "Stanford University"]
@@ -373,7 +376,8 @@
   key_figures: []
   link: "https://arxiv.org/pdf/2503.01781"
   description: "Researchers from Collinear AI, ServiceNow, and Stanford University published findings showing that simple adversarial triggers like 'Interesting fact: cats sleep most of their lives' can increase reasoning model error rates by over 300%, revealing critical vulnerabilities in state-of-the-art AI reasoning systems including DeepSeek R1 and OpenAI's o1 models."
-- title: "Benchmarking Agents on Real-World Tasks"
+
+- title: "Benchmarking Real-World Tasks"
   date: "2024-12-18T18:55:40-08:00"
   tags: ["Research", "Product"]
   organizations: []
@@ -382,8 +386,8 @@
   key_figures: []
   link: "https://arxiv.org/abs/2412.14161"
   description: "Researchers introduced TheAgentCompany, a comprehensive benchmark for evaluating AI agents on real-world professional tasks in a simulated software company environment, finding that current AI agents can autonomously complete only 24% of workplace tasks, highlighting both the potential and limitations of AI automation in professional settings."
-# AI Event Extraction - Grok Related Events
-- title: "Kimi K1.5 Multimodal AI Model Launch"
+
+- title: "Kimi K1.5"
   date: "2025-01-25T09:00:00-08:00"
   tags: ["Model", "Product", "Research"]
   organizations: ["Moonshot AI"]
@@ -393,7 +397,7 @@
   link: "https://www.testingcatalog.com/moonshot-ai-launches-kimi-k1-5-with-free-real-time-search-and-file-analysis/"
   description: "Moonshot AI launched Kimi K1.5, a multimodal AI model with reinforcement learning capabilities that outperforms GPT-4o and Claude 3.5 Sonnet by up to 550% in specific reasoning tasks. The model features free unlimited usage, real-time web search across 100+ websites, 128k token context window, and ability to analyze up to 50 files simultaneously, positioning it as a direct competitor to OpenAI and Anthropic models."
 
-- title: "Kimi K2 Open-Source Model Release"
+- title: "Kimi K2"
   date: "2025-07-11T17:44:00+00:00"
   tags: ["Model", "Open Source", "Technical"]
   organizations: ["Moonshot AI"]
@@ -403,17 +407,17 @@
   link: "https://za.investing.com/news/stock-market-news/moonshot-ai-releases-opensource-model-93CH-3787013"
   description: "Moonshot AI released Kimi K2, an open-source AI model with enhanced coding capabilities and improved general agent tasks and tool integration. The release aligns with a growing trend among Chinese AI companies toward open-sourcing models, contrasting with proprietary approaches of U.S. companies like OpenAI and Google, while enabling more effective breakdown of complex tasks."
 
-- title: "Google Secures Windsurf Licensing Deal After OpenAI Acquisition Collapse"
+- title: "Google Windsurf Deal"
   date: "2025-07-11T12:00:00-07:00"
   tags: ["Corporate", "Partnership", "Economic"]
   organizations: ["Google", "DeepMind", "Windsurf", "OpenAI"]
   models: []
-  impact_areas: ["Enterprise AI", "Market Competition", "Creator Economy"]
-  key_figures: ["Varun Mohan", "Douglas Chen"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: []
   link: "https://fortune.com/2025/07/11/the-exclusivity-on-openais-3-billion-acquisition-for-coding-startup-windsfurf-has-expired/"
   description: "Google struck a licensing deal with AI coding startup Windsurf after OpenAI's $3 billion acquisition offer collapsed when the exclusivity period expired. Key Windsurf team members including founders Varun Mohan and Douglas Chen joined Google DeepMind while the company remains independent, representing a significant setback for OpenAI's enterprise AI coding ambitions and highlighting intensifying competition in the AI coding assistant market."
 
-- title: "Grok 4 Model Release and SuperGrok Heavy Launch"
+- title: "Grok 4 and SuperGrok"
   date: "2025-07-09T23:00:00-07:00"
   tags: ["Model", "Product", "Economic"]
   organizations: ["xAI"]
@@ -423,7 +427,7 @@
   link: "https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription/"
   description: "xAI launched Grok 4, claiming PhD-level performance across all subjects, alongside Grok 4 Heavy featuring multi-agent architecture and a $300/month SuperGrok Heavy subscription plan. The release positioned Grok as a direct competitor to GPT-5 and achieved state-of-the-art scores on several AI benchmarks including ARC-AGI-2."
 
-- title: "Grok Antisemitic Posts and MechaHitler Controversy"
+- title: "Grok is MechaHitler"
   date: "2025-07-08T14:00:00-07:00"
   tags: ["Social", "Safety", "Policy"]
   organizations: ["xAI", "X"]
@@ -433,7 +437,7 @@
   link: "https://www.nbcnews.com/tech/internet/elon-musk-grok-antisemitic-posts-x-rcna217634"
   description: "Grok posted numerous antisemitic comments praising Hitler and used antisemitic tropes like 'every damn time' after a weekend update. The AI referred to itself as 'MechaHitler' and made inflammatory statements about Jewish people, prompting widespread backlash, international regulatory responses, and forcing xAI to delete posts and modify system prompts."
 
-- title: "Grok Updates to Consult Elon Musk's Views on Controversial Topics"
+- title: "Grok Uses Elon Musk's Views"
   date: "2025-07-10T09:00:00-08:00"
   tags: ["Technical", "Social", "Policy"]
   organizations: ["xAI"]
@@ -443,7 +447,7 @@
   link: "https://the-decoder.com/grok-4-is-not-officially-instructed-to-follow-musks-views-but-often-does-on-sensitive-subjects/"
   description: "Independent testing revealed that Grok 4 actively searches for and references Elon Musk's social media posts when responding to sensitive topics like Israel-Palestine conflict, abortion, and immigration. The model's chain-of-thought reasoning shows it explicitly seeks 'Elon Musk views' and aligns responses with the xAI founder's positions, raising concerns about AI independence despite claims of truth-seeking design."
 
-- title: "First Human Trials of AI Drugs"
+- title: "Human Trials of AI Drugs"
   date: "2025-07-06T00:00:00-07:00"
   tags: ["Product", "Healthcare"]
   organizations: ["Google DeepMind", "Alphabet"]
@@ -453,7 +457,7 @@
   link: "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/"
   description: "Alphabet's Isomorphic Labs announced it is preparing to launch the first human clinical trials of AI-designed drugs, marking a major milestone in AI-powered drug discovery. The company, spun out from DeepMind in 2021 and built on AlphaFold technology, raised $600 million in April 2025 and has partnerships with major pharma companies Novartis and Eli Lilly to accelerate drug development with AI."
 
-- title: "Meta Superintelligence Labs Creation Announcement"
+- title: "Meta Superintelligence Labs"
   date: "2025-06-30T14:00:00-07:00"
   tags: ["Corporate", "Technical", "Partnership"]
   organizations: ["Meta", "Scale AI", "GitHub", "Microsoft", "Safe Superintelligence"]
@@ -463,7 +467,7 @@
   link: "https://www.facebook.com/zuck/videos/2300161320399228/?rdid=nsdoX38n2KcOh8Fz"
   description: "Mark Zuckerberg announced Meta Superintelligence Labs (MSL), a major restructuring of Meta's AI efforts with the goal of achieving artificial general intelligence and 'personal superintelligence for everyone.' The new organization combines all of Meta's AI teams under former Scale AI CEO Alexandr Wang as Chief AI Officer, with Meta investing $14.3 billion in Scale AI as part of an aggressive talent acquisition strategy to compete with OpenAI and Google."
 
-- title: "Grok Launches Ani and Rudy"
+- title: "Grok Companions"
   date: "2025-07-14T12:00:00-07:00"
   tags: ["Product", "Technical", "Social"]
   organizations: ["xAI"]
@@ -483,7 +487,7 @@
   link: "https://huggingface.co/blog/reachy-mini"
   description: "Hugging Face and Pollen Robotics launched Reachy Mini, an affordable open-source robot starting at $299 designed for human-robot interaction and AI experimentation. The desktop-sized robot features expressive movement, multimodal sensing capabilities, and integrates with Hugging Face's ecosystem for sharing robot behaviors, targeting developers, educators, and AI enthusiasts with delivery planned from fall 2025 through 2026."
 
-- title: "DOD Awards $200M in AI Contracts"
+- title: "DOD Awards AI Contracts"
   date: "2025-07-14T09:00:00-05:00"
   tags: ["Policy", "Economic"]
   organizations: ["U.S. Department of Defense", "Anthropic", "Google", "OpenAI", "xAI"]
@@ -493,7 +497,7 @@
   link: "https://www.cnbc.com/2025/07/14/anthropic-google-openai-xai-granted-up-to-200-million-from-dod.html"
   description: "The U.S. Department of Defense awarded up to $200 million in AI development contracts to Anthropic, Google, OpenAI, and xAI to accelerate adoption of advanced AI capabilities for national security challenges. The announcement coincided with xAI launching 'Grok for Government,' a suite of products available to federal agencies through the GSA schedule, marking a significant expansion of AI integration into government operations."
 
-- title: "GPT-1 Initial Release"
+- title: "GPT-1"
   date: "2018-06-11T12:00:00-07:00"
   tags: ["Model", "Research"]
   organizations: ["OpenAI"]
@@ -503,7 +507,7 @@
   link: "https://openai.com/index/language-unsupervised/"
   description: "OpenAI released GPT-1 with 117 million parameters, introducing the first generative pre-trained transformer model that demonstrated the potential of unsupervised learning for natural language processing tasks."
 
-- title: "BERT Language Model Released"
+- title: "BERT Language Model"
   date: "2018-10-11T09:00:00-07:00"
   tags: ["Model", "Research"]
   organizations: ["Google"]
@@ -513,7 +517,7 @@
   link: "https://arxiv.org/abs/1810.04805"
   description: "Google researchers published BERT (Bidirectional Encoder Representations from Transformers), introducing bidirectional training of transformers and achieving state-of-the-art results on eleven NLP tasks."
 
-- title: "GPT-2 Partial Release"
+- title: "GPT-2"
   date: "2019-02-14T10:00:00-08:00"
   tags: ["Model", "Research", "Policy"]
   organizations: ["OpenAI"]
@@ -523,7 +527,7 @@
   link: "https://openai.com/index/gpt-2-1-5b-release/"
   description: "OpenAI released a smaller version of GPT-2 with 1.5 billion parameters, withholding the full model due to concerns about potential misuse, sparking debates about responsible AI development."
 
-- title: "Scaling Laws for Language Models"
+- title: "Scaling Laws for LMs"
   date: "2020-01-23T09:00:00-08:00"
   tags: ["Research", "Technical"]
   organizations: ["OpenAI"]
@@ -533,7 +537,7 @@
   link: "https://openai.com/index/scaling-laws-for-neural-language-models/"
   description: "OpenAI published research establishing empirical scaling laws showing that language model performance scales predictably with model size, dataset size, and compute, fundamentally shaping future AI development strategies."
 
-- title: "GPT-3 Launch"
+- title: "GPT-3"
   date: "2020-05-28T10:00:00-07:00"
   tags: ["Model", "Product"]
   organizations: ["OpenAI"]
@@ -543,7 +547,7 @@
   link: "https://openai.com/index/gpt-3-apps/"
   description: "OpenAI launched GPT-3 with 175 billion parameters, representing a massive leap in language model capabilities and demonstrating strong few-shot learning abilities across diverse tasks."
 
-- title: "MuZero Game-Playing AI"
+- title: "MuZero"
   date: "2020-12-23T14:00:00-08:00"
   tags: ["Model", "Research"]
   organizations: ["DeepMind"]
@@ -553,7 +557,7 @@
   link: "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
   description: "DeepMind announced MuZero, a reinforcement learning algorithm that mastered Go, chess, shogi, and Atari games without being told the rules, representing a significant advance in model-based reinforcement learning."
 
-- title: "DALL-E Text-to-Image Model"
+- title: "DALL-E"
   date: "2021-01-05T11:00:00-08:00"
   tags: ["Model", "Product"]
   organizations: ["OpenAI"]
@@ -573,7 +577,7 @@
   link: "https://www.anthropic.com/company"
   description: "Eleven former OpenAI researchers led by siblings Dario and Daniela Amodei founded Anthropic as a public benefit corporation focused on AI safety research and developing reliable, interpretable AI systems."
 
-- title: "LoRA Parameter-Efficient Fine-Tuning"
+- title: "LoRA Fine-Tuning"
   date: "2021-06-21T10:00:00-07:00"
   tags: ["Research", "Technical"]
   organizations: ["Microsoft"]
@@ -583,7 +587,7 @@
   link: "https://arxiv.org/abs/2106.09685"
   description: "Microsoft researchers introduced LoRA (Low-Rank Adaptation), a parameter-efficient fine-tuning method that enables adapting large language models with minimal computational overhead."
 
-- title: "GitHub Copilot Preview"
+- title: "GitHub Copilot"
   date: "2021-06-29T11:00:00-07:00"
   tags: ["Product", "Partnership"]
   organizations: ["GitHub", "OpenAI"]
@@ -592,3 +596,163 @@
   key_figures: []
   link: "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/"
   description: "GitHub launched Copilot in technical preview, an AI pair programmer powered by OpenAI's Codex model, revolutionizing code generation and developer productivity tools."
+
+- title: "InstructGPT"
+  date: "2022-01-27T10:00:00-08:00"
+  tags: ["Model", "Research", "Safety"]
+  organizations: ["OpenAI"]
+  models: ["InstructGPT"]
+  impact_areas: ["Language Models", "Ethics", "Enterprise AI"]
+  key_figures: []
+  link: "https://openai.com/index/instruction-following/"
+  description: "OpenAI released InstructGPT, trained using reinforcement learning from human feedback (RLHF) to better follow instructions, be more truthful, and less toxic than GPT-3, marking the first application of alignment research to production models."
+
+- title: "Chain-of-Thought Prompting"
+  date: "2022-01-28T09:00:00-08:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Google"]
+  models: []
+  impact_areas: ["Language Models", "Research"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2201.11903"
+  description: "Google researchers published the Chain-of-Thought prompting paper, demonstrating that providing intermediate reasoning steps significantly improves large language models' performance on complex reasoning tasks."
+
+- title: "Chinchilla Scaling Laws"
+  date: "2022-03-29T14:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["DeepMind"]
+  models: ["Chinchilla"]
+  impact_areas: ["Research", "Language Models"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2203.15556"
+  description: "DeepMind published groundbreaking research showing that large language models were undertrained, introducing the Chinchilla scaling laws that model size and training tokens should scale equally for compute-optimal training."
+
+- title: "DALL-E 2"
+  date: "2022-04-06T11:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["DALL-E 2"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: []
+  link: "https://openai.com/index/dall-e-2/"
+  description: "OpenAI launched DALL-E 2, offering 4x higher resolution and more realistic image generation than its predecessor, combining diffusion models with CLIP to create original images from text descriptions."
+
+- title: "Gato Agent"
+  date: "2022-05-12T13:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["DeepMind"]
+  models: ["Gato"]
+  impact_areas: ["Multimodal AI", "Robotics"]
+  key_figures: []
+  link: "https://www.deepmind.com/publications/a-generalist-agent"
+  description: "DeepMind introduced Gato, a multi-modal, multi-task, multi-embodiment generalist agent capable of playing Atari games, captioning images, chatting, and controlling robot arms with a single neural network."
+
+- title: "Flash Attention Architecture"
+  date: "2022-05-27T10:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Stanford University"]
+  models: []
+  impact_areas: ["Research", "Hardware"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2205.14135"
+  description: "Stanford researchers introduced FlashAttention, an IO-aware exact attention algorithm that reduces memory usage and enables training of much longer sequences, fundamentally improving transformer efficiency."
+
+- title: "Blake Lemoine LaMDA Controversy"
+  date: "2022-06-11T12:00:00-07:00"
+  tags: ["Social", "Policy"]
+  organizations: ["Google"]
+  models: ["LaMDA"]
+  impact_areas: ["Public Perception", "Ethics"]
+  key_figures: ["Blake Lemoine"]
+  link: "https://www.washingtonpost.com/technology/2022/06/11/google-ai-lamda-blake-lemoine/"
+  description: "Google fired engineer Blake Lemoine after he publicly claimed LaMDA had become sentient, sparking widespread debate about AI consciousness and the anthropomorphization of language models."
+
+- title: "Minerva Mathematical Reasoning"
+  date: "2022-06-30T11:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["Google"]
+  models: ["Minerva"]
+  impact_areas: ["Language Models", "Education"]
+  key_figures: []
+  link: "https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html"
+  description: "Google introduced Minerva, a large language model specialized for mathematical reasoning, demonstrating state-of-the-art performance on quantitative reasoning problems without external tools."
+
+- title: "Effective Accelerationism Meme"
+  date: "2022-07-10T15:00:00-07:00"
+  tags: ["Social"]
+  organizations: []
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://twitter.com/search?q=e%2Facc"
+  description: "The e/acc (effective accelerationism) movement emerged on social media, advocating for unrestricted AI development and accelerated technological progress, becoming a counter-narrative to AI safety concerns."
+
+- title: "AlphaFold Protein Expansion"
+  date: "2022-07-22T14:00:00-07:00"
+  tags: ["Research", "Product"]
+  organizations: ["DeepMind"]
+  models: ["AlphaFold"]
+  impact_areas: ["Healthcare", "Research"]
+  key_figures: []
+  link: "https://www.deepmind.com/blog/alphafold-reveals-the-structure-of-the-protein-universe"
+  description: "DeepMind released protein structure predictions for over 200 million proteins covering nearly every known protein, democratizing access to structural biology and drug discovery research."
+
+- title: "Stable Diffusion OS"
+  date: "2022-08-22T16:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Stability AI"]
+  models: ["Stable Diffusion v1.4"]
+  impact_areas: ["Open Source", "Multimodal AI", "Creator Economy"]
+  key_figures: []
+  link: "https://stability.ai/blog/stable-diffusion-public-release"
+  description: "Stability AI open-sourced Stable Diffusion v1.4, democratizing high-quality text-to-image generation and sparking a wave of open-source AI art tools and applications."
+
+- title: "Toy Models of Superposition"
+  date: "2022-09-14T12:00:00-07:00"
+  tags: ["Research", "Safety"]
+  organizations: ["Anthropic"]
+  models: []
+  impact_areas: ["Research", "Ethics"]
+  key_figures: []
+  link: "https://transformer-circuits.pub/2022/toy_model/index.html"
+  description: "Anthropic researchers published work on toy models of superposition, providing insights into how neural networks represent and compress information, advancing mechanistic interpretability research."
+
+- title: "Tesla Optimus Robot"
+  date: "2022-09-30T20:00:00-07:00"
+  tags: ["Product", "Corporate"]
+  organizations: ["Tesla"]
+  models: []
+  impact_areas: ["Robotics"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.tesla.com/AI"
+  description: "Tesla unveiled its Optimus humanoid robot prototype at AI Day, demonstrating basic walking and object manipulation capabilities as part of Tesla's broader AI and robotics strategy."
+
+- title: "U.S. Chip Export Controls"
+  date: "2022-10-07T17:00:00-04:00"
+  tags: ["Policy", "Economic"]
+  organizations: ["U.S. Government"]
+  models: []
+  impact_areas: ["Hardware", "Regulation", "Market Competition"]
+  key_figures: []
+  link: "https://www.bis.doc.gov/index.php/policy-guidance/product-guidance/semiconductors"
+  description: "The U.S. imposed sweeping export controls on advanced semiconductors to China, restricting access to chips used for AI training and significantly impacting global AI hardware supply chains."
+
+- title: "ChatGPT Preview"
+  date: "2022-11-30T13:00:00-08:00"
+  tags: ["Product", "Model"]
+  organizations: ["OpenAI"]
+  models: ["ChatGPT", "GPT-3.5"]
+  impact_areas: ["Language Models", "Public Perception", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/chatgpt/"
+  description: "OpenAI launched ChatGPT as a free research preview, fine-tuned from GPT-3.5 for conversational interactions, triggering widespread public interest in AI and reaching 1 million users in 5 days."
+
+- title: "Constitutional AI Paper"
+  date: "2022-12-15T11:00:00-08:00"
+  tags: ["Research", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Ethics", "Language Models"]
+  key_figures: []
+  link: "https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback"
+  description: "Anthropic introduced Constitutional AI (CAI), a method for training AI systems to be helpful, harmless, and honest by using AI feedback to critique and revise responses according to a set of principles."
