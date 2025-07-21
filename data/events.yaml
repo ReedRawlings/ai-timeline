@@ -1036,3 +1036,272 @@
   key_figures: []
   link: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
   description: "December 6, 2023 – Google launched Gemini, a new AI model series, marking its entry into large multimodal and language models" 
+
+- title: "Sora"
+  date: "2024-02-15T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["Sora"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/sora/"
+  description: "On February 15 2024 OpenAI unveiled Sora, a text-to-video model that generates minute-long realistic clips from natural-language prompts."
+
+- title: "Devin"
+  date: "2024-03-12T10:00:00-07:00"
+  tags: ["Product", "Model"]
+  organizations: ["Cognition AI"]
+  models: ["Devin"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Scott Wu"]
+  link: "https://cognition.ai/blog/introducing-devin"
+  description: "Cognition AI demonstrated Devin, billed as the first fully autonomous AI software engineer capable of completing SWE-bench tasks end-to-end." 
+
+- title: "Safe Superintelligence"
+  date: "2024-06-19T10:00:00-07:00"
+  tags: ["Corporate", "Safety"]
+  organizations: ["Safe Superintelligence Inc."]
+  models: []
+  impact_areas: ["Research", "Ethics"]
+  key_figures: ["Ilya Sutskever"]
+  link: "https://ssi.inc/"
+  description: "Ilya Sutskever and colleagues launched Safe Superintelligence Inc., a new lab singularly focused on building provably safe super-intelligent systems." 
+
+- title: "Claude 3.5 Sonnet"
+  date: "2024-06-20T09:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["Anthropic"]
+  models: ["Claude 3.5 Sonnet"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/claude-3-5-sonnet"
+  description: "Anthropic released Claude 3.5 Sonnet, its first 3.5-generation model, outperforming Claude 3 Opus while retaining mid-tier speed and cost." 
+
+- title: "Cursor AI Goes Viral"
+  date: "2024-08-23T12:00:00-07:00"
+  tags: ["Product", "Social"]
+  organizations: ["Anysphere"]
+  models: []
+  impact_areas: ["Creator Economy", "Enterprise AI"]
+  key_figures: ["Michael Truell"]
+  link: "https://www.instagram.com/tom.developer/reel/C_-iCOnvwDY/"
+  description: "Social-media clips showcasing Cursor’s AI-assisted coding features went viral on August 23 2024, driving a surge of downloads and developer adoption."
+- title: "Grok 2"
+  date: "2024-08-24T09:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["xAI"]
+  models: ["Grok 2"]
+  impact_areas: ["Language Models", "Market Competition"]
+  key_figures: ["Elon Musk"]
+  link: "https://x.ai/news/grok-2"
+  description: "xAI unveiled Grok 2 and Grok 2 mini, claiming frontier-level chat, coding, and reasoning that outperformed Claude 3.5 Sonnet on LMSYS tests."
+
+- title: "xAI Colossus Cluster"
+  date: "2024-09-02T08:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["xAI"]
+  models: []
+  impact_areas: ["Hardware", "Market Competition"]
+  key_figures: ["Elon Musk"]
+  link: "https://x.com/elonmusk/status/1830650370336473253"
+  description: "Elon Musk announced that xAI’s Colossus supercomputer—100 000 Nvidia H100 GPUs—came online just 122 days after ground-breaking, forming the world’s largest AI-training cluster." 
+
+- title: "OpenAI o1-preview"
+  date: "2024-09-12T09:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["OpenAI"]
+  models: ["o1"]
+  impact_areas: ["Language Models"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-openai-o1-preview/"
+  description: "OpenAI released o1-preview and o1-mini, reasoning-focused models that improve with extra inference-time ‘deliberation,’ inaugurating its new o-series." 
+
+- title: "Mira Murati resigns OpenAI"
+  date: "2024-09-25T17:05:00-07:00"
+  tags: ["Corporate", "Social"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Market Competition", "Public Perception"]
+  key_figures: ["Mira Murati"]
+  link: "https://www.theguardian.com/technology/2024/sep/25/openai-cto-mira-murati-resigns"
+  description: "On September 25 2024 CTO Mira Murati announced her departure from OpenAI after six years, citing a desire for ‘personal exploration.’" 
+
+- title: "SB-1047 vetoed"
+  date: "2024-09-29T12:00:00-07:00"
+  tags: ["Policy", "Legal"]
+  organizations: ["State of California"]
+  models: []
+  impact_areas: ["Regulation", "Safety"]
+  key_figures: []
+  link: "https://www.gov.ca.gov/wp-content/uploads/2024/09/SB-1047-Veto-Message.pdf"
+  description: "Governor Gavin Newsom vetoed SB-1047, a bill that would have imposed safeguards and a new oversight board for frontier AI models in California."
+
+- title: "Hinton & Hassabis Nobel Prizes"
+  date: "2024-10-08T05:00:00-07:00"
+  tags: ["Research", "Social"]
+  organizations: ["Royal Swedish Academy of Sciences"]
+  models: []
+  impact_areas: ["Research", "Public Perception"]
+  key_figures: ["Geoffrey Hinton", "Demis Hassabis"]
+  link: "https://www.reuters.com/science/hopfield-hinton-win-2024-nobel-prize-physics-2024-10-08/"
+  description: "Geoffrey Hinton shared the 2024 Nobel Prize in Physics and Demis Hassabis shared the Chemistry prize, honoring foundational AI contributions in neural networks and protein folding." 
+
+- title: "“Machines of Loving Grace” essay series"
+  date: "2024-10-11T09:00:00-07:00"
+  tags: ["Social", "Research"]
+  organizations: []
+  models: []
+  impact_areas: ["Public Perception", "Ethics"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.darioamodei.com/essay/machines-of-loving-grace"
+  description: "Anthropic CEO Dario Amodei published the multi-part essay “Machines of Loving Grace,” outlining optimistic scenarios for AI-driven global progress." 
+
+- title: "Situational Awareness essays"
+  date: "2024-11-01T09:00:00-07:00"
+  tags: ["Social", "Research", "Safety"]
+  organizations: []
+  models: []
+  impact_areas: ["Safety", "Ethics", "Public Perception"]
+  key_figures: ["Leopold Aschenbrenner"]
+  link: "https://situational-awareness.ai/"
+  description: "Ex-OpenAI researcher Leopold Aschenbrenner released his “Situational Awareness: The Decade Ahead” essay series forecasting rapid AGI progress and associated security risks." 
+
+- title: "Gemini 2.0 announced"
+  date: "2024-12-11T09:00:00-08:00"
+  tags: ["Model"]
+  organizations: ["Google DeepMind"]
+  models: ["Gemini 2.0"]
+  impact_areas: ["Language Models", "Multimodal AI"]
+  key_figures: ["Demis Hassabis"]
+  link: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
+  description: "Google DeepMind revealed Gemini 2.0 and the lightweight 2.0 Flash model, emphasizing agentic capabilities and native image-and-audio output." 
+
+- title: "Veo 2"
+  date: "2024-12-16T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google DeepMind"]
+  models: ["Veo 2"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: []
+  link: "https://blog.google/technology/google-labs/video-image-generation-update-december-2024/"
+  description: "DeepMind introduced Veo 2, a 4K-capable text-to-video model now powering Google’s VideoFX tool and rivaling OpenAI’s Sora in realism."
+
+- title: "OpenAI o3 Benchmarks"
+  date: "2024-12-20T09:00:00-08:00"
+  tags: ["Model", "Research"]
+  organizations: ["OpenAI"]
+  models: ["o3"]
+  impact_areas: ["Language Models", "Research"]
+  key_figures: ["Sam Altman"]
+  link: "https://arcprize.org/blog/oai-o3-pub-breakthrough"
+  description: "OpenAI’s o3 scored 87.5 % on the ARC-AGI benchmark in high-compute mode, a step-function gain over GPT-4o and prior public results." 
+
+- title: "DeepSeek v3"
+  date: "2024-12-26T09:00:00-08:00"
+  tags: ["Model"]
+  organizations: ["DeepSeek AI"]
+  models: ["DeepSeek v3"]
+  impact_areas: ["Language Models", "Open Source"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2412.19437"
+  description: "Chinese startup DeepSeek open-sourced DeepSeek v3, a 671 B-parameter MoE LLM that matches leading closed-source models while using only 37 B active parameters per token."
+
+- title: "OpenAI Fires Leakers"
+  date: "2024-04-11T12:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Leopold Aschenbrenner", "Pavel Izmailov"]
+  link: "https://www.theinformation.com/articles/openai-researchers-including-ally-of-sutskever-fired-for-alleged-leaking"
+  description: "OpenAI dismissed researchers Leopold Aschenbrenner and Pavel Izmailov for allegedly leaking internal information, underscoring heightened security and secrecy around the company’s AGI work."
+
+- title: "LLaMA 3"
+  date: "2024-04-18T09:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["Meta"]
+  models: ["LLaMA 3"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://ai.meta.com/blog/meta-llama-3/"
+  description: "Meta open-sourced LLaMA 3, a family of 8 B and 70 B-parameter models, expanding access to high-performance language models and intensifying open-source competition in generative AI."
+
+- title: "GPT-4o"
+  date: "2024-05-13T09:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4o"]
+  impact_areas: ["Multimodal AI", "Language Models", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/hello-gpt-4o/"
+  description: "OpenAI unveiled GPT-4o, an ‘omni-model’ that unifies text, vision and audio reasoning in real time while halving API costs, signaling a major leap toward seamless multimodal AI services."
+
+- title: "Ilya Sutskever Resigns"
+  date: "2024-05-14T17:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Enterprise AI", "Safety"]
+  key_figures: ["Ilya Sutskever", "Sam Altman"]
+  link: "https://www.reuters.com/technology/openai-co-founder-ilya-sutskever-departs-2024-05-14/"
+  description: "Co-founder and chief scientist Ilya Sutskever left OpenAI to pursue a new project, ending a decade-long tenure that shaped breakthrough models and OpenAI’s safety agenda."
+
+- title: "EU AI Act Final Passage"
+  date: "2024-05-21T15:00:00+02:00"
+  tags: ["Policy"]
+  organizations: ["European Union"]
+  models: []
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Ursula von der Leyen"]
+  link: "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
+  description: "The European Parliament gave final approval to the landmark AI Act, establishing the world’s first comprehensive risk-tiered regulatory framework for artificial intelligence systems."
+
+- title: "Situational Awareness Essays"
+  date: "2024-06-04T09:00:00-07:00"
+  tags: ["Research", "Safety"]
+  organizations: []
+  models: []
+  impact_areas: ["Research", "Public Perception", "Safety"]
+  key_figures: ["Leopold Aschenbrenner"]
+  link: "https://situational-awareness.ai/"
+  description: "Leopold Aschenbrenner released the multi-part essay series “Situational Awareness: The Decade Ahead,” arguing that AGI could arrive by 2027 and urging massive U.S. investment and tighter security measures."
+
+- title: "Claude Computer-Use"
+  date: "2024-10-22T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude 3.5 Haiku"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/3-5-models-and-computer-use"
+  description: "Anthropic rolled out Claude 3.5 Haiku and a new ‘computer-use’ tool that lets Claude autonomously navigate software, expanding the model family’s speed tier and practical task automation capabilities."
+
+- title: "Trump Wins 2024 Election"
+  date: "2024-11-06T00:00:00-05:00"
+  tags: ["Policy", "Social"]
+  organizations: ["U.S. Government"]
+  models: []
+  impact_areas: ["Regulation", "Public Perception", "Market Competition"]
+  key_figures: ["Donald Trump", "Elon Musk"]
+  link: "https://www.reuters.com/world/us/trump-vs-harris-us-voters-head-polls-turbulent-campaign-concludes-2024-11-05/"
+  description: "Donald Trump was elected U.S. president after a campaign bolstered by Elon Musk’s public backing, setting the stage for a pro-industry stance on AI and looser crypto regulation."
+
+- title: "Comission Urges AI Manhattan Project"
+  date: "2024-11-19T10:00:00-05:00"
+  tags: ["Policy", "Corporate", "Social"]
+  organizations: []
+  models: []
+  impact_areas: ["Regulation", "Market Competition", "Research"]
+  key_figures: []
+  link: "https://www.reuters.com/technology/artificial-intelligence/us-government-commission-pushes-manhattan-project-style-ai-initiative-2024-11-19/"
+  description: "The U.S.–China Economic and Security Review Commission recommended a federally led, Manhattan Project–scale initiative to accelerate AGI development and secure U.S. technological supremacy over China."
+
+- title: "David Sacks AI & Crypto Czar"
+  date: "2024-12-04T09:00:00-05:00"
+  tags: ["Policy"]
+  organizations: ["U.S. Government"]
+  models: []
+  impact_areas: ["Regulation", "Enterprise AI"]
+  key_figures: ["David Sacks"]
+  link: "https://www.reuters.com/world/us/trump-appoints-former-paypal-coo-david-sacks-ai-crypto-czar-2024-12-06/"
+  description: "President-elect Trump appointed venture capitalist David Sacks as White House “AI & Crypto Czar,” tasking him with steering national AI strategy and cryptocurrency policy in the incoming administration."
