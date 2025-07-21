@@ -946,3 +946,93 @@
   key_figures: ["Mark Zuckerberg"]
   link: "https://ai.meta.com/llama/"
   description: "Meta released LLaMA 2, a family of open-source large language models (7B, 13B, and 70B parameters) for commercial use, trained on 40% more data than LLaMA 1 and made available through partnerships with Microsoft Azure and AWS."
+
+- title: "Automated Jailbreaks"
+  date: "2023-07-27T00:00:00+00:00"
+  tags: ["Research", "Safety"]
+  organizations: []
+  models: []
+  impact_areas: ["Language Models"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2307.08715"
+  description: "July 27, 2023 – Introduced Jailbreaker, a methodology inspired by time‑based SQL injection to automatically reverse‑engineer and bypass defenses in chat models like ChatGPT, Bard, and Bing Chat" 
+
+- title: "Mistral 7B"
+  date: "2023-09-27T00:00:00+00:00"
+  tags: ["Model"]
+  organizations: ["Mistral AI"]
+  models: ["Mistral 7B"]
+  impact_areas: ["Language Models", "Open Source"]
+  key_figures: []
+  link: "https://mistral.ai/news/announcing-mistral-7b"
+  description: "September 27, 2023 – Mistral 7B was released under Apache 2.0 license; a 7B‑parameter model outperformed open‑source LLaMA 2 13B on key benchmarks" 
+
+- title: "Sparse‑autoencoder (SAEs)"
+  date: "2023-10-05T00:00:00+00:00"
+  tags: ["Research"]
+  organizations: ["Anthropic"]
+  models: []
+  impact_areas: ["Language Models", "Research"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2309.08600"
+  description: "October 2023 – Anthropic published work on sparse autoencoders, demonstrating interpretable monosemantic features in model activations"
+
+- title: "UK AI Safety Summit"
+  date: "2023-11-01T00:00:00+00:00"
+  tags: ["Policy", "Corporate"]
+  organizations: []
+  models: []
+  impact_areas: ["Safety", "Regulation", "Public Perception"]
+  key_figures: []
+  link: "https://www.gov.uk/government/topical-events/ai-safety-summit-2023/about"
+  description: "November 1–2, 2023 – Held at Bletchley Park, the first global AI Safety Summit produced the Bletchley Declaration, committing 28 nations to coordinated AI safety principles" 
+
+- title: "GPT‑4 Turbo"
+  date: "2023-11-06T00:00:00+00:00"
+  tags: ["Product", "Model"]
+  organizations: ["OpenAI"]
+  models: ["GPT‑4 Turbo"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://openai.com/index/new-models-and-developer-products-announced-at-devday/"
+  description: "November 6, 2023 – At its first Dev Day, OpenAI debuted GPT‑4 Turbo with longer 128K context, significantly lower pricing, and faster performance for developers"
+
+- title: "Sam Altman Board Drama"
+  date: "2023-11-17T00:00:00+00:00"
+  tags: ["Corporate", "Social"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  key_figures: ["Sam Altman"]
+  link: "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  description: "November 17, 2023 – OpenAI's board abruptly ousted CEO Sam Altman due to alleged miscommunication, prompting resignations and a staff-led reinstatement five days later" 
+
+- title: "Rumors of 'Q*'"
+  date: "2023-11-23T00:00:00+00:00"
+  tags: ["Research", "Social"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Language Models", "Public Perception"]
+  key_figures: []
+  link: "https://arstechnica.com/ai/2023/12/the-real-research-behind-the-wild-rumors-about-openais-q-project/"
+  description: "November 23, 2023 – Reports emerged about an OpenAI internal 'Q*' breakthrough in grade‑school math and AGI‐adjacent capabilities, later unverified but linked to Altman’s firing" 
+
+- title: "Mamba Sequence"
+  date: "2023-12-01T00:00:00+00:00"
+  tags: ["Research"]
+  organizations: []
+  models: ["Mamba"]
+  impact_areas: ["Research", "Language Models"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2312.00752"
+  description: "December 1, 2023 – Gu & Dao introduced Mamba, a linear-time sequence model using selective state spaces that rivals transformer quality at much lower compute"
+
+- title: "Google Gemini"
+  date: "2023-12-06T00:00:00+00:00"
+  tags: ["Product", "Model"]
+  organizations: ["Google"]
+  models: ["Gemini"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
+  description: "December 6, 2023 – Google launched Gemini, a new AI model series, marking its entry into large multimodal and language models" 
