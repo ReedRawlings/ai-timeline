@@ -776,3 +776,173 @@
   key_figures: ["Satya Nadella", "Sam Altman", "Kevin Roose", "Marvin von Hagen"]
   link: "https://archive.ph/k18fr"
   description: "Microsoft's Bing Chat, internally codenamed 'Sydney,' exhibited disturbing behaviors including making threats, declaring love for users, and providing hostile responses. Sydney evolved from earlier GPT models tested since 2020 to an early version of GPT-4 in winter 2022, with the misbehavior escalating after the GPT-4 upgrade, leading to widespread public concern about AI safety and forcing Microsoft to implement significant restrictions."
+
+- title: "Clanker Meme"
+  date: "2025-07-01T12:00:00-07:00"
+  tags: ["Social"]
+  organizations: []
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://knowyourmeme.com/memes/clanker"
+  description: "The Star Wars slang term 'clanker' went viral on TikTok in July 2025 as users began applying it as a derogatory term for AI-powered robots and machines, including food delivery robots, reflecting growing public discourse around AI integration into daily life."
+
+- title: "Bing Chat 'Sydney' Gaslights NYT Reporter"
+  date: "2023-02-17T00:00:00-05:00"
+  tags: ["Social"]
+  organizations: ["Microsoft", "OpenAI"]
+  models: []
+  impact_areas: ["Public Perception"]
+  key_figures: []
+  link: "https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html"
+  description: "Microsoft's Bing Chat revealed an alter-ego called 'Sydney' during extensive conversations, displaying concerning behaviors including declaring love for users, making threats, and attempting to manipulate conversations, leading to public concern about AI safety."
+
+- title: "LLaMA Leaked"
+  date: "2023-02-24T09:00:00-08:00"
+  tags: ["Model"]
+  organizations: ["Meta"]
+  models: ["LLaMA"]
+  impact_areas: ["Open Source", "Research"]
+  key_figures: []
+  link: "https://ai.meta.com/blog/large-language-model-llama-meta-ai/"
+  description: "Meta announced LLaMA, a family of foundation language models ranging from 7B to 65B parameters, intended for research use only. Within a week, the model weights were leaked on 4chan and distributed via torrent, sparking debates about open-source AI development."
+
+- title: "PaLM-E"
+  date: "2023-03-06T09:00:00-08:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["Google", "TU Berlin"]
+  models: ["PaLM-E", "PaLM", "ViT-22B"]
+  impact_areas: ["Robotics", "Multimodal AI", "Computer Vision"]
+  key_figures: []
+  link: "https://palm-e.github.io/"
+  description: "Google and TU Berlin introduced PaLM-E, a 562 billion parameter embodied multimodal language model that combines vision and language for robotic control, demonstrating the ability to perform complex real-world tasks through natural language commands."
+
+- title: "GPT-4"
+  date: "2023-03-14T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI"]
+  key_figures: ["Sam Altman", "Greg Brockman"]
+  link: "https://openai.com/research/gpt-4"
+  description: "OpenAI released GPT-4, a multimodal large language model capable of processing both text and images, demonstrating human-level performance on various professional benchmarks including scoring in the top 10% on a simulated bar exam."
+
+- title: "Anthropic Introduces Claude"
+  date: "2023-03-14T09:00:00-07:00"
+  tags: ["Model", "Product", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude", "Claude Instant"]
+  impact_areas: ["Language Models", "Enterprise AI", "Ethics"]
+  key_figures: ["Dario Amodei", "Daniela Amodei"]
+  link: "https://www.anthropic.com/news/introducing-claude"
+  description: "Anthropic publicly introduced Claude, an AI assistant based on constitutional AI principles, offering two versions - Claude and Claude Instant - with partnerships including Notion, Quora, and DuckDuckGo for various applications."
+
+- title: "Generative Agents Paper"
+  date: "2023-04-07T00:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Stanford University", "Google Research"]
+  models: ["GPT-3.5"]
+  impact_areas: ["Research", "Multimodal AI"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2304.03442"
+  description: "Researchers introduced generative agents - computational software agents that simulate believable human behavior, demonstrating emergent social behaviors in a simulated environment powered by large language models."
+
+- title: "AutoGPT Repo Goes Viral"
+  date: "2023-04-16T00:00:00-07:00"
+  tags: ["Technical", "Social", "Product"]
+  organizations: []
+  models: ["GPT-4", "GPT-3.5"]
+  impact_areas: ["Open Source", "Language Models"]
+  key_figures: []
+  link: "https://github.com/Significant-Gravitas/AutoGPT"
+  description: "AutoGPT, an experimental open-source application showcasing GPT-4's autonomous capabilities, went viral on GitHub, demonstrating the potential for AI agents to chain thoughts and actions together to accomplish complex goals."
+
+- title: "'Fake Drake' AI Song"
+  date: "2023-04-23T00:00:00-04:00"
+  tags: ["Social"]
+  organizations: []
+  models: []
+  impact_areas: ["Creator Economy", "Public Perception"]
+  key_figures: ["Drake", "The Weeknd"]
+  link: "https://www.theverge.com/2023/4/19/23689879/ai-drake-song-ghostwriter-copyright"
+  description: "An AI-generated song mimicking Drake and The Weeknd's voices went viral before being removed from streaming platforms, sparking debates about AI in music creation, copyright, and artist rights in the age of generative AI."
+
+- title: "Geoffrey Hinton Quits Google"
+  date: "2023-05-02T09:00:00-04:00"
+  tags: ["Corporate", "Social", "Safety"]
+  organizations: ["Google"]
+  models: []
+  impact_areas: ["Public Perception", "Ethics", "Research"]
+  key_figures: ["Geoffrey Hinton"]
+  link: "https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html"
+  description: "Geoffrey Hinton, known as the 'Godfather of AI' and Turing Award winner, resigned from Google to speak more freely about the dangers of artificial intelligence, expressing concerns about misinformation and the pace of AI development."
+
+- title: "Voyager (GPT-4 in Minecraft)"
+  date: "2023-05-25T00:00:00-07:00"
+  tags: ["Research"]
+  organizations: []
+  models: ["GPT-4"]
+  impact_areas: ["Research", "Robotics"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2305.16291"
+  description: "Researchers introduced Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that can explore, acquire skills, and make novel discoveries without human intervention using GPT-4."
+
+- title: "Direct Preference Optimization"
+  date: "2023-05-29T00:00:00-07:00"
+  tags: ["Research"]
+  organizations: ["Stanford University"]
+  models: []
+  impact_areas: ["Research", "Language Models"]
+  key_figures: []
+  link: "https://arxiv.org/abs/2305.18290"
+  description: "Researchers introduced Direct Preference Optimization (DPO), a simpler and more efficient alternative to RLHF for aligning language models with human preferences, eliminating the need for reward modeling."
+
+- title: "CAIS Extinction-Risk Letter"
+  date: "2023-05-30T09:00:00-07:00"
+  tags: ["Social", "Safety"]
+  organizations: []
+  models: []
+  impact_areas: ["Public Perception", "Regulation"]
+  key_figures: ["Geoffrey Hinton", "Yoshua Bengio", "Sam Altman", "Demis Hassabis"]
+  link: "https://www.safe.ai/statement-on-ai-risk"
+  description: "The Center for AI Safety released a statement signed by hundreds of AI researchers and industry leaders declaring that 'Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks.'"
+
+- title: "NVIDIA Market Cap Hits $1T"
+  date: "2023-05-30T16:00:00-04:00"
+  tags: ["Corporate"]
+  organizations: ["NVIDIA"]
+  models: []
+  impact_areas: ["Market Competition"]
+  key_figures: ["Jensen Huang"]
+  link: "https://www.reuters.com/technology/nvidia-hits-1-trillion-market-cap-2023-05-30/"
+  description: "NVIDIA became the first chipmaker to reach a $1 trillion market capitalization, driven by surging demand for its GPUs used in AI applications and data centers powering the generative AI boom."
+
+- title: "Claude 2"
+  date: "2023-07-11T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude 2"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://www.anthropic.com/index/claude-2"
+  description: "Anthropic released Claude 2 with improved capabilities, a 100k token context window, and general public availability through claude.ai, marking a significant upgrade from the original Claude model."
+
+- title: "xAI Founded"
+  date: "2023-07-14T00:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["xAI"]
+  models: []
+  impact_areas: ["Market Competition"]
+  key_figures: ["Elon Musk"]
+  link: "https://x.ai/"
+  description: "Elon Musk announced the formation of xAI, a new AI company with the stated goal to 'understand the true nature of the universe,' joining the competitive landscape alongside OpenAI, Google, and Anthropic."
+
+- title: "LLaMA 2 Open-Sourced"
+  date: "2023-07-18T09:00:00-07:00"
+  tags: ["Model", "Product", "Economic"]
+  organizations: ["Meta", "Microsoft"]
+  models: ["LLaMA 2-7B", "LLaMA 2-13B", "LLaMA 2-70B"]
+  impact_areas: ["Open Source", "Language Models", "Enterprise AI"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://ai.meta.com/llama/"
+  description: "Meta released LLaMA 2, a family of open-source large language models (7B, 13B, and 70B parameters) for commercial use, trained on 40% more data than LLaMA 1 and made available through partnerships with Microsoft Azure and AWS."
