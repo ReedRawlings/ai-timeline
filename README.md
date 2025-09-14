@@ -24,6 +24,36 @@ A comprehensive timeline of significant events in artificial intelligence, built
 - **Visual Indicators**: Scaffolded filters are highlighted with a special border and background
 - **Clear All**: Reset all filters with one click
 
+
+## Approved Tags:
+- "Model" - New AI model releases or updates
+- "Corporate" - Impacts on corporate structure, governance, hiring, or policies
+- "Product" - Product launches or major updates
+- "Research" - Academic papers, studies, or research findings
+- "Policy" - Government regulations, policies, or legal developments
+- "Economic" - Market movements, funding, acquisitions, IPOs
+- "Social" - Public reactions, controversies, cultural impact
+- "Technical" - Infrastructure, hardware, or platform developments
+- "Partnership" - Collaborations or strategic partnerships
+- "Safety" - AI safety, alignment, or risk-related developments
+
+## APPROVED Common Impact Areas:
+- "Multimodal AI"
+- "Language Models"
+- "Computer Vision"
+- "Market Competition"
+- "Robotics"
+- "Healthcare"
+- "Education"
+- "Creator Economy"
+- "Public Perception"
+- "Ethics"
+- "Regulation"
+- "Enterprise AI"
+- "Open Source"
+- "Hardware"
+- "Research"
+
 ### Data Management
 - **YAML-based**: All event data stored in structured YAML format
 - **Validation**: Built-in validation scripts ensure data integrity

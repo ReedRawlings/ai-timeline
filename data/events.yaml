@@ -1318,20 +1318,20 @@
 
 - title: "Apertus OS Model"
   date: "2025-09-02T14:00:00+01:00"
-  tags: ["Model", "Open Source"]
+  tags: ["Model"]
   organizations: ["EPFL", "ETH Zurich"]
   models: ["Apertus"]
-  impact_areas: ["Open Source", "Language Models", "Regulation"]
+  impact_areas: ["Open Source", "Regulation"]
   key_figures: []
   link: "https://theaitrack.com/switzerland-apertus-open-ai-model-launch/"
   description: "Switzerland launched Apertus, a fully open-source national LLM trained on 15T tokens across 1,000+ languages (40% non-English), with complete transparency including open weights, training data, and documentation, compliant with EU AI Act as public digital infrastructure."
 
 - title: "Anthropic Copyright Settlement"
   date: "2025-09-05T09:00:00-07:00"
-  tags: ["Legal"]
+  tags: ["Corporate"]
   organizations: ["Anthropic"]
   models: []
-  impact_areas: ["Regulation", "Ethics"]
+  impact_areas: ["Legal"]
   key_figures: []
   link: "https://theaitrack.com/anthropic-will-pay-1-5b-ai-copyright-settlement/"
   description: "Anthropic agreed to landmark $1.5 billion settlement resolving class-action lawsuit over training Claude on pirated copies of ~500,000 books from LibGen and Pirate Library Mirror, with authors receiving ~$3,000 per infringed book and Anthropic destroying pirated dataset."
@@ -1351,14 +1351,14 @@
   tags: ["Safety", "Research"]
   organizations: ["OpenAI", "Anthropic"]
   models: []
-  impact_areas: ["Ethics", "Research"]
+  impact_areas: ["Enterprise AI", "Research"]
   key_figures: []
   link: "https://theaitrack.com/openai-and-anthropic-joint-safety-evaluation/"
   description: "OpenAI and Anthropic opened APIs for cross-laboratory safety audits, conducting joint evaluations on sycophancy, misuse cooperation, jailbreak resistance, and refusal-helpfulness trade-offs to advance AI safety research and transparency."
 
 - title: "Grok 2.5 Open Source"
   date: "2025-09-09T16:00:00-07:00"
-  tags: ["Model", "Open Source"]
+  tags: ["Model"]
   organizations: ["xAI"]
   models: ["Grok 2.5"]
   impact_areas: ["Open Source", "Language Models"]
@@ -1368,17 +1368,17 @@
 
 - title: "Greece OpenAI Partnership"
   date: "2025-09-05T15:00:00+03:00"
-  tags: ["Policy", "International"]
+  tags: ["Policy", "Partnership"]
   organizations: ["OpenAI", "Government of Greece"]
   models: ["ChatGPT"]
-  impact_areas: []
+  impact_areas: ["Market Competition", "Public Perception"]
   key_figures: []
   link: "https://www.reuters.com/technology/greece-openai-national-partnership-2025-09-05"
   description: "Greek Prime Minister Kyriakos Mitsotakis personally attended the signing of a memorandum of understanding with OpenAI, establishing a 'national AI partnership' to boost innovation in Greece's economy. Greek tech startups will receive credits and early access to OpenAI's APIs, with the aim of boosting innovation in healthcare, climate, education, and public services. The model of a 'national AI partnership' could be copied by other midsized countries."
 
 - title: "Anthropic NYT Settlement"
   date: "2025-09-05T11:00:00-07:00"
-  tags: ["Legal", "Media"]
+  tags: ["Corporate", "Legal"]
   organizations: ["Anthropic", "The New York Times"]
   models: []
   impact_areas: ["Copyright"]
@@ -1401,7 +1401,7 @@
   tags: ["Corporate"]
   organizations: ["OpenAI"]
   models: []
-  impact_areas: ["Product Development", "Enterprise AI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
   key_figures: ["Vijaye Raji", "Fidji Simo", "Sam Altman"]
   link: "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig"
   description: "OpenAI acquired product testing startup Statsig for $1.1 billion in an all-stock deal, one of its largest acquisitions to date. Statsig CEO Vijaye Raji was named CTO of Applications at OpenAI, reporting to Fidji Simo. The acquisition brings Statsig's A/B testing, feature flagging, and real-time decisioning platform in-house to accelerate product development across OpenAI's Applications organization."
