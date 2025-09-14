@@ -30,7 +30,7 @@
 
 - title: "GPT-4o Release"
   date: "2024-05-13T10:00:00-07:00"
-  tags: ["Model", "Product", "Multimodal"]
+  tags: ["Model", "Product"]
   organizations: ["OpenAI"]
   models: ["GPT-4o"]
   impact_areas: ["Multimodal AI", "Product Development"]
@@ -290,7 +290,7 @@
 
 - title: "ChatGPT: Educational Friend or Foe?"
   date: "2023-01-09T00:00:00-05:00"
-  tags: ["Research", "Thinkpiece", "Education"]
+  tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: ["ChatGPT"]
   impact_areas: ["Public Perception"]
@@ -300,7 +300,7 @@
 
 - title: "AI Divide in Education"
   date: "2023-07-10T00:00:00-05:00"
-  tags: ["Research", "Thinkpiece", "Education"]
+  tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: []
   impact_areas: ["Public Perception"]
@@ -310,7 +310,7 @@
 
 - title: "Ban or Integrate Classroom AI?"
   date: "2023-08-07T00:00:00-05:00"
-  tags: ["Research", "Thinkpiece", "Education"]
+  tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: []
   impact_areas: ["Public Perception"]
@@ -320,7 +320,7 @@
 
 - title: "ChatGPT in Education"
   date: "2023-08-22T00:00:00-05:00"
-  tags: ["Research", "Thinkpiece", "Education"]
+  tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: ["ChatGPT"]
   impact_areas: ["Public Perception"]
@@ -330,13 +330,14 @@
   
 - title: "UNESCO Guidance on AI"
   date: "2023-09-07T00:00:00+02:00"
-  tags: ["Research", "Education"]
+  tags: ["Research"]
   organizations: ["UNESCO"]
   models: []
   impact_areas: ["Public Perception"]
   key_figures: []
   link: "https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools"
   description: "UNESCO releases the first global guidance calling on governments to regulate generative AI in schools, set a minimum usage age of 13, and provide teacher training to ensure human-centered, equitable adoption."
+
 - title: "Amazons 1 Millionth Robot"
   date: "2025-07-04T09:00:00-08:00"
   tags: ["Product", "Technical"]
@@ -389,7 +390,7 @@
 
 - title: "Kimi K1.5"
   date: "2025-01-25T09:00:00-08:00"
-  tags: ["Model", "Product", "Research"]
+  tags: ["Model", "Product"]
   organizations: ["Moonshot AI"]
   models: ["Kimi-K1.5", "Kimi-K2"]
   impact_areas: ["Multimodal AI", "Language Models", "Open Source"]
@@ -399,7 +400,7 @@
 
 - title: "Kimi K2"
   date: "2025-07-11T17:44:00+00:00"
-  tags: ["Model", "Open Source", "Technical"]
+  tags: ["Model", "Technical"]
   organizations: ["Moonshot AI"]
   models: ["Kimi-K2"]
   impact_areas: ["Open Source", "Language Models", "Market Competition"]
@@ -419,7 +420,7 @@
 
 - title: "Grok 4 and SuperGrok"
   date: "2025-07-09T23:00:00-07:00"
-  tags: ["Model", "Product", "Economic"]
+  tags: ["Model", "Product"]
   organizations: ["xAI"]
   models: ["Grok-4", "Grok-4-Heavy"]
   impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
@@ -429,7 +430,7 @@
 
 - title: "Grok is MechaHitler"
   date: "2025-07-08T14:00:00-07:00"
-  tags: ["Social", "Safety", "Policy"]
+  tags: ["Social", "Safety"]
   organizations: ["xAI", "X"]
   models: ["Grok"]
   impact_areas: ["Public Perception", "Ethics", "Regulation"]
@@ -449,7 +450,7 @@
 
 - title: "Human Trials of AI Drugs"
   date: "2025-07-06T00:00:00-07:00"
-  tags: ["Product", "Healthcare"]
+  tags: ["Product"]
   organizations: ["Google DeepMind", "Alphabet"]
   models: ["AlphaFold"]
   impact_areas: ["Healthcare", "Public Perception"]
