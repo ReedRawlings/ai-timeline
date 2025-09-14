@@ -34,9 +34,4 @@ theme = "ai-timeline-theme"
       unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS"]
-
-[outputFormats]
-  [outputFormats.RSS]
-    mediaType = "application/rss+xml"
-    baseName = "feed" 
+  home = ["HTML"] 

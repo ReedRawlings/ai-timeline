@@ -1305,3 +1305,103 @@
   key_figures: ["David Sacks"]
   link: "https://www.reuters.com/world/us/trump-appoints-former-paypal-coo-david-sacks-ai-crypto-czar-2024-12-06/"
   description: "President-elect Trump appointed venture capitalist David Sacks as White House “AI & Crypto Czar,” tasking him with steering national AI strategy and cryptocurrency policy in the incoming administration."
+
+- title: "Anthropic Series F"
+  date: "2025-09-02T12:00:00-07:00"
+  tags: ["Economic"]
+  organizations: ["Anthropic"]
+  models: []
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: []
+  link: "https://ppc.land/anthropic-completes-13-billion-series-f-funding-at-183-billion-valuation/"
+  description: "Anthropic completed record-breaking $13 billion Series F funding at $183 billion post-money valuation, nearly tripling from March 2025's $61.5B, making it fourth most valuable startup globally as revenue grew from $1B to $5B in eight months."
+
+- title: "Apertus OS Model"
+  date: "2025-09-02T14:00:00+01:00"
+  tags: ["Model", "Open Source"]
+  organizations: ["EPFL", "ETH Zurich"]
+  models: ["Apertus"]
+  impact_areas: ["Open Source", "Language Models", "Regulation"]
+  key_figures: []
+  link: "https://theaitrack.com/switzerland-apertus-open-ai-model-launch/"
+  description: "Switzerland launched Apertus, a fully open-source national LLM trained on 15T tokens across 1,000+ languages (40% non-English), with complete transparency including open weights, training data, and documentation, compliant with EU AI Act as public digital infrastructure."
+
+- title: "Anthropic Copyright Settlement"
+  date: "2025-09-05T09:00:00-07:00"
+  tags: ["Legal"]
+  organizations: ["Anthropic"]
+  models: []
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: []
+  link: "https://theaitrack.com/anthropic-will-pay-1-5b-ai-copyright-settlement/"
+  description: "Anthropic agreed to landmark $1.5 billion settlement resolving class-action lawsuit over training Claude on pirated copies of ~500,000 books from LibGen and Pirate Library Mirror, with authors receiving ~$3,000 per infringed book and Anthropic destroying pirated dataset."
+
+- title: "ASML-Mistral Partnership"
+  date: "2025-09-07T10:00:00+02:00"
+  tags: ["Economic", "Partnership"]
+  organizations: ["ASML", "Mistral AI"]
+  models: []
+  impact_areas: ["Hardware", "Market Competition"]
+  key_figures: []
+  link: "https://techcrunch.com/2025/09/09/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/"
+  description: "Dutch chip-equipment giant ASML led €1.7 billion funding round in Mistral AI with €1.3 billion investment, valuing the European AI startup at €10 billion and establishing strategic partnership to integrate AI capabilities into ASML's lithography tools."
+
+- title: "OpenAI-Anthropic Evaluation Initiative"
+  date: "2025-09-06T13:00:00-07:00"
+  tags: ["Safety", "Research"]
+  organizations: ["OpenAI", "Anthropic"]
+  models: []
+  impact_areas: ["Ethics", "Research"]
+  key_figures: []
+  link: "https://theaitrack.com/openai-and-anthropic-joint-safety-evaluation/"
+  description: "OpenAI and Anthropic opened APIs for cross-laboratory safety audits, conducting joint evaluations on sycophancy, misuse cooperation, jailbreak resistance, and refusal-helpfulness trade-offs to advance AI safety research and transparency."
+
+- title: "Grok 2.5 Open Source"
+  date: "2025-09-09T16:00:00-07:00"
+  tags: ["Model", "Open Source"]
+  organizations: ["xAI"]
+  models: ["Grok 2.5"]
+  impact_areas: ["Open Source", "Language Models"]
+  key_figures: []
+  link: "https://theaitrack.com/xai-open-sources-grok-2-5/"
+  description: "xAI open-sourced Grok 2.5 (last year's best model) and pledged Grok 3 release in six months, praised by Sebastian Rashka for releasing full production models rather than lite versions, highlighting transparency and enterprise benefits."
+
+- title: "Greece OpenAI Partnership"
+  date: "2025-09-05T15:00:00+03:00"
+  tags: ["Policy", "International"]
+  organizations: ["OpenAI", "Government of Greece"]
+  models: ["ChatGPT"]
+  impact_areas: []
+  key_figures: []
+  link: "https://www.reuters.com/technology/greece-openai-national-partnership-2025-09-05"
+  description: "Greek Prime Minister Kyriakos Mitsotakis personally attended the signing of a memorandum of understanding with OpenAI, establishing a 'national AI partnership' to boost innovation in Greece's economy. Greek tech startups will receive credits and early access to OpenAI's APIs, with the aim of boosting innovation in healthcare, climate, education, and public services. The model of a 'national AI partnership' could be copied by other midsized countries."
+
+- title: "Anthropic NYT Settlement"
+  date: "2025-09-05T11:00:00-07:00"
+  tags: ["Legal", "Media"]
+  organizations: ["Anthropic", "The New York Times"]
+  models: []
+  impact_areas: ["Copyright"]
+  key_figures: []
+  link: "https://www.nytimes.com/2025/09/05/business/anthropic-settlement-copyright"
+  description: "Anthropic reached a confidential settlement with The New York Times over allegations that it used copyrighted articles to train its AI models, marking one of the first major copyright resolutions between a news outlet and a leading AI firm. The case stirred debate over fair use and media rights in generative AI, with terms of the agreement not disclosed publicly."
+
+- title: "Meta-Midjourney Partnership"
+  date: "2025-09-10T11:00:00-07:00"
+  tags: ["Partnership"]
+  organizations: ["Meta", "Midjourney"]
+  models: []
+  impact_areas: ["Creator Economy", "Multimodal AI"]
+  key_figures: []
+  link: "https://theaitrack.com/meta-partners-with-midjourney/"
+  description: "Meta formed technology licensing partnership with Midjourney to integrate advanced image and video generation capabilities into Meta's AI products, expanding creative AI portfolio while pursuing superintelligence ambitions."
+
+- title: "OpenAI Acquires Statsig"
+  date: "2025-09-02T12:00:00-07:00"
+  tags: ["Corporate"]
+  organizations: ["OpenAI"]
+  models: []
+  impact_areas: ["Product Development", "Enterprise AI"]
+  key_figures: ["Vijaye Raji", "Fidji Simo", "Sam Altman"]
+  link: "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig"
+  description: "OpenAI acquired product testing startup Statsig for $1.1 billion in an all-stock deal, one of its largest acquisitions to date. Statsig CEO Vijaye Raji was named CTO of Applications at OpenAI, reporting to Fidji Simo. The acquisition brings Statsig's A/B testing, feature flagging, and real-time decisioning platform in-house to accelerate product development across OpenAI's Applications organization."
