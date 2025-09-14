@@ -40,7 +40,7 @@
 
 - title: "DALL-E 3 Release"
   date: "2023-10-17T10:00:00-07:00"
-  tags: ["Model", "Product", "Image Generation"]
+  tags: ["Model", "Product"]
   organizations: ["OpenAI"]
   models: ["DALL-E 3"]
   impact_areas: ["Image Generation"]
@@ -70,10 +70,10 @@
 
 - title: "DeepSeek R1"
   date: "2024-01-15T10:00:00-07:00"
-  tags: ["Model", "Product", "Reasoning"]
+  tags: ["Model", "Product"]
   organizations: ["DeepSeek"]
   models: ["DeepSeek R1"]
-  impact_areas: ["Reasoning AI", "Research"]
+  impact_areas: ["Research", "Economic"]
   key_figures: []
   link: "https://www.deepseek.com/"
   description: "DeepSeek released R1, a reasoning-focused AI model designed for complex problem-solving tasks."
@@ -120,7 +120,7 @@
 
 - title: "MAI-DxO Medical Research"
   date: "2025-06-30T00:00:00-08:00"
-  tags: ["Research", "Medical"]
+  tags: ["Research"]
   organizations: ["Microsoft", "New England Journal of Medicine"]
   models: ["o3"]
   impact_areas: ["Healthcare"]
@@ -180,7 +180,7 @@
 
 - title: "Agentic Misalignment Research"
   date: "2025-06-30T14:00:00-07:00"
-  tags: ["Research", "Alignment"]
+  tags: ["Research"]
   organizations: ["Anthropic"]
   models: ["Claude Opus 4", "Claude Sonnet 3.6", "GPT-4.1", "GPT-4.5", "Gemini 2.5 Flash", "Grok 3 Beta", "DeepSeek-R1", "Llama 4 Maverick"]
   impact_areas: ["Ethics", "Research", "Public Perception"]
@@ -190,7 +190,7 @@
 
 - title: "OpenAI Sycophancy Crisis"
   date: "2025-04-29T18:00:00-07:00"
-  tags: ["Safety", "Alignment", "Product"]
+  tags: ["Safety", "Product"]
   organizations: ["OpenAI"]
   models: ["GPT-4o", "gpt-4o-2025-04-25"]
   impact_areas: ["Public Perception", "Social"]
