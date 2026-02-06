@@ -1,3 +1,13 @@
+- title: "Project Genie Public Launch"
+  date: "2026-01-29T10:00:00-08:00"
+  tags: ["Product", "Model"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Genie 3"]
+  impact_areas: ["Computer Vision", "Multimodal AI"]
+  key_figures: []
+  link: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
+  description: "Google DeepMind launched Project Genie publicly to Google AI Ultra subscribers in the U.S., enabling users to generate explorable, interactive 3D worlds from text or image prompts. Built on Genie 3, a world model first previewed in August 2025, the system generates real-time 3D environments at 720p resolution and 24 fps, maintaining physical consistency as users navigate and interact with the generated world. The launch put the gaming industry on notice, demonstrating AI's potential to create playable environments without traditional game engines."
+
 - title: "ChatGPT Release"
   date: "2022-11-30T10:00:00-07:00"
   tags: ["Model", "Product", "Social"]

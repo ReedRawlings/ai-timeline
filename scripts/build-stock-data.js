@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Build script: fetches historical stock candle data from Finnhub
+ * Build script: fetches historical stock data from Yahoo Finance
  * and writes it to src/data/stock-history.json.
  *
  * Only re-fetches if the file is stale (>7 days old) or missing.
- * Requires FINNHUB_API_KEY environment variable.
+ * No API key required.
  */
-import { readFileSync, writeFileSync, statSync, mkdirSync } from 'fs';
+import { writeFileSync, statSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -15,9 +15,19 @@ const root = resolve(__dirname, '..');
 const outDir = resolve(root, 'src/data');
 const outPath = resolve(outDir, 'stock-history.json');
 
-const SYMBOLS = ['NVDA', 'GOOGL', 'MSFT', 'META', 'AMD'];
+const SYMBOLS = [
+    // Mag 7
+    'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA',
+    // Gaming
+    'RBLX', 'EA', 'TTWO', 'NTDOY', 'U', 'UBSFY',
+    // SaaS Disrupted
+    'CHGG', 'CRM', 'PATH', 'ADBE', 'DUOL', 'HUBS',
+    // Memory / Semis
+    'MU', 'AVGO', 'TSM', 'AMD', 'AMAT', 'LRCX',
+    // AI Infrastructure
+    'VRT', 'ANET', 'ETN', 'EQIX', 'CLS', 'PWR',
+];
 
-// Check if existing file is fresh enough (< 7 days)
 function isFileFresh() {
     try {
         const stat = statSync(outPath);
@@ -28,22 +38,31 @@ function isFileFresh() {
     }
 }
 
-async function fetchCandles(symbol, apiKey) {
-    // Fetch from 2022-01-01 to 30 days ago
+async function fetchCandles(symbol) {
     const from = Math.floor(new Date('2022-01-01').getTime() / 1000);
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
     const to = Math.floor(thirtyDaysAgo.getTime() / 1000);
 
-    const url = `https://finnhub.io/api/v1/stock/candle?symbol=${symbol}&resolution=D&from=${from}&to=${to}&token=${apiKey}`;
-    const resp = await fetch(url);
-    const data = await resp.json();
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?period1=${from}&period2=${to}&interval=1d`;
+    const resp = await fetch(url, {
+        headers: { 'User-Agent': 'Mozilla/5.0' },
+    });
+    const json = await resp.json();
+    const chart = json?.chart?.result?.[0];
 
-    if (data.s === 'ok' && data.t) {
-        return data.t.map((timestamp, i) => ({
-            time: new Date(timestamp * 1000).toISOString().slice(0, 10),
-            value: data.c[i],
-        }));
+    if (chart && chart.timestamp) {
+        const closes = chart.indicators?.quote?.[0]?.close || [];
+        return chart.timestamp
+            .map((ts, i) => {
+                const val = closes[i];
+                if (val == null) return null;
+                return {
+                    time: new Date(ts * 1000).toISOString().slice(0, 10),
+                    value: Math.round(val * 100) / 100,
+                };
+            })
+            .filter(Boolean);
     }
     return [];
 }
@@ -54,28 +73,20 @@ async function main() {
         return;
     }
 
-    const apiKey = process.env.FINNHUB_API_KEY;
-    if (!apiKey) {
-        console.log('⚠️  FINNHUB_API_KEY not set — writing empty stock history.');
-        mkdirSync(outDir, { recursive: true });
-        writeFileSync(outPath, JSON.stringify({}));
-        return;
-    }
-
-    console.log('📈 Fetching historical stock data from Finnhub...');
+    console.log('📈 Fetching historical stock data from Yahoo Finance...');
     const result = {};
 
     for (const symbol of SYMBOLS) {
         console.log(`  Fetching ${symbol}...`);
         try {
-            result[symbol] = await fetchCandles(symbol, apiKey);
+            result[symbol] = await fetchCandles(symbol);
             console.log(`  ✅ ${symbol}: ${result[symbol].length} data points`);
         } catch (err) {
             console.log(`  ❌ ${symbol}: ${err.message}`);
             result[symbol] = [];
         }
-        // Rate limit: Finnhub free tier is 60 calls/min
-        await new Promise(r => setTimeout(r, 1100));
+        // Small delay between requests
+        await new Promise(r => setTimeout(r, 500));
     }
 
     mkdirSync(outDir, { recursive: true });
@@ -85,7 +96,6 @@ async function main() {
 
 main().catch(err => {
     console.error('❌ build-stock-data failed:', err);
-    // Don't fail the build — chart will just show no historical data
     mkdirSync(outDir, { recursive: true });
     writeFileSync(outPath, JSON.stringify({}));
 });

@@ -1,21 +1,75 @@
 /**
  * stock-chart.js
  * TradingView Lightweight Charts integration with AI event markers.
- * Shows a basket of AI-related stocks with timeline events overlaid.
+ * Stocks organized into toggleable buckets (Mag 7, Gaming, SaaS Disrupted, etc.)
  */
 import { createChart, ColorType, LineStyle } from 'lightweight-charts';
 import stockHistory from '../data/stock-history.json';
 
+// ── Stock Buckets ──────────────────────────────────────────────
+const BUCKETS = [
+    {
+        id: 'mag7',
+        label: 'Mag 7',
+        defaultOn: true,
+        stocks: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA'],
+    },
+    {
+        id: 'gaming',
+        label: 'Gaming',
+        defaultOn: false,
+        stocks: ['RBLX', 'EA', 'TTWO', 'NTDOY', 'U', 'UBSFY'],
+    },
+    {
+        id: 'saas',
+        label: 'SaaS Disrupted',
+        defaultOn: false,
+        stocks: ['CHGG', 'CRM', 'PATH', 'ADBE', 'DUOL', 'HUBS'],
+    },
+    {
+        id: 'memory',
+        label: 'Memory / Semis',
+        defaultOn: false,
+        stocks: ['MU', 'AVGO', 'TSM', 'AMD', 'AMAT', 'LRCX'],
+    },
+    {
+        id: 'infra',
+        label: 'AI Infrastructure',
+        defaultOn: false,
+        stocks: ['VRT', 'ANET', 'ETN', 'EQIX', 'CLS', 'PWR'],
+    },
+];
+
+// ── Colors ─────────────────────────────────────────────────────
 const STOCK_COLORS = {
-    NVDA: '#76B900',
-    GOOGL: '#4285F4',
-    MSFT: '#00A4EF',
-    META: '#0668E1',
-    AMD: '#ED1C24',
+    // Mag 7
+    AAPL: '#A2AAAD', MSFT: '#00A4EF', GOOGL: '#4285F4', AMZN: '#FF9900',
+    NVDA: '#76B900', META: '#0668E1', TSLA: '#CC0000',
+    // Gaming
+    RBLX: '#E1343F', EA: '#1A4480', TTWO: '#FF6600', NTDOY: '#E60012',
+    U: '#222222', UBSFY: '#1F4788',
+    // SaaS Disrupted
+    CHGG: '#F58220', CRM: '#00A1E0', PATH: '#FA4616', ADBE: '#FF0000',
+    DUOL: '#58CC02', HUBS: '#FF7A59',
+    // Memory / Semis
+    MU: '#005BBB', AVGO: '#CC092F', TSM: '#0033A0', AMD: '#ED1C24',
+    AMAT: '#00539B', LRCX: '#005587',
+    // AI Infrastructure
+    VRT: '#006747', ANET: '#D71920', ETN: '#003DA5', EQIX: '#ED1C24',
+    CLS: '#0058A3', PWR: '#00447C',
 };
 
-const DEFAULT_STOCKS = ['NVDA', 'GOOGL', 'MSFT', 'META', 'AMD'];
+const BUCKET_COLORS = {
+    mag7: '#C84B31',
+    gaming: '#E60012',
+    saas: '#FA4616',
+    memory: '#005BBB',
+    infra: '#006747',
+};
 
+const ALL_SYMBOLS = [...new Set(BUCKETS.flatMap(b => b.stocks))];
+
+// ── Chart Init ─────────────────────────────────────────────────
 export function initStockChart(events) {
     const container = document.getElementById('stock-chart-container');
     const chipsContainer = document.getElementById('stock-chips');
@@ -24,7 +78,7 @@ export function initStockChart(events) {
 
     if (!container || !chipsContainer || !toggleBtn || !panel) return;
 
-    // Collapse/expand state
+    // Collapse / expand
     let isExpanded = localStorage.getItem('aiTimelineChartOpen') !== 'false';
     const toggleIcon = toggleBtn.querySelector('.chart-toggle-icon');
 
@@ -38,12 +92,13 @@ export function initStockChart(events) {
 
     toggleBtn.addEventListener('click', () => setExpanded(!isExpanded));
 
-    // Track active stocks and their data
-    const activeStocks = new Set(DEFAULT_STOCKS);
+    // State
+    const activeStocks = new Set();
     const seriesMap = {};
-    const stockData = {}; // cache fetched data per symbol
+    const stockData = {};
+    const stockChipEls = {}; // symbol → chip element
 
-    // Create chart
+    // Chart
     const chart = createChart(container, {
         width: container.clientWidth,
         height: 300,
@@ -61,10 +116,7 @@ export function initStockChart(events) {
             vertLine: { color: '#D4D0C8', style: LineStyle.Dashed },
             horzLine: { color: '#D4D0C8', style: LineStyle.Dashed },
         },
-        timeScale: {
-            borderColor: '#D4D0C8',
-            timeVisible: false,
-        },
+        timeScale: { borderColor: '#D4D0C8', timeVisible: false },
         rightPriceScale: {
             borderColor: '#D4D0C8',
             scaleMargins: { top: 0.1, bottom: 0.1 },
@@ -73,39 +125,98 @@ export function initStockChart(events) {
         handleScale: { axisPressedMouseMove: true, mouseWheel: true },
     });
 
-    // Resize observer
-    const resizeObserver = new ResizeObserver(() => {
+    new ResizeObserver(() => {
         chart.applyOptions({ width: container.clientWidth });
-    });
-    resizeObserver.observe(container);
+    }).observe(container);
 
-    // Build stock chips
-    DEFAULT_STOCKS.forEach(symbol => {
-        const chip = document.createElement('button');
-        chip.className = 'stock-chip active';
-        chip.setAttribute('data-symbol', symbol);
-        chip.style.setProperty('--chip-color', STOCK_COLORS[symbol]);
-        chip.textContent = symbol;
-        chip.addEventListener('click', () => toggleStock(symbol, chip));
-        chipsContainer.appendChild(chip);
+    // ── Build UI: bucket buttons + individual stock chips ──────
+    BUCKETS.forEach((bucket, idx) => {
+        // Bucket toggle button
+        const bucketBtn = document.createElement('button');
+        bucketBtn.className = 'bucket-chip' + (bucket.defaultOn ? ' active' : '');
+        bucketBtn.style.setProperty('--chip-color', BUCKET_COLORS[bucket.id]);
+        bucketBtn.textContent = bucket.label;
+        bucketBtn.addEventListener('click', () => toggleBucket(bucket, bucketBtn));
+        chipsContainer.appendChild(bucketBtn);
+
+        // Individual stock chips for this bucket
+        bucket.stocks.forEach(symbol => {
+            const chip = document.createElement('button');
+            const on = bucket.defaultOn;
+            chip.className = 'stock-chip' + (on ? ' active' : '');
+            chip.setAttribute('data-symbol', symbol);
+            chip.style.setProperty('--chip-color', STOCK_COLORS[symbol] || '#888');
+            chip.textContent = symbol;
+            chip.addEventListener('click', () => toggleStock(symbol, chip));
+            chipsContainer.appendChild(chip);
+            stockChipEls[symbol] = chip;
+            if (on) activeStocks.add(symbol);
+        });
+
+        // Separator between buckets (except after last)
+        if (idx < BUCKETS.length - 1) {
+            const sep = document.createElement('span');
+            sep.className = 'stock-chip-separator';
+            sep.textContent = '|';
+            chipsContainer.appendChild(sep);
+        }
     });
+
+    // ── Toggle helpers ─────────────────────────────────────────
+    function toggleBucket(bucket, bucketBtn) {
+        const allActive = bucket.stocks.every(s => activeStocks.has(s));
+        if (allActive) {
+            // Turn off all stocks in this bucket
+            bucket.stocks.forEach(s => {
+                activeStocks.delete(s);
+                if (seriesMap[s]) { chart.removeSeries(seriesMap[s]); delete seriesMap[s]; }
+                if (stockChipEls[s]) stockChipEls[s].classList.remove('active');
+            });
+            bucketBtn.classList.remove('active');
+        } else {
+            // Turn on all stocks in this bucket
+            bucket.stocks.forEach(s => {
+                if (!activeStocks.has(s)) {
+                    activeStocks.add(s);
+                    addSeriesToChart(s);
+                    if (stockChipEls[s]) stockChipEls[s].classList.add('active');
+                }
+            });
+            bucketBtn.classList.add('active');
+        }
+        chart.timeScale().fitContent();
+        updateMarkers();
+    }
 
     function toggleStock(symbol, chip) {
         if (activeStocks.has(symbol)) {
             activeStocks.delete(symbol);
             chip.classList.remove('active');
-            if (seriesMap[symbol]) {
-                chart.removeSeries(seriesMap[symbol]);
-                delete seriesMap[symbol];
-            }
+            if (seriesMap[symbol]) { chart.removeSeries(seriesMap[symbol]); delete seriesMap[symbol]; }
         } else {
             activeStocks.add(symbol);
             chip.classList.add('active');
             addSeriesToChart(symbol);
         }
+        // Sync bucket button state
+        BUCKETS.forEach(bucket => {
+            if (bucket.stocks.includes(symbol)) {
+                const btn = chipsContainer.querySelector(`.bucket-chip:nth-child(${getBucketBtnIndex(bucket)})`);
+                // Simpler: find by text
+                chipsContainer.querySelectorAll('.bucket-chip').forEach(b => {
+                    if (b.textContent === bucket.label) {
+                        b.classList.toggle('active', bucket.stocks.every(s => activeStocks.has(s)));
+                    }
+                });
+            }
+        });
+        updateMarkers();
     }
 
+    function getBucketBtnIndex() { return 0; } // unused, kept for compat
+
     function addSeriesToChart(symbol) {
+        if (seriesMap[symbol]) return; // already on chart
         const color = STOCK_COLORS[symbol] || '#888';
         const series = chart.addLineSeries({
             color,
@@ -119,10 +230,10 @@ export function initStockChart(events) {
         if (stockData[symbol] && stockData[symbol].length > 0) {
             series.setData(stockData[symbol]);
             chart.timeScale().fitContent();
-            updateMarkers();
         }
     }
 
+    // ── Event markers ──────────────────────────────────────────
     function updateMarkers() {
         const firstSymbol = [...activeStocks][0];
         const series = seriesMap[firstSymbol];
@@ -141,13 +252,10 @@ export function initStockChart(events) {
             })
             .sort((a, b) => a.time.localeCompare(b.time));
 
-        try {
-            series.setMarkers(markers);
-        } catch (e) {
-            console.warn('Markers error:', e.message);
-        }
+        try { series.setMarkers(markers); } catch {}
     }
 
+    // ── Data helpers ───────────────────────────────────────────
     function mergeStockData(historical, recent) {
         const map = new Map();
         (historical || []).forEach(d => map.set(d.time, d));
@@ -155,111 +263,72 @@ export function initStockChart(events) {
         return [...map.values()].sort((a, b) => a.time.localeCompare(b.time));
     }
 
-    // localStorage caching (24h TTL)
     function getCachedStockData() {
         try {
-            const raw = localStorage.getItem('stock_data_cache');
+            const raw = localStorage.getItem('stock_data_cache_v2');
             if (!raw) return null;
             const { ts, data } = JSON.parse(raw);
             if (Date.now() - ts > 86400000) return null;
             return data;
-        } catch {
-            return null;
-        }
+        } catch { return null; }
     }
 
     function setCachedStockData(data) {
         try {
-            localStorage.setItem('stock_data_cache', JSON.stringify({ ts: Date.now(), data }));
-        } catch {
-            // localStorage full
-        }
+            localStorage.setItem('stock_data_cache_v2', JSON.stringify({ ts: Date.now(), data }));
+        } catch {}
     }
 
-    // Fetch all stock data in one batch call, then populate series
+    // ── Load data ──────────────────────────────────────────────
     async function loadAllStockData() {
-        // Start with pre-baked historical data
-        for (const symbol of DEFAULT_STOCKS) {
-            stockData[symbol] = stockHistory[symbol] || [];
-        }
-        console.log('[Stock Chart] Historical data keys:', Object.keys(stockHistory));
+        for (const s of ALL_SYMBOLS) stockData[s] = stockHistory[s] || [];
 
-        // Check localStorage cache first
         const cached = getCachedStockData();
         if (cached) {
-            console.log('[Stock Chart] Using cached API data');
-            for (const symbol of DEFAULT_STOCKS) {
-                if (cached[symbol]) {
-                    stockData[symbol] = mergeStockData(stockData[symbol], cached[symbol]);
-                }
+            for (const s of ALL_SYMBOLS) {
+                if (cached[s]) stockData[s] = mergeStockData(stockData[s], cached[s]);
             }
         } else {
-            // Fetch recent data from serverless function (one call for all symbols)
             const thirtyDaysAgo = new Date();
             thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
             const from = thirtyDaysAgo.toISOString().slice(0, 10);
             const to = new Date().toISOString().slice(0, 10);
-            const url = `/api/stocks?symbols=${DEFAULT_STOCKS.join(',')}&from=${from}&to=${to}`;
-
-            console.log('[Stock Chart] Fetching:', url);
             try {
-                const resp = await fetch(url);
-                console.log('[Stock Chart] API response status:', resp.status);
+                const resp = await fetch(`/api/stocks?symbols=${ALL_SYMBOLS.join(',')}&from=${from}&to=${to}`);
                 if (resp.ok) {
-                    const json = await resp.json();
-                    const liveData = json.data || json; // handle both wrapped and unwrapped
-                    console.log('[Stock Chart] API debug:', json.debug);
-                    console.log('[Stock Chart] API data keys:', Object.keys(liveData));
+                    const liveData = await resp.json();
                     setCachedStockData(liveData);
-                    for (const symbol of DEFAULT_STOCKS) {
-                        if (liveData[symbol] && liveData[symbol].length > 0) {
-                            stockData[symbol] = mergeStockData(stockData[symbol], liveData[symbol]);
-                        }
+                    for (const s of ALL_SYMBOLS) {
+                        if (liveData[s]?.length > 0) stockData[s] = mergeStockData(stockData[s], liveData[s]);
                     }
-                } else {
-                    const text = await resp.text();
-                    console.error('[Stock Chart] API error:', resp.status, text);
                 }
             } catch (err) {
                 console.error('[Stock Chart] Fetch failed:', err.message);
             }
         }
 
-        // Create series for each active stock
-        for (const symbol of DEFAULT_STOCKS) {
-            console.log(`[Stock Chart] ${symbol}: ${stockData[symbol].length} data points`);
-            addSeriesToChart(symbol);
-        }
-
+        // Add series for initially active stocks
+        for (const s of activeStocks) addSeriesToChart(s);
         updateMarkers();
     }
 
-    // Click on chart to scroll timeline to nearest event
+    // ── Chart click → scroll timeline ──────────────────────────
     chart.subscribeClick(param => {
         if (!param.time) return;
-        const clickDate = param.time;
         let nearest = null;
         let minDiff = Infinity;
         events.forEach(event => {
             const d = new Date(event.date);
-            const eventTime = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-            const diff = Math.abs(new Date(eventTime) - new Date(clickDate));
-            if (diff < minDiff) {
-                minDiff = diff;
-                nearest = eventTime;
-            }
+            const t = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+            const diff = Math.abs(new Date(t) - new Date(param.time));
+            if (diff < minDiff) { minDiff = diff; nearest = t; }
         });
-
         if (nearest && minDiff < 7 * 86400000) {
             const card = document.querySelector(`.event-card[data-event-date="${nearest}"]`);
-            if (card) {
-                card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
-                card.focus();
-            }
+            if (card) { card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); card.focus(); }
         }
     });
 
-    // Set initial state, then load data
     setExpanded(isExpanded);
     loadAllStockData();
 }
