@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 </head>
 <body>
     <header class="site-header">
-        <canvas id="neural-network" aria-hidden="true"></canvas>
-        <div class="container">
+        <div class="header-content">
             <h1 class="site-title">{{ .Site.Title }}</h1>
+            <div class="header-rule"><span></span></div>
             <p class="site-description">{{ .Site.Params.description }}</p>
         </div>
     </header>
@@ -94,31 +97,32 @@
             {{ $events := sort .Site.Data.events "date" "asc" }}
             {{ $currentYearMonth := "" }}
             {{ $groupOpen := false }}
-            
+
             {{ range $events }}
                 {{ $date := time .date }}
                 {{ $yearMonth := printf "%s %d" ($date.Format "January") ($date.Year) }}
-                
+
                 {{ if ne $yearMonth $currentYearMonth }}
                     {{ if $groupOpen }}
                         </div>
                         </div>
                     {{ end }}
-                    
+
                     <div class="timeline-group monthly-group" data-year-month="{{ printf "%d-%02d" ($date.Year) ($date.Format "01") }}">
                         <div class="group-label">{{ $yearMonth }}</div>
                         <div class="group-events">
                     {{ $groupOpen = true }}
                     {{ $currentYearMonth = $yearMonth }}
                 {{ end }}
-                
-                <div class="event-card" 
+
+                <div class="event-card"
                      data-event-date="{{ $date.Format "2006-01-02" }}"
                      data-models="{{ if .models }}{{ delimit .models "|" }}{{ end }}"
                      data-organizations="{{ if .organizations }}{{ delimit .organizations "|" }}{{ end }}"
                      data-key-figures="{{ if .key_figures }}{{ delimit .key_figures "|" }}{{ end }}"
                      data-impact-areas="{{ if .impact_areas }}{{ delimit .impact_areas "|" }}{{ end }}"
                      data-tags="{{ if .tags }}{{ delimit .tags "|" }}{{ end }}"
+                     data-primary-tag="{{ if .tags }}{{ index .tags 0 }}{{ end }}"
                      data-description="{{ .description | plainify | htmlEscape }}"
                      data-link="{{ .link }}">
                     <div class="card-content">
@@ -131,28 +135,28 @@
                         <div class="event-description">{{ .description }}</div>
                         <div class="event-metadata">
                             {{ if .organizations }}
-                            <div class="metadata-item"><span class="metadata-label">Organizations:</span> <span class="metadata-value">{{ delimit .organizations ", " }}</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Organizations</span> <span class="metadata-value">{{ delimit .organizations ", " }}</span></div>
                             {{ end }}
                             {{ if .models }}
-                            <div class="metadata-item"><span class="metadata-label">Models:</span> <span class="metadata-value">{{ delimit .models ", " }}</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Models</span> <span class="metadata-value">{{ delimit .models ", " }}</span></div>
                             {{ end }}
                             {{ if .impact_areas }}
-                            <div class="metadata-item"><span class="metadata-label">Impact Areas:</span> <span class="metadata-value">{{ delimit .impact_areas ", " }}</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Impact Areas</span> <span class="metadata-value">{{ delimit .impact_areas ", " }}</span></div>
                             {{ end }}
                             {{ if .key_figures }}
-                            <div class="metadata-item"><span class="metadata-label">Key Figures:</span> <span class="metadata-value">{{ delimit .key_figures ", " }}</span></div>
+                            <div class="metadata-item"><span class="metadata-label">Key Figures</span> <span class="metadata-value">{{ delimit .key_figures ", " }}</span></div>
                             {{ end }}
                             {{ if .link }}
-                            <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">Learn more</a>
+                            <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">Read more</a>
                             {{ end }}
                         </div>
                         <div class="event-tags">
-                            {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+                            {{ range .tags }}<span class="tag" data-tag="{{ . }}">{{ . }}</span>{{ end }}
                         </div>
                     </div>
                 </div>
             {{ end }}
-            
+
             {{ if $groupOpen }}
                 </div>
                 </div>
@@ -161,6 +165,5 @@
     </main>
 
     <script src="{{ "js/main.js" | relURL }}"></script>
-    <script src="{{ "js/neural-network.js" | relURL }}"></script>
 </body>
-</html> 
+</html>
