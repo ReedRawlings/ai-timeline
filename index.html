@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Timeline</title>
+    <meta name="description" content="A chronological timeline of important AI developments">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">AI Timeline</h1>
+            <div class="header-rule"><span></span></div>
+            <p class="site-description">A chronological timeline of important AI developments</p>
+        </div>
+    </header>
+
+    <!-- Filter System -->
+    <div class="filter-container compact">
+        <div class="container">
+            <div class="filter-bar compact">
+                <select id="model-filter" class="filter-select">
+                    <option value="">All Models</option>
+                </select>
+                <select id="organization-filter" class="filter-select">
+                    <option value="">All Organizations</option>
+                </select>
+                <select id="key-figure-filter" class="filter-select">
+                    <option value="">All Key Figures</option>
+                </select>
+                <select id="impact-area-filter" class="filter-select">
+                    <option value="">All Impact Areas</option>
+                </select>
+                <select id="tag-filter" class="filter-select">
+                    <option value="">All Tags</option>
+                </select>
+                <select id="grouping-mode" class="filter-select">
+                    <option value="month" selected>By Month</option>
+                    <option value="week">By Week</option>
+                </select>
+                <button id="clear-filters" class="clear-filters-btn">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock Chart (collapsible) -->
+    <div class="stock-chart-section">
+        <button id="chart-toggle" class="chart-toggle-btn">
+            <span class="chart-toggle-icon">&#9650;</span> AI Market Tracker
+        </button>
+        <div id="stock-chart-panel" class="stock-chart-panel">
+            <div class="stock-chips" id="stock-chips"></div>
+            <div id="stock-chart-container" class="stock-chart-container"></div>
+        </div>
+    </div>
+
+    <main class="timeline-container">
+        <div class="timeline" id="timeline"></div>
+    </main>
+
+    <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>

@@ -1,2 +1,7 @@
+node_modules/
+dist/
 public/**
-resources/_gen/** 
+resources/_gen/**
+.DS_Store
+src/data/events.json
+src/data/stock-history.json
