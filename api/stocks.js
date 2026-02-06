@@ -22,7 +22,8 @@ export default async function handler(req, res) {
 
     const result = {};
 
-    for (const symbol of symbolList) {
+    // Fetch all symbols in parallel
+    await Promise.all(symbolList.map(async (symbol) => {
         try {
             const url = `https://finnhub.io/api/v1/stock/candle?symbol=${symbol}&resolution=D&from=${fromTs}&to=${toTs}&token=${apiKey}`;
             const resp = await fetch(url);
@@ -31,17 +32,17 @@ export default async function handler(req, res) {
             if (data.s === 'ok' && data.t) {
                 result[symbol] = data.t.map((timestamp, i) => ({
                     time: new Date(timestamp * 1000).toISOString().slice(0, 10),
-                    value: data.c[i], // closing price
+                    value: data.c[i],
                 }));
             } else {
                 result[symbol] = [];
             }
-        } catch {
+        } catch (err) {
+            console.error(`Finnhub error for ${symbol}:`, err.message);
             result[symbol] = [];
         }
-    }
+    }));
 
-    // Edge cache for 24h, stale-while-revalidate
     res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate');
     res.setHeader('Content-Type', 'application/json');
     return res.status(200).json(result);

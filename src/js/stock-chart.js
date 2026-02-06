@@ -38,9 +38,10 @@ export function initStockChart(events) {
 
     toggleBtn.addEventListener('click', () => setExpanded(!isExpanded));
 
-    // Track active stocks
+    // Track active stocks and their data
     const activeStocks = new Set(DEFAULT_STOCKS);
     const seriesMap = {};
+    const stockData = {}; // cache fetched data per symbol
 
     // Create chart
     const chart = createChart(container, {
@@ -100,23 +101,29 @@ export function initStockChart(events) {
         } else {
             activeStocks.add(symbol);
             chip.classList.add('active');
-            loadStockData(symbol);
+            addSeriesToChart(symbol);
         }
     }
 
-    // Event markers (vertical lines on the chart)
-    let markerSeries = null;
+    function addSeriesToChart(symbol) {
+        const color = STOCK_COLORS[symbol] || '#888';
+        const series = chart.addLineSeries({
+            color,
+            lineWidth: 2,
+            priceLineVisible: false,
+            lastValueVisible: true,
+            title: symbol,
+        });
+        seriesMap[symbol] = series;
 
-    function addEventMarkers() {
-        if (!events || events.length === 0) return;
-
-        // Create markers using lightweight-charts marker API
-        // We'll add markers to the first active series
-        updateMarkers();
+        if (stockData[symbol] && stockData[symbol].length > 0) {
+            series.setData(stockData[symbol]);
+            chart.timeScale().fitContent();
+            updateMarkers();
+        }
     }
 
     function updateMarkers() {
-        // Find the first active series to attach markers to
         const firstSymbol = [...activeStocks][0];
         const series = seriesMap[firstSymbol];
         if (!series) return;
@@ -136,98 +143,99 @@ export function initStockChart(events) {
 
         try {
             series.setMarkers(markers);
-        } catch {
-            // markers may fail if dates don't align — that's OK
+        } catch (e) {
+            console.warn('Markers error:', e.message);
         }
     }
 
-    // Load stock data (historical JSON + live API)
-    async function loadStockData(symbol) {
-        const color = STOCK_COLORS[symbol] || '#888';
-        const series = chart.addLineSeries({
-            color,
-            lineWidth: 2,
-            priceLineVisible: false,
-            lastValueVisible: true,
-            title: symbol,
-        });
-        seriesMap[symbol] = series;
-
-        // Load pre-baked historical data
-        let data = [];
-        if (stockHistory[symbol]) {
-            data = stockHistory[symbol];
-        }
-
-        // Fetch recent data from serverless function
-        try {
-            const cached = getCachedStockData(symbol);
-            if (cached) {
-                data = mergeStockData(data, cached);
-            } else {
-                const thirtyDaysAgo = new Date();
-                thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-                const from = thirtyDaysAgo.toISOString().slice(0, 10);
-                const to = new Date().toISOString().slice(0, 10);
-
-                const resp = await fetch(`/api/stocks?symbols=${symbol}&from=${from}&to=${to}`);
-                if (resp.ok) {
-                    const liveData = await resp.json();
-                    if (liveData[symbol]) {
-                        setCachedStockData(symbol, liveData[symbol]);
-                        data = mergeStockData(data, liveData[symbol]);
-                    }
-                }
-            }
-        } catch {
-            // API not available — use historical data only
-        }
-
-        if (data.length > 0) {
-            series.setData(data);
-            chart.timeScale().fitContent();
-            updateMarkers();
-        }
+    function mergeStockData(historical, recent) {
+        const map = new Map();
+        (historical || []).forEach(d => map.set(d.time, d));
+        (recent || []).forEach(d => map.set(d.time, d));
+        return [...map.values()].sort((a, b) => a.time.localeCompare(b.time));
     }
 
     // localStorage caching (24h TTL)
-    function getCachedStockData(symbol) {
+    function getCachedStockData() {
         try {
-            const raw = localStorage.getItem(`stock_${symbol}`);
+            const raw = localStorage.getItem('stock_data_cache');
             if (!raw) return null;
             const { ts, data } = JSON.parse(raw);
-            if (Date.now() - ts > 86400000) return null; // 24h expired
+            if (Date.now() - ts > 86400000) return null;
             return data;
         } catch {
             return null;
         }
     }
 
-    function setCachedStockData(symbol, data) {
+    function setCachedStockData(data) {
         try {
-            localStorage.setItem(`stock_${symbol}`, JSON.stringify({ ts: Date.now(), data }));
+            localStorage.setItem('stock_data_cache', JSON.stringify({ ts: Date.now(), data }));
         } catch {
-            // localStorage full — ignore
+            // localStorage full
         }
     }
 
-    function mergeStockData(historical, recent) {
-        const map = new Map();
-        historical.forEach(d => map.set(d.time, d));
-        recent.forEach(d => map.set(d.time, d));
-        return [...map.values()].sort((a, b) => a.time.localeCompare(b.time));
-    }
+    // Fetch all stock data in one batch call, then populate series
+    async function loadAllStockData() {
+        // Start with pre-baked historical data
+        for (const symbol of DEFAULT_STOCKS) {
+            stockData[symbol] = stockHistory[symbol] || [];
+        }
+        console.log('[Stock Chart] Historical data keys:', Object.keys(stockHistory));
 
-    // Subscribe to crosshair for tooltip on event markers
-    chart.subscribeCrosshairMove(param => {
-        // Tooltip logic can be extended here
-    });
+        // Check localStorage cache first
+        const cached = getCachedStockData();
+        if (cached) {
+            console.log('[Stock Chart] Using cached API data');
+            for (const symbol of DEFAULT_STOCKS) {
+                if (cached[symbol]) {
+                    stockData[symbol] = mergeStockData(stockData[symbol], cached[symbol]);
+                }
+            }
+        } else {
+            // Fetch recent data from serverless function (one call for all symbols)
+            const thirtyDaysAgo = new Date();
+            thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+            const from = thirtyDaysAgo.toISOString().slice(0, 10);
+            const to = new Date().toISOString().slice(0, 10);
+            const url = `/api/stocks?symbols=${DEFAULT_STOCKS.join(',')}&from=${from}&to=${to}`;
+
+            console.log('[Stock Chart] Fetching:', url);
+            try {
+                const resp = await fetch(url);
+                console.log('[Stock Chart] API response status:', resp.status);
+                if (resp.ok) {
+                    const liveData = await resp.json();
+                    console.log('[Stock Chart] API data keys:', Object.keys(liveData));
+                    setCachedStockData(liveData);
+                    for (const symbol of DEFAULT_STOCKS) {
+                        if (liveData[symbol] && liveData[symbol].length > 0) {
+                            stockData[symbol] = mergeStockData(stockData[symbol], liveData[symbol]);
+                        }
+                    }
+                } else {
+                    const text = await resp.text();
+                    console.error('[Stock Chart] API error:', resp.status, text);
+                }
+            } catch (err) {
+                console.error('[Stock Chart] Fetch failed:', err.message);
+            }
+        }
+
+        // Create series for each active stock
+        for (const symbol of DEFAULT_STOCKS) {
+            console.log(`[Stock Chart] ${symbol}: ${stockData[symbol].length} data points`);
+            addSeriesToChart(symbol);
+        }
+
+        updateMarkers();
+    }
 
     // Click on chart to scroll timeline to nearest event
     chart.subscribeClick(param => {
         if (!param.time) return;
         const clickDate = param.time;
-        // Find the nearest event
         let nearest = null;
         let minDiff = Infinity;
         events.forEach(event => {
@@ -240,7 +248,7 @@ export function initStockChart(events) {
             }
         });
 
-        if (nearest && minDiff < 7 * 86400000) { // within 7 days
+        if (nearest && minDiff < 7 * 86400000) {
             const card = document.querySelector(`.event-card[data-event-date="${nearest}"]`);
             if (card) {
                 card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
@@ -249,10 +257,7 @@ export function initStockChart(events) {
         }
     });
 
-    // Load initial stocks
-    DEFAULT_STOCKS.forEach(symbol => loadStockData(symbol));
-    addEventMarkers();
-
-    // Set initial collapsed/expanded state
+    // Set initial state, then load data
     setExpanded(isExpanded);
+    loadAllStockData();
 }
