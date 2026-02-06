@@ -206,7 +206,9 @@ export function initStockChart(events) {
                 const resp = await fetch(url);
                 console.log('[Stock Chart] API response status:', resp.status);
                 if (resp.ok) {
-                    const liveData = await resp.json();
+                    const json = await resp.json();
+                    const liveData = json.data || json; // handle both wrapped and unwrapped
+                    console.log('[Stock Chart] API debug:', json.debug);
                     console.log('[Stock Chart] API data keys:', Object.keys(liveData));
                     setCachedStockData(liveData);
                     for (const symbol of DEFAULT_STOCKS) {

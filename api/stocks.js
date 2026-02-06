@@ -5,7 +5,7 @@
  * GET /api/stocks?symbols=NVDA,GOOGL&from=2025-01-01&to=2025-02-05
  */
 export default async function handler(req, res) {
-    const { symbols, from, to } = req.query;
+    const { symbols, from, to, debug } = req.query;
 
     if (!symbols) {
         return res.status(400).json({ error: 'Missing "symbols" query parameter' });
@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     const toTs = Math.floor(new Date(to || new Date().toISOString().slice(0, 10)).getTime() / 1000);
 
     const result = {};
+    const debugInfo = {};
 
     // Fetch all symbols in parallel
     await Promise.all(symbolList.map(async (symbol) => {
@@ -28,6 +29,13 @@ export default async function handler(req, res) {
             const url = `https://finnhub.io/api/v1/stock/candle?symbol=${symbol}&resolution=D&from=${fromTs}&to=${toTs}&token=${apiKey}`;
             const resp = await fetch(url);
             const data = await resp.json();
+
+            debugInfo[symbol] = {
+                status: resp.status,
+                finnhubStatus: data.s,
+                dataPoints: data.t ? data.t.length : 0,
+                raw: debug ? data : undefined,
+            };
 
             if (data.s === 'ok' && data.t) {
                 result[symbol] = data.t.map((timestamp, i) => ({
@@ -38,12 +46,12 @@ export default async function handler(req, res) {
                 result[symbol] = [];
             }
         } catch (err) {
-            console.error(`Finnhub error for ${symbol}:`, err.message);
+            debugInfo[symbol] = { error: err.message };
             result[symbol] = [];
         }
     }));
 
     res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate');
     res.setHeader('Content-Type', 'application/json');
-    return res.status(200).json(result);
+    return res.status(200).json({ data: result, debug: debugInfo });
 }
