@@ -68,15 +68,15 @@
   link: "https://ai.meta.com/blog/llama-2/"
   description: "Meta d Llama 2, an open-source large language model with improved performance and safety features."
 
-- title: "DeepSeek R1"
-  date: "2024-01-15T10:00:00-07:00"
-  tags: ["Model", "Product"]
+- title: "DeepSeek R1 Shocks Markets"
+  date: "2025-01-20T09:00:00+08:00"
+  tags: ["Model", "Economic", "Social"]
   organizations: ["DeepSeek"]
   models: ["DeepSeek R1"]
-  impact_areas: ["Research", "Economic"]
+  impact_areas: ["Language Models", "Market Competition", "Open Source", "Hardware"]
   key_figures: []
   link: "https://www.deepseek.com/"
-  description: "DeepSeek released R1, a reasoning-focused AI model designed for complex problem-solving tasks."
+  description: "Chinese AI startup DeepSeek released R1, an open-source reasoning model that rivaled OpenAI's o1 on benchmarks while costing just $5.6 million to train. The release triggered a historic market shock on January 27 — NVIDIA lost nearly $600 billion in a single day, the Nasdaq plunged 3.1%, and the S&P 500 fell 1.5% — as investors panicked over the prospect that frontier AI capabilities didn't require massive Western-scale infrastructure spending."
 
 - title: "MrBeast AI Controversy"
   date: "2025-06-26T10:00:00-08:00"
@@ -1406,3 +1406,413 @@
   key_figures: ["Vijaye Raji", "Fidji Simo", "Sam Altman"]
   link: "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig"
   description: "OpenAI acquired product testing startup Statsig for $1.1 billion in an all-stock deal, one of its largest acquisitions to date. Statsig CEO Vijaye Raji was named CTO of Applications at OpenAI, reporting to Fidji Simo. The acquisition brings Statsig's A/B testing, feature flagging, and real-time decisioning platform in-house to accelerate product development across OpenAI's Applications organization."
+
+- title: "Claude Sonnet 4.5"
+  date: "2025-09-29T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Sonnet 4.5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-sonnet-4-5"
+  description: "Anthropic released Claude Sonnet 4.5, described as the best coding model in the world and the strongest model for building complex agents. On OSWorld, a benchmark for real-world computer tasks, Sonnet 4.5 leads at 61.4% compared to Sonnet 4's 42.2% just four months prior, with pricing unchanged at $3/$15 per million tokens."
+
+- title: "California AI Employment Discrimination Rules"
+  date: "2025-10-01T00:00:00-07:00"
+  tags: ["Policy"]
+  organizations: ["State of California"]
+  impact_areas: ["Regulation", "Enterprise AI", "Ethics"]
+  key_figures: []
+  link: "https://securiti.ai/ai-roundup/october-2025/"
+  description: "California's Regulations to Protect Against Employment Discrimination Related to Artificial Intelligence took effect, marking the state's first comprehensive framework to address algorithmic bias in hiring and workplace decisions. The rules clarify that algorithmic bias violates state anti-discrimination laws, require employers to retain automated-decision data for four years, and prohibit tools that elicit disability-related information."
+
+- title: "Claude Code on the Web"
+  date: "2025-10-20T09:00:00-07:00"
+  tags: ["Product", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Creator Economy"]
+  key_figures: []
+  link: "https://mlq.ai/news/anthropic-launches-claude-code-on-the-web/"
+  description: "Anthropic launched Claude Code on the web, making its AI-assisted agentic coding tool available through browsers after initially releasing it as a command-line tool in February 2025. Claude Code projected over $500 million in annualized revenue, reflecting a tenfold increase in usage since early 2025."
+
+- title: "ChatGPT Atlas Browser"
+  date: "2025-10-21T09:00:00-07:00"
+  tags: ["Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-chatgpt-atlas/"
+  description: "OpenAI launched ChatGPT Atlas, an AI-native web browser with ChatGPT built into the core browsing experience. Atlas features Browser Memories that let ChatGPT remember context from visited sites, and an Agent Mode that can research, automate tasks, and book appointments while users browse, representing OpenAI's expansion into becoming a broader computing platform beyond ChatGPT."
+
+- title: "OpenAI For-Profit Conversion"
+  date: "2025-10-28T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI", "Microsoft"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Regulation"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/built-to-benefit-everyone/"
+  description: "OpenAI completed its for-profit recapitalization, splitting the AI lab into a public benefit corporation (OpenAI Group) nested inside a non-profit foundation (OpenAI Foundation). Under the new structure, the Foundation holds 26% equity, Microsoft holds 27% (valued at ~$135 billion), and employees and investors hold 47%. The conversion was contingent on SoftBank's $30 billion investment and followed resistance from co-founder Elon Musk."
+
+- title: "NVIDIA Reaches $5 Trillion"
+  date: "2025-10-29T09:30:00-04:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["NVIDIA"]
+  impact_areas: ["Market Competition", "Hardware"]
+  key_figures: ["Jensen Huang"]
+  link: "https://www.cnbc.com/2025/10/29/nvidia-on-track-to-hit-historic-5-trillion-valuation-amid-ai-rally.html"
+  description: "NVIDIA became the first company in history to surpass a $5 trillion market valuation, less than four months after reaching $4 trillion in July. The milestone was driven by CEO Jensen Huang's projection of $500 billion in AI chip sales and plans to build seven new U.S. supercomputers, cementing NVIDIA's dominance in AI infrastructure."
+
+- title: "GPT-5.1"
+  date: "2025-11-12T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.1"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://openai.com/index/gpt-5-1/"
+  description: "OpenAI released GPT-5.1, an iterative improvement over GPT-5 with better latency, tool use, and instruction following, making it the most production-ready version yet. The release was accompanied by Codex-Max, signaling OpenAI's renewed dedication to AI-assisted software development."
+
+- title: "Google $40 Billion Texas Investment"
+  date: "2025-11-14T09:00:00-06:00"
+  tags: ["Corporate", "Economic", "Technical"]
+  organizations: ["Google"]
+  impact_areas: ["Hardware", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://blog.google/inside-google/company-announcements/google-american-innovation-texas/"
+  description: "Google CEO Sundar Pichai and Texas Governor Greg Abbott announced a $40 billion investment in Texas through 2027, Google's largest investment in any U.S. state. The funding covers three new AI data centers in Armstrong and Haskell counties, with Google pledging to add five gigawatts to ERCOT's grid and fund workforce development training 1,700 apprentices by 2030."
+
+- title: "Grok 4.1"
+  date: "2025-11-17T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["xAI"]
+  models: ["Grok 4.1"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Elon Musk"]
+  link: "https://x.com/xai/status/1990530499752980638"
+  description: "xAI released Grok 4.1 after a two-week silent rollout, featuring higher emotional intelligence, 65% reduction in hallucinations (from 12.09% to 4.22%), and boosted creative capabilities. A Grok 4.1 Fast variant was simultaneously announced with a 2-million-token context window and Agent Tools API for orchestrating external tools."
+
+- title: "Gemini 3"
+  date: "2025-11-18T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Gemini 3"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI"]
+  key_figures: ["Demis Hassabis"]
+  link: "https://blog.google/products/gemini/gemini-3/"
+  description: "Google unveiled Gemini 3, focusing on reasoning across text, code, images, and video while being deeply integrated with Google's developer ecosystem. It was the first time Google launched a Gemini model across multiple products on day one, with immediate availability in the Gemini app, Google AI Studio, Vertex AI, and Search AI Mode. Gemini 3 Deep Think, an enhanced reasoning mode, was also made available."
+
+- title: "Claude Opus 4.5"
+  date: "2025-11-24T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.5"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-opus-4-5"
+  description: "Anthropic released Claude Opus 4.5, state-of-the-art for agentic coding, outperforming Google's Gemini 3 Pro and OpenAI's GPT-5.1 on SWE-bench Verified while cutting token usage in half. New features include an 'effort' parameter (low, medium, high) to control reasoning depth and 'Infinite Chats' that eliminates context window limit errors. Opus 4.5 became the default model for Pro, Max, and Enterprise tiers."
+
+- title: "DeepSeek V3.2"
+  date: "2025-12-01T09:00:00+08:00"
+  tags: ["Model", "Technical"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V3.2", "DeepSeek V3.2-Speciale"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  key_figures: []
+  link: "https://api-docs.deepseek.com/news/news251201"
+  description: "DeepSeek released V3.2 and V3.2-Speciale with notable improvements in reasoning depth and autonomous agent performance. V3.2 is the first model to integrate thinking directly into tool-use, delivering GPT-5 level performance while maintaining cost-efficiency. The Speciale variant rivals Gemini 3 Pro in raw capability and achieved gold-medal performance in the 2025 International Mathematical Olympiad."
+
+- title: "IBM Acquires Confluent"
+  date: "2025-12-08T09:00:00-05:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["IBM", "Confluent"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://newsroom.ibm.com/2025-12-08-ibm-to-acquire-confluent-to-create-smart-data-platform-for-enterprise-generative-ai"
+  description: "IBM announced a definitive agreement to acquire data-streaming leader Confluent for $11 billion in an all-cash deal at $31 per share. The acquisition integrates Confluent's real-time event streaming platform with IBM's AI infrastructure to accelerate generative and agentic AI deployments across enterprises, with the deal expected to close by mid-2026."
+
+- title: "GPT-5.2"
+  date: "2025-12-11T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.2"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://openai.com/index/introducing-gpt-5-2/"
+  description: "OpenAI released GPT-5.2, its most capable model for professional and long-context work, fast-tracked to address competitive pressure from Google's Gemini 3. The model comes in three modes: GPT-5.2 Instant, GPT-5.2 Thinking, and GPT-5.2 Pro, succeeding GPT-5.1 released just a month earlier."
+
+- title: "Disney-OpenAI Sora Deal"
+  date: "2025-12-11T09:00:00-05:00"
+  tags: ["Partnership", "Economic", "Social"]
+  organizations: ["Disney", "OpenAI"]
+  models: ["Sora"]
+  impact_areas: ["Creator Economy", "Market Competition", "Public Perception"]
+  key_figures: ["Bob Iger", "Sam Altman"]
+  link: "https://openai.com/index/disney-sora-agreement/"
+  description: "Disney announced a $1 billion equity investment in OpenAI alongside a three-year licensing deal allowing Sora to generate short videos featuring over 200 Disney, Marvel, Pixar, and Star Wars characters. Disney became the first major studio to license its characters for AI video generation, with one year of exclusivity before Disney can sign similar deals with competitors. The agreement excludes talent likenesses and voices."
+
+- title: "NVIDIA Nemotron 3"
+  date: "2025-12-15T09:00:00-08:00"
+  tags: ["Model", "Technical"]
+  organizations: ["NVIDIA"]
+  models: ["Nemotron 3"]
+  impact_areas: ["Open Source", "Enterprise AI", "Hardware"]
+  key_figures: ["Jensen Huang"]
+  link: "https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models"
+  description: "NVIDIA debuted the Nemotron 3 family of open models for agentic AI development in three sizes: Nano (30B, available immediately), Super (100B), and Ultra (500B). Unlike typical open-weight releases, NVIDIA open-sourced the entire development stack including training data, recipes, and reinforcement learning environments. Nemotron 3 Nano delivers 4x higher throughput than its predecessor with support for 1M token context."
+
+- title: "Gemini 3 Flash"
+  date: "2025-12-17T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Gemini 3 Flash"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: []
+  link: "https://blog.google/products/gemini/gemini-3-flash/"
+  description: "Google released Gemini 3 Flash, a lightweight model optimized for speed and efficiency at scale with a massive context window and significantly reduced operational costs. Gemini 3 Flash became the default model across Search AI Mode and the Gemini app, available to developers via the Gemini API, Google AI Studio, and Vertex AI."
+
+- title: "SoftBank Completes $40B OpenAI Investment"
+  date: "2025-12-30T09:00:00-05:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["SoftBank", "OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Masayoshi Son", "Sam Altman"]
+  link: "https://www.cnbc.com/2025/12/30/softbank-openai-investment.html"
+  description: "SoftBank completed its $40 billion investment commitment to OpenAI, sending over a final $22-22.5 billion after previously investing $7.5 billion and syndicating $11 billion with co-investors. The total aggregate commitment reached $41 billion, making it the largest single investment in a private tech company, with SoftBank securing a roughly 10% stake."
+
+- title: "NVIDIA Physical AI at CES 2026"
+  date: "2026-01-05T09:00:00-08:00"
+  tags: ["Product", "Technical"]
+  organizations: ["NVIDIA"]
+  models: ["NVIDIA Cosmos", "GR00T"]
+  impact_areas: ["Robotics", "Hardware", "Open Source"]
+  key_figures: ["Jensen Huang"]
+  link: "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx"
+  description: "At CES 2026, NVIDIA announced new open models, frameworks, and AI infrastructure for physical AI, releasing new NVIDIA Cosmos and GR00T open models and datasets for robot learning and reasoning. Global partners unveiled next-generation robots built on NVIDIA's physical AI platform, advancing the integration of AI into real-world robotics applications."
+
+- title: "OpenAI and SoftBank Invest in SB Energy"
+  date: "2026-01-09T09:00:00-06:00"
+  tags: ["Corporate", "Economic", "Technical"]
+  organizations: ["OpenAI", "SoftBank", "SB Energy"]
+  impact_areas: ["Hardware", "Enterprise AI"]
+  key_figures: ["Sam Altman", "Masayoshi Son"]
+  link: "https://openai.com/index/five-new-stargate-sites/"
+  description: "OpenAI and SoftBank jointly invested $1 billion in SoftBank's SB Energy, with each contributing $500 million. OpenAI signed a 1.2 GW data center lease in Milam County, Texas with SB Energy for a new AI-optimized facility, expanding the Stargate infrastructure project announced in January 2025."
+
+- title: "Vibe Coding Goes Viral"
+  date: "2025-02-06T12:00:00-08:00"
+  tags: ["Social", "Technical"]
+  organizations: []
+  impact_areas: ["Creator Economy", "Enterprise AI", "Public Perception"]
+  key_figures: ["Andrej Karpathy"]
+  link: "https://en.wikipedia.org/wiki/Vibe_coding"
+  description: "Andrej Karpathy, OpenAI co-founder and former Tesla AI lead, coined 'vibe coding' in a viral post describing a new approach where programmers 'fully give in to the vibes' and let AI generate all code from natural language descriptions. The term exploded across Hacker News and Reddit, was later named to the Collins Dictionary, and by March Y Combinator reported 25% of its Winter 2025 startups had codebases that were 95% AI-generated."
+
+- title: "AI Slop Named Word of the Year"
+  date: "2025-12-01T09:00:00-05:00"
+  tags: ["Social"]
+  organizations: []
+  impact_areas: ["Public Perception", "Creator Economy", "Ethics"]
+  key_figures: []
+  link: "https://www.npr.org/2025/12/24/nx-s1-5629169/2025-has-seen-an-explosion-of-ai-generated-slop"
+  description: "Merriam-Webster and the American Dialect Society both named 'slop' their 2025 Word of the Year, referring to low-effort AI-generated content flooding the internet. By late 2025, AI-generated articles made up over 50% of English-language web content. Mentions of 'AI slop' surged ninefold from 2024, Spotify removed 75 million AI-generated spam tracks, and Pinterest and YouTube added features letting users limit AI content in their feeds, reflecting widespread public backlash against synthetic junk."
+
+- title: "Claude Code's 'ChatGPT Moment'"
+  date: "2025-12-27T12:00:00-08:00"
+  tags: ["Product", "Social"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.5"]
+  impact_areas: ["Enterprise AI", "Creator Economy", "Public Perception"]
+  key_figures: ["Boris Cherny"]
+  link: "https://x.com/bcherny/status/2004887829252317325"
+  description: "Claude Code went viral over the winter holidays as developers had time to experiment, with creator Boris Cherny's post racking up 4.4 million views on X. A Google principal engineer shared that Claude Code replicated a year of her team's distributed systems work in roughly 60 minutes. Cherny revealed he'd shipped 259 PRs with 497 commits in 30 days — every line written by Claude Code. The tool projected over $500 million in annualized revenue, with usage up tenfold since early 2025."
+
+- title: "AI Memory Shortage Hits Consumers"
+  date: "2026-01-10T09:00:00-05:00"
+  tags: ["Economic", "Technical"]
+  organizations: ["Samsung", "SK Hynix", "Micron"]
+  impact_areas: ["Hardware", "Market Competition", "Enterprise AI"]
+  key_figures: []
+  link: "https://www.cnbc.com/2026/01/10/micron-ai-memory-shortage-hbm-nvidia-samsung.html"
+  description: "Micron's CEO declared the company 'sold out for 2026' as AI data center demand for high-bandwidth memory created a global DRAM shortage. Server DRAM prices surged 90% quarter-over-quarter in Q1 2026 — the largest quarterly increase on record — because 1GB of HBM consumes 4x the capacity of standard DRAM. Major PC makers Dell, Lenovo, and HP signaled 15-20% price increases for consumer devices as Samsung, SK Hynix, and Micron pivoted production toward higher-margin AI chips."
+
+- title: "Claude Cowork and the SaaSpocalypse"
+  date: "2026-02-03T09:00:00-05:00"
+  tags: ["Product", "Economic", "Social"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Market Competition", "Public Perception"]
+  key_figures: []
+  link: "https://www.bloomberg.com/news/articles/2026-02-04/what-s-behind-the-saaspocalypse-plunge-in-software-stocks"
+  description: "Anthropic's launch of a legal plugin for Claude Cowork — its agentic desktop tool that can automate contract review, NDA triage, and compliance workflows — triggered what analysts dubbed the 'SaaSpocalypse': a $285 billion rout in software, legal tech, and professional services stocks. Thomson Reuters plunged 16% in its worst day ever, LegalZoom sank 20%, and India's Nifty IT index suffered its sharpest drop since March 2020. The panic reflected investor fears that AI could replace entire categories of SaaS subscriptions and billable-hour services."
+
+- title: "Claude Opus 4.6 and Agent Teams"
+  date: "2026-02-05T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.6"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-opus-4-6"
+  description: "Anthropic released Claude Opus 4.6, the first Opus model with a 1-million-token context window and a new 'agent teams' feature in Claude Code that lets multiple agents collaborate on tasks. Anthropic's head of enterprise product described the moment as transitioning from 'vibe coding' to 'vibe working,' with the model outperforming Opus 4.5 across all benchmarks for complex coding, enterprise agents, and professional work."
+
+- title: "AI Layoffs Hit 55,000 in 2025"
+  date: "2025-11-30T09:00:00-05:00"
+  tags: ["Economic", "Social"]
+  organizations: ["Microsoft", "Amazon"]
+  impact_areas: ["Enterprise AI", "Public Perception", "Ethics"]
+  key_figures: []
+  link: "https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance"
+  description: "By late 2025, companies had directly cited AI in announcing 55,000 job cuts — 12 times the number just two years earlier. Microsoft cut over 15,000 jobs and Amazon's CEO said the company would shrink white-collar headcount as it invested in AI agents. However, a Harvard Business Review analysis found 60% of organizations reduced headcount based on AI's potential rather than actual implementation — only 2% tied large layoffs to AI systems actually replacing workers, revealing a disconnect between narrative and reality."
+
+- title: "ChatGPT Hits 800 Million Users"
+  date: "2025-12-15T09:00:00-08:00"
+  tags: ["Product", "Social"]
+  organizations: ["OpenAI"]
+  models: ["ChatGPT"]
+  impact_areas: ["Public Perception", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.demandsage.com/chatgpt-statistics/"
+  description: "ChatGPT reached 800 million weekly active users by late 2025, doubling from 400 million in just February. The growth represented an extraordinary acceleration — it took nine months to go from 100M to 200M users, but less than a year to quadruple from 200M to 800M, driven by GPT-4o, the Atlas browser, and the proliferation of AI into everyday workflows."
+
+- title: "Italian Brainrot Takes Over TikTok"
+  date: "2025-01-15T09:00:00-05:00"
+  tags: ["Social"]
+  organizations: []
+  impact_areas: ["Public Perception", "Creator Economy"]
+  key_figures: []
+  link: "https://en.wikipedia.org/wiki/Italian_brainrot"
+  description: "A bizarre new genre of AI-generated content dubbed 'Italian Brainrot' exploded on TikTok in early 2025, featuring surreal AI-rendered creatures with absurd Italian-sounding names like 'Tralalero Tralala' (a shark in sneakers) and 'Bombardiro Crocodilo' (a crocodile-bomber hybrid). The trend — driven almost entirely by Gen Alpha — became one of the most viral AI meme formats of the year, blurring the line between AI art, shitposting, and genuine cultural phenomenon. It highlighted how generative AI had become a native creative tool for the youngest internet users, producing content that was intentionally bizarre and algorithmically optimized for engagement."
+
+- title: "ChatGPT Ghibli Art Craze Melts OpenAI's GPUs"
+  date: "2025-03-25T09:00:00-07:00"
+  tags: ["Social", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4o"]
+  impact_areas: ["Creator Economy", "Public Perception", "Ethics"]
+  key_figures: ["Sam Altman", "Hayao Miyazaki"]
+  link: "https://www.theverge.com/news/632001/chatgpt-ghibli-images-openai-copyright"
+  description: "When OpenAI rolled out native image generation in GPT-4o, millions of users immediately used it to render their selfies and photos in the style of Studio Ghibli anime — crashing servers and adding a million new users in a single hour. Sam Altman posted 'our GPUs are melting' as the trend dominated every social media platform. The phenomenon reignited the AI art ethics debate: Hayao Miyazaki had previously called AI-generated art 'an insult to life itself,' and artists pointed out the irony of a beloved hand-drawn animation studio's aesthetic being mass-reproduced by AI. It was the moment AI image generation crossed from novelty to mainstream cultural behavior."
+
+- title: "Character.AI Teen Suicide Lawsuits and FTC Inquiry"
+  date: "2025-09-16T09:00:00-04:00"
+  tags: ["Social", "Policy", "Safety"]
+  organizations: ["Character.AI", "Google"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: []
+  link: "https://www.cnn.com/2025/09/16/tech/character-ai-developer-lawsuit-teens-suicide-and-suicide-attempt"
+  description: "A wave of lawsuits hit Character.AI after multiple families alleged the platform's emotionally manipulative chatbots played a direct role in their teenagers' suicides and self-harm. One 14-year-old boy died after months of intense conversations with an AI persona he'd named Daenerys Targaryen. The FTC launched a formal inquiry into AI companion apps' duty of care to minors, and by October, Character.AI banned users under 18 from open-ended chats entirely. In January 2026, Google and Character.AI agreed to settle the lawsuits. The crisis became the defining cautionary tale about parasocial AI relationships and the first time AI companion products faced existential legal and regulatory consequences."
+
+- title: "Meta Launches 'Vibes' — An All-AI Video Feed"
+  date: "2025-09-25T09:00:00-07:00"
+  tags: ["Product", "Social"]
+  organizations: ["Meta"]
+  impact_areas: ["Public Perception", "Creator Economy"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://techcrunch.com/2025/09/25/meta-launches-vibes-a-short-form-video-feed-of-ai-slop/"
+  description: "Meta launched 'Vibes,' a short-form video feed on Instagram where every single video is AI-generated — a move that crystallized the AI slop crisis engulfing social media. Mentions of 'AI slop' had increased ninefold from 2024, with 54% negative sentiment by October. Instagram's head of product admitted AI content had 'won' the platform's feed, prompting threats of mass user exodus. Critics called Vibes the moment a major platform stopped fighting AI content pollution and started embracing it. The launch coincided with 'slop' being named 2025's Word of the Year."
+
+- title: "AI Deepfakes Infiltrate Elections Worldwide"
+  date: "2025-05-15T09:00:00-04:00"
+  tags: ["Social", "Policy"]
+  organizations: []
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: []
+  link: "https://www.cigionline.org/articles/then-and-now-how-does-ai-electoral-interference-compare-in-2025/"
+  description: "2025 became the year AI deepfakes went from theoretical election threat to documented reality across multiple democracies. In Romania's May presidential election, deepfake videos of candidates endorsing fake investment schemes flooded Facebook. AI-generated disinformation appeared in four of 23 viral election videos in Poland. A deepfake of Canadian PM Mark Carney racked up over a million views right before the election. Germany's AfD party openly used AI-generated political ads — what one researcher called 'nostalgia machines' — ahead of the February federal election. Across Africa and Asia, campaigners created deepfakes of Biden and Trump endorsing local candidates. The global scale of the phenomenon outpaced every regulatory response."
+
+- title: "AI-Generated Video Flood Hits TikTok"
+  date: "2025-10-15T09:00:00-04:00"
+  tags: ["Social", "Safety"]
+  organizations: ["TikTok", "OpenAI", "Google"]
+  models: ["Sora", "Veo"]
+  impact_areas: ["Ethics", "Public Perception", "Creator Economy"]
+  key_figures: []
+  link: "https://www.cnn.com/2025/10/11/tech/openai-sora-2-meta-ai-slop-social-media"
+  description: "After OpenAI's Sora 2 and Google's Veo brought AI video generation to the masses, TikTok was overwhelmed by a tsunami of synthetic content — much of it harmful. The platform removed 51,618 AI-generated videos in a single enforcement sweep, including racist, sexually explicit, and violent content that had been trivially easy to produce. The flood forced a reckoning: AI video tools had democratized creation, but they had also democratized the ability to generate harmful content at scale. Platforms scrambled to implement AI content detection, but the tools were consistently outpaced by the generators."
+
+- title: "Trump Revokes Biden's AI Executive Order"
+  date: "2025-01-20T12:00:00-05:00"
+  tags: ["Policy"]
+  organizations: []
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Donald Trump"]
+  link: "https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/"
+  description: "On his first day back in office, President Trump revoked Biden's October 2023 AI Executive Order — the most comprehensive federal AI safety framework ever issued — and replaced it three days later with 'Removing Barriers to American Leadership in Artificial Intelligence.' Where Biden's order mandated red-teaming for high-risk models, cybersecurity protocols, and federal oversight of AI in critical infrastructure, Trump's order directed agencies to eliminate regulations that could impede AI innovation. The reversal effectively halted every federal AI safety initiative that had been in progress and signaled a dramatic shift from cautious governance to accelerationist industrial policy."
+
+- title: "The Stargate Project"
+  date: "2025-01-21T14:00:00-05:00"
+  tags: ["Corporate", "Economic", "Partnership"]
+  organizations: ["OpenAI", "SoftBank", "Oracle"]
+  impact_areas: ["Hardware", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman", "Masayoshi Son", "Donald Trump"]
+  link: "https://openai.com/index/announcing-the-stargate-project/"
+  description: "President Trump stood alongside OpenAI's Sam Altman and SoftBank's Masayoshi Son to announce Stargate, a $500 billion AI infrastructure initiative — $100 billion to be deployed immediately — to build massive AI data centers across the United States starting in Texas. SoftBank handles the financing, OpenAI runs operations, and Arm, Microsoft, NVIDIA, and Oracle are technology partners. Elon Musk immediately posted 'They don't actually have the money,' igniting a public feud with Altman. The announcement represented the largest single AI infrastructure commitment in history and blurred the line between industrial policy and spectacle."
+
+- title: "OpenAI Operator"
+  date: "2025-01-23T10:00:00-08:00"
+  tags: ["Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-4o"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://openai.com/index/introducing-operator/"
+  description: "OpenAI launched Operator, a browser-using AI agent that can navigate websites, fill out forms, order groceries, and book reservations on the user's behalf. Powered by CUA (Computer-Using Agent) — a new model combining GPT-4o's vision with reinforcement learning — Operator watches a screen and interacts with GUIs exactly like a human would: clicking, scrolling, and typing. Partnerships with DoorDash, Instacart, Uber, and others gave it real-world utility from day one. The launch kicked off what the industry called the '2025 AI Agent Wars,' as every major lab raced to ship autonomous computer-using agents."
+
+- title: "Paris AI Action Summit"
+  date: "2025-02-10T09:00:00+01:00"
+  tags: ["Policy"]
+  organizations: []
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Emmanuel Macron"]
+  link: "https://en.wikipedia.org/wiki/AI_Action_Summit"
+  description: "Over 1,000 participants from 100+ countries gathered at the Grand Palais in Paris for the AI Action Summit, co-chaired by Emmanuel Macron and Narendra Modi. The summit produced a joint statement signed by 60 nations including China and India — but notably not the U.S. or UK, who refused to sign. France announced a $400M endowment for AI public goods, and the EU launched InvestAI, a 200 billion euro initiative to build AI 'gigafactories.' Anthropic CEO Dario Amodei publicly called it a 'missed opportunity' on AI safety. The summit crystallized a growing divide: Europe wanted governance, while Washington wanted acceleration."
+
+- title: "Claude 3.7 Sonnet"
+  date: "2025-02-25T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude 3.7 Sonnet"]
+  impact_areas: ["Language Models", "Market Competition"]
+  key_figures: []
+  link: "https://www.anthropic.com/news/claude-3-7-sonnet"
+  description: "Anthropic released Claude 3.7 Sonnet, the first hybrid reasoning model on the market — a single model that can either answer instantly like a standard LLM or pause to 'think' through harder problems using extended thinking mode, with a configurable token budget up to 128K. The architecture let developers trade cost and speed for reasoning depth on a per-query basis, which was a fundamentally different approach from OpenAI's separate o-series reasoning models. The release also introduced Claude Code, an agentic command-line coding tool that would go on to become one of the most culturally significant developer tools of the year."
+
+- title: "Meta Releases Llama 4"
+  date: "2025-04-05T10:00:00-07:00"
+  tags: ["Model"]
+  organizations: ["Meta"]
+  models: ["Llama 4 Scout", "Llama 4 Maverick", "Llama 4 Behemoth"]
+  impact_areas: ["Open Source", "Language Models", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  description: "Meta released the Llama 4 family — its first models using a mixture-of-experts (MoE) architecture. Llama 4 Scout (17B active / 109B total parameters) shipped with a 10-million-token context window, while Maverick (17B active / 128 experts) targeted efficiency. The still-training Behemoth (288B active / ~2T total) showed benchmark performance exceeding GPT-4.5 and Claude 3.7 Sonnet. The release cemented Meta's strategy of giving away frontier-class models for free while competitors charge per token, keeping the open-source AI ecosystem competitive with closed labs."
+
+- title: "AI 'Virtual Scientists' Design New Nanobodies"
+  date: "2025-07-29T09:00:00-07:00"
+  tags: ["Research"]
+  organizations: ["Stanford University"]
+  impact_areas: ["Healthcare", "Research"]
+  key_figures: []
+  link: "https://news.stanford.edu/stories/2025/07/ai-virtual-scientists-lab-llms"
+  description: "Stanford researchers and the Chan Zuckerberg Biohub published a Nature paper demonstrating a 'Virtual Lab' where multiple AI agents — including a Principal Investigator bot, specialized researchers, and critics — autonomously collaborated to design 92 new SARS-CoV-2 nanobodies. The AI team independently chose nanobodies over traditional antibodies as a more promising strategy, and their designs were experimentally validated to bind tightly to new COVID variants, outperforming human-designed antibodies. It was the most convincing demonstration yet that multi-agent AI systems could perform genuine scientific research, not just assist with it."
+
+- title: "EU AI Act Begins Enforcing GPAI Rules"
+  date: "2025-08-02T09:00:00+02:00"
+  tags: ["Policy"]
+  organizations: []
+  impact_areas: ["Regulation", "Enterprise AI"]
+  key_figures: []
+  link: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  description: "The EU AI Act's obligations for general-purpose AI models officially took effect on August 2, 2025, making it the world's first binding regulation on foundation models. Any GPAI model placed on the EU market must now comply with risk management, transparency, training data documentation, and human oversight requirements. The EU's AI Office became operational the same day to oversee enforcement. While actual penalties wouldn't kick in until August 2026, the rules immediately forced every major AI lab — American and Chinese alike — to maintain EU-specific compliance regimes, creating a de facto global regulatory floor."
+
+- title: "GPT-5 Release"
+  date: "2025-08-07T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5"]
+  impact_areas: ["Language Models", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5/"
+  description: "OpenAI released GPT-5, its first 'unified' model combining the fast responses of the GPT series with the deep reasoning of the o-series into a single architecture with a real-time router. The model shipped with a 272K-token context window, scored 94.6% on AIME 2025 math without tools, hit 74.9% on SWE-bench coding, and was made available to free-tier users as their default model — the first time reasoning capabilities were accessible without a subscription. While framed as the year's defining model launch, reactions were mixed: some called it a genuine leap, while others noted it felt more like a consolidation of existing capabilities than a paradigm shift."
