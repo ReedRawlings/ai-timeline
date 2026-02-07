@@ -681,6 +681,10 @@ body {
     flex-shrink: 0;
 }
 
+.chart-view-toggle + .chart-view-toggle {
+    margin-left: 0.3rem;
+}
+
 .view-toggle-btn {
     font-family: var(--font-body);
     font-size: 0.68rem;

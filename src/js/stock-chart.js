@@ -80,6 +80,36 @@ function normalizeData(data) {
     }));
 }
 
+// ── Resolution aggregation ───────────────────────────────────
+function aggregateWeekly(data) {
+    if (!data || data.length === 0) return [];
+    const buckets = new Map();
+    data.forEach(d => {
+        // ISO week start (Monday)
+        const dt = new Date(d.time + 'T00:00:00');
+        const day = (dt.getDay() + 6) % 7; // Mon=0
+        const monday = new Date(dt);
+        monday.setDate(dt.getDate() - day);
+        const key = monday.toISOString().slice(0, 10);
+        buckets.set(key, d.value); // last value in the week wins (close)
+    });
+    return [...buckets.entries()]
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([time, value]) => ({ time, value }));
+}
+
+function aggregateMonthly(data) {
+    if (!data || data.length === 0) return [];
+    const buckets = new Map();
+    data.forEach(d => {
+        const key = d.time.slice(0, 7) + '-01'; // YYYY-MM-01
+        buckets.set(key, d.value); // last value in the month wins (close)
+    });
+    return [...buckets.entries()]
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([time, value]) => ({ time, value }));
+}
+
 // ── Chart Init ─────────────────────────────────────────────────
 export function initStockChart(events) {
     const container = document.getElementById('stock-chart-container');
@@ -105,6 +135,7 @@ export function initStockChart(events) {
 
     // State
     let isNormalized = localStorage.getItem('aiTimelineChartNormalized') !== 'false';
+    let resolution = localStorage.getItem('aiTimelineChartRes') || '1D';
     const activeStocks = new Set();
     const seriesMap = {};
     const stockData = {};
@@ -230,7 +261,10 @@ export function initStockChart(events) {
     function getSeriesData(symbol) {
         const raw = stockData[symbol];
         if (!raw || raw.length === 0) return [];
-        return isNormalized ? normalizeData(raw) : raw;
+        let data = raw;
+        if (resolution === '1W') data = aggregateWeekly(data);
+        else if (resolution === '1M') data = aggregateMonthly(data);
+        return isNormalized ? normalizeData(data) : data;
     }
 
     function getSeriesPriceFormat() {
@@ -466,6 +500,22 @@ export function initStockChart(events) {
         // Add series for initially active stocks
         for (const s of activeStocks) addSeriesToChart(s);
         updateMarkers();
+    }
+
+    // ── Resolution toggle (1D / 1W / 1M) ──────────────────────
+    const resToggle = document.getElementById('chart-resolution-toggle');
+    if (resToggle) {
+        const btns = resToggle.querySelectorAll('.view-toggle-btn');
+        btns.forEach(b => b.classList.toggle('active', b.dataset.res === resolution));
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.dataset.res === resolution) return;
+                resolution = btn.dataset.res;
+                localStorage.setItem('aiTimelineChartRes', resolution);
+                btns.forEach(b => b.classList.toggle('active', b === btn));
+                refreshAllSeriesData();
+            });
+        });
     }
 
     // ── View toggle (% Change / Absolute) ─────────────────────
