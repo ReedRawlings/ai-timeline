@@ -52,7 +52,13 @@
             <span class="chart-toggle-icon">&#9650;</span> AI Market Tracker
         </button>
         <div id="stock-chart-panel" class="stock-chart-panel">
-            <div class="stock-chips" id="stock-chips"></div>
+            <div class="stock-chips-row">
+                <div class="stock-chips" id="stock-chips"></div>
+                <div class="chart-view-toggle" id="chart-view-toggle">
+                    <button class="view-toggle-btn active" data-view="pct">% Change</button>
+                    <button class="view-toggle-btn" data-view="abs">Absolute</button>
+                </div>
+            </div>
             <div id="stock-chart-container" class="stock-chart-container"></div>
         </div>
     </div>

@@ -190,6 +190,7 @@ export function initTimeline() {
             this.isUpdatingFilters = true;
             this.updateScaffoldedFilters();
             this.isUpdatingFilters = false;
+            document.dispatchEvent(new CustomEvent('timeline-filters-changed'));
         },
 
         shouldShowEvent(card) {
@@ -231,6 +232,7 @@ export function initTimeline() {
             document.querySelectorAll('.event-card').forEach(card => this.showEvent(card));
             this.updateTimelineGroups();
             this.updateScaffoldedFilters();
+            document.dispatchEvent(new CustomEvent('timeline-filters-changed'));
         },
     };
 

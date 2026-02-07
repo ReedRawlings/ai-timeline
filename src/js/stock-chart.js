@@ -69,6 +69,17 @@ const BUCKET_COLORS = {
 
 const ALL_SYMBOLS = [...new Set(BUCKETS.flatMap(b => b.stocks))];
 
+// ── Normalization ─────────────────────────────────────────────
+function normalizeData(data) {
+    if (!data || data.length === 0) return [];
+    const baseline = data[0].value;
+    if (baseline === 0) return data;
+    return data.map(d => ({
+        time: d.time,
+        value: Math.round(((d.value - baseline) / baseline) * 10000) / 100,
+    }));
+}
+
 // ── Chart Init ─────────────────────────────────────────────────
 export function initStockChart(events) {
     const container = document.getElementById('stock-chart-container');
@@ -93,6 +104,7 @@ export function initStockChart(events) {
     toggleBtn.addEventListener('click', () => setExpanded(!isExpanded));
 
     // State
+    let isNormalized = localStorage.getItem('aiTimelineChartNormalized') !== 'false';
     const activeStocks = new Set();
     const seriesMap = {};
     const stockData = {};
@@ -215,6 +227,18 @@ export function initStockChart(events) {
 
     function getBucketBtnIndex() { return 0; } // unused, kept for compat
 
+    function getSeriesData(symbol) {
+        const raw = stockData[symbol];
+        if (!raw || raw.length === 0) return [];
+        return isNormalized ? normalizeData(raw) : raw;
+    }
+
+    function getSeriesPriceFormat() {
+        return isNormalized
+            ? { type: 'custom', formatter: (p) => p.toFixed(1) + '%' }
+            : { type: 'price' };
+    }
+
     function addSeriesToChart(symbol) {
         if (seriesMap[symbol]) return; // already on chart
         const color = STOCK_COLORS[symbol] || '#888';
@@ -224,36 +248,168 @@ export function initStockChart(events) {
             priceLineVisible: false,
             lastValueVisible: true,
             title: symbol,
+            priceFormat: getSeriesPriceFormat(),
         });
         seriesMap[symbol] = series;
 
-        if (stockData[symbol] && stockData[symbol].length > 0) {
-            series.setData(stockData[symbol]);
+        const data = getSeriesData(symbol);
+        if (data.length > 0) {
+            series.setData(data);
             chart.timeScale().fitContent();
         }
     }
 
-    // ── Event markers ──────────────────────────────────────────
-    function updateMarkers() {
-        const firstSymbol = [...activeStocks][0];
-        const series = seriesMap[firstSymbol];
-        if (!series) return;
-
-        const markers = events
-            .map(event => {
-                const d = new Date(event.date);
-                return {
-                    time: `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`,
-                    position: 'aboveBar',
-                    color: '#C84B31',
-                    shape: 'circle',
-                    text: event.title.length > 30 ? event.title.slice(0, 27) + '...' : event.title,
-                };
-            })
-            .sort((a, b) => a.time.localeCompare(b.time));
-
-        try { series.setMarkers(markers); } catch {}
+    function refreshAllSeriesData() {
+        const priceFormat = getSeriesPriceFormat();
+        for (const symbol of activeStocks) {
+            const series = seriesMap[symbol];
+            if (!series) continue;
+            series.applyOptions({ priceFormat });
+            const data = getSeriesData(symbol);
+            if (data.length > 0) series.setData(data);
+        }
+        updateMarkers();
+        chart.timeScale().fitContent();
     }
+
+    // ── Event markers ──────────────────────────────────────────
+    const markerDateToEvents = new Map(); // date string → [event titles]
+
+    function toDateStr(d) {
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    }
+
+    function updateMarkers() {
+        // Collect dates of visible (non-filtered) event cards from the DOM
+        const visibleDates = new Set();
+        document.querySelectorAll('.event-card:not(.filtered-out)').forEach(card => {
+            const date = card.getAttribute('data-event-date');
+            if (date) visibleDates.add(date);
+        });
+
+        markerDateToEvents.clear();
+
+        // Build per-series marker maps: symbol → [markers]
+        const seriesMarkers = {};
+        for (const symbol of activeStocks) {
+            if (seriesMap[symbol]) seriesMarkers[symbol] = [];
+        }
+
+        const firstSymbol = [...activeStocks][0];
+
+        events
+            .filter(event => {
+                const dateStr = toDateStr(new Date(event.date));
+                return visibleDates.has(dateStr);
+            })
+            .forEach(event => {
+                const dateStr = toDateStr(new Date(event.date));
+                if (!markerDateToEvents.has(dateStr)) markerDateToEvents.set(dateStr, []);
+                markerDateToEvents.get(dateStr).push(event.title);
+
+                // Layoff marker → goes on the specific company's series
+                if (event.layoffs && event.layoffs.company && seriesMarkers[event.layoffs.company]) {
+                    const count = event.layoffs.headcount ? event.layoffs.headcount.toLocaleString() : '';
+                    seriesMarkers[event.layoffs.company].push({
+                        time: dateStr,
+                        position: 'belowBar',
+                        color: '#CC0000',
+                        shape: 'arrowDown',
+                        text: count ? `-${count}` : '',
+                    });
+                }
+
+                // Regular event marker → goes on first active series
+                if (firstSymbol && seriesMarkers[firstSymbol]) {
+                    seriesMarkers[firstSymbol].push({
+                        time: dateStr,
+                        position: 'aboveBar',
+                        color: '#C84B31',
+                        shape: 'circle',
+                        text: '',
+                    });
+                }
+            });
+
+        // Deduplicate by time+position+shape, sort, and apply
+        for (const [symbol, markers] of Object.entries(seriesMarkers)) {
+            const deduped = new Map();
+            markers.forEach(m => {
+                const key = `${m.time}|${m.position}|${m.shape}`;
+                if (!deduped.has(key)) deduped.set(key, m);
+            });
+            const sorted = [...deduped.values()].sort((a, b) => a.time.localeCompare(b.time));
+            try { seriesMap[symbol].setMarkers(sorted); } catch {}
+        }
+    }
+
+    // Listen for filter changes from the timeline
+    document.addEventListener('timeline-filters-changed', () => updateMarkers());
+
+    // ── Tooltip + timeline highlight on marker hover ─────────
+    const tooltip = document.createElement('div');
+    tooltip.className = 'chart-marker-tooltip';
+    container.style.position = 'relative';
+    container.appendChild(tooltip);
+
+    let highlightedCard = null;
+
+    function clearHighlight() {
+        if (highlightedCard) {
+            highlightedCard.classList.remove('chart-highlight');
+            highlightedCard = null;
+        }
+    }
+
+    chart.subscribeCrosshairMove(param => {
+        if (!param.time || !param.point) {
+            tooltip.style.display = 'none';
+            clearHighlight();
+            return;
+        }
+
+        const timeStr = typeof param.time === 'string'
+            ? param.time
+            : `${param.time.year}-${String(param.time.month).padStart(2, '0')}-${String(param.time.day).padStart(2, '0')}`;
+
+        const titles = markerDateToEvents.get(timeStr);
+        if (!titles) {
+            tooltip.style.display = 'none';
+            clearHighlight();
+            return;
+        }
+
+        // Show tooltip
+        tooltip.innerHTML = titles.map(t => `<div>${t}</div>`).join('');
+        tooltip.style.display = 'block';
+
+        // Position tooltip near the crosshair
+        const x = param.point.x;
+        const tooltipWidth = tooltip.offsetWidth;
+        const containerWidth = container.clientWidth;
+        let left = x - tooltipWidth / 2;
+        if (left < 4) left = 4;
+        if (left + tooltipWidth > containerWidth - 4) left = containerWidth - tooltipWidth - 4;
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = '4px';
+
+        // Highlight matching card in the timeline
+        clearHighlight();
+        const card = document.querySelector(`.event-card:not(.filtered-out)[data-event-date="${timeStr}"]`);
+        if (card) {
+            card.classList.add('chart-highlight');
+            highlightedCard = card;
+            const timelineContainer = document.querySelector('.timeline-container');
+            if (timelineContainer) {
+                const containerRect = timelineContainer.getBoundingClientRect();
+                const cardRect = card.getBoundingClientRect();
+                // Only scroll if card is not already visible
+                if (cardRect.left < containerRect.left || cardRect.right > containerRect.right) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            }
+        }
+    });
 
     // ── Data helpers ───────────────────────────────────────────
     function mergeStockData(historical, recent) {
@@ -310,6 +466,24 @@ export function initStockChart(events) {
         // Add series for initially active stocks
         for (const s of activeStocks) addSeriesToChart(s);
         updateMarkers();
+    }
+
+    // ── View toggle (% Change / Absolute) ─────────────────────
+    const viewToggle = document.getElementById('chart-view-toggle');
+    if (viewToggle) {
+        const btns = viewToggle.querySelectorAll('.view-toggle-btn');
+        // Set initial state from isNormalized
+        btns.forEach(b => b.classList.toggle('active', (b.dataset.view === 'pct') === isNormalized));
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const wantNormalized = btn.dataset.view === 'pct';
+                if (wantNormalized === isNormalized) return;
+                isNormalized = wantNormalized;
+                localStorage.setItem('aiTimelineChartNormalized', isNormalized);
+                btns.forEach(b => b.classList.toggle('active', b === btn));
+                refreshAllSeriesData();
+            });
+        });
     }
 
     // ── Chart click → scroll timeline ──────────────────────────

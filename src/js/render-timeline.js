@@ -124,13 +124,26 @@ function createEventCard(event) {
     card.setAttribute('data-description', escapeHtml(event.description || ''));
     card.setAttribute('data-link', event.link || '');
 
+    // Layoff data attributes
+    if (event.layoffs) {
+        card.classList.add('layoff-event');
+        card.setAttribute('data-layoff-ticker', event.layoffs.company || '');
+        card.setAttribute('data-layoff-headcount', event.layoffs.headcount || '');
+    }
+
     // Visible compact content
     const cardContent = document.createElement('div');
     cardContent.className = 'card-content';
-    cardContent.innerHTML = `
+
+    let compactHTML = `
         <div class="event-date">${escapeHtml(formatDate(d))}</div>
         <div class="event-title">${escapeHtml(event.title)}</div>
     `;
+    if (event.layoffs && event.layoffs.headcount) {
+        const count = event.layoffs.headcount.toLocaleString();
+        compactHTML += `<span class="layoff-badge">-${count} jobs</span>`;
+    }
+    cardContent.innerHTML = compactHTML;
 
     // Hidden detail for overlay
     const detail = document.createElement('div');

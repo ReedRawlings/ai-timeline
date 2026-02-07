@@ -28,7 +28,7 @@ def validate_yaml_syntax(file_path):
 def validate_event_structure(events):
     """Validate the structure of each event."""
     required_fields = ['title', 'date', 'description']
-    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link']
+    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link', 'layoffs']
     
     errors = []
     
@@ -53,7 +53,20 @@ def validate_event_structure(events):
         
         if 'key_figures' in event and not isinstance(event['key_figures'], list):
             errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'key_figures' must be a list")
-        
+
+        # Validate layoffs field structure
+        if 'layoffs' in event:
+            layoffs = event['layoffs']
+            if not isinstance(layoffs, dict):
+                errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' must be a mapping")
+            else:
+                if 'company' not in layoffs:
+                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' missing required field 'company'")
+                if 'headcount' not in layoffs:
+                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' missing required field 'headcount'")
+                elif not isinstance(layoffs['headcount'], int):
+                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs.headcount' must be an integer")
+
         # Validate date format
         if 'date' in event:
             try:

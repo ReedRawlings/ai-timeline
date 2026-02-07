@@ -1826,3 +1826,293 @@
   key_figures: ["Sam Altman"]
   link: "https://openai.com/index/introducing-gpt-5/"
   description: "OpenAI released GPT-5, its first 'unified' model combining the fast responses of the GPT series with the deep reasoning of the o-series into a single architecture with a real-time router. The model shipped with a 272K-token context window, scored 94.6% on AIME 2025 math without tools, hit 74.9% on SWE-bench coding, and was made available to free-tier users as their default model — the first time reasoning capabilities were accessible without a subscription. While framed as the year's defining model launch, reactions were mixed: some called it a genuine leap, while others noted it felt more like a consolidation of existing capabilities than a paradigm shift."
+
+- title: "Google Lays Off 12,000 in AI Pivot"
+  date: "2023-01-20T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Google"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://www.cnbc.com/2023/01/20/google-to-lay-off-12000-people.html"
+  description: "Google laid off 12,000 employees (6% of its workforce), the largest reduction in the company's history. CEO Sundar Pichai said the company had 'hired for a different economic reality' and would now sharpen its focus on AI. The cuts concentrated on recruiting, engineering, and product teams, while Pichai simultaneously announced accelerated AI investments that would reshape the company's strategy for the next decade."
+  layoffs:
+    company: "GOOGL"
+    headcount: 12000
+    reason: "AI pivot"
+
+- title: "Microsoft Lays Off 10,000 While Investing $10B in OpenAI"
+  date: "2023-01-18T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Microsoft"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Satya Nadella"]
+  link: "https://www.cnbc.com/2023/01/18/microsoft-plans-to-lay-off-10000-workers.html"
+  description: "Microsoft laid off 10,000 employees while simultaneously investing $10 billion in OpenAI. CEO Satya Nadella framed the cuts as part of aligning the company to its 'secular trends' including AI. The juxtaposition of massive layoffs alongside the largest AI investment in history became a defining moment in the narrative of AI-driven workforce displacement."
+  layoffs:
+    company: "MSFT"
+    headcount: 10000
+    reason: "AI restructuring"
+
+- title: "Meta Lays Off 10,000 in 'Year of Efficiency'"
+  date: "2023-03-14T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://about.fb.com/news/2023/03/mark-zuckerberg-meta-year-of-efficiency/"
+  description: "Meta laid off 10,000 employees in its second major round of cuts, with CEO Mark Zuckerberg declaring 2023 the 'Year of Efficiency.' The cuts targeted middle management and restructured the company around AI initiatives, with Zuckerberg explicitly stating that generative AI was Meta's 'single largest investment.' The efficiency push ultimately transformed Meta's stock performance, with shares more than tripling in 2023."
+  layoffs:
+    company: "META"
+    headcount: 10000
+    reason: "AI restructuring"
+
+- title: "Amazon Lays Off 18,000 in AI Restructuring"
+  date: "2023-01-05T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Amazon"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Andy Jassy"]
+  link: "https://www.cnbc.com/2023/01/05/amazon-plans-to-lay-off-over-18000-employees.html"
+  description: "Amazon CEO Andy Jassy announced the company would lay off more than 18,000 employees, the largest workforce reduction in the company's history. While framed as a response to pandemic-era over-hiring, the cuts came as Amazon poured billions into AWS AI services and began building its own large language models, signaling a strategic pivot toward AI infrastructure."
+  layoffs:
+    company: "AMZN"
+    headcount: 18000
+    reason: "AI restructuring"
+
+- title: "Electronic Arts Cuts 800 Jobs"
+  date: "2023-03-29T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["EA"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://variety.com/2023/digital/news/electronic-arts-layoffs-employees-1235568329/"
+  description: "EA laid off 6% of its workforce as part of a strategic shift to reevaluate investment priorities, reduce office space, and redirect resources toward AI-assisted game development tools and live service games. The cuts came amid a broader gaming industry downturn that would see over 25,000 jobs lost across the sector in 2023-2024."
+  layoffs:
+    company: "EA"
+    headcount: 800
+    reason: "AI investment shift"
+
+- title: "Chegg Warns ChatGPT Killing Its Business"
+  date: "2023-05-02T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Chegg"]
+  impact_areas: ["Education", "Market Competition"]
+  link: "https://www.cnbc.com/2023/05/02/chegg-stock-drops-more-than-40percent-after-company-says-chatgpt-is-hurting-business.html"
+  description: "Chegg disclosed that ChatGPT was significantly impacting new customer growth, causing its stock to crash 40% in a single day. The homework-help company, which charged $19.95/month for human-written answers, found its business model existentially threatened by free, instant AI alternatives. This triggered a series of layoffs over subsequent years as subscribers plummeted."
+  layoffs:
+    company: "CHGG"
+    headcount: 80
+    reason: "AI displacement"
+
+- title: "Unity Cuts 25% of Workforce"
+  date: "2024-01-08T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Unity Technologies"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://www.blog.udonis.co/mobile-marketing/mobile-games/unity-layoffs"
+  description: "Unity Technologies announced its most drastic workforce reduction, cutting 1,800 jobs (25% of its global workforce). The game engine company was restructuring after a controversial runtime fee debacle and shifting industry dynamics as AI-powered tools began threatening traditional game development workflows."
+  layoffs:
+    company: "U"
+    headcount: 1800
+    reason: "AI-driven industry shifts"
+
+- title: "Duolingo Cuts Contractors, Replaces with GPT-4"
+  date: "2024-01-09T10:00:00-05:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Duolingo"]
+  models: ["GPT-4"]
+  impact_areas: ["Education", "Enterprise AI"]
+  link: "https://www.cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai"
+  description: "Duolingo laid off approximately 10% of its contract workforce (translators and content creators), replacing them with OpenAI's GPT-4 for content production. CEO Luis von Ahn later declared the company 'AI-first' and said contractors would be phased out for any work AI could handle, making Duolingo one of the most high-profile examples of direct AI-for-human substitution."
+  layoffs:
+    company: "DUOL"
+    headcount: 100
+    reason: "AI replacement"
+
+- title: "Google Cuts Voice Assistant and Hardware Teams for Gemini"
+  date: "2024-01-11T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Google"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://finance.yahoo.com/news/google-lays-off-thousands-more-210822278.html"
+  description: "Google initiated significant layoffs across its Voice Assistant, hardware (Pixel, Nest, Fitbit), engineering, and ad sales teams. Hundreds of employees were cut from the Voice Assistant unit as Google shifted focus to Gemini-powered AI assistants, signaling Google's aggressive pivot from traditional products to AI-native ones."
+  layoffs:
+    company: "GOOGL"
+    headcount: 1000
+    reason: "Gemini pivot"
+
+- title: "Electronic Arts Cuts Another 670 Jobs"
+  date: "2024-02-28T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["EA"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://www.cnbc.com/2024/02/28/ea-layoffs-company-to-cut-5percent-of-workforce-or-about-670-employees.html"
+  description: "EA announced its second major round of cuts in under a year, laying off 670 employees (5% of workforce). The company cancelled a Star Wars first-person shooter at Ridgeline Games as the gaming industry increasingly adopted generative AI tools for voice, animation, and scripting."
+  layoffs:
+    company: "EA"
+    headcount: 670
+    reason: "AI tools adoption"
+
+- title: "Tesla Cuts 14% of Global Workforce"
+  date: "2024-04-15T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Tesla"]
+  impact_areas: ["Enterprise AI", "Robotics"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.cnbc.com/2024/04/15/tesla-shares-dip-in-premarket-trade-on-global-layoff-reports.html"
+  description: "Tesla laid off more than 14% of its global workforce as CEO Elon Musk redirected resources toward AI-driven autonomous driving (FSD) and robotics (Optimus). While driven partly by declining EV sales, the cuts aligned with Tesla's pivot toward AI compute infrastructure. The cuts notably included Tesla's Supercharger team."
+  layoffs:
+    company: "TSLA"
+    headcount: 14000
+    reason: "AI and autonomous driving pivot"
+
+- title: "Chegg Lays Off 23% as AI Erodes Subscriber Base"
+  date: "2024-06-17T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Chegg"]
+  impact_areas: ["Education", "Market Competition"]
+  link: "https://finance.yahoo.com/news/chegg-lay-off-22-workforce-155550815.html"
+  description: "Chegg laid off 441 employees (23% of its workforce) as the education company's subscriber base continued to hemorrhage due to students switching to free AI chatbots like ChatGPT for homework help. Revenue had fallen 30% and subscribers dropped 31%."
+  layoffs:
+    company: "CHGG"
+    headcount: 441
+    reason: "AI displacement"
+
+- title: "UiPath Cuts 10% in AI-Focused Restructuring"
+  date: "2024-07-09T10:00:00-04:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["UiPath"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://www.cnbc.com/2024/07/09/uipath-layoffs-company-to-cut-10percent-of-workforce.html"
+  description: "UiPath, the robotic process automation company, laid off 10% of its workforce (approximately 420 jobs) to streamline operations while focusing R&D investments on artificial intelligence. This was the company's third round of layoffs since 2022, reflecting challenges as the broader AI wave reshaped the automation market."
+  layoffs:
+    company: "PATH"
+    headcount: 420
+    reason: "AI-focused R&D restructuring"
+
+- title: "Amazon Cuts 14,000 Corporate Roles"
+  date: "2024-10-15T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Amazon"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Andy Jassy"]
+  link: "https://abcnews.go.com/Business/wireStory/artificial-intelligence-drive-layoffs-amazon-firms-hard-129773731"
+  description: "Amazon cut 14,000 corporate roles as the company invested in AI as its 'biggest bet.' Leadership stated that 'this generation of AI is the most transformative technology since the Internet' to justify the restructuring, which targeted middle management to redirect billions toward AI and AWS data center expansion."
+  layoffs:
+    company: "AMZN"
+    headcount: 14000
+    reason: "AI investment"
+
+- title: "Microsoft Cuts 6,000 in AI-Driven Restructuring"
+  date: "2025-05-13T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Microsoft"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Satya Nadella"]
+  link: "https://fortune.com/2025/07/02/microsoft-layoffs-9000-ai/"
+  description: "Microsoft laid off approximately 6,000 employees as CEO Satya Nadella said the company needed to 'reimagine' its mission for a new era. The cuts primarily targeted software engineering (over 40% of total), with Nadella noting that AI now writes up to 30% of code on some Microsoft projects."
+  layoffs:
+    company: "MSFT"
+    headcount: 6000
+    reason: "AI-driven restructuring"
+
+- title: "Microsoft Cuts Additional 9,000"
+  date: "2025-07-02T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Microsoft"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Satya Nadella"]
+  link: "https://fortune.com/2025/07/02/microsoft-layoffs-9000-ai/"
+  description: "Microsoft followed its May layoffs with an even larger round, cutting 9,000 additional roles, bringing total 2025 job cuts to approximately 15,000 (7% of global workforce). CEO Nadella's memo explicitly tied the restructuring to AI, framing the cuts as necessary to position Microsoft for 'a new era.'"
+  layoffs:
+    company: "MSFT"
+    headcount: 9000
+    reason: "AI-driven restructuring"
+
+- title: "Google Cuts 35% of Managers in AI Restructuring"
+  date: "2025-08-27T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Google"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://www.thehrdigest.com/google-cut-managers-by-35-inside-pichais-layoffs-overhaul/"
+  description: "Google CEO Sundar Pichai announced the company had cut 35% of its managers (targeting those with fewer than three direct reports), offered voluntary exit packages, and eliminated 200+ AI contractor roles. The restructuring reflected Google's belief that AI could reduce the need for middle management."
+  layoffs:
+    company: "GOOGL"
+    headcount: 2000
+    reason: "AI efficiency"
+
+- title: "Salesforce Replaces 4,000 Support Roles with AI Agents"
+  date: "2025-09-02T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Salesforce"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2025/09/02/salesforce-ceo-confirms-4000-layoffs-because-i-need-less-heads-with-ai.html"
+  description: "Salesforce CEO Marc Benioff confirmed the company had cut 4,000 customer support roles, reducing support staff from 9,000 to 5,000, as AI agents now handled over one million customer conversations and reduced support costs by 17%. Benioff stated he needed 'less heads' because 'AI can do 50% of the work,' making this one of the most explicit cases of a CEO directly attributing layoffs to AI."
+  layoffs:
+    company: "CRM"
+    headcount: 4000
+    reason: "AI agent replacement"
+
+- title: "Meta Cuts 600 from AI Research Unit"
+  date: "2025-10-22T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2025/10/22/meta-layoffs-ai.html"
+  description: "Meta laid off approximately 600 employees from its AI research division, pivoting from publishing academic papers toward a 'leaner, faster-moving' applied AI organization focused on building production-ready models. The cuts reflected a shift toward data-centric, engineering-driven AI development."
+  layoffs:
+    company: "META"
+    headcount: 600
+    reason: "AI unit restructuring"
+
+- title: "Chegg Slashes 45% as AI Devastates Business"
+  date: "2025-10-27T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Chegg"]
+  impact_areas: ["Education", "Market Competition"]
+  link: "https://www.cnbc.com/2025/10/27/chegg-slashes-45percent-of-workforce-blames-new-realities-of-ai.html"
+  description: "Chegg laid off 45% of its remaining workforce (388 employees), blaming 'new realities of AI' and diminished search traffic from Google's AI Overviews. The company had lost over 500,000 subscribers since ChatGPT launched, making it perhaps the most prominent example of an entire business model destroyed by generative AI."
+  layoffs:
+    company: "CHGG"
+    headcount: 388
+    reason: "AI displacement"
+
+- title: "Amazon Cuts 14,000 More in Anti-Bureaucracy AI Push"
+  date: "2025-10-28T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Amazon"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Andy Jassy"]
+  link: "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html"
+  description: "Amazon conducted its second massive layoff of 2025, cutting 14,000 corporate roles as part of CEO Andy Jassy's 'anti-bureaucracy' campaign to flatten the organization and redirect resources toward AI. AWS divisions including AI, analytics, training, and marketing were affected."
+  layoffs:
+    company: "AMZN"
+    headcount: 14000
+    reason: "AI-driven restructuring"
+
+- title: "Meta Lays Off VR Teams in AI Pivot"
+  date: "2026-01-13T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://www.cnbc.com/2026/01/13/meta-lays-off-vr-employees-underscoring-zuckerbergs-pivot-to-ai.html"
+  description: "Meta laid off employees across its VR division and closed studios, underscoring CEO Mark Zuckerberg's massive pivot from the metaverse to AI. After spending over $50 billion on Reality Labs since 2020, Meta was now redirecting investment toward AI infrastructure, Llama models, and Meta AI products."
+  layoffs:
+    company: "META"
+    headcount: 300
+    reason: "AI pivot"
+
+- title: "Amazon Cuts 16,000 More in AI Push"
+  date: "2026-01-28T10:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Amazon"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Andy Jassy"]
+  link: "https://www.cnbc.com/2026/01/28/amazon-layoffs-anti-bureaucracy-ai.html"
+  description: "Amazon eliminated 16,000 additional roles in its third major round of AI-attributed layoffs. CEO Andy Jassy cited AI as 'the most transformative technology since the Internet' and continued flattening the organizational structure while pouring billions into AI and AWS data center expansion."
+  layoffs:
+    company: "AMZN"
+    headcount: 16000
+    reason: "AI-driven restructuring"
