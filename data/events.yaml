@@ -2116,3 +2116,140 @@
     company: "AMZN"
     headcount: 16000
     reason: "AI-driven restructuring"
+
+- title: "Midjourney V6"
+  date: "2023-12-20T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Midjourney"]
+  models: ["Midjourney V6"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: ["David Holz"]
+  link: "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+  description: "Midjourney released Version 6 of its text-to-image model, delivering a significant leap in photorealism, prompt accuracy, and text rendering within generated images. V6 became the default model on February 14, 2024 and remained the standard until V6.1 replaced it in July. The release cemented Midjourney's position as one of the leading commercial image generation platforms alongside DALL-E 3 and Stable Diffusion."
+
+- title: "Stable Diffusion 3 Medium"
+  date: "2024-06-12T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Stability AI"]
+  models: ["Stable Diffusion 3"]
+  impact_areas: ["Open Source", "Multimodal AI", "Creator Economy"]
+  link: "https://stability.ai/news/stable-diffusion-3"
+  description: "Stability AI launched Stable Diffusion 3 Medium, a 2-billion-parameter text-to-image model using a new diffusion transformer architecture and flow matching. While the company called it their 'most advanced text-to-image open model yet,' the community reception was mixed — Stability AI later acknowledged the release 'didn't fully meet our standards or our communities' expectations,' leading to the improved SD 3.5 release in October. The SD3 suite ranged from 800M to 8B parameters and was available under an open non-commercial license."
+
+- title: "Kling AI Video Model"
+  date: "2024-06-10T09:00:00+08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Kuaishou"]
+  models: ["Kling"]
+  impact_areas: ["Multimodal AI", "Creator Economy", "Market Competition"]
+  link: "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-unveils-proprietary-video-generation-model-kling/"
+  description: "Chinese short-video giant Kuaishou launched Kling, a text-to-video AI model capable of generating videos up to two minutes long at 1080p and 30fps using a diffusion transformer architecture. Kling received over one million applications within days and notably beat OpenAI's Sora to public availability — while Sora remained inaccessible four months after its February 2024 preview, Kling let users actually try the technology. By 2025, Kling had served over 60 million creators and generated more than 600 million videos."
+
+- title: "FLUX.1 by Black Forest Labs"
+  date: "2024-08-01T09:00:00+02:00"
+  tags: ["Model", "Product"]
+  organizations: ["Black Forest Labs"]
+  models: ["FLUX.1"]
+  impact_areas: ["Open Source", "Multimodal AI", "Creator Economy"]
+  key_figures: ["Robin Rombach", "Andreas Blattmann", "Patrick Esser"]
+  link: "https://blackforestlabs.ai/announcing-black-forest-labs/"
+  description: "Black Forest Labs, founded by former Stability AI researchers Robin Rombach, Andreas Blattmann, and Patrick Esser, launched FLUX.1 — a suite of text-to-image models in three variants: Pro (commercial API), Dev (open-weight for non-commercial use), and Schnell (fast, open-source). The 12-billion-parameter rectified flow transformer quickly gained a reputation for photorealistic output and prompt accuracy that matched or exceeded closed-source competitors like Midjourney V6 and DALL-E 3, making it one of the most impactful open-source image generation releases of 2024."
+
+- title: "Google Imagen 3"
+  date: "2024-08-16T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Imagen 3"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: ["Demis Hassabis"]
+  link: "https://9to5google.com/2024/08/16/google-imagen-3-launch/"
+  description: "Google made Imagen 3, its latest text-to-image model, publicly available to all U.S. users through its ImageFX platform after previewing it at Google I/O in May. Imagen 3 delivered significantly improved photorealism, detail, lighting, and text rendering compared to Imagen 2, and used DeepMind's SynthID technology to apply invisible cryptographic watermarks to generated images. The model was later expanded to all Gemini users in October and launched on Vertex AI for enterprise customers in December."
+
+- title: "Ideogram 2.0"
+  date: "2024-08-19T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Ideogram"]
+  models: ["Ideogram 2.0"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  link: "https://ideogram.ai/features/2.0"
+  description: "Ideogram released version 2.0, a major upgrade to its text-to-image AI model with industry-leading capabilities in generating realistic images, graphic design, and typography. Founded by former Google Brain researchers, Ideogram had raised $80 million earlier in the year and distinguished itself from competitors through superior text rendering within generated images — a historically difficult challenge for AI image generators. The 2.0 release also introduced the Ideogram iOS app, a beta API, and Ideogram Search."
+
+- title: "Replit Agent Launch"
+  date: "2024-09-16T09:00:00-07:00"
+  tags: ["Product", "Technical"]
+  organizations: ["Replit"]
+  impact_areas: ["Enterprise AI", "Creator Economy"]
+  link: "https://blog.replit.com/introducing-replit-agent"
+  description: "Replit launched Replit Agent, an AI system that transforms natural language descriptions into fully functional, deployed applications. Available to Replit Core subscribers, the agent could scaffold entire projects, install dependencies, write code, and deploy — all from conversational prompts. The launch captured the emerging 'vibe coding' movement and drove the fastest growth in Replit's history, with subscribers growing 45% monthly. By June 2025, Replit crossed $100M ARR, up from $10M at the end of 2024."
+
+- title: "Stable Diffusion 3.5"
+  date: "2024-10-22T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Stability AI"]
+  models: ["Stable Diffusion 3.5"]
+  impact_areas: ["Open Source", "Multimodal AI", "Creator Economy"]
+  link: "https://siliconangle.com/2024/10/22/stable-ai-releases-next-gen-open-source-stable-diffusion-3-5-text-image-ai-model-family/"
+  description: "Stability AI released Stable Diffusion 3.5 in three variants — Large (8B parameters), Large Turbo (faster inference), and Medium (2.5B) — as a do-over after acknowledging that the SD3 Medium release in June 'didn't fully meet our standards or our communities' expectations.' The 3.5 family delivered improved image quality, better prompt adherence, and more consistent outputs, helping Stability AI regain community trust after a turbulent year marked by leadership changes and financial difficulties."
+
+- title: "FLUX 1.1 Pro"
+  date: "2024-10-02T09:00:00+02:00"
+  tags: ["Model", "Product"]
+  organizations: ["Black Forest Labs"]
+  models: ["FLUX 1.1 Pro"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  link: "https://bfl.ai/"
+  description: "Black Forest Labs released FLUX 1.1 Pro, an upgraded flagship model that generates photorealistic images with near-perfect prompt adherence in just 4.5 seconds — six times faster than its predecessor. The November follow-up added Ultra mode for 4-megapixel images and a Raw mode for hyper-realistic candid photography aesthetics. Mistral AI adopted FLUX Pro for its Le Chat chatbot's image generation, validating Flux's rapid rise as a top-tier commercial image model."
+
+- title: "Cursor AI Raises $100M at $2.6B Valuation"
+  date: "2024-12-19T09:00:00-08:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anysphere"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Michael Truell"]
+  link: "https://techcrunch.com/2024/12/19/in-just-4-months-ai-coding-assistant-cursor-raised-another-100m-at-a-2-5b-valuation-led-by-thrive-sources-say/"
+  description: "Anysphere, the company behind AI coding assistant Cursor, raised $100 million in a Series B at a $2.6 billion valuation led by Thrive Capital — just four months after its $60 million Series A at $400 million. Built on a fork of VS Code by four MIT students, Cursor had crossed $100 million in ARR by January 2025 with reportedly zero marketing spend, making it one of the fastest-growing developer tools in history. Bloomberg later dubbed Anysphere 'the fastest growing startup ever' as it reached a $29.3 billion valuation by November 2025."
+
+- title: "GitHub Copilot Agent Mode"
+  date: "2025-02-06T09:00:00-08:00"
+  tags: ["Product", "Technical"]
+  organizations: ["GitHub", "Microsoft"]
+  impact_areas: ["Enterprise AI", "Creator Economy"]
+  link: "https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode"
+  description: "GitHub announced Copilot agent mode in VS Code, transforming the AI pair programmer from a code completion tool into an autonomous coding agent. Agent mode enables Copilot to autonomously determine relevant context, edit multiple files, suggest and run terminal commands, and self-heal by monitoring its own output for errors. The feature supports Model Context Protocol (MCP) servers for extending capabilities and marked GitHub's transition from the experimental Copilot Workspace browser prototype to a production-grade agentic coding system."
+
+- title: "Ideogram 3.0"
+  date: "2025-03-26T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Ideogram"]
+  models: ["Ideogram 3.0"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  link: "https://docs.ideogram.ai/about-ideogram/blog-posts"
+  description: "Ideogram released version 3.0 of its text-to-image model, representing a significant leap in visual quality, realism, and creative control. The release arrived just one day after OpenAI's GPT-4o native image generation went viral with the Studio Ghibli craze, intensifying competition in the AI image generation space. Ideogram continued to differentiate through its industry-leading typography integration, making it a favorite for branding and graphic design applications."
+
+- title: "Midjourney V7"
+  date: "2025-04-03T09:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["Midjourney"]
+  models: ["Midjourney V7"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: ["David Holz"]
+  link: "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+  description: "Midjourney released V7, which CEO David Holz described as 'a totally different architecture' — a complete rebuild from scratch rather than an incremental update. V7 delivered richer textures, more coherent details (especially for bodies, hands, and objects), and introduced Draft Mode for quick iterations and Omni Reference for consistent character generation. In June 2025, Midjourney added video generation capabilities, turning static images into 5-21 second clips and expanding beyond its text-to-image origins."
+
+- title: "OpenAI Codex CLI"
+  date: "2025-04-16T09:00:00-07:00"
+  tags: ["Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["o3", "o4-mini"]
+  impact_areas: ["Enterprise AI", "Open Source"]
+  link: "https://openai.com/index/introducing-codex/"
+  description: "OpenAI launched Codex CLI, an open-source coding agent that runs in the terminal, bringing the power of o3 and o4-mini models into local development workflows. Unlike cloud-based tools, Codex CLI operates directly on the developer's machine, allowing natural language code generation, editing, and execution while keeping sensitive code secure. OpenAI accompanied the launch with a $1 million API grants program. The tool evolved through 2025 with MCP integration, GitHub Actions support, and an IDE extension, before becoming generally available in October 2025."
+
+- title: "Cursor AI Reaches $29.3B Valuation"
+  date: "2025-11-13T09:00:00-08:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anysphere"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Michael Truell"]
+  link: "https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html"
+  description: "Anysphere closed a $2.3 billion Series D funding round co-led by Accel and Coatue Management, valuing the company behind Cursor AI at $29.3 billion — an extraordinary jump from $2.6 billion just eleven months earlier. Google and NVIDIA participated as strategic partners, and the company reported annualized revenue exceeding $1 billion. The meteoric rise of Cursor, from an MIT dorm room project to one of the most valuable startups in the world, became the defining symbol of AI coding tools disrupting the $500 billion software development industry."
