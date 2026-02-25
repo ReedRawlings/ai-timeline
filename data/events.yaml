@@ -2116,3 +2116,50 @@
     company: "AMZN"
     headcount: 16000
     reason: "AI-driven restructuring"
+
+- title: "Meta V-JEPA 2 World Model"
+  date: "2025-06-11T09:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["Meta"]
+  models: ["V-JEPA 2"]
+  impact_areas: ["Robotics", "Computer Vision", "Open Source"]
+  key_figures: ["Yann LeCun"]
+  link: "https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/"
+  description: "Meta released V-JEPA 2, a 1.2-billion-parameter world model trained on over one million hours of video that achieves state-of-the-art visual understanding and prediction of the physical world. The model represents a key milestone in Yann LeCun's long-advocated vision that world models — not large language models — are the path to human-level AI. V-JEPA 2 enables zero-shot robot control in new environments, with robots successfully manipulating objects they've never encountered using just 62 hours of real-world robot data combined with web-scale video pre-training. Meta open-sourced the model and introduced three new physical reasoning benchmarks alongside it."
+
+- title: "World Labs Launches Marble"
+  date: "2025-11-12T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["World Labs"]
+  models: ["Marble"]
+  impact_areas: ["Multimodal AI", "Robotics", "Computer Vision"]
+  key_figures: ["Fei-Fei Li", "Justin Johnson"]
+  link: "https://www.worldlabs.ai/blog/marble-world-model"
+  description: "World Labs, the spatial intelligence startup founded by AI pioneer Fei-Fei Li, launched Marble — its first commercial generative world model. Unlike image or video generators, Marble creates persistent, editable 3D environments from text, photos, video, or 3D layouts, with exports as meshes and video compatible with Vision Pro and Quest 3 VR headsets. The launch included Chisel, an experimental 3D editor for blocking out spatial layouts and refining them with text prompts. World Labs had raised $230 million when it emerged from stealth in September 2024, and would go on to raise $1 billion more in February 2026 at a roughly $5 billion valuation."
+
+- title: "Runway GWM-1"
+  date: "2025-12-11T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Runway"]
+  models: ["GWM-1"]
+  impact_areas: ["Multimodal AI", "Robotics", "Computer Vision"]
+  link: "https://runwayml.com/research/introducing-runway-gwm-1"
+  description: "Runway unveiled GWM-1, its first General World Model built to simulate reality in real time. Unlike traditional video generation models that produce complete clips, GWM-1 is autoregressive — generating frame by frame and responding to interactive controls including camera pose, robot commands, and audio. The model ships in three variants: GWM Worlds for explorable environments, GWM Avatars for conversational characters with lip-synced speech, and GWM Robotics for synthetic training data. Built on top of Runway's Gen-4.5 video model, GWM-1 represents the culmination of Runway's stated mission to build 'foundational General World Models capable of simulating all possible worlds.'"
+
+- title: "Anthropic Series G at $380B Valuation"
+  date: "2026-02-12T09:00:00-08:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei", "Daniela Amodei"]
+  link: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
+  description: "Anthropic closed a $30 billion Series G funding round at a $380 billion post-money valuation, more than doubling from its $183 billion Series F just five months earlier. The raise made Anthropic the most valuable private AI company, surpassing OpenAI's last private valuation. The extraordinary velocity of Anthropic's growth — from $1 billion to an estimated $14 billion in annualized revenue in roughly a year — was driven primarily by the explosive adoption of Claude Code and the Claude model family's dominance in enterprise AI and software development."
+
+- title: "Claude Sonnet 4.6"
+  date: "2026-02-17T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Sonnet 4.6"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  link: "https://www.anthropic.com/news/claude-sonnet-4-6"
+  description: "Anthropic released Claude Sonnet 4.6, delivering Opus-level coding performance at Sonnet pricing. The model featured dramatically improved coding skills, consistency, and instruction following compared to Sonnet 4.5, narrowing the gap between Anthropic's mid-tier and flagship models. The release continued Anthropic's strategy of rapidly iterating on its model family, with Sonnet 4.6 arriving just twelve days after Opus 4.6."
