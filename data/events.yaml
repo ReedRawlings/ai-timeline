@@ -2117,33 +2117,34 @@
     headcount: 16000
     reason: "AI-driven restructuring"
 
-- title: "Ideogram 3.0"
-  date: "2025-03-26T09:00:00-07:00"
-  tags: ["Model", "Product"]
-  organizations: ["Ideogram"]
-  models: ["Ideogram 3.0"]
-  impact_areas: ["Multimodal AI", "Creator Economy"]
-  link: "https://docs.ideogram.ai/about-ideogram/blog-posts"
-  description: "Ideogram released version 3.0 of its text-to-image model, representing a significant leap in visual quality, realism, and creative control. The release arrived just one day after OpenAI's GPT-4o native image generation went viral with the Studio Ghibli craze, intensifying competition in the AI image generation space. Ideogram continued to differentiate through its industry-leading typography integration, making it a favorite for branding and graphic design applications."
+- title: "Meta V-JEPA 2 World Model"
+  date: "2025-06-11T09:00:00-07:00"
+  tags: ["Model", "Research"]
+  organizations: ["Meta"]
+  models: ["V-JEPA 2"]
+  impact_areas: ["Robotics", "Computer Vision", "Open Source"]
+  key_figures: ["Yann LeCun"]
+  link: "https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/"
+  description: "Meta released V-JEPA 2, a 1.2-billion-parameter world model trained on over one million hours of video that achieves state-of-the-art visual understanding and prediction of the physical world. The model represents a key milestone in Yann LeCun's long-advocated vision that world models — not large language models — are the path to human-level AI. V-JEPA 2 enables zero-shot robot control in new environments, with robots successfully manipulating objects they've never encountered using just 62 hours of real-world robot data combined with web-scale video pre-training. Meta open-sourced the model and introduced three new physical reasoning benchmarks alongside it."
 
-- title: "Midjourney V7"
-  date: "2025-04-03T09:00:00-07:00"
+- title: "World Labs Launches Marble"
+  date: "2025-11-12T09:00:00-08:00"
   tags: ["Model", "Product"]
-  organizations: ["Midjourney"]
-  models: ["Midjourney V7"]
-  impact_areas: ["Multimodal AI", "Creator Economy"]
-  key_figures: ["David Holz"]
-  link: "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
-  description: "Midjourney released V7, which CEO David Holz described as 'a totally different architecture' — a complete rebuild from scratch rather than an incremental update. V7 delivered richer textures, more coherent details (especially for bodies, hands, and objects), and introduced Draft Mode for quick iterations and Omni Reference for consistent character generation. In June 2025, Midjourney added video generation capabilities, turning static images into 5-21 second clips and expanding beyond its text-to-image origins."
+  organizations: ["World Labs"]
+  models: ["Marble"]
+  impact_areas: ["Multimodal AI", "Robotics", "Computer Vision"]
+  key_figures: ["Fei-Fei Li", "Justin Johnson"]
+  link: "https://www.worldlabs.ai/blog/marble-world-model"
+  description: "World Labs, the spatial intelligence startup founded by AI pioneer Fei-Fei Li, launched Marble — its first commercial generative world model. Unlike image or video generators, Marble creates persistent, editable 3D environments from text, photos, video, or 3D layouts, with exports as meshes and video compatible with Vision Pro and Quest 3 VR headsets. The launch included Chisel, an experimental 3D editor for blocking out spatial layouts and refining them with text prompts. World Labs had raised $230 million when it emerged from stealth in September 2024, and would go on to raise $1 billion more in February 2026 at a roughly $5 billion valuation."
 
-- title: "FLUX.2 Suite Launch"
-  date: "2025-11-25T09:00:00+01:00"
+- title: "Runway GWM-1"
+  date: "2025-12-11T09:00:00-08:00"
   tags: ["Model", "Product"]
-  organizations: ["Black Forest Labs"]
-  models: ["FLUX.2"]
-  impact_areas: ["Multimodal AI", "Creator Economy", "Open Source"]
-  link: "https://bfl.ai/blog/flux-2"
-  description: "Black Forest Labs launched FLUX.2, a next-generation suite of image models in four variants: Pro, Flex, Dev, and Klein. The release introduced multi-reference conditioning (up to 10 reference images) and combined image generation and editing in a single architecture — a first for the category. FLUX.2 was accompanied by a $300 million Series B funding round that brought the company's total capitalization to $500 million, validating the open-source-first approach to commercial AI image generation."
+  organizations: ["Runway"]
+  models: ["GWM-1"]
+  impact_areas: ["Multimodal AI", "Robotics", "Computer Vision"]
+  link: "https://runwayml.com/research/introducing-runway-gwm-1"
+  description: "Runway unveiled GWM-1, its first General World Model built to simulate reality in real time. Unlike traditional video generation models that produce complete clips, GWM-1 is autoregressive — generating frame by frame and responding to interactive controls including camera pose, robot commands, and audio. The model ships in three variants: GWM Worlds for explorable environments, GWM Avatars for conversational characters with lip-synced speech, and GWM Robotics for synthetic training data. Built on top of Runway's Gen-4.5 video model, GWM-1 represents the culmination of Runway's stated mission to build 'foundational General World Models capable of simulating all possible worlds.'"
 
 - title: "Anthropic Series G at $380B Valuation"
   date: "2026-02-12T09:00:00-08:00"
