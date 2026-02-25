@@ -2253,3 +2253,49 @@
   key_figures: ["Michael Truell"]
   link: "https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html"
   description: "Anysphere closed a $2.3 billion Series D funding round co-led by Accel and Coatue Management, valuing the company behind Cursor AI at $29.3 billion — an extraordinary jump from $2.6 billion just eleven months earlier. Google and NVIDIA participated as strategic partners, and the company reported annualized revenue exceeding $1 billion. The meteoric rise of Cursor, from an MIT dorm room project to one of the most valuable startups in the world, became the defining symbol of AI coding tools disrupting the $500 billion software development industry."
+
+- title: "Windsurf Editor Launch"
+  date: "2024-11-13T09:00:00-08:00"
+  tags: ["Product", "Technical"]
+  organizations: ["Codeium"]
+  impact_areas: ["Enterprise AI", "Creator Economy"]
+  key_figures: ["Varun Mohan", "Douglas Chen"]
+  link: "https://codeium.com/windsurf"
+  description: "Codeium launched Windsurf, branded as the 'first agentic IDE,' a code editor that goes beyond autocomplete to autonomously understand developer intent, navigate codebases, and implement multi-file changes. The editor attracted 10,000 users in its first two days and hundreds of thousands within weeks, catapulting Codeium's revenue from $12 million to $100 million ARR by April 2025. OpenAI later offered $3 billion to acquire the company, but the deal collapsed, and Google struck a licensing deal instead with key team members joining DeepMind."
+
+- title: "Sora Public Launch"
+  date: "2024-12-09T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["Sora"]
+  impact_areas: ["Multimodal AI", "Creator Economy"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/sora-is-here/"
+  description: "OpenAI publicly launched Sora Turbo as part of its December 'Ship-mas' event series, making the text-to-video model available at sora.com for ChatGPT Plus and Pro subscribers. Ten months after the initial preview stunned the internet in February, users could finally generate videos up to 20 seconds long at 1080p resolution in multiple aspect ratios. The launch was not available in the EU or UK due to regulatory uncertainty. While the public release generated excitement, some users noted the output quality didn't fully match the cherry-picked demos from the February preview."
+
+- title: "FLUX.2 Suite Launch"
+  date: "2025-11-25T09:00:00+01:00"
+  tags: ["Model", "Product"]
+  organizations: ["Black Forest Labs"]
+  models: ["FLUX.2"]
+  impact_areas: ["Multimodal AI", "Creator Economy", "Open Source"]
+  link: "https://bfl.ai/blog/flux-2"
+  description: "Black Forest Labs launched FLUX.2, a next-generation suite of image models in four variants: Pro, Flex, Dev, and Klein. The release introduced multi-reference conditioning (up to 10 reference images) and combined image generation and editing in a single architecture — a first for the category. FLUX.2 was accompanied by a $300 million Series B funding round that brought the company's total capitalization to $500 million, validating the open-source-first approach to commercial AI image generation."
+
+- title: "Anthropic Series G at $380B Valuation"
+  date: "2026-02-12T09:00:00-08:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei", "Daniela Amodei"]
+  link: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
+  description: "Anthropic closed a $30 billion Series G funding round at a $380 billion post-money valuation, more than doubling from its $183 billion Series F just five months earlier. The raise made Anthropic the most valuable private AI company, surpassing OpenAI's last private valuation. The extraordinary velocity of Anthropic's growth — from $1 billion to an estimated $14 billion in annualized revenue in roughly a year — was driven primarily by the explosive adoption of Claude Code and the Claude model family's dominance in enterprise AI and software development."
+
+- title: "Claude Sonnet 4.6"
+  date: "2026-02-17T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Sonnet 4.6"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  link: "https://www.anthropic.com/news/claude-sonnet-4-6"
+  description: "Anthropic released Claude Sonnet 4.6, delivering Opus-level coding performance at Sonnet pricing. The model featured dramatically improved coding skills, consistency, and instruction following compared to Sonnet 4.5, narrowing the gap between Anthropic's mid-tier and flagship models. The release continued Anthropic's strategy of rapidly iterating on its model family, with Sonnet 4.6 arriving just twelve days after Opus 4.6."
