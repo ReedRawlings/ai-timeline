@@ -2163,3 +2163,31 @@
   impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
   link: "https://www.anthropic.com/news/claude-sonnet-4-6"
   description: "Anthropic released Claude Sonnet 4.6, delivering Opus-level coding performance at Sonnet pricing. The model featured dramatically improved coding skills, consistency, and instruction following compared to Sonnet 4.5, narrowing the gap between Anthropic's mid-tier and flagship models. The release continued Anthropic's strategy of rapidly iterating on its model family, with Sonnet 4.6 arriving just twelve days after Opus 4.6."
+
+- title: "Citrini Research's '2028 Global Intelligence Crisis'"
+  date: "2026-02-22T10:00:00-05:00"
+  tags: ["Economic", "Social"]
+  organizations: ["Citrini Research"]
+  impact_areas: ["Market Competition", "Public Perception"]
+  key_figures: ["James van Geelen", "Alap Shah", "Michael Burry", "Nassim Taleb"]
+  link: "https://fortune.com/2026/02/24/ghost-gdp-essay-ai-doom-loop-warning-to-ceos/"
+  description: "Citrini Research published 'The 2028 Global Intelligence Crisis,' a viral Substack scenario by James van Geelen and Alap Shah that introduced the concept of 'Ghost GDP' — economic output that appears in national accounts but doesn't circulate through displaced workers. The essay modeled an AI-driven 'Intelligence Displacement Spiral' where mass white-collar automation triggers a deflationary depression by 2028, with the S&P 500 crashing 38% from 2026 highs. After Michael Burry amplified the piece on X writing 'And you think I'm bearish' and Nassim Taleb endorsed it, the scenario helped trigger a sharp Monday sell-off that dropped the Dow over 800 points and racked up roughly 16 million views on X."
+
+- title: "IBM Plunges 13% on Anthropic COBOL Threat"
+  date: "2026-02-23T09:30:00-05:00"
+  tags: ["Economic", "Corporate", "Technical"]
+  organizations: ["IBM", "Anthropic"]
+  models: ["Claude Code"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: []
+  link: "https://devops.com/a-blog-post-about-cobol-just-cost-ibm-30-billion-heres-what-actually-happened/"
+  description: "Anthropic's 'Code Modernization Playbook' showing Claude Code could automate COBOL dependency mapping — work that traditionally required large consulting teams and months of manual analysis — triggered IBM's worst single-day stock decline since 2000. Shares cratered 13.2% from $257 to $223.35, erasing over $31 billion in market cap, with IT consulting firms Accenture and Cognizant also falling 6.5% and 6% respectively. The sell-off underscored the vulnerability of legacy modernization revenue models, with an estimated 95% of U.S. ATM transactions still running on COBOL. The irony was not lost on observers: IBM had launched its own watsonx Code Assistant for Z in August 2023 to do similar COBOL-to-Java refactoring, but the market saw Anthropic's entry as an existential threat to IBM's mainframe consulting profit center."
+
+- title: "Block Lays Off 4,000 Employees, Citing AI"
+  date: "2026-02-26T16:00:00-08:00"
+  tags: ["Corporate", "Economic", "Social"]
+  organizations: ["Block"]
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  key_figures: ["Jack Dorsey"]
+  link: "https://www.cnbc.com/2026/02/26/block-laying-off-about-4000-employees-nearly-half-of-its-workforce.html"
+  description: "Block CEO Jack Dorsey announced the company would lay off approximately 4,000 employees — nearly 40% of its 10,205-person workforce — explicitly citing AI as the driving force. In a shareholder letter, Dorsey wrote that 'intelligence tools have changed what it means to build and run a company' and predicted most companies would reach the same conclusion within a year. The cuts, Block's largest ever, came despite strong financials: Q4 gross profit was up 24% year-over-year to $2.87 billion. Block shares surged 23% in after-hours trading as investors cheered the margin improvement, while skeptics like Wharton professor Ethan Mollick questioned whether 'a firm-wide sudden 50%+ efficiency gain' from AI tools was realistic, noting Block had tripled headcount during the pandemic hiring boom."
