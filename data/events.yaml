@@ -37,6 +37,24 @@
   link: "https://breakingdefense.com/2026/02/pentagon-cto-says-its-not-democratic-for-anthropic-to-limit-military-use-of-claude-ai/"
   description: "The Pentagon's Chief Technology Officer publicly criticized Anthropic's restrictions on military use of Claude AI, calling it 'not democratic' for a private company to limit how the U.S. military could deploy AI technology. The statement escalated a growing rift between the Defense Department and Anthropic, which had insisted that Claude not be used for fully autonomous weapons systems or mass domestic surveillance — two red lines the company maintained were necessary given the current reliability of frontier AI models."
 
+- title: "David Sacks Attacks Anthropic as 'Woke AI'"
+  date: "2025-10-20T09:00:00-07:00"
+  tags: ["Policy", "Social"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["David Sacks", "Dario Amodei"]
+  link: "https://www.cnbc.com/2025/10/21/anthropic-ceo-trump-sacks-woke.html"
+  description: "Trump's AI and crypto czar David Sacks publicly attacked Anthropic on social media, accusing the company of pushing 'Woke AI' and running a 'regulatory capture strategy based on fear-mongering.' Sacks suggested Anthropic's real agenda was to 'backdoor Woke AI and other AI regulations through Blue states like California.' Anthropic CEO Dario Amodei responded publicly, calling the claims 'inaccurate' and arguing the company's positions were aligned with the administration's goals. The exchange foreshadowed the far more consequential confrontation between Anthropic and the Trump administration that would erupt months later over military use of Claude."
+
+- title: "Anthropic Overhauls Responsible Scaling Policy"
+  date: "2026-02-24T09:00:00-08:00"
+  tags: ["Safety", "Policy"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Regulation"]
+  key_figures: ["Dario Amodei", "Jared Kaplan"]
+  link: "https://anthropic.com/responsible-scaling-policy/rsp-v3-0"
+  description: "Anthropic released version 3.0 of its Responsible Scaling Policy, dropping its core safety pledge to never train an AI system unless it could guarantee adequate safety measures in advance. The new policy replaced hard limits with flexible goals and removed the commitment to pause training if capabilities outpaced safety controls. Chief Science Officer Jared Kaplan said the company 'felt that it wouldn't actually help anyone for us to stop training AI models.' The timing — the same week as the Pentagon ultimatum — drew scrutiny from critics who saw it as Anthropic softening its safety stance under political pressure."
+
 - title: "Pentagon Issues Ultimatum to Anthropic Over Claude Military Use"
   date: "2026-02-24T17:00:00-08:00"
   tags: ["Policy", "Corporate"]
@@ -93,6 +111,23 @@
   key_figures: ["Dario Amodei", "Daniela Amodei"]
   link: "https://www.lawfaremedia.org/article/pentagon's-anthropic-designation-won't-survive-first-contact-with-legal-system"
   description: "Anthropic filed two lawsuits against the federal government in a California court, arguing that the Trump administration's supply chain risk designation and government-wide ban on its products were 'unprecedented and unlawful.' The company argued the actions caused irreparable harm and jeopardized hundreds of millions of dollars in contracts. Legal analysts noted the supply chain risk designation — historically used against foreign adversaries — was being applied for the first time against an American company over what was fundamentally a contractual disagreement about two usage restrictions. Major tech companies including Amazon, Microsoft, and Google pushed back on the designation, fearing it could set a precedent for how government contractors interact with AI companies."
+
+- title: "Tech Workers Sign 'We Will Not Be Divided' Petition Supporting Anthropic"
+  date: "2026-03-10T09:00:00-08:00"
+  tags: ["Social", "Policy"]
+  organizations: ["Anthropic", "Google", "OpenAI", "Microsoft", "Amazon"]
+  impact_areas: ["Ethics", "Regulation"]
+  link: "https://fortune.com/2026/03/10/google-openai-employees-back-anthropic-legal-fight-military-use-of-ai/"
+  description: "Over 330 employees from Google, OpenAI, Amazon, Microsoft, Salesforce, and other major tech companies signed an open letter titled 'We Will Not Be Divided' supporting Anthropic's refusal to grant unrestricted military access to Claude. The petition opposed the use of AI for mass domestic surveillance or fully autonomous weapons without human oversight. The cross-industry solidarity was unprecedented, with workers at Anthropic's direct competitors publicly backing the company's stance against the Trump administration."
+
+- title: "Trump Administration Defends Anthropic Blacklisting in Court"
+  date: "2026-03-18T09:00:00-07:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://techcrunch.com/2026/03/18/dod-says-anthropics-red-lines-make-it-an-unacceptable-risk-to-national-security/"
+  description: "The Department of Defense filed a court rebuttal calling Anthropic an 'unacceptable risk to national security,' arguing that the company's refusal to accept 'any lawful use' terms constituted conduct rather than protected speech under the First Amendment. Nearly 150 retired federal and state judges filed an amicus brief supporting Anthropic, alongside briefs from Microsoft and dozens of researchers at OpenAI and Google DeepMind. The case was seen as potentially reaching the Supreme Court, with implications for whether the government can retaliate against companies for refusing to remove ethical guardrails from AI systems."
 
 - title: "Pentagon Struggles to Replace Claude as Military Users Resist Phase-Out"
   date: "2026-03-19T09:00:00-07:00"
