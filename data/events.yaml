@@ -1,3 +1,109 @@
+- title: "Anthropic Partners with Palantir and AWS for Defense AI"
+  date: "2024-11-04T09:00:00-08:00"
+  tags: ["Partnership", "Corporate"]
+  organizations: ["Anthropic", "Palantir", "Amazon"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI"]
+  key_figures: ["Dario Amodei", "Alex Karp"]
+  link: "https://www.palantir.com/newsroom/press-releases/palantir-and-anthropic-partner-to-bring-claude-ai-to-defense-and-intelligence/"
+  description: "Anthropic partnered with Palantir Technologies and Amazon Web Services to provide its Claude AI models to U.S. defense and intelligence agencies. Through Palantir's AI Platform (AIP) and AWS infrastructure, Claude would be deployed on classified and sensitive government networks. The partnership marked Anthropic's first significant foray into defense contracting and would later become the foundation of its deep integration into U.S. military operations."
+
+- title: "Pentagon Awards $200M AI Contracts to Frontier Labs"
+  date: "2025-07-14T09:00:00-07:00"
+  tags: ["Corporate", "Policy"]
+  organizations: ["Anthropic", "OpenAI", "Google", "xAI"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Regulation"]
+  key_figures: ["Dario Amodei"]
+  link: "https://breakingdefense.com/2025/07/pentagon-awards-ai-contracts-frontier-labs/"
+  description: "The U.S. Department of Defense awarded contracts worth up to $200 million each to four frontier AI developers — Anthropic, OpenAI, Google, and xAI — granting baseline access to their AI models for defense applications. Anthropic's Claude became the first AI system to receive DISA Impact Level 6 accreditation, the most sensitive classification tier in U.S. government infrastructure, enabling deployment on classified military networks through its partnership with Palantir and AWS."
+
+- title: "Claude Used in U.S. Military Capture of Venezuela's Maduro"
+  date: "2026-01-22T09:00:00-08:00"
+  tags: ["Policy", "Social", "Safety"]
+  organizations: ["Anthropic", "Palantir"]
+  models: ["Claude"]
+  impact_areas: ["Ethics", "Regulation"]
+  key_figures: ["Dario Amodei", "Alex Karp"]
+  link: "https://www.nbcnews.com/tech/security/anthropic-ai-defense-war-venezuela-maduro-rcna259603"
+  description: "The U.S. military used Claude AI through Palantir's platform during the operation to capture Venezuelan president Nicolás Maduro, marking one of the first publicly known uses of frontier AI in a live military operation. An Anthropic executive reportedly contacted Palantir to inquire whether Claude had been used in the raid, raising internal concerns about the scope of military applications. The incident became a flashpoint in the escalating tensions between Anthropic and the Pentagon over acceptable use of AI in military operations."
+
+- title: "Pentagon CTO Calls Anthropic's Military Restrictions 'Undemocratic'"
+  date: "2026-02-14T09:00:00-08:00"
+  tags: ["Policy", "Safety"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Regulation"]
+  key_figures: ["Dario Amodei"]
+  link: "https://breakingdefense.com/2026/02/pentagon-cto-says-its-not-democratic-for-anthropic-to-limit-military-use-of-claude-ai/"
+  description: "The Pentagon's Chief Technology Officer publicly criticized Anthropic's restrictions on military use of Claude AI, calling it 'not democratic' for a private company to limit how the U.S. military could deploy AI technology. The statement escalated a growing rift between the Defense Department and Anthropic, which had insisted that Claude not be used for fully autonomous weapons systems or mass domestic surveillance — two red lines the company maintained were necessary given the current reliability of frontier AI models."
+
+- title: "Pentagon Issues Ultimatum to Anthropic Over Claude Military Use"
+  date: "2026-02-24T17:00:00-08:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Regulation", "Enterprise AI"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.axios.com/2026/02/15/claude-pentagon-anthropic-contract-maduro"
+  description: "Defense Secretary Pete Hegseth gave Anthropic CEO Dario Amodei a deadline: allow Claude to be used for 'all lawful purposes' by the U.S. military by 5:01 p.m. on Friday, February 27, or face consequences. The Pentagon demanded unfettered access to Claude across all defense applications, while Anthropic held firm on two conditions — no mass surveillance of U.S. citizens and no fully autonomous weapons systems without human oversight. Anthropic publicly stated it would not budge, setting the stage for an unprecedented confrontation between a leading AI company and the U.S. government."
+
+- title: "Trump Blacklists Anthropic; Pentagon Designates Supply Chain Risk"
+  date: "2026-02-27T17:01:00-08:00"
+  tags: ["Policy", "Corporate", "Social"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Regulation", "Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei", "Daniela Amodei", "Pete Hegseth", "Donald Trump"]
+  link: "https://fortune.com/2026/02/27/trump-us-government-anthropic-claude-pentagon-6-months-phaseout-ai-standoff/"
+  description: "After Anthropic refused the Pentagon's ultimatum, President Trump directed all federal agencies to cease using Anthropic's products and Defense Secretary Pete Hegseth designated the company a supply chain risk — a penalty historically reserved for foreign adversaries like Huawei. Trump called Anthropic 'woke' and 'leftwing' on Truth Social, claiming the company was endangering troops. The designation barred any contractor or supplier doing business with the U.S. military from commercial activity with Anthropic, triggering a six-month phase-out period. Claude became the number one app on Apple's U.S. App Store as public support surged."
+
+- title: "OpenAI Announces Pentagon Deal Hours After Anthropic Blacklisted"
+  date: "2026-02-27T20:00:00-08:00"
+  tags: ["Corporate", "Partnership"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban"
+  description: "Just hours after the Trump administration blacklisted Anthropic from government work, OpenAI CEO Sam Altman announced a deal with the Department of Defense to provide OpenAI's technology for classified military networks. The timing underscored the competitive dynamics in the AI industry, with OpenAI positioning itself as a willing partner for defense applications without the usage restrictions that Anthropic had insisted upon."
+
+- title: "Pentagon Uses Claude and Palantir Maven to Target Iran Strikes"
+  date: "2026-02-28T06:00:00-08:00"
+  tags: ["Policy", "Technical", "Safety"]
+  organizations: ["Anthropic", "Palantir"]
+  models: ["Claude"]
+  impact_areas: ["Ethics", "Regulation"]
+  key_figures: ["Alex Karp", "Pete Hegseth"]
+  link: "https://www.thedefensenews.com/news-details/Pentagon-Used-Anthropics-Claude-AI-and-Palantir-Maven-to-Identify-1000-Targets-in-Iran-Strikes/"
+  description: "The U.S. Department of Defense used Claude AI integrated with Palantir's Maven Smart System to identify and prioritize military targets during coordinated U.S. and Israeli strikes on more than 2,000 Iranian sites. During the first 24 hours, the Claude-Maven system produced approximately 1,000 prioritized targets. The strikes occurred just one day after the Trump administration blacklisted Anthropic, highlighting the paradox of the military simultaneously banning and relying on Claude for active combat operations."
+
+- title: "Anthropic Designated Supply Chain Risk; Defense Contractors Drop Claude"
+  date: "2026-03-03T09:00:00-08:00"
+  tags: ["Corporate", "Policy"]
+  organizations: ["Anthropic", "Palantir"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Market Competition", "Regulation"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.cnbc.com/2026/03/04/pentagon-blacklist-anthropic-defense-tech-claude.html"
+  description: "Defense Secretary Pete Hegseth formally designated Anthropic a supply chain risk, and defense technology companies began telling employees to stop using Claude. Ten portfolio companies at defense-focused J2 Ventures backed off Claude for defense use cases. However, Palantir CEO Alex Karp confirmed Claude remained in active use within Palantir's Maven Smart Systems, used for intelligence analysis and weapons targeting. Palantir, holding Maven contracts valued at over $1 billion, faced the prospect of rebuilding workflows and prompts originally built using Claude Code."
+
+- title: "Anthropic Sues Trump Administration Over Supply Chain Designation"
+  date: "2026-03-09T09:00:00-08:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Daniela Amodei"]
+  link: "https://www.lawfaremedia.org/article/pentagon's-anthropic-designation-won't-survive-first-contact-with-legal-system"
+  description: "Anthropic filed two lawsuits against the federal government in a California court, arguing that the Trump administration's supply chain risk designation and government-wide ban on its products were 'unprecedented and unlawful.' The company argued the actions caused irreparable harm and jeopardized hundreds of millions of dollars in contracts. Legal analysts noted the supply chain risk designation — historically used against foreign adversaries — was being applied for the first time against an American company over what was fundamentally a contractual disagreement about two usage restrictions. Major tech companies including Amazon, Microsoft, and Google pushed back on the designation, fearing it could set a precedent for how government contractors interact with AI companies."
+
+- title: "Pentagon Struggles to Replace Claude as Military Users Resist Phase-Out"
+  date: "2026-03-19T09:00:00-07:00"
+  tags: ["Policy", "Technical"]
+  organizations: ["Anthropic", "Palantir"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Regulation"]
+  key_figures: ["Pete Hegseth", "Emil Michael"]
+  link: "https://www.airforcetimes.com/news/pentagon-congress/2026/03/19/hegseth-wants-pentagon-to-dump-claude-but-military-users-say-its-not-so-easy/"
+  description: "Despite Defense Secretary Hegseth's order to dump Anthropic's Claude, military users were dragging their feet and some were preparing to revert to Claude in anticipation of the dispute being resolved. Pentagon Under Secretary Emil Michael said he was 'pretty confident' the DoD could phase out Claude within six months, but IT contractors and government officials warned that recertifying replacement systems for classified networks could take 12 to 18 months. Career IT staff resisted the move because they had 'finally gotten operators comfortable using AI,' and developers were frustrated at losing agents built to sift through vast amounts of data. The situation highlighted how deeply Claude had become embedded in military infrastructure."
+
 - title: "Project Genie Public Launch"
   date: "2026-01-29T10:00:00-08:00"
   tags: ["Product", "Model"]
