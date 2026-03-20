@@ -81,7 +81,7 @@
   impact_areas: ["Market Competition", "Enterprise AI"]
   key_figures: ["Sam Altman"]
   link: "https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban"
-  description: "Just hours after the Trump administration blacklisted Anthropic from government work, OpenAI CEO Sam Altman announced a deal with the Department of Defense to provide OpenAI's technology for classified military networks. The timing underscored the competitive dynamics in the AI industry, with OpenAI positioning itself as a willing partner for defense applications without the usage restrictions that Anthropic had insisted upon."
+  description: "Just hours after the Trump administration blacklisted Anthropic, OpenAI announced it had signed a deal with the Department of Defense to provide its AI technology for classified military networks, accepting the 'any lawful use' standard that Anthropic had refused. OpenAI had quietly dropped its ban on military applications in early 2024 and had been building defense relationships since. The timing drew sharp criticism — critics accused OpenAI of opportunistically capitalizing on a competitor's principled stand, while supporters argued the company was simply filling a critical national security need. Hundreds of OpenAI employees later signed a cross-industry letter supporting Anthropic's position, highlighting internal tension at the company over the deal."
 
 - title: "Pentagon Uses Claude and Palantir Maven to Target Iran Strikes"
   date: "2026-02-28T06:00:00-08:00"
@@ -111,14 +111,6 @@
   key_figures: ["Dario Amodei", "Daniela Amodei"]
   link: "https://www.lawfaremedia.org/article/pentagon's-anthropic-designation-won't-survive-first-contact-with-legal-system"
   description: "Anthropic filed two lawsuits against the federal government in a California court, arguing that the Trump administration's supply chain risk designation and government-wide ban on its products were 'unprecedented and unlawful.' The company argued the actions caused irreparable harm and jeopardized hundreds of millions of dollars in contracts. Legal analysts noted the supply chain risk designation — historically used against foreign adversaries — was being applied for the first time against an American company over what was fundamentally a contractual disagreement about two usage restrictions. Major tech companies including Amazon, Microsoft, and Google pushed back on the designation, fearing it could set a precedent for how government contractors interact with AI companies."
-
-- title: "Tech Workers Sign 'We Will Not Be Divided' Petition Supporting Anthropic"
-  date: "2026-03-10T09:00:00-08:00"
-  tags: ["Social", "Policy"]
-  organizations: ["Anthropic", "Google", "OpenAI", "Microsoft", "Amazon"]
-  impact_areas: ["Ethics", "Regulation"]
-  link: "https://fortune.com/2026/03/10/google-openai-employees-back-anthropic-legal-fight-military-use-of-ai/"
-  description: "Over 330 employees from Google, OpenAI, Amazon, Microsoft, Salesforce, and other major tech companies signed an open letter titled 'We Will Not Be Divided' supporting Anthropic's refusal to grant unrestricted military access to Claude. The petition opposed the use of AI for mass domestic surveillance or fully autonomous weapons without human oversight. The cross-industry solidarity was unprecedented, with workers at Anthropic's direct competitors publicly backing the company's stance against the Trump administration."
 
 - title: "Trump Administration Defends Anthropic Blacklisting in Court"
   date: "2026-03-18T09:00:00-07:00"
