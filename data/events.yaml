@@ -1891,6 +1891,33 @@
     headcount: 800
     reason: "AI investment shift"
 
+- title: "BuzzFeed Shuts News Division, Replaces Writers with AI"
+  date: "2023-04-20T10:00:00-04:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["BuzzFeed"]
+  impact_areas: ["Creator Economy", "Enterprise AI"]
+  link: "https://www.theguardian.com/media/2023/apr/20/buzzfeed-shut-down-news-division-layoffs"
+  description: "BuzzFeed shut down its Pulitzer Prize-winning BuzzFeed News division and laid off approximately 180 employees — about 15% of its total workforce — weeks after announcing it would use ChatGPT to generate quiz and content. The closure marked the end of one of digital journalism's most celebrated outlets, and became an early high-profile example of AI being cited in newsroom cuts."
+  layoffs:
+    company: "BuzzFeed"
+    headcount: 180
+    reason: "replaced writers with AI"
+
+- title: "IBM Freezes Hiring for 7,800 AI-Replaceable Roles"
+  date: "2023-05-01T10:00:00-05:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["IBM"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Arvind Krishna"]
+  link: "https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-back-office-jobs-that-ai-could-kill"
+  description: "IBM CEO Arvind Krishna told Bloomberg the company expected to pause or slow hiring for approximately 7,800 roles — roughly 30% of its non-customer-facing workforce — over five years as AI automation made those positions redundant. While framed as attrition rather than active layoffs, Krishna explicitly named AI as the driver, making IBM one of the first Fortune 500 CEOs to publicly forecast AI-driven workforce shrinkage at scale."
+  layoffs:
+    company: "IBM"
+    headcount: 7800
+    reason: "AI hiring freeze/attrition"
+
 - title: "Chegg Warns ChatGPT Killing Its Business"
   date: "2023-05-02T10:00:00-07:00"
   tags: ["Economic", "Corporate"]
@@ -1902,6 +1929,19 @@
     company: "CHGG"
     headcount: 80
     reason: "AI displacement"
+
+- title: "Stack Overflow Cuts 28% as AI Hits Developer Traffic"
+  date: "2023-10-16T10:00:00-04:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Stack Overflow"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.theverge.com/2023/10/16/23919004/stack-overflow-layoffs-october-2023"
+  description: "Stack Overflow laid off approximately 28% of its staff — around 100 people — as AI-powered coding assistants like GitHub Copilot and ChatGPT caused a measurable decline in the platform's traffic and page views. While the company avoided explicitly naming AI as the cause, the timing aligned directly with the rise of AI coding tools that answered developer questions instantly, bypassing the need for community Q&A forums."
+  layoffs:
+    company: "Stack Overflow"
+    headcount: 100
+    reason: "AI traffic decline"
 
 - title: "Unity Cuts 25% of Workforce"
   date: "2024-01-08T10:00:00-08:00"
@@ -1940,6 +1980,19 @@
     company: "GOOGL"
     headcount: 1000
     reason: "Gemini pivot"
+
+- title: "UPS Cuts 12,000 in AI-Driven Logistics Overhaul"
+  date: "2024-01-30T10:00:00-05:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["UPS"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2024/01/30/ups-to-cut-about-12000-jobs-in-2024.html"
+  description: "UPS announced it would eliminate approximately 12,000 management and office jobs in 2024 as part of a restructuring driven by AI-powered logistics optimization and automation. CEO Carol Tomé cited network reconfiguration and efficiency investments including machine learning and smart warehouse systems. The cuts were among the largest in UPS's 116-year history and reflected growing AI-driven automation in the logistics sector."
+  layoffs:
+    company: "UPS"
+    headcount: 12000
+    reason: "AI/automation logistics"
 
 - title: "Electronic Arts Cuts Another 670 Jobs"
   date: "2024-02-28T10:00:00-08:00"
@@ -1990,6 +2043,33 @@
     headcount: 420
     reason: "AI-focused R&D restructuring"
 
+- title: "Intel Cuts 15,000 in AI Chip Market Restructuring"
+  date: "2024-08-01T10:00:00-07:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Intel"]
+  impact_areas: ["Hardware", "Enterprise AI", "Market Competition"]
+  key_figures: ["Pat Gelsinger"]
+  link: "https://www.cnbc.com/2024/08/01/intel-to-cut-more-than-15000-jobs-slash-dividend-as-it-tries-to-revive-its-fortunes.html"
+  description: "Intel announced it would cut more than 15,000 jobs — approximately 15% of its global workforce — and suspend its dividend as CEO Pat Gelsinger restructured the company to compete in the AI chip era dominated by NVIDIA. The cuts came alongside a $10 billion cost reduction plan, reflecting how Intel had fallen behind in the AI accelerator market while NVIDIA captured the bulk of AI training and inference revenue."
+  layoffs:
+    company: "INTC"
+    headcount: 15000
+    reason: "AI chip market restructuring"
+
+- title: "Klarna AI Chatbot Displaces 700 Customer Service Agents"
+  date: "2024-09-01T10:00:00+02:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Klarna"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2024/09/12/klarna-ceo-says-ai-has-let-it-shrink-headcount-by-22percent.html"
+  description: "Klarna CEO Sebastian Siemiatkowski revealed the company's AI-first strategy had reduced its workforce from around 5,000 to approximately 3,800 employees — a 24% reduction — primarily through AI handling customer service work that previously required hundreds of agents. Klarna's earlier February 2024 announcement had claimed its AI chatbot was doing the equivalent work of 700 full-time agents, handling two-thirds of customer service chats in 2 minutes versus 11 minutes for humans. The company became a widely cited symbol of AI replacing white-collar service roles at scale."
+  layoffs:
+    company: "Klarna"
+    headcount: 700
+    reason: "AI chatbot replaced agents"
+
 - title: "Amazon Cuts 14,000 Corporate Roles"
   date: "2024-10-15T10:00:00-07:00"
   tags: ["Economic", "Corporate"]
@@ -2015,6 +2095,20 @@
     company: "MSFT"
     headcount: 6000
     reason: "AI-driven restructuring"
+
+- title: "Intel Cuts 20,500 Under New CEO in AI Pivot"
+  date: "2025-07-01T10:00:00-07:00"
+  display: "chart-only"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Intel"]
+  impact_areas: ["Hardware", "Enterprise AI", "Market Competition"]
+  key_figures: ["Lip-Bu Tan"]
+  link: "https://www.cnbc.com/2025/07/01/intel-layoffs-lip-bu-tan-restructuring.html"
+  description: "Intel announced a second major round of cuts under new CEO Lip-Bu Tan, eliminating approximately 20,500 positions as the company accelerated its pivot toward AI-optimized chip architectures and exited legacy product lines. The cuts brought Intel's total workforce reductions to over 35,000 since 2024, as the company sought to catch up to NVIDIA and AMD in the AI accelerator market."
+  layoffs:
+    company: "INTC"
+    headcount: 20500
+    reason: "AI pivot under Tan"
 
 - title: "Microsoft Cuts Additional 9,000"
   date: "2025-07-02T10:00:00-07:00"

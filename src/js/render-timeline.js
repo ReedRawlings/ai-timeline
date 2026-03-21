@@ -54,6 +54,8 @@ export function renderTimeline(events) {
     const groups = new Map();
 
     events.forEach(event => {
+        if (event.display === 'chart-only') return;
+
         const d = new Date(event.date);
         const yearMonth = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
         const sortKey = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;

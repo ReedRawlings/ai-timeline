@@ -19,6 +19,9 @@ const COMPANY_NAMES = {
     TEAM: 'Atlassian',
     SQ: 'Block',
     CRM: 'Salesforce',
+    IBM: 'IBM',
+    UPS: 'UPS',
+    INTC: 'Intel',
 };
 
 // Design tokens (matching CSS variables)
