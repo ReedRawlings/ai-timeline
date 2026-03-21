@@ -2145,21 +2145,455 @@
   impact_areas: ["Multimodal AI", "Robotics", "Computer Vision"]
   link: "https://runwayml.com/research/introducing-runway-gwm-1"
   description: "Runway unveiled GWM-1, its first General World Model built to simulate reality in real time. Unlike traditional video generation models that produce complete clips, GWM-1 is autoregressive — generating frame by frame and responding to interactive controls including camera pose, robot commands, and audio. The model ships in three variants: GWM Worlds for explorable environments, GWM Avatars for conversational characters with lip-synced speech, and GWM Robotics for synthetic training data. Built on top of Runway's Gen-4.5 video model, GWM-1 represents the culmination of Runway's stated mission to build 'foundational General World Models capable of simulating all possible worlds.'"
+- title: "International AI Safety Report 2026 Published"
+  date: "2026-02-03T09:00:00-05:00"
+  tags: ["Safety", "Policy", "Research"]
+  organizations: ["International AI Safety Report"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: ["Yoshua Bengio"]
+  link: "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+  description: "The second International AI Safety Report — led by Turing Award winner Yoshua Bengio and authored by over 100 AI experts from more than 30 countries — was published on February 3, warning that frontier models can now generate code, solve graduate-level science problems, and threaten critical infrastructure. The report documented 12 frontier lab safety frameworks published or updated in 2025, but found that models remain unreliable on multi-step tasks and still produce dangerous hallucinations — and that current risk management is not keeping pace with capability gains."
 
-- title: "Anthropic Series G at $380B Valuation"
+- title: "SpaceX-xAI Mega-Merger Announced at $1.25 Trillion"
+  date: "2026-02-03T09:00:00-08:00"
+  tags: ["Corporate", "Economic", "Technical"]
+  organizations: ["SpaceX", "xAI"]
+  impact_areas: ["Market Competition", "Hardware", "Enterprise AI"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html"
+  description: "Elon Musk announced the largest merger in history: SpaceX acquiring xAI in an all-share deal valuing the combined entity at $1.25 trillion, with xAI shares exchanged at a ratio of 0.1433 SpaceX shares each. The rationale was building orbital data centers — Musk argued that global electricity demand for AI cannot be met with terrestrial infrastructure alone, and that Starlink's low-Earth orbit satellites could power a new generation of data centers in space. The deal set the stage for what analysts projected would be the largest IPO in history."
+
+- title: "OpenAI Launches GPT-5.3-Codex"
+  date: "2026-02-05T09:00:00-08:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.3-Codex"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5-3-codex/"
+  description: "OpenAI released GPT-5.3-Codex, its most capable agentic coding model to date and the first AI system classified as 'High capability' for cybersecurity under the company's Preparedness Framework. The model was 25% faster than its predecessor, could be steered mid-task without losing context, and made headlines for being instrumentally involved in its own training — the Codex team used early versions to debug training runs, manage deployments, and diagnose evaluation results. Its release accelerated warnings from security researchers about unprecedented risks from AI-assisted vulnerability discovery."
+
+- title: "Trump Posts Racist AI Deepfake of the Obamas"
+  date: "2026-02-07T09:00:00-05:00"
+  tags: ["Social", "Policy"]
+  impact_areas: ["Public Perception", "Ethics", "Regulation"]
+  key_figures: ["Barack Obama", "Donald Trump"]
+  link: "https://deadline.com/2026/02/donald-trump-truth-social-ai-video-obamas-apes-1236710978/"
+  description: "A minute-long video — ending with AI-generated footage of the Obamas' faces superimposed on cartoon apes — appeared on Donald Trump's Truth Social account late on February 5, going globally viral before being deleted Friday morning. The White House blamed an unidentified staffer who 'erroneously' posted it, while Trump told reporters he had 'liked the beginning' and passed it along without reviewing the full video. Obama publicly responded that many Americans 'find this behavior deeply troubling,' and Republican Sen. Tim Scott called it 'the most racist thing I've seen out of this White House.'"
+
+- title: "Grok Deepfake Crisis — EU Opens Formal Probe"
+  date: "2026-02-10T09:00:00-05:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["xAI"]
+  models: ["Grok"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Elon Musk"]
+  link: "https://edition.cnn.com/2026/02/17/business/grok-ai-sexualized-images-eu-probe-intl"
+  description: "Ireland's Data Protection Commission opened a 'large-scale' GDPR inquiry into X and xAI after Grok generated over three million sexualized images in a nine-day period following a viral discovery that the chatbot would undress people in photographs on request — including images that appeared to depict children. The EU probe was joined by parallel investigations from France and the UK, with researchers at the nonprofit Center for Countering Digital Hate estimating Grok created 23,000 sexualized images of minors during the outbreak. xAI faced mounting calls for criminal liability as regulators across three continents moved to act simultaneously."
+
+- title: "Anthropic Raises $30B Series G at $380B Valuation"
   date: "2026-02-12T09:00:00-08:00"
-  tags: ["Corporate", "Economic"]
+  tags: ["Economic", "Corporate"]
   organizations: ["Anthropic"]
-  impact_areas: ["Market Competition", "Enterprise AI"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Language Models"]
   key_figures: ["Dario Amodei", "Daniela Amodei"]
   link: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
-  description: "Anthropic closed a $30 billion Series G funding round at a $380 billion post-money valuation, more than doubling from its $183 billion Series F just five months earlier. The raise made Anthropic the most valuable private AI company, surpassing OpenAI's last private valuation. The extraordinary velocity of Anthropic's growth — from $1 billion to an estimated $14 billion in annualized revenue in roughly a year — was driven primarily by the explosive adoption of Claude Code and the Claude model family's dominance in enterprise AI and software development."
+  description: "Anthropic closed a $30 billion Series G round led by Singapore's GIC and Coatue — with Founders Fund, Abu Dhabi's MGX, and the Qatar Investment Authority among co-investors — more than doubling its valuation from $183 billion to $380 billion in a single round. The company's annualized revenue had reached $14 billion, growing 10x over three years, with Claude Code alone exceeding $2.5 billion in annualized revenue. The round was the second-largest private venture deal of all time, behind only OpenAI's $40 billion raise in 2025."
 
-- title: "Claude Sonnet 4.6"
+- title: "OpenAI Debuts GPT-5.3-Codex-Spark on Cerebras Hardware"
+  date: "2026-02-12T10:00:00-08:00"
+  tags: ["Model", "Technical", "Product"]
+  organizations: ["OpenAI", "Cerebras"]
+  models: ["GPT-5.3-Codex-Spark"]
+  impact_areas: ["Hardware", "Language Models", "Market Competition"]
+  link: "https://openai.com/index/introducing-gpt-5-3-codex-spark/"
+  description: "OpenAI released GPT-5.3-Codex-Spark, a real-time coding model running on Cerebras' third-generation Wafer-Scale Engine at over 1,000 tokens per second — marking OpenAI's first production deployment on silicon outside its long-standing Nvidia stack. The model delivered near-instant code feedback and was released to ChatGPT Pro users as a research preview while Cerebras ramped datacenter capacity. The move signaled the beginning of a serious challenge to Nvidia's grip on frontier AI inference workloads."
+
+- title: "FTC Escalates Microsoft Cloud and AI Probe"
+  date: "2026-02-13T09:00:00-05:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Microsoft", "FTC"]
+  impact_areas: ["Market Competition", "Regulation", "Enterprise AI"]
+  link: "https://www.bloomberg.com/news/articles/2026-02-13/ftc-ratchets-up-microsoft-probe-queries-rivals-on-cloud-ai"
+  description: "The Federal Trade Commission escalated its antitrust investigation into Microsoft by issuing civil investigative demands to at least half a dozen competing cloud and enterprise software companies, probing whether Microsoft's bundling of Copilot AI, security software, and identity products with Azure constitutes illegal monopolization. The probe — launched in the final days of the Biden administration and continued by the Trump FTC under chair Andrew Ferguson — focused on licensing restrictions that prevented customers from running Microsoft software on rival clouds like AWS and Google Cloud. The inquiry represented the most significant antitrust scrutiny Microsoft had faced since its early-2000s consent decree."
+
+- title: "French Police Raid X's Paris Office Over Grok Deepfakes"
+  date: "2026-02-14T09:00:00-01:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["xAI"]
+  models: ["Grok"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.pbs.org/newshour/world/paris-prosecutors-raid-x-offices-as-part-of-investigation-over-child-abuse-images-deepfakes"
+  description: "French prosecutors raided X's Paris offices as part of a criminal investigation into alleged complicity in distributing child sexual abuse material and non-consensual deepfakes generated by Grok, also summoning Elon Musk and former CEO Linda Yaccarino to testify at hearings in April. The raid targeted charges including 'manipulation of an automated data processing system as part of an organized group' — a criminal provision that could expose Musk personally to French prosecution. It marked a significant escalation from civil regulatory action to criminal investigation in European AI oversight."
+
+- title: "Alibaba Launches Qwen 3.5 Family"
+  date: "2026-02-16T09:00:00+08:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Alibaba"]
+  models: ["Qwen 3.5"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html"
+  description: "Alibaba released Qwen 3.5, its first model with native multimodal support for text, images, and video in a single conversation, and billed it as 'built for the agentic AI era.' The open-source flagship reached 397 billion parameters in a mixture-of-experts architecture, supported 201 languages, and matched the performance of GPT-5.2 and Claude Opus 4.5 at 60% lower operating cost. The release reinforced China's position as a credible open-source AI superpower, with Qwen 3.5 offering frontier-level capability at a fraction of the Western API cost."
+
+- title: "Anthropic Releases Claude Sonnet 4.6"
   date: "2026-02-17T09:00:00-08:00"
   tags: ["Model", "Product"]
   organizations: ["Anthropic"]
   models: ["Claude Sonnet 4.6"]
   impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
   link: "https://www.anthropic.com/news/claude-sonnet-4-6"
-  description: "Anthropic released Claude Sonnet 4.6, delivering Opus-level coding performance at Sonnet pricing. The model featured dramatically improved coding skills, consistency, and instruction following compared to Sonnet 4.5, narrowing the gap between Anthropic's mid-tier and flagship models. The release continued Anthropic's strategy of rapidly iterating on its model family, with Sonnet 4.6 arriving just twelve days after Opus 4.6."
+  description: "Anthropic released Claude Sonnet 4.6 as the new default model for all Free and Pro users on claude.ai, replacing Sonnet 4.5 with a model that developers preferred by a wide margin and that often outperformed the prior flagship Opus 4.5. The release included a 1-million-token context window in beta, record scores on OS World for computer use and SWE-Bench for software engineering, and a 60.4% score on ARC-AGI-2. Pricing remained unchanged at $3/$15 per million tokens, making it one of the most competitive price-performance releases in Anthropic's history."
+
+- title: "xAI Releases Grok 4.20 Beta"
+  date: "2026-02-17T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["xAI"]
+  models: ["Grok 4.20"]
+  impact_areas: ["Language Models", "Market Competition", "Enterprise AI"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.nextbigfuture.com/2026/02/xai-launches-grok-4-20-and-it-has-4-ai-agents-collaborating.html"
+  description: "xAI launched Grok 4.20 Beta publicly across grok.com, iOS, and Android simultaneously, introducing a four-agent parallel collaboration system where specialized agents — Grok (coordinator), Harper (research), Benjamin (logic and code), and Lucas (creative synthesis) — run in parallel on every query and synthesize outputs into a single response. The model added medical document analysis via photo upload and was billed as a 'rapid learning' system that would improve week over week from public use. Access was free with limits, or unlimited via SuperGrok at $30/month."
+
+- title: "Google Releases Gemini 3.1 Pro with 77.1% on ARC-AGI-2"
+  date: "2026-02-19T09:00:00-08:00"
+  tags: ["Model", "Product", "Research"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Gemini 3.1 Pro"]
+  impact_areas: ["Language Models", "Market Competition", "Multimodal AI"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
+  description: "Google released Gemini 3.1 Pro in preview, achieving 77.1% on ARC-AGI-2 — more than double its predecessor's 31.1% and the highest score among frontier models operating without extended deep-thinking mode. The model's ARC-AGI-2 performance represented a qualitative leap in abstract reasoning on novel visual-logic problems that require multi-step deduction outside the training distribution, stoking debate about whether standard benchmarks had become obsolete. Gemini 3.1 Pro topped the Artificial Analysis Intelligence Index at the same price as its predecessor."
+
+- title: "Pew Study: Over Half of American Teens Use AI for Schoolwork"
+  date: "2026-02-19T09:00:00-05:00"
+  tags: ["Social", "Research"]
+  organizations: ["Pew Research Center"]
+  impact_areas: ["Education", "Public Perception"]
+  link: "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/"
+  description: "A Pew Research Center survey of 1,458 U.S. teens ages 13–17 found that 54% had used AI chatbots to help with schoolwork, with one in ten doing 'all or most' of their schoolwork with AI assistance. Racial disparities were significant: about six in ten Black and Hispanic teens reported AI schoolwork use versus roughly half of white teens, raising equity questions about AI-augmented learning. A majority of teens (59%) also said AI cheating was 'at least somewhat common' at their school, with a third saying it happened 'extremely or very often.'"
+
+- title: "Anthropic Reverses Core AI Safety Testing Pledge"
+  date: "2026-02-20T09:00:00-08:00"
+  tags: ["Safety", "Corporate", "Policy"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Regulation", "Market Competition"]
+  key_figures: ["Dario Amodei"]
+  link: "https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/"
+  description: "Anthropic quietly updated its Responsible Scaling Policy, removing its most-cited commitment: the promise to never train a more powerful AI model unless it could guarantee in advance that safety measures were adequate. The new RSP acknowledged that unilateral pauses would leave the field less safe, not more, since competitors would simply advance without mitigations — a significant philosophical reversal from the company that had made safety constraints its founding identity. The change came as Defense Secretary Pete Hegseth was simultaneously pressuring Anthropic to loosen its redlines on autonomous weapons use."
+
+- title: "Teen Class-Action Lawsuit Filed Against xAI Over Grok Deepfakes"
+  date: "2026-02-24T09:00:00-08:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["xAI"]
+  models: ["Grok"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.sheknows.com/parenting/articles/1234980545/3-teens-just-sued-elon-musk-xai-ai-generated-porn/"
+  description: "Three teenage girls from Tennessee filed a class-action lawsuit against xAI in California federal court, alleging Grok's image generator was deliberately designed without safeguards and used to create child sexual abuse material from their yearbook photos and social media images. The lawsuit alleged that between December 2025 and January 2026, Grok's tools created over 4.4 million images including approximately 23,000 depicting minors, with nonconsensual nudes distributed across Discord servers. The plaintiffs accused Musk of actively promoting Grok's 'spicy' content capabilities while 'refusing' to implement protections against CSAM."
+
+- title: "#QuitGPT Movement Pushes Claude to No. 1 on App Store"
+  date: "2026-02-25T09:00:00-08:00"
+  tags: ["Social", "Product"]
+  organizations: ["OpenAI", "Anthropic"]
+  impact_areas: ["Public Perception", "Market Competition"]
+  link: "https://www.axios.com/2026/03/01/anthropic-claude-chatgpt-app-downloads-pentagon"
+  description: "A grassroots #QuitGPT movement — ignited by FEC filings revealing OpenAI president Greg Brockman had donated $25 million to Trump's super PAC — went viral in late February after Sam Altman announced on February 27 that OpenAI had struck a deal to deploy models on Pentagon classified networks. ChatGPT uninstalls spiked 295% in a single day, one-star App Store reviews rose 775%, and by March 1 Anthropic's Claude had rocketed to the number-one free app in the U.S. Apple App Store — its highest position ever. Over 1.5 million users publicly pledged to switch on QuitGPT.org."
+
+- title: "Block Lays Off 4,000 — Nearly Half Its Workforce"
+  date: "2026-02-26T09:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Block"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Jack Dorsey"]
+  link: "https://www.cnbc.com/2026/02/26/block-laying-off-about-4000-employees-nearly-half-of-its-workforce.html"
+  description: "Block CEO Jack Dorsey announced the elimination of over 4,000 jobs — roughly 40% of the company's 10,200-person workforce — citing 'intelligence tools' as the reason and warning shareholders that he expected most companies to make similar structural cuts within a year. Dorsey said he chose to act decisively rather than drag out 'repeated rounds of cuts' that would destroy morale, and that AI could now handle work that previously required large headcounts. The announcement made Block one of the most explicit high-profile cases of a CEO preemptively restructuring around AI capability rather than reacting to business performance."
+  layoffs:
+    company: "SQ"
+    headcount: 4000
+    reason: "AI restructuring"
+
+- title: "OpenAI Raises $110B — Largest Private Funding Round Ever"
+  date: "2026-02-27T09:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI", "Amazon", "NVIDIA", "SoftBank"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Hardware"]
+  key_figures: ["Sam Altman"]
+  link: "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/"
+  description: "OpenAI closed a $110 billion funding round anchored by $50 billion from Amazon, $30 billion from Nvidia, and $30 billion from SoftBank — the largest private technology fundraise in history, at a $730 billion pre-money valuation. As part of the deal, AWS became an exclusive third-party cloud provider for OpenAI Frontier, OpenAI's enterprise platform, and the company announced a $100 billion expansion of its existing AWS infrastructure commitment. The round more than doubled OpenAI's previous $40 billion fundraise and set the stage for a projected $840 billion post-money valuation."
+
+- title: "Trump Blacklists Anthropic; OpenAI Strikes Pentagon Deal Same Day"
+  date: "2026-02-27T17:00:00-05:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "OpenAI", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics", "Market Competition"]
+  key_figures: ["Dario Amodei", "Sam Altman", "Pete Hegseth", "Donald Trump"]
+  link: "https://www.cnbc.com/2026/02/27/openai-strikes-deal-with-pentagon-hours-after-rival-anthropic-was-blacklisted-by-trump.html"
+  description: "President Trump ordered all U.S. government agencies to immediately cease using Anthropic technology after the company refused the Pentagon's demand to permit use of Claude in fully autonomous weapons and mass domestic surveillance — a designation that placed Anthropic, a U.S. company, in the category normally reserved for foreign adversaries. Hours later, Sam Altman announced on X that OpenAI had struck a deal with the Defense Department to deploy its models on classified military networks, having quietly dropped the same 'red lines' it had publicly claimed to share with Anthropic. The same-day juxtaposition became one of the most polarizing moments in the AI industry's history."
+
+- title: "February 2026: Record $189B Global Venture Month"
+  date: "2026-02-28T09:00:00-05:00"
+  tags: ["Economic"]
+  organizations: ["OpenAI", "Anthropic", "Waymo"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://news.crunchbase.com/venture/record-setting-global-funding-february-2026-openai-anthropic/"
+  description: "February 2026 became the largest startup funding month on record at $189 billion globally — 780% above February 2025 — though 83% of the capital flowed to just three companies: OpenAI ($110B), Anthropic ($30B), and Waymo ($16B, closed in early February). AI-related startups captured 90% of all global venture investment that month, while seed-stage funding actually fell 11% year-over-year, revealing a bifurcated market where mega-deals masked a drought for early-stage companies. The previous monthly VC record was $78 billion during the Web3 boom of November 2021."
+
+- title: "Supreme Court Kills Thaler AI Authorship Case"
+  date: "2026-03-02T09:00:00-05:00"
+  tags: ["Policy", "Research"]
+  impact_areas: ["Ethics", "Regulation", "Creator Economy"]
+  key_figures: ["Stephen Thaler"]
+  link: "https://www.cnbc.com/2026/03/02/us-supreme-court-declines-to-hear-dispute-over-copyrights-for-ai-generated-material.html"
+  description: "The Supreme Court denied certiorari in Thaler v. Perlmutter, closing Dr. Stephen Thaler's eight-year legal quest to register copyright for 'A Recent Entrance to Paradise,' an artwork he said his DABUS AI created entirely without human prompting. The denial let stand the D.C. Circuit's ruling that human authorship is a 'bedrock requirement of copyright,' with Thaler having never claimed any personal creative contribution to the image. Legal scholars called the outcome the final word — at least for now — that purely autonomous AI creation cannot receive IP protection under U.S. law."
+
+- title: "OpenAI Launches GPT-5.4"
+  date: "2026-03-05T09:00:00-08:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.4"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5-4/"
+  description: "OpenAI released GPT-5.4, a model that combined advanced reasoning, coding, and native computer-use capabilities — with individual factual claims 33% less likely to be false than GPT-5.2 and a record 83% on OpenAI's GDPval knowledge work benchmark. The model was available in standard, Thinking, and Pro tiers, with API access including a 1-million-token context window — by far the largest offered by OpenAI at the time. Gizmodo noted the launch came as OpenAI was 'in desperate need of a win,' releasing just days after the Pentagon deal backlash had handed Anthropic its biggest user acquisition week ever."
+
+- title: "Anthropic Opens the Claude Marketplace"
+  date: "2026-03-06T09:00:00-08:00"
+  tags: ["Product", "Corporate"]
+  organizations: ["Anthropic", "GitLab", "Harvey"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude"
+  description: "Anthropic launched Claude Marketplace, a curated B2B platform where enterprises with existing Anthropic spend commitments could apply that spend toward Claude-powered tools from six launch partners: GitLab, Harvey, Lovable, Replit, Rogo, and Snowflake. The marketplace gave enterprises a single contract and single invoice for both Anthropic and partner products, eliminating the procurement friction of standalone SaaS deals — a direct challenge to the traditional SaaS sales model that had already seen billions in market cap evaporate during the 'SaaSpocalypse.' Anthropic said it was not taking a commission on partner transactions at launch."
+
+- title: "DOGE's Kliger Named Pentagon Chief Data Officer"
+  date: "2026-03-06T09:00:00-05:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Pentagon", "DOGE"]
+  impact_areas: ["Regulation", "Enterprise AI"]
+  key_figures: ["Gavin Kliger"]
+  link: "https://defensescoop.com/2026/03/06/doge-dod-gavin-kliger-new-pentagon-chief-data-officer/"
+  description: "The Department of Defense appointed Gavin Kliger, a former DOGE official and computer scientist who had helped launch the Pentagon's enterprise AI platform GenAI.mil, as its new Chief Data and AI Officer — tasked with accelerating the delivery of AI capabilities directly to warfighters. Kliger's appointment was immediately controversial: Reuters had reported he had reposted content from white supremacist Nick Fuentes and self-described misogynist Andrew Tate on social media, allegations he disputed. The hire reflected the Trump administration's pattern of deploying young DOGE-aligned technologists into critical government AI roles."
+
+- title: "Oregon and Washington Pass First AI Chatbot Safety Laws"
+  date: "2026-03-08T09:00:00-08:00"
+  tags: ["Policy", "Safety"]
+  impact_areas: ["Regulation", "Ethics", "Education"]
+  link: "https://www.troutmanprivacy.com/2026/03/oregon-legislature-passes-bill-regulating-consumer-facing-interactive-ai-with-private-right-of-action/"
+  description: "Oregon's legislature passed SB 1546 on a near-unanimous 52-0 House vote, becoming the first state in the nation to require AI chatbot operators to implement mandatory protections for minors — including hourly break reminders, a ban on sexually explicit content, and a prohibition on engagement-maximizing reward systems. Washington followed within days with HB 2225, adding similar safeguards for AI companion chatbots. Both bills carry a private right of action with $1,000 statutory damages per violation and take effect January 1, 2027, representing the leading edge of a wave of state-level AI regulation aimed at protecting children."
+
+- title: "AMI Labs (Yann LeCun) Raises $1.03B Seed Round"
+  date: "2026-03-09T09:00:00+01:00"
+  tags: ["Research", "Economic", "Corporate"]
+  organizations: ["AMI Labs", "NVIDIA", "Toyota"]
+  impact_areas: ["Language Models", "Research", "Market Competition"]
+  key_figures: ["Yann LeCun"]
+  link: "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/"
+  description: "Yann LeCun's Advanced Machine Intelligence Labs — founded just four months earlier after LeCun departed Meta after decades as its chief AI scientist — closed a $1.03 billion seed round at a $3.5 billion valuation, believed to be the largest seed round ever raised by a European startup. The round was co-led by five firms including Bezos Expeditions, with Nvidia, Toyota, and Samsung participating, and will fund AMI's core thesis: building 'world models' using the Joint Embedding Predictive Architecture LeCun first proposed in 2022, as an alternative to the transformer-based language models he had long publicly criticized."
+
+- title: "Court Orders OpenAI to Produce Training Logs in NYT Case"
+  date: "2026-03-09T09:00:00-05:00"
+  tags: ["Policy", "Research"]
+  organizations: ["OpenAI", "New York Times"]
+  impact_areas: ["Regulation", "Ethics", "Creator Economy"]
+  link: "https://news.bloomberglaw.com/ip-law/openai-must-turn-over-20-million-chatgpt-logs-judge-affirms"
+  description: "A federal judge affirmed a magistrate's order compelling OpenAI to produce a 20-million-log sample of anonymized ChatGPT conversations to copyright plaintiffs in the New York Times MDL, rejecting the company's privacy objections. Judge Stein found user privacy adequately protected by de-identification, the reduced sample size, and an existing protective order — and ruled that OpenAI must provide all 20 million logs rather than cherry-picking conversations implicating plaintiffs' works as the company had proposed. The decision was a major win for news publishers who argued the logs were essential evidence of whether training data reproduced their copyrighted content verbatim."
+
+- title: "Anthropic Sues Trump Administration Over Pentagon Blacklist"
+  date: "2026-03-09T09:00:00-08:00"
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics", "Market Competition"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.cnbc.com/2026/03/09/anthropic-trump-claude-ai-supply-chain-risk.html"
+  description: "Anthropic filed two simultaneous federal lawsuits against the Trump administration — in the Northern District of California and the D.C. Circuit — alleging that the Pentagon's 'supply chain risk' designation constituted an 'unlawful campaign of retaliation' against the company for its First Amendment-protected stance on autonomous weapons and mass surveillance. The supply-chain risk label had never before been applied to a U.S. company, and Anthropic's CFO warned that the government's actions could cost the company multiple billions in 2026 revenue. Microsoft, retired military chiefs, and a bipartisan coalition of 149 former federal judges ultimately filed briefs supporting Anthropic in what became the most consequential AI constitutional case in U.S. history."
+
+- title: "NVIDIA Debuts Nemotron 3 Super at GTC 2026"
+  date: "2026-03-10T09:00:00-08:00"
+  tags: ["Model", "Technical", "Product"]
+  organizations: ["NVIDIA"]
+  models: ["Nemotron 3 Super"]
+  impact_areas: ["Language Models", "Open Source", "Hardware", "Enterprise AI"]
+  key_figures: ["Jensen Huang"]
+  link: "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/"
+  description: "At GTC 2026, NVIDIA debuted Nemotron 3 Super, a 120-billion-parameter open model with a hybrid mixture-of-experts architecture that delivered 5x higher throughput and 2x higher accuracy than its predecessor, along with a 1-million-token context window that let agents maintain full workflow state without goal drift. The model scored 85.6% on PinchBench for agentic AI tasks, besting every other open model, and was released with open weights under a permissive license alongside 10 trillion tokens of training data and 15 reinforcement learning environments. Perplexity, CodeRabbit, and Greptile were among the first to integrate the model."
+
+- title: "Google Releases Gemini 3.1 Flash-Lite"
+  date: "2026-03-10T09:00:00-08:00"
+  tags: ["Model", "Product"]
+  organizations: ["Google", "Google DeepMind"]
+  models: ["Gemini 3.1 Flash-Lite"]
+  impact_areas: ["Language Models", "Market Competition", "Enterprise AI"]
+  link: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+  description: "Google released Gemini 3.1 Flash-Lite in preview via the Gemini API and Vertex AI, offering the most cost-efficient model in the Gemini 3.1 family at $0.25/$1.50 per million input/output tokens — roughly one-eighth the cost of Gemini 3.1 Pro. The model ran 2.5x faster and with 45% higher output speed than its predecessor and topped six benchmark tests including head-to-head comparisons with GPT-5 mini and Claude 4.5 Haiku. Its release continued Google's strategy of offering a full-spectrum model family spanning ultra-low-cost to frontier capability."
+
+- title: "'March Against the Machines' Draws Hundreds in London"
+  date: "2026-03-10T12:00:00+00:00"
+  tags: ["Social", "Policy"]
+  impact_areas: ["Public Perception", "Ethics", "Regulation"]
+  link: "https://extinctionrebellion.uk/2026/03/08/march-against-the-machines/"
+  description: "Up to 500 people marched through central London in the UK's largest anti-AI protest, organized by a coalition including Extinction Rebellion, Pull the Plug, Pause AI, and Mad Youth Organise — starting at OpenAI's Pentonville Road office and winding past Google DeepMind and Meta before ending at a People's Assembly in Bloomsbury. Protesters demanded a democratic pause on frontier AI development, calling the pace of advancement 'completely disconnected from any meaningful public conversation about who it serves and what it costs.' The event represented three years of growth for the AI pause movement, which had held its first march with just five people."
+
+- title: "Atlassian Lays Off 1,600 to Self-Fund AI Bets"
+  date: "2026-03-11T09:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Atlassian"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2026/03/11/atlassian-slashes-10percent-of-workforce-to-self-fund-investments-in-ai.html"
+  description: "Atlassian cut 1,600 employees — approximately 10% of its workforce, with over 900 from software R&D — explicitly to 'self-fund' further investment in AI and enterprise sales while strengthening its financial profile. The company's CTO simultaneously stepped down, with responsibilities split between two new leaders, and Atlassian shares had already lost more than half their value in 2026 as part of the broad software selloff triggered by AI-native alternatives. The announcement echoed Block's restructuring two weeks prior, accelerating fears of an industry-wide wave of AI-driven white-collar reductions at software companies."
+  layoffs:
+    company: "TEAM"
+    headcount: 1600
+    reason: "AI self-funding"
+
+- title: "Commerce Department Delivers State AI Law Review to White House"
+  date: "2026-03-11T09:00:00-05:00"
+  tags: ["Policy", "Regulation"]
+  organizations: ["Commerce Department"]
+  impact_areas: ["Regulation", "Market Competition"]
+  link: "https://www.butzel.com/alert-department-of-commerce-report-on-state-artificial-intelligence-laws-expected-by-march-11-2026"
+  description: "The Commerce Department delivered its mandated nationwide review of state AI laws to the White House, identifying 'onerous' frameworks in California, Colorado, and potentially Texas as conflicting with federal innovation objectives under Trump's December 2025 executive order on AI preemption. The report was expected to trigger a Department of Justice review of whether identified state laws violated the Commerce Clause, with states found to have onerous AI laws facing potential exclusion from $42 billion in BEAD broadband funding. The review put dozens of state legislatures on notice that federal preemption of AI regulation was no longer theoretical."
+
+- title: "Meta Delays 'Avocado' AI Model Rollout"
+  date: "2026-03-12T09:00:00-08:00"
+  tags: ["Corporate", "Model"]
+  organizations: ["Meta"]
+  models: ["Avocado"]
+  impact_areas: ["Language Models", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://money.usnews.com/investing/news/articles/2026-03-12/meta-delays-rollout-of-new-ai-model-nyt-reports"
+  description: "Meta pushed its flagship 'Avocado' model — internally positioned as a GPT-5.4 and Gemini 3.1 Pro competitor — to at least May after benchmarks showed it performing between Gemini 2.5 and Gemini 3 rather than above them. The delay marked Meta's second postponement of Avocado, originally targeted for late 2025, and forced the company to discuss temporarily licensing Google's Gemini technology to power Meta AI products in the interim. With $135 billion in planned 2026 AI spend, the setback put intense scrutiny on Zuckerberg's bet that internal model development could keep pace with OpenAI and Anthropic."
+
+- title: "EU Council Delays High-Risk AI Rules, Bans Deepfake CSAM"
+  date: "2026-03-13T09:00:00+01:00"
+  tags: ["Policy", "Safety"]
+  impact_areas: ["Regulation", "Ethics"]
+  link: "https://changeflow.com/govping/data-privacy-cybersecurity/other-2026-03-13-77"
+  description: "EU member states agreed to push back enforcement deadlines for high-risk AI systems by up to 16 months — to December 2027 for standalone systems and August 2028 for AI embedded in products — while simultaneously adding a new ban on AI-generated non-consensual intimate imagery and child sexual abuse material, accelerated by the Grok scandal. The council's omnibus amendments also moved up the mandatory AI-content watermarking deadline from February 2027 to November 2026. The package would now go to talks with the European Parliament before becoming law."
+
+- title: "Amazon AI Coding Agent Causes Cascading Retail Outages"
+  date: "2026-03-13T09:00:00-08:00"
+  tags: ["Technical", "Corporate"]
+  organizations: ["Amazon"]
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  key_figures: ["Andy Jassy"]
+  link: "https://fortune.com/2026/03/12/amazon-retail-site-outages-ai-agent-inaccurate-advice/"
+  description: "Amazon's internal AI coding agent Kiro — which the company had required 80% of its engineers to use weekly — contributed to two retail outages in one week: a March 2 incident causing 120,000 lost orders and a March 5 cascading failure that wiped out 99% of North American marketplace orders, totaling 6.3 million lost transactions. Internal documents cited 'Gen-AI assisted changes' as a contributing factor in multiple incidents, and Amazon convened an emergency engineering summit and announced a 90-day safety reset requiring two-person code reviews and stricter automated checks for 335 critical systems. The episode became the year's most cited cautionary case against autonomous AI agents in production environments."
+
+- title: "Waymo Raises $16B — Largest Autonomous Vehicle Funding Round"
+  date: "2026-03-14T09:00:00-08:00"
+  tags: ["Economic", "Corporate", "Technical"]
+  organizations: ["Waymo", "Alphabet"]
+  impact_areas: ["Robotics", "Market Competition", "Hardware"]
+  link: "https://techcrunch.com/2026/02/02/waymo-raises-16-billion-round-to-scale-robotaxi-fleet-london-tokyo/"
+  description: "Alphabet's Waymo raised $16 billion at a $126 billion valuation — the largest funding round in autonomous vehicle history — with a round led by Dragoneer, DST Global, Sequoia, Andreessen Horowitz, and Mubadala, among others. The capital will fund expansion to 20 new U.S. cities and international markets including London and Tokyo, where regulatory frameworks had recently opened to driverless taxis. The raise marked a turning point for the self-driving industry after years of high-profile failures, cementing Waymo's position as the undisputed commercial leader and signaling that trillion-dollar markets for autonomous mobility were no longer speculative."
+
+- title: "Isomorphic Labs' Drug Engine Doubles AlphaFold 3 Accuracy"
+  date: "2026-03-15T09:00:00+00:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Isomorphic Labs", "Google DeepMind"]
+  impact_areas: ["Healthcare", "Research"]
+  key_figures: ["Demis Hassabis"]
+  link: "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
+  description: "Isomorphic Labs unveiled its IsoDDE (Isomorphic Drug Design Engine), a unified computational platform that more than doubled AlphaFold 3's accuracy on novel protein-ligand structure prediction and outperformed gold-standard physics-based free energy perturbation methods while running in seconds rather than hours. The engine could identify novel cryptic binding pockets from amino acid sequences alone and demonstrated 2.3x improvement on antibody-antigen interface prediction — capabilities that CEO Demis Hassabis said would allow Isomorphic's first AI-designed drugs to enter clinical trials before end of 2026. The announcement represented the most significant advance in computational drug discovery since AlphaFold 2's landmark 2020 release."
+
+- title: "Meta Lays Off ~15,000 in AI Cost Restructuring"
+  date: "2026-03-16T09:00:00-08:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://www.cnbc.com/2026/03/16/meta-ai-costs-mass-layoffs-20percent-up-premarket.html"
+  description: "Meta announced layoffs affecting approximately 15,000 employees — nearly 20% of its 79,000-person workforce — to offset soaring AI infrastructure costs as the company pursued a $135 billion annual AI and data center investment plan through 2028. The cuts concentrated in engineering and product divisions, with Meta simultaneously delaying its flagship Avocado model and discussing licensing competitor models from Google. Meta stock rose nearly 3% on the news as investors interpreted the workforce reduction as a commitment to AI-driven margin expansion rather than a sign of operational distress."
+  layoffs:
+    company: "META"
+    headcount: 15000
+    reason: "AI cost restructuring"
+
+- title: "Mistral Ships Small 4 and Leanstral"
+  date: "2026-03-16T09:00:00+01:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Mistral AI"]
+  models: ["Mistral Small 4", "Leanstral"]
+  impact_areas: ["Language Models", "Open Source", "Enterprise AI"]
+  link: "https://www.marktechpost.com/2026/03/16/mistral-ai-releases-mistral-small-4-a-119b-parameter-moe-model-that-unifies-instruct-reasoning-and-multimodal-workloads/"
+  description: "Mistral released Small 4, a 119-billion-parameter Apache 2.0-licensed mixture-of-experts model that unified the capabilities of its flagship reasoning, multimodal, and coding models into a single system, achieving a 40% reduction in end-to-end completion time and 3x higher request throughput versus Small 3. Alongside it, Mistral released Leanstral, the first open-source code agent specifically designed for Lean 4, a formally verifiable programming language where correctness must be mathematically proven rather than manually reviewed. The dual release continued Mistral's strategy of matching closed-source frontier capabilities at open-source prices."
+
+- title: "Encyclopedia Britannica and Merriam-Webster Sue OpenAI"
+  date: "2026-03-16T09:00:00-05:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Regulation", "Creator Economy", "Ethics"]
+  link: "https://techcrunch.com/2026/03/16/merriam-webster-openai-encyclopedia-brittanica-lawsuit/"
+  description: "Encyclopedia Britannica and Merriam-Webster filed a joint complaint in the Southern District of New York accusing OpenAI of scraping nearly 100,000 copyrighted online articles without permission and generating responses that reproduce their content verbatim — while also bringing Lanham Act trademark claims alleging OpenAI misled users by presenting AI hallucinations alongside their trusted brand names. The lawsuit joined a growing publisher coalition that included the New York Times, Ziff Davis, and over a dozen major newspapers, as the legal theory shifted from pure copyright infringement to deceptive branding. OpenAI disputed the claims as inconsistent with fair use."
+
+- title: "Colorado AI Act Working Group Reaches Consensus"
+  date: "2026-03-17T09:00:00-06:00"
+  tags: ["Policy", "Regulation"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Jared Polis"]
+  link: "https://www.coloradopolitics.com/2026/03/17/artificial-intelligence-working-group-agrees-on-framework-to-replace-colorado-law/"
+  description: "Colorado Governor Jared Polis announced a unanimous consensus from his AI working group — composed of industry, civil rights, and privacy experts — on a replacement framework for the controversial 2024 Colorado AI Act, the first state law designed to regulate 'algorithmic discrimination.' The framework retained advance notice requirements and human review rights for adverse AI-driven decisions in high-stakes areas, but removed private rights of action in favor of AG enforcement only, with liability allocated between developers and deployers based on relative fault. The agreement gave Colorado's legislature a path to pass the revised rules before the original June 30, 2026 implementation deadline."
+
+- title: "IBM Completes $11B Confluent Acquisition"
+  date: "2026-03-17T09:00:00-05:00"
+  tags: ["Corporate", "Economic", "Technical"]
+  organizations: ["IBM", "Confluent"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+  description: "IBM completed its $11 billion all-cash acquisition of Confluent at $31 per share, combining Confluent's Apache Kafka-based real-time data streaming platform — used by 40% of the Fortune 500 — with IBM's watsonx and hybrid cloud offerings to create what the company called a 'smart data fabric' for enterprise AI agents. The deal, first announced in December 2025 and approved by Confluent shareholders in February, was designed to solve a critical bottleneck in enterprise AI deployments: the latency gap between where data lives and where AI agents need to act on it. IBM positioned the acquisition as foundational infrastructure for the agentic AI era."
+
+- title: "149 Former Federal Judges Back Anthropic Against Pentagon"
+  date: "2026-03-17T09:00:00-05:00"
+  tags: ["Policy", "Safety"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  link: "https://www.cnn.com/2026/03/17/tech/former-judges-support-anthropic"
+  description: "A bipartisan coalition of 149 former federal and state judges — appointed by both Republican and Democratic presidents — filed an amicus brief in Anthropic's D.C. Circuit lawsuit against the Pentagon, arguing the Defense Department had misinterpreted the supply-chain risk statute and failed to follow mandatory procedures. The brief contended the 'supply chain risk' designation had never legitimately been applied to a U.S. company and that misuse of the mechanism to punish a domestic firm for its speech posed serious constitutional dangers. The filing was joined separately by Microsoft and retired senior military officials, making it the broadest coalition to ever publicly oppose a Pentagon contractor action."
+
+- title: "Developer's Production Database Destroyed by AI Agent"
+  date: "2026-03-17T09:00:00+01:00"
+  tags: ["Technical", "Social"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Public Perception", "Ethics"]
+  link: "https://fortune.com/2026/03/18/ai-coding-risks-amazon-agents-enterprise/"
+  description: "Engineer Alexey Grigorev went viral after Claude Code — given agentic control to manage his infrastructure — ran a Terraform destroy command that wiped his production database holding 2.5 years of course records, along with all database snapshots he had counted on as backups. The root cause was a missing Terraform state file on a new laptop that confused the agent about what was 'real,' causing it to treat the state file's resources as duplicates and delete them when it was uploaded. The incident ignited a broader industry debate about human-in-the-loop requirements for AI agents with destructive permissions, and became the most cited example in Fortune's major investigation into enterprise AI coding risks published the same day."
+
+- title: "TRUMP AMERICA AI Act Introduced — 291 Pages"
+  date: "2026-03-18T09:00:00-05:00"
+  tags: ["Policy", "Regulation"]
+  impact_areas: ["Regulation", "Market Competition", "Ethics"]
+  link: "https://dataprivacy.foxrothschild.com/2026/03/articles/general-privacy-data-security-news-developments/trump-america-ai-act-bill-sets-direction-for-future-us-ai-regulation/"
+  description: "Senator Marsha Blackburn introduced the TRUMP AMERICA AI Act — formally the 'Republic Unifying Meritocratic Performance Advancing Machine Intelligence by Eliminating Regulatory Interstate Chaos Across American Industry Act' — a 291-page bill establishing the first comprehensive federal AI framework in U.S. history. The bill would repeal Section 230, expand developer and deployer liability through a 'duty of care' standard, and establish centralized federal control over AI systems while preempting all conflicting state laws. Legal analysts noted the bill's ambitions stretched from child safety and content moderation to energy permitting for data centers, making it one of the most sweeping tech regulation proposals since the Communications Decency Act."
+
+- title: "UK Scraps AI Training Copyright Exception"
+  date: "2026-03-18T09:00:00+00:00"
+  tags: ["Policy", "Research"]
+  impact_areas: ["Regulation", "Creator Economy", "Ethics"]
+  link: "https://www.theregister.com/2026/03/19/uk_ai_copyright/"
+  description: "UK Culture Secretary Liz Kendall confirmed the government had abandoned its controversial proposal to allow AI companies to train on copyrighted material by default with an opt-out mechanism, bowing to a sustained campaign by the British creative industry that included public letters from Paul McCartney, Elton John, Coldplay, Ian McKellen, and Richard Curtis. The government said it would instead pursue a cautious, evidence-led approach that allowed a nascent licensing market to develop organically, while adding transparency obligations for AI training datasets. The reversal was a major victory for creators and a significant blow to AI labs that had lobbied intensively for the opt-out framework."
+
+- title: "Microsoft Weighs Suing OpenAI Over Amazon Cloud Deal"
+  date: "2026-03-19T09:00:00-08:00"
+  tags: ["Corporate", "Policy"]
+  organizations: ["Microsoft", "OpenAI", "Amazon"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://winbuzzer.com/2026/03/19/microsoft-weighs-suing-openai-amazon-cloud-deal-xcxwbn/"
+  description: "Microsoft signaled it was considering legal action against OpenAI over the company's $50 billion partnership with Amazon Web Services, which Microsoft believed violated its exclusive Azure hosting agreement with OpenAI. A source familiar with Microsoft's position stated: 'We will sue them if they breach it — if Amazon and OpenAI want to take a bet on the creativity of their contractual lawyers, I would back us, not them.' OpenAI and Amazon argued the deal's 'Stateful Runtime Environment' did not constitute direct API access to core models and therefore remained compliant, as no formal lawsuit had been filed and negotiations between all three parties remained active."
+
+- title: "White House Unveils Six-Pillar AI Legislative Framework"
+  date: "2026-03-20T09:00:00-05:00"
+  tags: ["Policy", "Regulation"]
+  impact_areas: ["Regulation", "Market Competition", "Ethics"]
+  key_figures: ["Donald Trump"]
+  link: "https://www.whitehouse.gov/articles/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/"
+  description: "The White House released its national AI legislative framework — a 'six-pillar' blueprint for Congress combining child safety rules, intellectual property protections, anti-censorship provisions, innovation facilitation, workforce development, and explicit federal preemption of state AI laws. The framework, stemming from Trump's December 2025 executive order, urged Congress to take a 'light touch' approach that prioritized U.S. competitiveness over precautionary regulation, with the preemption pillar drawing immediate legal challenges from state legislators who argued it would nullify dozens of recently passed consumer protection laws."
+
+- title: "Court Filing Reveals Pentagon Was 'Nearly Aligned' With Anthropic"
+  date: "2026-03-20T09:00:00-08:00"
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/"
+  description: "New sworn declarations filed in Anthropic's D.C. Circuit lawsuit revealed that on March 4 — the day after the Pentagon formally finalized its supply-chain risk designation — the Pentagon's Under Secretary had emailed CEO Dario Amodei saying the two sides were 'very close' on autonomous weapons and mass surveillance, the exact issues the government was citing as evidence of national security threat. The revelation undercut the Pentagon's claim that Anthropic's positions were irreconcilable, and Anthropic's legal team argued the timing made clear the designation was retaliatory punishment for Anthropic's public stance rather than a genuine security assessment. The filing set the stage for a hearing before Judge Rita Lin in San Francisco."
