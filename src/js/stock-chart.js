@@ -119,14 +119,14 @@ export function initStockChart(events) {
 
     if (!container || !chipsContainer || !toggleBtn || !panel) return;
 
-    // Collapse / expand
-    let isExpanded = localStorage.getItem('aiTimelineChartOpen') !== 'false';
+    // Collapse / expand — default collapsed
+    let isExpanded = localStorage.getItem('aiTimelineChartOpen') === 'true';
     const toggleIcon = toggleBtn.querySelector('.chart-toggle-icon');
 
     function setExpanded(expanded) {
         isExpanded = expanded;
         panel.style.display = expanded ? 'block' : 'none';
-        toggleIcon.textContent = expanded ? '\u25B2' : '\u25BC';
+        toggleIcon.textContent = expanded ? '\u25BE' : '\u25B8';
         localStorage.setItem('aiTimelineChartOpen', expanded);
         if (expanded && chart) chart.timeScale().fitContent();
     }

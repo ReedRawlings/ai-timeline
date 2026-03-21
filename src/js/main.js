@@ -299,7 +299,7 @@ export function initTimeline() {
             case 'Enter':
             case ' ':
                 event.preventDefault();
-                if (currentIndex >= 0) cards[currentIndex].focus();
+                if (currentIndex >= 0) cards[currentIndex].click();
                 break;
         }
     });
@@ -396,67 +396,6 @@ export function initTimeline() {
         }, { passive: false });
     }
 
-    // Portal overlay for event cards
-    function createEventOverlay(card, eventData) {
-        const existing = document.getElementById('event-card-portal-overlay');
-        if (existing) existing.remove();
-
-        const overlay = document.createElement('div');
-        overlay.id = 'event-card-portal-overlay';
-        overlay.style.position = 'absolute';
-        overlay.style.zIndex = '9999';
-        const overlayWidth = 420;
-        overlay.style.minWidth = overlayWidth + 'px';
-        overlay.style.maxWidth = overlayWidth + 'px';
-        overlay.style.width = overlayWidth + 'px';
-        overlay.style.padding = '20px 22px';
-        overlay.style.borderRadius = '10px';
-        overlay.style.boxShadow = '0 20px 60px rgba(0,0,0,0.15), 0 4px 16px rgba(0,0,0,0.08)';
-        overlay.style.background = '#FFFFFF';
-        overlay.style.pointerEvents = 'auto';
-        overlay.style.transition = 'opacity 0.15s';
-        overlay.style.fontFamily = "'DM Sans', system-ui, sans-serif";
-
-        const primaryTag = card.getAttribute('data-primary-tag');
-        const accentColor = TAG_COLORS[primaryTag] || '#D4D0C8';
-        overlay.style.border = '1px solid #E8E5DE';
-        overlay.style.borderLeft = '4px solid ' + accentColor;
-        overlay.innerHTML = eventData;
-        document.body.appendChild(overlay);
-
-        const rect = card.getBoundingClientRect();
-        let left = rect.left + window.scrollX + rect.width / 2 - overlayWidth / 2;
-        let top = rect.top + window.scrollY - 10;
-        const viewportWidth = window.innerWidth;
-        if (left < 8) left = 8;
-        if (left + overlayWidth > viewportWidth - 8) left = viewportWidth - overlayWidth - 8;
-        overlay.style.left = left + 'px';
-        overlay.style.top = top + 'px';
-
-        function removeOverlay() {
-            overlay.remove();
-            overlay.removeEventListener('mouseleave', removeOverlay);
-            card.removeEventListener('blur', removeOverlay);
-            if (timelineContainer) timelineContainer.removeEventListener('scroll', removeOverlay);
-        }
-        overlay.addEventListener('mouseleave', removeOverlay);
-        card.addEventListener('blur', removeOverlay);
-        if (timelineContainer) timelineContainer.addEventListener('scroll', removeOverlay, { once: true });
-    }
-
-    // Attach overlay events to all event cards
-    function attachEventCardOverlays() {
-        document.querySelectorAll('.event-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                createEventOverlay(card, card.querySelector('.card-detail').innerHTML);
-            });
-            card.addEventListener('focus', function() {
-                createEventOverlay(card, card.querySelector('.card-detail').innerHTML);
-            });
-        });
-    }
-
-    attachEventCardOverlays();
 
     // === Grouping toggle (Month / Week) ===
     function isoWeekStart(d) {
@@ -494,8 +433,6 @@ export function initTimeline() {
             group.append(label, eventsWrap);
             timeline.appendChild(group);
         });
-
-        attachEventCardOverlays();
     }
 
     buildWeeklyGroups();
@@ -522,4 +459,78 @@ export function initTimeline() {
         groupingSelect.addEventListener('change', (e) => applyGrouping(e.target.value));
         applyGrouping(localStorage.getItem('aiTimelineGrouping') || 'month');
     }
+}
+
+/**
+ * Chart tab switching: Stocks ↔ Layoffs
+ * Call after initTimeline() and initStockChart().
+ */
+export function initChartTabs() {
+    const tabs = document.querySelectorAll('.chart-tab');
+    const stocksPanel = document.getElementById('stocks-tab-panel');
+    const layoffsPanel = document.getElementById('layoffs-tab-panel');
+    if (!tabs.length || !stocksPanel || !layoffsPanel) return;
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.dataset.tab;
+            tabs.forEach(t => t.classList.toggle('active', t === tab));
+            stocksPanel.style.display = target === 'stocks' ? '' : 'none';
+            layoffsPanel.style.display = target === 'layoffs' ? '' : 'none';
+        });
+    });
+}
+
+/**
+ * Event drawer: right-side slide-in panel for event card clicks.
+ * Replaces the hover portal overlay. Uses event delegation so it
+ * works for both month-view and cloned week-view cards.
+ */
+export function initEventDrawer() {
+    const TAG_COLORS = {
+        'Model': '#C84B31', 'Policy': '#2B5BA7', 'Social': '#B8860B',
+        'Corporate': '#505050', 'Research': '#2E7D5B', 'Product': '#7B3EA3',
+        'Economic': '#C87B31', 'Safety': '#B7410E', 'Partnership': '#5B7BA7',
+        'Technical': '#6B6B6B', 'Legal': '#6B4F3A'
+    };
+
+    const backdrop = document.getElementById('event-backdrop');
+    const drawer = document.getElementById('event-drawer');
+    const drawerContent = document.getElementById('event-drawer-content');
+    const closeBtn = document.getElementById('event-drawer-close');
+    if (!backdrop || !drawer || !drawerContent || !closeBtn) return;
+
+    function openDrawer(card) {
+        const detail = card.querySelector('.card-detail');
+        if (!detail) return;
+        drawerContent.innerHTML = detail.innerHTML;
+
+        // Apply accent border from primary tag
+        const primaryTag = card.getAttribute('data-primary-tag');
+        const accent = TAG_COLORS[primaryTag] || 'var(--rule)';
+        drawer.style.borderLeft = `4px solid ${accent}`;
+
+        backdrop.classList.add('open');
+        drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+        closeBtn.focus();
+    }
+
+    function closeDrawer() {
+        backdrop.classList.remove('open');
+        drawer.classList.remove('open');
+        drawer.setAttribute('aria-hidden', 'true');
+    }
+
+    // Event delegation handles both original and cloned week-view cards
+    document.addEventListener('click', (e) => {
+        const card = e.target.closest('.event-card');
+        if (card) openDrawer(card);
+    });
+
+    closeBtn.addEventListener('click', closeDrawer);
+    backdrop.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+    });
 }
