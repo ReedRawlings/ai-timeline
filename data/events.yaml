@@ -2508,19 +2508,6 @@
   link: "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
   description: "Isomorphic Labs unveiled its IsoDDE (Isomorphic Drug Design Engine), a unified computational platform that more than doubled AlphaFold 3's accuracy on novel protein-ligand structure prediction and outperformed gold-standard physics-based free energy perturbation methods while running in seconds rather than hours. The engine could identify novel cryptic binding pockets from amino acid sequences alone and demonstrated 2.3x improvement on antibody-antigen interface prediction — capabilities that CEO Demis Hassabis said would allow Isomorphic's first AI-designed drugs to enter clinical trials before end of 2026. The announcement represented the most significant advance in computational drug discovery since AlphaFold 2's landmark 2020 release."
 
-- title: "Meta Lays Off ~15,000 in AI Cost Restructuring"
-  date: "2026-03-16T09:00:00-08:00"
-  tags: ["Economic", "Corporate"]
-  organizations: ["Meta"]
-  impact_areas: ["Enterprise AI", "Market Competition"]
-  key_figures: ["Mark Zuckerberg"]
-  link: "https://www.cnbc.com/2026/03/16/meta-ai-costs-mass-layoffs-20percent-up-premarket.html"
-  description: "Meta announced layoffs affecting approximately 15,000 employees — nearly 20% of its 79,000-person workforce — to offset soaring AI infrastructure costs as the company pursued a $135 billion annual AI and data center investment plan through 2028. The cuts concentrated in engineering and product divisions, with Meta simultaneously delaying its flagship Avocado model and discussing licensing competitor models from Google. Meta stock rose nearly 3% on the news as investors interpreted the workforce reduction as a commitment to AI-driven margin expansion rather than a sign of operational distress."
-  layoffs:
-    company: "META"
-    headcount: 15000
-    reason: "AI cost restructuring"
-
 - title: "Mistral Ships Small 4 and Leanstral"
   date: "2026-03-16T09:00:00+01:00"
   tags: ["Model", "Product", "Technical"]
