@@ -482,11 +482,13 @@ export function initChartTabs() {
 }
 
 /**
- * Event drawer: right-side slide-in panel for event card clicks.
- * Replaces the hover portal overlay. Uses event delegation so it
- * works for both month-view and cloned week-view cards.
+ * Event popover: two-tier hover/click interaction for event cards.
+ * - Hover (200ms delay): small tooltip with title + date + description snippet
+ * - Click: floating ~360px popover with full details, auto-positioned near card
+ * - Dismiss: click outside, Escape, or timeline scroll
+ * Uses event delegation to handle both month-view and cloned week-view cards.
  */
-export function initEventDrawer() {
+export function initEventPopover() {
     const TAG_COLORS = {
         'Model': '#C84B31', 'Policy': '#2B5BA7', 'Social': '#B8860B',
         'Corporate': '#505050', 'Research': '#2E7D5B', 'Product': '#7B3EA3',
@@ -494,43 +496,198 @@ export function initEventDrawer() {
         'Technical': '#6B6B6B', 'Legal': '#6B4F3A'
     };
 
-    const backdrop = document.getElementById('event-backdrop');
-    const drawer = document.getElementById('event-drawer');
-    const drawerContent = document.getElementById('event-drawer-content');
-    const closeBtn = document.getElementById('event-drawer-close');
-    if (!backdrop || !drawer || !drawerContent || !closeBtn) return;
+    // ── Tooltip ────────────────────────────────────────────────────────────
+    const tooltip = document.createElement('div');
+    tooltip.className = 'event-tooltip';
+    tooltip.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(tooltip);
 
-    function openDrawer(card) {
+    let tooltipTimer = null;
+
+    function buildTooltip(card) {
+        const rawDesc = (card.getAttribute('data-description') || '')
+            .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+        const snippet = rawDesc.length > 100 ? rawDesc.slice(0, 100) + '…' : rawDesc;
+
+        tooltip.innerHTML = '';
+
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'event-tooltip-date';
+        dateDiv.textContent = card.querySelector('.event-date')?.textContent || '';
+        tooltip.appendChild(dateDiv);
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'event-tooltip-title';
+        titleDiv.textContent = card.querySelector('.event-title')?.textContent || '';
+        tooltip.appendChild(titleDiv);
+
+        if (snippet) {
+            const snippetDiv = document.createElement('div');
+            snippetDiv.className = 'event-tooltip-snippet';
+            snippetDiv.textContent = snippet;
+            tooltip.appendChild(snippetDiv);
+        }
+    }
+
+    function showTooltip(card) {
+        buildTooltip(card);
+
+        const rect = card.getBoundingClientRect();
+        const TW = 230;
+        const TH = 95; // estimated height
+
+        let top = rect.top - TH - 8;
+        if (top < 8) top = rect.bottom + 8;
+        let left = rect.left + rect.width / 2 - TW / 2;
+        left = Math.max(8, Math.min(left, window.innerWidth - TW - 8));
+
+        tooltip.style.top = top + 'px';
+        tooltip.style.left = left + 'px';
+        tooltip.classList.add('visible');
+    }
+
+    function hideTooltip() {
+        clearTimeout(tooltipTimer);
+        tooltipTimer = null;
+        tooltip.classList.remove('visible');
+    }
+
+    // ── Popover ────────────────────────────────────────────────────────────
+    const popover = document.createElement('div');
+    popover.className = 'event-popover';
+    popover.setAttribute('aria-hidden', 'true');
+    popover.setAttribute('role', 'dialog');
+    popover.setAttribute('aria-label', 'Event details');
+
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'event-popover-close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.innerHTML = '&times;';
+    popover.appendChild(closeBtn);
+
+    const popoverContent = document.createElement('div');
+    popoverContent.className = 'event-popover-content';
+    popover.appendChild(popoverContent);
+
+    document.body.appendChild(popover);
+
+    let activeCard = null;
+    let isOpen = false;
+
+    function openPopover(card) {
         const detail = card.querySelector('.card-detail');
         if (!detail) return;
-        drawerContent.innerHTML = detail.innerHTML;
 
-        // Apply accent border from primary tag
+        popoverContent.innerHTML = detail.innerHTML;
+
         const primaryTag = card.getAttribute('data-primary-tag');
-        const accent = TAG_COLORS[primaryTag] || 'var(--rule)';
-        drawer.style.borderLeft = `4px solid ${accent}`;
+        popover.style.borderTopColor = TAG_COLORS[primaryTag] || 'var(--rule)';
 
-        backdrop.classList.add('open');
-        drawer.classList.add('open');
-        drawer.setAttribute('aria-hidden', 'false');
-        closeBtn.focus();
+        isOpen = true;
+        activeCard = card;
+        popover.classList.add('open');
+        popover.setAttribute('aria-hidden', 'false');
+
+        // On mobile let CSS handle position (bottom sheet)
+        if (window.innerWidth <= 768) {
+            popover.style.top = '';
+            popover.style.left = '';
+            closeBtn.focus();
+            return;
+        }
+
+        // Desktop: position near card after layout
+        requestAnimationFrame(() => {
+            const rect = card.getBoundingClientRect();
+            const pw = popover.offsetWidth || 360;
+            const ph = Math.min(popover.scrollHeight, window.innerHeight * 0.8);
+            const margin = 10;
+            let top, left;
+
+            if (rect.right + margin + pw <= window.innerWidth - 8) {
+                left = rect.right + margin;
+                top = rect.top;
+            } else if (rect.left - margin - pw >= 8) {
+                left = rect.left - margin - pw;
+                top = rect.top;
+            } else {
+                left = Math.max(8, rect.left + rect.width / 2 - pw / 2);
+                top = rect.bottom + margin;
+            }
+
+            top = Math.max(8, Math.min(top, window.innerHeight - ph - 8));
+            left = Math.max(8, Math.min(left, window.innerWidth - pw - 8));
+
+            popover.style.top = top + 'px';
+            popover.style.left = left + 'px';
+            closeBtn.focus();
+        });
     }
 
-    function closeDrawer() {
-        backdrop.classList.remove('open');
-        drawer.classList.remove('open');
-        drawer.setAttribute('aria-hidden', 'true');
+    function closePopover() {
+        popover.classList.remove('open');
+        popover.setAttribute('aria-hidden', 'true');
+        isOpen = false;
+        if (activeCard) {
+            activeCard.focus();
+            activeCard = null;
+        }
     }
 
-    // Event delegation handles both original and cloned week-view cards
-    document.addEventListener('click', (e) => {
+    // ── Event listeners ────────────────────────────────────────────────────
+
+    // Hover with 200ms delay (skip when popover is open)
+    document.addEventListener('mouseover', (e) => {
+        if (isOpen) return;
         const card = e.target.closest('.event-card');
-        if (card) openDrawer(card);
+        if (card && !card.contains(e.relatedTarget)) {
+            clearTimeout(tooltipTimer);
+            tooltipTimer = setTimeout(() => showTooltip(card), 200);
+        }
     });
 
-    closeBtn.addEventListener('click', closeDrawer);
-    backdrop.addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+    document.addEventListener('mouseout', (e) => {
+        const card = e.target.closest('.event-card');
+        if (card && !card.contains(e.relatedTarget)) {
+            hideTooltip();
+        }
     });
+
+    // Click: open/toggle popover
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.event-popover')) return; // click inside popover
+        const card = e.target.closest('.event-card');
+        if (card) {
+            hideTooltip();
+            if (isOpen && activeCard === card) {
+                closePopover();
+            } else {
+                openPopover(card);
+            }
+            return;
+        }
+        if (isOpen) closePopover();
+    });
+
+    closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closePopover();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (isOpen) closePopover();
+            hideTooltip();
+        }
+    });
+
+    // Dismiss on timeline scroll
+    const timelineContainer = document.querySelector('.timeline-container');
+    if (timelineContainer) {
+        timelineContainer.addEventListener('scroll', () => {
+            if (isOpen) closePopover();
+            hideTooltip();
+        }, { passive: true });
+    }
 }

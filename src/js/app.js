@@ -4,7 +4,7 @@
  */
 import '../css/main.css';
 import { renderTimeline } from './render-timeline.js';
-import { initTimeline, initChartTabs, initEventDrawer } from './main.js';
+import { initTimeline, initChartTabs, initEventPopover } from './main.js';
 import { initStockChart } from './stock-chart.js';
 import { initLayoffChart } from './layoff-chart.js';
 import events from '../data/events.json';
@@ -18,8 +18,8 @@ initTimeline();
 // Initialize chart tab switching (Stocks / Layoffs)
 initChartTabs();
 
-// Initialize event drawer (replaces hover portal overlay)
-initEventDrawer();
+// Initialize hover tooltip + click popover
+initEventPopover();
 
 // Initialize stock chart with event markers
 initStockChart(events);
