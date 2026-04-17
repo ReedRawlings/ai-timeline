@@ -307,10 +307,17 @@ export function initStockChart(events) {
     }
 
     // ── Event markers ──────────────────────────────────────────
-    const markerDateToEvents = new Map(); // date string → [event titles]
+    const markerDateToEvents = new Map(); // date string → [event object]
 
     function toDateStr(d) {
         return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    }
+
+    function formatMarkerDate(dateStr) {
+        const [y, m, d] = dateStr.split('-').map(Number);
+        return new Date(y, m - 1, d).toLocaleDateString('en-US', {
+            month: 'short', day: 'numeric', year: 'numeric',
+        });
     }
 
     function updateMarkers() {
@@ -339,7 +346,7 @@ export function initStockChart(events) {
             .forEach(event => {
                 const dateStr = toDateStr(new Date(event.date));
                 if (!markerDateToEvents.has(dateStr)) markerDateToEvents.set(dateStr, []);
-                markerDateToEvents.get(dateStr).push(event.title);
+                markerDateToEvents.get(dateStr).push(event);
 
                 // Layoff marker → goes on the specific company's series
                 if (event.layoffs && event.layoffs.company && seriesMarkers[event.layoffs.company]) {
@@ -380,13 +387,20 @@ export function initStockChart(events) {
     // Listen for filter changes from the timeline
     document.addEventListener('timeline-filters-changed', () => updateMarkers());
 
-    // ── Tooltip + timeline highlight on marker hover ─────────
+    // ── Hover preview + click popover ─────────────────────────
+    container.style.position = 'relative';
+
     const tooltip = document.createElement('div');
     tooltip.className = 'chart-marker-tooltip';
-    container.style.position = 'relative';
     container.appendChild(tooltip);
 
+    const popover = document.createElement('div');
+    popover.className = 'chart-marker-popover';
+    popover.setAttribute('role', 'dialog');
+    container.appendChild(popover);
+
     let highlightedCard = null;
+    let pinnedDate = null;
 
     function clearHighlight() {
         if (highlightedCard) {
@@ -395,7 +409,94 @@ export function initStockChart(events) {
         }
     }
 
+    function highlightCardForDate(dateStr) {
+        clearHighlight();
+        const card = document.querySelector(`.event-card:not(.filtered-out)[data-event-date="${dateStr}"]`);
+        if (card) {
+            card.classList.add('chart-highlight');
+            highlightedCard = card;
+        }
+    }
+
+    function positionFloat(el, x) {
+        const w = el.offsetWidth;
+        const containerWidth = container.clientWidth;
+        let left = x - w / 2;
+        if (left < 4) left = 4;
+        if (left + w > containerWidth - 4) left = containerWidth - w - 4;
+        el.style.left = left + 'px';
+        el.style.top = '4px';
+    }
+
+    function hidePopover() {
+        popover.style.display = 'none';
+        pinnedDate = null;
+        clearHighlight();
+    }
+
+    function scrollTimelineToDate(dateStr) {
+        const card = document.querySelector(`.event-card:not(.filtered-out)[data-event-date="${dateStr}"]`);
+        if (!card) return;
+        card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+        // Small flash to confirm arrival
+        card.classList.add('chart-highlight');
+        setTimeout(() => card.classList.remove('chart-highlight'), 1400);
+        card.focus?.();
+    }
+
+    function showPopover(dateStr, x) {
+        const evs = markerDateToEvents.get(dateStr);
+        if (!evs || evs.length === 0) return;
+
+        pinnedDate = dateStr;
+        const dateLabel = formatMarkerDate(dateStr);
+        const body = evs.map(ev => {
+            const title = escapeHtml(ev.title || '');
+            const desc = ev.description ? escapeHtml(ev.description) : '';
+            return `
+                <article class="chart-marker-popover-item">
+                    <h4>${title}</h4>
+                    ${desc ? `<p>${desc}</p>` : ''}
+                </article>
+            `;
+        }).join('');
+
+        popover.innerHTML = `
+            <header class="chart-marker-popover-header">
+                <span class="chart-marker-popover-date">${dateLabel}</span>
+                <button type="button" class="chart-marker-popover-close" aria-label="Close">&times;</button>
+            </header>
+            <div class="chart-marker-popover-body">${body}</div>
+            <footer class="chart-marker-popover-footer">
+                <button type="button" class="chart-marker-popover-jump">
+                    Jump to event <span aria-hidden="true">&rarr;</span>
+                </button>
+            </footer>
+        `;
+
+        popover.style.display = 'block';
+        positionFloat(popover, x);
+        tooltip.style.display = 'none';
+        highlightCardForDate(dateStr);
+
+        popover.querySelector('.chart-marker-popover-close').addEventListener('click', hidePopover);
+        popover.querySelector('.chart-marker-popover-jump').addEventListener('click', () => {
+            // Hide first so clearHighlight doesn't wipe the arrival flash.
+            hidePopover();
+            scrollTimelineToDate(dateStr);
+        });
+    }
+
+    function escapeHtml(s) {
+        const d = document.createElement('div');
+        d.textContent = s;
+        return d.innerHTML;
+    }
+
     chart.subscribeCrosshairMove(param => {
+        // If a popover is pinned, don't let hover interfere with it
+        if (pinnedDate) return;
+
         if (!param.time || !param.point) {
             tooltip.style.display = 'none';
             clearHighlight();
@@ -406,44 +507,44 @@ export function initStockChart(events) {
             ? param.time
             : `${param.time.year}-${String(param.time.month).padStart(2, '0')}-${String(param.time.day).padStart(2, '0')}`;
 
-        const titles = markerDateToEvents.get(timeStr);
-        if (!titles) {
+        const evs = markerDateToEvents.get(timeStr);
+        if (!evs) {
             tooltip.style.display = 'none';
             clearHighlight();
             return;
         }
 
-        // Show tooltip
-        tooltip.innerHTML = titles.map(t => `<div>${t}</div>`).join('');
+        const dateLabel = formatMarkerDate(timeStr);
+        tooltip.innerHTML = `
+            <div class="chart-marker-tooltip-date">${dateLabel}</div>
+            ${evs.map(ev => `<div class="chart-marker-tooltip-title">${escapeHtml(ev.title)}</div>`).join('')}
+            <div class="chart-marker-tooltip-hint">Click marker for details</div>
+        `;
         tooltip.style.display = 'block';
+        positionFloat(tooltip, param.point.x);
 
-        // Position tooltip near the crosshair
-        const x = param.point.x;
-        const tooltipWidth = tooltip.offsetWidth;
-        const containerWidth = container.clientWidth;
-        let left = x - tooltipWidth / 2;
-        if (left < 4) left = 4;
-        if (left + tooltipWidth > containerWidth - 4) left = containerWidth - tooltipWidth - 4;
-        tooltip.style.left = left + 'px';
-        tooltip.style.top = '4px';
-
-        // Highlight matching card in the timeline
-        clearHighlight();
-        const card = document.querySelector(`.event-card:not(.filtered-out)[data-event-date="${timeStr}"]`);
-        if (card) {
-            card.classList.add('chart-highlight');
-            highlightedCard = card;
-            const timelineContainer = document.querySelector('.timeline-container');
-            if (timelineContainer) {
-                const containerRect = timelineContainer.getBoundingClientRect();
-                const cardRect = card.getBoundingClientRect();
-                // Only scroll if card is not already visible
-                if (cardRect.left < containerRect.left || cardRect.right > containerRect.right) {
-                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-                }
-            }
-        }
+        // Subtle in-place highlight on the timeline card (no scrolling)
+        highlightCardForDate(timeStr);
     });
+
+    // Dismiss popover on outside click / escape / timeline scroll
+    document.addEventListener('click', (e) => {
+        if (!pinnedDate) return;
+        if (popover.contains(e.target)) return;
+        if (container.contains(e.target)) return; // chart click handled separately
+        hidePopover();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && pinnedDate) hidePopover();
+    });
+
+    const timelineContainerEl = document.querySelector('.timeline-container');
+    if (timelineContainerEl) {
+        timelineContainerEl.addEventListener('scroll', () => {
+            if (pinnedDate) hidePopover();
+        }, { passive: true });
+    }
 
     // ── Data helpers ───────────────────────────────────────────
     function mergeStockData(historical, recent) {
@@ -536,20 +637,27 @@ export function initStockChart(events) {
         });
     }
 
-    // ── Chart click → scroll timeline ──────────────────────────
+    // ── Chart click → open popover with details + explicit jump ──
     chart.subscribeClick(param => {
-        if (!param.time) return;
+        if (!param.time || !param.point) return;
+
+        // Snap to nearest marker date within ~4 days
+        const clickTime = typeof param.time === 'string'
+            ? param.time
+            : `${param.time.year}-${String(param.time.month).padStart(2, '0')}-${String(param.time.day).padStart(2, '0')}`;
+        const clickMs = new Date(clickTime).getTime();
+
         let nearest = null;
         let minDiff = Infinity;
-        events.forEach(event => {
-            const d = new Date(event.date);
-            const t = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-            const diff = Math.abs(new Date(t) - new Date(param.time));
-            if (diff < minDiff) { minDiff = diff; nearest = t; }
-        });
-        if (nearest && minDiff < 7 * 86400000) {
-            const card = document.querySelector(`.event-card[data-event-date="${nearest}"]`);
-            if (card) { card.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' }); card.focus(); }
+        for (const dateStr of markerDateToEvents.keys()) {
+            const diff = Math.abs(new Date(dateStr).getTime() - clickMs);
+            if (diff < minDiff) { minDiff = diff; nearest = dateStr; }
+        }
+
+        if (nearest && minDiff <= 4 * 86400000) {
+            showPopover(nearest, param.point.x);
+        } else {
+            hidePopover();
         }
     });
 
