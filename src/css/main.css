@@ -241,6 +241,86 @@ body {
     }
 }
 
+/* ===== Timeline scroll wrapper (arrows + edge fades) ===== */
+.timeline-scroll-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.timeline-scroll-wrapper::before,
+.timeline-scroll-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 56px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 2;
+}
+
+.timeline-scroll-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg), rgba(245, 243, 237, 0));
+}
+
+.timeline-scroll-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg), rgba(245, 243, 237, 0));
+}
+
+.timeline-scroll-wrapper.can-scroll-left::before { opacity: 1; }
+.timeline-scroll-wrapper.can-scroll-right::after { opacity: 1; }
+
+.timeline-scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, background 0.15s, transform 0.1s, border-color 0.15s;
+    z-index: 3;
+}
+
+.timeline-scroll-arrow:hover {
+    background: var(--accent-subtle);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.timeline-scroll-arrow:active {
+    transform: translateY(-50%) scale(0.94);
+}
+
+.timeline-scroll-arrow-left  { left: 12px; }
+.timeline-scroll-arrow-right { right: 12px; }
+
+.timeline-scroll-wrapper.can-scroll-left  .timeline-scroll-arrow-left,
+.timeline-scroll-wrapper.can-scroll-right .timeline-scroll-arrow-right {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .timeline-scroll-arrow { display: none; }
+    .timeline-scroll-wrapper::before,
+    .timeline-scroll-wrapper::after { width: 32px; }
+}
+
 /* ===== Timeline Container ===== */
 .timeline-container {
     margin: 0;
@@ -786,22 +866,164 @@ body {
     padding: 6px 10px;
     font-family: var(--font-body);
     font-size: 0.72rem;
-    font-weight: 600;
     color: var(--ink);
     line-height: 1.4;
     box-shadow: var(--shadow-md);
     pointer-events: none;
-    max-width: 280px;
-    white-space: nowrap;
+    max-width: 300px;
 }
 
-.chart-marker-tooltip div + div {
-    margin-top: 3px;
-    padding-top: 3px;
+.chart-marker-tooltip-date {
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--ink-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+}
+
+.chart-marker-tooltip-title {
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+}
+
+.chart-marker-tooltip-title + .chart-marker-tooltip-title {
+    margin-top: 2px;
+    padding-top: 2px;
     border-top: 1px solid var(--rule-light);
 }
 
-/* Timeline card highlight when hovering a chart marker */
+.chart-marker-tooltip-hint {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px dashed var(--rule-light);
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--ink-tertiary);
+    font-style: italic;
+}
+
+/* ===== Chart marker popover (click to pin) ===== */
+.chart-marker-popover {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    width: min(340px, calc(100% - 16px));
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    font-family: var(--font-body);
+    color: var(--ink);
+    overflow: hidden;
+    animation: chart-popover-in 0.18s ease-out;
+}
+
+@keyframes chart-popover-in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.chart-marker-popover-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 6px;
+    border-bottom: 1px solid var(--rule-light);
+    background: var(--bg);
+}
+
+.chart-marker-popover-date {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+}
+
+.chart-marker-popover-close {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: var(--ink-tertiary);
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s, color 0.15s;
+}
+
+.chart-marker-popover-close:hover {
+    background: var(--rule-light);
+    color: var(--ink);
+}
+
+.chart-marker-popover-body {
+    padding: 8px 12px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.chart-marker-popover-item + .chart-marker-popover-item {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule-light);
+}
+
+.chart-marker-popover-item h4 {
+    margin: 0 0 4px;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.25;
+}
+
+.chart-marker-popover-item p {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--ink-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.chart-marker-popover-footer {
+    padding: 8px 10px;
+    border-top: 1px solid var(--rule-light);
+    display: flex;
+    justify-content: flex-end;
+    background: var(--bg);
+}
+
+.chart-marker-popover-jump {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--surface);
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.chart-marker-popover-jump:hover {
+    background: var(--accent-hover);
+}
+
+.chart-marker-popover-jump:active {
+    transform: translateY(1px);
+}
+
+/* Timeline card highlight when hovering/pinning a chart marker */
 .event-card.chart-highlight {
     transform: scale(1.08);
     box-shadow: 0 4px 20px rgba(200, 75, 49, 0.25), 0 0 0 2px var(--accent);

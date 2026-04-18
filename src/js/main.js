@@ -386,14 +386,28 @@ export function initTimeline() {
             timelineContainer.scrollLeft = touchScrollLeft - walk;
         });
 
-        // Mouse wheel horizontal scroll
+        // Mouse wheel horizontal scroll — only hijack when the user
+        // clearly intends horizontal movement (shift held, or deltaX
+        // dominates). Otherwise let the page scroll vertically normally.
         timelineContainer.addEventListener('wheel', function(e) {
-            if (e.deltaY === 0) return;
-            if (this.scrollWidth > this.clientWidth) {
+            if (this.scrollWidth <= this.clientWidth) return;
+
+            const absX = Math.abs(e.deltaX);
+            const absY = Math.abs(e.deltaY);
+
+            if (absX > absY) {
+                // Trackpad horizontal gesture — browser already scrolls; no-op.
+                return;
+            }
+            if (e.shiftKey && absY > 0) {
                 e.preventDefault();
                 this.scrollLeft += e.deltaY;
             }
+            // Plain vertical wheel: let the page scroll naturally.
         }, { passive: false });
+
+        // === Scroll affordances (edge arrows + fades) ===
+        setupScrollAffordances(timelineContainer);
     }
 
 
@@ -690,4 +704,60 @@ export function initEventPopover() {
             hideTooltip();
         }, { passive: true });
     }
+}
+
+/**
+ * Adds edge gradient fades and left/right arrow buttons to the timeline
+ * scroll container. Arrows scroll by ~80% of the visible width and are
+ * hidden when the user has reached that edge.
+ */
+function setupScrollAffordances(container) {
+    // Wrap the container so arrows + fade edges can sit above it without
+    // scrolling with the content.
+    const wrapper = document.createElement('div');
+    wrapper.className = 'timeline-scroll-wrapper';
+    container.parentNode.insertBefore(wrapper, container);
+    wrapper.appendChild(container);
+
+    const leftBtn = document.createElement('button');
+    leftBtn.type = 'button';
+    leftBtn.className = 'timeline-scroll-arrow timeline-scroll-arrow-left';
+    leftBtn.setAttribute('aria-label', 'Scroll timeline left');
+    leftBtn.innerHTML = '<span aria-hidden="true">&#8249;</span>';
+
+    const rightBtn = document.createElement('button');
+    rightBtn.type = 'button';
+    rightBtn.className = 'timeline-scroll-arrow timeline-scroll-arrow-right';
+    rightBtn.setAttribute('aria-label', 'Scroll timeline right');
+    rightBtn.innerHTML = '<span aria-hidden="true">&#8250;</span>';
+
+    wrapper.appendChild(leftBtn);
+    wrapper.appendChild(rightBtn);
+
+    function pageSize() {
+        return Math.max(240, Math.round(container.clientWidth * 0.8));
+    }
+
+    leftBtn.addEventListener('click', () => {
+        container.scrollBy({ left: -pageSize(), behavior: 'smooth' });
+    });
+    rightBtn.addEventListener('click', () => {
+        container.scrollBy({ left: pageSize(), behavior: 'smooth' });
+    });
+
+    function updateAffordances() {
+        const max = container.scrollWidth - container.clientWidth;
+        const atStart = container.scrollLeft <= 2;
+        const atEnd = container.scrollLeft >= max - 2;
+        const scrollable = max > 2;
+
+        wrapper.classList.toggle('can-scroll-left', scrollable && !atStart);
+        wrapper.classList.toggle('can-scroll-right', scrollable && !atEnd);
+    }
+
+    container.addEventListener('scroll', updateAffordances, { passive: true });
+    new ResizeObserver(updateAffordances).observe(container);
+    // Run once after a tick to account for initial auto-scroll-to-newest
+    setTimeout(updateAffordances, 600);
+    updateAffordances();
 }
