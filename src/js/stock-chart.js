@@ -499,7 +499,6 @@ export function initStockChart(events) {
 
         if (!param.time || !param.point) {
             tooltip.style.display = 'none';
-            clearHighlight();
             return;
         }
 
@@ -510,7 +509,6 @@ export function initStockChart(events) {
         const evs = markerDateToEvents.get(timeStr);
         if (!evs) {
             tooltip.style.display = 'none';
-            clearHighlight();
             return;
         }
 
@@ -522,9 +520,6 @@ export function initStockChart(events) {
         `;
         tooltip.style.display = 'block';
         positionFloat(tooltip, param.point.x);
-
-        // Subtle in-place highlight on the timeline card (no scrolling)
-        highlightCardForDate(timeStr);
     });
 
     // Dismiss popover on outside click / escape / timeline scroll
