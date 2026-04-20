@@ -1,0 +1,70 @@
+- title: "Sakana AI Scientist Paper Published in Nature"
+  date: "2026-03-26T09:00:00+00:00"
+  tags: ["Research", "Technical"]
+  organizations: ["Sakana AI"]
+  impact_areas: ["Research", "Language Models"]
+  key_figures: ["Jeff Clune", "Jakob Foerster"]
+  link: "https://sakana.ai/ai-scientist-nature/"
+  description: "Sakana AI's 'The AI Scientist' became the first fully autonomous AI research system to have a paper accepted by a peer-reviewed journal when Nature published its work on automated scientific discovery. The system autonomously generates novel research ideas, searches relevant literature, designs and runs experiments via parallelized agentic tree search, and writes the full paper in LaTeX — with no human input after the initial prompt. One of its three generated papers previously reached the acceptance bar at an ICLR workshop track; the Nature publication marked AI's first full crossing of the peer-review threshold at a top-tier scientific journal."
+
+- title: "New York Governor Signs Final RAISE Act for Frontier AI Models"
+  date: "2026-03-27T09:00:00-04:00"
+  tags: ["Policy", "Safety"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  key_figures: ["Kathy Hochul"]
+  link: "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models"
+  description: "New York Governor Kathy Hochul signed chapter amendments finalizing the Responsible AI Safety and Education (RAISE) Act — the first U.S. state law requiring frontier AI developers to create and publicly disclose safety protocols, report incidents to regulators within 72 hours, and submit to oversight by a new office within the Department of Financial Services. The law applies to developers with $500M+ in revenue operating models trained on more than 10²⁶ FLOPs at compute costs exceeding $100M, and carries civil penalties starting at $1M per violation, rising to $3M for repeat offenses. It takes effect January 1, 2027, joining California's SB 53 as the only state-level frontier AI regulations with genuine enforcement teeth."
+
+- title: "OpenAI Closes $122B Round at $852B Valuation, Opens to Retail Investors"
+  date: "2026-03-31T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/accelerating-the-next-phase-ai/"
+  description: "OpenAI officially closed its $122 billion funding round at an $852 billion valuation — up from the $110 billion and $730 billion pre-money figures announced in February — after adding $3 billion from individual retail investors through private placements arranged by three banks, marking the first time a pre-IPO AI company of this scale opened equity access to individuals. The round, backed by more than 25 institutional investors including SoftBank, Amazon, Nvidia, Andreessen Horowitz, Sequoia, and Thrive Capital, set an all-time record for a private technology fundraise. OpenAI said business revenue now makes up 40% of total revenue and is on track to reach parity with consumer by year-end, positioning the company for a projected $1 trillion IPO valuation."
+
+- title: "Oracle Lays Off 30,000 to Fund AI Data Center Buildout"
+  date: "2026-03-31T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Oracle"]
+  impact_areas: ["Enterprise AI", "Hardware", "Market Competition"]
+  key_figures: ["Larry Ellison"]
+  link: "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html"
+  description: "Oracle confirmed it was cutting approximately 30,000 employees — roughly 18% of its global workforce — to free up $8–10 billion in annual cash flow to fund a $50 billion AI data center capex program, $15 billion more than the company had guided Wall Street just months earlier. Workers in the US, India, Canada, and Mexico received termination emails with no advance notice from HR or managers, and the company immediately redirected savings into fulfilling $553 billion in remaining performance obligations — up 325% year-over-year — driven almost entirely by large AI infrastructure contracts. The single-company headcount reduction, executed simultaneously with a bond-financed debt load of $58 billion taken on in two months, became the starkest example yet of the infrastructure arms race trading white-collar jobs for data center steel."
+  layoffs:
+    company: "ORCL"
+    headcount: 30000
+    reason: "AI data center funding"
+
+- title: "OpenAI Acquires Tech Talk Show TBPN"
+  date: "2026-04-02T09:00:00-07:00"
+  tags: ["Corporate", "Social"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Public Perception", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/openai-acquires-tbpn/"
+  description: "OpenAI acquired TBPN — Technology Business Programming Network — a live weekday founder-led tech talk show on track for $30M in annual revenue, in the company's first acquisition of a media property. TBPN, hosted by Jordi Hays and John Coogan, had become the central daily venue where AI builders and investors discuss the industry; OpenAI said the deal was about shaping the conversation 'where it's actually happening' rather than creating a competing vehicle. TBPN will operate with full editorial independence and be housed within OpenAI's strategy organization. Critics noted the acquisition raised questions about the boundary between media and the companies media covers, as an AI lab became the owner of the forum where AI labs are discussed."
+
+- title: "Anthropic Reveals Claude Mythos Preview, Withholds from Public Over Cybersecurity Risk"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Model", "Safety", "Technical"]
+  organizations: ["Anthropic", "Amazon", "Microsoft", "Google", "Apple", "Nvidia", "Cisco", "CrowdStrike", "JPMorganChase", "Broadcom"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Language Models", "Ethics", "Enterprise AI", "Research"]
+  key_figures: ["Dario Amodei"]
+  link: "https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/"
+  description: "Anthropic unveiled Claude Mythos Preview — its most powerful model ever, described as 'strikingly capable at computer security tasks' — and simultaneously announced it would not release it publicly, citing the risk that its autonomous offensive cyber capabilities would give attackers unprecedented leverage before defenses could be built. Instead, under Project Glasswing, Anthropic gave preview access exclusively to a coalition of AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, Microsoft, and Nvidia for defensive security work. In the weeks before the announcement, Mythos Preview had autonomously identified and fully exploited thousands of zero-day vulnerabilities across every major operating system and browser — including a 17-year-old remote code execution flaw in FreeBSD (CVE-2026-4747) that allowed unauthenticated root access over NFS, a bug that had survived nearly two decades of human security review. The announcement marked the first time a major AI lab publicly held back a frontier model on the grounds that deploying it would cause net harm."
+
+- title: "Snap Lays Off 1,000 (16%) Citing AI-Generated Code"
+  date: "2026-04-15T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Snap"]
+  impact_areas: ["Market Competition", "Creator Economy", "Enterprise AI"]
+  key_figures: ["Evan Spiegel"]
+  link: "https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/"
+  description: "Snap cut 1,000 employees — 16% of its global workforce — in a restructuring CEO Evan Spiegel linked directly to AI, disclosing that AI now generates more than 65% of new code at the company and that rapid advances in AI let smaller teams do more. The cuts are expected to reduce Snap's annualized cost base by more than $500 million by the second half of 2026 and establish a clearer path to net-income profitability; Snap also closed 300+ open roles that will not be filled. Snap's stock jumped more than 11% in pre-market trading on the news, reflecting investor preference for AI-driven efficiency over headcount, in a pattern already seen at Atlassian, Block, and Oracle."
+  layoffs:
+    company: "SNAP"
+    headcount: 1000
+    reason: "AI efficiency"
