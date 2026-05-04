@@ -1,0 +1,79 @@
+# AI Timeline Event Proposals — 2026-03-21 through 2026-05-04
+# Generated: 2026-05-04 using find-ai-events-criteria skill
+
+- title: "Oracle Cuts 30,000 Jobs to Fund AI Data Centers"
+  date: "2026-03-31T09:00:00-07:00"
+  description: "Oracle eliminated approximately 30,000 employees—roughly 18% of its global workforce—in a sudden restructuring explicitly designed to free up $8–10 billion in annual cash flow for AI data center investment. Thousands of workers opened termination emails at 6 a.m. on March 31, effective immediately, losing unvested RSUs. The cuts cleared the runway for a $156 billion AI infrastructure buildout, marking the largest single AI-motivated workforce reduction in corporate history to that point."
+  tags: ["Corporate", "Economic"]
+  organizations: ["Oracle"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Hardware"]
+  link: "https://thenextweb.com/news/oracle-layoffs-march-2026"
+
+- title: "OpenAI Closes $122B Round at $852B Valuation"
+  date: "2026-03-31T12:00:00-07:00"
+  description: "OpenAI officially closed its landmark funding round at $122 billion in committed capital—up from $110 billion announced in February—at an $852 billion post-money valuation, cementing it as the largest private financing deal in Silicon Valley history. SoftBank, Amazon ($50B), and Nvidia ($30B) were among the largest investors. For the first time, OpenAI extended participation to retail investors through bank channels, raising $3 billion from individuals. The company disclosed $2 billion in monthly revenue and $13.1 billion in annual revenue."
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+
+- title: "Anthropic Withholds Claude Mythos — Too Dangerous to Release"
+  date: "2026-04-07T09:00:00-07:00"
+  description: "Anthropic announced Claude Mythos Preview, a frontier cybersecurity model capable of autonomously finding tens of thousands of high-severity vulnerabilities in major operating systems and web browsers, then declined to release it publicly—the first time a major AI lab withheld a completed frontier model since OpenAI's staged GPT-2 release in 2019. Instead, Anthropic launched Project Glasswing, granting access only to a vetted list of enterprise security partners including AWS, Apple, Cisco, CrowdStrike, Google, Microsoft, and Nvidia."
+  tags: ["Safety", "Product", "Model"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos Preview"]
+  impact_areas: ["Ethics", "Enterprise AI", "Regulation"]
+  link: "https://www.axios.com/2026/04/07/anthropic-mythos-preview-cybersecurity-risks"
+
+- title: "Man Throws Molotov Cocktail at Sam Altman's Home"
+  date: "2026-04-10T04:00:00-07:00"
+  description: "A 20-year-old Texas man, Daniel Moreno-Gama, threw an incendiary device at OpenAI CEO Sam Altman's San Francisco home at 4 a.m., setting the exterior gate on fire before fleeing. He was found carrying a written plan to kill Altman and a list of AI executives' names and addresses. Two days later a second suspect fired a gun outside the same residence. Moreno-Gama was charged with two counts of attempted murder and attempted arson in California state court and federal charges carrying up to 30 years. Altman called for de-escalation of AI rhetoric. Analysts drew parallels to anti-industrial violence in the 19th century."
+  tags: ["Social"]
+  organizations: ["OpenAI"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Public Perception"]
+  link: "https://www.cnbc.com/2026/04/10/sam-altman-house-hit-with-molotov-cocktail-openai-office-threatened.html"
+
+- title: "Maine Legislature Passes First US Statewide Data Center Ban"
+  date: "2026-04-14T00:00:00-04:00"
+  description: "The Maine Legislature passed LD 307, a moratorium on new large data centers (20 MW or more) through November 2027, making Maine the first US state to enact a statewide ban on data center construction. The bill was driven by constituents facing surging electricity bills tied to AI infrastructure expansion and establishes a council to assess the load impact on New England's power grid. It headed to Governor Janet Mills' desk with a 10-day decision window, arriving amid a national wave of local resistance to AI data center development."
+  tags: ["Policy", "Social"]
+  impact_areas: ["Regulation", "Public Perception", "Hardware"]
+  link: "https://www.washingtonpost.com/nation/2026/04/14/maine-bans-data-centers/"
+
+- title: "Sony AI's 'Ace' Robot Defeats Professional Table Tennis Players"
+  date: "2026-04-23T00:00:00+09:00"
+  description: "Sony AI published research in Nature showing its autonomous robot system 'Ace' defeated elite and professional-level human table tennis players under official competition rules—the first time a robot achieved expert-level performance in a widely played competitive sport under real-world conditions. Ace uses event-based vision sensors running at 200 Hz with 3 mm ball-tracking accuracy and achieves an end-to-end latency of 20 milliseconds, versus roughly 230 ms for elite human players. The result was published on the cover of Nature."
+  tags: ["Research", "Technical"]
+  organizations: ["Sony"]
+  impact_areas: ["Robotics", "Research"]
+  link: "https://www.nature.com/articles/s41586-026-10338-5"
+
+- title: "OpenAI Releases GPT-5.5"
+  date: "2026-04-23T10:00:00-07:00"
+  description: "OpenAI released GPT-5.5, a model designed for sustained agentic work: writing and debugging code, researching online, operating software, creating documents, and moving autonomously across tools until a task is complete. It matches GPT-5.4 per-token latency at a meaningfully higher intelligence level. Released with OpenAI's most comprehensive safety evaluation to date—across its full safety and preparedness framework with input from nearly 200 early-access partners—GPT-5.5 rolled out to Plus, Pro, Business, and Enterprise ChatGPT users and the API."
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+
+- title: "Meta Announces 8,000 Layoffs — 10% of Workforce — to Fund AI Buildout"
+  date: "2026-04-23T09:00:00-07:00"
+  description: "Meta announced cuts of approximately 8,000 employees—10% of its global workforce—effective May 20, alongside raising its 2026 capex forecast to as high as $145 billion, nearly double 2025's $72.2 billion AI infrastructure spend. Combined with Microsoft's simultaneous voluntary retirement offer to 8,750 US employees (~7% of domestic workforce), the two companies' combined 20,000-person reduction prompted analysts and media to frame April 2026 as a potential inflection point for AI-driven labor displacement in tech."
+  tags: ["Corporate", "Economic"]
+  organizations: ["Meta", "Microsoft"]
+  key_figures: ["Mark Zuckerberg"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Public Perception"]
+  link: "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+
+- title: "Anthropic's 'Too Dangerous' Mythos Model Accessed by Unauthorized Users"
+  date: "2026-04-25T00:00:00-07:00"
+  description: "Weeks after Anthropic withheld Claude Mythos Preview from public release due to its advanced hacking capabilities, unauthorized users accessed the model by combining insider knowledge from a contract worker with data from a separate Mercor data breach to guess its online endpoint. The breach generated intense scrutiny of Anthropic's safety strategy, with critics arguing that controlled access without public release offered only the appearance of safety while failing to prevent actual misuse."
+  tags: ["Safety", "Social"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos Preview"]
+  impact_areas: ["Ethics", "Public Perception"]
+  link: "https://www.aibusinessreview.org/2026/04/25/anthropic-mythos-breach-ai-safety-credibility/"
