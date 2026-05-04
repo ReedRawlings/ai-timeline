@@ -1,0 +1,88 @@
+- title: "OpenAI Shuts Down Sora, Collapses $1B Disney Deal"
+  date: "2026-03-24T12:00:00-07:00"
+  tags: ["Corporate", "Product", "Economic"]
+  organizations: ["OpenAI", "Disney"]
+  models: ["Sora"]
+  impact_areas: ["Market Competition", "Creator Economy"]
+  key_figures: ["Sam Altman"]
+  link: "https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/"
+  description: "OpenAI announced on March 24 that it was discontinuing Sora, its flagship text-to-video model, after the app's user base had collapsed from a peak of one million to under 500,000 while burning roughly $1 million per day in compute. The announcement abruptly ended a nearly finalized $1 billion strategic investment from Disney — which learned of the shutdown less than an hour before the public — and with it OpenAI's highest-profile foothold in the creative industries. OpenAI said the Sora research team would continue work on world models as foundational infrastructure for robotics, marking a pivot from consumer video generation toward physical AI and automation. The shutdown was the most prominent consumer product failure in generative AI history and signaled that AI video, despite its early promise, had not yet found a viable commercial model at scale."
+
+- title: "OpenAI Closes $122B Funding Round at $852B Valuation"
+  date: "2026-03-31T08:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI", "Amazon", "NVIDIA", "SoftBank", "Microsoft"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Hardware"]
+  key_figures: ["Sam Altman"]
+  link: "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/"
+  description: "OpenAI closed a $122 billion funding round — the largest private financing in Silicon Valley history — valuing the company at $852 billion. Amazon committed $50 billion (with $35 billion contingent on an IPO or AGI milestone), NVIDIA and SoftBank each put in $30 billion, and the round was co-led by a16z, D.E. Shaw, and T. Rowe Price. OpenAI disclosed it was generating $2 billion in revenue per month with 900 million weekly active users of ChatGPT, and said proceeds would fund chips, data centers, and talent. The close came the same week the company announced it was sunsetting Sora, underscoring a capital-intensive shift toward enterprise and infrastructure rather than consumer media. The round set a new floor for what 'scale expectations' mean in AI: no previous private company had raised anything approaching this sum in a single round."
+
+- title: "Goldman Sachs: AI Is Erasing 16,000 Net U.S. Jobs Per Month"
+  date: "2026-04-06T09:00:00-04:00"
+  tags: ["Economic", "Research"]
+  impact_areas: ["Market Competition", "Public Perception", "Ethics"]
+  link: "https://fortune.com/2026/04/06/ai-tech-displacement-effect-gen-z-16000-jobs-per-month/"
+  description: "A Goldman Sachs U.S. Daily note by economist Elsie Peng published the first granular attempt by a major bank to separate AI's substitution and augmentation effects on employment, finding that AI was wiping out roughly 25,000 U.S. jobs per month while adding back only about 9,000, for a net monthly loss of 16,000 positions. The report found Gen Z workers disproportionately concentrated in the routine white-collar roles — data entry, customer service, legal support, billing — most exposed to AI substitution. Goldman's methodology combined AI exposure scores with an IMF-developed complementarity index, giving it credibility beyond prior speculative forecasts. The finding arrived as the first concrete quantification of a trend that had previously been described only anecdotally, and it immediately became a reference point in congressional testimony and labor policy debates."
+
+- title: "Anthropic Unveils Claude Mythos — Then Withholds It for Safety"
+  date: "2026-04-07T10:00:00-07:00"
+  tags: ["Safety", "Model", "Research"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Regulation", "Language Models"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.darkreading.com/cybersecurity-operations/anthropic-mythos-cyber-what-comes-next"
+  description: "Anthropic unveiled Claude Mythos Preview, a general-purpose frontier model with strikingly advanced cybersecurity capabilities: it had autonomously identified thousands of zero-day vulnerabilities across every major operating system and web browser, and enabled engineers with no formal security training to generate complete, working exploits. Rather than release the model publicly, Anthropic withheld it and announced Project Glasswing — a coordinated defensive effort using Mythos to patch critical software vulnerabilities before adversaries could exploit the same capability. The decision was the clearest real-world instance to date of a major lab holding back a release on safety grounds, the exact scenario the AI safety community had long theorized. UK's AISI published an independent evaluation of Mythos Preview's cyber capabilities, and Bruce Schneier published a widely-read analysis of its implications. Anthropic CEO Dario Amodei later cited Mythos as evidence that AI models were approaching a threshold where dual-use capability warranted pre-release coordination with governments rather than open deployment."
+
+- title: "Stanford AI Index 2026: SWE-Bench Near 100%, Transparency Scores Collapse"
+  date: "2026-04-13T09:00:00-07:00"
+  tags: ["Research", "Safety", "Technical"]
+  organizations: ["Stanford HAI"]
+  impact_areas: ["Language Models", "Ethics", "Market Competition"]
+  link: "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+  description: "Stanford HAI released its 2026 AI Index Report — a 400-plus-page annual benchmark of the field — finding that AI coding performance on SWE-bench Verified had risen from 60% to near 100% in a single year, and that frontier models now met or exceeded human baselines on PhD-level science questions, multimodal reasoning, and competition mathematics. Organizational AI adoption reached 88%, and generative AI had reached 53% population adoption in three years — faster than the personal computer or internet. The estimated consumer value of generative AI tools in the U.S. hit $172 billion annually, with the median value per user tripling since 2025. Against this backdrop, the Foundation Model Transparency Index saw average scores drop from 58 to 40 points, and documented AI incidents rose from 233 to 362, marking the widest observed gap between AI capability expansion and governance capacity."
+
+- title: "Apple Selects Google Gemini to Power a Rebuilt Siri"
+  date: "2026-04-22T10:00:00-07:00"
+  tags: ["Corporate", "Product", "Partnership"]
+  organizations: ["Apple", "Google"]
+  models: ["Gemini"]
+  impact_areas: ["Market Competition", "Language Models"]
+  key_figures: ["Thomas Kurian"]
+  link: "https://9to5mac.com/2026/04/22/google-teases-gemini-powered-siri-upgrade-during-cloud-next-keynote/"
+  description: "Google confirmed during its Cloud Next 2026 keynote in Las Vegas that it had reached a multi-year agreement with Apple to build the foundation of a rebuilt Siri on a custom 1.2-trillion-parameter Gemini model running on Apple's Private Cloud Compute. Google Cloud CEO Thomas Kurian disclosed the partnership while announcing the Gemini Enterprise Agent Platform, framing the Apple deal as the largest enterprise AI deployment in history by user reach. The rebuilt Siri — expected to debut at WWDC in June 2026 — would include a standalone app, persistent cross-session memory, deep cross-app awareness, and multi-step command chaining. The deal signaled a watershed: Apple, which had spent a decade building its own AI infrastructure and resisting third-party model dependencies, had concluded it could not close the Siri capability gap through internal development alone and ceded foundation model control to its oldest rival."
+
+- title: "Meta and Microsoft Announce 20,000 Layoffs Explicitly Tied to AI"
+  date: "2026-04-24T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta", "Microsoft"]
+  impact_areas: ["Market Competition", "Public Perception"]
+  key_figures: ["Mark Zuckerberg", "Satya Nadella"]
+  link: "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+  description: "Meta and Microsoft announced combined cuts of more than 20,000 positions on the same day — Meta laying off roughly 8,000 workers (10% of staff, effective May 20) and Microsoft offering buyouts to approximately 8,750 U.S. employees (7% of its domestic workforce) — with both companies explicitly citing AI automation of content moderation, customer support, software testing, and certain engineering roles as enabling the reductions. The simultaneous announcements brought total 2026 tech layoffs past 92,000, the highest since the 2022–23 correction, and generated broad coverage and congressional inquiry given that both companies had days earlier reported record revenues and raised full-year AI capex guidance. The juxtaposition of record infrastructure spending alongside mass headcount reductions crystallized a debate that had been building for months: that Big Tech was actively funding its own workforce displacement and counting it as efficiency."
+
+- title: "DeepSeek Ships V4-Pro: 1.6 Trillion-Parameter Open Weights Model Under MIT"
+  date: "2026-04-24T12:00:00+08:00"
+  tags: ["Model", "Technical", "Research"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4-Pro", "DeepSeek V4-Flash"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+  description: "DeepSeek released V4-Pro and V4-Flash as open weights models under the MIT license — V4-Pro with 1.6 trillion total / 49 billion active parameters in a mixture-of-experts architecture, V4-Flash with 284 billion total / 13 billion active, both supporting a 1-million-token context window. The release marked the largest-scale open-weights MIT-licensed model yet available, with V4-Pro matching or exceeding closed-source Western frontier models on coding and reasoning benchmarks. The release continued the pattern established by V3 in which DeepSeek demonstrated that frontier capabilities could be achieved at a fraction of the cost assumed by U.S. labs, and renewed pressure on open-source policy debates in Washington, where legislators were still weighing export controls on the trained weights of large models. The simultaneous commercial API availability at competitive pricing made V4-Pro the most immediately accessible frontier-class model from a non-Western lab."
+
+- title: "Big Tech 2026 AI Infrastructure Spend Surpasses $700 Billion"
+  date: "2026-04-30T09:00:00-04:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Amazon", "Google", "Meta", "Microsoft"]
+  impact_areas: ["Market Competition", "Hardware", "Enterprise AI"]
+  link: "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/"
+  description: "Q1 2026 earnings calls from Amazon, Alphabet, Meta, and Microsoft confirmed that the four companies would collectively spend more than $700 billion on AI infrastructure in 2026 — the largest single-year capital expenditure surge in the history of the technology industry, surpassing the combined spend of the dot-com era, the mobile revolution, and the initial cloud computing buildout. Amazon led with $200 billion in planned capex, Alphabet doubled its guidance to $175–185 billion, Meta raised its target to as much as $135 billion, and Microsoft was on pace for $120 billion or more. The Bloomberg and Fortune analyses triggering coverage came the same day Amazon, Alphabet, and Meta all reported Q1 earnings. Shares in Meta dipped 7% after Zuckerberg's comments about needing 'billions more' than analysts expected, illustrating the market's unresolved tension between the scale of AI bets and the timeline to returns."
+
+- title: "Pentagon Signs Classified AI Contracts With Seven Firms, Formally Excludes Anthropic"
+  date: "2026-05-01T10:00:00-04:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "OpenAI", "Google", "Microsoft", "Amazon", "NVIDIA", "SpaceX"]
+  impact_areas: ["Regulation", "Market Competition", "Ethics"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic"
+  description: "The Pentagon announced it had finalized AI deployment contracts covering classified Defense Department networks with seven companies — OpenAI, Google, Microsoft, Amazon Web Services, NVIDIA, SpaceX, and Reflection AI — formalizing Anthropic's exclusion, which had previously rested only on a February 'supply chain risk' designation. The contracts granted the seven companies access to deploy their models for 'all lawful purposes,' the exact phrase Anthropic had refused to accept given its objections to use in fully autonomous weapons and mass surveillance. Anthropic's lawsuit against the Trump administration remained active, with a federal judge in California having already blocked one aspect of the government's enforcement. The Pentagon announcement came roughly six weeks after court filings revealed the DOD had privately told Anthropic the two sides were 'nearly aligned' — a disclosure that Anthropic's lawyers argued showed the designation was retaliatory rather than security-driven. The formalization represented the U.S. government taking its clearest position yet that safety-conditioned AI contracts would not be accepted from frontier model developers."
