@@ -1,0 +1,82 @@
+- title: "OpenAI Announces Sora Shutdown"
+  date: "2026-03-24T09:00:00-07:00"
+  description: "OpenAI announced it would shut down the Sora video generation app on April 26, 2026, with the API to follow on September 24. Citing unsustainable inference costs per generated minute, the company framed the decision as a strategic pivot away from consumer creative tools toward coding and enterprise products. The shutdown marked the first time OpenAI retired a flagship product rather than iterating on it, signaling a broader industry reckoning with the economics of video AI."
+  tags: ["Product", "Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  models: ["Sora"]
+  impact_areas: ["Creator Economy", "Market Competition"]
+  link: "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+
+- title: "Sakana AI Scientist Published in Nature"
+  date: "2026-03-26T09:00:00+00:00"
+  description: "Sakana AI's paper 'The AI Scientist: Towards Fully Automated AI Research' was published in Nature on March 26, 2026, after the system's AI-generated work passed rigorous human peer review. The AI Scientist v2 autonomously generates research ideas, searches literature, designs and runs experiments via parallelized agentic tree search, and writes complete LaTeX papers—the first fully AI-generated research to clear a formal peer-review process at a top-tier scientific journal. A clear scaling law was observed: as underlying models improve, paper quality improves correspondingly, raising direct questions about the pace of automated scientific progress."
+  tags: ["Research", "Technical"]
+  organizations: ["Sakana AI"]
+  impact_areas: ["Research", "Language Models"]
+  link: "https://sakana.ai/ai-scientist-nature/"
+
+- title: "OpenAI Closes $122B Series D at $852B Valuation"
+  date: "2026-03-31T09:00:00-07:00"
+  description: "OpenAI closed a $122 billion funding round at a post-money valuation of $852 billion—the largest private funding round in history by a wide margin. Amazon invested $50 billion, Nvidia and SoftBank each put in $30 billion, and for the first time OpenAI extended participation to retail investors through bank channels, raising $3 billion from individuals. The single deal absorbed roughly 41% of Q1 2026 AI funding. At the time of closing, ChatGPT had more than 900 million weekly active users and over 50 million subscribers, with revenue crossing $2 billion per month."
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI", "Amazon", "NVIDIA", "SoftBank", "Microsoft"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://openai.com/index/accelerating-the-next-phase-ai/"
+
+- title: "Oracle Axes 30,000 Employees to Fund AI Expansion"
+  date: "2026-03-31T06:00:00-07:00"
+  description: "Oracle executed the largest workforce reduction in its 49-year history on March 31, 2026, terminating approximately 30,000 employees—roughly 18% of its global headcount—via 6 a.m. emails with no prior warning. The company explicitly redirected the freed-up $8–10 billion toward AI infrastructure and data center expansion tied to the Stargate initiative. The abrupt mass email termination, even as Oracle posted a 95% jump in net income to $6.13 billion and $523 billion in contracted future revenue, became a flashpoint in public debate about AI-driven corporate restructuring."
+  tags: ["Corporate", "Economic", "Social"]
+  organizations: ["Oracle"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Public Perception"]
+  link: "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html"
+
+- title: "Anthropic Unveils Claude Mythos and Project Glasswing"
+  date: "2026-04-07T09:00:00-07:00"
+  description: "Anthropic announced Project Glasswing, a closely controlled program in which Claude Mythos Preview—its most capable and unreleased frontier model—was used to autonomously discover thousands of previously unknown zero-day vulnerabilities in every major operating system and every major web browser. In one case, Mythos Preview chained four vulnerabilities into a browser exploit that escaped both renderer and OS sandboxes; in another, it fully autonomously found and exploited a 17-year-old remote code execution bug in FreeBSD, gaining root from an unauthenticated user anywhere on the internet. Citing dual-use risk, Anthropic declined to release the model publicly, instead giving access only to a closed set of partners—AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorgan Chase, the Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks—to secure critical software. The announcement was widely described as crossing the 'autonomous offensive security threshold' for AI."
+  tags: ["Safety", "Research", "Technical"]
+  organizations: ["Anthropic", "AWS", "Apple", "Google", "Microsoft", "NVIDIA", "CrowdStrike"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Language Models", "Enterprise AI"]
+  link: "https://www.anthropic.com/glasswing"
+
+- title: "Anthropic's ARR Hits $30B, Surpassing OpenAI for First Time"
+  date: "2026-04-07T09:00:00-07:00"
+  description: "Anthropic reported a $30 billion annualized revenue run rate, overtaking OpenAI's roughly $24–25 billion ARR—the first time any competitor had surpassed OpenAI in revenue. CEO Dario Amodei disclosed 80x annualized growth in Q1 2026, tracing a trajectory from $87 million run rate in January 2024 to $1 billion by December 2024, $9 billion at end-of-2025, and $30 billion in April 2026. More than 1,000 enterprise customers were each spending over $1 million per year on Claude. Anthropic simultaneously disclosed plans for a potential IPO as early as October 2026."
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth"
+
+- title: "Google Plans $40 Billion Investment in Anthropic"
+  date: "2026-04-24T09:00:00-07:00"
+  description: "Google announced plans to invest up to $40 billion in Anthropic—$10 billion in immediate cash at a $350 billion valuation, with the remaining $30 billion contingent on performance milestones. The deal also included a commitment to deliver five gigawatts of computing power to Anthropic across a five-year window through Google Cloud, with the door open to several additional gigawatts. The investment elevated Anthropic's total external funding to a scale previously unseen for an AI safety-focused lab and came the same day OpenAI released GPT-5.5, underscoring the arms-race pace of 2026 AI investment."
+  tags: ["Corporate", "Economic", "Partnership"]
+  organizations: ["Google", "Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Hardware"]
+  link: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+
+- title: "Pentagon Clears 8 AI Firms for Classified Networks, Bars Anthropic"
+  date: "2026-05-01T09:00:00-07:00"
+  description: "The Pentagon announced agreements with SpaceX, OpenAI, Google, NVIDIA, Reflection AI, Microsoft, Oracle, and Amazon Web Services to deploy their AI products on Impact Level 6 and IL7 classified defense networks via the GenAI.mil platform. Notably absent was Anthropic, which the Trump administration had designated a supply chain risk after the company refused to allow its models to be used for autonomous weapons or domestic surveillance—demands Anthropic said were incompatible with its safety commitments. The announcement was the first time frontier AI models were formally cleared for use on the U.S. military's most sensitive classified networks, and Anthropic's blacklisting set a visible precedent: labs that hold firm on safety guardrails in warfare applications can be excluded from major government contracts."
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["OpenAI", "Google", "NVIDIA", "Microsoft", "SpaceX", "Amazon", "Oracle"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  link: "https://www.nextgov.com/artificial-intelligence/2026/05/pentagon-makes-agreements-7-companies-add-ai-classified-networks/413264/"
+
+- title: "Apple Plans to Open iOS 27 to Third-Party AI Providers"
+  date: "2026-05-05T09:00:00-07:00"
+  description: "Reports emerged that Apple is internally testing an 'Extensions' framework for iOS 27, iPadOS 27, and macOS 27 that would allow users to route Apple Intelligence requests—including Siri, Writing Tools, and text generation—to third-party AI models like Google Gemini, Anthropic Claude, and OpenAI ChatGPT. The move would end ChatGPT's exclusive position as Apple's default external AI and give users a choice of AI provider at the system level for the first time. Apple is reportedly already testing integrations with Google and Anthropic ahead of WWDC, which kicks off June 8."
+  tags: ["Product", "Corporate"]
+  organizations: ["Apple", "Google", "Anthropic", "OpenAI"]
+  impact_areas: ["Market Competition", "Public Perception", "Language Models"]
+  link: "https://9to5mac.com/2026/05/05/ios-27-will-let-you-choose-between-gemini-claude-and-more-for-ai-features-report/"
+
+- title: "Anthropic Introduces 'Dreaming' for Claude Managed Agents"
+  date: "2026-05-06T09:00:00-07:00"
+  description: "At Anthropic's second annual Code with Claude developer conference in San Francisco, the company unveiled 'dreaming'—a scheduled process within Claude Managed Agents that reviews an agent's past sessions and memory stores, extracts behavioral patterns, and curates memories so agents self-improve over time without human intervention. The feature demonstrated a 6x increase in task completion rates at legal AI firm Harvey in production use. The announcement signaled a shift from stateless AI agents—which reset entirely between sessions—toward persistent autonomous systems that accumulate operational knowledge, a key architectural requirement for long-running agentic workflows in coding, finance, and law."
+  tags: ["Technical", "Product", "Research"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Language Models"]
+  link: "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes"
