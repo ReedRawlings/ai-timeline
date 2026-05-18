@@ -1,0 +1,139 @@
+- title: "Sanders and Ocasio-Cortez Introduce Federal AI Data Center Moratorium Act"
+  date: "2026-03-25T09:00:00-05:00"
+  tags: ["Policy", "Social"]
+  key_figures: ["Bernie Sanders", "Alexandria Ocasio-Cortez"]
+  impact_areas: ["Regulation", "Ethics", "Hardware"]
+  link: "https://www.axios.com/2026/03/25/sanders-aoc-data-center-moratorium-bill"
+  description: "Senators Bernie Sanders and Representative Alexandria Ocasio-Cortez introduced the AI Data Center Moratorium Act, proposing to halt all new data center construction exceeding 20 megawatts until Congress implements comprehensive AI safety, environmental, and labor protections. The bill addressed cascading public concerns: rising electricity bills near data centers, AI-assisted immigration surveillance, deepfake proliferation, and job displacement — marking the first time progressive legislators framed AI infrastructure itself as the regulatory target rather than AI outputs. Though unlikely to advance in the Republican-controlled Congress, the bill put data center expansion on the legislative agenda and drew immediate condemnation from Y Combinator while earning endorsement from climate and labor groups."
+
+- title: "OpenAI Closes $122 Billion Funding Round at $852 Billion Valuation"
+  date: "2026-03-31T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI", "Amazon", "Nvidia", "SoftBank"]
+  impact_areas: ["Market Competition", "Language Models", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/accelerating-the-next-phase-ai/"
+  description: "OpenAI closed the largest private funding round in Silicon Valley history — $122 billion at a $852 billion valuation — with Amazon anchoring at $50 billion, Nvidia and SoftBank each contributing $30 billion, and an unprecedented $3 billion retail investor tranche open to everyday investors. The round valued OpenAI at nearly 90% of Apple's 2012 market cap and more than doubled the previous record for a private AI financing. With revenue crossing $2 billion per month, OpenAI used the closing to signal an imminent IPO and confirm that AGI-scale capital requirements had permanently shifted what a startup fundraise could look like."
+
+- title: "Google Releases Gemma 4 Under Apache 2.0 License"
+  date: "2026-04-02T09:00:00-07:00"
+  tags: ["Model", "Technical"]
+  organizations: ["Google DeepMind"]
+  models: ["Gemma 4"]
+  impact_areas: ["Language Models", "Open Source", "Multimodal AI"]
+  link: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+  description: "Google released Gemma 4 — four natively multimodal models from 2B to 31B parameters — under the Apache 2.0 open-source license, a significant upgrade from prior Gemma releases' more restrictive terms. The models delivered frontier-level reasoning in 256K-token context windows with native vision and audio support across 140+ languages, and the 26B mixture-of-experts variant ran on consumer GPUs. With over 400 million cumulative Gemmaverse downloads, Google's decision to grant full commercial and derivative-work rights signaled a strategic calculation that open-weight model adoption had become a competitive weapon rather than a free-rider risk."
+
+- title: "Meta Releases Llama 4 Scout and Maverick — First Open Natively Multimodal MoE Models"
+  date: "2026-04-05T09:00:00-07:00"
+  tags: ["Model", "Technical"]
+  organizations: ["Meta"]
+  models: ["Llama 4 Scout", "Llama 4 Maverick"]
+  impact_areas: ["Language Models", "Open Source", "Multimodal AI"]
+  link: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  description: "Meta released Llama 4 Scout and Maverick, the first open-weight, natively multimodal mixture-of-experts models in the Llama family, delivering benchmark results matching or beating GPT-4o and Gemini 2.0 Flash. Scout set a new open-source record with a 10-million-token context window, while Maverick achieved an LMArena ELO of 1,417. Both models were trained from scratch to process text, images, audio, and video in a unified architecture — rather than via add-on adapters — a first for open-weight models at this capability tier. The release extended Meta's strategy of matching closed-source frontier performance at open-source prices."
+
+- title: "Anthropic Withholds Claude Mythos From Public, Launches Restricted Project Glasswing"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Safety", "Corporate", "Product"]
+  organizations: ["Anthropic", "CISA"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Regulation", "Language Models", "Research"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/glasswing"
+  description: "Anthropic unveiled Claude Mythos Preview — its most capable model — but declined to release it publicly, citing its demonstrated ability to discover tens of thousands of zero-day vulnerabilities across every major operating system and browser as an unacceptable offensive cyber risk. Instead, Anthropic launched Project Glasswing, a restricted program granting access to roughly 40 vetted security organizations with $100 million in usage credits and a mandate to find and patch vulnerabilities before adversaries developed comparable capabilities. CEO Dario Amodei briefed CISA and the Commerce Department before the announcement. The decision marked the first time a major AI lab formally withheld a frontier model from general release on safety grounds, reframing the open-versus-closed debate around capability-specific risk rather than ideology."
+
+- title: "xAI Sues to Block Colorado's AI Anti-Discrimination Law"
+  date: "2026-04-09T09:00:00-06:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["xAI"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.nortonrosefulbright.com/en-us/knowledge/publications/de3ad9de/xai-sues-doj-intervenes-enforcement-of-colorado-ai-act-suspended"
+  description: "Elon Musk's xAI filed suit in US District Court seeking to permanently enjoin the Colorado AI Act — the nation's first state AI anti-discrimination law — before its June 30, 2026, effective date, arguing it violated the First Amendment by compelling viewpoint-specific speech, the Commerce Clause by regulating out-of-state companies, and was unconstitutionally vague. The filing opened a constitutional challenge to the wave of state AI laws that had passed in 2025-2026, and signaled that major AI companies would deploy litigation as their primary tool against state-level AI governance rather than waiting for lobbying or preemptive federal legislation."
+
+- title: "Molotov Cocktail Attack on Sam Altman's Home Signals Violent Turn in AI Backlash"
+  date: "2026-04-10T04:00:00-07:00"
+  tags: ["Social"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Public Perception", "Ethics"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.cnbc.com/2026/04/10/sam-altman-house-hit-with-molotov-cocktail-openai-office-threatened.html"
+  description: "A 20-year-old Texas man, Daniel Moreno-Gama, threw a Molotov cocktail at OpenAI CEO Sam Altman's San Francisco home at 4 a.m. before proceeding to OpenAI's headquarters, where he broke glass doors and declared he wanted to 'burn it down and kill anyone inside.' Arrested with multiple incendiary devices, kerosene, and an anti-AI manifesto warning of humanity's extinction from AI, Moreno-Gama was charged with attempted murder and federal explosives offenses. A second attack at Altman's home two days later led to two more arrests. The incidents triggered widespread national coverage of the anti-AI movement and prompted major outlets to analyze its ideological spectrum — from safety-focused groups like Pause AI to anti-capitalist factions — as the movement's profile rose sharply."
+
+- title: "Amazon Commits Additional $25 Billion to Anthropic, Bringing Total to $33 Billion"
+  date: "2026-04-20T09:00:00-07:00"
+  tags: ["Economic", "Partnership", "Corporate"]
+  organizations: ["Amazon", "Anthropic"]
+  impact_areas: ["Market Competition", "Language Models", "Enterprise AI"]
+  link: "https://news.crunchbase.com/venture/global-startup-funding-april-2026-anthropic-jeff-bezos-project-prometheus-biggest-deals/"
+  description: "Amazon committed an additional $25 billion to Anthropic — the largest single investment commitment in the company's history — bringing Amazon's total Anthropic stake to $33 billion across investments dating to 2023. The commitment locked in Anthropic's Claude models as the primary AI for AWS enterprise customers and deepened the structural tie between the two companies, with Anthropic's training compute routed through AWS's custom Trainium chips. The announcement capped a week in which Big Tech AI investment commitments accelerated sharply in response to OpenAI's $122 billion closing and reinforced a pattern of hyperscalers making equity-plus-compute bets rather than relying on pure API relationships."
+
+- title: "Meta and Microsoft Announce 16,500 Layoffs Explicitly Funded by AI Capex"
+  date: "2026-04-23T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta", "Microsoft"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Ethics"]
+  key_figures: ["Mark Zuckerberg", "Satya Nadella"]
+  link: "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+  description: "Meta announced 8,000 layoffs — 10% of its workforce — and Microsoft launched its first-ever voluntary buyout targeting 8,750 US employees on the same day, with both CEOs explicitly framing the cuts as capital reallocation to AI infrastructure. Meta's $135 billion and Microsoft's $145 billion 2026 capex commitments were named as the direct reason for workforce reductions, making these the highest-profile corporate announcements to explicitly link AI investment to job cuts rather than treating them as parallel trends. Labor economists cited the simultaneous announcements as confirmation of an 'AI labor crisis,' even as analysts noted many positions would likely be rehired offshore at lower cost — framing the story as labor repricing rather than pure job elimination."
+
+- title: "GPT-5.5 Released With Unified Multimodal Architecture"
+  date: "2026-04-23T10:00:00-07:00"
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Enterprise AI", "Multimodal AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+  description: "OpenAI released GPT-5.5, a unified multimodal model processing text, images, audio, and video end-to-end in a single architecture, with particularly strong gains in agentic coding, computer use, and multi-step knowledge work. The model matched GPT-5.4's per-token latency while using significantly fewer tokens to complete equivalent tasks, and entered API availability at $5 per million input tokens with a 1-million-token context window. Its release on the same day as the Meta and Microsoft coordinated layoff announcements highlighted the compressed timeline between frontier capability releases and their downstream workforce effects."
+
+- title: "Project Prometheus Closes $10 Billion Round at $38 Billion Valuation"
+  date: "2026-04-23T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Project Prometheus"]
+  impact_areas: ["Market Competition", "Robotics", "Hardware"]
+  key_figures: ["Jeff Bezos"]
+  link: "https://www.bloomberg.com/news/articles/2026-04-23/bezos-s-physical-ai-lab-has-closed-round-at-38-billion-value"
+  description: "Project Prometheus — the physical AI lab co-founded five months earlier by Amazon founder Jeff Bezos and former Google VP Vikram Bajaj — closed a $10 billion funding round at a $38 billion valuation backed by JPMorgan Chase and BlackRock, becoming one of the most valuable five-month-old startups ever funded. The lab focuses on using AI to engineer and manufacture physical products, positioning itself at the intersection of foundation models and industrial robotics. Combined with Amazon's $25 billion Anthropic commitment announced the same week, Bezos deployed over $35 billion in AI in a single month."
+
+- title: "DOJ Joins xAI's Colorado Lawsuit; Enforcement of First State AI Anti-Discrimination Law Suspended"
+  date: "2026-04-24T09:00:00-06:00"
+  tags: ["Policy"]
+  organizations: ["xAI", "Department of Justice"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.axios.com/2026/04/24/justice-department-joins-xai-challenge-colorado-ai-law"
+  description: "The Trump Justice Department moved to intervene in xAI's lawsuit against Colorado's AI anti-discrimination law, arguing it violated the Equal Protection Clause by requiring companies to prevent disparate impact while exempting 'diversity'-motivated discrimination. Three days later a federal court granted a joint stay suspending all enforcement of the Colorado AI Act pending case resolution — effectively neutralizing the nation's first AI anti-discrimination law before its June 30 effective date. The DOJ's alignment with a private AI company against a state safety law drew immediate condemnation from civil rights groups and set a precedent for federal preemption of state AI governance through litigation rather than legislation."
+
+- title: "Musk v. Altman Trial Opens; Musk Admits xAI Distilled OpenAI's Models"
+  date: "2026-04-28T09:00:00-07:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["OpenAI", "xAI", "Microsoft"]
+  impact_areas: ["Regulation", "Market Competition", "Ethics"]
+  key_figures: ["Elon Musk", "Sam Altman", "Greg Brockman"]
+  link: "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/"
+  description: "The Musk v. Altman trial opened in US District Court in Oakland with Elon Musk taking the stand to allege that OpenAI's 2025 conversion from nonprofit to public benefit corporation — and the resulting 27% Microsoft stake — violated his founding understanding that the company would remain a public charity. Musk sought up to $134 billion in disgorgement, unwind of the recapitalization, and removal of Altman and Brockman from leadership. In the trial's most damaging first-week revelation, Musk admitted under cross-examination that xAI had distilled OpenAI's models to train Grok, undermining his standing as plaintiff while simultaneously asserting the practice was 'standard across all labs' — an admission that sparked a broader industry debate over model distillation ethics. Closing arguments concluded May 14; jury deliberations began May 18."
+
+- title: "David Silver's Ineffable Intelligence Raises $1.1 Billion Seed Round With No Product"
+  date: "2026-04-27T09:00:00+01:00"
+  tags: ["Economic", "Research"]
+  organizations: ["Ineffable Intelligence"]
+  impact_areas: ["Research", "Market Competition", "Language Models"]
+  key_figures: ["David Silver"]
+  link: "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
+  description: "Ineffable Intelligence, the British AI lab founded five months earlier by DeepMind reinforcement learning pioneer David Silver — creator of AlphaGo and AlphaZero — closed a $1.1 billion seed round at a $5.1 billion valuation backed by Sequoia, Lightspeed, Nvidia, and Google, setting a new European seed funding record. The company had no product, no revenue, and no public roadmap, but proposed to build a 'superlearner' AI capable of acquiring knowledge and skills through reinforcement learning without human data — a direct continuation of the self-play paradigm Silver pioneered at DeepMind. Silver pledged 100% of his personal equity to charity via Founders Pledge, described as the largest such commitment in the organization's history."
+
+- title: "White House Considers Mandatory Pre-Release Vetting for Frontier AI Models"
+  date: "2026-05-04T09:00:00-05:00"
+  tags: ["Policy", "Safety"]
+  impact_areas: ["Regulation", "Ethics"]
+  link: "https://www.tomshardware.com/tech-industry/artificial-intelligence/white-house-considers-mandatory-government-vetting-of-ai-models-before-release"
+  description: "The Trump administration began circulating a draft executive order to require AI companies to submit frontier models to government review before public release, with the NSA, National Cyber Director, and Director of National Intelligence overseeing the process. Concurrently, the Center for AI Standards and Innovation announced pre-deployment evaluation agreements with Google DeepMind, Microsoft, and xAI — the first formal US government pre-release review framework for commercial AI. The shift was directly attributed to Anthropic's Claude Mythos briefings on its zero-day vulnerability discovery capabilities, marking a reversal of the administration's prior 'light touch' posture and bringing the US closer to the UK AI Security Institute model."
+
+- title: "Colorado Repeals and Replaces Its AI Anti-Discrimination Law Before It Took Effect"
+  date: "2026-05-09T09:00:00-06:00"
+  tags: ["Policy"]
+  impact_areas: ["Regulation", "Ethics"]
+  link: "https://www.lawandtheworkplace.com/2026/05/major-developments-put-colorados-ai-law-on-ice-ahead-of-implementation/"
+  description: "Colorado's legislature passed SB 26-189 — repealing and replacing the Colorado AI Act with a narrower 'automated decision-making technology' notice-only framework — before the original law's June 30, 2026, effective date. The replacement came after xAI's constitutional lawsuit, the Colorado attorney general's decision to join the plaintiffs in staying enforcement, the DOJ's intervention, and a federal court order suspending the law entirely. Governor Polis was expected to sign the bill, making Colorado the first state in US history to pass, litigate, and repeal a major AI law in the same legislative session — establishing a precedent that AI-specific anti-discrimination frameworks faced near-insurmountable constitutional obstacles under the current federal posture."
