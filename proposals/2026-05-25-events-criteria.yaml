@@ -1,0 +1,89 @@
+# Proposed AI Timeline Events — 2026-05-25
+# Coverage window: 2026-03-21 through 2026-05-25
+# Generated via find-ai-events-criteria skill
+
+- title: "California Orders AI Vendor Safety Certifications for State Contracts"
+  date: "2026-03-30T10:00:00-07:00"
+  tags: ["Policy", "Regulation"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  key_figures: ["Gavin Newsom"]
+  link: "https://www.gov.ca.gov/2026/03/30/executive-order-n-5-26/"
+  description: "California Governor Gavin Newsom signed Executive Order N-5-26 directing state agencies to develop AI vendor certification standards requiring attestations on harmful bias, illegal content, and civil rights protections as a condition of state contracts. Applying to vendors nationwide seeking to do business with California agencies, the order gave the Department of Technology and Department of General Services 120 days to implement a procurement framework — creating the largest state-level AI vendor gate in the country and setting a procurement model other states were expected to replicate."
+
+- title: "Anthropic Withholds Mythos Over Unprecedented Hacking Capability"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Safety", "Model", "Corporate", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Mythos"]
+  impact_areas: ["Ethics", "Regulation", "Language Models", "Market Competition"]
+  link: "https://www.axios.com/2026/04/07/anthropic-mythos-preview-cybersecurity-risks"
+  description: "Anthropic announced Mythos Preview — a frontier model it deemed too dangerous to release publicly after testing revealed it could autonomously identify tens of thousands of software vulnerabilities, including decades-old bugs in every major operating system and browser. Rather than ship with guardrails, Anthropic withheld the model entirely and launched Project Glasswing, granting restricted access to approximately 50 critical infrastructure partners including Microsoft, Google, Apple, AWS, JPMorgan Chase, and Nvidia to harden defenses against AI-enabled attacks. The decision marked the first time a major AI lab voluntarily shelved a flagship model over offensive capability concerns rather than alignment or content issues, triggering White House discussions about mandatory pre-launch government review of frontier models."
+
+- title: "DC Circuit Denies Anthropic Stay Against Pentagon Blacklisting"
+  date: "2026-04-08T10:00:00-04:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html"
+  description: "A federal appeals court in Washington, D.C., denied Anthropic's emergency motion to temporarily block the Pentagon's supply-chain risk designation while litigation proceeded, acknowledging the company would 'likely suffer some degree of irreparable harm' but ruling its interests 'seem primarily financial in nature.' The ruling split jurisdiction with a California federal court that had already granted Anthropic a separate preliminary injunction barring enforcement of a federal ban on Claude within civilian agencies — creating an unusual two-court posture where Anthropic could use Claude in civilian government but remained blacklisted from defense contracts."
+
+- title: "Meta Abandons Open Source with Closed-Weight Muse Spark"
+  date: "2026-04-08T09:00:00-07:00"
+  tags: ["Model", "Corporate", "Product"]
+  organizations: ["Meta"]
+  models: ["Muse Spark"]
+  impact_areas: ["Open Source", "Market Competition", "Language Models"]
+  key_figures: ["Mark Zuckerberg", "Alexandr Wang"]
+  link: "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since"
+  description: "Meta launched Muse Spark — the first product from its newly formed Meta Superintelligence Labs and the company's first proprietary, closed-weight AI model after more than three years of open-source Llama releases. The departure ended Meta's defining competitive posture: since Llama 1 in 2023, free model weights had been Meta's chief differentiator against OpenAI and Google. The new model, built after a $14.3 billion investment to bring in Alexandr Wang from Scale AI and a nine-month ground-up rebuild, scored fourth overall on the AI Index but led HealthBench Hard — and was available only through Meta's own API, with no timeline given for any open-source successor."
+
+- title: "GPT-5.5 Shipped with Major Agentic Leap"
+  date: "2026-04-23T10:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Market Competition", "Enterprise AI"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+  description: "OpenAI released GPT-5.5, a model rebuilt specifically for long-horizon agentic work — tasks requiring autonomous planning, tool use, and multi-step execution without hand-holding. Long-context reasoning at one million tokens jumped from 36.6% on GPT-5.4 to 74.0%, Terminal-Bench 2.0 reached 82.7%, and the model handled messy multi-part tasks with substantially less intervention than its predecessor. GPT-5.5 and GPT-5.5 Pro became available in the API the following day, with OpenAI positioning the release as evidence that agentic AI had crossed from research benchmark to production-grade capability."
+
+- title: "DeepSeek Releases V4 Flagship a Year After Breakthrough"
+  date: "2026-04-24T09:00:00+08:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4 Pro", "DeepSeek V4 Flash"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://api-docs.deepseek.com/news/news260424"
+  description: "DeepSeek released its next-generation flagship V4 series — V4-Pro with 1.6 trillion total parameters (49 billion active) and V4-Flash with 284 billion parameters — exactly one year after the DeepSeek R1 moment that shocked Western AI labs. Both models shipped with a default one-million-token context window and a novel Hybrid Attention Architecture combining Compressed Sparse Attention and Heavily Compressed Attention, cutting single-token inference FLOPs to 27% of V3 at the same context length. V4-Pro led all open models on math, STEM, coding, and world knowledge benchmarks, though NIST's independent CAISI evaluation placed its frontier lag at roughly eight months, contrasting with DeepSeek's own claim of three to six months."
+
+- title: "EU Agrees AI Act Omnibus: Simplified Rules, Banned Nudification Apps"
+  date: "2026-05-07T14:00:00+02:00"
+  tags: ["Policy", "Regulation", "Safety"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  link: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+  description: "The European Parliament and Council of the EU reached a provisional agreement on the Digital Omnibus AI package, significantly amending the EU AI Act to ease compliance burdens while adding targeted prohibitions. High-risk AI system deadlines were extended — Annex III systems to December 2027 and Annex I embedded systems to August 2028 — and small mid-cap companies gained exemptions previously reserved for SMEs. The agreement added explicit prohibitions on AI systems that generate child sexual abuse material or non-consensual intimate imagery, with a December 2026 compliance date. The Omnibus represented the EU's first formal acknowledgement that its flagship AI law had imposed commercially unworkable timelines, coming six months after member states had begun lobbying for relief."
+
+- title: "Colorado Repeals and Replaces Its Landmark AI Law"
+  date: "2026-05-14T10:00:00-06:00"
+  tags: ["Policy", "Regulation"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Jared Polis"]
+  link: "https://www.hklaw.com/en/insights/publications/2026/05/colorado-governor-signs-sb-189"
+  description: "Colorado Governor Jared Polis signed SB 26-189, fully repealing and reenacting the state's original Colorado AI Act (SB 205) — which had been the first U.S. law imposing broad duties on high-risk AI systems and had attracted a lawsuit from xAI and the Justice Department. The replacement law eliminated mandatory risk management programs aligned to NIST AI RMF, annual impact assessments, and self-reporting requirements for algorithmic discrimination, replacing them with a narrower disclosure-and-transparency framework requiring only that companies notify users when AI influences consequential decisions. The retreat signaled the limits of early-mover state AI regulation: after surviving legislative battles, Colorado's landmark law had been effectively gutted under industry and federal pressure before its 2027 implementation date."
+
+- title: "White House Drafts AI Pre-Launch Review Order, Then Delays Signing"
+  date: "2026-05-20T09:00:00-04:00"
+  tags: ["Policy", "Safety", "Regulation"]
+  impact_areas: ["Regulation", "Ethics", "Market Competition"]
+  key_figures: ["Donald Trump"]
+  link: "https://www.axios.com/2026/05/20/ai-trump-executive-order-white-house-infighting"
+  description: "The Trump White House circulated a draft executive order that would ask AI labs to voluntarily share frontier models with the federal government up to 90 days before public release for national security and cybersecurity review — a dramatic reversal for an administration that had rescinded Biden's AI safety order and fought state AI regulations. The draft was triggered largely by Anthropic's Mythos findings and proposed a voluntary 'clearinghouse' run by the Treasury Department to find and patch vulnerabilities in unreleased models. Days before the planned signing, Trump said he had delayed it because he 'didn't like certain aspects,' with industry tensions over the 90-day window — AI companies lobbied for 14 days — unresolved. The leak nonetheless marked the administration's clearest pivot toward treating advanced AI as a national security infrastructure issue."
+
+- title: "Meta Cuts 8,000 Jobs While Committing $145B to AI Infrastructure"
+  date: "2026-05-20T08:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Meta"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs"
+  description: "Meta began notifying approximately 8,000 employees — 10% of its workforce — of layoffs on May 20 while simultaneously reporting record quarterly revenue of $56.3 billion, in the clearest example yet of profitable tech companies cutting headcount to fund AI infrastructure rather than due to financial distress. Meta also cancelled 6,000 open roles and shifted 7,000 engineers into AI-focused teams, bringing the effective reallocation to 21,000 positions. The company's projected 2026 capital expenditure of $125–145 billion — more than twice its 2025 outlay — placed Meta among four US tech giants collectively committing roughly $725 billion to AI data centers and chips, a figure analysts noted exceeded the entire global oil and gas exploration budget."
