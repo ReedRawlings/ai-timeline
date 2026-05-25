@@ -1,0 +1,98 @@
+- title: "NextEra Acquires Dominion Energy for $67B to Power AI Data Centers"
+  date: "2026-05-18T08:00:00-05:00"
+  description: "NextEra Energy announced an all-stock acquisition of Dominion Energy valued at ~$67 billion — the largest utility merger in U.S. history — with AI-driven electricity demand as the explicit strategic rationale. Dominion powers Northern Virginia, the world's largest data center concentration, where hyperscalers (Microsoft, Google, Amazon, Meta) have pushed electricity demand to unprecedented levels. The combined entity would own 74.5% by NextEra shareholders and 25.5% by Dominion investors, creating the largest regulated utility in the world and effectively making AI data center buildout the primary driver of major U.S. energy infrastructure M&A."
+  tags: ["Economic", "Corporate"]
+  organizations: ["NextEra Energy", "Dominion Energy"]
+  impact_areas: ["Market Competition", "Hardware", "Enterprise AI"]
+  link: "https://www.riotimesonline.com/nextera-buys-dominion-for-67b-to-power-ai-data-centers/"
+
+- title: "Google I/O 2026: Gemini 3.5 Flash, Gemini Omni, and Gemini Spark Unveiled"
+  date: "2026-05-19T10:00:00-07:00"
+  description: "Google's I/O 2026 keynote reframed Gemini from a standalone product into a cross-platform intelligence layer embedded across Search, Android, Chrome, Workspace, and YouTube. Flagship releases included Gemini 3.5 Flash — a generally available frontier-speed model rivaling larger flagships on coding and agentic benchmarks — Gemini Omni (unified text/image/audio/video input with grounded video output), and Gemini Spark, a 24/7 personal agent taking autonomous actions inside Gmail and Docs. Google also dropped the AI Ultra subscription price from $250 to $100/month and confirmed Samsung Android XR smart glasses for fall 2026, making the keynote the most product-dense I/O in the company's history."
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Google", "Samsung"]
+  models: ["Gemini 3.5 Flash", "Gemini 3.5 Pro", "Gemini Omni"]
+  impact_areas: ["Language Models", "Multimodal AI", "Market Competition", "Enterprise AI"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+
+- title: "Andrej Karpathy Joins Anthropic's Pretraining Team"
+  date: "2026-05-19T09:00:00-07:00"
+  description: "Andrej Karpathy — OpenAI co-founder, former Tesla Autopilot AI lead, and one of the most recognized AI researchers in the world — announced he had joined Anthropic to build a new team focused on using Claude itself to accelerate pretraining research. Karpathy will report to Nick Joseph, Anthropic's Head of Pretraining, and represents the most high-profile individual talent acquisition in the AI industry in 2026. The move is a significant signal of Anthropic's gravitational pull among elite researchers and comes as the company simultaneously courts a $900B valuation, publicly limited its most dangerous model, and forged partnerships with both the Gates Foundation and the Vatican."
+  tags: ["Research", "Corporate"]
+  organizations: ["Anthropic", "OpenAI"]
+  impact_areas: ["Language Models", "Research", "Market Competition"]
+  key_figures: ["Andrej Karpathy", "Nick Joseph", "Dario Amodei"]
+  link: "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+
+- title: "Jury Dismisses All Claims in Musk's $150B Lawsuit Against OpenAI"
+  date: "2026-05-19T14:00:00-07:00"
+  description: "A California federal jury deliberated for less than two hours before unanimously rejecting all of Elon Musk's claims in his $150 billion lawsuit against OpenAI, CEO Sam Altman, and President Greg Brockman. The jury found Musk had waited too long to file — the statute of limitations had expired — without reaching the underlying question of whether OpenAI betrayed its founding nonprofit mission. Judge Yvonne Gonzalez Rogers accepted the verdict and dismissed the case. The ruling closed the most high-profile legal challenge to OpenAI's for-profit conversion, though Musk's team immediately signaled an appeal. OpenAI filed its confidential IPO prospectus three days later."
+  tags: ["Policy", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Regulation", "Ethics"]
+  key_figures: ["Elon Musk", "Sam Altman", "Greg Brockman"]
+  link: "https://www.nbcnews.com/tech/tech-news/openai-elon-musk-case-verdict-rcna345655"
+
+- title: "Meta's AI Employee-Tracking Program Goes Viral During 8,000-Person Layoff"
+  date: "2026-05-20T09:00:00-07:00"
+  description: "Leaked audio from a Meta all-hands meeting revealed that Mark Zuckerberg described the Model Capability Initiative (MCI), a program that monitored employee activity on Gmail, Google Chat, and internal tools to train Meta's AI models — on the same day approximately 8,000 Meta employees received layoff notices. The phrase 'train your replacement culture' spread across social media alongside 'Black Mirror episode' comparisons, with the story reaching the top of Reddit's r/technology and r/artificial. The episode crystallized public anxiety about AI displacing the very workers whose data and labor trains it, and was described by labor researchers as the starkest real-world example yet of the dual-use nature of employee AI tools."
+  tags: ["Social", "Corporate", "Economic"]
+  organizations: ["Meta"]
+  impact_areas: ["Public Perception", "Ethics", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://fortune.com/2026/05/22/tech-billionaires-convince-trump-to-back-off-ai-executive-order-but-much-of-maga-favors-ai-regulation/"
+
+- title: "Trump Pulls AI Executive Order After Last-Minute Lobbying by Sacks, Musk, and Zuckerberg"
+  date: "2026-05-21T09:00:00-05:00"
+  description: "President Trump abruptly postponed signing an AI executive order — even as tech executives had already traveled to Washington for the signing ceremony — after a last-minute phone call campaign led by David Sacks, who argued that any voluntary government review framework would eventually harden into mandatory controls and cede ground to China. Elon Musk and Mark Zuckerberg placed similar calls. The withdrawn order would have required AI companies to share frontier models with the government up to 90 days before public launch, and had been drafted in direct response to Anthropic's Mythos model — which the company itself had declined to release due to its unprecedented cyber-attack capabilities. The episode was the most dramatic demonstration yet of tech industry influence over AI policy under the Trump administration."
+  tags: ["Policy", "Safety"]
+  organizations: ["OpenAI", "Anthropic", "Meta"]
+  impact_areas: ["Regulation", "Ethics", "Market Competition"]
+  key_figures: ["Donald Trump", "David Sacks", "Elon Musk", "Mark Zuckerberg", "Dario Amodei"]
+  link: "https://www.washingtonpost.com/politics/2026/05/22/last-minute-lobbying-by-tech-industry-officials-led-trump-cancel-ai-order/"
+
+- title: "OpenAI Codex Can Now Control Your Mac While the Screen Is Locked"
+  date: "2026-05-22T09:00:00-07:00"
+  description: "OpenAI announced 'Locked Use' for its Codex desktop agent on Mac — the ability to operate apps and execute long-running coding tasks autonomously after the user locks their screen, monitored and triggered remotely from a phone. The feature uses an Apple authorization plug-in that grants a time-limited, scoped session to Codex alone, requiring per-app permission grants and logging every action taken. Codex becomes the first commercial AI agent shipping with the capability to operate a personal computer fully unattended during a locked state, a milestone in the trajectory from copilot to autonomous agent. The feature is unavailable in the EU, UK, and Switzerland at launch."
+  tags: ["Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["Codex"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://www.macrumors.com/2026/05/22/codex-use-mac-apps-when-locked/"
+
+- title: "OpenAI Files Confidential IPO Prospectus with the SEC"
+  date: "2026-05-22T16:00:00-04:00"
+  description: "OpenAI filed its confidential S-1 IPO prospectus with the SEC on Friday May 22, targeting a Q4 2026 public listing at a valuation between $852 billion and $1 trillion, with Goldman Sachs and Morgan Stanley leading the deal. The filing arrives despite the company losing $1.22 for every $1 of revenue in Q1 2026, and comes three days after the dismissal of Musk's lawsuit and amid Anthropic's own $900B valuation fundraise. The S-1 will become public on SEC EDGAR at least 15 days before the roadshow — expected around August 2026 — setting up the highest-stakes technology IPO since Meta's 2012 listing."
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://fortune.com/2026/05/22/openai-ipo-filing-1-trillion-may-finally-answer-these-big-questions/"
+
+- title: "OpenAI Model Autonomously Disproves 80-Year-Old Geometry Conjecture"
+  date: "2026-05-23T10:00:00-07:00"
+  description: "OpenAI's internal research model autonomously disproved a geometry conjecture that had stumped mathematicians for 80 years, producing a complete formal proof without human guidance. Fields Medal winner Tim Gowers described the result as 'a milestone in AI mathematics.' The breakthrough follows a trend of AI systems exceeding expert human performance on frontier mathematical problems and represents a qualitative capability leap beyond prior benchmark-passing results — suggesting AI is beginning to contribute to the actual frontier of human mathematical knowledge rather than recapitulating known results."
+  tags: ["Research", "Technical"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Research", "Public Perception"]
+  key_figures: ["Tim Gowers"]
+  link: "https://www.buildfastwithai.com/blogs/ai-news-today-may-23-2026"
+
+- title: "Pope Leo XIV Issues First Papal Encyclical on Artificial Intelligence"
+  date: "2026-05-25T10:00:00+02:00"
+  description: "Pope Leo XIV published 'Magnifica Humanitas,' the Catholic Church's first-ever papal encyclical dedicated to artificial intelligence, signed on May 15 — exactly 135 years after Leo XIII's landmark Rerum Novarum on workers' rights during the Industrial Revolution. The encyclical was presented alongside Anthropic co-founder Christopher Olah at a Vatican ceremony, with the pope warning that AI carries 'even greater consequences than the Industrial Revolution' and that AI must serve humanity rather than concentrate power. The Vatican-Anthropic collaboration was described as 'unlikely' by religion journalists, and the encyclical's framing — AI as a question of human dignity rather than mere safety — introduced a new moral vocabulary to the governance debate, reaching 1.3 billion Catholics and drawing mainstream coverage from every major Western outlet."
+  tags: ["Social", "Policy", "Safety"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Public Perception", "Regulation"]
+  key_figures: ["Pope Leo XIV", "Christopher Olah"]
+  link: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
+
+- title: "Anthropic in Talks to Raise $30B at $900B Valuation — Surpassing OpenAI"
+  date: "2026-05-23T09:00:00-07:00"
+  description: "Anthropic entered final discussions to raise at least $30 billion in new financing at a post-money valuation exceeding $900 billion, which would make it the most valuable private AI startup in the world, surpassing OpenAI's $852 billion valuation. Sequoia Capital, Dragoneer, Altimeter, and Greenoaks are each expected to contribute ~$2 billion as co-leads, with Peter Thiel's Founders Fund and General Catalyst also participating. The round would represent an extraordinary escalation from Anthropic's $61.5 billion valuation in March 2025, $183 billion in September, and $380 billion in February 2026 — a nearly 15x increase in 14 months — and arrives as the company simultaneously manages a dangerous unreleased model, an ongoing Pentagon lawsuit, a Gates Foundation global health partnership, and the Karpathy hire."
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation"
