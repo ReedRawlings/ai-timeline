@@ -1,0 +1,124 @@
+# AI Timeline Event Proposals — 2026-03-21 through 2026-06-01
+# Generated: 2026-06-01 | Method: find-ai-events-criteria
+
+# ── REGULATORY / LEGAL LANDMARKS ─────────────────────────────────────────────
+
+- title: "New York RAISE Act Finalized — Frontier AI Transparency Law"
+  date: "2026-03-27T09:00:00-04:00"
+  description: "New York Governor Kathy Hochul signed the chapter amendment that finalized the Responsible AI Safety and Education (RAISE) Act, making New York the first U.S. state to require frontier AI developers to publish safety protocols and report incidents to the state within 72 hours. The law, which takes effect January 1, 2027, creates an oversight office within the Department of Financial Services and applies a two-tiered compliance framework for the largest model developers. The final text shifted from the original liability-heavy draft to a transparency-and-reporting approach after months of negotiation with the governor's office."
+  tags: ["Policy"]
+  impact_areas: ["Regulation"]
+  link: "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models"
+
+- title: "OpenAI Closes $122B Round at $852B Valuation"
+  date: "2026-03-31T09:00:00-07:00"
+  description: "OpenAI closed its oversubscribed funding round at $122 billion — $12 billion above the original $110 billion target — after extending participation to individual retail investors through bank channels for the first time, raising an additional $3 billion. The post-money valuation reached $852 billion, more than doubling the $500 billion valuation from October 2025. Amazon anchored the round at $50 billion (with $35 billion contingent on an IPO or AGI milestone), Nvidia at $30 billion, and SoftBank at $30 billion. The round set a new record for the largest private financing deal in Silicon Valley history."
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI", "Amazon", "NVIDIA", "SoftBank"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://openai.com/index/accelerating-the-next-phase-ai/"
+
+- title: "Oracle Cuts 30,000 Jobs to Fund AI Infrastructure"
+  date: "2026-03-31T06:00:00-07:00"
+  description: "Oracle began executing what analysts called the largest layoff in its history on March 31, sending termination emails to roughly 30,000 employees — approximately 18% of its 162,000-person workforce — at 6 a.m. local time across multiple countries with no prior warning. TD Cowen estimated the cuts would free $8–10 billion annually to support Oracle's $156 billion AI infrastructure buildout, with Revenue and Health Sciences and SaaS/Virtual Operations Services divisions losing roughly 30% of staff each. The move was notable because Oracle was profitable at the time of the cuts, reporting $3.7 billion in Q3 GAAP net income (up 27% year over year), making this one of the clearest examples yet of profitable companies restructuring explicitly for AI capital allocation."
+  tags: ["Economic", "Corporate"]
+  organizations: ["Oracle"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://thenextweb.com/news/oracle-layoffs-march-2026"
+
+- title: "Meta Launches Llama 4 Scout and Maverick — First Open-Weight Native Multimodal MoE"
+  date: "2026-04-05T09:00:00-07:00"
+  description: "Meta released Llama 4 Scout and Maverick, the first open-weight natively multimodal mixture-of-experts models in the Llama family. Scout (16 experts, 109B total parameters) set a new open-source record with a 10 million token context window — double any prior open model — while Maverick (128 experts, 400B total parameters) achieved an LMArena ELO of 1,417, outscoring proprietary models costing orders of magnitude more to run. Both models are available under the Llama 4 Community License on Hugging Face. The release marked the first time a top-tier open-weight model matched closed-weight frontier performance on multimodal benchmarks, and Scout's 10M context window remains the largest ever offered by any open or closed model."
+  tags: ["Model", "Research"]
+  organizations: ["Meta"]
+  models: ["Llama 4 Scout", "Llama 4 Maverick"]
+  impact_areas: ["Language Models", "Multimodal AI", "Open Source", "Market Competition"]
+  link: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+
+- title: "Anthropic Announces Claude Mythos — First Model Withheld for Offensive Cyber Risk"
+  date: "2026-04-07T09:00:00-07:00"
+  description: "Anthropic announced Claude Mythos Preview, a model restricted to roughly 50 vetted organizations through its invitation-only Project Glasswing program — and explicitly withheld from general release because of its autonomous offensive cybersecurity capabilities. Mythos Preview autonomously discovered thousands of zero-day vulnerabilities including a 27-year-old OpenBSD TCP SACK remote code execution bug and a 17-year-old FreeBSD NFS RCE (CVE-2026-4747), finding flaws in every major operating system and browser it was pointed at. Anthropic said Mythos-class models had surpassed all but the most skilled humans at finding and exploiting software vulnerabilities, making it the first publicly disclosed case of a major AI lab holding back a frontier model specifically because its offensive capabilities were deemed too dangerous for broad access."
+  tags: ["Safety", "Model", "Research"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Language Models", "Ethics", "Regulation"]
+  link: "https://red.anthropic.com/2026/mythos-preview/"
+
+- title: "Molotov Cocktail Thrown at Sam Altman's Home — AI Backlash Turns Violent"
+  date: "2026-04-10T04:00:00-07:00"
+  description: "A 20-year-old man named Daniel Moreno-Gama traveled from Texas to San Francisco and threw a Molotov cocktail at OpenAI CEO Sam Altman's home at approximately 4 a.m., setting an exterior gate on fire before fleeing on foot. Moreno-Gama was arrested within hours; a document found on him described 'views opposed to Artificial Intelligence and the executives of various AI companies,' citing AI's purported risk to humanity. He was charged with attempted murder. Altman shared a photo of his husband and young child the next morning, writing 'I am sharing a photo in the hopes that it might dissuade the next person.' In younger corners of the internet — Instagram, TikTok comment sections — the response broadly ran in the direction of support for the attacker, echoing the reaction to the killing of UnitedHealthCare CEO Brian Thompson months earlier. A Gallup poll released the same week found that while more than half of Gen Z used AI regularly, less than a fifth felt hopeful about the technology and roughly a third said it made them angry."
+  tags: ["Social"]
+  organizations: ["OpenAI"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Public Perception"]
+  link: "https://www.cnbc.com/2026/04/10/sam-altman-house-hit-with-molotov-cocktail-openai-office-threatened.html"
+
+- title: "Claude Opus 4.7 Ships With Mandatory Cybersecurity Verification Program"
+  date: "2026-04-16T09:00:00-07:00"
+  description: "Anthropic released Claude Opus 4.7 alongside a new Cyber Verification Program — the first time a major AI lab shipped a model with gated cybersecurity access requiring professional identity verification for security researchers. The model itself improved substantially on advanced software engineering tasks and added higher-resolution vision, but the policy change was the structural novelty: security professionals must now enroll and be approved before using Opus 4.7 for penetration testing or vulnerability research, a direct response to Anthropic's growing concern about dual-use harms illustrated by Mythos Preview. Anthropic explicitly acknowledged that Opus 4.7 trailed the withheld Mythos in absolute capability."
+  tags: ["Model", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.7"]
+  impact_areas: ["Language Models", "Ethics", "Regulation"]
+  link: "https://www.anthropic.com/news/claude-opus-4-7"
+
+- title: "GPT-5.5 Released — 88.7% SWE-Bench, Fastest Frontier Iteration Yet"
+  date: "2026-04-23T09:00:00-07:00"
+  description: "OpenAI released GPT-5.5 just six weeks after GPT-5.4, the shortest gap between major frontier releases in OpenAI history and a signal of how intensely the frontier model race had accelerated. GPT-5.5 achieved 88.7% on SWE-Bench Verified, the highest score of any publicly released model at that date, and was positioned as the foundation for a planned ChatGPT-Codex-Atlas 'super app' merge. The model became available in the API at $5/M input and $30/M output tokens with a 1M context window. GPT-5.5 Pro launched simultaneously for API access at $30/M input and $180/M output."
+  tags: ["Model", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Market Competition", "Enterprise AI"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+
+- title: "DeepSeek V4 Pro Launches at 75% Below Western Frontier Pricing"
+  date: "2026-04-24T09:00:00+08:00"
+  description: "DeepSeek launched V4-Pro on April 24 with an introductory price of $0.435/M input and $0.87/M output — a 75% discount from its list rate and approximately 11.5x cheaper than GPT-5.5 on input and 34.5x cheaper on output. The model launched days after GPT-5.5 and immediately prompted comparisons showing V4-Pro matching or approaching frontier performance on coding and reasoning benchmarks at a fraction of the cost. On May 22, DeepSeek announced the 75% discount would be made permanent, cementing V4-Pro as the lowest-priced competitive frontier model by a wide margin and forcing the question of how Western labs with substantially higher inference costs could sustain premium pricing."
+  tags: ["Model", "Economic"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4-Pro"]
+  impact_areas: ["Market Competition", "Language Models"]
+  link: "https://www.engadget.com/2180062/deepseek-permanently-reduces-the-price-of-its-flagship-v4-model-by-75-percent/"
+
+- title: "Colorado AI Antidiscrimination Law Stayed by Federal Court"
+  date: "2026-04-27T09:00:00-06:00"
+  description: "A federal magistrate judge stayed enforcement of Colorado's first-in-nation AI antidiscrimination law on April 27, 2026, three days after the Colorado Attorney General joined plaintiffs in a joint motion stipulating to the stay. The law — originally set to become the first state law imposing discrimination liability on algorithmic decision-making systems — was subsequently replaced when Colorado lawmakers passed SB 26-189, which repealed and reenacted the statute, replacing the 'high-risk AI system' structure with a narrower framework for 'automated decision-making technology.' The episode illustrated the difficulty of state-level AI regulation surviving federal constitutional scrutiny and accelerated the White House's push for federal preemption."
+  tags: ["Policy"]
+  impact_areas: ["Regulation", "Ethics"]
+  link: "https://www.lawandtheworkplace.com/2026/05/major-developments-put-colorados-ai-law-on-ice-ahead-of-implementation/"
+
+- title: "White House Blocks Claude Mythos Expansion — First U.S. Government AI Rollout Restriction"
+  date: "2026-04-29T09:00:00-04:00"
+  description: "The Trump White House rejected Anthropic's request to expand Claude Mythos Preview access from roughly 50 vetted organizations to 120, communicating the decision informally through an administration official cited by the Wall Street Journal. The stated reasons were national security concerns and a worry that widening clearances would increase the risk of a leak of Mythos's zero-day exploitation capabilities. Legal scholars and AI policy analysts quickly noted this was the first known case of the U.S. government restricting a commercial AI model rollout — with no statutory basis, no regulatory body, no formal process, and no appeals mechanism. The informal veto triggered debate about whether the U.S. had quietly created a de facto AI licensing regime and accelerated discussions about a formal executive order establishing pre-release government review of frontier models."
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos"]
+  key_figures: ["Dario Amodei"]
+  impact_areas: ["Regulation", "Ethics", "Market Competition"]
+  link: "https://www.mindstudio.ai/blog/white-house-blocks-claude-mythos-expansion-first-us-government-ai-restriction"
+
+- title: "Google I/O 2026: Gemini 3.5 Flash Launches, AI Search Hits 1 Billion Monthly Users"
+  date: "2026-05-19T09:00:00-07:00"
+  description: "At Google I/O 2026, Google launched Gemini 3.5 Flash — a model that outperforms Gemini 3.1 Pro on coding and agentic benchmarks at four times the speed, priced at $1.50/$9 per 1M tokens. Sundar Pichai announced that Google's AI Mode in Search had surpassed 1 billion monthly active users, making it the fastest Google product to reach that milestone and framing the shift from search-as-queries to search-as-agent as effectively complete. Google also announced Antigravity 2.0, a standalone desktop app for AI agent development. Google simultaneously disclosed Gemini Omni Flash, a multimodal generation model that outputs video grounded in world knowledge, and confirmed Gemini 3.5 Pro — described as a frontier competitor to GPT-5.5 and Claude Opus 4.7 — was in testing and expected to launch in June."
+  tags: ["Model", "Product", "Corporate"]
+  organizations: ["Google"]
+  models: ["Gemini 3.5 Flash", "Gemini Omni Flash"]
+  key_figures: ["Sundar Pichai"]
+  impact_areas: ["Language Models", "Multimodal AI", "Market Competition", "Enterprise AI"]
+  link: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+
+- title: "White House AI Pre-Release Vetting Executive Order Delayed After Trump Objects"
+  date: "2026-05-21T09:00:00-04:00"
+  description: "President Trump delayed signing an executive order establishing a voluntary framework for government pre-release access to frontier AI models, reportedly saying he 'didn't like certain aspects' of the draft hours before the planned signing ceremony on May 21. The draft order would have asked AI labs to voluntarily share advanced models with the government up to 90 days before public release so agencies could test for dangerous capabilities — a direct response to Claude Mythos Preview. The postponement, which came after the order had already been delayed multiple times, reflected internal White House disagreement between national security hawks who wanted mandatory review and innovation advocates who viewed any vetting process as potentially chilling competition with China. The episode confirmed that the informal veto of Claude Mythos had no formal architecture behind it."
+  tags: ["Policy"]
+  impact_areas: ["Regulation", "Market Competition"]
+  link: "https://www.axios.com/2026/05/20/ai-trump-executive-order-white-house-infighting"
+
+- title: "Meta Cuts 8,000 Jobs Explicitly to Fund $145B AI Infrastructure Buildout"
+  date: "2026-05-20T09:00:00-07:00"
+  description: "Meta began notifying approximately 8,000 employees — roughly 10% of its global workforce — that they were being laid off on May 20, while simultaneously announcing that 7,000 other employees would be reassigned to newly created AI-focused teams including Applied AI Engineering, Agent Transformation Accelerator XFN, and Central Analytics. Meta also cancelled 6,000 open requisitions, bringing the effective headcount reduction to 14,000 positions. The restructuring was framed as structural rather than performance-based and was explicitly tied to Meta's commitment to spend $115–145 billion on AI infrastructure in 2026. The announcement came alongside a quarterly earnings release showing record $56 billion in quarterly revenue, making Meta one of the most visible examples of a profitable company cutting workers not from financial distress but from capital allocation decisions — a pattern that analysts said defined 2026 as the year AI moved from product strategy to labor strategy."
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta"]
+  key_figures: ["Mark Zuckerberg"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Public Perception"]
+  link: "https://thenextweb.com/news/meta-layoffs-8000-zuckerberg-ai-reality-may-2026"
