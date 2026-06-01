@@ -1,0 +1,98 @@
+- title: "Sanders and AOC Introduce AI Data Center Moratorium Act"
+  date: "2026-03-25T10:00:00-05:00"
+  description: "Senator Bernie Sanders and Rep. Alexandria Ocasio-Cortez introduced the Artificial Intelligence Data Center Moratorium Act, calling for a nationwide halt on new AI data center construction until federal safeguards for workers, the environment, and civil rights are enacted. The bill is unlikely to pass in either chamber but galvanized progressive political opposition to unchecked AI infrastructure expansion and generated significant national coverage, marking a new phase of congressional pushback on AI's physical footprint."
+  tags: ["Policy", "Social"]
+  organizations: ["US Congress"]
+  key_figures: ["Bernie Sanders", "Alexandria Ocasio-Cortez"]
+  impact_areas: ["Regulation", "Public Perception"]
+  link: "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/"
+
+- title: "New York Governor Signs RAISE Act — First Frontier AI Safety Law in the US"
+  date: "2026-03-27T10:00:00-05:00"
+  description: "New York Governor Kathy Hochul signed the final chapter-amended version of the Responsible AI Safety and Education (RAISE) Act, the first state law in the US to impose specific safety and transparency obligations on frontier AI model developers. The law requires frontier developers operating in New York to establish and publish safety protocols, grants rulemaking authority to a new office within the state's Department of Financial Services, and authorizes the attorney general to levy civil penalties up to $3 million per violation. The law takes effect January 1, 2027."
+  tags: ["Policy", "Safety"]
+  organizations: ["New York State"]
+  key_figures: ["Kathy Hochul"]
+  impact_areas: ["Regulation", "Language Models"]
+  link: "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models"
+
+- title: "Anthropic Claude Code Source Code Accidentally Leaked via npm Source Map"
+  date: "2026-03-31T09:00:00-07:00"
+  description: "Security researcher Chaofan Shou discovered that Anthropic's Claude Code CLI had accidentally shipped its entire 512,000-line TypeScript source to the public npm registry via a misconfigured source map file in version 2.1.88. The codebase was mirrored across GitHub and analyzed by thousands of developers within hours, exposing internal analytics systems, engineering culture details, and random identifiers filtered to exclude profanity. Anthropic confirmed the incident as 'a release packaging issue caused by human error, not a security breach' and pulled the package. A separate unrelated supply-chain attack on the axios npm package—a Claude Code dependency—occurred on the same day."
+  tags: ["Technical", "Social"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Public Perception", "Open Source"]
+  link: "https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know"
+
+- title: "Goldman Sachs Reports AI Is Displacing 16,000 US Jobs Per Month"
+  date: "2026-04-06T09:00:00-05:00"
+  description: "Goldman Sachs Global Investment Research published the first major Wall Street analysis to isolate AI's net contribution to US job displacement from broader macroeconomic factors, estimating automation was eliminating approximately 16,000 net jobs per month — 25,000 displaced minus 9,000 created through augmentation. The report identified Gen Z workers as disproportionately affected, concentrated in white-collar routine roles most exposed to AI substitution, and projected monthly displacement to rise to 22,000–28,000 by Q4 2026 as multimodal agents move from pilot to full-scale enterprise deployment."
+  tags: ["Economic", "Social"]
+  organizations: ["Goldman Sachs"]
+  impact_areas: ["Public Perception", "Enterprise AI"]
+  link: "https://fortune.com/2026/04/06/ai-tech-displacement-effect-gen-z-16000-jobs-per-month/"
+
+- title: "Anthropic Announces Mythos Preview — First Frontier Model Withheld as Too Dangerous to Deploy"
+  date: "2026-04-07T09:00:00-07:00"
+  description: "Anthropic announced Claude Mythos Preview, marking the first time a major AI lab publicly withheld a completed frontier model from general release on safety grounds. Mythos demonstrated the ability to autonomously identify and generate working exploits for thousands of zero-day vulnerabilities across every major operating system and web browser — achieving a 73% success rate on expert-level hacking tasks per the UK AI Security Institute. Rather than a public launch, Anthropic launched Project Glasswing, providing controlled access to over 40 critical infrastructure organizations including Microsoft, Google, Apple, AWS, JPMorgan Chase, and Nvidia for defensive cybersecurity use."
+  tags: ["Safety", "Model", "Corporate"]
+  organizations: ["Anthropic", "Microsoft", "Google", "Apple", "Amazon", "JPMorgan Chase", "Nvidia"]
+  models: ["Claude Mythos Preview"]
+  key_figures: ["Dario Amodei"]
+  impact_areas: ["Regulation", "Ethics", "Language Models"]
+  link: "https://red.anthropic.com/2026/mythos-preview/"
+
+- title: "Meta Launches Muse Spark — First Proprietary Model, Reversing Open-Source-First Strategy"
+  date: "2026-04-08T09:00:00-07:00"
+  description: "Meta released Muse Spark through the newly formed Meta Superintelligence Labs, the company's first proprietary large language model — a structural reversal of the open-source-first strategy embodied by the Llama family. Muse Spark is a natively multimodal reasoning model with tool use, visual chain-of-thought reasoning, and multi-agent orchestration. Meta cited improved training techniques enabling near-flagship capability at 'an order of magnitude less compute' as the rationale, while offering only vague commitments to open-source future versions. The model began powering the Meta AI app and was slated to roll out across WhatsApp, Instagram, Facebook, and Messenger."
+  tags: ["Model", "Corporate", "Product"]
+  organizations: ["Meta"]
+  models: ["Muse Spark"]
+  key_figures: ["Mark Zuckerberg", "Alexandr Wang"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+
+- title: "DeepSeek Ships V4 — 1.6 Trillion Parameters, MIT License, Open Weights"
+  date: "2026-04-24T09:00:00+08:00"
+  description: "DeepSeek released DeepSeek V4-Pro (1.6 trillion parameters, 49 billion activated) and V4-Flash (284 billion parameters, 13 billion activated) under the MIT license as open weights, delivering near-frontier capabilities at a fraction of US lab pricing. Both models support a 1-million-token context window and feature a hybrid Compressed Sparse Attention architecture for efficient long-context handling. The release again reset market expectations for AI compute economics, as Chinese open-weight models continued to close the capability gap with closed Western frontier systems, extending DeepSeek's earlier pattern of structural pricing disruption."
+  tags: ["Model", "Technical", "Economic"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4-Pro", "DeepSeek V4-Flash"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://api-docs.deepseek.com/news/news260424"
+
+- title: "All Major US Frontier Labs Now Subject to Government Pre-Release AI Testing"
+  date: "2026-05-05T09:00:00-05:00"
+  description: "The Center for AI Standards and Innovation (CAISI) signed new pre-release testing agreements with Google DeepMind, Microsoft, and xAI, completing a framework in which every major US frontier AI lab now provides federal evaluators early model access before public launch. The agreements give government reviewers independent capability and national-security assessments not reliant on labs' own characterizations. The arrangement was catalyzed by the Mythos cybersecurity episode the prior month pushing the White House to formalize a review process. CAISI had already run over 40 evaluations, including on unreleased models."
+  tags: ["Policy", "Safety"]
+  organizations: ["Anthropic", "OpenAI", "Google", "Microsoft", "xAI", "US Department of Commerce"]
+  impact_areas: ["Regulation", "Language Models"]
+  link: "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html"
+
+- title: "Google I/O 2026: Gemini Declared the Layer for Every Google Product"
+  date: "2026-05-19T10:00:00-07:00"
+  description: "At Google I/O 2026, Sundar Pichai announced that Gemini would stop being a standalone product and instead underpin every Google surface — Android, Chrome, Search, Workspace, and YouTube — the most explicit declaration by a major platform company of AI as foundational infrastructure. New launches included Gemini 3.5 Flash (outperforming Gemini 3.1 Pro on benchmarks at Flash latency), Gemini Omni (native video generation grounded in real-world knowledge), Ask YouTube (conversational AI search across YouTube), Managed Agents, and the Antigravity 2.0 agentic desktop platform. Google made over 100 AI-related announcements across the event."
+  tags: ["Product", "Model", "Corporate"]
+  organizations: ["Google"]
+  models: ["Gemini 3.5 Flash", "Gemini Omni"]
+  key_figures: ["Sundar Pichai"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI"]
+  link: "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+
+- title: "OpenAI Confidentially Files S-1 IPO Prospectus at Up to $1 Trillion Valuation"
+  date: "2026-05-20T09:00:00-05:00"
+  description: "OpenAI confidentially filed its S-1 IPO prospectus with the SEC, targeting a public listing as early as September 2026 at a valuation of $852 billion to $1 trillion, with Goldman Sachs and Morgan Stanley leading the deal. If priced at the high end, the offering would rank as the largest technology IPO in history. The filing came one week after Google I/O 2026 and as Anthropic closed a rival mega-round, setting up a public-market narrative battle between the two leading AI labs."
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI", "Goldman Sachs", "Morgan Stanley"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Market Competition"]
+  link: "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html"
+
+- title: "Anthropic Raises $65B at $965B Valuation, Overtakes OpenAI as Most Valuable AI Startup"
+  date: "2026-05-28T09:00:00-07:00"
+  description: "Anthropic closed a $65 billion Series H round at a $965 billion post-money valuation, overtaking OpenAI as the world's most valuable private AI company. Led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, with $15 billion of previously committed capital including $5 billion from Amazon, the round nearly tripled Anthropic's $380 billion February valuation. Anthropic's annualized revenue had reached $47 billion run-rate at the time of the close, reflecting explosive enterprise adoption of Claude. The round came just eight days after OpenAI's confidential IPO filing."
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic", "Altimeter Capital", "Sequoia Capital", "Amazon", "Dragoneer"]
+  key_figures: ["Dario Amodei"]
+  impact_areas: ["Market Competition"]
+  link: "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html"
