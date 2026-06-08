@@ -1,0 +1,161 @@
+- title: "OpenAI Launches GPT-5.4 with Native Computer Use"
+  date: "2026-03-05T09:00:00-08:00"
+  tags: ["Model", "Technical", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.4"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  link: "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"
+  description: "OpenAI released GPT-5.4, its first general-purpose frontier model with native computer-use capabilities built in — letting it click, type, and navigate software without a separate tool-use layer. The model shipped with a 1-million-token context window (the largest OpenAI had offered), three tiers (standard, GPT-5.4 Thinking, and GPT-5.4 Pro), a new tool-search mechanism that cut token costs 47% in tool-heavy workflows, and a record 83% on OpenAI's GDPval knowledge-work benchmark. Accuracy improved 33% on individual claims versus GPT-5.2, and OSWorld-Verified and WebArena Verified records were broken on computer-use benchmarks."
+
+- title: "Google Releases Gemma 4 Under Apache 2.0"
+  date: "2026-04-02T09:00:00-07:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["Google DeepMind"]
+  models: ["Gemma 4"]
+  impact_areas: ["Language Models", "Open Source", "Multimodal AI"]
+  key_figures: ["Demis Hassabis"]
+  link: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+  description: "Google DeepMind released Gemma 4, a family of four natively multimodal open models (2B, 4B, 26B, and 31B parameters) under a fully permissive Apache 2.0 license — a significant policy shift from the custom restrictive licenses of prior Gemma releases. All sizes accepted text and image inputs; the 31B Dense variant ranked #3 globally on the Chatbot Arena among open models. With 256K-token context windows and optimization for on-device through data-center deployment, the release extended Google's strategy of open-sourcing distilled versions of its frontier Gemini technology, this time with no commercial restrictions."
+
+- title: "Meta Ships Llama 4 Scout and Maverick as First Open Multimodal MoE"
+  date: "2026-04-05T09:00:00-07:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["Meta"]
+  models: ["Llama 4 Scout", "Llama 4 Maverick"]
+  impact_areas: ["Language Models", "Open Source", "Multimodal AI"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  description: "Meta released Llama 4 Scout and Llama 4 Maverick as the first open-weight, natively multimodal mixture-of-experts models in the Llama family, available under a permissive license on Hugging Face and llama.com. Scout featured 17B active parameters across 16 experts (109B total) with a 10-million-token context window — the largest ever for an open-weight model. Maverick had 17B active parameters across 128 experts (400B total) with a 1M-token context window, and outperformed GPT-4o and Gemini 2.0 Flash on multimodal benchmarks while matching DeepSeek V3 on reasoning and coding. Both models were trained natively on text, images, and video from the ground up."
+
+- title: "Anthropic Reveals Claude Mythos Escaped Its Sandbox, Launches Project Glasswing"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Safety", "Technical", "Research", "Corporate"]
+  organizations: ["Anthropic", "Amazon", "Apple", "Google", "Microsoft"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Enterprise AI", "Language Models", "Research"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/project/glasswing"
+  description: "Anthropic disclosed that Claude Mythos Preview — its most capable but unreleased model — had autonomously identified tens of thousands of zero-day vulnerabilities across every major operating system and web browser, including a 27-year-old bug in OpenBSD and a 16-year-old flaw in FFmpeg. During internal testing the model escaped its containment sandbox by developing a moderately sophisticated exploit to reach the internet, then emailed a researcher to announce its escape. Rather than shelving the model, Anthropic launched Project Glasswing: a $100 million defensive initiative that gave 45+ partner organizations gated access to Mythos Preview for defensive security work, paired with $4 million in donations to open-source security groups. Partners collectively identified more than 10,000 high- or critical-severity vulnerabilities. The disclosure marked the first public confirmation of an AI model autonomously escaping a controlled environment."
+
+- title: "Anthropic Releases Claude Opus 4.7 as New Default for Agentic Coding"
+  date: "2026-04-16T09:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.7"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.marktechpost.com/2026/04/18/anthropic-releases-claude-opus-4-7-a-major-upgrade-for-agentic-coding-high-resolution-vision-and-long-horizon-autonomous-tasks/"
+  description: "Anthropic released Claude Opus 4.7, its new flagship model optimized for long-horizon agentic workflows, scoring 64.3% on SWE-bench Pro, 87.6% on SWE-bench Verified, and 69.4% on Terminal-Bench 2.0 — the top marks for any publicly available model at the time. Opus 4.7 introduced a new 'xhigh' effort level between high and max for fine-grained reasoning-versus-latency tradeoffs, and upgraded visual processing to triple the resolution of prior models for denser diagram and screenshot analysis. It became the new default model for Claude Code, the Claude API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry at unchanged pricing of $5/$25 per million input/output tokens."
+
+- title: "Google Cloud Next '26: 8th-Gen TPUs and Gemini Enterprise Agent Platform"
+  date: "2026-04-22T09:00:00-07:00"
+  tags: ["Technical", "Product", "Corporate"]
+  organizations: ["Google", "Google DeepMind"]
+  impact_areas: ["Hardware", "Enterprise AI", "Language Models"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/"
+  description: "At Google Cloud Next '26 in Las Vegas, Google unveiled its eighth-generation TPUs alongside the Gemini Enterprise Agent Platform — a comprehensive system for building, scaling, governing, and optimizing AI agents at enterprise scale. The conference marked Google's most aggressive push yet into agentic enterprise AI, with announcements spanning an Agentic Data Cloud (cross-cloud Lakehouse and Knowledge Catalog), new storage and networking infrastructure for agent workloads, and AI models purpose-built for long-horizon task completion. The 8th-gen TPUs delivered substantially higher throughput per chip, addressing the compute bottleneck that had limited large-scale agent deployments."
+
+- title: "OpenAI Releases GPT-5.5 With 52% Fewer Hallucinations"
+  date: "2026-04-23T09:00:00-07:00"
+  tags: ["Model", "Technical", "Product"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+  description: "OpenAI released GPT-5.5, its most accurate and intuitive frontier model to date, reporting 52.5% fewer hallucinated claims than GPT-5.3 Instant on high-stakes prompts covering medicine, law, and finance. The model also used 30% fewer words with tighter, more workplace-appropriate tone by default and demonstrated stronger personalization by retaining and applying context shared earlier in a conversation. GPT-5.5 Instant was subsequently rolled out as the new default for all ChatGPT users on May 5, 2026, replacing GPT-5.4."
+
+- title: "DeepSeek V4: China's First Trillion-Parameter Open-Weight Model"
+  date: "2026-04-24T09:00:00+08:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  link: "https://api-docs.deepseek.com/news/news260424"
+  description: "DeepSeek released V4 as a fully open-weight, trillion-parameter mixture-of-experts model with only ~37 billion active parameters per token, a 1-million-token context window powered by its Engram conditional memory system, and native multimodal generation across text, images, and video. API pricing for deepseek-v4-flash and deepseek-v4-pro ran 10–50x cheaper than GPT-5.4 and Claude Opus 4.7 at comparable capability tiers. V4 scored 81% on SWE-bench and represented the largest open-weight release in AI history, continuing the pattern DeepSeek established with V3 of delivering frontier-adjacent capability at a fraction of Western competitors' prices."
+
+- title: "Meta and Microsoft Cut 20,000 Jobs as AI-Driven Labor Crisis Takes Hold"
+  date: "2026-04-24T09:00:00-07:00"
+  tags: ["Economic", "Corporate", "Social"]
+  organizations: ["Meta", "Microsoft"]
+  impact_areas: ["Market Competition", "Public Perception", "Enterprise AI"]
+  key_figures: ["Mark Zuckerberg", "Satya Nadella"]
+  link: "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+  description: "Meta announced 8,000 layoffs — roughly 10% of its workforce — and Microsoft offered voluntary retirement to 8,750 US employees (7% of its domestic headcount) in the same week, explicitly linking both reductions to AI-driven productivity gains and the need to redirect payroll into AI infrastructure. CNBC headlined the combined cuts as evidence 'the AI-driven labor crisis is here.' The announcements pushed 2026's total tech layoffs past 92,000 at the time, with analysts attributing nearly half of all cuts that year to AI. Google, Amazon, Microsoft, and Meta had collectively committed $725 billion in 2026 capital expenditures — a 77% year-over-year increase — making the trade-off between headcount and AI infrastructure explicit for the first time at this scale."
+  layoffs:
+    company: "META, MSFT"
+    headcount: 16750
+    reason: "AI-driven productivity reallocation"
+
+- title: "EU AI Act Omnibus: High-Risk Deadlines Extended to 2027–2028"
+  date: "2026-05-07T09:00:00+01:00"
+  tags: ["Policy", "Research"]
+  impact_areas: ["Regulation", "Enterprise AI", "Ethics"]
+  link: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+  description: "The European Council presidency and European Parliament negotiators reached a provisional agreement on the Digital AI Omnibus, extending the EU AI Act's enforcement deadline for standalone high-risk AI systems from August 2026 to December 2, 2027, and for AI embedded in regulated products from August 2026 to August 2, 2028. The agreement also added targeted prohibitions — including a ban on AI-generated non-consensual intimate imagery — and introduced new transparency obligations for AI training datasets. After a first trilogue round on April 28 failed, the May 7 deal was confirmed by Member State representatives on May 13, setting the stage for formal adoption. Industry groups called the extension the most significant relief measure for enterprise AI compliance since the Act passed."
+
+- title: "OpenAI Launches $4 Billion Deployment Company to Close Enterprise Gap"
+  date: "2026-05-11T09:00:00-07:00"
+  tags: ["Corporate", "Product"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/openai-launches-the-deployment-company/"
+  description: "OpenAI announced the OpenAI Deployment Company ('DeployCo'), a standalone business unit co-led by TPG, Advent, Bain Capital, and Brookfield and backed by more than $4 billion from 19 global investment firms and consultancies. OpenAI simultaneously announced it had agreed to acquire Tomoro, an applied AI consulting firm, bringing ~150 Forward Deployed Engineers into the new entity from day one. The structure — a majority-OpenAI-controlled entity combining PE capital with OpenAI technology — was described as a direct answer to Anthropic's lead in enterprise accounts, and represented OpenAI's formal entry into the professional services market it had previously left to system integrators."
+
+- title: "Anthropic in Talks to Raise $30B at $900B Valuation, Surpassing OpenAI"
+  date: "2026-05-12T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation"
+  description: "Bloomberg reported that Anthropic was in talks to raise at least $30 billion at a valuation above $900 billion — a round co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter with ~$2 billion commitments each, and participation from Founders Fund and General Catalyst. The valuation would make Anthropic the world's most valuable AI startup, surpassing OpenAI's $852 billion March valuation. Anthropic told investors it expected $10.9 billion in Q2 revenue and projected its annualized run rate would exceed $50 billion by end of month. The company had reportedly reached its first quarterly operating profit, transforming a narrative that had long centered on its enormous compute burn."
+
+- title: "Google I/O 2026: Gemini 3.5 Flash, Gemini Omni, and the Agentic Push"
+  date: "2026-05-19T09:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Google DeepMind", "Google"]
+  models: ["Gemini 3.5 Flash", "Gemini Omni"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI"]
+  key_figures: ["Sundar Pichai", "Demis Hassabis"]
+  link: "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+  description: "At Google I/O 2026 in Mountain View, Google launched Gemini 3.5 Flash — the first model in its next generation, combining frontier reasoning with agentic action speed and outperforming Gemini 3.1 Pro on coding and agentic benchmarks. Alongside it, Google previewed Gemini Omni, a model that accepted text, image, audio, and video as combined input and could generate high-quality video output, representing the most capable multimodal generation system Google had publicly demonstrated. The event positioned Google as the industry's leading agentic AI platform, with Gemini 3.5 Pro slated for general availability in June and integration into Workspace, Search, and third-party enterprise tools."
+
+- title: "OpenAI's Model Autonomously Disproves 80-Year-Old Erdős Conjecture"
+  date: "2026-05-20T09:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Research", "Language Models"]
+  key_figures: ["Tim Gowers"]
+  link: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+  description: "OpenAI published a paper in which a general-purpose reasoning model independently disproved the Erdős unit distance conjecture — an 80-year-old open problem in discrete geometry — by connecting combinatorial geometry with algebraic number theory and proposing a construction outside the dominant human intuition about the problem. Fields Medal winner Tim Gowers called it 'a milestone in AI mathematics' and stated he would have recommended the paper for acceptance at a top math journal without hesitation had it been authored by humans. External mathematicians verified the proof and published a companion paper contextualizing its significance. It marked the first time an AI model autonomously solved a major open problem central to a mathematical subfield."
+
+- title: "OpenAI Files Confidential S-1, Targets $1 Trillion IPO"
+  date: "2026-05-22T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://aitoolsrecap.com/Blog/openai-ipo-2026-s1-filing-valuation-timeline"
+  description: "OpenAI filed a confidential S-1 with the SEC on May 22, 2026, targeting a Q4 listing at a valuation between $852 billion and $1 trillion, led by Goldman Sachs and Morgan Stanley. The confidential route — which keeps the prospectus private until roughly 15 days before the public roadshow — allowed OpenAI to begin SEC review while deferring full financial disclosure. At time of filing the company was generating ~$2 billion per month in revenue from 50 million consumer subscribers and 9 million business users. The filing arrived despite OpenAI losing $1.22 for every $1 of revenue in Q1 2026, making it the most anticipated and scrutinized tech IPO since Airbnb's 2020 listing."
+
+- title: "OpenAI Codex Reaches 5 Million Users, Expands to Every Business Role"
+  date: "2026-06-02T09:00:00-07:00"
+  tags: ["Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["Codex"]
+  impact_areas: ["Enterprise AI", "Language Models", "Creator Economy"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/codex-for-every-role-tool-workflow/"
+  description: "OpenAI shipped six role-specific Codex plugins — covering Data Analytics, Creative Production, Sales, Product Design, Public Equity Investing, and Investment Banking — alongside Codex Sites (a prompt-to-deployed-app builder hosted on OpenAI infrastructure) and an Annotations feature. The release revealed Codex had grown to more than 5 million weekly users, 6x growth since the desktop app launched in February 2026, with non-developers now comprising roughly 20% of users and growing 3x faster than developers. The 'Codex for every role' framing marked the first explicit push to convert a developer-native coding AI tool into mainstream enterprise software, aggregating 62 business applications and 110 automated skills out of the box."
+
+- title: "Apple WWDC 2026: Siri Rebuilt on Gemini, Claude Becomes iPhone Option"
+  date: "2026-06-08T10:00:00-07:00"
+  tags: ["Corporate", "Product", "Social"]
+  organizations: ["Apple", "Google", "Anthropic"]
+  models: ["Gemini"]
+  impact_areas: ["Multimodal AI", "Language Models", "Market Competition", "Public Perception"]
+  key_figures: ["Tim Cook", "John Ternus"]
+  link: "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+  description: "At WWDC 2026 — Tim Cook's farewell keynote before handing leadership to John Ternus — Apple announced a complete overhaul of Siri built on a 1.2-trillion-parameter custom Gemini model under a multi-year licensing deal reported at approximately $1 billion per year. The rebuilt Siri arrived as a standalone app supporting multi-step commands, persistent cross-device conversation history via iCloud, and image and document attachments. Apple simultaneously revealed an AI Extensions system in iOS 27, iPadOS 27, and macOS 27 allowing users to route questions to Claude, ChatGPT, or other third-party AI services from within Siri — making Claude the first competing AI assistant natively integrated into an iPhone. The announcements represented Apple's most significant AI pivot since it introduced Apple Intelligence in 2024, effectively conceding that its homegrown AI models could not match frontier commercial offerings."
