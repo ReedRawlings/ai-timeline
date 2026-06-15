@@ -1,0 +1,139 @@
+# AI Timeline Event Proposals — 2026-06-15
+# Coverage window: 2026-03-21 through 2026-06-15
+# Source: Broad web research via find-ai-events-broad skill
+
+- title: "EU Parliament Votes to Delay AI Act High-Risk Deadlines"
+  date: "2026-03-26T12:00:00+01:00"
+  tags: ["Policy"]
+  impact_areas: ["Regulation", "Enterprise AI", "Ethics"]
+  link: "https://www.cio.com/article/4150989/european-parliament-delays-implementation-of-parts-of-the-eu-ai-act.html"
+  description: "The European Parliament voted 569 to 45 to pass the EU AI Act Omnibus, which extended the compliance deadline for stand-alone high-risk AI systems from August 2, 2026 to December 2, 2027, and pushed AI systems embedded in regulated products to August 2, 2028 — a 16-month delay secured through the Digital Omnibus package. The extension followed sustained lobbying by industry groups who argued the original timeline was unachievable and risked pushing AI development outside the EU. It represented the first major rollback of the EU AI Act since its 2024 passage and signaled that even the most ambitious AI regulatory regime was bending under market pressure."
+
+- title: "Anthropic Wins First Amendment Ruling Against Pentagon Blacklisting"
+  date: "2026-03-26T09:00:00-08:00"
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.cnbc.com/2026/03/26/anthropic-pentagon-dod-claude-court-ruling.html"
+  description: "Federal Judge Rita Lin in San Francisco granted Anthropic a preliminary injunction blocking the Trump administration from enforcing the Pentagon's national security supply chain designation against the company, writing that 'punishing Anthropic for bringing public scrutiny to the government's contracting position is classic illegal First Amendment retaliation.' The ruling was the first time a federal court applied First Amendment protections to shield an AI company from executive branch retaliation over its published safety policies. Anthropic had refused Pentagon demands to allow Claude for use with lethal autonomous weapons and mass domestic surveillance; the DOD responded by designating it a national security threat — a designation historically reserved for foreign adversaries."
+
+- title: "Anthropic Launches Project Glasswing with Claude Mythos Preview"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Safety", "Product", "Partnership"]
+  organizations: ["Anthropic", "Amazon", "Microsoft", "Apple", "Google", "Nvidia", "CrowdStrike"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Enterprise AI", "Research"]
+  link: "https://www.hpcwire.com/aiwire/2026/04/09/anthropic-unveils-project-glasswing-as-claude-mythos-targets-software-vulnerabilities/"
+  description: "Anthropic announced Project Glasswing — a restricted program giving AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, the Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks access to Claude Mythos Preview, an unreleased AI model capable of autonomously discovering and chaining zero-day software exploits. The program was designed to use Mythos's vulnerability-finding capability for defense before the model, or a comparable system from another lab, became available to attackers. Anthropic withheld the model from the public due to misuse risk, representing the industry's first structured safety program in which a frontier AI capability is deliberately bottled for coordinated institutional deployment rather than general release."
+
+- title: "Appeals Court Reverses Anthropic Preliminary Injunction, Pentagon Blacklist Reinstated"
+  date: "2026-04-08T09:00:00-05:00"
+  tags: ["Policy", "Corporate"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei", "Pete Hegseth"]
+  link: "https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html"
+  description: "A federal appeals court in Washington, D.C., denied Anthropic's emergency motion to reinstate the preliminary injunction blocking the Pentagon's national security designation, allowing the DOD's supply chain risk classification to remain in effect while the case proceeds to a full merits hearing. The reversal meant Anthropic remained — alongside foreign adversaries — on the government's supply chain exclusion list, restricting its ability to win new federal contracts. The divided appellate panel signaled that the First Amendment retaliation question would need a full record to resolve, setting up a major test of whether the executive branch can use national security designations to punish AI companies for their published ethical policies."
+
+- title: "Meta Releases Llama 5 — 600 Billion Parameter Open-Weight Model with Recursive Self-Improvement"
+  date: "2026-04-08T10:00:00-07:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["Meta"]
+  models: ["Llama 5"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://markets.chroniclejournal.com/chroniclejournal/article/marketminute-2026-4-8-meta-unleashes-llama-5-zuckerbergs-open-source-gambit-challenges-proprietary-ai-dominance"
+  description: "Meta released Llama 5, a 600-billion-parameter open-weight model with a 5-million-token context window that matched or exceeded OpenAI's GPT-5.4 and Google's Gemini 3.1 Pro on major benchmarks — while being fully downloadable and locally runnable. The model introduced Recursive Self-Improvement (RSI), a training technique that enables the model to identify errors in its own chain-of-thought reasoning and self-correct without external feedback. The release continued Meta's strategy of maintaining open-weight parity with closed-source frontier models and represented the most capable openly available model at the time of release, intensifying the structural tension between open and closed AI development."
+
+- title: "OpenAI Releases GPT-5.5, First Fully Retrained Agentic Model"
+  date: "2026-04-23T10:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  link: "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/"
+  description: "OpenAI released GPT-5.5, its first fully retrained base model since GPT-4.5, designed as a unified agentic system that plans, executes, and self-checks multi-step computer work without handoff between specialized models. Scoring 82.7% on Terminal-Bench 2.0 and 84.9% on GDPval across 44 knowledge-work occupations, GPT-5.5 became the immediate top-ranked model on the Artificial Analysis Intelligence Index within 24 hours of release. Unlike prior GPT-5 variants that bolted agentic behavior onto an existing architecture, GPT-5.5 was trained end-to-end for long-horizon task completion — coding, online research, data analysis, software operation — as a single workflow, a structural shift that OpenAI said was the foundation for its planned 'super app' consolidation."
+
+- title: "DeepSeek V4 Preview Released — 1 Trillion Parameter MIT-Licensed Open-Source Model"
+  date: "2026-04-24T09:00:00+08:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition", "Research"]
+  link: "https://knightli.com/en/2026/04/24/deepseek-v4-preview-release/"
+  description: "DeepSeek shipped two production-ready variants — DeepSeek V4-Pro and V4-Flash — under the MIT license, making a 1-trillion-parameter mixture-of-experts model with 32–37 billion active parameters per token freely available for commercial use and local deployment. The model included a 1-million-token context window, native multimodal generation across text, image, video, and audio, and API pricing estimated at 10–50x cheaper than comparable US frontier models. Running on Huawei chips without access to Nvidia H100s, the release demonstrated that China's AI ecosystem had achieved parity with US frontier models despite sustained chip export controls — and that trillion-parameter capability was now accessible to anyone with consumer hardware."
+
+- title: "Google I/O 2026: Gemini 3.5 Flash, Gemini Omni, and Gemini Spark Launched"
+  date: "2026-05-19T10:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Google DeepMind", "Google"]
+  models: ["Gemini 3.5 Flash", "Gemini Omni", "Gemini Spark"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI", "Market Competition"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://9to5google.com/2026/05/19/google-io-2026-news/"
+  description: "At Google I/O 2026, Sundar Pichai announced three new Gemini models: Gemini 3.5 Flash — Google's primary frontier model, beating Gemini 3.1 Pro on coding, agentic, and multimodal benchmarks while running 4x faster — Gemini Omni, designed for cross-modal reasoning across text, image, audio, and video simultaneously, and Gemini Spark, a small on-device model. Google framed the conference as marking its entry into the 'agentic era,' with Gemini 3.5 built to execute complex multi-step workflows autonomously across apps. Google also announced a $100/month AI Ultra tier bundling the full Gemini suite, and introduced Gemini for Science, connecting agentic research tools to more than 30 major life-science databases."
+
+- title: "Anthropic's Project Glasswing Finds Over 10,000 Critical Software Vulnerabilities"
+  date: "2026-05-26T09:00:00-07:00"
+  tags: ["Safety", "Research", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Ethics", "Enterprise AI", "Research"]
+  link: "https://www.helpnetsecurity.com/2026/05/26/anthropic-project-glasswing-update/"
+  description: "Anthropic published its first major update on Project Glasswing, reporting that Claude Mythos Preview and its coalition of partners had identified more than 10,000 high- or critical-severity vulnerabilities in critical software systems since the program's April launch — a rate more than ten times faster than prior manual bug-finding efforts at the same organizations. The announcement confirmed that AI-driven vulnerability discovery had crossed a threshold where the speed and scale of autonomous bug-finding could outpace traditional human review cycles, forcing a re-evaluation of software security assumptions across the industry. Anthropic also announced it was expanding Mythos Preview access to 150 additional organizations, including government agencies in 15 countries."
+
+- title: "Anthropic Raises $65 Billion Series H at $965 Billion Valuation, Overtaking OpenAI"
+  date: "2026-05-28T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/"
+  description: "Anthropic closed a $65 billion Series H co-led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, pushing its post-money valuation to $965 billion — surpassing OpenAI's $852 billion March 2026 valuation for the first time and making it the most valuable private startup in the world by some measures. The round, which brought Anthropic's total raised to approximately $65 billion since its 2021 founding, came weeks after the company reported a $47 billion annualized revenue run rate. Investors from Samsung, SK Hynix, and Micron joined as strategic infrastructure partners. The company flagged October 2026 as its IPO target window, treating the Series H as its pre-public round."
+
+- title: "Anthropic Files Confidential IPO S-1 With the SEC"
+  date: "2026-06-01T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/"
+  description: "Anthropic submitted a confidential draft Form S-1 registration statement to the SEC, formally beginning the IPO process for a company valued at $965 billion — a filing that, if it reaches public markets, would be among the largest technology IPOs in history. The submission came fewer than three days after closing its $65 billion Series H and got out ahead of OpenAI, which had announced its own intent to go public later in 2026. The filing marked the first time an AI safety-focused company had moved toward public markets, raising fundamental questions about how fiduciary duties to public shareholders would interact with Anthropic's public-benefit-corporation mission to develop AI 'for the long-term benefit of humanity.'"
+
+- title: "ChatGPT Reaches 1 Billion Monthly Active Users — Fastest App in History"
+  date: "2026-06-03T00:00:00-07:00"
+  tags: ["Product", "Social"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Public Perception", "Market Competition", "Language Models"]
+  link: "https://www.technology.org/2026/06/03/chatgpt-1-billion-monthly-users-record/"
+  description: "ChatGPT surpassed 1 billion monthly active users in late May 2026, becoming the fastest application in history to reach the milestone — outpacing Google Maps, TikTok, Instagram, and YouTube. The figure represented a roughly 25% jump from the 800 million weekly active users OpenAI reported in December 2025, driven by growth in emerging markets and continued enterprise adoption. The milestone coincided with a Pew Research survey finding that half of U.S. adults said they felt more concerned than excited about AI's societal impact — marking the unusual moment where the most widely used consumer application in human history was simultaneously the focus of mainstream public anxiety about technological risk."
+
+- title: "OpenAI Files Confidential IPO S-1, Targeting $1 Trillion Valuation"
+  date: "2026-06-09T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/"
+  description: "OpenAI filed a confidential S-1 registration statement with the SEC for a proposed IPO targeting a $1 trillion valuation, with Goldman Sachs, Morgan Stanley, and JPMorgan managing the offering and a September 2026 listing window. The company's financials — $2 billion in monthly revenue but negative unit economics at $1.22 of costs per dollar earned — made the IPO one of the most closely watched in technology since Meta's 2012 listing. The filing came on the same day Anthropic released Claude Fable 5, marking a single 24-hour window in which both of the leading AI safety companies simultaneously launched their most powerful public models and their paths to public markets."
+
+- title: "Anthropic Releases Claude Fable 5 — First Public Mythos-Class Model"
+  date: "2026-06-09T10:00:00-07:00"
+  tags: ["Model", "Product", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Language Models", "Ethics", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/"
+  description: "Anthropic released Claude Fable 5, a Mythos-class model made available to Pro, Max, Team, and Enterprise subscribers — the first time capability at that level had been publicly released. To make release possible, Anthropic implemented hard safety fallbacks: in high-risk categories including offensive cybersecurity, biology, chemistry, and radiological topics, Fable 5 silently degrades to Claude Opus 4.8. The model was simultaneously the company's most powerful public system and an explicit demonstration of capability elision as a safety mechanism, with Anthropic publishing detailed documentation of exactly which domains were capped and why. Fable 5 came priced at $10 per million input tokens and $50 per million output — roughly 2x Opus pricing — with Mythos 5 remaining restricted to Project Glasswing partners."
+
+- title: "US Government Issues Export Directive Banning Claude Fable 5 and Mythos 5 for Foreign Nationals"
+  date: "2026-06-13T09:00:00-07:00"
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Regulation", "Market Competition", "Ethics"]
+  key_figures: ["Dario Amodei"]
+  link: "https://time.com/article/2026/06/13/anthropic-fable-mythos-ban-US-security/"
+  description: "The US Commerce Department issued an export control directive ordering Anthropic to immediately suspend access to Claude Fable 5 and Mythos 5 for all foreign nationals — including Anthropic's own non-citizen employees — citing national security concerns about the models' code-analysis capabilities. Because Anthropic had no real-time mechanism to filter users by citizenship, it took both models offline for everyone globally, just four days after their launch. The action was the first time the US government had applied retroactive export controls to a commercially released AI model, representing a new use of the export control regime as an AI governance tool. Anthropic publicly characterized the directive as a misunderstanding and said it was working urgently to restore access, while critics noted the episode exposed the legal fragility of any AI product release when national security authorities can compel immediate global withdrawal."
