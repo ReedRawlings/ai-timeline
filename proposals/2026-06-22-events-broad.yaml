@@ -1,0 +1,134 @@
+- title: "Anthropic Launches Project Glasswing to Patch Critical Software at Scale"
+  date: "2026-04-07T10:00:00-07:00"
+  tags: ["Safety", "Technical", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos Preview"]
+  impact_areas: ["Ethics", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/glasswing"
+  description: "Anthropic launched Project Glasswing, a controlled program giving AWS, Apple, Cisco, Google, JPMorgan Chase, Microsoft, and over a dozen other major technology and financial partners access to Claude Mythos Preview specifically to identify and remediate zero-day vulnerabilities in critical software before adversaries could exploit them. In internal testing before the partner launch, Claude Mythos had already identified thousands of previously unknown critical flaws across every major operating system and web browser. By May 26, partner organizations collectively reported more than 10,000 high- or critical-severity vulnerabilities — a pace of discovery that would have taken conventional security teams years. The initiative marked the first time a frontier lab had deliberately deployed its most capable model at industrial scale for proactive cyberdefense rather than as a product."
+
+- title: "OpenAI Ships GPT-5.5, Its First Explicitly Agentic Flagship Model"
+  date: "2026-04-23T10:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+  description: "OpenAI released GPT-5.5 — codename 'Spud' — its first flagship model designed from the ground up as a single agentic system rather than an improved chat interface. Unlike its predecessors, GPT-5.5 was built to plan and execute long multi-step tasks autonomously: writing and debugging code, browsing the web, analyzing data, operating software, and iterating until a task is finished without needing a human to manage each transition. On Terminal-Bench 2.0, a benchmark for complex autonomous command-line workflows, it scored 82.7% — state-of-the-art at the time. The framing of the release was significant: OpenAI described the model as 'erasing the human-in-the-loop' for an expanding class of knowledge-work tasks, a positioning shift from AI assistant to AI worker."
+
+- title: "DeepSeek Releases V4, a 1.6-Trillion-Parameter Open-Source Multimodal Model"
+  date: "2026-04-24T10:00:00+08:00"
+  tags: ["Model", "Technical", "Research"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek-V4-Pro", "DeepSeek-V4-Flash"]
+  impact_areas: ["Language Models", "Open Source", "Multimodal AI"]
+  link: "https://api-docs.deepseek.com/news/news260424"
+  description: "DeepSeek launched V4 under the Apache 2.0 license — a 1.6-trillion-parameter mixture-of-experts model with 49 billion active parameters, native multimodal support across text, images, video, and audio, and a one-million-token context window. A companion model, DeepSeek-V4-Flash (284B parameters, 13B active), offered a lower-cost alternative. API pricing came in at 10–50x cheaper than GPT-5.5 and Claude Opus 4.8. The release continued DeepSeek's strategy of open-sourcing frontier-class models that match or exceed closed Western competitors on benchmarks, renewing pressure on the cost economics of the entire industry."
+
+- title: "OpenAI Opens ChatGPT Self-Serve Ads to All U.S. Advertisers"
+  date: "2026-05-05T09:00:00-07:00"
+  tags: ["Product", "Economic", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition", "Creator Economy"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.axios.com/2026/05/05/openai-self-serve-ad-platform"
+  description: "OpenAI launched a beta self-serve Ads Manager for ChatGPT, removing the $50,000 minimum spend requirement from its earlier closed pilot and opening the platform to U.S. advertisers of all sizes for the first time. The move formalized OpenAI's pivot to advertising as a revenue stream, with the company projecting $2.5 billion in ad revenue in 2026 and $100 billion annually by 2030. The launch made ChatGPT the first large language model chatbot to offer a self-service advertising marketplace analogous to Google Ads or Meta Business Suite, introducing a business model to the AI industry that critics argued would structurally degrade response quality by introducing commercial incentives."
+
+- title: "EU Council and Parliament Agree to Delay AI Act High-Risk Deadlines 16 Months"
+  date: "2026-05-07T14:00:00+02:00"
+  tags: ["Policy"]
+  impact_areas: ["Regulation", "Enterprise AI"]
+  link: "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+  description: "Negotiators from the EU Council, European Parliament, and European Commission reached provisional agreement on the Digital Omnibus to amend the AI Act, postponing the compliance deadline for high-risk AI systems from August 2, 2026 to December 2, 2027 — a 16-month extension. The deal also included targeted simplifications: narrowed obligations for smaller deployers, removal of some Annex III use-case categories, and new prohibitions on non-consensual intimate imagery and child sexual abuse material generated by AI. The European Parliament formally approved the package on June 16. The extension was the first significant rollback of the EU AI Act's compliance timeline since the law passed in June 2024, driven by industry pressure that the standards and tooling needed to comply didn't yet exist."
+
+- title: "Google I/O 2026: Gemini 3.5 Becomes Google's Unified AI Platform"
+  date: "2026-05-19T10:00:00-07:00"
+  tags: ["Model", "Product", "Corporate", "Technical"]
+  organizations: ["Google DeepMind"]
+  models: ["Gemini 3.5 Flash", "Gemini 3.5 Pro", "Gemini Omni"]
+  impact_areas: ["Language Models", "Multimodal AI", "Market Competition"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-collection/"
+  description: "At Google I/O on May 19–20, Google announced Gemini 3.5 Flash and 3.5 Pro — a reasoning-first model family that simultaneously became the default model powering Google Search's AI Mode — along with Gemini Omni, a unified multimodal model capable of generating video from mixed text, image, and audio inputs. Google also unveiled Gemini Spark, a 24/7 always-on AI agent, and Ask YouTube, a conversational search layer inside YouTube. The Google AI Ultra subscription was cut from $250 to $100 per month, matching it with Anthropic and OpenAI pricing while bundling 20 TB of storage, YouTube Premium, and 5x higher usage limits. Industry analysts called I/O 2026 Google's most consequential product announcement in a decade, marking the first time a single Google event launched agentic AI across search, shopping, creative, and hardware simultaneously."
+
+- title: "OpenAI Files Confidential IPO S-1 at Target Valuation up to $1 Trillion"
+  date: "2026-05-22T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://aitoolsrecap.com/Blog/openai-ipo-2026-s1-filing-valuation-timeline"
+  description: "OpenAI filed a confidential IPO S-1 with the SEC, targeting a Q4 2026 public listing at a valuation between $852 billion and $1 trillion, with Goldman Sachs and Morgan Stanley leading the offering. The filing made OpenAI the first major frontier AI lab to initiate a public markets debut, converting years of private capital into a prospectus investors and regulators could scrutinize. The timing came less than four months after OpenAI's $40-billion-plus private raise and put immediate pressure on Anthropic, xAI, and other privately held AI labs to clarify their own paths to liquidity."
+
+- title: "Pope Leo XIV Releases First Papal Encyclical on Artificial Intelligence"
+  date: "2026-05-25T11:00:00+02:00"
+  tags: ["Social", "Safety", "Policy"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Ethics", "Public Perception", "Regulation"]
+  key_figures: ["Chris Olah", "Pope Leo XIV"]
+  link: "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical"
+  description: "Pope Leo XIV released 'Magnifica humanitas: On safeguarding the human person in the time of artificial intelligence,' the first encyclical in the Catholic Church's 2,000-year history dedicated to a technology, joining Anthropic co-founder Chris Olah as a keynote speaker at the Vatican unveiling. The approximately 42,000-word document addressed six themes — protecting against catastrophic AI misuse, AI's fundamentally non-human nature, autonomous weapons and lethality, labor inequality and 'digital slavery,' truth and democracy, and environmental impact — and called for a church-tech partnership to develop international AI safeguards. The collaboration was polarizing: critics including AI researcher Timnit Gebru accused the Vatican of legitimizing AI labs on the eve of their IPOs, while supporters called it the highest-profile moral authority the AI safety movement had ever attracted."
+
+- title: "Anthropic Releases Claude Fable 5 and Mythos 5"
+  date: "2026-06-09T10:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+  description: "Anthropic released Claude Fable 5, its most capable publicly available model, and Claude Mythos 5, an uncensored research variant available only to select partners — both featuring a 1-million-token default context window, up to 128,000-token outputs, and state-of-the-art performance across software engineering, scientific research, vision, and knowledge work. The two-tier release mirrored the GPT-5.5 / GPT-5.4 Thinking structure: Fable 5 retained safety classifiers for general use while Mythos 5 removed them for advanced research and security applications. The release proved short-lived: within 72 hours, a U.S. government export-control directive forced both models offline globally."
+
+- title: "China Unveils $295 Billion National AI Infrastructure Plan"
+  date: "2026-06-09T10:00:00+08:00"
+  tags: ["Economic", "Policy", "Technical"]
+  impact_areas: ["Market Competition", "Hardware", "Regulation"]
+  link: "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout"
+  description: "China's National Development and Reform Commission unveiled a five-year plan to invest 2 trillion yuan ($295 billion) in an interconnected national network of AI data centers, with a mandate that at least 80 percent of all technology — including AI chips — must be domestically sourced, effectively excluding Nvidia and AMD. State operators China Mobile and China Telecom were designated to run the bulk of the infrastructure, and integration with the national power grid was included in a broader package projected at up to 5 trillion yuan. The announcement was the largest single state-directed AI infrastructure commitment in history and was widely read as Beijing's formal declaration that it was building a sovereign AI stack independent of American hardware."
+
+- title: "SpaceX Goes Public in Largest IPO in History at $1.77 Trillion Valuation"
+  date: "2026-06-12T09:30:00-04:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["SpaceX", "xAI"]
+  impact_areas: ["Market Competition", "Hardware"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk"
+  description: "SpaceX began trading on Nasdaq under the ticker SPCX at $135 per share, raising $75 billion in the largest IPO in history and debuting at a market capitalization of approximately $2.1 trillion — the sixth most valuable U.S.-listed company on its first trading day. The offering marked the public debut of a company that had completed its merger with xAI earlier in 2026, absorbing Elon Musk's AI company and the Grok platform into a single entity combining rocket manufacturing, Starlink satellite internet, and frontier AI infrastructure. The IPO set the stage for SpaceX to deploy its stock as acquisition currency, which it used immediately: four days later the company announced a $60 billion deal to acquire AI coding startup Cursor."
+
+- title: "U.S. Government Forces Claude Fable 5 and Mythos 5 Offline Globally"
+  date: "2026-06-12T17:21:00-04:00"
+  tags: ["Policy", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Howard Lutnick", "Dario Amodei"]
+  link: "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
+  description: "At 5:21 p.m. ET on June 12, Commerce Secretary Howard Lutnick issued a legally binding export-control directive under the Export Controls Reform Act of 2018 requiring Anthropic to immediately suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national — including Anthropic's own non-citizen employees — regardless of location. Anthropic disabled both models for all customers rather than attempt nationality-based segmentation, the company said, because reliable nationality verification was technically infeasible. The government's stated concern was a jailbreak that reduced both models to identifying and describing software vulnerabilities by asking them to read a codebase, ironically the exact capability Anthropic had been marketing through Project Glasswing. As of June 20, both models remained offline while Anthropic negotiated restoration. The incident was the first time the U.S. government had used export-control law to compel a commercial AI company to take its flagship models off the market globally."
+
+- title: "SpaceX Acquires Cursor for $60 Billion in the Largest Startup Acquisition Ever"
+  date: "2026-06-16T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["SpaceX", "xAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Elon Musk"]
+  link: "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
+  description: "SpaceX announced a $60 billion all-stock deal to acquire Cursor, the AI coding assistant used by 67 percent of Fortune 500 companies and generating 150 million lines of enterprise code per day, just four days after its Nasdaq IPO. The acquisition surpassed Microsoft's LinkedIn buyout as the largest startup acquisition in history and was financed entirely in SpaceX stock, whose post-IPO price made the deal executable within a single day's trading volume. The strategic rationale was to close the coding-tool gap against Anthropic's Claude and OpenAI's Codex, both of which had established dominant enterprise coding positions. Cursor had last been formally valued at $29.3 billion in November 2025, meaning SpaceX paid more than double that in just seven months."
+
+- title: "ChatGPT Falls Below 50% Market Share for the First Time"
+  date: "2026-06-16T09:00:00-07:00"
+  tags: ["Social", "Economic"]
+  organizations: ["OpenAI", "Google DeepMind", "Anthropic"]
+  impact_areas: ["Market Competition", "Public Perception"]
+  link: "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/"
+  description: "Sensor Tower's State of AI 2026 report revealed that ChatGPT's share of global AI assistant users had fallen to 46.4% by May 2026 — the first time it had held less than half the market since its November 2022 launch. ChatGPT had commanded 65.3% in December 2024 and 52.8% as recently as December 2025. Google Gemini had risen to 27.7% and Claude to 10.3%, with Grok and other assistants absorbing the remainder. The milestone did not signal absolute decline — ChatGPT still claimed 1.1 billion monthly users — but marked the structural end of a period in which a single AI product had functioned as a market monopoly, with analysts citing Google I/O 2026's price cuts and Gemini's integration into Search as the proximate cause of the acceleration."
+
+- title: "Transformer Co-Inventor Noam Shazeer Leaves Google for OpenAI in $2.7B Talent Deal"
+  date: "2026-06-18T09:00:00-07:00"
+  tags: ["Corporate", "Social"]
+  organizations: ["OpenAI", "Google DeepMind"]
+  impact_areas: ["Market Competition", "Research"]
+  key_figures: ["Noam Shazeer", "Sam Altman", "Sundar Pichai"]
+  link: "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html"
+  description: "Noam Shazeer, co-author of the 2017 'Attention Is All You Need' paper that introduced the Transformer architecture underpinning every major AI model, and co-leader of Google's Gemini program, announced he was leaving Google DeepMind to join OpenAI. Google had paid $2.7 billion to reacquire Shazeer from his startup Character.AI in August 2024 — less than two years before he departed again. OpenAI CEO Sam Altman posted that the hire was 'only 10 years in the making,' and called Shazeer 'one of the people I have most wanted to work with since the very beginning of OpenAI.' The move was the highest-profile individual talent acquisition in AI history and underscored that the frontier AI competition had expanded beyond product benchmarks into a direct contest for the researchers whose ideas define what the field can build."
