@@ -1,0 +1,135 @@
+# AI Timeline Event Proposals — 2026-06-29
+# Coverage window: 2026-03-21 through 2026-06-29
+# Events already in data/events.yaml through 2026-03-20 are excluded.
+
+- title: "Judge Blocks Pentagon's Anthropic Ban, Cites First Amendment Retaliation"
+  date: "2026-03-26T14:00:00-07:00"
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.cnbc.com/2026/03/26/anthropic-pentagon-dod-claude-court-ruling.html"
+  description: "Federal Judge Rita Lin granted Anthropic a preliminary injunction blocking the Trump administration's Pentagon blacklisting and presidential directive banning federal agencies from using Claude, ruling that 'punishing Anthropic for bringing public scrutiny to the government's contracting position is classic illegal First Amendment retaliation' and that the reasons given for designating Anthropic a supply chain risk were 'pretextual.' The injunction paused enforcement of the national-security designation while the underlying case proceeded — a landmark ruling that applied First Amendment doctrine to AI procurement disputes and set a precedent for how courts could review executive branch retaliation against AI companies."
+
+- title: "OpenAI Closes $122 Billion Round at $852 Billion Valuation"
+  date: "2026-03-31T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+  description: "OpenAI closed a $122 billion funding round at a post-money valuation of $852 billion — the largest private capital raise in history — anchored by a $50 billion commitment from Amazon, $30 billion each from Nvidia and SoftBank, and participation from a16z, D. E. Shaw, MGX, and TPG, with over $3 billion raised from retail investors through bank channels for the first time. The round pushed OpenAI's valuation past those of all but a handful of public companies and came alongside the company reporting $2 billion in monthly revenue and 900 million weekly active users. A condition attached $35 billion of Amazon's commitment to OpenAI either going public or achieving AGI."
+
+- title: "Meta Ships Llama 4 Scout and Maverick — First Native MoE Multimodal Open-Weight Models"
+  date: "2026-04-05T09:00:00-07:00"
+  tags: ["Model", "Research", "Technical"]
+  organizations: ["Meta"]
+  models: ["Llama 4 Scout", "Llama 4 Maverick"]
+  impact_areas: ["Language Models", "Multimodal AI", "Open Source", "Market Competition"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  description: "Meta released Llama 4 Scout (17B active parameters, 16 experts, 109B total) and Maverick (17B active, 128 experts, 400B total) — the first Llama models built on Mixture-of-Experts architecture with native multimodal training from pretraining rather than adapters. Scout set a new open-weight record with a 10 million token context window while fitting on a single H100, and Maverick benchmarked above GPT-4o and Gemini 2.0 Flash across multimodal tasks at a fraction of their inference cost. Both were released as open weights under the Llama 4 Community License, maintaining Meta's open strategy even as the company previewed the still-training Behemoth flagship at LlamaCon."
+
+- title: "Anthropic Discloses Claude Mythos 5 — Its Most Capable Model — Will Not Be Released Publicly"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Model", "Safety", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos 5"]
+  impact_areas: ["Language Models", "Ethics", "Regulation", "Research"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/claude/mythos"
+  description: "Anthropic publicly disclosed Claude Mythos 5, internally described as a potential 'cybersecurity reckoning' due to its advanced capabilities in finding software vulnerabilities — then announced it would not be released to the general public. Instead, access was restricted to approximately 40 vetted partners through Project Glasswing, including Microsoft, Apple, Google, Amazon Web Services, the Linux Foundation, Cisco, Nvidia, and Broadcom, tasked with using Mythos to find and fix critical vulnerabilities in widely deployed software. The decision marked the first time a major AI lab had publicly disclosed a frontier model while simultaneously declining to release it commercially, framing the withholding explicitly as a safety decision rather than a competitive one."
+
+- title: "Meta's Superintelligence Labs Ships Muse Spark — Its First Closed-Weight Frontier Model"
+  date: "2026-04-08T09:00:00-07:00"
+  tags: ["Model", "Corporate", "Product"]
+  organizations: ["Meta"]
+  models: ["Muse Spark"]
+  impact_areas: ["Language Models", "Market Competition", "Open Source"]
+  key_figures: ["Mark Zuckerberg"]
+  link: "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+  description: "Meta's newly formed Superintelligence Labs launched Muse Spark — a natively multimodal reasoning model accepting voice, text, and image — as a closed-weight proprietary model, with its architecture, weights, and training code withheld. The release marked a dramatic reversal of Meta's longstanding open-source identity: where Llama had been released as open weights, Muse Spark treats frontier AI as commercial IP available free via meta.ai but closed to inspection. The model ranked fourth globally on the AI Intelligence Index and first on HealthBench Hard, and was deployed immediately across Facebook, Instagram, WhatsApp, Messenger, and Meta's Ray-Ban smart glasses — while the 2T-parameter Llama 4 Behemoth flagship was quietly shelved mid-training."
+
+- title: "OpenAI's Internal Model Autonomously Disproves 80-Year-Old Erdős Geometry Conjecture"
+  date: "2026-05-20T09:00:00-07:00"
+  tags: ["Research", "Technical"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Research", "Language Models"]
+  link: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+  description: "OpenAI announced that an internal general-purpose reasoning model had independently disproved the planar unit distance problem — a central conjecture in discrete geometry posed by Paul Erdős in 1946 that asked how many pairs of points separated by exactly distance 1 could be packed into n planar points. The model constructed an infinite family of examples using deep algebraic number theory (Golod-Shafarevich theory and infinite class field towers) that achieve a polynomial improvement over the square grids mathematicians had long considered optimal, later refined by Princeton mathematician Will Sawin to n^(1+0.014) unit-distance pairs. External mathematicians verified the proof, and Scientific American described it as the first time AI had autonomously disproved a prominent open problem central to a mathematical subfield — a categorical step beyond assisting human proofs."
+
+- title: "Pope Leo XIV Publishes Magnifica Humanitas — First Papal Encyclical on AI"
+  date: "2026-05-25T09:00:00+01:00"
+  tags: ["Social", "Policy"]
+  impact_areas: ["Public Perception", "Ethics", "Regulation"]
+  key_figures: ["Pope Leo XIV"]
+  link: "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html"
+  description: "Pope Leo XIV released Magnifica Humanitas ('Magnificent Humanity'), a 42,300-word encyclical signed May 15 and released May 25 that became the first papal encyclical in history dedicated primarily to artificial intelligence. The document argued that technology is never neutral because it takes on the characteristics of those who devise, finance, and regulate it, and called on governments and technology leaders to 'disarm' AI before it exacerbates inequality, weakens human relationships, and threatens peace. While acknowledging AI is not inherently evil, it urged guardrails ensuring AI eases rather than concentrates power, and positioned AI ethics as a religious imperative — drawing comparisons to Rerum Novarum's role in shaping Catholic social teaching around industrial labor."
+
+- title: "ChatGPT Crosses One Billion Monthly Active Users — Fastest App in History"
+  date: "2026-06-03T09:00:00-07:00"
+  tags: ["Product", "Social", "Economic"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Public Perception", "Market Competition", "Language Models"]
+  key_figures: ["Sam Altman"]
+  link: "https://thenextweb.com/news/chatgpt-1-billion-monthly-active-users"
+  description: "ChatGPT crossed one billion global monthly active app users in May 2026, roughly three years after launch, making it the fastest application in history to reach the milestone — outpacing Google Maps, TikTok, Instagram, and YouTube by years. Sensor Tower data reported by Reuters confirmed the figure as OpenAI simultaneously disclosed 900 million weekly active users and $2 billion in monthly revenue. The milestone arrived alongside OpenAI's IPO preparations and reshaped analyst models for the platform's addressable market, with the median economic value per user estimated to have tripled between 2025 and 2026 per Stanford's AI Index."
+
+- title: "Anthropic Confidentially Files S-1 for IPO at $965 Billion Valuation"
+  date: "2026-06-01T09:00:00-07:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+  description: "Anthropic confidentially submitted a draft S-1 registration statement to the SEC for a proposed IPO just four days after closing a $65 billion Series H at a $965 billion post-money valuation on May 28 — briefly making it the highest-valued private AI company, narrowly ahead of OpenAI. Morgan Stanley, Goldman Sachs, and JPMorgan Chase were selected as lead underwriters two days later. The filing came while Anthropic was simultaneously contesting a Pentagon blacklisting in court and operating its Mythos 5 model under government-restricted access, making it one of the most legally complicated IPO disclosures a technology company had ever attempted."
+
+- title: "Microsoft Build 2026: Seven MAI Models Built In-House With Zero OpenAI Distillation"
+  date: "2026-06-02T09:00:00-07:00"
+  tags: ["Model", "Corporate", "Technical"]
+  organizations: ["Microsoft"]
+  models: ["MAI-Thinking-1", "MAI-Code-1-Flash"]
+  impact_areas: ["Language Models", "Market Competition", "Enterprise AI"]
+  key_figures: ["Satya Nadella", "Mustafa Suleyman"]
+  link: "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+  description: "At Microsoft Build 2026, Satya Nadella unveiled seven new in-house AI models under the MAI (Microsoft AI) banner — the company's most aggressive push to build its own capabilities independent of OpenAI. Led by Mustafa Suleyman's Microsoft AI Superintelligence Team, the lineup spanned reasoning (MAI-Thinking-1), coding (MAI-Code-1-Flash), image generation, transcription, and speech synthesis, all trained from scratch on commercially licensed data with zero distillation from third-party models. MAI-Thinking-1, a 35B active parameter reasoning model, matched Opus 4.6 on SWE-Bench Pro coding tasks, and independent raters preferred it to Sonnet 4.6 in blind tests — signaling a structural shift in Microsoft's AI strategy away from dependence on its OpenAI partnership."
+
+- title: "Apple WWDC 2026: Rebuilt Siri Powered by Google Gemini Under $1 Billion-Per-Year Deal"
+  date: "2026-06-08T10:00:00-07:00"
+  tags: ["Product", "Corporate", "Partnership"]
+  organizations: ["Apple", "Google DeepMind"]
+  models: ["Gemini"]
+  impact_areas: ["Market Competition", "Language Models", "Public Perception"]
+  key_figures: ["Tim Cook", "Sundar Pichai"]
+  link: "https://techcrunch.com/2026/06/04/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/"
+  description: "Apple opened WWDC 2026 on June 8 with a complete rebuild of Siri — rebranded 'Siri AI' — running on a custom version of Google's Gemini model in Apple's data centers under a multi-year deal worth roughly $1 billion per year, confirmed after months of reporting. The new Siri was context-aware, could take actions across apps, understand on-screen content, draw on personal data, and access web knowledge — capabilities Apple had failed to ship internally for two years. The announcement arrived alongside iOS 27 and a multi-AI Extensions system that made Claude an iPhone option for the first time. The deal made Google the intelligence backend powering the world's largest installed base of consumer devices, restructuring the competitive landscape between Apple, Google, and Microsoft in a single keynote."
+
+- title: "Claude Fable 5 Launches — Then US Government Forces It Offline Three Days Later"
+  date: "2026-06-09T09:00:00-07:00"
+  tags: ["Model", "Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Language Models", "Regulation", "Ethics", "Market Competition"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+  description: "Anthropic launched Claude Fable 5 on June 9 — a Mythos-class model for general availability, priced at $10/$50 per million tokens and included free for all Pro, Max, Team, and Enterprise subscribers through June 22 — only to have the US government issue an export-control directive on June 12 requiring Anthropic to suspend global access within hours, citing a reported jailbreak that could allow Fable 5 to assist in identifying software vulnerabilities. Since Anthropic could not verify user citizenship in real time, it disabled both Fable 5 and Mythos 5 for all users worldwide. Anthropic publicly disputed the standard, arguing that if a narrow jailbreak finding triggered a commercial model recall, it would effectively halt all new model deployments across the industry — marking the first time a US government directive had forced a frontier AI model into full commercial withdrawal."
+
+- title: "US Government Lifts Restrictions on Claude Mythos 5 for Trusted Partners"
+  date: "2026-06-26T09:00:00-07:00"
+  tags: ["Policy", "Model", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos 5"]
+  impact_areas: ["Regulation", "Enterprise AI", "Ethics"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html"
+  description: "The Trump administration partially lifted its export-control directive against Anthropic's Mythos 5, allowing the model to be released to a narrow set of vetted trusted partners and critical infrastructure defenders — two weeks after forcing the model offline globally. The partial reinstatement followed the administration's broader AI innovation executive order and came on the same day OpenAI previewed GPT-5.6 Sol, Terra, and Luna in limited government-gated access, establishing a new pattern in which the most capable frontier models now debut under US national security review rather than open commercial release."
+
+- title: "OpenAI Previews GPT-5.6 Sol, Terra, and Luna Under Government-Gated Access"
+  date: "2026-06-26T12:00:00-07:00"
+  tags: ["Model", "Policy"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.6 Sol", "GPT-5.6 Terra", "GPT-5.6 Luna"]
+  impact_areas: ["Language Models", "Regulation", "Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/previewing-gpt-5-6-sol/"
+  description: "OpenAI previewed the GPT-5.6 series on June 26 in a tiered three-model family: Sol (flagship for hard problems, $5/$30 per million tokens), Terra (balanced business model, $2.50/$15), and Luna (fast everyday model, $1/$6) — releasing access initially to roughly 20 vetted organizations after sharing the models and release plans with the US government. The architecture represented the most significant model-design change since GPT-5, with strengthened safety protections for higher-risk activity and sensitive cyber requests. The government-gated debut pattern, mirrored by Anthropic's Mythos 5 reinstatement the same day, signaled a structural shift in how the most capable frontier models enter the market."
