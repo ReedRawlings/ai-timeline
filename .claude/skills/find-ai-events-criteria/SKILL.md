@@ -1,6 +1,6 @@
 ---
 name: find-ai-events-criteria
-description: Use when searching for significant AI events from the previous day using targeted, criteria-first searches
+description: Use when searching for the previous day's significant AI events with targeted, criteria-first searches — one query per rubric category rather than a broad "AI news" sweep. Produces a YAML proposal file plus a human-readable summary. Trigger for a focused daily sweep when you'd rather probe each significance category directly than filter a broad pile.
 ---
 
 # Find AI Events — Criteria-First
@@ -8,70 +8,41 @@ description: Use when searching for significant AI events from the previous day 
 ## Goal
 Find the previous day's significant AI events by searching for each rubric category directly. Write a YAML proposal file and output a human-readable summary.
 
-## What Qualifies
+## Read the conventions first
+Read `.claude/shared/event-conventions.md`. It defines the significance rubric, the curated source list and access patterns, field/format rules, the approved tags/impact areas, the dedup check, and the self-check list. This skill only covers the discovery method and output; everything else lives there.
 
-**Skip unless something else makes it notable:**
-- Routine version bumps (same model family, weeks apart)
-- Minor partnership announcements
-- Conference talks or "coming soon" teasers with no concrete release
-- Benchmark results without a qualitative capability leap
+## Discovery method
+Search for each rubric category directly — do not search "AI news" broadly. Run one targeted query per category (conventions §1), curated sources first (conventions §6), then broad web.
 
-**Include if it clears at least one of:**
-1. **Structural novelty** — A major lab does something that changes how the industry operates (e.g., holding a release for safety reasons, reversing course on open source when peers have abandoned it)
-2. **Social/cultural moment** — AI surfaces in public consciousness in a new way: viral backlash, a movement, a high-profile controversy, mass adoption hitting a tipping point
-3. **Regulatory/legal landmark** — First-of-kind legislation, court ruling, or government action that sets precedent
-4. **Economic signal** — Market event where AI is the proximate cause, funding that redefines scale expectations, major workforce reductions explicitly tied to AI
-5. **Niche analyst call** — A specialist source called something before mainstream media picked it up
-
-## Search Strategy
-
-Search for each rubric category directly — do not search for "AI news" broadly. Run one targeted query per category against curated sources first, then broad web.
-
-| Category | Example Query |
+| Category | Example query |
 |---|---|
 | Structural novelty | `"AI" "refused to release" OR "safety hold" OR "open source reversal" [date]` |
 | Social/cultural | `"AI" backlash OR controversy OR viral site:reddit.com [date]` |
 | Regulatory/legal | `"AI" legislation OR "court ruling" OR law [date]` |
 | Economic signal | `"AI" layoffs OR "funding round" OR market [date]` |
-| Niche analyst | Search curated sources for commentary that preceded mainstream coverage |
+| Early analyst call | search curated sources for commentary that preceded mainstream coverage |
 
-## Source Priority
-
-Search curated sources within each category before going broad.
-
-**Substacks** (JS-blocked — use `site:` search, then fetch individual article URLs):
-
-| Publication | Search Domain |
-|---|---|
-| Hyperdimensional (Dean W. Ball) | `site:hyperdimensional.co` |
-| TBPN (John & Brandon) | `site:tbpn.substack.com` |
-| One Useful Thing (Ethan Mollick) | `site:oneusefulthing.org` |
-
-**Direct web sources:**
-
-| Publication | Access Pattern |
-|---|---|
-| Superintelligence | Fetch `getsuperintel.com` homepage → individual article URLs |
-
-**Reddit:** Search r/artificial, r/ChatGPT, r/MachineLearning for social/cultural moments.
+## Pipeline
+1. **Probe** each category with its targeted query.
+2. **Dedup** every candidate against `data/events.yaml` (conventions §7). Drop anything already on the timeline.
+3. **Confirm significance** — the query surfaced it, but still check it against the rubric (conventions §1) rather than assuming.
+4. **Extract and format** each kept event per the conventions.
+5. **Self-check** the proposal against conventions §9.
+6. **Write and summarize** (below).
 
 ## Output
 
-### YAML Proposal File
-Write to `proposals/YYYY-MM-DD-events-criteria.yaml`. Follow the exact structure of `data/events.yaml`. Omit fields with no values rather than using empty arrays.
-
-```yaml
-- title: "Event Title"
-  date: "2026-04-17T10:00:00-07:00"
-  description: "What happened and why it matters..."
-  tags: ["Social"]
-  organizations: ["OpenAI"]
-  impact_areas: ["Public Perception"]
-  link: "https://source.com"
+### YAML proposal file
+Create the directory if needed, then write to `proposals/YYYY-MM-DD-events-criteria.yaml`:
+```bash
+mkdir -p proposals
 ```
+Follow the `data/events.yaml` structure exactly (conventions §8). Omit empty fields.
 
-### Human-Readable Summary
+### Human-readable summary
 List proposed events grouped by rubric category (not chronologically):
 - **Title** — date
 - Why it qualifies (one sentence, which criterion it cleared)
 - Source
+
+If any candidates were borderline or dropped as duplicates, list them briefly under separate headings so the human can second-guess the calls.
