@@ -50,8 +50,11 @@ const layoffs = records.map(rec => {
         announcement_date: r.announcement_date,
         count: r.count ? parseInt(r.count, 10) : null,
         count_precision: r.count_precision || null,
+        count_scope: r.count_scope || null,
         country: r.country || null,
+        sector: r.sector || null,
         ai_attribution: r.ai_attribution || null,
+        causal_link: r.causal_link || null,
         verification_status: r.verification_status,
     };
 });

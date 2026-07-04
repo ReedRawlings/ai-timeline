@@ -1,12 +1,16 @@
 # AI-Attributed Layoffs Dataset
 
-**Status: live, migration-stage.** Schema approved 2026-07-03 ([schema.md](schema.md)). `layoffs.csv` holds 32 rows migrated from the timeline's retired `layoffs:` blocks — all currently `needs_recode`, meaning the AI attribution has not yet been re-coded from a verbatim quote. Treat the dataset as structurally real but not yet citation-grade until the recode pass is done.
+**Status: live.** Schema approved and attribution recode pass completed 2026-07-03 ([schema.md](schema.md)). `layoffs.csv` holds 21 rows, each coded from fetched sources with a verbatim quote (or a documented reason none exists). Of the 32 originally migrated rows, 11 were removed because no one — company, press, or analyst — actually attributed the cuts to AI (see decision log).
 
 ## What this is
 
 A maintained dataset of AI-attributed layoff events where the attribution is a **coded, sourced field** — recording who attributed the cuts to AI and in what words — rather than a filter or a boolean.
 
 **Scope:** AI-attributed layoffs only (decided 2026-07-03). For "what share of overall job loss is attributed to AI" comparisons, external monthly/quarterly job-loss reports (e.g. Challenger) serve as the denominator; non-AI-attributed layoffs do not get rows here.
+
+**Geography: global, deliberately.** US-only coverage is a limitation of existing trackers (jobloss.ai, Challenger), not one we inherit. Global companies' announcements are tracked wherever they occur, with `count_scope` marking whether a count covers global jobs lost or a single country's, and one row per country where the split is verified.
+
+**Evidence tagging:** every row carries `ai_attribution` (who made the AI link) and `causal_link` (`sole` / `mixed` / `contextual` — how causally the source stated it), modeled on jobloss.ai's Explicit/Reported/Mixed evidence levels but kept as two separate axes. See [schema.md](schema.md).
 
 ## Validation
 

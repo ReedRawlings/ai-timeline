@@ -19,13 +19,15 @@ DATASET = Path(__file__).resolve().parent.parent / "data" / "layoffs" / "layoffs
 
 EXPECTED_HEADER = [
     "id", "company", "ticker", "announcement_date", "effective_date",
-    "count", "count_precision", "country", "region_detail", "sector",
-    "ai_attribution", "attribution_quote", "attribution_notes",
+    "count", "count_precision", "count_scope", "country", "region_detail", "sector",
+    "ai_attribution", "causal_link", "attribution_quote", "attribution_notes",
     "source_url", "source_type", "press_independent", "cross_references",
     "verification_status", "added_date", "updated_date", "notes",
 ]
 PRECISION_ENUM = {"exact", "approximate", "range_low", "range_high", "undisclosed", ""}
 ATTRIBUTION_ENUM = {"explicit_company", "press_inferred", "analyst_inferred", "none_stated", ""}
+CAUSAL_LINK_ENUM = {"sole", "mixed", "contextual", ""}
+COUNT_SCOPE_ENUM = {"global", "country", "unknown", ""}
 SOURCE_TYPE_ENUM = {"company_statement", "regulatory_filing", "press_report", "government_data", ""}
 STATUS_ENUM = {"verified", "single_source", "disputed", "needs_recode"}
 ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
@@ -75,6 +77,8 @@ def main() -> int:
         for field, enum in (
             ("count_precision", PRECISION_ENUM),
             ("ai_attribution", ATTRIBUTION_ENUM),
+            ("causal_link", CAUSAL_LINK_ENUM),
+            ("count_scope", COUNT_SCOPE_ENUM),
             ("source_type", SOURCE_TYPE_ENUM),
         ):
             val = (row.get(field) or "").strip()
@@ -85,9 +89,11 @@ def main() -> int:
         if status not in STATUS_ENUM:
             errors.append(f"{ctx}: verification_status '{status}' not in {sorted(STATUS_ENUM)}")
         if status == "verified":
-            if not (row.get("ai_attribution") or "").strip():
+            attribution = (row.get("ai_attribution") or "").strip()
+            if not attribution:
                 errors.append(f"{ctx}: verified rows need an ai_attribution code")
-            if not (row.get("attribution_quote") or "").strip():
+            # none_stated rows are verified by the documented ABSENCE of an attribution
+            elif attribution != "none_stated" and not (row.get("attribution_quote") or "").strip():
                 errors.append(f"{ctx}: verified rows need a verbatim attribution_quote with source")
 
         for dfield in ("announcement_date", "effective_date", "added_date", "updated_date"):

@@ -23,10 +23,12 @@ Layoff data currently lives as nested `layoffs:` blocks inside `data/events.yaml
 | `effective_date` | If known |
 | `count` | Integer; **null if undisclosed** (a guessed number is not a valid value) |
 | `count_precision` | `exact` \| `approximate` \| `range_low/range_high` \| `undisclosed` |
+| `count_scope` | What the count covers: `global` \| `country` (only the row's country) \| `unknown`. Tracks global vs US-only jobs lost — this dataset is NOT US-only (unlike e.g. jobloss.ai) |
 | `country` | Primary country of affected workers (one row per country where the split is known) |
 | `region_detail` | e.g. "Bengaluru" where reported |
-| `sector` | Controlled list, grown as needed: `tech`, `BPO/call center`, `healthcare`, … |
-| `ai_attribution` | `explicit_company` \| `press_inferred` \| `analyst_inferred` \| `none_stated` |
+| `sector` | Controlled list, grown as needed: `tech`, `edtech`, `fintech`, `media`, `BPO/call center`, `healthcare`, … |
+| `ai_attribution` | WHO made the AI link: `explicit_company` \| `press_inferred` \| `analyst_inferred` \| `none_stated` |
+| `causal_link` | HOW strong the stated link is: `sole` (AI cited as the driver) \| `mixed` (AI alongside other material factors) \| `contextual` (AI named as backdrop/strategic destination, not cause). Modeled on jobloss.ai's Explicit/Reported/Mixed evidence levels (2026-07-03), but as a second axis so who-said-it and how-causal stay separate |
 | `attribution_quote` | The actual words used, **verbatim, with source** |
 | `attribution_notes` | e.g. "restructuring framed as AI-native transformation" |
 | `source_url` | Primary source link (required — a number without a link doesn't enter) |
@@ -53,6 +55,12 @@ Resolved 2026-07-03: non-AI-attributed layoffs are **out** (external job-loss re
 `scripts/migrate-layoffs.js` (one-time, kept for the record) extracted the 32 `layoffs:` blocks from `events.yaml` into `layoffs.csv`. Each event's `link` became `source_url`; timeline events keep their narrative entries and reference rows via `layoff_ids: [...]` (enforced by `scripts/validate-yaml.py`). Every migrated row is `needs_recode`: the legacy free-text `reason` label was carried into `attribution_notes`, and none of those labels map to the `ai_attribution` enum — each row needs a human-reviewed recode with a verbatim quote and source.
 
 The chart (`src/js/layoff-chart.js`) reads the dataset via `scripts/build-layoffs.js` (CSV → `src/data/layoffs.json` at build time). Rows without a disclosed count (`count` empty = undisclosed) stay in the dataset but are excluded from the chart.
+
+## Boundary cases (precedents, decided 2026-07-03)
+
+- **AI-attributed attrition/hiring freezes** (Klarna): in scope when the company explicitly credits AI for the workforce reduction, but `count` stays empty (undisclosed) — there is no layoff count, and the mechanism is spelled out in `notes`. Marketing claims ("our AI does the work of 700 agents") never become counts.
+- **AI-attributed projections** (IBM 2023: "30% of ~26,000 could be replaced in five years"): row kept for the attribution, `count` empty — a projection is not a layoff count. The chart excludes count-less rows automatically.
+- **No AI attribution from anyone** (Tesla 2024, Intel 2024/2025, UPS 2024, Amazon Jan 2023, …): out of scope, removed 2026-07-03. Real layoffs, but this tracker records attributions, and none existed.
 
 ## Next step before any automated ingestion
 
