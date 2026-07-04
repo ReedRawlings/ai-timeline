@@ -81,6 +81,7 @@ A public research project on how AI is changing people and society, with two mut
 - **Environmental disclosure ledger** — conditions-preserving table of per-prompt energy/water figures (Google 0.24/0.10 Wh comprehensive vs. not; OpenAI 0.34 Wh mean).
 - **Update-grief event log** — dated deprecation events + documented community reaction; empirical backbone for the series' strongest new phenomenon.
 - **Adoption/usage panel** — quarterly, survey disagreement kept visible.
+- **Prediction accountability tracker** (added 2026-07-04) — influencer/poster AI predictions tracked to resolution; single page with submissions, each claim tied to its source link/video, Wayback/Internet Archive snapshot at entry for posterity. Parked; needs a short PRD (inclusion criteria, moderation flow). See docs/parked.md Theme 4.
 
 ---
 
