@@ -40,7 +40,7 @@ Match `data/events.yaml` exactly.
 - **impact_areas** — one or more from the Approved Impact Areas list. Nothing off-list.
 - **key_figures** — only prominent, named individuals central to the event (CEOs, heads of AI orgs, well-known researchers, named public figures — e.g. Sam Altman, Elon Musk, Dario Amodei). Don't pad with minor or unnamed people.
 - **link** — the source URL.
-- **layoffs** — only for AI-attributed workforce-reduction events. See section 5.
+- **layoff_ids** — only for AI-attributed workforce-reduction events. See section 5.
 
 **Omit-empty rule:** if a field has no value, leave the field out entirely. Never write `tags: []` or `organizations: []`. The validator warns on empty `organizations`/`models`, and the house convention is to omit.
 
@@ -56,14 +56,12 @@ Model, Corporate, Product, Research, Policy, Economic, Social, Technical, Partne
 Use only these (this is the site's live filter taxonomy — lawsuits and court rulings map to **Regulation**, not a separate "Legal" area):
 Multimodal AI, Language Models, Computer Vision, Market Competition, Robotics, Healthcare, Education, Creator Economy, Public Perception, Ethics, Regulation, Enterprise AI, Open Source, Hardware, Research
 
-## 5. The `layoffs` field
-Only for events that are primarily AI-attributed workforce reductions:
+## 5. The `layoff_ids` field
+Layoff data lives in the standalone dataset `data/layoffs/layoffs.csv` (see `data/layoffs/schema.md`), never nested in events. For events that are primarily AI-attributed workforce reductions, add the row(s) to the dataset first (use the `propose-layoff-entry` skill), then reference them:
 ```yaml
-  layoffs:
-    company: "Company Name"
-    headcount: 500
+  layoff_ids: ["google-2023-01"]
 ```
-`headcount` must be an integer — no quotes, no commas. Omit the whole block for non-layoff events.
+Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this. Omit the field for non-layoff events. The retired nested `layoffs:` block is rejected by the validator.
 
 ---
 
@@ -117,7 +115,7 @@ The validator only runs against `data/events.yaml` on merge, not against proposa
 - [ ] `title`, `date`, `description` present on every entry
 - [ ] `date` parses as ISO 8601 (a trailing `Z` is fine)
 - [ ] array fields are lists; no empty `[]` arrays anywhere
-- [ ] `layoffs`, if present, is a mapping with `company` and an integer `headcount`
+- [ ] `layoff_ids`, if present, is a list of ids that exist in `data/layoffs/layoffs.csv`
 - [ ] no title duplicates another entry in the batch or in `data/events.yaml`
 - [ ] tags and impact_areas are drawn only from the approved lists
 

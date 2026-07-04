@@ -28,7 +28,7 @@ def validate_yaml_syntax(file_path):
 def validate_event_structure(events):
     """Validate the structure of each event."""
     required_fields = ['title', 'date', 'description']
-    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link', 'layoffs']
+    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link', 'layoff_ids']
     
     errors = []
     
@@ -54,18 +54,13 @@ def validate_event_structure(events):
         if 'key_figures' in event and not isinstance(event['key_figures'], list):
             errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'key_figures' must be a list")
 
-        # Validate layoffs field structure
+        # Layoff data lives in data/layoffs/layoffs.csv; events reference rows by id
         if 'layoffs' in event:
-            layoffs = event['layoffs']
-            if not isinstance(layoffs, dict):
-                errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' must be a mapping")
-            else:
-                if 'company' not in layoffs:
-                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' missing required field 'company'")
-                if 'headcount' not in layoffs:
-                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs' missing required field 'headcount'")
-                elif not isinstance(layoffs['headcount'], int):
-                    errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoffs.headcount' must be an integer")
+            errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): nested 'layoffs' blocks are retired - add the row to data/layoffs/layoffs.csv and reference it via 'layoff_ids'")
+        if 'layoff_ids' in event:
+            ids = event['layoff_ids']
+            if not isinstance(ids, list) or not all(isinstance(x, str) for x in ids):
+                errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoff_ids' must be a list of strings")
 
         # Validate date format
         if 'date' in event:
@@ -74,6 +69,26 @@ def validate_event_structure(events):
             except ValueError:
                 errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): Invalid date format '{event['date']}'")
     
+    return errors
+
+def validate_layoff_references(events):
+    """Every layoff_ids entry must reference a real row in data/layoffs/layoffs.csv."""
+    import csv
+
+    errors = []
+    dataset_path = Path('data/layoffs/layoffs.csv')
+    if not dataset_path.exists():
+        if any('layoff_ids' in e for e in events):
+            errors.append(f"layoff_ids used but {dataset_path} not found")
+        return errors
+
+    with open(dataset_path, newline='', encoding='utf-8') as f:
+        known_ids = {row['id'] for row in csv.DictReader(f)}
+
+    for i, event in enumerate(events):
+        for lid in event.get('layoff_ids', []) or []:
+            if lid not in known_ids:
+                errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): layoff_ids references unknown id '{lid}'")
     return errors
 
 def validate_data_consistency(events):
@@ -135,7 +150,17 @@ def main():
     else:
         print("✅ Event structure is valid")
     
-    # Step 4: Validate data consistency
+    # Step 4: Validate layoff dataset references
+    reference_errors = validate_layoff_references(events)
+    if reference_errors:
+        print("❌ Layoff reference errors:")
+        for error in reference_errors:
+            print(f"   {error}")
+        sys.exit(1)
+    else:
+        print("✅ Layoff dataset references are valid")
+
+    # Step 5: Validate data consistency
     consistency_errors = validate_data_consistency(events)
     if consistency_errors:
         print("⚠️  Data consistency warnings:")

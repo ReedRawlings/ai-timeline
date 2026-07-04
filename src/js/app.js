@@ -8,6 +8,7 @@ import { initTimeline, initChartTabs, initEventPopover } from './main.js';
 import { initStockChart } from './stock-chart.js';
 import { initLayoffChart } from './layoff-chart.js';
 import events from '../data/events.json';
+import layoffs from '../data/layoffs.json';
 
 // Render timeline DOM from event data
 renderTimeline(events);
@@ -24,5 +25,5 @@ initEventPopover();
 // Initialize stock chart with event markers
 initStockChart(events);
 
-// Initialize layoff chart (renders when Layoffs tab is visible)
-initLayoffChart(events);
+// Initialize layoff chart from the standalone layoffs dataset
+initLayoffChart(layoffs);

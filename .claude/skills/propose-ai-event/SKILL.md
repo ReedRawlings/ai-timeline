@@ -11,7 +11,7 @@ Given one or more AI developments (a URL, pasted text, or a described event), pr
 You always emit YAML for every event you're given — you never silently drop one. Significance is surfaced as a review flag, not a gate. The human decides what to keep.
 
 ## Read the conventions first
-Read `.claude/shared/event-conventions.md`. It defines the field rules, approved tags/impact areas, the `layoffs` field, the significance rubric, the omit-empty rule, and the dedup check. Everything below assumes those.
+Read `.claude/shared/event-conventions.md`. It defines the field rules, approved tags/impact areas, the `layoff_ids` field, the significance rubric, the omit-empty rule, and the dedup check. Everything below assumes those.
 
 ## Workflow
 For each event:

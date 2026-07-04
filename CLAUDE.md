@@ -4,7 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI Timeline is a Vite-built vanilla JS SPA that displays an interactive, horizontally scrollable timeline of significant AI events, plus a stock market chart with AI event markers. All event data lives in a single YAML file. Deployed on Vercel with a serverless API proxy for stock data.
+This repo is the home of a broader **AI Research & Data Assets project**: maintained, source-transparent public datasets about AI's measurable effects (labor, infrastructure, circulated statistics), plus the AI Timeline site. Three layers:
+
+1. **The site** — a Vite-built vanilla JS SPA displaying an interactive, horizontally scrollable timeline of significant AI events, plus a stock market chart with AI event markers. Event data lives in `data/events.yaml`. Deployed on Vercel with a serverless API proxy for stock data.
+2. **Datasets** — standalone data assets under `data/` (e.g., `data/provenance/`, `data/layoffs/`), each with its own schema, README, and inclusion criteria. Dataset rows never live inside `events.yaml`; the timeline may reference dataset rows, never the reverse.
+3. **Docs** — `docs/` holds the project's shared context. **`docs/master-status.md` is the orientation file — read it first for any work beyond routine site/timeline maintenance.** `docs/decisions.md` is the append-only decision log; `docs/prds/` holds PRDs for parked assets.
+
+Standing expectations for all dataset work: no fabrication — every number needs a real, checkable source; record who made an attribution and in what words, never flattened to a boolean; "undisclosed" is a valid value, a guessed number is not; when something is ambiguous or consequential, flag it to the human rather than silently deciding. Only two dataset builds are active at a time (see master-status); don't build parked assets.
+
+Commits touching only `docs/`, `data/provenance/`, or `data/layoffs/` skip Vercel deploys (`ignoreCommand` in vercel.json).
 
 ## Development Commands
 
@@ -12,7 +20,9 @@ AI Timeline is a Vite-built vanilla JS SPA that displays an interactive, horizon
 npm run dev                      # Start Vite dev server with hot reload (localhost:5173)
 npm run build                    # Production build to dist/ (includes stock data fetch)
 npm run preview                  # Preview production build locally
-python scripts/validate-yaml.py  # Validate events.yaml (syntax, structure, consistency)
+python scripts/validate-yaml.py  # Validate events.yaml (syntax, structure, layoff_ids refs)
+python scripts/validate-layoffs.py     # Validate data/layoffs/layoffs.csv
+python scripts/validate-provenance.py  # Validate data/provenance/register.csv
 ```
 
 Node.js (via nvm) and Python 3 + PyYAML required.
@@ -34,7 +44,11 @@ Node.js (via nvm) and Python 3 + PyYAML required.
 - `src/js/stock-chart.js` — TradingView Lightweight Charts integration with event markers
 - `src/css/main.css` — All styles (Ink & Signal design system)
 - `api/stocks.js` — Vercel serverless function proxying Finnhub stock data
+- `data/layoffs/layoffs.csv` — AI-attributed layoffs dataset (schema in `data/layoffs/schema.md`)
+- `data/provenance/register.csv` — Stat provenance register (fact-check model, stable row IDs)
+- `src/js/layoff-chart.js` — Layoff stacked bar chart, reads the layoffs dataset
 - `scripts/build-events.js` — Converts YAML → JSON at build time
+- `scripts/build-layoffs.js` — Converts layoffs CSV → JSON at build time
 - `scripts/build-stock-data.js` — Fetches historical stock data from Finnhub at build time
 - `scripts/validate-yaml.py` — Validates YAML syntax, required fields, date formats, duplicates
 - `vite.config.js` — Vite build configuration
@@ -51,7 +65,10 @@ Node.js (via nvm) and Python 3 + PyYAML required.
   impact_areas: ["Multimodal AI"]         # Optional, from approved list
   key_figures: ["Sam Altman"]             # Optional
   link: "https://example.com"             # Optional
+  layoff_ids: ["google-2023-01"]          # Optional, refs rows in data/layoffs/layoffs.csv
 ```
+
+Layoff data lives only in `data/layoffs/layoffs.csv` (see `data/layoffs/schema.md`); events reference rows via `layoff_ids`. The old nested `layoffs:` block is retired and rejected by the validator.
 
 ### Approved Tags
 Model, Corporate, Product, Research, Policy, Economic, Social, Technical, Partnership, Safety
