@@ -26,7 +26,7 @@ Search for each rubric category directly — do not search "AI news" broadly. Ru
 1. **Probe** each category with its targeted query.
 2. **Dedup** every candidate against `data/events.yaml` (conventions §7). Drop anything already on the timeline.
 3. **Confirm significance** — the query surfaced it, but still check it against the rubric (conventions §1) rather than assuming.
-4. **Extract and format** each kept event per the conventions.
+4. **Extract and format** each kept event per the conventions, assigning a suggested `tier` (conventions §2 — default `notable`/omit; flag any suggested `major` for the human).
 5. **Self-check** the proposal against conventions §9.
 6. **Write and summarize** (below).
 
@@ -41,8 +41,8 @@ Follow the `data/events.yaml` structure exactly (conventions §8). Omit empty fi
 
 ### Human-readable summary
 List proposed events grouped by rubric category (not chronologically):
-- **Title** — date
+- **Title** — date · suggested tier
 - Why it qualifies (one sentence, which criterion it cleared)
 - Source
 
-If any candidates were borderline or dropped as duplicates, list them briefly under separate headings so the human can second-guess the calls.
+Call out every suggested **`major`** explicitly so the human can confirm it (major is a human editorial call, not a computed one). If any candidates were borderline or dropped as duplicates, list them briefly under separate headings so the human can second-guess the calls.

@@ -10,6 +10,7 @@
 
 - title: "ChatGPT Release"
   date: "2022-11-30T10:00:00-07:00"
+  tier: major
   tags: ["Model", "Product", "Social"]
   organizations: ["OpenAI"]
   models: ["GPT-3.5"]
@@ -20,6 +21,7 @@
 
 - title: "GPT-4 Release"
   date: "2023-03-14T10:00:00-07:00"
+  tier: major
   tags: ["Model", "Product"]
   organizations: ["OpenAI"]
   models: ["GPT-4"]
@@ -30,6 +32,7 @@
 
 - title: "Claude Release"
   date: "2023-03-14T10:00:00-07:00"
+  tier: major
   tags: ["Model", "Product"]
   organizations: ["Anthropic"]
   models: ["Claude"]
@@ -80,6 +83,7 @@
 
 - title: "DeepSeek R1 Shocks Markets"
   date: "2025-01-20T09:00:00+08:00"
+  tier: major
   tags: ["Model", "Economic", "Social"]
   organizations: ["DeepSeek"]
   models: ["DeepSeek R1"]
@@ -90,6 +94,7 @@
 
 - title: "MrBeast AI Controversy"
   date: "2025-06-26T10:00:00-08:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   models: []
@@ -120,6 +125,7 @@
 
 - title: "FLI Letter for Pause AI"
   date: "2023-03-29T00:00:00-00:00"
+  tier: major
   tags: ["Policy", "Safety", "Social"]
   organizations: ["OpenAI"]
   models: ["GPT-4"]
@@ -130,6 +136,7 @@
 
 - title: "MAI-DxO Medical Research"
   date: "2025-06-30T00:00:00-08:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Microsoft", "New England Journal of Medicine"]
   models: ["o3"]
@@ -180,6 +187,7 @@
 
 - title: "Human Empathy Valued Over AI"
   date: "2025-06-30T09:00:00-05:00"
+  tier: minor
   tags: ["Research", "Social"]
   organizations: []
   models: []
@@ -210,6 +218,7 @@
 
 - title: "LLMs Show Mental Health Stigma"
   date: "2025-04-25T15:14:21-00:00"
+  tier: minor
   tags: ["Research", "Safety", "Social"]
   organizations: []
   models: ["GPT-4o"]
@@ -240,6 +249,7 @@
 
 - title: "Beijing AI Image Copyright"
   date: "2023-11-27T00:00:00+08:00"
+  tier: minor
   tags: ["Legal", "Social"]
   organizations: ["Beijing Internet Court"]
   models: ["Stable Diffusion"]
@@ -270,6 +280,7 @@
 
 - title: "Claude 3.5 Sonnet"
   date: "2024-06-20T10:00:00-07:00"
+  tier: minor
   tags: ["Model", "Product"]
   organizations: ["Anthropic"]
   models: ["Claude 3.5 Sonnet"]
@@ -300,6 +311,7 @@
 
 - title: "ChatGPT: Educational Friend or Foe?"
   date: "2023-01-09T00:00:00-05:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: ["ChatGPT"]
@@ -310,6 +322,7 @@
 
 - title: "AI Divide in Education"
   date: "2023-07-10T00:00:00-05:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: []
@@ -320,6 +333,7 @@
 
 - title: "Ban or Integrate Classroom AI?"
   date: "2023-08-07T00:00:00-05:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: []
@@ -330,6 +344,7 @@
 
 - title: "ChatGPT in Education"
   date: "2023-08-22T00:00:00-05:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Brookings Institution"]
   models: ["ChatGPT"]
@@ -340,6 +355,7 @@
   
 - title: "UNESCO Guidance on AI"
   date: "2023-09-07T00:00:00+02:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["UNESCO"]
   models: []
@@ -350,6 +366,7 @@
 
 - title: "Amazons 1 Millionth Robot"
   date: "2025-07-04T09:00:00-08:00"
+  tier: minor
   tags: ["Product", "Technical"]
   organizations: ["Amazon"]
   models: []
@@ -380,6 +397,7 @@
 
 - title: "CatAttack"
   date: "2025-03-03T00:00:00-08:00"
+  tier: minor
   tags: ["Research", "Safety"]
   organizations: [ "Stanford University"]
   models: ["DeepSeek-V3", "DeepSeek-R1", "OpenAI-o1", "OpenAI-o3-mini", "GPT-4o"]
@@ -480,6 +498,7 @@
 
 - title: "Grok Companions"
   date: "2025-07-14T12:00:00-07:00"
+  tier: minor
   tags: ["Product", "Technical", "Social"]
   organizations: ["xAI"]
   models: ["Grok"]
@@ -670,6 +689,7 @@
 
 - title: "Blake Lemoine LaMDA Controversy"
   date: "2022-06-11T12:00:00-07:00"
+  tier: minor
   tags: ["Social", "Policy"]
   organizations: ["Google"]
   models: ["LaMDA"]
@@ -690,6 +710,7 @@
 
 - title: "Effective Accelerationism Meme"
   date: "2022-07-10T15:00:00-07:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   models: []
@@ -730,6 +751,7 @@
 
 - title: "Tesla Optimus Robot"
   date: "2022-09-30T20:00:00-07:00"
+  tier: minor
   tags: ["Product", "Corporate"]
   organizations: ["Tesla"]
   models: []
@@ -740,6 +762,7 @@
 
 - title: "U.S. Chip Export Controls"
   date: "2022-10-07T17:00:00-04:00"
+  tier: major
   tags: ["Policy", "Economic"]
   organizations: ["U.S. Government"]
   models: []
@@ -750,6 +773,7 @@
 
 - title: "ChatGPT Preview"
   date: "2022-11-30T13:00:00-08:00"
+  tier: minor
   tags: ["Product", "Model"]
   organizations: ["OpenAI"]
   models: ["ChatGPT", "GPT-3.5"]
@@ -770,6 +794,7 @@
 
 - title: "Teens Use of AI"
   date: "2025-05-14T00:00:00-08:00"
+  tier: minor
   tags: ["Research", "Social"]
   organizations: []
   models: ["Character.AI", "Replika"]
@@ -780,6 +805,7 @@
 
 - title: "Sydney Misbehavior"
   date: "2023-02-07T09:00:00-08:00"
+  tier: minor
   tags: ["Product"]
   organizations: ["Microsoft", "OpenAI"]
   models: ["GPT-4"]
@@ -790,6 +816,7 @@
 
 - title: "Clanker Meme"
   date: "2025-07-01T12:00:00-07:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   models: []
@@ -800,6 +827,7 @@
 
 - title: "Bing Chat 'Sydney' Gaslights NYT Reporter"
   date: "2023-02-17T00:00:00-05:00"
+  tier: minor
   tags: ["Social"]
   organizations: ["Microsoft", "OpenAI"]
   models: []
@@ -830,6 +858,7 @@
 
 - title: "GPT-4"
   date: "2023-03-14T10:00:00-07:00"
+  tier: minor
   tags: ["Model", "Product"]
   organizations: ["OpenAI"]
   models: ["GPT-4"]
@@ -840,6 +869,7 @@
 
 - title: "Anthropic Introduces Claude"
   date: "2023-03-14T09:00:00-07:00"
+  tier: minor
   tags: ["Model", "Product", "Corporate"]
   organizations: ["Anthropic"]
   models: ["Claude", "Claude Instant"]
@@ -870,6 +900,7 @@
 
 - title: "'Fake Drake' AI Song"
   date: "2023-04-23T00:00:00-04:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   models: []
@@ -890,6 +921,7 @@
 
 - title: "Voyager (GPT-4 in Minecraft)"
   date: "2023-05-25T00:00:00-07:00"
+  tier: minor
   tags: ["Research"]
   organizations: []
   models: ["GPT-4"]
@@ -990,6 +1022,7 @@
 
 - title: "UK AI Safety Summit"
   date: "2023-11-01T00:00:00+00:00"
+  tier: major
   tags: ["Policy", "Corporate"]
   organizations: []
   models: []
@@ -1010,6 +1043,7 @@
 
 - title: "Sam Altman Board Drama"
   date: "2023-11-17T00:00:00+00:00"
+  tier: major
   tags: ["Corporate", "Social"]
   organizations: ["OpenAI"]
   models: []
@@ -1080,6 +1114,7 @@
 
 - title: "Claude 3.5 Sonnet"
   date: "2024-06-20T09:00:00-07:00"
+  tier: minor
   tags: ["Model"]
   organizations: ["Anthropic"]
   models: ["Claude 3.5 Sonnet"]
@@ -1139,6 +1174,7 @@
 
 - title: "SB-1047 vetoed"
   date: "2024-09-29T12:00:00-07:00"
+  tier: major
   tags: ["Policy", "Legal"]
   organizations: ["State of California"]
   models: []
@@ -1169,6 +1205,7 @@
 
 - title: "Situational Awareness essays"
   date: "2024-11-01T09:00:00-07:00"
+  tier: minor
   tags: ["Social", "Research", "Safety"]
   organizations: []
   models: []
@@ -1249,6 +1286,7 @@
 
 - title: "Ilya Sutskever Resigns"
   date: "2024-05-14T17:00:00-07:00"
+  tier: major
   tags: ["Corporate"]
   organizations: ["OpenAI"]
   models: []
@@ -1259,6 +1297,7 @@
 
 - title: "EU AI Act Final Passage"
   date: "2024-05-21T15:00:00+02:00"
+  tier: major
   tags: ["Policy"]
   organizations: ["European Union"]
   models: []
@@ -1269,6 +1308,7 @@
 
 - title: "Situational Awareness Essays"
   date: "2024-06-04T09:00:00-07:00"
+  tier: minor
   tags: ["Research", "Safety"]
   organizations: []
   models: []
@@ -1289,6 +1329,7 @@
 
 - title: "Trump Wins 2024 Election"
   date: "2024-11-06T00:00:00-05:00"
+  tier: major
   tags: ["Policy", "Social"]
   organizations: ["U.S. Government"]
   models: []
@@ -1458,6 +1499,7 @@
 
 - title: "OpenAI For-Profit Conversion"
   date: "2025-10-28T09:00:00-07:00"
+  tier: major
   tags: ["Corporate", "Economic"]
   organizations: ["OpenAI", "Microsoft"]
   impact_areas: ["Market Competition", "Enterprise AI", "Regulation"]
@@ -1467,6 +1509,7 @@
 
 - title: "NVIDIA Reaches $5 Trillion"
   date: "2025-10-29T09:30:00-04:00"
+  tier: major
   tags: ["Corporate", "Economic"]
   organizations: ["NVIDIA"]
   impact_areas: ["Market Competition", "Hardware"]
@@ -1621,6 +1664,7 @@
 
 - title: "AI Slop Named Word of the Year"
   date: "2025-12-01T09:00:00-05:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   impact_areas: ["Public Perception", "Creator Economy", "Ethics"]
@@ -1669,6 +1713,7 @@
 
 - title: "AI Layoffs Hit 55,000 in 2025"
   date: "2025-11-30T09:00:00-05:00"
+  tier: major
   tags: ["Economic", "Social"]
   organizations: ["Microsoft", "Amazon"]
   impact_areas: ["Enterprise AI", "Public Perception", "Ethics"]
@@ -1678,6 +1723,7 @@
 
 - title: "ChatGPT Hits 800 Million Users"
   date: "2025-12-15T09:00:00-08:00"
+  tier: major
   tags: ["Product", "Social"]
   organizations: ["OpenAI"]
   models: ["ChatGPT"]
@@ -1688,6 +1734,7 @@
 
 - title: "Italian Brainrot Takes Over TikTok"
   date: "2025-01-15T09:00:00-05:00"
+  tier: minor
   tags: ["Social"]
   organizations: []
   impact_areas: ["Public Perception", "Creator Economy"]
@@ -1707,6 +1754,7 @@
 
 - title: "Character.AI Teen Suicide Lawsuits and FTC Inquiry"
   date: "2025-09-16T09:00:00-04:00"
+  tier: major
   tags: ["Social", "Policy", "Safety"]
   organizations: ["Character.AI", "Google"]
   impact_areas: ["Ethics", "Regulation", "Public Perception"]
@@ -1744,6 +1792,7 @@
 
 - title: "Trump Revokes Biden's AI Executive Order"
   date: "2025-01-20T12:00:00-05:00"
+  tier: major
   tags: ["Policy"]
   organizations: []
   impact_areas: ["Regulation", "Ethics"]
@@ -1753,6 +1802,7 @@
 
 - title: "The Stargate Project"
   date: "2025-01-21T14:00:00-05:00"
+  tier: major
   tags: ["Corporate", "Economic", "Partnership"]
   organizations: ["OpenAI", "SoftBank", "Oracle"]
   impact_areas: ["Hardware", "Enterprise AI", "Market Competition"]
@@ -1772,6 +1822,7 @@
 
 - title: "Paris AI Action Summit"
   date: "2025-02-10T09:00:00+01:00"
+  tier: major
   tags: ["Policy"]
   organizations: []
   impact_areas: ["Regulation", "Ethics"]
@@ -1801,6 +1852,7 @@
 
 - title: "AI 'Virtual Scientists' Design New Nanobodies"
   date: "2025-07-29T09:00:00-07:00"
+  tier: minor
   tags: ["Research"]
   organizations: ["Stanford University"]
   impact_areas: ["Healthcare", "Research"]
@@ -1819,6 +1871,7 @@
 
 - title: "GPT-5 Release"
   date: "2025-08-07T10:00:00-07:00"
+  tier: major
   tags: ["Model", "Product"]
   organizations: ["OpenAI"]
   models: ["GPT-5"]
@@ -1865,7 +1918,6 @@
   key_figures: ["Andy Jassy"]
   link: "https://www.cnbc.com/2023/01/05/amazon-plans-to-lay-off-over-18000-employees.html"
   description: "Amazon CEO Andy Jassy announced the company would lay off more than 18,000 employees, the largest workforce reduction in the company's history. While framed as a response to pandemic-era over-hiring, the cuts came as Amazon poured billions into AWS AI services and began building its own large language models, signaling a strategic pivot toward AI infrastructure."
-  layoff_ids: ["amazon-2023-01"]
 
 - title: "Electronic Arts Cuts 800 Jobs"
   date: "2023-03-29T10:00:00-07:00"
@@ -1874,7 +1926,6 @@
   impact_areas: ["Enterprise AI"]
   link: "https://variety.com/2023/digital/news/electronic-arts-layoffs-employees-1235568329/"
   description: "EA laid off 6% of its workforce as part of a strategic shift to reevaluate investment priorities, reduce office space, and redirect resources toward AI-assisted game development tools and live service games. The cuts came amid a broader gaming industry downturn that would see over 25,000 jobs lost across the sector in 2023-2024."
-  layoff_ids: ["ea-2023-03"]
 
 - title: "BuzzFeed Shuts News Division, Replaces Writers with AI"
   date: "2023-04-20T10:00:00-04:00"
@@ -1923,7 +1974,6 @@
   impact_areas: ["Enterprise AI"]
   link: "https://www.blog.udonis.co/mobile-marketing/mobile-games/unity-layoffs"
   description: "Unity Technologies announced its most drastic workforce reduction, cutting 1,800 jobs (25% of its global workforce). The game engine company was restructuring after a controversial runtime fee debacle and shifting industry dynamics as AI-powered tools began threatening traditional game development workflows."
-  layoff_ids: ["unity-2024-01"]
 
 - title: "Duolingo Cuts Contractors, Replaces with GPT-4"
   date: "2024-01-09T10:00:00-05:00"
@@ -1953,7 +2003,6 @@
   impact_areas: ["Enterprise AI", "Market Competition"]
   link: "https://www.cnbc.com/2024/01/30/ups-to-cut-about-12000-jobs-in-2024.html"
   description: "UPS announced it would eliminate approximately 12,000 management and office jobs in 2024 as part of a restructuring driven by AI-powered logistics optimization and automation. CEO Carol Tomé cited network reconfiguration and efficiency investments including machine learning and smart warehouse systems. The cuts were among the largest in UPS's 116-year history and reflected growing AI-driven automation in the logistics sector."
-  layoff_ids: ["ups-2024-01"]
 
 - title: "Electronic Arts Cuts Another 670 Jobs"
   date: "2024-02-28T10:00:00-08:00"
@@ -1962,7 +2011,6 @@
   impact_areas: ["Enterprise AI"]
   link: "https://www.cnbc.com/2024/02/28/ea-layoffs-company-to-cut-5percent-of-workforce-or-about-670-employees.html"
   description: "EA announced its second major round of cuts in under a year, laying off 670 employees (5% of workforce). The company cancelled a Star Wars first-person shooter at Ridgeline Games as the gaming industry increasingly adopted generative AI tools for voice, animation, and scripting."
-  layoff_ids: ["ea-2024-02"]
 
 - title: "Tesla Cuts 14% of Global Workforce"
   date: "2024-04-15T10:00:00-07:00"
@@ -1972,7 +2020,6 @@
   key_figures: ["Elon Musk"]
   link: "https://www.cnbc.com/2024/04/15/tesla-shares-dip-in-premarket-trade-on-global-layoff-reports.html"
   description: "Tesla laid off more than 14% of its global workforce as CEO Elon Musk redirected resources toward AI-driven autonomous driving (FSD) and robotics (Optimus). While driven partly by declining EV sales, the cuts aligned with Tesla's pivot toward AI compute infrastructure. The cuts notably included Tesla's Supercharger team."
-  layoff_ids: ["tesla-2024-04"]
 
 - title: "Chegg Lays Off 23% as AI Erodes Subscriber Base"
   date: "2024-06-17T10:00:00-07:00"
@@ -2001,7 +2048,6 @@
   key_figures: ["Pat Gelsinger"]
   link: "https://www.cnbc.com/2024/08/01/intel-to-cut-more-than-15000-jobs-slash-dividend-as-it-tries-to-revive-its-fortunes.html"
   description: "Intel announced it would cut more than 15,000 jobs — approximately 15% of its global workforce — and suspend its dividend as CEO Pat Gelsinger restructured the company to compete in the AI chip era dominated by NVIDIA. The cuts came alongside a $10 billion cost reduction plan, reflecting how Intel had fallen behind in the AI accelerator market while NVIDIA captured the bulk of AI training and inference revenue."
-  layoff_ids: ["intel-2024-08"]
 
 - title: "Klarna AI Chatbot Displaces 700 Customer Service Agents"
   date: "2024-09-01T10:00:00+02:00"
@@ -2021,7 +2067,6 @@
   key_figures: ["Andy Jassy"]
   link: "https://abcnews.go.com/Business/wireStory/artificial-intelligence-drive-layoffs-amazon-firms-hard-129773731"
   description: "Amazon cut 14,000 corporate roles as the company invested in AI as its 'biggest bet.' Leadership stated that 'this generation of AI is the most transformative technology since the Internet' to justify the restructuring, which targeted middle management to redirect billions toward AI and AWS data center expansion."
-  layoff_ids: ["amazon-2024-10"]
 
 - title: "Microsoft Cuts 6,000 in AI-Driven Restructuring"
   date: "2025-05-13T10:00:00-07:00"
@@ -2042,7 +2087,6 @@
   key_figures: ["Lip-Bu Tan"]
   link: "https://www.cnbc.com/2025/07/01/intel-layoffs-lip-bu-tan-restructuring.html"
   description: "Intel announced a second major round of cuts under new CEO Lip-Bu Tan, eliminating approximately 20,500 positions as the company accelerated its pivot toward AI-optimized chip architectures and exited legacy product lines. The cuts brought Intel's total workforce reductions to over 35,000 since 2024, as the company sought to catch up to NVIDIA and AMD in the AI accelerator market."
-  layoff_ids: ["intel-2025-07"]
 
 - title: "Microsoft Cuts Additional 9,000"
   date: "2025-07-02T10:00:00-07:00"
@@ -2062,7 +2106,6 @@
   key_figures: ["Sundar Pichai"]
   link: "https://www.thehrdigest.com/google-cut-managers-by-35-inside-pichais-layoffs-overhaul/"
   description: "Google CEO Sundar Pichai announced the company had cut 35% of its managers (targeting those with fewer than three direct reports), offered voluntary exit packages, and eliminated 200+ AI contractor roles. The restructuring reflected Google's belief that AI could reduce the need for middle management."
-  layoff_ids: ["google-2025-08"]
 
 - title: "Salesforce Replaces 4,000 Support Roles with AI Agents"
   date: "2025-09-02T10:00:00-07:00"
@@ -2080,7 +2123,6 @@
   impact_areas: ["Enterprise AI", "Market Competition"]
   link: "https://www.cnbc.com/2025/10/22/meta-layoffs-ai.html"
   description: "Meta laid off approximately 600 employees from its AI research division, pivoting from publishing academic papers toward a 'leaner, faster-moving' applied AI organization focused on building production-ready models. The cuts reflected a shift toward data-centric, engineering-driven AI development."
-  layoff_ids: ["meta-2025-10"]
 
 - title: "Chegg Slashes 45% as AI Devastates Business"
   date: "2025-10-27T10:00:00-07:00"
@@ -2152,6 +2194,7 @@
 
 - title: "SpaceX-xAI Mega-Merger Announced at $1.25 Trillion"
   date: "2026-02-03T09:00:00-08:00"
+  tier: major
   tags: ["Corporate", "Economic", "Technical"]
   organizations: ["SpaceX", "xAI"]
   impact_areas: ["Market Competition", "Hardware", "Enterprise AI"]
@@ -2171,6 +2214,7 @@
 
 - title: "Trump Posts Racist AI Deepfake of the Obamas"
   date: "2026-02-07T09:00:00-05:00"
+  tier: major
   tags: ["Social", "Policy"]
   impact_areas: ["Public Perception", "Ethics", "Regulation"]
   key_figures: ["Barack Obama", "Donald Trump"]
@@ -2179,6 +2223,7 @@
 
 - title: "Grok Deepfake Crisis — EU Opens Formal Probe"
   date: "2026-02-10T09:00:00-05:00"
+  tier: major
   tags: ["Policy", "Safety", "Social"]
   organizations: ["xAI"]
   models: ["Grok"]
@@ -2254,6 +2299,7 @@
 
 - title: "Anthropic Reverses Core AI Safety Testing Pledge"
   date: "2026-02-20T09:00:00-08:00"
+  tier: major
   tags: ["Safety", "Corporate", "Policy"]
   organizations: ["Anthropic"]
   impact_areas: ["Ethics", "Regulation", "Market Competition"]
@@ -2300,6 +2346,7 @@
 
 - title: "Trump Blacklists Anthropic; OpenAI Strikes Pentagon Deal Same Day"
   date: "2026-02-27T17:00:00-05:00"
+  tier: major
   tags: ["Policy", "Corporate", "Safety"]
   organizations: ["Anthropic", "OpenAI", "Pentagon"]
   impact_areas: ["Regulation", "Ethics", "Market Competition"]
@@ -2309,6 +2356,7 @@
 
 - title: "Supreme Court Kills Thaler AI Authorship Case"
   date: "2026-03-02T09:00:00-05:00"
+  tier: major
   tags: ["Policy", "Research"]
   impact_areas: ["Ethics", "Regulation", "Creator Economy"]
   key_figures: ["Stephen Thaler"]
@@ -2351,6 +2399,7 @@
 
 - title: "Anthropic Sues Trump Administration Over Pentagon Blacklist"
   date: "2026-03-09T09:00:00-08:00"
+  tier: major
   tags: ["Policy", "Safety", "Corporate"]
   organizations: ["Anthropic", "Pentagon"]
   impact_areas: ["Regulation", "Ethics", "Market Competition"]
@@ -2396,6 +2445,7 @@
 
 - title: "Amazon AI Coding Agent Causes Cascading Retail Outages"
   date: "2026-03-13T09:00:00-08:00"
+  tier: major
   tags: ["Technical", "Corporate"]
   organizations: ["Amazon"]
   impact_areas: ["Enterprise AI", "Public Perception"]
@@ -2445,6 +2495,7 @@
 
 - title: "White House Unveils Six-Pillar AI Legislative Framework"
   date: "2026-03-20T09:00:00-05:00"
+  tier: major
   tags: ["Policy", "Regulation"]
   impact_areas: ["Regulation", "Market Competition", "Ethics"]
   key_figures: ["Donald Trump"]

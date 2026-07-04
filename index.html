@@ -7,44 +7,16 @@
     <meta name="description" content="A chronological timeline of important AI developments">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-content">
-            <h1 class="site-title">AI Timeline</h1>
-            <div class="header-rule"><span></span></div>
-            <p class="site-description">A chronological timeline of important AI developments</p>
+    <header class="record-header">
+        <div class="record-brand">
+            <span class="record-wordmark">The AI Record</span>
+            <span class="record-kicker">Tracking the timeline to AGI</span>
         </div>
+        <span class="record-stat" id="record-stat"></span>
     </header>
-
-    <!-- Filter System -->
-    <div class="filter-container compact">
-        <div class="container">
-            <div class="filter-bar compact">
-                <select id="model-filter" class="filter-select">
-                    <option value="">All Models</option>
-                </select>
-                <select id="organization-filter" class="filter-select">
-                    <option value="">All Organizations</option>
-                </select>
-                <select id="key-figure-filter" class="filter-select">
-                    <option value="">All Key Figures</option>
-                </select>
-                <select id="impact-area-filter" class="filter-select">
-                    <option value="">All Impact Areas</option>
-                </select>
-                <select id="tag-filter" class="filter-select">
-                    <option value="">All Tags</option>
-                </select>
-                <select id="grouping-mode" class="filter-select">
-                    <option value="month" selected>By Month</option>
-                    <option value="week">By Week</option>
-                </select>
-                <button id="clear-filters" class="clear-filters-btn">Clear All</button>
-            </div>
-        </div>
-    </div>
 
     <!-- AI Market Tracker (collapsible, default collapsed) -->
     <div class="stock-chart-section">
@@ -80,8 +52,8 @@
         </div>
     </div>
 
-    <main class="timeline-container">
-        <div class="timeline" id="timeline"></div>
+    <main class="record-main">
+        <div id="atlas-dispatch"></div>
     </main>
 
     <script type="module" src="/src/js/app.js"></script>

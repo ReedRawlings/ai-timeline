@@ -28,8 +28,9 @@ def validate_yaml_syntax(file_path):
 def validate_event_structure(events):
     """Validate the structure of each event."""
     required_fields = ['title', 'date', 'description']
-    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link', 'layoff_ids']
-    
+    optional_fields = ['tags', 'organizations', 'models', 'impact_areas', 'key_figures', 'link', 'layoff_ids', 'tier']
+    allowed_tiers = {'major', 'notable', 'minor'}
+
     errors = []
     
     for i, event in enumerate(events):
@@ -61,6 +62,10 @@ def validate_event_structure(events):
             ids = event['layoff_ids']
             if not isinstance(ids, list) or not all(isinstance(x, str) for x in ids):
                 errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'layoff_ids' must be a list of strings")
+
+        # Validate tier (optional; defaults to 'notable' when omitted)
+        if 'tier' in event and event['tier'] not in allowed_tiers:
+            errors.append(f"Event {i+1} ('{event.get('title', 'Unknown')}'): 'tier' must be one of {sorted(allowed_tiers)}, got '{event['tier']}'")
 
         # Validate date format
         if 'date' in event:
