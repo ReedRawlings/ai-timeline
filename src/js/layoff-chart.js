@@ -3,26 +3,6 @@
  * Layoff Tracker — SVG stacked bar chart grouped by month + cumulative line overlay.
  */
 
-// Ticker → display name
-const COMPANY_NAMES = {
-    GOOGL: 'Google',
-    META: 'Meta',
-    MSFT: 'Microsoft',
-    AMZN: 'Amazon',
-    TSLA: 'Tesla',
-    EA: 'EA',
-    CHGG: 'Chegg',
-    U: 'Unity',
-    DUOL: 'Duolingo',
-    PATH: 'UiPath',
-    TEAM: 'Atlassian',
-    SQ: 'Block',
-    CRM: 'Salesforce',
-    IBM: 'IBM',
-    UPS: 'UPS',
-    INTC: 'Intel',
-};
-
 // Color palette: Ink & Signal editorial tones — warm + cool accent pairs
 const PALETTE = [
     '#C84B31',  // terracotta (matches layoff badge)
@@ -71,17 +51,19 @@ function makeSvgText(content, attrs = {}) {
     return el;
 }
 
-export function initLayoffChart(events) {
+export function initLayoffChart(layoffs) {
     const container = document.getElementById('layoff-chart-container');
     if (!container) return;
 
-    // ── Group layoff events by month ──────────────────────────────────────
+    // ── Group layoff rows by month ────────────────────────────────────────
+    // Rows without a disclosed count (count: null = "undisclosed") can't be
+    // charted; they stay in the dataset but are excluded here.
     const monthMap = new Map();
-    events
-        .filter(e => e.layoffs?.headcount)
-        .sort((a, b) => new Date(a.date) - new Date(b.date))
-        .forEach(e => {
-            const d = new Date(e.date);
+    layoffs
+        .filter(r => Number.isFinite(r.count) && r.count > 0)
+        .sort((a, b) => new Date(a.announcement_date) - new Date(b.announcement_date))
+        .forEach(r => {
+            const d = new Date(r.announcement_date + 'T12:00:00');
             const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
             if (!monthMap.has(key)) {
                 const mon = d.toLocaleDateString('en-US', { month: 'short' });
@@ -96,17 +78,16 @@ export function initLayoffChart(events) {
                 });
             }
             const bucket = monthMap.get(key);
-            const existing = bucket.companies.find(c => c.ticker === e.layoffs.company);
+            const existing = bucket.companies.find(c => c.company === r.company);
             if (existing) {
-                existing.headcount += e.layoffs.headcount;
+                existing.headcount += r.count;
             } else {
                 bucket.companies.push({
-                    ticker: e.layoffs.company,
-                    company: COMPANY_NAMES[e.layoffs.company] || e.layoffs.company,
-                    headcount: e.layoffs.headcount,
+                    company: r.company,
+                    headcount: r.count,
                 });
             }
-            bucket.total += e.layoffs.headcount;
+            bucket.total += r.count;
         });
 
     if (monthMap.size === 0) return;
@@ -124,11 +105,11 @@ export function initLayoffChart(events) {
     let colorIdx = 0;
     for (const m of months) {
         for (const seg of m.companies) {
-            if (!companyColors.has(seg.ticker)) {
-                companyColors.set(seg.ticker, PALETTE[colorIdx % PALETTE.length]);
+            if (!companyColors.has(seg.company)) {
+                companyColors.set(seg.company, PALETTE[colorIdx % PALETTE.length]);
                 colorIdx++;
             }
-            seg.color = companyColors.get(seg.ticker);
+            seg.color = companyColors.get(seg.company);
         }
     }
 
@@ -152,8 +133,7 @@ export function initLayoffChart(events) {
         display:flex; flex-wrap:wrap; gap:4px 14px; padding:8px 0 2px;
         font-family:${COLORS.font}; font-size:11px; color:${COLORS.ink2};
     `;
-    for (const [ticker, color] of companyColors) {
-        const name = COMPANY_NAMES[ticker] || ticker;
+    for (const [name, color] of companyColors) {
         const item = document.createElement('div');
         item.style.cssText = 'display:flex; align-items:center; gap:5px;';
         item.innerHTML = `<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${color};flex-shrink:0"></span><span>${name}</span>`;

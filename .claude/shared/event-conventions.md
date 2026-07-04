@@ -22,6 +22,8 @@ Skills that reference this: `propose-ai-event`, `find-ai-events-broad`, `find-ai
 
 Borderline → flag it. Err toward surfacing so the human decides.
 
+**From bar to tier.** The rubric decides *whether* an event belongs. Each kept event also carries an editorial **`tier`** (`major` / `notable` / `minor`) that decides *how prominently* it renders in the Atlas + Dispatch view — see the `tier` field in section 2. Suggest a tier, but treat `major` as a human call: surface it as a flag, don't finalize it.
+
 ---
 
 ## 2. Field extraction rules
@@ -34,13 +36,17 @@ Match `data/events.yaml` exactly.
 - **description** — 1-3 factual sentences on what happened and why it matters for AI's trajectory. **Do not start with or restate the date** (it has its own field). You don't need to name the organizations or key figures just to list them — the structured fields carry those. **Paraphrase the source in your own words; never copy sentences verbatim.**
 
 **Optional (include only when supported; see omit rule):**
+- **tier** — editorial importance, one of `major`, `notable`, `minor`. **Default is `notable`; omit the field for notable events** and write only `tier: major` or `tier: minor` explicitly (place it right after `date:`). This is a hand-curated judgment — **never derive it from tags, keywords, or funding size.**
+  - **major** — a landmark that reorders the field: first-of-kind regulation or court ruling, an AI-driven market shock, a safety or open-source reversal by a major lab, a defining cultural moment, or a paradigm model release. Only ~10–12% of events; these carry the site's headline cards. **Always surface a suggested `major` as a review flag for a human to confirm — never finalize it silently.**
+  - **minor** — clears the bar but is incremental or niche: a point-release kept for completeness, a small or contained controversy, a narrow research result.
+  - **notable** (default) — everything else that clears the bar. Omit the field.
 - **tags** — one or more from the Approved Tags list. Nothing off-list.
 - **organizations** — companies, labs, institutions, or agencies involved.
 - **models** — specific model names, spelled exactly as the vendor/source writes them ("GPT-4o", "Genie 3"). If the model already appears in `data/events.yaml`, match that spelling so the site's filters stay consistent. Don't normalize or guess version numbers.
 - **impact_areas** — one or more from the Approved Impact Areas list. Nothing off-list.
 - **key_figures** — only prominent, named individuals central to the event (CEOs, heads of AI orgs, well-known researchers, named public figures — e.g. Sam Altman, Elon Musk, Dario Amodei). Don't pad with minor or unnamed people.
 - **link** — the source URL.
-- **layoffs** — only for AI-attributed workforce-reduction events. See section 5.
+- **layoff_ids** — only for AI-attributed workforce-reduction events. See section 5.
 
 **Omit-empty rule:** if a field has no value, leave the field out entirely. Never write `tags: []` or `organizations: []`. The validator warns on empty `organizations`/`models`, and the house convention is to omit.
 
@@ -56,14 +62,12 @@ Model, Corporate, Product, Research, Policy, Economic, Social, Technical, Partne
 Use only these (this is the site's live filter taxonomy — lawsuits and court rulings map to **Regulation**, not a separate "Legal" area):
 Multimodal AI, Language Models, Computer Vision, Market Competition, Robotics, Healthcare, Education, Creator Economy, Public Perception, Ethics, Regulation, Enterprise AI, Open Source, Hardware, Research
 
-## 5. The `layoffs` field
-Only for events that are primarily AI-attributed workforce reductions:
+## 5. The `layoff_ids` field
+Layoff data lives in the standalone dataset `data/layoffs/layoffs.csv` (see `data/layoffs/schema.md`), never nested in events. For events that are primarily AI-attributed workforce reductions, add the row(s) to the dataset first (use the `propose-layoff-entry` skill), then reference them:
 ```yaml
-  layoffs:
-    company: "Company Name"
-    headcount: 500
+  layoff_ids: ["google-2023-01"]
 ```
-`headcount` must be an integer — no quotes, no commas. Omit the whole block for non-layoff events.
+Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this. Omit the field for non-layoff events. The retired nested `layoffs:` block is rejected by the validator.
 
 ---
 
@@ -110,6 +114,7 @@ Before proposing an event, check it isn't already on the timeline:
   link: "https://source.com"
   description: "What happened and why it matters for AI."
 ```
+Add a `tier:` line right after `date:` only for `major`/`minor` events (e.g. `tier: major`); omit it for the `notable` default. See the `tier` field in section 2.
 
 ## 9. Self-check before writing (mirrors `scripts/validate-yaml.py`)
 
@@ -117,8 +122,9 @@ The validator only runs against `data/events.yaml` on merge, not against proposa
 - [ ] `title`, `date`, `description` present on every entry
 - [ ] `date` parses as ISO 8601 (a trailing `Z` is fine)
 - [ ] array fields are lists; no empty `[]` arrays anywhere
-- [ ] `layoffs`, if present, is a mapping with `company` and an integer `headcount`
+- [ ] `layoff_ids`, if present, is a list of ids that exist in `data/layoffs/layoffs.csv`
 - [ ] no title duplicates another entry in the batch or in `data/events.yaml`
 - [ ] tags and impact_areas are drawn only from the approved lists
+- [ ] `tier`, if present, is exactly `major`, `notable`, or `minor` — and is omitted for the notable default (every suggested `major` is flagged for a human)
 
 A quick syntax check on a proposal file: `python -c "import yaml; yaml.safe_load(open('proposals/FILE.yaml'))"`.
