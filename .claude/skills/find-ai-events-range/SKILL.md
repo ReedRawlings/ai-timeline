@@ -15,11 +15,11 @@ Read `.claude/shared/event-conventions.md`. It defines the significance rubric (
 1. **Fix the range.** If the user said "backfill April," that's `2026-04-01 … 2026-04-30`. If they said "catch up," load `data/events.yaml`, find the latest event date, and set the range from there to today — and say so, so nothing between the last event and now is orphaned.
 2. **Build the dedup set** from `data/events.yaml` for the range (conventions §7). Also dedup against any proposal files already written for adjacent windows. Only NET-NEW events get proposed.
 
-## Discovery: criteria-first, per sub-period (cast wide, verify narrow)
-Do NOT run one broad "AI news" query for the whole range — you'll miss the long tail. Walk the range in sub-periods (per week for a month; per month for a quarter) and, for each, run the criteria-first method:
+## Discovery: curated sources lead, per sub-period (cast wide, verify narrow)
+Walk the range in sub-periods (per week for a month; per month for a quarter). For each sub-period:
 
-1. **Curated sources first** (conventions §6): `site:` searches on the Substacks, the Superintelligence homepage, Reddit for social/cultural moments. Note §6's access-staleness caveat — when curated sources come up empty, widen to first-tier outlets; do not skip verification.
-2. **One targeted query per rubric category** (conventions §1) for the sub-period: structural novelty, social/cultural, regulatory/legal, economic signal, paradigm model event. Add explicit probes for the categories a broad sweep under-covers: **funding rounds, hardware/data-center/infra, robotics/physical AI, research breakthroughs.** (In the 2026-07 backfill, funding and hardware were the biggest misses.)
+1. **Curated sources are the discovery engine — and a reported gate (conventions §6):** run the `site:` searches on the Substacks, the Superintelligence archive (`/topics` or the month archive, not just the homepage), and Reddit for social/cultural moments, **before** any broad query — and list in the review summary which curated sources you actually hit. Skipping them is the single most repeated failure of this skill (two 2026-07 passes skipped them and both missed the Pope Leo XIV AI encyclical). Per §6's access caveat, when curated sources come up empty, widen to first-tier outlets; do not skip verification.
+2. **Broad web is only for chasing and backfilling — never the engine.** Use it to (a) follow specific leads the curated sources surface and (b) backfill anything a read of the sub-period suggests is missing (e.g. a category that looks empty — robotics, hardware, a court ruling). Do not run generic "AI news <month>" queries as the primary method: they are SEO-optimized, over-return model releases, funding rounds, and layoffs, and miss the rest. Everything kept is verified against a primary or first-tier source (§9).
 
 ## Pipeline
 1. **Collect** candidates per sub-period across the whole range.

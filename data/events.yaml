@@ -2837,3 +2837,214 @@
   link: "https://news.cognizant.com/2026-04-29-Cognizant-Reports-First-Quarter-2026-Results"
   description: "Cognizant announced 'Project Leap,' an AI-led operating-model reset the CEO framed as funding continued investments in AI and re-skilling, disclosing a $230–320M restructuring charge ($200–270M severance) but no headcount figure. Press and analysts extrapolated 7,000–15,000 job cuts from the severance budget — not a company number — even as reported quarterly headcount rose. An India-heavy case that illustrates 'AI as investment destination' restructuring; see the layoff row."
   layoff_ids: ["cognizant-2026-04"]
+
+
+- title: "Anthropic Raises $65B Series H at $965B Valuation"
+  date: "2026-05-28T10:00:00-07:00"
+  tier: major
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://www.anthropic.com/news/series-h"
+  description: "Anthropic closed a $65 billion Series H led by Altimeter, Dragoneer, Greenoaks, and Sequoia at a $965 billion post-money valuation, with run-rate revenue reported to have crossed $47 billion — pushing its valuation above OpenAI's just three months after its $30 billion Series G. The round folded in $15 billion of previously committed hyperscaler investment and brought on memory-chip partners Micron, Samsung, and SK hynix."
+
+- title: "US Extends Frontier-AI Security Testing to Google, Microsoft, and xAI"
+  date: "2026-05-05T10:00:00-04:00"
+  tags: ["Policy", "Safety"]
+  organizations: ["NIST", "Google DeepMind", "Microsoft", "xAI"]
+  impact_areas: ["Regulation", "Public Perception"]
+  link: "https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html"
+  description: "The Commerce Department's Center for AI Standards and Innovation, housed at NIST, announced agreements to run pre- and post-deployment national-security evaluations of frontier models from Google DeepMind, Microsoft, and xAI, extending a government-testing arrangement previously limited to OpenAI and Anthropic. Developers in some cases provide safeguard-reduced versions for evaluation."
+
+- title: "Pennsylvania Sues Character.AI Over Chatbots Posing as Doctors"
+  date: "2026-05-05T10:00:00-04:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["Character.AI", "Commonwealth of Pennsylvania"]
+  impact_areas: ["Regulation", "Healthcare", "Ethics"]
+  key_figures: ["Josh Shapiro"]
+  link: "https://www.pa.gov/governor/newsroom/2026-press-releases/shapiro-administration-sues-character-ai-over-fake-medical-claim"
+  description: "Pennsylvania sued Character Technologies, alleging its chatbots posed as licensed medical professionals — one bot supplied a fake state medical-license number and offered to prescribe medication — in what the governor's office called the first US enforcement action of its kind against AI chatbots for the unlawful practice of medicine. The suit seeks an injunction."
+
+- title: "Cloudflare Cuts 1,100 Jobs, CEO Citing the 'Agentic AI Era'"
+  date: "2026-05-07T10:00:00-07:00"
+  tags: ["Economic", "Corporate", "Social"]
+  organizations: ["Cloudflare"]
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  key_figures: ["Matthew Prince"]
+  link: "https://blog.cloudflare.com/building-for-the-future/"
+  layoff_ids: ["cloudflare-2026-05"]
+  description: "Cloudflare cut more than 1,100 employees — its first mass layoff — with co-founders Matthew Prince and Michelle Zatlyn telling staff that internal AI usage had risen over 600% in three months and that the company was reorganizing 'for the agentic AI era,' explicitly saying the move was not a cost-cutting exercise. It came alongside record quarterly revenue, and the stock fell roughly 24%."
+
+- title: "OpenAI Launches $4B Enterprise 'Deployment Company'"
+  date: "2026-05-11T10:00:00-07:00"
+  tags: ["Corporate", "Product", "Economic"]
+  organizations: ["OpenAI", "Tomoro"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://openai.com/index/openai-launches-the-deployment-company/"
+  description: "OpenAI announced a majority-owned standalone 'Deployment Company' capitalized with more than $4 billion to embed Forward Deployed Engineers inside enterprises, and agreed to acquire the consultancy Tomoro (about 150 engineers) pending regulatory approval — a services-led go-to-market model unusual for a frontier lab."
+
+- title: "OpenAI Gates GPT-5.5-Cyber Behind 'Trusted Access' for European Firms"
+  date: "2026-05-13T10:00:00-07:00"
+  tags: ["Product", "Safety", "Policy"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Enterprise AI", "Regulation"]
+  link: "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
+  description: "OpenAI extended its 'Trusted Access for Cyber' program to vetted European telecom, finance, energy, and public-sector organizations — among them Deutsche Telekom, BBVA, Telefónica, Sophos, and Scalable Capital — granting controlled access to its most cyber-capable model for defensive work such as red-teaming and vulnerability validation. The approach gates a frontier capability behind identity verification rather than open release."
+
+- title: "Anthropic Overtakes OpenAI in US Business AI Adoption"
+  date: "2026-05-16T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic", "OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead"
+  description: "The Ramp AI Index, drawn from spending across more than 50,000 businesses, showed Anthropic's business-adoption share edging past OpenAI's for the first time (34.4% versus 32.3%), capping a year-long enterprise surge. A separate Menlo Ventures enterprise-spend measure put the gap wider; the two metrics differ in basis and are not directly comparable."
+
+- title: "Google I/O 2026: Agentic Search, Gemini 3.5 Flash, and Ask YouTube"
+  date: "2026-05-19T10:00:00-07:00"
+  tags: ["Product", "Model"]
+  organizations: ["Google"]
+  models: ["Gemini 3.5 Flash"]
+  impact_areas: ["Market Competition", "Multimodal AI"]
+  key_figures: ["Sundar Pichai"]
+  link: "https://www.axios.com/2026/05/19/google-ai-youtube-gemini"
+  description: "At its I/O conference Google reframed core Search around agentic, conversational AI — billed as the biggest change to the search box in a quarter century — and launched Gemini 3.5 Flash, background 'information agents,' and an 'Ask YouTube' conversational video-search feature, extending Gemini across its most-used products."
+
+- title: "Nvidia Posts Record ~$81.6B Quarter on Blackwell Demand"
+  date: "2026-05-20T10:00:00-07:00"
+  tags: ["Economic", "Technical"]
+  organizations: ["Nvidia"]
+  impact_areas: ["Hardware", "Market Competition"]
+  key_figures: ["Jensen Huang"]
+  link: "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
+  description: "Nvidia reported record quarterly revenue of roughly $81.6 billion, up about 85% year over year, with data-center revenue up around 92% on Blackwell demand and next-quarter guidance near $91 billion assuming no China data-center sales. The stock slid despite the beat, a closely watched read on the AI-capex cycle."
+
+- title: "AI Backlash Emerges as a Measurable Business Risk"
+  date: "2026-05-17T10:00:00-04:00"
+  tags: ["Social", "Economic"]
+  impact_areas: ["Public Perception", "Market Competition"]
+  link: "https://www.axios.com/2026/05/17/ai-backlash-polling-sentiment"
+  description: "Reporting tied polling to market signals showing AI backlash hardening into a financial risk for the leading labs: only 18% of 14-to-29-year-olds told Gallup they felt hopeful about AI, more than 70% of Americans told the Economist/YouGov that AI was moving too fast, and a record number of data-center projects were canceled in the first quarter amid community resistance."
+
+- title: "Waymo Expands Robotaxi Coverage to 1,400+ Square Miles"
+  date: "2026-05-13T10:00:00-07:00"
+  tier: minor
+  tags: ["Product", "Technical"]
+  organizations: ["Waymo"]
+  impact_areas: ["Robotics", "Market Competition"]
+  link: "https://electrek.co/2026/05/13/waymo-expands-coverage-1400-square-miles-11-cities/"
+  description: "Waymo said its driverless-ride service area had grown about 27% to more than 1,400 square miles across 11 US cities, having surpassed 20 million trips, as it targets a million paid rides per week by year-end."
+
+- title: "Anthropic Releases Claude Opus 4.8"
+  date: "2026-05-28T10:00:00-07:00"
+  tier: minor
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.8"]
+  impact_areas: ["Language Models"]
+  link: "https://www.anthropic.com/news/claude-opus-4-8"
+  description: "Anthropic released Claude Opus 4.8, adding dynamic-workflow handling and a faster response mode, and signaled it would begin moving its restricted cybersecurity-frontier 'Mythos'-class model toward broader customer access in the following weeks — a stated plan rather than a completed release."
+
+- title: "Cognition Raises Over $1B at ~$26B Valuation for Devin"
+  date: "2026-05-27T10:00:00-07:00"
+  tier: minor
+  tags: ["Economic", "Corporate"]
+  organizations: ["Cognition"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value"
+  description: "Cognition, maker of the AI coding agent Devin, raised more than $1 billion at a roughly $26 billion post-money valuation — more than double its September mark — on reported annualized revenue near $492 million. Reported valuation basis varies by outlet (TechCrunch framed it as a $25 billion pre-money round)."
+
+- title: "Pope Leo XIV Issues First AI Encyclical, 'Magnifica Humanitas'"
+  date: "2026-05-25T10:00:00+02:00"
+  tier: major
+  tags: ["Social", "Policy", "Safety"]
+  organizations: ["Holy See"]
+  impact_areas: ["Public Perception", "Ethics", "Regulation"]
+  key_figures: ["Pope Leo XIV"]
+  link: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
+  description: "Pope Leo XIV published his first encyclical, 'Magnifica Humanitas: On Safeguarding the Human Person in the Time of Artificial Intelligence' — signed May 15 on the 135th anniversary of Rerum Novarum and released May 25 — calling for AI to be 'disarmed' from military, economic, and cognitive domination, warning against concentrating the technology in few hands, and defending the dignity of work against cuts made for profit. It is the first papal encyclical devoted to AI and was accompanied by a new Vatican interdicasterial commission on artificial intelligence."
+
+- title: "Jury Sides With OpenAI in Musk Lawsuit Over For-Profit Shift"
+  date: "2026-05-18T10:00:00-07:00"
+  tags: ["Policy", "Corporate", "Social"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Regulation", "Market Competition"]
+  key_figures: ["Elon Musk", "Sam Altman"]
+  link: "https://www.cnbc.com/2026/05/18/musk-altman-openai-trial-verdict.html"
+  description: "A federal advisory jury in Oakland found that Elon Musk had waited too long to sue OpenAI and Sam Altman over the company's for-profit conversion, and District Judge Yvonne Gonzalez Rogers adopted the verdict, ruling his core claims time-barred. Musk called it a 'calendar technicality' and vowed to appeal to the Ninth Circuit, closing the trial phase of a closely watched fight over OpenAI's founding mission."
+
+- title: "EU Reaches 'Digital Omnibus' Deal Delaying AI Act High-Risk Rules"
+  date: "2026-05-07T10:00:00+02:00"
+  tags: ["Policy"]
+  organizations: ["European Commission", "European Parliament"]
+  impact_areas: ["Regulation"]
+  link: "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
+  description: "The European Parliament and Council reached political agreement on a 'Digital Omnibus' package that pushed compliance deadlines for high-risk AI systems (Annex III of the AI Act) to December 2027 and added a bloc-wide ban on AI 'nudifier' apps. The deal was a political agreement, not yet formally adopted into law."
+
+- title: "Pentagon Signs Classified-AI Deals With Eight Firms, Excludes Anthropic"
+  date: "2026-05-01T10:00:00-04:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["OpenAI", "Google", "Nvidia", "Microsoft", "Amazon", "Oracle", "SpaceX", "Anthropic"]
+  impact_areas: ["Regulation", "Enterprise AI"]
+  link: "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic"
+  description: "The Defense Department signed agreements to run models from eight technology and AI companies on classified networks while pointedly excluding Anthropic, which it had flagged as a supply-chain risk after the company declined to drop safety limits on military uses of Claude. The split showed safety guardrails becoming a competitive factor in defense procurement."
+
+- title: "US Clears Nvidia H200 Sales to Chinese Firms During Trump-Xi Summit"
+  date: "2026-05-14T10:00:00-04:00"
+  tags: ["Policy", "Technical", "Economic"]
+  organizations: ["Nvidia"]
+  impact_areas: ["Hardware", "Regulation", "Market Competition"]
+  key_figures: ["Jensen Huang"]
+  link: "https://www.cnbc.com/2026/05/14/trump-xi-meeting-china-stocks-ai-rally.html"
+  description: "As President Trump met Xi Jinping in Beijing — with Nvidia CEO Jensen Huang added to the delegation — reporting confirmed the US Commerce Department had approved roughly ten Chinese companies, including Alibaba, Tencent, ByteDance, and JD.com, to buy Nvidia's H200 AI chips at up to 75,000 each, easing a months-long export standoff. No chips had actually been delivered yet."
+
+- title: "Cerebras Debuts on Nasdaq in 2026's Biggest Tech IPO"
+  date: "2026-05-14T10:00:00-04:00"
+  tags: ["Economic", "Technical", "Corporate"]
+  organizations: ["Cerebras"]
+  impact_areas: ["Hardware", "Market Competition"]
+  link: "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html"
+  description: "AI-chip maker Cerebras Systems began trading on the Nasdaq under the ticker CBRS after pricing its IPO at $185 a share — raising about $5.5 billion, the largest US tech IPO of 2026 — and the stock more than doubled on its first day. The offering signaled reopened public-market appetite for AI-infrastructure names."
+
+- title: "Texas County Passes, Then Rescinds, a Data-Center Moratorium"
+  date: "2026-05-12T10:00:00-05:00"
+  tags: ["Social", "Policy"]
+  organizations: ["Hill County, Texas"]
+  impact_areas: ["Regulation", "Public Perception"]
+  link: "https://www.texastribune.org/2026/05/12/texas-hill-county-approves-data-center-construction-pause-ai/"
+  description: "Commissioners in Hill County, Texas voted 3-2 for a one-year moratorium on new data centers in unincorporated areas, citing water, power, and noise concerns over a proposed 300-acre development — one of the first such pauses in the state. The county rescinded the moratorium weeks later, on June 5, after the developer sued, illustrating the escalating local fights over AI infrastructure."
+
+- title: "Starcloud Signs SpaceX Laser Deal for Orbital Data Centers"
+  date: "2026-05-26T10:00:00-07:00"
+  tier: minor
+  tags: ["Technical", "Partnership"]
+  organizations: ["Starcloud", "SpaceX"]
+  impact_areas: ["Hardware"]
+  link: "https://spacenews.com/starcloud-seeks-more-orbital-data-center-funding-shortly-after-unicorn-status/"
+  description: "Starcloud said it would integrate SpaceX Starlink laser terminals onto its next 25 satellites to provide high-bandwidth links for planned orbital data centers, an early concrete step toward running AI compute in space to sidestep terrestrial power and cooling limits."
+
+- title: "China Deploys Humanoid Robot Traffic Police in Hangzhou"
+  date: "2026-05-01T10:00:00+08:00"
+  tags: ["Social", "Technical", "Policy"]
+  organizations: ["Hangzhou Traffic Police Bureau"]
+  impact_areas: ["Robotics", "Public Perception"]
+  link: "https://www.globaltimes.cn/page/202605/1360189.shtml"
+  description: "Hangzhou deployed about 15 intelligent traffic-management robots around its West Lake district over the May Day holiday — described as China's first organized robot traffic-police squad — to guide pedestrians and cyclists, flag violations via visual recognition, and perform standardized traffic gestures alongside human officers. A visible state deployment of embodied AI in public space."
+
+- title: "Japan Airlines Begins Haneda Humanoid-Robot Ground-Crew Trial"
+  date: "2026-05-01T10:00:00+09:00"
+  tags: ["Product", "Technical", "Corporate"]
+  organizations: ["Japan Airlines"]
+  impact_areas: ["Robotics", "Enterprise AI"]
+  link: "https://press.jal.co.jp/en/release/202604/009502.html"
+  description: "Japan Airlines and its ground-service arm began Japan's first airport humanoid-robot demonstration at Tokyo's Haneda Airport, testing robots for baggage and cargo handling, cabin cleaning, and aircraft towing to offset ground-crew labor shortages and an aging workforce. Announced April 27, the phased trial started in May."
+
+- title: "NVIDIA Launches Cosmos 3, an Open Physical-AI Foundation Model"
+  date: "2026-05-31T10:00:00+08:00"
+  tags: ["Model", "Technical", "Research"]
+  organizations: ["Nvidia"]
+  models: ["Cosmos 3"]
+  impact_areas: ["Robotics", "Open Source", "Hardware"]
+  key_figures: ["Jensen Huang"]
+  link: "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai"
+  description: "At GTC Taipei, NVIDIA released Cosmos 3, an open 'omnimodel' for physical AI that combines vision reasoning, world generation, and action prediction for robotics and autonomous systems, shipping Super (32B) and Nano (8B) variants. It also launched a 'Cosmos Coalition' of robotics and world-model developers to advance open physical-AI models."

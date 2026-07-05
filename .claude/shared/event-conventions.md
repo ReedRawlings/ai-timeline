@@ -72,7 +72,9 @@ Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this
 
 ---
 
-## 6. Curated sources (search these before broad web)
+## 6. Curated sources (search these FIRST, and report which you hit)
+
+**This is a gate, not a suggestion.** Run the curated sources below *before* any broad web query, and in your review summary list which ones you actually searched (e.g. "hyperdimensional ✓, TBPN ✓, One Useful Thing ✓, Superintelligence archive ✓, Reddit ✓"). Twice (2026-07 backfills) the curated list was skipped in favor of generic "AI news <month>" queries, and both times a major cultural moment was missed (the Pope Leo XIV AI encyclical). If you cannot reach a source, say so explicitly — a skipped source is a reported gap, never a silent one.
 
 **Substacks** (JS-blocked — use `site:` search, then fetch individual article URLs):
 
@@ -92,7 +94,9 @@ Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this
 
 Weight specialist outlets over wire services and news aggregators.
 
-> **Access note (revisit):** these patterns are showing their age. In the 2026-07 backfill, the Substack `site:` searches returned thin results, `getsuperintel.com` only exposed recent archive pages, and Reddit search returned essentially nothing for the target month. Treat this list as a starting point, not a guarantee of coverage — and when curated sources come up empty, that's a signal to widen to first-tier outlets, not to skip verification (§9).
+> **Access note (revisit):** these patterns are showing their age. In the 2026-07 backfill, the Substack `site:` searches returned thin results, `getsuperintel.com` only exposed recent archive pages (fetch `getsuperintel.com/topics` or the month archive, not just the homepage), and Reddit search returned essentially nothing for the target month. Treat this list as a starting point, not a guarantee of coverage — and when curated sources come up empty, that's a signal to widen to first-tier outlets, not to skip verification (§9).
+
+**Why the curated list leads (and why not to lean on generic queries):** generic web queries ("major AI news May 2026", "AI layoffs May 2026") are SEO-optimized and over-return the loud commercial news — model releases, funding rounds, layoffs — while missing cultural, civil-society, and regulatory moments (the Pope Leo XIV AI encyclical was the missed exemplar). The curated editors above already weight for significance across the whole field, so leading with them — not a checklist of extra sweeps — is the correction. Prioritize the curated sources; use broad web only to fill gaps and to verify (§9).
 
 ---
 
