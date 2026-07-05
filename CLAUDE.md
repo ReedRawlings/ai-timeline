@@ -6,7 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repo is the home of a broader **AI Research & Data Assets project**: maintained, source-transparent public datasets about AI's measurable effects (labor, infrastructure, circulated statistics), plus the AI Timeline site. Three layers:
 
-1. **The site** — a Vite-built vanilla JS SPA displaying "The AI Record": an **Atlas + Dispatch** timeline of significant AI events (a whole-history month bar chart above an editorial digest of the focused month), plus a stock market chart with AI event markers. Event data lives in `data/events.yaml`. Deployed on Vercel with a serverless API proxy for stock data.
+1. **The site** — a Vite **multi-page** vanilla JS app displaying "The AI Record", with a shared dark masthead + nav (`Timeline · Layoffs · Stocks`) across three pages:
+   - **Timeline** (`index.html`) — the **Atlas + Dispatch** view (a whole-history month bar chart above an editorial digest of the focused month).
+   - **Layoffs** (`layoffs.html`) — an editorial layoff tracker: digest lede + monthly-volume/cumulative chart + ranked "every tracked cut" table with hover-to-explain verification pills.
+   - **Stocks** (`stocks.html`) — a rebased-% multi-ticker price tape (lightweight-charts) with an event-density "feathering" ribbon, Day/Week/Month grouping, and clickable major-event markers.
+
+   Event data lives in `data/events.yaml`. Deployed on Vercel with a serverless API proxy for stock data. (The old collapsible "AI Market Tracker" panel and its Stocks/Layoffs tab switcher were retired in favor of these standalone pages.)
 2. **Datasets** — standalone data assets under `data/` (e.g., `data/provenance/`, `data/layoffs/`), each with its own schema, README, and inclusion criteria. Dataset rows never live inside `events.yaml`; the timeline may reference dataset rows, never the reverse.
 3. **Docs** — `docs/` holds the project's shared context. **`docs/master-status.md` is the orientation file — read it first for any work beyond routine site/timeline maintenance.** `docs/decisions.md` is the append-only decision log; `docs/prds/` holds PRDs for parked assets.
 
@@ -37,18 +42,17 @@ Node.js (via nvm) and Python 3 + PyYAML required.
 
 ### Key Files
 - `data/events.yaml` — All event data (~250 events). Primary file for content edits.
-- `index.html` — Root HTML entry point (sticky "The AI Record" header, stock chart section, `#atlas-dispatch` mount)
-- `src/js/app.js` — Main entry point: loads events, mounts the Atlas+Dispatch view, initializes charts
+- `index.html` / `layoffs.html` / `stocks.html` — The three page entry points (each with the shared masthead + nav and its own mount div). Registered in `vite.config.js` under `build.rollupOptions.input`.
+- `src/js/app.js` — Timeline page entry: loads events, mounts the Atlas+Dispatch view.
 - `src/js/atlas-dispatch.js` — Builds the whole timeline view: atlas month bar chart + focus-month dispatch pane (major cards, "Everything Else" list, hover tooltips). Holds all view state.
-- `src/js/chart-tabs.js` — Stocks/Layoffs tab switching for the AI Market Tracker
-- `src/js/stock-chart.js` — TradingView Lightweight Charts integration with event markers
-- `src/css/main.css` — All styles. The active timeline styling is the "The AI Record" block (Newsreader + IBM Plex Mono/Sans); the older "Ink & Signal" tokens/chart styles remain for the market tracker.
-- `api/stocks.js` — Vercel serverless function proxying Finnhub stock data
+- `src/js/layoffs-page.js` — Layoffs page: header stats + monthly-volume/cumulative chart (inline SVG cumulative overlay) + ranked table + CSS-`:hover` verification popovers. Reads `src/data/layoffs.json`; all totals/date-range/sector list are derived from the data.
+- `src/js/stocks-page.js` — Stocks page: lightweight-charts rebased-% tape + feathering ribbon (canvas overlay aligned to the time scale) + Window/Group-by controls + basket/ticker chips + live legend + adaptive time axis + cursor date pill + major-event markers/popover. Reads `src/data/stock-history.json` + `src/data/events.json`.
+- `src/css/main.css` — All styles. Active blocks: the "The AI Record" timeline styles, the `.record-nav` shared nav, and the `.lay-*` / `.stk-*` page styles. (The older "Ink & Signal" tokens remain for legacy reference.)
+- `api/stocks.js` — Vercel serverless function proxying Finnhub stock data (stocks page merges the recent ~30 days over the pre-baked history, cached 24h in localStorage).
 - `data/layoffs/layoffs.csv` — AI-attributed layoffs dataset (schema in `data/layoffs/schema.md`)
 - `data/provenance/register.csv` — Stat provenance register (fact-check model, stable row IDs)
-- `src/js/layoff-chart.js` — Layoff stacked bar chart, reads the layoffs dataset
 - `scripts/build-events.js` — Converts YAML → JSON at build time (passes fields through as-is, including `tier`)
-- `scripts/build-layoffs.js` — Converts layoffs CSV → JSON at build time
+- `scripts/build-layoffs.js` — Converts layoffs CSV → JSON at build time, including the provenance fields (`notes`, `source_type`, `source_url`, `press_independent`, `attribution_notes`) the Layoffs page's verification hover surfaces
 - `scripts/build-stock-data.js` — Fetches historical stock data from Finnhub at build time
 - `scripts/validate-yaml.py` — Validates YAML syntax, required fields, date formats, duplicates, `tier` values
 - `scripts/apply-tiers.js` — One-shot/repeatable merge of editorial tiers from a `date,title,tier` CSV into events.yaml (reports unmatched/ambiguous rows)
@@ -80,13 +84,15 @@ Model, Corporate, Product, Research, Policy, Economic, Social, Technical, Partne
 ### Approved Impact Areas
 Multimodal AI, Language Models, Computer Vision, Market Competition, Robotics, Healthcare, Education, Creator Economy, Public Perception, Ethics, Regulation, Enterprise AI, Open Source, Hardware, Research
 
-### Stock Chart
-- Uses TradingView Lightweight Charts (~45KB)
-- Default basket: NVDA, GOOGL, MSFT, META, AMD
-- Collapsible "AI Market Tracker" panel between the header and the atlas strip
-- Timeline events shown as markers on the chart
-- Historical data pre-baked at build time; recent data fetched via `/api/stocks`
-- Cached at edge (24h) and in localStorage (24h)
+### Stocks Page (`stocks.html` / `src/js/stocks-page.js`)
+- Its own page (not a panel). Uses TradingView Lightweight Charts (~45KB).
+- **Rebased-% only** — every visible line is rebased to 0% at the left edge of the window (the old %/Absolute toggle is gone; mixed-price tickers only compare meaningfully rebased).
+- **Window** (ALL/3Y/1Y/6M) sets the visible range; **Group by** (Day/Week/Month) aggregates prices to daily/weekly/monthly closes **and** re-buckets the event-density feathering ribbon.
+- Five baskets (Mag 7 default-on, Memory/Semis, AI Infrastructure, SaaS Disrupted, Gaming); basket headers flip the whole group, individual tickers stack across baskets.
+- **Feathering ribbon** — a canvas overlay across the top of the tape, one cell per grouping bucket, ember opacity ∝ event count (all tiers), aligned to the time scale via `timeToCoordinate`.
+- **Major-event markers** — clickable ember circles (one per grouping bucket) with a hover preview + click popover linking back to the Timeline.
+- Adaptive time axis + on-cursor date pill; live legend of current rebased % per ticker.
+- Historical data pre-baked at build time; recent ~30 days fetched via `/api/stocks`, cached at edge (24h) and in localStorage (24h).
 
 ### How the Timeline Is Rendered (Atlas + Dispatch)
 `atlas-dispatch.js` reads `src/data/events.json` (built from YAML), drops `display: chart-only` rows, and builds two sections into `#atlas-dispatch`:

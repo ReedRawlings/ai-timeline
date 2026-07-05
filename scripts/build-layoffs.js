@@ -56,6 +56,13 @@ const layoffs = records.map(rec => {
         ai_attribution: r.ai_attribution || null,
         causal_link: r.causal_link || null,
         verification_status: r.verification_status,
+        // Provenance fields — surfaced by the Layoffs page's hover-to-explain
+        // verification pills (see src/js/layoffs-page.js).
+        notes: r.notes || null,
+        source_type: r.source_type || null,
+        source_url: r.source_url || null,
+        press_independent: r.press_independent === 'true' || r.press_independent === 'TRUE',
+        attribution_notes: r.attribution_notes || null,
     };
 });
 
