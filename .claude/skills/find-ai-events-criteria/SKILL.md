@@ -26,9 +26,10 @@ Search for each rubric category directly — do not search "AI news" broadly. Ru
 1. **Probe** each category with its targeted query.
 2. **Dedup** every candidate against `data/events.yaml` (conventions §7). Drop anything already on the timeline.
 3. **Confirm significance** — the query surfaced it, but still check it against the rubric (conventions §1) rather than assuming.
-4. **Extract and format** each kept event per the conventions, assigning a suggested `tier` (conventions §2 — default `notable`/omit; flag any suggested `major` for the human).
-5. **Self-check** the proposal against conventions §9.
-6. **Write and summarize** (below).
+4. **Verify** each kept candidate against a primary or reputable source (conventions §9) — confirm the event is real, check the date and outcome against that source, and treat unfamiliar model/product names as suspect. Drop or flag anything you can't confirm.
+5. **Extract and format** each kept event per the conventions, assigning a suggested `tier` (conventions §2 — default `notable`/omit; flag any suggested `major` for the human).
+6. **Self-check** the proposal against conventions §10.
+7. **Write and summarize** (below).
 
 ## Output
 

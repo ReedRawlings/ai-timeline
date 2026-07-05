@@ -2510,3 +2510,330 @@
   key_figures: ["Dario Amodei", "Pete Hegseth"]
   link: "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/"
   description: "New sworn declarations filed in Anthropic's D.C. Circuit lawsuit revealed that on March 4 — the day after the Pentagon formally finalized its supply-chain risk designation — the Pentagon's Under Secretary had emailed CEO Dario Amodei saying the two sides were 'very close' on autonomous weapons and mass surveillance, the exact issues the government was citing as evidence of national security threat. The revelation undercut the Pentagon's claim that Anthropic's positions were irreconcilable, and Anthropic's legal team argued the timing made clear the designation was retaliatory punishment for Anthropic's public stance rather than a genuine security assessment. The filing set the stage for a hearing before Judge Rita Lin in San Francisco."
+- title: "Anthropic Wins Preliminary Injunction Against Pentagon Blacklisting"
+  date: "2026-03-26T09:00:00-07:00"
+  tier: major
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://edition.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk"
+  description: "U.S. District Judge Rita Lin granted Anthropic a preliminary injunction blocking the Pentagon's 'supply chain risk' designation, writing in a 43-page ruling that the record strongly suggested the government's stated reasons were pretextual and its real motive was unlawful retaliation for the company's First Amendment-protected stance. A first-of-kind judicial rebuke of the government's attempt to blacklist an AI lab; the government appealed (leading to the April 8 appeals-court denial of Anthropic's separate emergency stay)."
+
+- title: "Anthropic's Unreleased 'Mythos' Model Exposed in Data Leak"
+  date: "2026-03-26T09:00:00-07:00"
+  tags: ["Safety", "Corporate", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude Mythos"]
+  impact_areas: ["Language Models", "Ethics", "Public Perception"]
+  key_figures: ["Dario Amodei"]
+  link: "https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/"
+  description: "A misconfigured content-management tool exposed roughly 3,000 unpublished Anthropic assets, including a draft post revealing an unannounced model line more capable than Opus that the company itself described as posing 'unprecedented' cybersecurity risk. Anthropic confirmed the model's existence only after reporters made contact — the precursor to its April 7 decision to withhold Mythos and launch Project Glasswing."
+
+- title: "Claude Code Source Code Leaked via npm"
+  date: "2026-03-31T09:00:00-07:00"
+  tier: minor
+  tags: ["Technical", "Safety", "Corporate"]
+  organizations: ["Anthropic"]
+  models: ["Claude Code"]
+  impact_areas: ["Enterprise AI", "Ethics", "Language Models"]
+  link: "https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html"
+  description: "Anthropic accidentally shipped Claude Code's full ~512,000-line TypeScript source to the npm registry via an unstripped source-map file, and it was mirrored across GitHub within hours, exposing internal mechanisms for one of the highest-revenue enterprise coding agents. The same update window was separately exploited to distribute a trojanized version of the axios package. Borderline — a security incident rather than a product event."
+
+- title: "AGIBOT Builds Its 10,000th Humanoid Robot"
+  date: "2026-03-30T09:00:00+08:00"
+  tags: ["Corporate", "Product", "Technical"]
+  organizations: ["AGIBOT"]
+  impact_areas: ["Robotics", "Hardware", "Market Competition"]
+  link: "https://roboticsandautomationnews.com/2026/03/30/agibot-reaches-10000-humanoid-units-built-as-real-world-demand-for-robots-accelerates/100218/"
+  description: "Chinese humanoid maker AGIBOT announced it had built its 10,000th unit, compressing the jump from 5,000 to 10,000 into three months — a fourfold acceleration — with robots deployed across logistics, retail, hospitality, and manufacturing. Widely cited as a signal that humanoid robotics is shifting from pilots to mass production."
+
+- title: "California Signs First-of-Kind AI Procurement Order"
+  date: "2026-03-30T09:00:00-07:00"
+  tier: major
+  tags: ["Policy", "Technical"]
+  organizations: ["State of California"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  key_figures: ["Gavin Newsom"]
+  link: "https://www.gov.ca.gov/2026/03/30/as-trump-rolls-back-protections-governor-newsom-signs-first-of-its-kind-executive-order-to-strengthen-ai-protections-and-responsible-use/"
+  description: "Governor Gavin Newsom signed Executive Order N-5-26, directing state agencies to build first-in-nation vendor-certification and procurement standards requiring AI companies selling to California to attest to safeguards against illegal content, harmful bias, and civil-rights violations, plus the nation's first state AI-content watermarking guidance. Explicitly framed as a counter to the federal push to preempt state AI regulation — using procurement leverage to set de facto standards."
+
+- title: "OpenAI Closes Record $122B Round at $852B Valuation"
+  date: "2026-03-31T09:00:00-07:00"
+  tier: major
+  tags: ["Economic", "Corporate", "Partnership"]
+  organizations: ["OpenAI", "Amazon", "NVIDIA", "SoftBank"]
+  impact_areas: ["Market Competition", "Enterprise AI", "Hardware"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+  description: "OpenAI closed a $122 billion funding round at an $852 billion post-money valuation — the largest private financing in history — with Amazon committing $50 billion (much of it contingent on an IPO or an AGI milestone) and Nvidia and SoftBank around $30 billion each, plus $3 billion raised directly from retail investors through bank channels for the first time. OpenAI said it was generating about $2 billion in revenue per month."
+
+- title: "Oracle Cuts Thousands to Fund AI Data-Center Buildout"
+  date: "2026-03-31T09:00:00-05:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Oracle"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  link: "https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html"
+  description: "Oracle sent mass termination emails on March 31 in a global layoff that press and analysts sized at up to 30,000 roles and linked to freeing cash for AI data-center capex (RPO had surged on AI contracts including the Stargate deal). Oracle never confirmed a headcount and declined to comment on the AI link; the employee email cited only 'a broader organizational change.' The attribution is press/analyst-inferred, not company-stated — see the layoff row for details."
+  layoff_ids: ["oracle-2026-03"]
+
+- title: "SpaceX Confidentially Files for Record IPO"
+  date: "2026-04-01T09:00:00-05:00"
+  tags: ["Corporate", "Economic"]
+  organizations: ["SpaceX", "xAI"]
+  key_figures: ["Elon Musk"]
+  impact_areas: ["Market Competition", "Hardware"]
+  link: "https://www.cnbc.com/2026/04/01/spacex-confidentially-files-for-ipo-setting-stage-for-record-offering.html"
+  description: "SpaceX confidentially filed a draft S-1 with the SEC toward what would be a record-scale offering. Because SpaceX absorbed Elon Musk's xAI earlier in 2026, the filing puts the maker of the Grok models — alongside the launch and Starlink businesses — on a path toward public markets, and could make xAI the first frontier AI lab to reach the public market (via its SpaceX parent)."
+
+- title: "Alibaba Releases Qwen3.6-Plus"
+  date: "2026-04-02T09:00:00+08:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Alibaba"]
+  models: ["Qwen3.6-Plus", "Qwen3.6-Max"]
+  impact_areas: ["Language Models", "Market Competition", "Open Source"]
+  link: "https://www.caixinglobal.com/2026-04-02/alibaba-releases-qwen-36-plus-ai-model-with-enhanced-coding-capabilities-102430395.html"
+  description: "Alibaba released Qwen3.6-Plus, a model with a one-million-token context window and stronger agentic coding, then previewed a more powerful Qwen3.6-Max on April 20 that topped several coding and agentic benchmarks. The pair continued the rapid Chinese release cadence in the US–China model race; borderline as an incremental step within Alibaba's own line rather than a capability leap."
+
+- title: "Anthropic Withholds Claude Mythos, Launches Project Glasswing"
+  date: "2026-04-07T09:00:00-07:00"
+  tier: major
+  tags: ["Model", "Safety", "Technical", "Corporate", "Partnership"]
+  organizations: ["Anthropic", "AWS", "Apple", "Cisco", "CrowdStrike", "Google", "JPMorgan Chase", "Microsoft", "NVIDIA", "Palo Alto Networks"]
+  models: ["Claude Mythos Preview"]
+  impact_areas: ["Ethics", "Regulation", "Enterprise AI", "Research"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/glasswing"
+  description: "Anthropic disclosed that its most capable model to date, Claude Mythos Preview, could find and exploit software vulnerabilities at a level surpassing most human security researchers — including a flaw in the wolfSSL cryptography library — and deemed it too dangerous to release through its standard commercial API. Instead of shipping it, Anthropic launched Project Glasswing, a defensive-security initiative giving curated early access to roughly a dozen major companies. The first time a frontier lab withheld a completed flagship model purely over offensive cyber capability."
+
+- title: "Meta Launches Muse Spark, Its First Proprietary Flagship Model"
+  date: "2026-04-08T09:00:00-07:00"
+  tags: ["Model", "Corporate", "Product", "Technical"]
+  organizations: ["Meta"]
+  models: ["Muse Spark"]
+  impact_areas: ["Language Models", "Multimodal AI", "Open Source", "Market Competition"]
+  key_figures: ["Alexandr Wang", "Mark Zuckerberg"]
+  link: "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+  description: "Meta Superintelligence Labs, under new chief AI officer Alexandr Wang, released Muse Spark — a natively multimodal reasoning model built over roughly nine months and previously code-named 'Avocado' (whose delay the timeline noted on March 12). Meta offered it as a proprietary model via a private API preview, a sharp break from the open-weight strategy that defined the Llama series, saying only that it 'hopes' to open-source future versions."
+
+- title: "Appeals Court Denies Anthropic's Bid to Block Pentagon Blacklisting"
+  date: "2026-04-08T09:00:00-07:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "Pentagon"]
+  impact_areas: ["Regulation", "Ethics", "Enterprise AI"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html"
+  description: "An appeals court denied Anthropic's request for an emergency stay of the Pentagon's 'supply-chain risk' designation, finding the company's claimed harm primarily financial and unpersuasive as an imminent First Amendment injury, while the underlying lawsuit continues. A direct continuation of the Anthropic–Pentagon dispute the timeline tracked on March 9 and March 20."
+
+- title: "Molotov Cocktail Attack on Sam Altman's Home"
+  date: "2026-04-10T04:00:00-07:00"
+  tier: major
+  tags: ["Social", "Safety", "Corporate"]
+  organizations: ["OpenAI"]
+  key_figures: ["Sam Altman"]
+  impact_areas: ["Public Perception", "Ethics"]
+  link: "https://www.npr.org/2026/04/13/g-s1-117320/openai-sam-altman-molotov-cocktail"
+  description: "A 20-year-old man threw an incendiary device at the gate of Sam Altman's San Francisco home before going to OpenAI's headquarters, where he allegedly smashed glass doors and said he had come to burn the building down and kill anyone inside. Documents on him expressed anti-AI views and listed executives of AI companies; he was later charged with two counts of attempted murder and attempted arson. The first violent physical attack on a frontier-lab CEO tied to anti-AI motivation, marking a new escalation in public backlash."
+
+- title: "Snap Cuts 16% of Staff, Citing AI Efficiency"
+  date: "2026-04-15T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Snap"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Evan Spiegel"]
+  link: "https://newsroom.snap.com/organizational-changes-at-snap"
+  description: "Snap laid off roughly 1,000 employees — about 16% of its workforce — in a restructuring CEO Evan Spiegel framed as targeting more than $500 million in annualized savings, with AI cited as the enabler letting smaller teams reduce repetitive work and move faster. One of the clearest company-stated AI-linked workforce reductions of the month."
+  layoff_ids: ["snap-2026-04"]
+
+- title: "Anthropic Ships Claude Opus 4.7"
+  date: "2026-04-16T09:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["Anthropic"]
+  models: ["Claude Opus 4.7"]
+  impact_areas: ["Language Models", "Enterprise AI", "Research"]
+  link: "https://www.anthropic.com/news/claude-opus-4-7"
+  description: "Anthropic released Claude Opus 4.7, lifting SWE-bench Verified to 87.6% (from 80.8% on Opus 4.6), adding an 'xhigh' reasoning-effort default in Claude Code and higher-resolution vision, and folding in a new post-Mythos safety layer. Generally available across the Claude API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry."
+
+- title: "Meta and Microsoft Announce Sweeping Cuts Amid AI Spending Pressure"
+  date: "2026-04-23T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Meta", "Microsoft"]
+  impact_areas: ["Enterprise AI", "Market Competition", "Public Perception"]
+  key_figures: ["Mark Zuckerberg", "Satya Nadella"]
+  link: "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+  description: "On the same day, Meta told about 8,000 staff (~10% of the affected group) it would cut roles to run more efficiently and offset other investments, while Microsoft opened its first voluntary-retirement buyout to thousands of eligible US employees. Press coverage framed both as pressure from ballooning AI capital spending, though neither company's own announcement named AI as the cause — an attribution nuance carried in the linked layoff rows. Suggested tier notable; a human may elevate given the combined ~20k figure fueled an 'AI labor crisis' narrative."
+  layoff_ids: ["meta-2026-04"]
+
+- title: "OpenAI Releases GPT-5.5"
+  date: "2026-04-23T09:00:00-07:00"
+  tags: ["Model", "Product", "Technical"]
+  organizations: ["OpenAI"]
+  models: ["GPT-5.5"]
+  impact_areas: ["Language Models", "Multimodal AI", "Enterprise AI", "Research"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/introducing-gpt-5-5/"
+  description: "OpenAI released GPT-5.5, its most autonomous model to date, with gains in agentic coding, research, and data analysis, rolling out to paid ChatGPT tiers and Codex with the API following the next day. Coming just six weeks after GPT-5.4, the fast cadence underscored the frontier labs' race for enterprise customers."
+
+- title: "Bezos's Project Prometheus Raises $10B for Physical AI"
+  date: "2026-04-23T09:00:00-05:00"
+  tags: ["Economic", "Corporate", "Research"]
+  organizations: ["Project Prometheus"]
+  key_figures: ["Jeff Bezos"]
+  impact_areas: ["Market Competition", "Robotics", "Research"]
+  link: "https://www.bloomberg.com/news/articles/2026-04-23/bezos-s-physical-ai-lab-has-closed-round-at-38-billion-value"
+  description: "Project Prometheus, the physical-AI lab Jeff Bezos co-founded in late 2025 with former Google scientist Vik Bajaj, closed a $10 billion round at roughly a $38 billion valuation, with JPMorgan and BlackRock among the backers. The lab builds foundation models trained on real-world experimental and robotics data for engineering and manufacturing — a scale-redefining raise for a company that has yet to ship a product. (Added after review; missed in the first sweep.)"
+
+- title: "DeepSeek Open-Sources DeepSeek V4"
+  date: "2026-04-24T09:00:00+08:00"
+  tags: ["Model", "Product", "Technical", "Research"]
+  organizations: ["DeepSeek"]
+  models: ["DeepSeek V4", "DeepSeek-V4-Pro", "DeepSeek-V4-Flash"]
+  impact_areas: ["Language Models", "Open Source", "Market Competition", "Research"]
+  link: "https://api-docs.deepseek.com/news/news260424"
+  description: "DeepSeek published the weights of DeepSeek V4 on Hugging Face under a permissive MIT license, in a 1.6-trillion-parameter Pro variant (49B active) and a 284-billion-parameter Flash variant (13B active), both with a one-million-token context window. DeepSeek-V4-Pro scored 80.6% on SWE-bench Verified — within a fraction of a point of the top closed frontier models — at a claimed fraction of their inference cost, from the lab whose R1 release triggered a market shock in early 2025."
+
+- title: "OpenAI Shuts Down the Sora App"
+  date: "2026-04-26T09:00:00-07:00"
+  tags: ["Product", "Corporate", "Economic"]
+  organizations: ["OpenAI"]
+  models: ["Sora"]
+  impact_areas: ["Creator Economy", "Public Perception", "Multimodal AI"]
+  link: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
+  description: "OpenAI closed the standalone Sora web and mobile app (with the API set to sunset in September), ending the arc of a flagship 2025 consumer video product after downloads and active users fell sharply and operating costs ran well ahead of revenue. OpenAI framed the move as a shift of resources toward coding and enterprise products, a notable retreat from consumer generative video."
+
+- title: "Microsoft and OpenAI Rewrite Their Partnership"
+  date: "2026-04-27T09:00:00-07:00"
+  tier: major
+  tags: ["Corporate", "Partnership", "Economic"]
+  organizations: ["Microsoft", "OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Sam Altman", "Satya Nadella"]
+  link: "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/"
+  description: "Microsoft and OpenAI amended their agreement, removing the long-standing clause that would have cut off Microsoft's access once OpenAI's board declared AGI achieved, ending Azure hosting exclusivity so OpenAI can ship on any cloud, and restructuring their revenue-share terms with Microsoft's license now running to a fixed date. A fundamental reset of the industry's most consequential AI partnership."
+
+- title: "Bipartisan CHATBOT Act Introduced to Protect Minors"
+  date: "2026-04-28T09:00:00-04:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["U.S. Senate"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Ted Cruz", "Brian Schatz"]
+  link: "https://www.commerce.senate.gov/press/rep/release/cruz-schatz-curtis-schiff-introduce-new-bill-giving-parents-control-over-kids-ai-chatbot-use/"
+  description: "A bipartisan group of four senators introduced the CHATBOT Act, which would mandate parent-managed 'family accounts' for children under 13, verifiable parental consent for teens, default safeguards, and a ban on targeted ads to minors on conversational AI platforms — following lawsuits alleging AI companion chatbots contributed to teen self-harm. Borderline: a bill introduction is a lower bar than passage; flagged for editorial judgment on whether to wait for committee action."
+
+# === NET-NEW (deep pass) === curated-source-first sweep, verified individually.
+
+- title: "Anthropic Passes OpenAI in Revenue Run-Rate"
+  date: "2026-04-07T09:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic", "OpenAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  link: "https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth"
+  description: "Anthropic said it hit a $30 billion annualized revenue run-rate, surpassing OpenAI's roughly $24–25 billion for the first time, driven by enterprise demand and Claude Code, with over 1,000 customers each spending more than $1 million a year. OpenAI disputed the comparison, arguing Anthropic's accounting overstates revenue by about $8 billion. Could elevate to major given it marks the first revenue-lead change among the frontier labs."
+
+- title: "Intel Joins Musk's Terafab AI-Chip Megaproject"
+  date: "2026-04-07T09:00:00-05:00"
+  tags: ["Corporate", "Economic", "Technical", "Partnership"]
+  organizations: ["Intel", "Terafab", "xAI"]
+  impact_areas: ["Hardware", "Market Competition"]
+  key_figures: ["Elon Musk", "Lip-Bu Tan"]
+  link: "https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/"
+  description: "Intel signed on as foundry partner for Elon Musk's Terafab, a planned $20–25 billion Austin chip megafactory aiming to produce a terawatt of AI compute annually on a 2-nanometer process — a bet that also serves as a lifeline for Intel's struggling foundry strategy. Borderline as a partnership announcement, but the scale pushes it past routine."
+
+- title: "Apple Threatened to Pull Grok Over Deepfakes, Letter Reveals"
+  date: "2026-04-14T09:00:00-07:00"
+  tags: ["Safety", "Policy", "Social", "Corporate"]
+  organizations: ["Apple", "xAI"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: ["Elon Musk", "Tim Cook"]
+  link: "https://www.nbcnews.com/tech/tech-news/apple-threat-remove-grok-app-store-deepfake-letter-musk-x-ai-rcna331677"
+  description: "Apple privately warned xAI in January 2026 that it would remove Grok from the App Store unless the app stopped generating sexualized, nonconsensual deepfakes — including of minors — during the early-2026 Grok deepfake scandal, when the tool was producing thousands of nudified images an hour. The threat was not public at the time; it surfaced in April via a letter Apple sent to senators, obtained by NBC News. Apple rejected xAI's first fix, then approved a later submission, so the app was never removed."
+
+- title: "Honor's Humanoid Robot Wins Beijing Half-Marathon"
+  date: "2026-04-19T09:00:00+08:00"
+  tags: ["Product", "Technical", "Social"]
+  organizations: ["Honor"]
+  models: ["Lightning"]
+  impact_areas: ["Robotics", "Public Perception"]
+  link: "https://www.scientificamerican.com/article/a-humanoid-robot-beat-the-human-half-marathon-record-at-a-beijing-race-but-what-did-it-actually-prove/"
+  description: "Honor's autonomous humanoid robot 'Lightning' finished the Beijing E-Town Half-Marathon in 50:26 — faster than the human world record — running a parallel course alongside 12,000 people, a widely covered symbolic milestone for physical AI that critics noted came under controlled conditions and included a mid-race stumble."
+
+- title: "Google Makes Ironwood TPU GA, Previews Split Training/Inference Chips"
+  date: "2026-04-22T09:00:00-07:00"
+  tags: ["Technical", "Corporate", "Product"]
+  organizations: ["Google", "Broadcom", "MediaTek", "Anthropic"]
+  impact_areas: ["Hardware", "Enterprise AI"]
+  link: "https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads"
+  description: "At Google Cloud Next, Google made its seventh-generation Ironwood TPU generally available and previewed an eighth generation split into a Broadcom-designed training chip and a MediaTek-designed inference chip, with Anthropic committing to up to one million TPUs and over a gigawatt of capacity. The dedicated training-vs-inference split is a notable architectural bifurcation."
+
+- title: "VAST Data Raises $1B at a $30B Valuation"
+  date: "2026-04-22T09:00:00-04:00"
+  tags: ["Economic", "Technical"]
+  organizations: ["VAST Data", "NVIDIA"]
+  impact_areas: ["Hardware", "Enterprise AI"]
+  link: "https://www.datacenterdynamics.com/en/news/vast-data-secures-1bn-in-series-f-funding-at-30bn-valuation/"
+  description: "AI data-infrastructure company VAST Data closed a roughly $1 billion Series F led by Drive Capital and Access Industries, tripling its valuation to $30 billion from $9.1 billion in 2023 — a marker of investor appetite for the storage layer beneath AI training and inference."
+
+- title: "Maine's First-in-Nation Data-Center Moratorium Vetoed"
+  date: "2026-04-24T09:00:00-04:00"
+  tags: ["Policy", "Economic", "Social"]
+  organizations: ["State of Maine"]
+  impact_areas: ["Regulation", "Hardware", "Public Perception"]
+  key_figures: ["Janet Mills"]
+  link: "https://www.pressherald.com/2026/04/24/janet-mills-vetoes-temporary-data-center-ban-2/"
+  description: "Maine's legislature passed LD 307, which would have been the nation's first statewide moratorium on large (20+ MW) data centers, but Governor Janet Mills vetoed it on April 24 over the lack of an exemption for a rural project, and the legislature failed to override the veto days later. Notable as the furthest a state data-center backlash has advanced, even though it did not become law — a Quinnipiac poll cited alongside it found 65% of Americans oppose new AI data centers locally."
+
+- title: "Ineffable Intelligence Raises Record $1.1B Seed"
+  date: "2026-04-27T09:00:00+01:00"
+  tags: ["Economic", "Corporate", "Research"]
+  organizations: ["Ineffable Intelligence"]
+  impact_areas: ["Research", "Market Competition"]
+  key_figures: ["David Silver"]
+  link: "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
+  description: "Former DeepMind reinforcement-learning lead David Silver raised a $1.1 billion seed round — reported as the largest ever — valuing his London-based, pre-product startup Ineffable Intelligence at $5.1 billion, on a thesis of building AI that learns without human-generated data."
+
+- title: "Families Sue OpenAI Over Tumbler Ridge Mass Shooting"
+  date: "2026-04-29T09:00:00-07:00"
+  tier: major
+  tags: ["Safety", "Policy", "Social"]
+  organizations: ["OpenAI"]
+  models: ["ChatGPT"]
+  impact_areas: ["Ethics", "Regulation", "Public Perception"]
+  key_figures: ["Sam Altman"]
+  link: "https://www.opb.org/article/2026/04/29/families-sue-openai-over-tumbler-ridge-mass-shooters-use-of-chatgpt/"
+  description: "Families of victims of the February 2026 Tumbler Ridge, B.C. school shooting filed seven wrongful-death and injury suits against OpenAI and Sam Altman in San Francisco federal court, alleging OpenAI's systems flagged the shooter's account for 'gun violence activity and planning' in June 2025 but the company deactivated the account instead of notifying authorities. Lawyers signaled they would seek over $1 billion — the first mass-casualty wrongful-death case against a frontier AI company."
+
+- title: "Second Attack Near Sam Altman's Home"
+  date: "2026-04-12T09:00:00-07:00"
+  tags: ["Safety", "Social"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Public Perception", "Ethics"]
+  key_figures: ["Sam Altman"]
+  link: "https://sfstandard.com/2026/04/12/sam-altman-s-home-targeted-second-attack/"
+  description: "Two days after the Molotov cocktail attack, a car pulled up outside Sam Altman's San Francisco home and a passenger apparently fired a gunshot; two people were arrested on suspicion of negligent discharge and released without charges. A distinct second incident within days, underscoring the escalation of anti-AI hostility toward the sector's most visible figure."
+
+- title: "French Prosecutors Summon Musk Over X and Grok"
+  date: "2026-04-20T09:00:00+02:00"
+  tags: ["Policy", "Safety", "Social"]
+  organizations: ["xAI", "X"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.cbsnews.com/news/elon-musk-x-france-paris-office-search-summons-yaccarino-grok-ai-data/"
+  description: "Paris prosecutors summoned Elon Musk and former X CEO Linda Yaccarino for questioning on April 20 as part of a probe into X's algorithms and into allegations that its Grok chatbot was used to generate and spread nonconsensual sexual deepfakes, apparent CSAM, and Holocaust-denial content; both declined to appear and French investigators searched X's local office. The probe escalated to a formal criminal investigation in May, part of a widening set of international and U.S. inquiries into Grok-generated illegal imagery."
+
+- title: "'Tokenmaxxing' Leaderboards Spread, Then Retreat Across Big Tech"
+  date: "2026-04-06T09:00:00-07:00"
+  tags: ["Social", "Corporate", "Economic"]
+  organizations: ["Meta", "Amazon"]
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  link: "https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/"
+  description: "A temporary spring-2026 trend across many firms: 'tokenmaxxing,' where employees raced to top internal AI-usage leaderboards. Meta's 'Claudeonomics' board aggregated usage from 85,000+ staff (60.2 trillion tokens in 30 days) with tiers like 'Token Legend,' and Amazon developers reportedly spun up pointless agents to pad stats. First surfaced by The Information on April 6; after backlash, Meta and Amazon shut their leaderboards down and the metric was widely declared dead by late May — an ongoing-but-temporary episode about AI-adoption metrics gone wrong."
+
+- title: "Cognizant Launches AI-Led 'Project Leap' Restructuring"
+  date: "2026-04-29T09:00:00-04:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Cognizant"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Ravi Kumar S"]
+  link: "https://news.cognizant.com/2026-04-29-Cognizant-Reports-First-Quarter-2026-Results"
+  description: "Cognizant announced 'Project Leap,' an AI-led operating-model reset the CEO framed as funding continued investments in AI and re-skilling, disclosing a $230–320M restructuring charge ($200–270M severance) but no headcount figure. Press and analysts extrapolated 7,000–15,000 job cuts from the severance budget — not a company number — even as reported quarterly headcount rose. An India-heavy case that illustrates 'AI as investment destination' restructuring; see the layoff row."
+  layoff_ids: ["cognizant-2026-04"]

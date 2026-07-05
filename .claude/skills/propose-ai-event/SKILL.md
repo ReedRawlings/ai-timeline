@@ -19,7 +19,8 @@ For each event:
 2. **Dedup** against `data/events.yaml` (section 7 of the conventions). If it's already on the timeline, say so instead of producing a duplicate.
 3. **Extract and format** the fields per the conventions.
 4. **Judge significance** against the rubric: note whether it clears the bar, and assign a suggested `tier` (conventions §2). Default to `notable` (omit the field); write `tier: minor` for kept-but-incremental events; surface any suggested `tier: major` as a review flag for the human to confirm.
-5. **Self-check** against section 9, then output.
+5. **Verify** against a primary or reputable source (conventions §9): confirm the event is real, check the date and outcome against the source, and treat unfamiliar model/product names as suspect. If you can't confirm it, flag it as unverified rather than proposing it.
+6. **Self-check** against section 10, then output.
 
 ## Output
 

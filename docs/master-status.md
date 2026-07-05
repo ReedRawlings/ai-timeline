@@ -1,4 +1,4 @@
-# Master Status — AI Research & Data Assets Project — 2026-07-03
+# Master Status — AI Research & Data Assets Project — 2026-07-04
 
 *Single source of truth for what exists, what's decided, and what's open. Update this doc when a workstream changes state; don't let it drift more than ~2 weeks stale.*
 
@@ -65,7 +65,7 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 5 — AI-attributed layoffs dataset
 
-**State:** Landscape mapped. **Decision (2026-07-03): building our own dataset.** Lives in the `ai-timeline` repo (`data/layoffs/`); no work exists outside it (confirmed 2026-07-03). Schema approved; 32 rows migrated from the timeline, all pending attribution recode.
+**State:** Building our own dataset (decided 2026-07-03), in the `ai-timeline` repo (`data/layoffs/`). Schema approved; 32 rows migrated and attribution-recoded 2026-07-03 (11 removed for no AI attribution from anyone). **2026-07-04:** April 2026 + March 20–31 backfill added 4 rows (Snap, Meta, Cognizant, Oracle) → **25 rows**; Microsoft (Apr buyout) and Pendo (Apr) evaluated and excluded (no / insufficient company AI attribution). New boundary precedents recorded in `schema.md` (voluntary buyouts out; analyst-estimate counts stay undisclosed; "AI as investment destination" = contextual).
 
 **Decided:** Existing trackers (Challenger, layoffs.fyi) are US/tech-centric and press-derived; India/Global South structurally undercounted. UK ONS and India Labour Bureau are the only press-independent verification sources. Cross-checking against other trackers validates extraction, not coverage — the never-covered gap is structural.
 
@@ -90,14 +90,16 @@ A public research project on how AI is changing people and society, with two mut
 **State:** Live site, ongoing maintenance. As of 2026-07-03, the `ai-timeline` repo is also the home of the whole project (datasets, docs, decision log — see decision log).
 
 **Decided:**
-- Vite vanilla-JS SPA on Vercel; events in `data/events.yaml` (~180+ events); stock chart with event markers; event-proposal skills in `.claude/skills/` with a shared significance rubric.
+- Vite vanilla-JS SPA on Vercel; events in `data/events.yaml` (**288 events** as of 2026-07-04, after backfilling April 2026 + the March 20–31 gap); stock chart with event markers; event-proposal skills in `.claude/skills/` with a shared significance rubric.
+- Event skills now carry an adversarial **verification step** (`event-conventions.md` §9) and a range/backfill skill (`find-ai-events-range`), added 2026-07-04 after the backfill's first pass let through a hallucinated model release, a vetoed-not-enacted law framed as enacted, and a mis-dated event. Tier rule tightened: routine model releases are never `major`.
 - Docs layer established in-repo (2026-07-03): `docs/master-status.md` (this file), `docs/decisions.md`, `docs/prds/`. Commits touching only docs/datasets skip Vercel deploys.
 - Provenance register scaffolded at `data/provenance/register.csv` (4 seed rows, all `pending` — verification not yet done). Layoffs dataset live at `data/layoffs/layoffs.csv` (schema approved 2026-07-03; 32 rows migrated out of events.yaml, which now uses `layoff_ids` references; all rows pending attribution recode).
 
 **Open:**
-- Layoffs attribution recode pass: 32 migrated rows are `needs_recode` — each needs a human-reviewed `ai_attribution` code with a verbatim quote.
+- Layoffs attribution recode pass: **done** (2026-07-03). Ongoing: keep new rows coded from primary language via `find-ai-layoffs-monthly`.
 - Remaining layoffs scope decisions: date floor, count threshold.
 - Provenance register: the four seed rows are `pending` until their primary sources are fetched and verified.
+- Timeline follow-ups from the 2026-07-04 backfill: prune the 7 flagged `major`s to taste; run the **May pass** (incl. the held Anthropic $65B Series H, date-conflicted Apr 21 vs May 28); merged changes to `data/` are committed-but-unpushed pending review.
 - Whether to rename the repo as scope outgrows "ai-timeline" (cosmetic; deferred).
 
 ---

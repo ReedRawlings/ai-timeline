@@ -73,6 +73,56 @@ Llama 4 (that was Apr 2025), SpaceX–Cursor acquisition (June), **Oracle ~30,00
 
 ---
 
+---
+
+# DEEP PASS (criteria-first, curated sources) — added second
+
+Re-ran the sweep the right way: curated sources first (Hyperdimensional, TBPN, One Useful Thing, Superintelligence, Reddit), then one query per rubric category, across **both April** and the **March 20–31 gap**. Every candidate below was verified by me individually. Files: net-new April events are under the `=== NET-NEW (deep pass) ===` marker in `2026-04-events.yaml`; the March gap is in `2026-03-20-to-31-events.yaml`; Oracle is in `2026-03-layoffs.csv`.
+
+## March 20–31 events (7 net-new)
+- **Anthropic Wins Preliminary Injunction Against Pentagon Blacklisting** — 03-26 · **major** (FLAG). Judge Rita Lin, 43-page ruling, "pretextual… unlawful retaliation." The Apr 8 event already in the batch is a *separate* appeals-court motion — both are real.
+- **California Signs First-of-Kind AI Procurement Order (EO N-5-26)** — 03-30 · **major** (FLAG). First state vendor-certification/procurement regime; explicit counter to federal preemption.
+- **OpenAI Closes Record $122B Round at $852B Valuation** — 03-31 · **major** (FLAG). Largest private financing in history; Amazon $50B (partly AGI/IPO-contingent), Nvidia + SoftBank ~$30B each.
+- **Anthropic's Unreleased 'Mythos' Model Exposed in Data Leak** — 03-26 · notable. The precursor to the Apr 7 Glasswing withholding.
+- **AGIBOT Builds Its 10,000th Humanoid Robot** — 03-30 · notable.
+- **Claude Code Source Code Leaked via npm** — 03-31 · notable · borderline (security incident).
+- **Oracle Cuts Thousands to Fund AI Data-Center Buildout** — 03-31 · notable · `layoff_ids: [oracle-2026-03]`.
+
+## April net-new events (9)
+- **Families Sue OpenAI Over Tumbler Ridge Mass Shooting** — 04-29 · **major** (FLAG). First mass-casualty wrongful-death suit against a frontier AI company; ~$1B sought.
+- **Anthropic Passes OpenAI in Revenue Run-Rate** — 04-07 · notable (could elevate). $30B ARR; OpenAI disputes the figure.
+- **Intel Joins Musk's Terafab AI-Chip Megaproject** — 04-07 · notable · borderline.
+- **Apple Threatened to Pull Grok Over Deepfakes, Letter Reveals** — 04-14 · notable · **borderline** (threat was actually made in January, surfaced in April).
+- **Honor's Humanoid Robot Wins Beijing Half-Marathon** — 04-19 · notable.
+- **Google Makes Ironwood TPU GA, Previews Split Training/Inference Chips** — 04-22 · notable.
+- **VAST Data Raises $1B at a $30B Valuation** — 04-22 · notable.
+- **Maine's First-in-Nation Data-Center Moratorium Vetoed** — 04-24 · notable. **Reframed after verification:** it was *vetoed* by Gov. Mills and the override failed — it did NOT become law.
+- **Ineffable Intelligence Raises Record $1.1B Seed** — 04-27 · notable. David Silver (ex-DeepMind).
+
+## Layoffs — Oracle (March) added
+- `oracle-2026-03` — 03-31 · count **undisclosed** · **press_inferred** / contextual · disputed. The "30,000" is a TD Cowen analyst estimate Oracle never confirmed; the termination email named only "a broader organizational change." A *separate* June 22 10-K carries explicit AI-causation language for a different ~21,000 cumulative figure — kept apart, not merged. Your call: enter the analyst estimate or keep undisclosed; and whether press-inferred clears the bar.
+
+## Rejected in verification (important — caught real errors)
+- **"Gemini 3.1 Ultra" — does not exist.** A hallucinated release from low-quality roundup sites; real model is Gemini 3.1 Pro (Feb 19). Dropped.
+- **Maine "enacted a ban"** — false; it was vetoed. Reframed above.
+- **Apple/Grok** as a clean April event — the threat was January; reframed as a disclosure, marked borderline.
+- **Grok 4.20 GA** — date unverifiable within the window (Mar 18–22), possibly out of window. Left out.
+- **Musk French-prosecutor summons (Apr 20)** — only a secondary aggregator found; left out pending a primary source.
+- **Second attack near Altman's home (Apr 12)** — real (SF Standard), but I'd fold it into the Apr 10 Molotov card as a follow-on rather than a separate entry — your call.
+- **"Tokenmaxxing" pullback (Meta/Uber/Amazon capping employee AI use)** — real trend but not a single dated event; candidate for an "Everything Else" note, not a card.
+- Out of window / not AI-native: HSBC (~20k, Mar 19, and only "mulling"), Epic Games (Mar 24, company *denied* AI), Cognizant Project Leap (Apr 29, count not company-disclosed), Apple CEO transition (Apr 20, not AI-specific).
+
+## Latest revisions (your feedback)
+- **Model releases are not major.** DeepSeek V4 downgraded from major to the default `notable` (kept, not excluded); GPT-5.5, Claude Opus 4.7, Muse Spark, Qwen3.6-Plus already `notable`. Policy going forward: a model release is `notable`/`minor` unless it carries special significance (e.g. the withheld Mythos).
+- **Second Attack Near Sam Altman's Home (Apr 12)** — added as its own event (escalation), per your note.
+- **'Tokenmaxxing' (Apr 6)** — added, framed as a temporary cross-firm episode; first surfaced by The Information Apr 6, leaderboards pulled by late May.
+- **Cognizant 'Project Leap' (Apr 29)** — clarified and added (event + layoff row). AI-led restructuring, $230–320M charge, **no company headcount figure**; the 7,000–15,000 count is analyst math off the severance budget, and reported Q1 headcount actually rose (+6,000 QoQ). Coded explicit_company / contextual ('AI as investment destination'), count undisclosed.
+
+## Tally (current)
+Events: **7 (March gap) + 27 (April) = 34 proposed**, of which **7 flagged major**. Layoffs: **6 rows** (Snap, Meta, Microsoft, Pendo, Oracle, Cognizant). The 7 majors: Anthropic injunction (3/26), Newsom EO (3/30), OpenAI $122B (3/31), Anthropic Mythos/Glasswing (4/7), Altman Molotov attack (4/10), Microsoft–OpenAI rewrite (4/27), Tumbler Ridge suit (4/29).
+
+---
+
 ## If you approve — merge order (layoff rows before events, per convention)
 1. Append approved rows to `data/layoffs/layoffs.csv` → `python scripts/validate-layoffs.py` → `node scripts/build-layoffs.js`.
 2. Append approved events to `data/events.yaml`. The `layoff_ids` in the Snap and Meta/Microsoft events **require** their layoff rows to exist first, or `scripts/validate-yaml.py` will fail.

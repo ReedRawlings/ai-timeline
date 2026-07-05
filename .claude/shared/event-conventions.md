@@ -37,8 +37,9 @@ Match `data/events.yaml` exactly.
 
 **Optional (include only when supported; see omit rule):**
 - **tier** — editorial importance, one of `major`, `notable`, `minor`. **Default is `notable`; omit the field for notable events** and write only `tier: major` or `tier: minor` explicitly (place it right after `date:`). This is a hand-curated judgment — **never derive it from tags, keywords, or funding size.**
-  - **major** — a landmark that reorders the field: first-of-kind regulation or court ruling, an AI-driven market shock, a safety or open-source reversal by a major lab, a defining cultural moment, or a paradigm model release. Only ~10–12% of events; these carry the site's headline cards. **Always surface a suggested `major` as a review flag for a human to confirm — never finalize it silently.**
-  - **minor** — clears the bar but is incremental or niche: a point-release kept for completeness, a small or contained controversy, a narrow research result.
+  - **major** — a landmark that reorders the field: first-of-kind regulation or court ruling, an AI-driven market shock, a safety or open-source reversal by a major lab, a defining cultural moment, or a genuinely paradigm-shifting model event. Only ~10–12% of events; these carry the site's headline cards. **Always surface a suggested `major` as a review flag for a human to confirm — never finalize it silently.**
+    - **Model releases are the trap here: a routine release is never major, even from a frontier lab.** A new flagship or point-release (GPT-5.5 after 5.4, Claude Opus 4.7 after 4.6, a lab's first proprietary model, another open-weight drop) is `notable` or `minor` by default. What makes a *model event* major is the surrounding significance, not the ship: a lab **withholding or safety-holding** a completed model (e.g. Mythos), an **open-source reversal**, or a release that provably **reorders the competitive field** (a true paradigm shift, not "tops a benchmark"). "A big lab shipped a model" is not, by itself, a reason to consider major. (Decision 2026-07-04.)
+  - **minor** — clears the bar but is incremental or niche: a point-release kept for completeness, a small or contained controversy, a narrow research result, a security/leak incident.
   - **notable** (default) — everything else that clears the bar. Omit the field.
 - **tags** — one or more from the Approved Tags list. Nothing off-list.
 - **organizations** — companies, labs, institutions, or agencies involved.
@@ -91,6 +92,8 @@ Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this
 
 Weight specialist outlets over wire services and news aggregators.
 
+> **Access note (revisit):** these patterns are showing their age. In the 2026-07 backfill, the Substack `site:` searches returned thin results, `getsuperintel.com` only exposed recent archive pages, and Reddit search returned essentially nothing for the target month. Treat this list as a starting point, not a guarantee of coverage — and when curated sources come up empty, that's a signal to widen to first-tier outlets, not to skip verification (§9).
+
 ---
 
 ## 7. Deduplicate against the existing timeline
@@ -116,7 +119,20 @@ Before proposing an event, check it isn't already on the timeline:
 ```
 Add a `tier:` line right after `date:` only for `major`/`minor` events (e.g. `tier: major`); omit it for the `notable` default. See the `tier` field in section 2.
 
-## 9. Self-check before writing (mirrors `scripts/validate-yaml.py`)
+## 9. Verify before proposing (anti-hallucination)
+
+The self-check in §10 is structural — it mirrors the YAML validator and says nothing about whether the event is *real*. This step does. Web results in this domain include SEO/roundup sites and AI-generated summaries that invent releases, dates, and outcomes, so every kept candidate must clear this before it's written. This is the events-side equivalent of the layoffs sweep's "headlines are leads, memos are evidence."
+
+- **Confirm the event against a primary or reputable source** — a company blog/filing/press release, a court or government document, or a first-tier outlet (Reuters, CNBC, Bloomberg, NYT, AP, or the specialist outlets in §6). A single roundup/SEO blog is not confirmation. Prefer the primary; if it 403s, find a fetchable carrier of the same facts.
+- **Verify the date against that source**, not a headline or aggregator, and distinguish when a thing *happened* from when it was *reported* (a threat made in January and revealed in April is an April disclosure of a January action — say so).
+- **Check the outcome actually occurred.** "Passed the legislature" ≠ "enacted" (it can be vetoed); "filed suit" ≠ "ruled"; "announced" ≠ "shipped." State the real status.
+- **Treat unfamiliar model/product names and version numbers as suspect** until corroborated by the vendor or a first-tier source. Hallucinated releases — a version bump that never shipped, an "Ultra" tier that doesn't exist — are the most common failure here; cross-check the exact name against the vendor's own page.
+- **Figures and counts:** confirm against the source; record conflicting numbers side by side, never averaged; never present an analyst estimate as a company-confirmed number.
+- **If you can't confirm it, don't propose it — flag it as unverified** for the human, with what you found and what's missing. No fabrication.
+
+Real failures this step is meant to catch (2026-07 backfill): a hallucinated "Gemini 3.1 Ultra" that was never released; a Maine data-center ban reported as enacted when it was actually vetoed; an Apple/Grok App Store threat dated to April that was really made in January.
+
+## 10. Self-check before writing (mirrors `scripts/validate-yaml.py`)
 
 The validator only runs against `data/events.yaml` on merge, not against proposal files — so proposals must be self-checked to the same rules:
 - [ ] `title`, `date`, `description` present on every entry
