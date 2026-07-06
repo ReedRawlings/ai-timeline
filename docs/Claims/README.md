@@ -1,7 +1,7 @@
 # AI Claims Repository — schema and conventions
 
 Two tables, related by a foreign key. Designed to be read and edited by an LLM or a
-human. Current size: 39 referents, 41 claims. Expected to stay in the low hundreds.
+human. Current size: 41 referents, 44 claims. Expected to stay in the low hundreds.
 
 ## The two tables
 
@@ -80,7 +80,7 @@ the world. See the claim-analysis skill.
   health, Epistemic pollution (synthetic content, model collapse, dead-internet),
   Child safety / education. *(Only Cognitive effects is currently populated.)*
 - **Existential / Safety Risk** — Catastrophic risk, Risk skepticism, Capability
-  critique.
+  critique, Moral status / consciousness.
 - **AI Hype / Bubble** — Enterprise ROI, Investment bubble.
 - **Military / Autonomous Weapons** — *defined for tracking; no claims collected yet.*
 - **Robotics / Physical Labor** — physical-labor displacement (factory, warehouse,

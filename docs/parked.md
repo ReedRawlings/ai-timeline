@@ -1,6 +1,8 @@
 # Parked Assets
 
-One paragraph per parked asset, with its re-entry point: what blocks it, and what "ready to start" looks like. Organized by the five themes (decided 2026-07-03). The WIP cap is **two active builds** — currently the layoffs dataset and the stat provenance register. Nothing below gets built without explicitly unparking it (a decision-log entry).
+The detail file for everything in state `Parked` (the registry of ALL artifacts, with states, is `docs/master-status.md`). Organized by the five themes (decided 2026-07-03).
+
+**Stanza format (decided 2026-07-05)** — each parked asset carries: *what it is* (2–4 sentences), *why it's parked* (usually the WIP cap, sometimes a blocking decision), *re-entry condition* (what "ready to start" looks like), and a *PRD pointer if one exists*. A PRD is not required to park something — it's the ticket out: nothing moves to Development without one (or an equivalent schema/spec). Unparking = a decision-log entry + state change in master-status.
 
 ---
 

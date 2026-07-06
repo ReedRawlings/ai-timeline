@@ -1,6 +1,11 @@
-# Master Status — AI Research & Data Assets Project — 2026-07-04
+# Master Status — AI Research & Data Assets Project — 2026-07-05
 
-*Single source of truth for what exists, what's decided, and what's open. Update this doc when a workstream changes state; don't let it drift more than ~2 weeks stale.*
+*The registry of every artifact this project wants to create, each with a state. Update when an artifact changes state; reviewed at the end of every working session (along with `decisions.md`).*
+
+**How tracking works (decided 2026-07-05):**
+- **States:** `Parked` (not in development yet — one line here, full stanza in `docs/parked.md`) → `Development` (actively being built) → `Deployed` (live; gets a **Maintenance** line with update cadence: Daily / Weekly / Monthly / None).
+- **One home per detail:** state lives here; why-we-decided lives in `docs/decisions.md` (append-only working memory); operational detail lives in the asset's own README/schema/PRD — this file links, it doesn't restate.
+- **New artifacts get an entry here when created** — plus a parked.md stanza if they can't be worked on yet. A PRD is not required to park something; it's the ticket *out* of parked (nothing goes to Development without one, or an equivalent schema/spec).
 
 ## The one-sentence version
 
@@ -12,100 +17,80 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 1 — The Mind on LLMs (essay series)
 
-**State:** Framework locked. Not yet drafting.
+**State: Development** (framework locked, not yet drafting — lives in claude.ai project knowledge, not this repo).
 
-**Decided:**
-- Three sites of change (mind alone / self↔tool / self↔others); cognitive surrender as series anchor; dose/scale/loop-position as the sign-flipping axes; Gwern↔Mollick as the prescriptive foil. (Full detail: `llm-mind-framework.md` in project knowledge.)
-- Series opens with a manifesto post (prior tech panics, honest dual-sided frame), then cognitive offloading as first phenomenon post.
-- Studies are discourse objects, not ground truth. No standing to define wasted time. Avoid moral panic.
+**Decided:** Three sites of change (mind alone / self↔tool / self↔others); cognitive surrender as series anchor; dose/scale/loop-position as the sign-flipping axes; Gwern↔Mollick as the prescriptive foil (full detail: `llm-mind-framework.md` in project knowledge). Opens with a manifesto post, then cognitive offloading. Studies are discourse objects, not ground truth.
 
-**Open:**
-- Voice register (personal vs. analytic) — the blocking decision before drafting.
-- Citation verification pass (update-grief arXiv IDs, quotes gathered under rate-limiting).
-- Post-count merges: 01+05 merge recommended; 02+03 couple, don't merge; authenticity-vertigo halves and attention-vampires pairing TBD.
-- Belief distortion: callout vs. own post.
+**Open:** voice register (personal vs. analytic — the blocking decision); citation verification pass; post-count merges (01+05 recommended; 02+03 couple, don't merge); belief distortion callout vs. own post.
 
-**Artifacts:** framework doc (project knowledge); seven standalone article drafts (from the adoption-curves chat); unknown-unknowns research prompt.
+**Artifacts:** framework doc (project knowledge); seven standalone article drafts; unknown-unknowns research prompt.
 
 ---
 
 ## Workstream 2 — Alignment chart (distribution/meme artifact)
 
-**State:** Content complete. Distribution not started.
+**State: Development** (content complete; distribution not started).
 
-**Decided:** Nine archetypes finalized; definitional register (recognizable, not editorializing); skill axis folded into prose notes on two cells; intentionally non-definitive.
+**Decided:** Nine archetypes finalized; definitional register; skill axis folded into prose notes on two cells; intentionally non-definitive.
 
-**Open:** Check subreddit rules/culture before posting; Reddit + X static grid first as validation before any TikTok investment.
-
----
-
-## Workstream 3 — Backlash / sentiment tracker
-
-**State:** Sources chosen, media layer spec'd via PRD. Not built.
-
-**Decided:**
-- Four themes: creative/identity concerns, distrust of AI companies, labor displacement, data center opposition.
-- Primary sources: state environmental dockets, municipal meeting transcripts, Reddit (Arctic Shift), HN (Algolia), Bluesky (AT Protocol firehose), self-administered surveys.
-- Media coverage (NewsAPI.ai) runs as a **separate Media Narrative Index**, never blended into the backlash composite. GDELT deferred. Event-level counting, normalization against total AI-news volume, external denominator for the labor theme. (Full detail: media-coverage-layer PRD.)
-- Artifact types sketched: trend lines, share of voice, exemplar quotes, flashpoint case studies, bottom-up language taxonomy, cross-source register comparison. **Audience resolved: public.**
-
-**Open (from PRD §7):** classifier validation set; escalation-flag operational definition; NewsAPI.ai cost estimate; RSS trade-press curation; historical backfill window; whether to reintroduce GDELT later.
+**Open:** subreddit rules/culture check before posting; Reddit + X static grid first as validation before any TikTok investment.
 
 ---
 
-## Workstream 4 — Data center resistance tracker
+## Workstream 3 — Sentiment & discourse
 
-**State:** PRD v0.3 written (`docs/prds/data-center-tracker-prd.md`). Not built.
-
-**Decided:** Scoped to resistance asset only; siblings (footprint growth, buildout & conversions, project-level outcomes, anecdotes) get their own PRDs later. For *and* against measures are co-equal entries. MW as common metric. US-only. Weekly LLM scan + human verification. Differentiated cut = the definitional landmine (a "moratorium" count collapses permanent bans, zoning freezes, and non-binding resolutions).
-
-**Open (consequential):** size/threshold scope (sub-hyperscale in or out); for/against weighting (whether permissive measures are truly co-equal or context).
+- **Backlash tracker** — **State: Parked** → parked.md. Sources chosen, media boundary spec'd (`docs/prds/media-coverage-layer-prd.md`).
+- **Media Narrative Index** — **State: Parked** → parked.md. Never blended into any backlash composite (2026-07-01).
+- **Adoption/usage panel** — **State: Parked** → parked.md. Cheap and self-contained; good candidate for the next open build slot.
 
 ---
 
-## Workstream 5 — AI-attributed layoffs dataset
+## Workstream 4 — Data centers
 
-**State:** Building our own dataset (decided 2026-07-03), in the `ai-timeline` repo (`data/layoffs/`). Schema approved; 32 rows migrated and attribution-recoded 2026-07-03 (11 removed for no AI attribution from anyone). **2026-07-04:** April 2026 + March 20–31 backfill added 4 rows (Snap, Meta, Cognizant, Oracle) → **25 rows**; Microsoft (Apr buyout) and Pendo (Apr) evaluated and excluded (no / insufficient company AI attribution). New boundary precedents recorded in `schema.md` (voluntary buyouts out; analyst-estimate counts stay undisclosed; "AI as investment destination" = contextual).
-
-**Decided:** Existing trackers (Challenger, layoffs.fyi) are US/tech-centric and press-derived; India/Global South structurally undercounted. UK ONS and India Labour Bureau are the only press-independent verification sources. Cross-checking against other trackers validates extraction, not coverage — the never-covered gap is structural.
-
-**Open:** test NewsAPI.ai's Layoffs event type against known cases (Oracle, Salesforce, Cisco) before committing; schema; whether Challenger/layoffs.fyi serve as denominator for the backlash tracker's labor theme.
+- **Legislation tracker** — **State: Parked** → parked.md. PRD v0.3 written (`docs/prds/data-center-tracker-prd.md`); scope settled; open: sub-hyperscale threshold, for/against weighting, LegiScan confirmation (PRD §8).
+- **Buildout tracker (incl. project-level outcomes sub-table)** — **State: Parked** → parked.md. No PRD yet.
+- **Anecdotes** — **State: Parked** → parked.md.
 
 ---
 
-## Workstream 6 — Meta-assets (from the artifacts review)
+## Workstream 5 — Labor
 
-**State:** Recommended, not started.
-
-- **Stat provenance register** — living table: viral number → primary source → stripped conditions → verification status. Recommended build-first (cheap, disciplines everything else). First rows: "500ml water," AI-layoff counts.
-- **Environmental disclosure ledger** — conditions-preserving table of per-prompt energy/water figures (Google 0.24/0.10 Wh comprehensive vs. not; OpenAI 0.34 Wh mean).
-- **Update-grief event log** — dated deprecation events + documented community reaction; empirical backbone for the series' strongest new phenomenon.
-- **Adoption/usage panel** — quarterly, survey disagreement kept visible.
-- **Prediction accountability tracker** (added 2026-07-04) — influencer/poster AI predictions tracked to resolution; single page with submissions, each claim tied to its source link/video, Wayback/Internet Archive snapshot at entry for posterity. Parked; needs a short PRD (inclusion criteria, moderation flow). See docs/parked.md Theme 4.
+- **AI-attributed layoffs dataset** (`data/layoffs/`) — **State: Deployed.** 30 attribution-coded rows as of 2026-07-05 (32 migrated → recode removed 11 → backfills through May 2026 added more); every row coded from primary language with verbatim quotes; evidence tags (`ai_attribution` × `causal_link`, `count_scope`, sector). Feeds the site's Layoffs page. Detail: `data/layoffs/README.md` + `schema.md`.
+  **Maintenance: Monthly** (`find-ai-layoffs-monthly` sweep; headline-vs-memo verification discipline).
+  **Open:** NewsAPI.ai "Layoffs" event-type test before any automated ingestion; count-threshold scope call; whether Challenger/layoffs.fyi serve as denominator for the backlash tracker's labor theme.
+- **Exposure indices** — **State: Parked** → parked.md.
+- **Employment actuals (BLS layer)** — **State: Parked** → parked.md.
 
 ---
 
-## Workstream 7 — AI timeline project
+## Workstream 6 — Claims & verification
 
-**State:** Live site, ongoing maintenance. As of 2026-07-03, the `ai-timeline` repo is also the home of the whole project (datasets, docs, decision log — see decision log).
+- **Stat provenance register** (`data/provenance/register.csv`) — **State: Deployed.** 4 claims researched to `partially_verified` against fetched primary sources (2026-07-03): 500ml-water (a 10–50x per-prompt inflation), Challenger AI-layoff counts, Gemini 0.24/0.10 Wh, OpenAI 0.34 Wh. Detail: `data/provenance/README.md`.
+  **Maintenance: None** (rows added/verified ad hoc via `propose-provenance-entry`).
+  **Open:** no display surface yet — rows have permalink-able IDs with nowhere to permalink to (options sketched 2026-07-04).
+- **AI Claims Repository** (`docs/Claims/`) — **State: Development** (human-built, added 2026-07-05). Two related tables: `referents.csv` (~41 underlying facts with authoritative statements) + `claims.csv` (~44 claim variants, `as-made` vs `circulating`, accuracy-graded against their referent). **Direction (decided 2026-07-05): the provenance register and this repository will essentially merge** — provenance rows are claims about AI (environmental impact etc.) and belong in this categorization long-term; the register's deep-research treatment becomes the standard for high-traffic claims. Detail: `docs/Claims/README.md`.
+  **Open:** merge mechanics/timing (register rows map to referent + circulating-variant pairs); whether it moves to `data/` with a validation script like sibling datasets; the "claim-analysis skill" its README cites lives in project knowledge, not this repo.
+- **Prediction accountability tracker** — **State: Parked** → parked.md. Scope decided 2026-07-04 (all AI predictions, unskewed; LLM/infra/economic). Overlaps the Claims Repository's `premature` rating — resolve at PRD time.
+- **Environmental disclosure ledger** — **State: Parked** → parked.md. A shelf of the register (and thus of the eventual merged claims asset).
+- **Update-grief event log** — **State: Parked** → parked.md. Explicitly low priority.
 
-**Decided:**
-- Vite vanilla-JS SPA on Vercel; events in `data/events.yaml` (**288 events** as of 2026-07-04, after backfilling April 2026 + the March 20–31 gap); stock chart with event markers; event-proposal skills in `.claude/skills/` with a shared significance rubric.
-- Event skills now carry an adversarial **verification step** (`event-conventions.md` §9) and a range/backfill skill (`find-ai-events-range`), added 2026-07-04 after the backfill's first pass let through a hallucinated model release, a vetoed-not-enacted law framed as enacted, and a mis-dated event. Tier rule tightened: routine model releases are never `major`.
-- Docs layer established in-repo (2026-07-03): `docs/master-status.md` (this file), `docs/decisions.md`, `docs/prds/`. Commits touching only docs/datasets skip Vercel deploys.
-- Provenance register scaffolded at `data/provenance/register.csv` (4 seed rows, all `pending` — verification not yet done). Layoffs dataset live at `data/layoffs/layoffs.csv` (schema approved 2026-07-03; 32 rows migrated out of events.yaml, which now uses `layoff_ids` references; all rows pending attribution recode).
+---
+
+## Workstream 7 — AI timeline site ("The AI Record")
+
+**State: Deployed.** Three-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks. 314 events in `data/events.yaml` as of 2026-07-05 (May 2026 pass complete). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
+**Maintenance: Daily** (event sweeps via `find-ai-events-*` skills; layoffs page refreshes with the dataset's monthly sweep; stock data self-updates at build + `/api/stocks`).
 
 **Open:**
-- Layoffs attribution recode pass: **done** (2026-07-03). Ongoing: keep new rows coded from primary language via `find-ai-layoffs-monthly`.
-- Remaining layoffs scope decisions: date floor, count threshold.
-- Provenance register: the four seed rows are `pending` until their primary sources are fetched and verified.
-- Timeline follow-ups from the 2026-07-04 backfill: prune the 7 flagged `major`s to taste; run the **May pass** (incl. the held Anthropic $65B Series H, date-conflicted Apr 21 vs May 28); merged changes to `data/` are committed-but-unpushed pending review.
+- Prune the 7 flagged `major`s from the backfill to taste.
 - Whether to rename the repo as scope outgrows "ai-timeline" (cosmetic; deferred).
+
+**Supporting docs:** `docs/event-search-methodology.md` (append-only change log of how event-finding evolves); `docs/superpowers/specs/` (implementation specs, e.g. the shipped Atlas + Dispatch redesign).
 
 ---
 
 ## Cross-cutting open items
 
-1. Run the per-chat synthesis pass (the reusable prompt from the Cowork-migration chat) so each conversation leaves a durable context doc — not yet done for any chat.
-2. Sequencing across workstreams (see recommendation in chat, 2026-07-03: provenance register → layoffs + data center trackers → sentiment pipeline).
-3. Where the public assets live (repo structure, publishing surface) — undecided.
+1. Per-chat synthesis pass so each conversation leaves a durable context doc — not yet done for any chat.
+2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed, the register is Deployed, and the Claims Repository is in Development — formally within cap, but confirm the cap's meaning now that assets graduate to maintained.
+3. Where the public assets live long-term (repo structure, publishing surface) — undecided; related: the register/claims display-surface question (W6).
