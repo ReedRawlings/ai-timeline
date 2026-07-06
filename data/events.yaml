@@ -3048,7 +3048,7 @@
   key_figures: ["Jensen Huang"]
   link: "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai"
   description: "At GTC Taipei, NVIDIA released Cosmos 3, an open 'omnimodel' for physical AI that combines vision reasoning, world generation, and action prediction for robotics and autonomous systems, shipping Super (32B) and Nano (8B) variants. It also launched a 'Cosmos Coalition' of robotics and world-model developers to advance open physical-AI models."
-- title: "Anthropic's J-Lens Reveals AI 'Consciousness' Workspace"
+- title: "Anthropic's Interpretability Breakthrough Links AI Reasoning to Consciousness Theory"
   date: "2026-07-06T09:00:00-07:00"
   tags: ["Research", "Safety", "Technical"]
   organizations: ["Anthropic"]
