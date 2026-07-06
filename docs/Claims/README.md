@@ -1,7 +1,13 @@
 # AI Claims Repository — schema and conventions
 
 Two tables, related by a foreign key. Designed to be read and edited by an LLM or a
-human. Current size: 41 referents, 44 claims. Expected to stay in the low hundreds.
+human. Current size: 44 referents, 51 claims. Expected to stay in the low hundreds.
+
+*History: absorbed the stat provenance register (2026-07-05) — its four deep-researched
+rows became REF-GOOGLE-GEMINI-FOOTPRINT, REF-OPENAI-PERQUERY, REF-CHALLENGER-AI-CUTS
+(each with as-made + circulating claim pairs C044–C046b), an enriched REF-REN-WATER,
+and C028b (the viral "500ml per prompt" form, graded mostly false). Register row IDs
+map in the decision log. Entry skill: `.claude/skills/propose-claim-entry/`.*
 
 ## The two tables
 

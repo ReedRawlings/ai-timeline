@@ -65,13 +65,11 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 6 — Claims & verification
 
-- **Stat provenance register** (`data/provenance/register.csv`) — **State: Deployed.** 4 claims researched to `partially_verified` against fetched primary sources (2026-07-03): 500ml-water (a 10–50x per-prompt inflation), Challenger AI-layoff counts, Gemini 0.24/0.10 Wh, OpenAI 0.34 Wh. Detail: `data/provenance/README.md`.
-  **Maintenance: None** (rows added/verified ad hoc via `propose-provenance-entry`).
-  **Open:** no display surface yet — rows have permalink-able IDs with nowhere to permalink to (options sketched 2026-07-04).
-- **AI Claims Repository** (`docs/Claims/`) — **State: Development** (human-built, added 2026-07-05). Two related tables: `referents.csv` (~41 underlying facts with authoritative statements) + `claims.csv` (~44 claim variants, `as-made` vs `circulating`, accuracy-graded against their referent). **Direction (decided 2026-07-05): the provenance register and this repository will essentially merge** — provenance rows are claims about AI (environmental impact etc.) and belong in this categorization long-term; the register's deep-research treatment becomes the standard for high-traffic claims. Detail: `docs/Claims/README.md`.
-  **Open:** merge mechanics/timing (register rows map to referent + circulating-variant pairs); whether it moves to `data/` with a validation script like sibling datasets; the "claim-analysis skill" its README cites lives in project knowledge, not this repo; head-vs-supporting-proponent display once the data gets a UI (`docs/prds/claims-proponent-display-prd.md`).
+- **AI Claims Repository** (`docs/Claims/`) — **State: Development** (human-built, added 2026-07-05). Two related tables: `referents.csv` (44 underlying facts with authoritative statements) + `claims.csv` (51 claim variants, `as-made` vs `circulating`, accuracy-graded against their referent). **Absorbed the stat provenance register (merged 2026-07-05)** — its four deep-researched rows entered as new/enriched referents with as-made + circulating claim pairs (ID map in the decision log); `data/provenance/` and its validator/skill are retired, replaced by `propose-claim-entry`. Detail: `docs/Claims/README.md`.
+  **Maintenance: None** (rows added ad hoc via `propose-claim-entry`; deep-research verification per claim).
+  **Open:** validation script (FK integrity, enums — none yet); whether it moves to `data/` with its dataset siblings; display surface (rows have permalink-able REF-*/C* IDs with nowhere to permalink to; head-vs-supporting-proponent question in `docs/prds/claims-proponent-display-prd.md`); the "claim-analysis skill" its README cites lives in project knowledge, not this repo.
 - **Prediction accountability tracker** — **State: Parked** → parked.md. Scope decided 2026-07-04 (all AI predictions, unskewed; LLM/infra/economic). Overlaps the Claims Repository's `premature` rating — resolve at PRD time.
-- **Environmental disclosure ledger** — **State: Parked** → parked.md. A shelf of the register (and thus of the eventual merged claims asset).
+- **Environmental disclosure ledger** — **State: Parked** → parked.md. A shelf of the Claims Repository (per-prompt energy/water referents already seeded: REF-GOOGLE-GEMINI-FOOTPRINT, REF-OPENAI-PERQUERY).
 - **Update-grief event log** — **State: Parked** → parked.md. Explicitly low priority.
 
 ---
@@ -92,5 +90,5 @@ A public research project on how AI is changing people and society, with two mut
 ## Cross-cutting open items
 
 1. Per-chat synthesis pass so each conversation leaves a durable context doc — not yet done for any chat.
-2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed, the register is Deployed, and the Claims Repository is in Development — formally within cap, but confirm the cap's meaning now that assets graduate to maintained.
-3. Where the public assets live long-term (repo structure, publishing surface) — undecided; related: the register/claims display-surface question (W6).
+2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed and the Claims Repository (register absorbed) is the one asset in Development — within cap, but confirm the cap's meaning now that assets graduate to maintained.
+3. Where the public assets live long-term (repo structure, publishing surface) — undecided; related: the claims display-surface question (W6).

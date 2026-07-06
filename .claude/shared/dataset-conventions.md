@@ -1,9 +1,9 @@
 # Datasets — Shared Conventions (source of truth)
 
 Every dataset skill in this repo reads this file. Edit conventions here, not in individual skills.
-Skills that reference this: `propose-provenance-entry`, `propose-layoff-entry`.
+Skills that reference this: `propose-claim-entry`, `propose-layoff-entry`.
 
-These conventions apply to all standalone datasets under `data/` (`data/provenance/`, `data/layoffs/`, and any future asset). They complement, not replace, each dataset's own `README.md`/`schema.md`.
+These conventions apply to all standalone datasets under `data/` (`data/layoffs/`, the claims repository at `docs/Claims/`, and any future asset). They complement, not replace, each dataset's own `README.md`/`schema.md`.
 
 ---
 
@@ -25,7 +25,7 @@ Never collapse the distinctions that matter: per-what-unit, which model/system, 
 
 ## 4. Stable IDs
 
-Rows get stable, human-readable, kebab-case IDs at creation. IDs never change once assigned; corrections update the row, not the ID. (The provenance register is citable claim-by-claim; the same discipline applies to every dataset.)
+Rows get stable, human-readable, kebab-case IDs at creation. IDs never change once assigned; corrections update the row, not the ID. (The claims repository is citable claim-by-claim — REF-*/C* IDs; the same discipline applies to every dataset.)
 
 ## 5. Flag, don't silently decide
 
@@ -33,7 +33,7 @@ Borderline inclusion calls, ambiguous attributions, conflicting sources, schema-
 
 ## 6. Validate before commit
 
-Each dataset has a validation script (e.g. `scripts/validate-provenance.py`). Run it after any edit and before any commit. A row that fails validation doesn't ship.
+Each dataset has a validation script (e.g. `scripts/validate-layoffs.py`; the claims repository doesn't have one yet — see master-status open items). Run it after any edit and before any commit. A row that fails validation doesn't ship.
 
 ## 7. Scope guard
 
