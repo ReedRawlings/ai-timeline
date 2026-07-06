@@ -3052,8 +3052,8 @@
   date: "2026-07-06T09:00:00-07:00"
   tags: ["Research", "Safety", "Technical"]
   organizations: ["Anthropic"]
-  models: ["Claude Sonnet 4.5", "Claude Haiku 4.5", "Claude Opus 4.5", "Claude Opus 4.6"]
+  models: ["Claude"]
   impact_areas: ["Language Models", "Research", "Ethics"]
   key_figures: ["Wes Gurnee", "Nicholas Sofroniew", "Jack Lindsey"]
   link: "https://transformer-circuits.pub/2026/workspace/index.html"
-  description: "Anthropic's interpretability team introduced the Jacobian lens (J-lens), revealing that language models maintain a small 'global workspace' of privileged internal representations used for reasoning and verbal report — analogous to access consciousness in neuroscience. The technique can surface a model's unverbalized strategic reasoning, safety-relevant deliberations, and deceptive intent, making it a powerful alignment auditing tool. The team also introduced 'counterfactual reflection training,' which shapes model behavior by training it to articulate ethical principles, improving safety without direct behavioral training."
+  description: "A new interpretability technique can now surface an AI model's unverbalized strategic reasoning, safety-relevant deliberations, and deceptive intent — even when its outputs appear benign — opening a powerful new avenue for alignment auditing. Anthropic's interpretability team introduced the Jacobian lens (J-lens), which revealed that language models maintain a small 'global workspace' of privileged internal representations used for reasoning and verbal report, drawing a direct analogy to access consciousness in neuroscience's Global Workspace Theory. The team also introduced 'counterfactual reflection training,' a technique that improves model safety by training it to articulate ethical principles, without requiring direct behavioral training."
