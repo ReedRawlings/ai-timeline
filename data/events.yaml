@@ -2919,6 +2919,16 @@
   link: "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
   description: "Nvidia reported record quarterly revenue of roughly $81.6 billion, up about 85% year over year, with data-center revenue up around 92% on Blackwell demand and next-quarter guidance near $91 billion assuming no China data-center sales. The stock slid despite the beat, a closely watched read on the AI-capex cycle."
 
+- title: "OpenAI Model Disproves 80-Year-Old Erdős Unit Distance Conjecture"
+  date: "2026-05-20T10:00:00-07:00"
+  tier: major
+  tags: ["Research", "Model"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Research"]
+  key_figures: ["Tim Gowers"]
+  link: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+  description: "An internal OpenAI general-purpose reasoning model — not a system trained specifically for mathematics — autonomously disproved a longstanding conjecture on the planar unit distance problem, first posed by Paul Erdős in 1946. For nearly 80 years it was believed that square-grid constructions were essentially optimal for maximizing unit-distance pairs among n points in the plane; the model instead produced an infinite family of counterexamples giving a polynomial improvement, using techniques from algebraic number theory (infinite class field towers, Golod–Shafarevich theory) never previously connected to the problem. External mathematicians including Fields medalist Tim Gowers verified the proof and a companion paper; Gowers called it 'a milestone in AI mathematics' and said he would recommend the paper for acceptance at the Annals of Mathematics without hesitation. OpenAI framed it as the first time a prominent open problem central to a subfield of mathematics has been solved autonomously by AI."
+
 - title: "AI Backlash Emerges as a Measurable Business Risk"
   date: "2026-05-17T10:00:00-04:00"
   tags: ["Social", "Economic"]
@@ -3057,3 +3067,12 @@
   key_figures: ["Wes Gurnee", "Nicholas Sofroniew", "Jack Lindsey"]
   link: "https://transformer-circuits.pub/2026/workspace/index.html"
   description: "A new interpretability technique can now surface an AI model's unverbalized strategic reasoning, safety-relevant deliberations, and deceptive intent — even when its outputs appear benign — opening a powerful new avenue for alignment auditing. Anthropic's interpretability team introduced the Jacobian lens (J-lens), which revealed that language models maintain a small 'global workspace' of privileged internal representations used for reasoning and verbal report, drawing a direct analogy to access consciousness in neuroscience's Global Workspace Theory. The team also introduced 'counterfactual reflection training,' a technique that improves model safety by training it to articulate ethical principles, without requiring direct behavioral training."
+
+- title: "OpenAI Model Disproves 80-Year-Old Erdos Geometry Conjecture"
+  date: "2026-05-20T10:00:00-07:00"
+  tier: major
+  tags: ["Research", "Technical"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Research", "Language Models"]
+  link: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+  description: "An internal OpenAI general-purpose reasoning model autonomously disproved a longstanding conjecture on Erdos's unit-distance problem, a central question in discrete geometry open since 1946, producing a proof - later checked by external mathematicians - that beats the decades-old 'square grid' construction. OpenAI framed it as the first time a prominent open problem central to a subfield of mathematics was solved autonomously by AI; Fields medalist Tim Gowers called the result 'a milestone in AI mathematics.'"

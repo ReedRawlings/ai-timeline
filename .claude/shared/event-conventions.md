@@ -88,13 +88,23 @@ Each id must exist in `layoffs.csv` — `scripts/validate-yaml.py` enforces this
 
 | Publication | Access pattern |
 |---|---|
-| Superintelligence | Fetch `getsuperintel.com` homepage → individual article URLs |
+| Superintelligence | Fetch the **month archive** (`getsuperintel.com/topics` or the dated archive) — NOT just the homepage, which only shows the last ~2 weeks and will silently miss the target month |
+
+**Lab research/news feeds** (scan the primary publishers directly — labs headline their own novel work, and these surface research/science milestones the editors above under-cover). All three render enough server-side to list titles + dates via a plain fetch:
+
+| Lab | Feed |
+|---|---|
+| OpenAI | `https://openai.com/news/research/` (and `/news/` for all) |
+| Anthropic | `https://www.anthropic.com/research` (and `/news`) |
+| Google DeepMind | `https://deepmind.google/research/` (and `/blog`) |
 
 **Reddit:** r/artificial, r/ChatGPT, r/MachineLearning — for social/cultural moments.
 
 Weight specialist outlets over wire services and news aggregators.
 
 > **Access note (revisit):** these patterns are showing their age. In the 2026-07 backfill, the Substack `site:` searches returned thin results, `getsuperintel.com` only exposed recent archive pages (fetch `getsuperintel.com/topics` or the month archive, not just the homepage), and Reddit search returned essentially nothing for the target month. Treat this list as a starting point, not a guarantee of coverage — and when curated sources come up empty, that's a signal to widen to first-tier outlets, not to skip verification (§9).
+>
+> **Under-mining a source counts as skipping it.** The May pass missed OpenAI's May 20 disproof of an 80-year-old Erdős discrete-geometry conjecture — a genuine landmark — even though Superintelligence *had* covered it. The failure was reading only Superintelligence's homepage (recent days) instead of pulling its month archive, then reporting it as "checked." Reaching a curated source's stale surface is not the same as mining the target month; the review's "which sources did you hit" line means *hit for the target period*, not "loaded the front page." The lab feeds above were added the same day as a redundant safety net for exactly this class of research/science milestone.
 
 **Why the curated list leads (and why not to lean on generic queries):** generic web queries ("major AI news May 2026", "AI layoffs May 2026") are SEO-optimized and over-return the loud commercial news — model releases, funding rounds, layoffs — while missing cultural, civil-society, and regulatory moments (the Pope Leo XIV AI encyclical was the missed exemplar). The curated editors above already weight for significance across the whole field, so leading with them — not a checklist of extra sweeps — is the correction. Prioritize the curated sources; use broad web only to fill gaps and to verify (§9).
 
