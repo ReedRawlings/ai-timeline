@@ -1,0 +1,85 @@
+# Dossier for C001 — grade, claim text, and rationale join from claims.csv at
+# build time. Facts trace to REF-AMODEI-ENTRYLEVEL (Axios primary, confirmed
+# in-session via corroborating coverage; direct fetch bot-blocked) and to the
+# 2026 restatements/counterpoints fetched 2026-07-07 (Fortune; Business
+# Insider via AOL syndication).
+claim_id: C001
+headline: "Amodei's \"half of entry-level jobs\" warning is still on the clock"
+dek: "The most-quoted AI labor prediction can't be graded true or false yet — but what he said, what critics said, and what he says now can all be tracked."
+verdict_summary: >-
+  This is what a premature grade is for. Amodei's warning — AI could eliminate
+  up to half of entry-level white-collar jobs and push US unemployment to
+  10-20% within one to five years — was made in May 2025 with a window running
+  to 2030, so no honest fact-check can rule on it yet. What can be recorded:
+  the as-made wording is carefully hedged ("could", "up to"), which the viral
+  retellings tend to drop; no study or model was published alongside it; a
+  Nobel-winning economist has called the reasoning motivated; and by May 2026
+  Amodei himself was reaching for a softer frame. The claim sits on the record
+  with the clock running — graded premature, never true or false before its
+  deadline.
+sections:
+  - heading: "What was said"
+    body: >-
+      In an Axios "Behind the Curtain" interview published May 28, 2025 (the
+      piece Axios headlined "Top AI CEO foresees white-collar bloodbath"),
+      Anthropic CEO Dario Amodei said AI could eliminate up to half of
+      entry-level white-collar jobs and push US unemployment to 10-20% within
+      one to five years, naming finance, consulting, law, and tech as most
+      exposed — and framing the disclosure as an obligation: "We, as the
+      producers of this technology, have a duty and an obligation to be honest
+      about what is coming."
+  - heading: "What the claim rests on"
+    body: >-
+      No study or model was published alongside the prediction. As the
+      repository's referent records, it rests on an argument: capability
+      growth is fast, deployment is rapid, and no offsetting job creation is
+      assumed. That makes it expert judgment — from an unusually well-placed
+      expert with a commercial stake in the technology's importance — rather
+      than a measured finding.
+  - heading: "What the critics say"
+    body: >-
+      Labor economists called the prediction speculative and unsupported by
+      current data at the time. The sharpest named challenge on this referent
+      came in April 2026 from Daron Acemoglu, the MIT economist and 2024 Nobel
+      laureate, who characterized such forecasts as motivated reasoning — labs
+      "have incentives for raising money to emphasize the coming attractions"
+      — and posed the structural question: "If Dario is right, why is
+      Anthropic so keen on making even more of this automation its main
+      priority?"
+  - heading: "What the claimant says now"
+    body: >-
+      By May 2026, at an Anthropic financial-services briefing, Amodei was
+      framing the outcome through the Jevons Paradox — "if you automate 90% of
+      the job, then everyone does the 10% of the job. And the 10% kind of
+      expands to be 100% of what people do" — a substantially softer mechanism
+      than elimination, though he kept the disruption caveat that AI "is moving
+      faster than all these previous technologies." The original prediction
+      has not been retracted; the emphasis has moved. Both statements are on
+      this referent's record.
+  - heading: "What would change the grade"
+    body: >-
+      Resolution comes from the labor data, on the prediction's own terms: by
+      2030, either entry-level white-collar employment has contracted on
+      anything like the predicted scale and US unemployment has visited the
+      10-20% range with AI as a defensible cause — or it hasn't. The hedges
+      ("could", "up to") mean a partial materialization will make grading
+      genuinely contested; that judgment call is why this claim is tracked
+      rather than scored. Until the window closes, premature is the only
+      honest grade.
+references:
+  - date: "2025-05-28"
+    label: "Axios, 'Behind the Curtain: Top AI CEO foresees white-collar bloodbath' (VandeHei & Allen)"
+    url: "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic"
+    note: "The primary source. Direct fetch is bot-blocked; title, date, and figures confirmed in-session via corroborating coverage."
+  - date: "2026-04-22"
+    label: "Business Insider (via AOL syndication): Acemoglu challenges the prediction"
+    url: "https://www.aol.com/articles/nobel-prize-winning-economist-isnt-090501000.html"
+    note: "Fetched 2026-07-07 with verbatim quotes; Acemoglu's 'motivated reasoning' critique."
+  - date: "2026-05-05"
+    label: "Fortune: Amodei reframes via the Jevons Paradox"
+    url: "https://fortune.com/2026/05/05/dario-amodei-jevons-paradox-will-ai-wipe-out-white-collar-jobs/"
+    note: "Fetched 2026-07-07; the claimant's own later restatement, disruption caveat retained."
+  - date: "2026-07-07"
+    label: "Repository referent REF-AMODEI-ENTRYLEVEL"
+    note: "Carries the authoritative statement, the epistemic basis (no accompanying study), and the dated restatement/counterpoint record."
+written: "2026-07-07"

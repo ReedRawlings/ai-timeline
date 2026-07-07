@@ -1,0 +1,96 @@
+# Dossier for C042 — grade, claim text, and rationale join from claims.csv at
+# build time. Facts trace to REF-LLM-NOVEL-DISCOVERY; the DeepMind blogs and
+# Gil Kalai's verification post were fetched 2026-07-07; the OpenAI page is the
+# repo's verified primary (bot-blocked to direct fetch, corroborated in-session
+# via Kalai's post and the mathematicians' arXiv response paper).
+claim_id: C042
+headline: "AI has made real discoveries — that isn't the same as \"AI does science now\""
+dek: "The verified cases are genuine and spectacular; the circulating generalization quietly deletes the machinery around them."
+verdict_summary: >-
+  Unusually for a viral AI claim, the evidence here is real, external, and
+  checkable: new mathematics verified by proof, a biological hypothesis
+  corroborated by a wet lab. What earns the claim its "misleading" half is the
+  generalization. Each documented case pairs a model with automated evaluators,
+  evolutionary search, or multi-agent tooling, aimed at a human-framed problem
+  whose answers are mechanically checkable. "LLMs can now make novel
+  scientific discoveries on their own" converts engineered pipelines on
+  verifiable problems into open-ended autonomous science — a thing none of the
+  documented cases show. True in the narrow instances, misleading as a
+  generalization — graded mixed / true-but-misleading.
+sections:
+  - heading: "What circulates"
+    body: >-
+      "AI can now make novel scientific discoveries on its own" — a framing
+      with no single origin, spread across press coverage and social commentary
+      of a run of genuine results from 2023 through 2026. The circulating form
+      rarely mentions how any of the results were produced.
+  - heading: "What actually happened, case by case"
+    body: >-
+      DeepMind's FunSearch (December 2023) paired an LLM with an automated
+      evaluator in a self-improving loop and found new constructions for the
+      cap-set problem — the largest improvement to its lower bound in 20 years,
+      and by DeepMind's own description the first LLM-aided discovery on an
+      open scientific problem. AlphaEvolve (May 2025) ran Gemini models inside
+      an evolutionary loop with automated scoring and found a 48-multiplication
+      algorithm for 4x4 complex matrix multiplication — the first improvement
+      in that setting on Strassen's 1969 record in 56 years. Google's
+      multi-agent "AI co-scientist" (February 2025) generated a hypothesis
+      about bacterial gene transfer that matched an Imperial College London
+      team's unpublished experimental findings. And in May 2026, an OpenAI
+      general-purpose reasoning model autonomously disproved Erdős's 80-year-old
+      planar unit-distance conjecture — externally verified, with Fields
+      medalist Tim Gowers calling it "a milestone in AI mathematics" and a
+      response paper by Alon, Bloom, Gowers, Litt, Sawin and others confirming
+      and extending the result.
+  - heading: "Where the generalization misleads"
+    body: >-
+      Three qualifiers vanish in circulation. The scaffolding: FunSearch and
+      AlphaEvolve are LLMs inside evolutionary loops with automated evaluators
+      doing the falsification work; the co-scientist is a multi-agent system.
+      The problem selection: every case is a human-framed question whose
+      answers are mechanically checkable — a proof verifies or it doesn't. And
+      the scope: none of the cases show a model choosing its own research
+      question and carrying it end-to-end. The Erdős result is the closest to
+      "autonomous" — OpenAI's own framing is that a general-purpose model, not
+      a math-specialized system, produced the disproof — but it is still one
+      checkable problem posed to the model, not self-directed science. The
+      repository's own rationale puts it plainly: real evidence the mechanism
+      works; misleading when generalized to a standalone LLM doing science
+      end-to-end.
+  - heading: "The forecast next door"
+    body: >-
+      The broader claim this evidence gets recruited for — AI as an autonomous
+      "virtual biologist" compressing 50-100 years of biology into 5-10 —
+      belongs to Dario Amodei's "Machines of Loving Grace" (October 2024) and
+      is graded separately on this referent as C041: premature / unverifiable,
+      a forecast whose horizon hasn't elapsed. The verified discoveries make
+      the forecast less dismissible; they do not make it true yet.
+  - heading: "What would change the grade"
+    body: >-
+      The circulating form would grade accurate if a model demonstrably chose
+      its own open problem and carried it to an externally verified result
+      without human framing or engineered verification scaffolding — or if
+      "on their own" were dropped in favor of naming the pipeline. As stated,
+      each new verified case strengthens the true half without touching the
+      misleading half.
+references:
+  - date: "2023-12-14"
+    label: "DeepMind, FunSearch: making new discoveries in mathematical sciences using LLMs"
+    url: "https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/"
+    note: "Cap-set result; 'first time' claim; LLM + automated evaluator loop. Fetched 2026-07-07."
+  - date: "2025-05-14"
+    label: "DeepMind, AlphaEvolve: a Gemini-powered coding agent for designing advanced algorithms"
+    url: "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    note: "48-multiplication 4x4 complex matrix algorithm, first advance on Strassen's 1969 record in this setting. Fetched 2026-07-07."
+  - date: "2026-05-20"
+    label: "OpenAI, 'An OpenAI model has disproved a central conjecture in discrete geometry'"
+    url: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    note: "The repo's verified primary for the Erdős disproof; direct fetch is bot-blocked — corroborated via Kalai and the arXiv response paper."
+  - date: "2026-05-21"
+    label: "Gil Kalai, 'Amazing: Erdős' Unit Distance Problem was Disproved! It was achieved by AI!'"
+    url: "https://gilkalai.wordpress.com/2026/05/21/amazing-erdos-unit-distance-problem-was-disproved-it-was-achieved-by-ai/"
+    note: "Independent expert account; names the verifying mathematicians (Alon, Bloom, Gowers, Litt, Sawin, et al.) and Sawin's subsequent improved bounds. Fetched 2026-07-07."
+  - date: "2026-07-06"
+    label: "Repository referent REF-LLM-NOVEL-DISCOVERY"
+    note: "Carries the full case list including the AI co-scientist result, and the graded forecast sibling C041 (Amodei)."
+written: "2026-07-07"
