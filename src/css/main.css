@@ -1817,6 +1817,132 @@ body {
 .stk-foot-em { color: var(--rec-ember); }
 .stk-footnote em { font-style: normal; color: #8C8676; }
 
+/* ===================================================================
+   CLAIMS PAGE  (claims.html / src/js/claims-page.js)
+   =================================================================== */
+.clm-eyebrow {
+    font-family: var(--rec-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    color: var(--rec-ember);
+    text-transform: uppercase;
+}
+.clm-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 10px;
+}
+.clm-title {
+    font-family: var(--rec-serif);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1;
+    color: var(--rec-ink);
+    margin: 0;
+}
+.clm-stat-block { text-align: right; flex-shrink: 0; padding-top: 6px; }
+.clm-stat-total {
+    font-family: var(--rec-mono);
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--rec-ink);
+    line-height: 1;
+}
+.clm-stat-total-unit { font-size: 11px; color: #A8A294; letter-spacing: .1em; }
+.clm-stat-range {
+    font-family: var(--rec-mono);
+    font-size: 10px;
+    color: #A8A294;
+    letter-spacing: .08em;
+    margin-top: 5px;
+}
+.clm-lede {
+    font-family: var(--rec-serif);
+    font-size: 20px;
+    line-height: 1.5;
+    color: #33302A;
+    max-width: 820px;
+    margin: 20px 0 0;
+    text-wrap: pretty;
+}
+.clm-lede strong { font-weight: 600; }
+.clm-chips {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+    font-family: var(--rec-mono);
+    font-size: 11px;
+    letter-spacing: .04em;
+}
+.clm-chip { padding: 4px 11px; border-radius: 2px; white-space: nowrap; }
+.clm-chip--solid { background: var(--rec-ember); color: #fff; font-weight: 600; }
+.clm-chip--ink { border: 1px solid var(--rec-ink); color: var(--rec-ink); font-weight: 500; }
+.clm-chip--light { border: 1px solid #CFC8B8; color: #A8A294; }
+.clm-chip-divider { width: 1px; height: 18px; background: #D9D3C5; margin: 0 6px; }
+.clm-chip-note { color: #8C8676; }
+
+/* ---- Category index ---- */
+.clm-section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-top: 1px solid var(--rec-ink);
+    padding-top: 14px;
+    margin-top: 34px;
+}
+.clm-section-title {
+    font-family: var(--rec-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    color: var(--rec-ink);
+}
+.clm-section-note { font-family: var(--rec-mono); font-size: 10px; letter-spacing: .06em; color: #A8A294; }
+.clm-index-cat { margin-top: 20px; }
+.clm-index-cat-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--rec-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    color: var(--rec-ember);
+    padding-bottom: 6px;
+    border-bottom: 1px solid #E4DFD3;
+}
+.clm-index-cat-count { color: #B6AF9E; font-weight: 400; }
+.clm-index-empty {
+    font-family: var(--rec-mono);
+    font-size: 10px;
+    color: #B6AF9E;
+    letter-spacing: .04em;
+    padding: 10px 0;
+}
+.clm-index-row {
+    display: grid;
+    grid-template-columns: 1fr 52px 20px;
+    gap: 12px;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid #EDE9DF;
+    text-decoration: none;
+}
+.clm-index-row:hover .clm-index-summary { color: var(--rec-ember); }
+.clm-index-summary {
+    font-family: var(--rec-serif);
+    font-size: 15.5px;
+    line-height: 1.35;
+    color: var(--rec-ink);
+}
+.clm-index-count { font-family: var(--rec-mono); font-size: 10px; color: #A8A294; text-align: right; }
+.clm-index-dot { width: 8px; height: 8px; border-radius: 50%; justify-self: end; }
+
 /* ---- Responsive ---- */
 @media (max-width: 720px) {
     .record-header { padding: 12px 18px; }
@@ -1825,8 +1951,8 @@ body {
     .dispatch-title { font-size: 32px; }
     .dispatch-digest { font-size: 18px; }
     .record-nav { gap: 16px; }
-    .lay-title, .stk-title { font-size: 34px; }
-    .lay-title-row, .stk-title-row { flex-wrap: wrap; gap: 12px; }
+    .lay-title, .stk-title, .clm-title { font-size: 34px; }
+    .lay-title-row, .stk-title-row, .clm-title-row { flex-wrap: wrap; gap: 12px; }
     .lay-row { grid-template-columns: 64px 1fr 90px; gap: 10px; }
     .lay-row > :nth-child(4),
     .lay-row > :nth-child(5) { display: none; }
