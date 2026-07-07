@@ -60,7 +60,7 @@ function worstMeta(claimList) {
     return Object.values(RATING_META).find(m => m.rank === rank);
 }
 
-export function initClaimsPage({ referents, claims }) {
+export function initClaimsPage({ referents, claims, dossiers = {} }) {
     const mount = document.getElementById('claims-page');
     if (!mount) return;
 
@@ -71,7 +71,7 @@ export function initClaimsPage({ referents, claims }) {
 
     mount.appendChild(buildHeader(referents, claims));
     mount.appendChild(buildIndex(refsByCategory, claimsByRef));
-    mount.appendChild(buildDetails(refsByCategory, claimsByRef));
+    mount.appendChild(buildDetails(refsByCategory, claimsByRef, dossiers));
     mount.appendChild(buildFooter());
 
     focusHashTarget();
@@ -147,7 +147,7 @@ function buildIndex(refsByCategory, claimsByRef) {
 }
 
 // ── Detail blocks ───────────────────────────────────────────────
-function buildDetails(refsByCategory, claimsByRef) {
+function buildDetails(refsByCategory, claimsByRef, dossiers) {
     const wrap = h('div', { class: 'clm-details' });
     wrap.appendChild(h('div', { class: 'clm-section-head' }, [
         h('span', { class: 'clm-section-title', text: 'EVERY TRACKED CLAIM' }),
@@ -161,7 +161,7 @@ function buildDetails(refsByCategory, claimsByRef) {
         refs.slice()
             .sort((a, b) => worstRank(claimsByRef[b.referent_id] || []) - worstRank(claimsByRef[a.referent_id] || [])
                 || a.referent_id.localeCompare(b.referent_id))
-            .forEach(r => wrap.appendChild(buildReferentBlock(r, claimsByRef[r.referent_id] || [])));
+            .forEach(r => wrap.appendChild(buildReferentBlock(r, claimsByRef[r.referent_id] || [], dossiers)));
     });
     return wrap;
 }
@@ -178,7 +178,7 @@ function permalink(id) {
     return a;
 }
 
-function buildReferentBlock(r, rClaims) {
+function buildReferentBlock(r, rClaims, dossiers) {
     const block = h('div', { class: 'clm-ref', id: r.referent_id });
 
     const head = h('div', { class: 'clm-ref-head' }, [
@@ -200,13 +200,13 @@ function buildReferentBlock(r, rClaims) {
     const ordered = rClaims.slice().sort((a, b) =>
         (a.variant_type === 'as-made' ? 0 : 1) - (b.variant_type === 'as-made' ? 0 : 1)
         || a.claim_id.localeCompare(b.claim_id, 'en', { numeric: true }));
-    ordered.forEach(c => block.appendChild(buildClaimRow(c)));
+    ordered.forEach(c => block.appendChild(buildClaimRow(c, dossiers[c.claim_id])));
 
     if (r.references.length) block.appendChild(buildRelated(r.references));
     return block;
 }
 
-function buildClaimRow(c) {
+function buildClaimRow(c, dossier) {
     const meta = ratingMeta(c.accuracy_rating);
     const row = h('div', { class: 'clm-claim', id: c.claim_id });
 
@@ -224,6 +224,9 @@ function buildClaimRow(c) {
             h('span', { class: 'clm-diffuse-badge', text: 'DIFFUSE' }),
             h('span', { text: c.claimant }),
         ]));
+    }
+    if (dossier) {
+        body.appendChild(h('a', { class: 'clm-dossier-link', href: `/claim.html?id=${c.claim_id}`, text: 'READ THE DOSSIER →' }));
     }
 
     const gradeCell = h('div', { class: 'clm-grade' });

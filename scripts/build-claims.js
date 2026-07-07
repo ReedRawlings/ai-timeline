@@ -7,6 +7,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import yaml from 'js-yaml';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIR = path.join(__dirname, '..', 'data', 'claims');
@@ -62,6 +63,19 @@ const claims = readTable('claims.csv').map(c => ({
     has_single_claimant: !c.claimant.startsWith('Various'),
 }));
 
+// Dossiers: editorial deep-dive pages for selected claims. The grade/claim
+// text are never stored in a dossier — the page joins them from claims.csv.
+const DOSSIER_DIR = path.join(DIR, 'dossiers');
+const claimIds = new Set(claims.map(c => c.claim_id));
+const dossiers = {};
+if (fs.existsSync(DOSSIER_DIR)) {
+    for (const file of fs.readdirSync(DOSSIER_DIR).filter(f => f.endsWith('.yaml'))) {
+        const d = yaml.load(fs.readFileSync(path.join(DOSSIER_DIR, file), 'utf8'));
+        if (!claimIds.has(d.claim_id)) throw new Error(`dossier ${file}: claim_id ${d.claim_id} has no claims.csv row`);
+        dossiers[d.claim_id] = d;
+    }
+}
+
 fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
-fs.writeFileSync(OUT_PATH, JSON.stringify({ referents, claims }, null, 2));
-console.log(`Built ${referents.length} referents + ${claims.length} claims → ${path.relative(process.cwd(), OUT_PATH)}`);
+fs.writeFileSync(OUT_PATH, JSON.stringify({ referents, claims, dossiers }, null, 2));
+console.log(`Built ${referents.length} referents + ${claims.length} claims + ${Object.keys(dossiers).length} dossiers → ${path.relative(process.cwd(), OUT_PATH)}`);

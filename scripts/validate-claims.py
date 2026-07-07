@@ -11,6 +11,9 @@ Checks:
 - required fields non-empty; source_url must start with http
 - referents.references parses as a JSON array; elements need date/text/kind/
   provenance with documented values ('url' optional; 'stance'/'note' optional)
+- dossiers/*.yaml (if any): parses, claim_id exists in claims.csv, required
+  fields present (headline, dek, verdict_summary, sections, references,
+  written), sections/references non-empty and well-shaped, urls http(s)
 
 Usage: validate-claims.py [dir]   (dir defaults to data/claims)
 """
@@ -19,6 +22,11 @@ import json
 import re
 import sys
 from pathlib import Path
+
+try:
+    import yaml
+except ImportError:  # PyYAML is required for dossier validation (as for validate-yaml.py)
+    yaml = None
 
 DIR = Path(sys.argv[1]) if len(sys.argv) > 1 else (
     Path(__file__).resolve().parent.parent / "data" / "claims"
@@ -124,13 +132,57 @@ def main() -> int:
         if parent and parent not in claim_id_set:
             errors.append(f"{ctx}: parent_claim_id '{parent}' has no claims.csv row")
 
+    n_dossiers = validate_dossiers(claim_id_set, errors)
+
     if errors:
         print(f"FAIL: {len(errors)} problem(s) in {DIR}")
         for e in errors:
             print(f"  - {e}")
         return 1
-    print(f"OK: referents.csv — {len(refs)} row(s); claims.csv — {len(claims)} row(s) valid")
+    print(f"OK: referents.csv — {len(refs)} row(s); claims.csv — {len(claims)} row(s); "
+          f"dossiers — {n_dossiers} valid")
     return 0
+
+
+REQUIRED_DOSSIER = ("claim_id", "headline", "dek", "verdict_summary", "sections",
+                    "references", "written")
+
+
+def validate_dossiers(claim_ids, errors):
+    ddir = DIR / "dossiers"
+    files = sorted(ddir.glob("*.yaml")) if ddir.exists() else []
+    if files and yaml is None:
+        errors.append("dossiers exist but PyYAML is not installed (pip install pyyaml)")
+        return 0
+    for f in files:
+        ctx = f"dossiers/{f.name}"
+        try:
+            d = yaml.safe_load(f.read_text(encoding="utf-8"))
+        except yaml.YAMLError as e:
+            errors.append(f"{ctx}: YAML parse error ({e})")
+            continue
+        if not isinstance(d, dict):
+            errors.append(f"{ctx}: not a mapping")
+            continue
+        for req in REQUIRED_DOSSIER:
+            if not d.get(req):
+                errors.append(f"{ctx}: missing {req}")
+        cid = str(d.get("claim_id") or "")
+        if cid and cid not in claim_ids:
+            errors.append(f"{ctx}: claim_id '{cid}' has no claims.csv row")
+        if cid and f.stem != cid:
+            errors.append(f"{ctx}: filename should be {cid}.yaml")
+        for i, s in enumerate(d.get("sections") or []):
+            if not (isinstance(s, dict) and s.get("heading") and s.get("body")):
+                errors.append(f"{ctx}: sections[{i}] needs heading + body")
+        for i, r in enumerate(d.get("references") or []):
+            if not (isinstance(r, dict) and r.get("date") and r.get("label")):
+                errors.append(f"{ctx}: references[{i}] needs date + label")
+                continue
+            url = r.get("url")
+            if url and not str(url).startswith("http"):
+                errors.append(f"{ctx}: references[{i}] url must be http(s)")
+    return len(files)
 
 
 if __name__ == "__main__":
