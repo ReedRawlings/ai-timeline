@@ -1,0 +1,59 @@
+# Dossier for C003b — grade, claim text, and rationale join from claims.csv at
+# build time. Every factual statement below traces to REF-IMF-EXPOSURE
+# (IMF Staff Discussion Note SDN/2024/001).
+claim_id: C003b
+headline: "\"40% of jobs at risk from AI\" is not what the IMF found"
+dek: "The IMF said 40% of jobs are exposed to AI — and that about half of those may benefit from it."
+verdict_summary: >-
+  The 40% is real and the IMF really is the source, which gives the circulating
+  form its authority. But the swap of one word does all the damage: the IMF
+  measured exposure — the share of jobs whose tasks overlap with what AI can do,
+  explicitly in either direction — and the circulating form reads it as jobs at
+  risk or jobs that will be lost. The same note says roughly half of exposed
+  jobs may benefit from AI. Keeping the institution and the number while
+  reversing the finding's meaning is the canonical distortion shape — graded
+  mostly false.
+sections:
+  - heading: "What circulates"
+    body: >-
+      "40% of jobs are at risk from AI," sometimes hardened further to "40% of
+      jobs will be lost to AI," usually credited to the IMF. The paraphrase
+      circulates unattributed to any single author — this repository deliberately
+      records it that way rather than pin a fabricated attribution on someone.
+  - heading: "What the source actually says"
+    body: >-
+      The IMF's staff discussion note "Gen-AI: Artificial Intelligence and the
+      Future of Work" (SDN/2024/001, January 2024, publicised by Managing
+      Director Kristalina Georgieva) estimates that about 40% of jobs worldwide
+      are exposed to AI, rising to about 60% in advanced economies — and that
+      roughly half of exposed jobs may benefit from AI integration while the
+      other half may be harmed. The method runs occupation by occupation: task
+      exposure is estimated, then aggregated to employment shares. "Exposure" is
+      defined bidirectionally throughout — overlap with AI capability, whether
+      that overlap helps or hurts.
+  - heading: "How the wording drifted"
+    body: >-
+      Two edits produce the viral form. "Exposed" becomes "at risk" — a
+      neutral overlap measure becomes a threat measure. And the note's own
+      headline caveat — that about half of exposed jobs may benefit — disappears,
+      taking the study's central nuance with it. The result keeps the IMF's
+      number and the IMF's name while asserting nearly the opposite of the IMF's
+      finding. The referent's own notes flag this as a frequent distortion
+      target.
+  - heading: "What would change the grade"
+    body: >-
+      Quoted as exposure with the benefit/harm split intact, the statement
+      grades accurate — that is claim C003, the as-made variant on the same
+      referent, taken from the IMF's own wording. A finding that 40% of jobs
+      had actually been lost or measurably harmed by AI would need an entirely
+      different source; this note is an analytical estimate of task overlap,
+      not an observation of outcomes.
+references:
+  - date: "2024-01-14"
+    label: "IMF Staff Discussion Note SDN/2024/001, 'Gen-AI: Artificial Intelligence and the Future of Work'"
+    url: "https://www.imf.org/en/publications/staff-discussion-notes/issues/2024/01/14/gen-ai-artificial-intelligence-and-the-future-of-work-542379"
+    note: "The primary source: ~40% exposed worldwide, ~60% advanced economies, ~half of exposed jobs may benefit."
+  - date: "2026-07-06"
+    label: "Repository referent REF-IMF-EXPOSURE"
+    note: "Carries the authoritative statement and the epistemic basis (occupation → task exposure → employment share; exposure explicitly bidirectional)."
+written: "2026-07-07"

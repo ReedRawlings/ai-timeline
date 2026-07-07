@@ -1,0 +1,64 @@
+# Dossier for C026b — grade, claim text, and rationale join from claims.csv at
+# build time. Facts trace to REF-USDC-ELECTRICITY (LBNL 2024 report, verified
+# 2026-07-07 via the fetched Berkeley Lab news release + DOE announcement).
+claim_id: C026b
+headline: "US data centers do not use 40% of the world's power"
+dek: "The viral post's own numbers refute each other — 313 TWh is about one percent of world electricity, not forty."
+verdict_summary: >-
+  This one fails arithmetic before it fails sourcing. The post attaches a real
+  number — 313 terawatt-hours — to a claim ("40% of the world's power demand")
+  that the number itself contradicts: global data-center electricity is about
+  415 TWh, roughly 1.5% of world electricity, so 313 TWh is around one percent
+  of world power, not forty. The recognizable kernel is a different, true
+  statistic: the US accounts for roughly 45% of global DATA-CENTER electricity.
+  Swap "of the world's data-center demand" for "of the world's power demand"
+  and a defensible share becomes an impossibility — graded false.
+sections:
+  - heading: "What circulates"
+    body: >-
+      A widely shared X post from Canary Media, a clean-energy news outlet:
+      "US data centers were responsible for 40% of the world's power demand
+      last year — 313 terawatt-hours." Coming from an energy-focused
+      publication, the line carries borrowed credibility that a random account
+      wouldn't.
+  - heading: "What the authoritative figures say"
+    body: >-
+      The reference points on record: Lawrence Berkeley National Laboratory's
+      2024 U.S. Data Center Energy Usage Report (prepared for the Department of
+      Energy) measured US data-center consumption at ~176 TWh in 2023 — about
+      4.4% of US electricity — projecting 325-580 TWh by 2028 (6.7-12% of US
+      electricity). Globally, data centers consumed ~415 TWh in 2024, roughly
+      1.5% of world electricity, with the US accounting for about 45% of that
+      global data-center total.
+  - heading: "Where the number breaks"
+    body: >-
+      Two substitutions produce the post. "Share of global data-center
+      electricity" becomes "share of the world's power demand" — the US really
+      is the largest data-center market, at roughly 45% of the sector's global
+      electricity use, but the sector itself is only ~1.5% of world
+      electricity. And the total is self-refuting: if 313 TWh were 40% of world
+      power demand, world demand would be under 800 TWh — against the several
+      hundred TWh that data centers alone consume and the ~415 TWh global
+      data-center figure on this referent. No external source is needed to
+      falsify the post; its two numbers cannot both be true.
+  - heading: "What would change the grade"
+    body: >-
+      Nothing prospective — this is not a forecast but a misstatement of
+      present-tense measurements. Restated as "US data centers account for
+      roughly 40-45% of global data-center electricity," the claim would grade
+      accurate against this referent; the LBNL statement itself (C026, the
+      as-made sibling) already grades accurate. As written, the post's own
+      arithmetic forecloses rehabilitation.
+references:
+  - date: "2024-12-20"
+    label: "LBNL, 2024 United States Data Center Energy Usage Report (for US DOE)"
+    url: "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf"
+    note: "The authoritative US figures: ~176 TWh in 2023 (~4.4% of US electricity); 325-580 TWh projected by 2028."
+  - date: "2025-01-15"
+    label: "Berkeley Lab news release on the report"
+    url: "https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/"
+    note: "Fetchable summary of the same figures, with lead researcher Arman Shehabi."
+  - date: "2026-07-06"
+    label: "Repository referent REF-USDC-ELECTRICITY"
+    note: "Carries the global comparison figures (~415 TWh global data-center electricity in 2024, ~1.5% of world electricity; US ~45% of the global data-center total) and the graded as-made sibling C026."
+written: "2026-07-07"

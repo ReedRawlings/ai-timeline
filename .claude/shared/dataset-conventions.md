@@ -3,7 +3,7 @@
 Every dataset skill in this repo reads this file. Edit conventions here, not in individual skills.
 Skills that reference this: `propose-claim-entry`, `propose-layoff-entry`.
 
-These conventions apply to all standalone datasets under `data/` (`data/layoffs/`, the claims repository at `docs/Claims/`, and any future asset). They complement, not replace, each dataset's own `README.md`/`schema.md`.
+These conventions apply to all standalone datasets under `data/` (`data/layoffs/`, the claims repository at `data/claims/`, and any future asset). They complement, not replace, each dataset's own `README.md`/`schema.md`.
 
 ---
 

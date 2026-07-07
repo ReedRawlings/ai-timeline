@@ -1,15 +1,15 @@
 ---
 name: propose-claim-entry
-description: Use when a claim about AI — a viral statistic, an influencer/executive assertion, a circulated paraphrase of a study — needs to be added to the AI Claims Repository (docs/Claims/), or when an existing row needs research/verification. Traces the claim to its referent (the underlying fact/source), records as-made vs circulating variants, and grades each against the authoritative statement. Trigger whenever someone shares a widely-cited AI claim or number ("500ml per prompt", "AI caused N layoffs", "AI will eliminate half of entry-level jobs") and wants it fact-checked into the repository — replaces the retired propose-provenance-entry skill (register merged 2026-07-05).
+description: Use when a claim about AI — a viral statistic, an influencer/executive assertion, a circulated paraphrase of a study — needs to be added to the AI Claims Repository (data/claims/), or when an existing row needs research/verification. Traces the claim to its referent (the underlying fact/source), records as-made vs circulating variants, and grades each against the authoritative statement. Trigger whenever someone shares a widely-cited AI claim or number ("500ml per prompt", "AI caused N layoffs", "AI will eliminate half of entry-level jobs") and wants it fact-checked into the repository — replaces the retired propose-provenance-entry skill (register merged 2026-07-05).
 ---
 
 # Propose Claims Repository Entry
 
 ## Goal
-Given a claim about AI, produce conforming rows for `docs/Claims/referents.csv` and `docs/Claims/claims.csv` — the referent carrying the authoritative version of the underlying thing, each claim variant graded against it.
+Given a claim about AI, produce conforming rows for `data/claims/referents.csv` and `data/claims/claims.csv` — the referent carrying the authoritative version of the underlying thing, each claim variant graded against it.
 
 ## Read first
-`docs/Claims/README.md` (the schema, controlled vocabularies, and rules — it is the source of truth for this asset) and `.claude/shared/dataset-conventions.md`. Everything below assumes both.
+`data/claims/README.md` (the schema, controlled vocabularies, and rules — it is the source of truth for this asset) and `.claude/shared/dataset-conventions.md`. Everything below assumes both.
 
 ## Workflow
 
@@ -30,4 +30,5 @@ The new/updated CSV rows, plus a short review note: referent dedup result, grade
 - IDs are permanent (`REF-*` uppercase slug; `C###`/`C###b`). Corrections update the row, not the ID.
 - Never invent a claim, source, date, or URL. Blank/`pending` beats a guess.
 - When sources conflict, record both visibly; don't average.
-- There is no validation script for this asset yet — self-check FK integrity (every `referent_id` in claims.csv exists in referents.csv) before finishing.
+- Run `python scripts/validate-claims.py` before finishing (PK/FK integrity, enums, references JSON — added 2026-07-06).
+- A claim with real circulation and a well-researched referent may deserve a site fact-check page — see the `write-claim-dossier` skill.

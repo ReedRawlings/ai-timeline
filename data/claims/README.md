@@ -117,12 +117,12 @@ invention.
    its subclaims were not created because the source essay was not pulled).
 
 ## source_url note
-`source_url` is populated only where a verified URL was available when this file was
-built. Two are filled (`REF-USDC-ELECTRICITY`, `REF-PERQUERY-ENERGY`); the rest are
-marked `pending - not verified in this pass`. A prior verification pass located URLs
-for most claims but did not return them in a transcribable form, so they were not
-copied in rather than risk transcription error. Populate `pending` rows from that pass
-or by re-verifying.
+All 44 referents now carry a `source_url` (checked 2026-07-06 — no `pending` markers
+remain; a later pass populated the rows this note originally described as pending).
+The URLs have not been individually re-fetched since entry: treat them as recorded
+citations, verify before quoting. If a URL can't be verified when adding a row, leave
+it blank or mark it `pending` rather than guessing — the site renders a blank as
+"source pending verification", never a fabricated link.
 
 ## References (dated sources on a referent)
 
@@ -151,3 +151,11 @@ Rules:
 - To read a position's history: parse the referent's `references`, sort by `date`. The `SOURCE/2026-VERIFY` note on these referents records whether the position still holds.
 
 Note: `parent_claim_id` reverts to its original meaning only (subclaims). Distinct *variants* that say different things or earn different accuracy grades (e.g. `C026b`) remain separate claim rows, as before.
+
+## Validation
+
+`python scripts/validate-claims.py` checks both tables: header shape, PK uniqueness
+(`REF-*` / `C*` id forms), FK integrity (`claims.referent_id` → referents;
+`parent_claim_id` → claims), the `variant_type` / `accuracy_rating` / `category`
+vocabularies, required fields, URL shape, and that every `references` cell parses as
+a JSON array of documented-shape elements. Runs in CI (`.github/workflows/validate.yml`).

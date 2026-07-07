@@ -1,0 +1,74 @@
+# Dossier for C028b — grade, claim text, and rationale join from claims.csv at
+# build time; this file carries only the editorial analysis and references.
+# Every factual statement below traces to REF-REN-WATER (arXiv 2304.03271,
+# fetched and quoted during the 2026-07-05 provenance-register research pass).
+claim_id: C028b
+headline: "No, a ChatGPT prompt does not drink a bottle of water"
+dek: "The viral 500 ml figure is real — but it was the paper's estimate for dozens of prompts, not one."
+verdict_summary: >-
+  The number comes from a genuine academic estimate, which is why it survives
+  fact-checks that only ask "did a study say 500 ml?" One did — but per
+  conversation, not per prompt. The paper's own arithmetic works out to roughly
+  10 to 50 millilitres per response, so the circulating per-prompt form inflates
+  the finding by a factor of ten to fifty. It also quietly changes what "water"
+  means: most of the estimate is water embedded in electricity generation
+  off-site, not water evaporating at the data center. And it freezes a GPT-3-era
+  estimate in time. Real figure, wrong denominator — graded mostly false.
+sections:
+  - heading: "What circulates"
+    body: >-
+      "Every ChatGPT prompt uses a 500 ml bottle of water." The line has
+      circulated on social media and in secondary press since 2023, usually as a
+      per-prompt or per-query fact, often illustrated with a water bottle next to
+      a chat window.
+  - heading: "What the source actually says"
+    body: >-
+      The figure originates in "Making AI Less Thirsty" (Ren et al., UC
+      Riverside, arXiv 2304.03271). The first version (April 2023) says ChatGPT
+      "needs to 'drink' a 500 ml bottle of water for a simple conversation of
+      roughly 20-50 questions and answers." The revised v5 (March 2025) restates
+      it as 500 ml for "roughly 10-50 medium-length responses," and its Table 1
+      puts a medium GPT-3 (175B) request at 7.6-47.5 ml TOTAL depending on which
+      US data center serves it — of which on-site cooling is only 0-7.6 ml. The
+      majority is off-site water consumed generating the electricity. The same
+      paper's training-phase estimate (~700,000 litres for GPT-3) circulates
+      separately and is a different quantity entirely.
+  - heading: "How the number drifted"
+    body: >-
+      Three moves turn the paper into the meme. The denominator vanishes: 500 ml
+      per 20-50 exchanges becomes 500 ml per prompt — a 10-50x inflation. The
+      scope collapses: an estimate dominated by off-site electricity-generation
+      water is read as a bottle of water evaporating per chat. And the timestamp
+      drops: a GPT-3-era academic estimate, which the paper itself revised
+      between versions and which varies about sixfold by data-center location,
+      is quoted as a stable fact about today's models.
+  - heading: "What the counter-evidence says"
+    body: >-
+      The paper's lead author, Shaolei Ren, has publicly maintained that the
+      figure was misread as per-prompt. Operator-reported figures are far lower
+      than the meme — OpenAI's Sam Altman has cited roughly 0.32 ml per average
+      query and Google reported a 0.26 ml on-site median per Gemini prompt —
+      though each operator figure has its own boundary caveats (notably,
+      on-site-only accounting that excludes the off-site electricity water the
+      Ren paper includes). The honest range for a single response is millilitres
+      to tens of millilitres, not half a litre.
+  - heading: "What would change the grade"
+    body: >-
+      Stated per 10-50 responses with the off-site caveat, the claim grades
+      accurate — that is exactly claim C028, the as-made variant on the same
+      referent. A measured per-prompt figure from a current operator showing
+      ~500 ml would vindicate the circulating form; every figure on record is
+      one to two orders of magnitude below it.
+references:
+  - date: "2023-04-06"
+    label: "Ren et al., 'Making AI Less Thirsty' (arXiv 2304.03271, v1)"
+    url: "https://arxiv.org/abs/2304.03271"
+    note: "Origin of the 500 ml figure: per 20-50 questions and answers, not per prompt."
+  - date: "2025-03-26"
+    label: "Same paper, v5 revision (later in Communications of the ACM 68(7), 2025)"
+    url: "https://arxiv.org/abs/2304.03271"
+    note: "Restated basis (10-50 medium responses); Table 1: 7.6-47.5 ml total per medium GPT-3 request, on-site cooling 0-7.6 ml."
+  - date: "2026-07-05"
+    label: "Repository referent REF-REN-WATER (full provenance-register research record)"
+    note: "Primary fetched and quoted from arXiv v1/v2/v5 during the register merge; counter-figures (Ren's correction, Altman ~0.32 ml, Google 0.26 ml on-site median) recorded there."
+written: "2026-07-07"

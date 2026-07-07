@@ -12,12 +12,12 @@ This repo is the home of a broader **AI Research & Data Assets project**: mainta
    - **Stocks** (`stocks.html`) — a rebased-% multi-ticker price tape (lightweight-charts) with an event-density "feathering" ribbon, Day/Week/Month grouping, and clickable major-event markers.
 
    Event data lives in `data/events.yaml`. Deployed on Vercel with a serverless API proxy for stock data. (The old collapsible "AI Market Tracker" panel and its Stocks/Layoffs tab switcher were retired in favor of these standalone pages.)
-2. **Datasets** — standalone data assets under `data/` (e.g., `data/layoffs/`) and `docs/Claims/` (the AI Claims Repository: referents + accuracy-graded claim variants), each with its own schema, README, and inclusion criteria. Dataset rows never live inside `events.yaml`; the timeline may reference dataset rows, never the reverse.
+2. **Datasets** — standalone data assets under `data/` (e.g., `data/layoffs/`, and `data/claims/` — the AI Claims Repository: referents + accuracy-graded claim variants), each with its own schema, README, and inclusion criteria. Dataset rows never live inside `events.yaml`; the timeline may reference dataset rows, never the reverse.
 3. **Docs** — `docs/` holds the project's shared context. **`docs/master-status.md` is the orientation file — read it first for any work beyond routine site/timeline maintenance.** It is the registry of every artifact with a state (`Parked` / `Development` / `Deployed` + maintenance cadence); `docs/parked.md` holds the detail stanzas for parked assets; `docs/decisions.md` is the append-only what-we-did-and-why log; `docs/prds/` holds PRDs. New artifacts under `docs/` or `data/` get a master-status entry when created. **Starting a session** (or asked "where should we start?"): read master-status — its open items and maintenance cadences are the backlog; check decisions.md before re-litigating anything settled there. **Ending a session:** review master-status and decisions.md and record what changed (the human will prompt for this).
 
 Standing expectations for all dataset work: no fabrication — every number needs a real, checkable source; record who made an attribution and in what words, never flattened to a boolean; "undisclosed" is a valid value, a guessed number is not; when something is ambiguous or consequential, flag it to the human rather than silently deciding. Only two dataset builds are active at a time (see master-status); don't build parked assets.
 
-Commits touching only `docs/` (incl. `docs/Claims/`) or `data/layoffs/` skip Vercel deploys (`ignoreCommand` in vercel.json).
+Commits touching only `docs/` or `data/layoffs/` skip Vercel deploys (`ignoreCommand` in vercel.json). `data/claims/` commits DO deploy — the Claims page renders from those CSVs.
 
 ## Development Commands
 
@@ -27,6 +27,7 @@ npm run build                    # Production build to dist/ (includes stock dat
 npm run preview                  # Preview production build locally
 python scripts/validate-yaml.py  # Validate events.yaml (syntax, structure, tier values, layoff_ids refs)
 python scripts/validate-layoffs.py     # Validate data/layoffs/layoffs.csv
+python scripts/validate-claims.py      # Validate data/claims/ (PK/FK integrity, enums, references JSON)
 ```
 
 Node.js (via nvm) and Python 3 + PyYAML required.
@@ -49,7 +50,7 @@ Node.js (via nvm) and Python 3 + PyYAML required.
 - `src/css/main.css` — All styles. Active blocks: the "The AI Record" timeline styles, the `.record-nav` shared nav, and the `.lay-*` / `.stk-*` page styles. (The older "Ink & Signal" tokens remain for legacy reference.)
 - `api/stocks.js` — Vercel serverless function proxying Finnhub stock data (stocks page merges the recent ~30 days over the pre-baked history, cached 24h in localStorage).
 - `data/layoffs/layoffs.csv` — AI-attributed layoffs dataset (schema in `data/layoffs/schema.md`)
-- `docs/Claims/` — AI Claims Repository: `referents.csv` (underlying facts) + `claims.csv` (as-made vs circulating variants, accuracy-graded); schema in its README. Absorbed the stat provenance register (2026-07-05)
+- `data/claims/` — AI Claims Repository: `referents.csv` (underlying facts) + `claims.csv` (as-made vs circulating variants, accuracy-graded); schema in its README. Absorbed the stat provenance register (2026-07-05); moved from `docs/Claims/` (2026-07-06). Feeds the site's Claims page
 - `scripts/build-events.js` — Converts YAML → JSON at build time (passes fields through as-is, including `tier`)
 - `scripts/build-layoffs.js` — Converts layoffs CSV → JSON at build time, including the provenance fields (`notes`, `source_type`, `source_url`, `press_independent`, `attribution_notes`) the Layoffs page's verification hover surfaces
 - `scripts/build-stock-data.js` — Fetches historical stock data from Finnhub at build time

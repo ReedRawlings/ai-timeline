@@ -1,4 +1,4 @@
-# Master Status — AI Research & Data Assets Project — 2026-07-06
+# Master Status — AI Research & Data Assets Project — 2026-07-07
 
 *The registry of every artifact this project wants to create, each with a state. Update when an artifact changes state; reviewed at the end of every working session (along with `decisions.md`).*
 
@@ -65,9 +65,11 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 6 — Claims & verification
 
-- **AI Claims Repository** (`docs/Claims/`) — **State: Development** (human-built, added 2026-07-05). Two related tables: `referents.csv` (44 underlying facts with authoritative statements) + `claims.csv` (51 claim variants, `as-made` vs `circulating`, accuracy-graded against their referent). **Absorbed the stat provenance register (merged 2026-07-05)** — its four deep-researched rows entered as new/enriched referents with as-made + circulating claim pairs (ID map in the decision log); `data/provenance/` and its validator/skill are retired, replaced by `propose-claim-entry`. Detail: `docs/Claims/README.md`.
-  **Maintenance: None** (rows added ad hoc via `propose-claim-entry`; deep-research verification per claim).
-  **Open:** validation script (FK integrity, enums — none yet); whether it moves to `data/` with its dataset siblings; display surface (rows have permalink-able REF-*/C* IDs with nowhere to permalink to; head-vs-supporting-proponent question in `docs/prds/claims-proponent-display-prd.md`); the "claim-analysis skill" its README cites lives in project knowledge, not this repo.
+- **AI Claims Repository** (`data/claims/`, moved from `docs/Claims/` 2026-07-06) — **State: Development** (human-built, added 2026-07-05). Two related tables: `referents.csv` (44 underlying facts with authoritative statements) + `claims.csv` (51 claim variants, `as-made` vs `circulating`, accuracy-graded against their referent). **Absorbed the stat provenance register (merged 2026-07-05)** — its four deep-researched rows entered as new/enriched referents with as-made + circulating claim pairs (ID map in the decision log); `data/provenance/` and its validator/skill are retired, replaced by `propose-claim-entry`. Detail: `data/claims/README.md`.
+  **Display surface (2026-07-06):** the site's Claims page (`claims.html`) — index + detail anchors, every REF-*/C* ID permalink-able, grades in hover popovers, diffuse claimants badged DIFFUSE with the referent's `references` rendered as visible "Related statements" (resolves `docs/prds/claims-proponent-display-prd.md`). Page re-renders from the CSVs at each deploy; claims commits deploy (no longer under the docs/ deploy-skip).
+  **Dossiers (2026-07-07):** selected claims get editorial fact-check pages at `/claim.html?id=<claim_id>` — content in `data/claims/dossiers/<claim_id>.yaml`, grade always joined from `claims.csv`, never restated. Six shipped: C028b (500 ml water), C003b (IMF 40%), C046b (Challenger AI cuts), C026b (Canary Media 40%-of-world-power), C042 (AI novel discoveries), C001 (Amodei entry-level, the premature exemplar). Authored via the `write-claim-dossier` skill (two-part bar: circulation + verified referent material).
+  **Maintenance: None** (rows added ad hoc via `propose-claim-entry`, dossiers via `write-claim-dossier`; deep-research verification per claim; `scripts/validate-claims.py` in CI guards integrity incl. dossier shape).
+  **Open:** the "claim-analysis skill" its README cites lives in project knowledge, not this repo. *(Resolved 2026-07-06: validation script ✓; moved to `data/` ✓; display surface ✓; proponent display ✓.)*
 - **Prediction accountability tracker** — **State: Parked** → parked.md. Scope decided 2026-07-04 (all AI predictions, unskewed; LLM/infra/economic). Overlaps the Claims Repository's `premature` rating — resolve at PRD time.
 - **Environmental disclosure ledger** — **State: Parked** → parked.md. A shelf of the Claims Repository (per-prompt energy/water referents already seeded: REF-GOOGLE-GEMINI-FOOTPRINT, REF-OPENAI-PERQUERY).
 - **Update-grief event log** — **State: Parked** → parked.md. Explicitly low priority.
@@ -76,7 +78,7 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 7 — AI timeline site ("The AI Record")
 
-**State: Deployed.** Three-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks. 335 events in `data/events.yaml` as of 2026-07-06 (June 2026 pass complete; +21 events, spine = the government frontier-model access crisis). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
+**State: Deployed.** Four-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks, Claims (added 2026-07-06; renders `data/claims/`; plus per-claim dossier pages at `/claim.html?id=…`, added 2026-07-07). 335 events in `data/events.yaml` as of 2026-07-06 (June 2026 pass complete; +21 events, spine = the government frontier-model access crisis). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
 **Maintenance: Daily** (event sweeps via `find-ai-events-*` skills; layoffs page refreshes with the dataset's monthly sweep; stock data self-updates at build + `/api/stocks`).
 
 **Open:**
@@ -91,4 +93,4 @@ A public research project on how AI is changing people and society, with two mut
 
 1. Per-chat synthesis pass so each conversation leaves a durable context doc — not yet done for any chat.
 2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed and the Claims Repository (register absorbed) is the one asset in Development — within cap, but confirm the cap's meaning now that assets graduate to maintained.
-3. Where the public assets live long-term (repo structure, publishing surface) — undecided; related: the claims display-surface question (W6).
+3. Where the public assets live long-term (repo structure, publishing surface) — undecided. (The claims display-surface sub-question resolved 2026-07-06: it lives on the site as `claims.html`.)

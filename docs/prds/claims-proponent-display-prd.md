@@ -1,6 +1,14 @@
-# Claims Repo — Head vs. Supporting Proponent Display (Open Question)
+# Claims Repo — Head vs. Supporting Proponent Display (RESOLVED 2026-07-06)
 
-*Not a new asset — a scoped open question against the existing Claims repo (`docs/Claims/`). Captured as its own file because it surfaced while adding claims and will matter once claims data gets a UI, not because it needs the full PRD treatment.*
+**Resolution:** the Claims page (`claims.html`, spec: `docs/superpowers/specs/2026-07-06-claims-page-design.md`) answered §3:
+- Generalized/diffuse claimants get a distinct **DIFFUSE** badge treatment (dashed chip + the claimant prose in tertiary color) — visually "deliberately generalized," not missing data.
+- The referent's `references` array renders as a visible **"Related statements"** list under the claim rows (date, quote/paraphrase, COUNTER and 2ND-HAND tags, source links) — not footnote-only.
+- Split threshold: when a supporting voice makes a firm, general, unhedged assertion, it graduates to its own graded claim row.
+- Dedicated field: answered as a **derived** field — `build-claims.js` sets `has_single_claimant: false` when `claimant` starts with `"Various"`; the CSV schema is unchanged and the prose convention stands.
+
+*Original write-up below, kept for the reasoning.*
+
+*Not a new asset — a scoped open question against the existing Claims repo (`data/claims/`). Captured as its own file because it surfaced while adding claims and will matter once claims data gets a UI, not because it needs the full PRD treatment.*
 
 ---
 
@@ -32,4 +40,4 @@ Both resolutions were reached ad hoc in conversation (2026-07-06). They work for
 - Is there a threshold for splitting a generalized claim back into named rows later, if one of the "supporting" voices turns out to deserve its own graded claim (e.g., if Fish/Anthropic later makes a firm, unhedged statement)?
 - Naming convention for the generalized-claimant case — is "Various AI researchers and lab executives (no single firm proponent identified)" the right phrasing to standardize, or should there be a dedicated field (e.g., a boolean `has_single_claimant`) instead of encoding it in prose?
 
-No action needed until claims data actually gets built into a page. Revisit alongside whatever surfaces `docs/Claims/` in the site or in a report.
+No action needed until claims data actually gets built into a page. Revisit alongside whatever surfaces `data/claims/` in the site or in a report.

@@ -1,0 +1,84 @@
+# Dossier for C046b — grade, claim text, and rationale join from claims.csv at
+# build time. Every factual statement below traces to REF-CHALLENGER-AI-CUTS
+# (Challenger, Gray & Christmas monthly reports; primaries fetched during the
+# 2026-07-05 provenance-register research pass).
+claim_id: C046b
+headline: "\"AI caused 55,000 layoffs\" — what the Challenger numbers do and don't say"
+dek: "The tally is real. 'Caused' is doing work the data can't support — and the missing denominator changes the story."
+verdict_summary: >-
+  Unlike most viral AI statistics, the counts here are quoted correctly:
+  Challenger, Gray & Christmas really did tally 54,836 announced 2025 US job
+  cuts with AI as a company-cited reason, and AI really has been the leading
+  stated reason for 2026 cuts for months. What the circulating form changes is
+  everything around the number. Announced cut plans become realized layoffs.
+  Company-stated reasons become verified causation. A US-only tally becomes a
+  global fact. And the denominator vanishes: AI was about 5% of 2025's announced
+  cuts, in a year when "DOGE Impact" alone was five times larger. True figures
+  in a frame that overstates what they show — graded mixed / true-but-misleading.
+sections:
+  - heading: "What circulates"
+    body: >-
+      "AI caused ~55,000 layoffs in 2025" and "AI is now the leading cause of
+      job cuts," in headlines and social summaries of the monthly Challenger
+      reports. Some secondary coverage has run further ahead of the source — a
+      circulating "150,000+ AI job cuts in H1 2026" figure conflicts with
+      Challenger's own 101,743 for the same period; the repository records the
+      conflict rather than averaging it.
+  - heading: "What the source actually says"
+    body: >-
+      Challenger, Gray & Christmas publishes monthly counts of announced US
+      job-cut plans with the employer's stated reason. For 2025: 54,836 cuts
+      citing AI — about 5% of the year's 1,206,374 total announced cuts, a year
+      led by "DOGE Impact" at 293,753. For 2026 through June: 101,743
+      AI-attributed cuts, about 23% of all announced cuts, with AI the leading
+      stated reason for a fourth consecutive month (June alone: 14,029 of
+      45,849, or 31%). Cumulative since AI-reason tracking began in 2023:
+      173,568. Challenger's counts are announcements by US-based employers, and
+      the reason is coded from company statements — "company cited AI," not
+      verified causation. Challenger publishes no formal reason-coding
+      methodology.
+  - heading: "Where the frame overstates"
+    body: >-
+      Four quiet conversions. Announced is read as realized — but cut plans get
+      reduced, delayed, or absorbed by attrition. Cited is read as caused — the
+      coding follows the company's own framing, which is exposed to AI-washing
+      in both directions. US-only is read as global. And the share is dropped:
+      55,000 sounds like the headline of 2025's labor market until it sits next
+      to the 1.2 million total. The 2026 numbers genuinely are different — AI's
+      share has risen to roughly a quarter of announced cuts — which is exactly
+      why the 2025 form needs its denominator to be informative rather than
+      alarming.
+  - heading: "What the counter-evidence says"
+    body: >-
+      The skepticism is on the record from both directions. Sam Altman (February
+      2026): "there's some AI washing where people are blaming AI for layoffs
+      that they would otherwise do." Oxford Economics (January 2026) found firms
+      "don't appear to be replacing workers with AI on a significant scale."
+      Cognizant's chief AI officer put it as "sometimes AI becomes the
+      scapegoat." None of this makes the counts wrong — it makes "caused"
+      unearned. This site's own layoffs dataset codes the attribution
+      event-by-event from primary statements for the same reason.
+  - heading: "What would change the grade"
+    body: >-
+      Stated as Challenger's own framing — announced US cuts with AI as a
+      company-cited reason, with the share attached — the claim grades accurate;
+      that is C046, the as-made variant. A "caused" framing would need
+      realized-layoff data with verified attribution, which is precisely what
+      no one currently publishes at this scale.
+references:
+  - date: "2026-07"
+    label: "Challenger Report, June 2026 (AI leads reasons for fourth consecutive month)"
+    url: "https://www.challengergray.com/blog/challenger-report-june-layoffs-cool-to-45849-down-53-from-may-ai-leads-reasons-for-fourth-consecutive-month/"
+    note: "June 2026: 14,029 of 45,849 announced cuts AI-attributed (31%); 2026 YTD 101,743 (~23%)."
+  - date: "2026-01"
+    label: "Challenger 2025 year-end report"
+    url: "https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/"
+    note: "2025 totals: 54,836 AI-cited of 1,206,374 announced cuts (~5%); 'DOGE Impact' led at 293,753."
+  - date: "2026-02"
+    label: "Altman on 'AI washing' (Fortune)"
+    url: "https://fortune.com/article/sam-altman-ai-washing-tech-layoffs/"
+    note: "'There's some AI washing where people are blaming AI for layoffs that they would otherwise do.'"
+  - date: "2026-07-05"
+    label: "Repository referent REF-CHALLENGER-AI-CUTS"
+    note: "Full research record from the provenance-register merge (primaries fetched); Oxford Economics and Cognizant counterpoints recorded there. Cross-reference: this site's Layoffs page codes attribution per event."
+written: "2026-07-07"
