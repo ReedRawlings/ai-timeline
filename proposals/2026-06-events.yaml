@@ -1,0 +1,228 @@
+# June 2026 event proposals — find-ai-events-range sweep (generated 2026-07-06)
+# Dedup floor: data/events.yaml had ZERO June 2026 events before this pass (timeline ran through 2026-05-31 + one 2026-07-06 entry). Everything below is net-new.
+# Every row verified against a primary or first-tier source (event-conventions §9). Items the discovery pass surfaced but could NOT verify were DROPPED (see review summary).
+# Suggested `major`s are FLAGS for human confirmation — do NOT finalize a major silently (§2).
+# NOT written into data/events.yaml. Human review first, then append + `python scripts/validate-yaml.py` + `node scripts/build-events.js`.
+
+# ─────────────────────────────────────────────────────────────
+# REGULATION / GOVERNMENT-ACCESS STORYLINE (the month's spine)
+# ─────────────────────────────────────────────────────────────
+
+- title: "Trump Signs Executive Order 14409 on Frontier AI Security"
+  date: "2026-06-02T10:00:00-04:00"
+  tier: major
+  tags: ["Policy", "Safety", "Technical"]
+  organizations: ["White House"]
+  impact_areas: ["Regulation"]
+  key_figures: ["Donald Trump"]
+  link: "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+  description: "The 'Promoting Advanced Artificial Intelligence Innovation and Security' order established a nominally voluntary framework under which developers of 'covered frontier models' would give the federal government up to 30 days of early access before releasing to other trusted partners, and directed a classified benchmarking process for models' cyber capabilities. It explicitly disclaimed any mandatory licensing requirement, but critics read the early-access-plus-trusted-partner structure as a de facto gate — and it became the legal backdrop for the government's model interventions later in the month."
+
+- title: "US Government Forces Anthropic to Suspend Claude Fable 5 and Mythos 5"
+  date: "2026-06-12T10:00:00-07:00"
+  tier: major
+  tags: ["Policy", "Safety", "Corporate"]
+  organizations: ["Anthropic", "US Department of Commerce"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Regulation", "Language Models"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/redeploying-fable-5"
+  description: "Days after making its most capable model publicly available, Anthropic disabled access to Claude Fable 5 and Mythos 5 to comply with a Commerce Department export-control directive citing national-security authorities and the models' cyber-attack capabilities. It marked the first time the US government forced a frontier lab to pull an already-released model, turning the new executive order's 'voluntary' framing into a live restriction."
+
+- title: "Anthropic Releases Claude Fable 5 and Restricted Mythos 5"
+  date: "2026-06-09T10:00:00-07:00"
+  tier: major
+  tags: ["Model", "Product", "Safety"]
+  organizations: ["Anthropic"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  link: "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+  description: "Anthropic made Claude Fable 5 broadly available as a 'Mythos-class' model — its most capable general release, state-of-the-art on most tested benchmarks — priced at $10 per million input and $50 per million output tokens. Its uncapped sibling, Claude Mythos 5, was withheld from the public and offered only to vetted Glasswing partners, with conservative safeguards on the public model triggering in under 5% of sessions."
+
+- title: "OpenAI Previews GPT-5.6 Under Government Access Restriction"
+  date: "2026-06-26T10:00:00-07:00"
+  tags: ["Model", "Policy", "Safety"]
+  organizations: ["OpenAI", "White House"]
+  models: ["GPT-5.6 Sol", "GPT-5.6 Terra", "GPT-5.6 Luna"]
+  impact_areas: ["Language Models", "Regulation"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/previewing-gpt-5-6-sol/"
+  description: "OpenAI began a limited preview of GPT-5.6 — flagship Sol, mid-tier Terra, and low-cost Luna — its most capable models for cybersecurity to date. At the government's request under the new cyber executive order, the rollout was restricted to a small group of government-approved 'trusted partners,' with OpenAI stating publicly that it did not believe such a government-access process should become the long-term default."
+
+- title: "US Lifts Export Controls on Anthropic's Fable 5 and Mythos 5"
+  date: "2026-06-30T10:00:00-07:00"
+  tags: ["Policy", "Corporate", "Safety"]
+  organizations: ["Anthropic", "US Department of Commerce"]
+  models: ["Claude Fable 5", "Claude Mythos 5"]
+  impact_areas: ["Regulation", "Language Models"]
+  link: "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+  description: "The administration lifted the export-control directive that had forced Anthropic to disable its two newest models, letting Fable 5 return to public availability with a retrained safety classifier and deeper pre-release government-testing commitments. Days earlier the government had granted a limited release of the restricted Mythos 5 to roughly 100 vetted companies and federal agencies, resolving the roughly two-week standoff that began mid-month."
+
+# ─────────────────────────────────────────────────────────────
+# LABS: MODELS / PRODUCTS / HARDWARE
+# ─────────────────────────────────────────────────────────────
+
+- title: "Microsoft Unveils In-House 'MAI' Model Family"
+  date: "2026-06-02T10:00:00-07:00"
+  tags: ["Model", "Corporate", "Technical"]
+  organizations: ["Microsoft", "OpenAI"]
+  models: ["MAI-Thinking-1"]
+  impact_areas: ["Language Models", "Enterprise AI", "Market Competition"]
+  key_figures: ["Mustafa Suleyman"]
+  link: "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
+  description: "Microsoft introduced seven first-party 'MAI' models — led by MAI-Thinking-1, its first reasoning model (35B active parameters, 256K context) — spanning coding, image, voice, and transcription, all trained from scratch without distillation from OpenAI or other model families. Framed as 'self-sufficiency' rather than a break, it was Microsoft's clearest move yet to make OpenAI one option among several in the Azure stack."
+
+- title: "OpenAI and Broadcom Unveil 'Jalapeño' Inference Chip"
+  date: "2026-06-24T10:00:00-07:00"
+  tags: ["Technical", "Product", "Partnership"]
+  organizations: ["OpenAI", "Broadcom"]
+  impact_areas: ["Hardware"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+  description: "OpenAI revealed Jalapeño, its first custom Intelligence Processor, co-designed with Broadcom and architected specifically for large-language-model inference. Designed in about nine months with help from OpenAI's own models, it is the first accelerator in a multi-generation compute platform slated for initial deployment by the end of 2026, deepening OpenAI's push to own its hardware stack."
+
+- title: "Anthropic Launches Claude Science for Drug Discovery"
+  date: "2026-06-30T10:00:00-07:00"
+  tags: ["Product", "Research"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Healthcare", "Enterprise AI", "Research"]
+  link: "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/"
+  description: "Anthropic introduced Claude Science, a research platform that can autonomously carry out computational-biology and drug-development work from high-level instructions, integrating more than 60 scientific databases and tools and available to all paid subscribers. Alongside it, Anthropic said it would start an internal drug-discovery program targeting neglected diseases that traditional pharma tends to ignore."
+
+- title: "Anthropic Releases Claude Sonnet 5"
+  date: "2026-06-30T10:00:00-07:00"
+  tier: minor
+  tags: ["Model", "Product"]
+  organizations: ["Anthropic"]
+  models: ["Claude Sonnet 5"]
+  impact_areas: ["Language Models", "Enterprise AI"]
+  link: "https://www.anthropic.com/news/claude-sonnet-5"
+  description: "Anthropic released Claude Sonnet 5, its most agentic mid-tier model, with performance approaching Opus 4.8 at a fraction of the cost — an introductory $2 per million input and $10 per million output tokens. Positioned as a cheaper way to run tool-using agents at scale."
+
+- title: "Mistral Releases OCR 4 Document-Intelligence Model"
+  date: "2026-06-23T10:00:00+02:00"
+  tier: minor
+  tags: ["Model", "Product"]
+  organizations: ["Mistral AI"]
+  models: ["Mistral OCR 4"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://mistral.ai/news/ocr-4/"
+  description: "Mistral shipped OCR 4, a compact document-understanding model returning bounding boxes, typed-block classification, and per-word confidence scores across 170 languages, deployable in a single self-hosted container. Priced at $4 per 1,000 pages, it targets enterprise search, RAG, and agentic document workflows."
+
+- title: "OpenAI to Acquire Ona to Power Codex Cloud Agents"
+  date: "2026-06-11T10:00:00-07:00"
+  tier: minor
+  tags: ["Corporate", "Product"]
+  organizations: ["OpenAI", "Ona"]
+  impact_areas: ["Enterprise AI"]
+  link: "https://openai.com/index/openai-to-acquire-ona/"
+  description: "OpenAI agreed to acquire Ona, whose secure cloud-execution technology lets coding agents run long, persistent tasks even when a developer's laptop is closed, folding the team into its Codex group. Terms were not disclosed."
+
+# ─────────────────────────────────────────────────────────────
+# ECONOMIC / CORPORATE
+# ─────────────────────────────────────────────────────────────
+
+- title: "Anthropic Files Confidentially for an IPO"
+  date: "2026-06-01T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["Anthropic"]
+  impact_areas: ["Market Competition"]
+  key_figures: ["Dario Amodei"]
+  link: "https://www.anthropic.com/news/confidential-draft-s1-sec"
+  description: "Anthropic said it had submitted a confidential draft S-1 to the SEC, days after a $65 billion Series H round pushed its valuation to roughly $965 billion. The move set up an IPO race with OpenAI amid one of the most dramatic tech listing waves on record, though the company set no timing."
+
+- title: "OpenAI Submits Confidential S-1 to the SEC"
+  date: "2026-06-08T10:00:00-07:00"
+  tags: ["Economic", "Corporate"]
+  organizations: ["OpenAI"]
+  impact_areas: ["Market Competition"]
+  key_figures: ["Sam Altman"]
+  link: "https://openai.com/index/openai-submits-confidential-s-1/"
+  description: "OpenAI confirmed it had confidentially submitted a draft S-1 to the SEC, the first formal step toward a public listing, while saying it had not set timing and that a debut could be a while off. The filing followed a round that valued the company around $852 billion."
+
+- title: "SpaceX to Acquire AI Coding Startup Cursor for $60 Billion"
+  date: "2026-06-16T10:00:00-05:00"
+  tier: major
+  tags: ["Economic", "Corporate", "Product"]
+  organizations: ["SpaceX", "Cursor", "xAI"]
+  impact_areas: ["Market Competition", "Enterprise AI"]
+  key_figures: ["Elon Musk"]
+  link: "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+  description: "Days after its IPO, SpaceX agreed to acquire AI coding startup Cursor in a $60 billion all-stock deal — widely described as the largest acquisition of a venture-backed startup on record — folding it into the AI division built around its earlier xAI merger. The purchase followed an unusual April option carrying a $1.5 billion break-up fee and bolstered SpaceX's push to compete with OpenAI and Anthropic on developer tools using its Colossus compute."
+
+- title: "Suno Raises $400M at $5.4B Valuation"
+  date: "2026-06-03T10:00:00-04:00"
+  tier: minor
+  tags: ["Economic"]
+  organizations: ["Suno"]
+  impact_areas: ["Creator Economy", "Market Competition"]
+  link: "https://variety.com/2026/digital/news/ai-music-suno-funding-round-400-million-5-4-billion-valuation-1236765727/"
+  description: "AI music startup Suno raised a $400M Series D led by Bond at a $5.4B valuation, roughly doubling its late-2025 mark, even as it remained in copyright litigation with Universal Music Group and Sony — a signal of continued investor appetite for generative audio despite unresolved rights questions."
+
+# ─────────────────────────────────────────────────────────────
+# GOVERNMENT ADOPTION / REGULATION (non-EO)
+# ─────────────────────────────────────────────────────────────
+
+- title: "California Partners With Anthropic to Deploy Claude Across State Agencies"
+  date: "2026-06-29T10:00:00-07:00"
+  tags: ["Policy", "Partnership", "Corporate"]
+  organizations: ["Anthropic", "State of California"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Regulation"]
+  key_figures: ["Gavin Newsom"]
+  link: "https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/"
+  description: "Governor Gavin Newsom announced a first-of-its-kind partnership giving California state agencies access to Anthropic's tools to improve public services, one of the largest state-government AI adoption deals to date."
+
+- title: "Canada's Privacy Commissioner Finds Grok Violated Privacy Law Over Deepfakes"
+  date: "2026-06-11T10:00:00-04:00"
+  tags: ["Policy", "Social", "Safety"]
+  organizations: ["Office of the Privacy Commissioner of Canada", "xAI", "X Corp"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Philippe Dufresne"]
+  link: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260611/"
+  description: "Commissioner Philippe Dufresne found that X Corp. and xAI launched Grok's image-generation tool without proper safeguards or valid consent under Canada's federal private-sector privacy law, after it was used to produce non-consensual sexualized deepfakes targeting women and children. The companies committed to quarterly and independent third-party audit reporting until the issue is resolved."
+
+# ─────────────────────────────────────────────────────────────
+# ROBOTICS / AUTONOMY
+# ─────────────────────────────────────────────────────────────
+
+- title: "Tesla Expands Driverless Robotaxi Across Austin Metro"
+  date: "2026-06-03T10:00:00-05:00"
+  tags: ["Product", "Technical"]
+  organizations: ["Tesla"]
+  impact_areas: ["Robotics"]
+  key_figures: ["Elon Musk"]
+  link: "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/"
+  description: "Tesla switched on unsupervised 'Robotaxi' rides across the entire Austin metro area, its largest service-area expansion, though the active fleet remained around 20 vehicles. Musk tied meaningful fleet scaling to a forthcoming FSD software rewrite."
+
+# ─────────────────────────────────────────────────────────────
+# RESEARCH / LABOR MACRO SIGNAL
+# ─────────────────────────────────────────────────────────────
+
+# NOTE: layoff_ids points to the EXISTING oracle-2026-03 row (to be UPDATED with the 10-K quote — see proposals/2026-06-layoffs.csv). The June 21,000 is the cumulative FY2026 total that INCLUDES the March round; not a separate cut, so no new layoff row. Tier: notable (confirmed with human 2026-07-06).
+- title: "Oracle Cites AI for Workforce Reductions in SEC Filing"
+  date: "2026-06-23T10:00:00-05:00"
+  tags: ["Economic", "Corporate", "Social"]
+  organizations: ["Oracle"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  layoff_ids: ["oracle-2026-03"]
+  link: "https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html"
+  description: "In its fiscal-2026 Form 10-K, Oracle disclosed that its workforce had fallen from about 162,000 to 141,000 over the year and stated that 'the adoption and deployment of AI technologies across our operations have resulted, and may continue to result, in reductions to our workforce' — an unusually direct AI-causation statement in a legal filing. Restructuring costs reached $1.84 billion, nearly five times the prior year, though analysts noted much of the headcount reflected pandemic-era over-hiring alongside a vast AI-capex buildout."
+
+- title: "Anthropic Economic Index 'Cadences' Report"
+  date: "2026-06-26T10:00:00-07:00"
+  tags: ["Research", "Economic"]
+  organizations: ["Anthropic"]
+  models: ["Claude"]
+  impact_areas: ["Enterprise AI", "Public Perception"]
+  link: "https://www.anthropic.com/research/economic-index-june-2026-report"
+  description: "Anthropic's third Economic Index report added hourly usage sampling, conversation-level output classification, and a linked survey of roughly 9,700 Claude users. Its headline finding was that users who delegated more work to Claude reported greater optimism about pay, job security, meaning, and autonomy — a self-reported correlation, not a causal claim. [Confirm exact report URL/date at merge.]"
+
+- title: "AI Becomes the Leading Cited Reason for US Job Cuts for a Fourth Month"
+  date: "2026-06-30T10:00:00-05:00"
+  tags: ["Economic", "Social"]
+  organizations: ["Challenger, Gray & Christmas"]
+  impact_areas: ["Public Perception", "Enterprise AI"]
+  link: "https://www.challengergray.com/blog/challenger-report-june-layoffs-cool-to-45849-down-53-from-may-ai-leads-reasons-for-fourth-consecutive-month/"
+  description: "Challenger, Gray & Christmas reported 45,849 US job cuts in June (down 53% from May), with AI the most-cited reason for the fourth straight month at 14,029 cuts (31% of the total) and 101,743 year-to-date. Whether or not AI was the operative cause in each case, it had become the dominant narrative frame for layoffs."

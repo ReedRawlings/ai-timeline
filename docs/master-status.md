@@ -1,4 +1,4 @@
-# Master Status — AI Research & Data Assets Project — 2026-07-05
+# Master Status — AI Research & Data Assets Project — 2026-07-06
 
 *The registry of every artifact this project wants to create, each with a state. Update when an artifact changes state; reviewed at the end of every working session (along with `decisions.md`).*
 
@@ -55,7 +55,7 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 5 — Labor
 
-- **AI-attributed layoffs dataset** (`data/layoffs/`) — **State: Deployed.** 30 attribution-coded rows as of 2026-07-05 (32 migrated → recode removed 11 → backfills through May 2026 added more); every row coded from primary language with verbatim quotes; evidence tags (`ai_attribution` × `causal_link`, `count_scope`, sector). Feeds the site's Layoffs page. Detail: `data/layoffs/README.md` + `schema.md`.
+- **AI-attributed layoffs dataset** (`data/layoffs/`) — **State: Deployed.** 30 attribution-coded rows as of 2026-07-06 (32 migrated → recode removed 11 → backfills through May 2026 added more; June 2026 sweep added no new rows but upgraded `oracle-2026-03` with the June 23 10-K explicit-AI quote → explicit_company/mixed); every row coded from primary language with verbatim quotes; evidence tags (`ai_attribution` × `causal_link`, `count_scope`, sector). Feeds the site's Layoffs page. Detail: `data/layoffs/README.md` + `schema.md`.
   **Maintenance: Monthly** (`find-ai-layoffs-monthly` sweep; headline-vs-memo verification discipline).
   **Open:** NewsAPI.ai "Layoffs" event-type test before any automated ingestion; count-threshold scope call; whether Challenger/layoffs.fyi serve as denominator for the backlash tracker's labor theme.
 - **Exposure indices** — **State: Parked** → parked.md.
@@ -76,7 +76,7 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 7 — AI timeline site ("The AI Record")
 
-**State: Deployed.** Three-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks. 314 events in `data/events.yaml` as of 2026-07-05 (May 2026 pass complete). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
+**State: Deployed.** Three-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks. 335 events in `data/events.yaml` as of 2026-07-06 (June 2026 pass complete; +21 events, spine = the government frontier-model access crisis). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
 **Maintenance: Daily** (event sweeps via `find-ai-events-*` skills; layoffs page refreshes with the dataset's monthly sweep; stock data self-updates at build + `/api/stocks`).
 
 **Open:**
