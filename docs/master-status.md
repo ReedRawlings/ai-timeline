@@ -1,7 +1,5 @@
 # Master Status — AI Research & Data Assets Project — 2026-07-07
 
-> **Pending merge (2026-07-07):** everything dated 2026-07-06/07 in W6 and W7 below (the `data/claims/` move, Claims page, dossier system, six dossiers, validators, skills) lives on the local `claims-page` branch — 12 commits, verified but NOT merged or deployed. It ships when the human reviews and pushes; treat those entries as "built, awaiting merge" until then.
-
 *The registry of every artifact this project wants to create, each with a state. Update when an artifact changes state; reviewed at the end of every working session (along with `decisions.md`).*
 
 **How tracking works (decided 2026-07-05):**
