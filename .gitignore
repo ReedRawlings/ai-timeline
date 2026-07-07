@@ -6,3 +6,4 @@ resources/_gen/**
 src/data/events.json
 src/data/stock-history.json
 src/data/layoffs.json
+src/data/claims.json
