@@ -1,15 +1,15 @@
 ---
 name: propose-claim-entry
-description: Use when a claim about AI — a viral statistic, an influencer/executive assertion, a circulated paraphrase of a study — needs to be added to the AI Claims Repository (docs/Claims/), or when an existing row needs research/verification. Traces the claim to its referent (the underlying fact/source), records as-made vs circulating variants, and grades each against the authoritative statement. Trigger whenever someone shares a widely-cited AI claim or number ("500ml per prompt", "AI caused N layoffs", "AI will eliminate half of entry-level jobs") and wants it fact-checked into the repository — replaces the retired propose-provenance-entry skill (register merged 2026-07-05).
+description: Use when a claim about AI — a viral statistic, an influencer/executive assertion, a circulated paraphrase of a study — needs to be added to the AI Claims Repository (data/claims/), or when an existing row needs research/verification. Traces the claim to its referent (the underlying fact/source), records as-made vs circulating variants, and grades each against the authoritative statement. Trigger whenever someone shares a widely-cited AI claim or number ("500ml per prompt", "AI caused N layoffs", "AI will eliminate half of entry-level jobs") and wants it fact-checked into the repository — replaces the retired propose-provenance-entry skill (register merged 2026-07-05).
 ---
 
 # Propose Claims Repository Entry
 
 ## Goal
-Given a claim about AI, produce conforming rows for `docs/Claims/referents.csv` and `docs/Claims/claims.csv` — the referent carrying the authoritative version of the underlying thing, each claim variant graded against it.
+Given a claim about AI, produce conforming rows for `data/claims/referents.csv` and `data/claims/claims.csv` — the referent carrying the authoritative version of the underlying thing, each claim variant graded against it.
 
 ## Read first
-`docs/Claims/README.md` (the schema, controlled vocabularies, and rules — it is the source of truth for this asset) and `.claude/shared/dataset-conventions.md`. Everything below assumes both.
+`data/claims/README.md` (the schema, controlled vocabularies, and rules — it is the source of truth for this asset) and `.claude/shared/dataset-conventions.md`. Everything below assumes both.
 
 ## Workflow
 

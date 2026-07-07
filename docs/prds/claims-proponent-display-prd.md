@@ -1,6 +1,6 @@
 # Claims Repo — Head vs. Supporting Proponent Display (Open Question)
 
-*Not a new asset — a scoped open question against the existing Claims repo (`docs/Claims/`). Captured as its own file because it surfaced while adding claims and will matter once claims data gets a UI, not because it needs the full PRD treatment.*
+*Not a new asset — a scoped open question against the existing Claims repo (`data/claims/`). Captured as its own file because it surfaced while adding claims and will matter once claims data gets a UI, not because it needs the full PRD treatment.*
 
 ---
 
@@ -32,4 +32,4 @@ Both resolutions were reached ad hoc in conversation (2026-07-06). They work for
 - Is there a threshold for splitting a generalized claim back into named rows later, if one of the "supporting" voices turns out to deserve its own graded claim (e.g., if Fish/Anthropic later makes a firm, unhedged statement)?
 - Naming convention for the generalized-claimant case — is "Various AI researchers and lab executives (no single firm proponent identified)" the right phrasing to standardize, or should there be a dedicated field (e.g., a boolean `has_single_claimant`) instead of encoding it in prose?
 
-No action needed until claims data actually gets built into a page. Revisit alongside whatever surfaces `docs/Claims/` in the site or in a report.
+No action needed until claims data actually gets built into a page. Revisit alongside whatever surfaces `data/claims/` in the site or in a report.
