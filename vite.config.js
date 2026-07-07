@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         layoffs: resolve(__dirname, 'layoffs.html'),
         stocks: resolve(__dirname, 'stocks.html'),
+        claims: resolve(__dirname, 'claims.html'),
       },
     },
   },
