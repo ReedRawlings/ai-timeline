@@ -25,3 +25,9 @@ jobs:
 
       - name: Validate YAML
         run: python scripts/validate-yaml.py
+
+      - name: Validate layoffs dataset
+        run: python scripts/validate-layoffs.py
+
+      - name: Validate claims dataset
+        run: python scripts/validate-claims.py

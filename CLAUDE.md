@@ -27,6 +27,7 @@ npm run build                    # Production build to dist/ (includes stock dat
 npm run preview                  # Preview production build locally
 python scripts/validate-yaml.py  # Validate events.yaml (syntax, structure, tier values, layoff_ids refs)
 python scripts/validate-layoffs.py     # Validate data/layoffs/layoffs.csv
+python scripts/validate-claims.py      # Validate data/claims/ (PK/FK integrity, enums, references JSON)
 ```
 
 Node.js (via nvm) and Python 3 + PyYAML required.

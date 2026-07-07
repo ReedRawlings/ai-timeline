@@ -151,3 +151,11 @@ Rules:
 - To read a position's history: parse the referent's `references`, sort by `date`. The `SOURCE/2026-VERIFY` note on these referents records whether the position still holds.
 
 Note: `parent_claim_id` reverts to its original meaning only (subclaims). Distinct *variants* that say different things or earn different accuracy grades (e.g. `C026b`) remain separate claim rows, as before.
+
+## Validation
+
+`python scripts/validate-claims.py` checks both tables: header shape, PK uniqueness
+(`REF-*` / `C*` id forms), FK integrity (`claims.referent_id` → referents;
+`parent_claim_id` → claims), the `variant_type` / `accuracy_rating` / `category`
+vocabularies, required fields, URL shape, and that every `references` cell parses as
+a JSON array of documented-shape elements. Runs in CI (`.github/workflows/validate.yml`).
