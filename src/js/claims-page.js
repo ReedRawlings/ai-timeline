@@ -52,6 +52,8 @@ function h(tag, props = {}, children = []) {
 }
 
 function ratingMeta(r) { return RATING_META[r] || RATING_META['premature / unverifiable']; }
+// Some CSV cells hold a lone dash as an explicit "none" placeholder.
+function real(v) { return v && !/^[-–—]+$/.test(v.trim()) ? v : null; }
 function worstRank(claimList) { return Math.max(...claimList.map(c => ratingMeta(c.accuracy_rating).rank)); }
 function worstMeta(claimList) {
     const rank = worstRank(claimList);
@@ -69,6 +71,8 @@ export function initClaimsPage({ referents, claims }) {
 
     mount.appendChild(buildHeader(referents, claims));
     mount.appendChild(buildIndex(refsByCategory, claimsByRef));
+    mount.appendChild(buildDetails(refsByCategory, claimsByRef));
+    mount.appendChild(buildFooter());
 
     focusHashTarget();
 }
@@ -140,6 +144,151 @@ function buildIndex(refsByCategory, claimsByRef) {
         wrap.appendChild(section);
     });
     return wrap;
+}
+
+// ── Detail blocks ───────────────────────────────────────────────
+function buildDetails(refsByCategory, claimsByRef) {
+    const wrap = h('div', { class: 'clm-details' });
+    wrap.appendChild(h('div', { class: 'clm-section-head' }, [
+        h('span', { class: 'clm-section-title', text: 'EVERY TRACKED CLAIM' }),
+        h('span', { class: 'clm-section-note', text: 'GRADED AGAINST ITS SOURCE' }),
+    ]));
+
+    CATEGORY_ORDER.forEach(cat => {
+        const refs = refsByCategory[cat] || [];
+        if (!refs.length) return;
+        wrap.appendChild(h('div', { class: 'clm-detail-cat', text: cat.toUpperCase() }));
+        refs.slice()
+            .sort((a, b) => worstRank(claimsByRef[b.referent_id] || []) - worstRank(claimsByRef[a.referent_id] || [])
+                || a.referent_id.localeCompare(b.referent_id))
+            .forEach(r => wrap.appendChild(buildReferentBlock(r, claimsByRef[r.referent_id] || [])));
+    });
+    return wrap;
+}
+
+function permalink(id) {
+    const a = h('a', { class: 'clm-anchor', href: `#${id}`, title: 'Copy permalink', text: '§' });
+    a.addEventListener('click', e => {
+        e.preventDefault();
+        history.replaceState(null, '', `#${id}`);
+        navigator.clipboard?.writeText(`${location.origin}${location.pathname}#${id}`);
+        a.classList.add('clm-anchor--copied');
+        setTimeout(() => a.classList.remove('clm-anchor--copied'), 1200);
+    });
+    return a;
+}
+
+function buildReferentBlock(r, rClaims) {
+    const block = h('div', { class: 'clm-ref', id: r.referent_id });
+
+    const head = h('div', { class: 'clm-ref-head' }, [
+        h('span', { class: 'clm-ref-id' }, [permalink(r.referent_id), ` ${r.referent_id}`]),
+        h('span', { class: 'clm-ref-meta', text: [r.evidence_type, r.source_date].filter(Boolean).join('  ·  ').toUpperCase() }),
+    ]);
+    block.appendChild(head);
+
+    block.appendChild(h('blockquote', { class: 'clm-ref-statement', text: r.authoritative_statement }));
+
+    const source = h('div', { class: 'clm-ref-source' }, [
+        h('span', { class: 'clm-ref-source-name', text: r.source_of_truth }),
+        r.source_url
+            ? h('a', { class: 'clm-ref-source-link', href: r.source_url, target: '_blank', rel: 'noopener', text: 'SOURCE ↗' })
+            : h('span', { class: 'clm-ref-source-pending', text: 'SOURCE PENDING VERIFICATION' }),
+    ]);
+    block.appendChild(source);
+
+    const ordered = rClaims.slice().sort((a, b) =>
+        (a.variant_type === 'as-made' ? 0 : 1) - (b.variant_type === 'as-made' ? 0 : 1)
+        || a.claim_id.localeCompare(b.claim_id, 'en', { numeric: true }));
+    ordered.forEach(c => block.appendChild(buildClaimRow(c)));
+
+    if (r.references.length) block.appendChild(buildRelated(r.references));
+    return block;
+}
+
+function buildClaimRow(c) {
+    const meta = ratingMeta(c.accuracy_rating);
+    const row = h('div', { class: 'clm-claim', id: c.claim_id });
+
+    const variant = h('div', {
+        class: `clm-variant ${c.variant_type === 'circulating' ? 'clm-variant--circulating' : ''}`,
+        text: c.variant_type === 'circulating' ? 'CIRCULATING' : 'AS MADE',
+    });
+
+    const body = h('div', { class: 'clm-claim-body' });
+    body.appendChild(h('div', { class: 'clm-claim-text', text: c.claim_as_stated }));
+    if (c.has_single_claimant) {
+        body.appendChild(h('div', { class: 'clm-claimant', text: [real(c.claimant), real(c.claimant_role)].filter(Boolean).join(' — ') }));
+    } else {
+        body.appendChild(h('div', { class: 'clm-claimant clm-claimant--diffuse' }, [
+            h('span', { class: 'clm-diffuse-badge', text: 'DIFFUSE' }),
+            h('span', { text: c.claimant }),
+        ]));
+    }
+
+    const gradeCell = h('div', { class: 'clm-grade' });
+    gradeCell.appendChild(h('span', {
+        class: 'clm-pill',
+        style: `color:${meta.color};border-color:${meta.border}`,
+        text: meta.label,
+    }));
+    gradeCell.appendChild(buildGradePop(c, meta));
+
+    const anchorCell = h('div', { class: 'clm-claim-anchor' }, [permalink(c.claim_id)]);
+
+    row.appendChild(variant);
+    row.appendChild(body);
+    row.appendChild(gradeCell);
+    row.appendChild(anchorCell);
+    return row;
+}
+
+function buildGradePop(c, meta) {
+    const pop = h('div', { class: 'clm-grade-pop' });
+    pop.appendChild(h('div', { class: 'clm-grade-pop-head' }, [
+        h('span', { class: 'clm-grade-pop-rating', style: `color:${meta.color === '#8C8676' ? '#B8B1A2' : '#F0A579'}`, text: meta.label }),
+        h('span', { class: 'clm-grade-pop-src', text: [real(c.claim_source), real(c.claim_date)].filter(Boolean).join('  ·  ') }),
+    ]));
+    pop.appendChild(h('div', { class: 'clm-grade-pop-body', text: c.accuracy_rationale }));
+    if (c.counterclaim_summary) {
+        pop.appendChild(h('div', { class: 'clm-grade-pop-counter' }, [
+            h('span', { class: 'clm-grade-pop-counter-tag', text: 'COUNTER ' }),
+            `${c.counterclaim_summary}${c.counterclaimant ? ` — ${c.counterclaimant}` : ''}`,
+        ]));
+    }
+    return pop;
+}
+
+function buildRelated(references) {
+    const wrap = h('div', { class: 'clm-related' });
+    wrap.appendChild(h('div', { class: 'clm-related-head', text: 'RELATED STATEMENTS' }));
+    references.slice().sort((a, b) => (a.date || '').localeCompare(b.date || '')).forEach(el => {
+        const row = h('div', { class: 'clm-related-row' });
+        row.appendChild(h('span', { class: 'clm-related-date', text: el.date || '—' }));
+        const body = h('span', { class: 'clm-related-text' }, [
+            el.kind === 'verbatim' ? `“${el.text}”` : el.text,
+        ]);
+        row.appendChild(body);
+        const tags = h('span', { class: 'clm-related-tags' }, [
+            el.stance === 'counter' ? h('span', { class: 'clm-related-counter', text: 'COUNTER' }) : null,
+            el.provenance === 'secondary' ? h('span', { class: 'clm-related-secondary', text: '2ND-HAND' }) : null,
+            el.url ? h('a', { class: 'clm-related-link', href: el.url, target: '_blank', rel: 'noopener', text: '↗' }) : null,
+        ]);
+        row.appendChild(tags);
+        wrap.appendChild(row);
+    });
+    return wrap;
+}
+
+// ── Footer ──────────────────────────────────────────────────────
+function buildFooter() {
+    const foot = h('div', { class: 'clm-footnote' });
+    const scale = Object.entries(RATING_META)
+        .sort((a, b) => a[1].rank - b[1].rank)
+        .map(([, m]) => `<span style="color:${m.color}">${m.label}</span>`)
+        .join(' · ');
+    foot.innerHTML = `GRADING ${scale}<br>Grades measure a specific wording against its referent’s authoritative statement — not the claimant. PREMATURE = the prediction’s deadline hasn’t arrived; it is never graded true or false. DIFFUSE = a claim that circulates widely with no single firm proponent; the individually documented statements appear under “Related statements.”`;
+    return foot;
 }
 
 // ── Deep links ──────────────────────────────────────────────────
