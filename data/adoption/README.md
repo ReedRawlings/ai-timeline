@@ -63,9 +63,9 @@ Validation: `python scripts/validate-adoption.py` (in CI).
 
 **Quarterly sweep**: new waves from the five survey_ids; questionnaire diff against `questions.csv` (wording/base changes → new question rows); candidate-promotion checks (SHED on ≥2-waves verification; BTOS biweekly backfill; Eurostat if scope opens — see PRD §8.7). Living pages (Gallup Indicator, genaiadoptiontracker.com) should be archived at entry — Wayback is blocked from the build harness, so snapshots are a human/browser step (decision 2026-07-07).
 
-## Known gaps / backfill queue (v1 seed shipped 2026-07-07)
+## Known gaps / backfill queue (v1 seed 2026-07-07; BTOS backfill same day)
 
-1. BTOS biweekly point-by-point series (both wording regimes) — download portal is JS-gated; needs a browser session. Seed carries published anchor points only.
+1. ~~BTOS biweekly series~~ **Done 2026-07-07** via a browser session on the (JS-gated) download portal: full national series ingested for both wording regimes — 54 cycles old wording (202319–202520, 3.7%→10.0%) + 16 cycles new wording (202524–202613, 17.3%→20.6%), current + intended use, each row carrying its reference period. Sources: `National.xlsx` (new series) and `AI Core Questions.xlsx` (old series, Historical tab). Fielded instruments captured verbatim: core V4 Cycles 3–4 (AI items at Q7/Q24) and "BTOS Core and AI Content" V4 Cycle 2 (full AI supplement, Q23–Q35). Shutdown gap: cycles 202521–202523 (Oct 6–Nov 16, 2025) were never collected — structural, per Census's data dictionary. Remaining BTOS nice-to-haves: per-cycle standard errors (published in the same files, not ingested); supplement function-level table (`AI_Supplement_Table_2026.xlsx`, out of scope per §8.2); disambiguating w35141's worker-AI headline between Q30/Q31 before `btos-supp2-worker-genai` gets an estimate row.
 2. Gallup verbatim stem — best lead: OCR/browser pass on the image-locked "Workplace Q4 Topline AI Trends" PDF. Also pre-2026 org-integration values.
 3. RPS post-2024 wave field dates (tracker pools 8 waves; only 2024 waves dated in the paper).
 4. Pew purpose batteries (CHATWHY1: medical advice, companionship, etc.) and teens/students series — deferred v1 scope decisions, not gaps.
