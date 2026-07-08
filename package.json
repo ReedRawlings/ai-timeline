@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/build-events.js && node scripts/build-layoffs.js && node scripts/build-claims.js && vite",
-    "build": "node scripts/build-events.js && node scripts/build-layoffs.js && node scripts/build-claims.js && node scripts/build-stock-data.js && vite build",
+    "dev": "node scripts/build-events.js && node scripts/build-layoffs.js && node scripts/build-claims.js && node scripts/build-adoption.js && vite",
+    "build": "node scripts/build-events.js && node scripts/build-layoffs.js && node scripts/build-adoption.js && node scripts/build-claims.js && node scripts/build-stock-data.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

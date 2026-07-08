@@ -158,7 +158,7 @@ Standing rules inherited from the project: no fabrication; "undisclosed"/"pendin
 3. **Distributions:** stored as JSON when the publisher prints them (implemented: USEAI ×5, CHATFREQ ×2). `value` may be empty only when a distribution is present — a frequency item with no publisher-stated headline share gets no invented one.
 4. **Pew usage-adjacent items:** incidence + frequency + work-use items are in (GPT2 work item, CHATWHY2-WRK, AIWRKDONE); the non-work purpose batteries (medical advice, companionship, etc.) stay out of v1.
 5. **Archive-at-entry:** adopted for living pages (Gallup Indicator, genaiadoptiontracker.com). Wayback is blocked from this harness, so snapshots are a human/browser step queued for the first sweep; stable PDFs rely on `retrieved_date`.
-6. **Display surface:** dataset-only. `data/adoption` added to the Vercel deploy-skip list alongside `data/layoffs` (no page renders it).
+6. **Display surface:** ~~dataset-only~~ SUPERSEDED same day by Reed's direction: `adoption.html` shipped 2026-07-07 (conditions table adapted from Allen 2026's Table 1, credited; breaks-as-breaks chart; wording museum). `data/adoption` removed from the Vercel deploy-skip — adoption commits now deploy.
 7. **Promotions:** none at seed. NTIA is dead (no AI items in the fetched Nov 2025 instrument); SHED waits on the ≥2-waves check (2024 questionnaire unverified); SBU and Eurostat remain candidates.
 8. **Comparability classes:** field deferred — no defensible class exists among current sources; revisit when one does (range-not-mean stands).
 9. **Attitudes:** deferred to v1.1 — keeps v1's usage-only inclusion criterion clean; the schema extension (`concept=attitude`) is designed and cheap when wanted.

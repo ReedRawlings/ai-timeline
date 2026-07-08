@@ -12,6 +12,7 @@ export default defineConfig({
         layoffs: resolve(__dirname, 'layoffs.html'),
         stocks: resolve(__dirname, 'stocks.html'),
         claims: resolve(__dirname, 'claims.html'),
+        adoption: resolve(__dirname, 'adoption.html'),
         claim: resolve(__dirname, 'claim.html'),
       },
     },

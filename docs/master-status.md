@@ -81,7 +81,7 @@ A public research project on how AI is changing people and society, with two mut
 
 ## Workstream 7 — AI timeline site ("The AI Record")
 
-**State: Deployed.** Four-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks, Claims (added 2026-07-06; renders `data/claims/`; plus per-claim dossier pages at `/claim.html?id=…`, added 2026-07-07). 335 events in `data/events.yaml` as of 2026-07-06 (June 2026 pass complete; +21 events, spine = the government frontier-model access crisis). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
+**State: Deployed.** Six-page Vite app on Vercel: Timeline (Atlas + Dispatch view), Layoffs, Stocks, Adoption (added 2026-07-07; renders data/adoption/ — conditions table after Allen 2026, breaks-as-breaks chart, wording museum), Claims (added 2026-07-06; renders `data/claims/`; plus per-claim dossier pages at `/claim.html?id=…`, added 2026-07-07). 335 events in `data/events.yaml` as of 2026-07-06 (June 2026 pass complete; +21 events, spine = the government frontier-model access crisis). Event skills carry an adversarial verification step and a range/backfill skill after the 2026-07-04 backfill let hallucinated/mis-dated items through; curated sources are a reported gate (2026-07-05).
 **Maintenance: Daily** (event sweeps via `find-ai-events-*` skills; layoffs page refreshes with the dataset's monthly sweep; stock data self-updates at build + `/api/stocks`).
 
 **Open:**
