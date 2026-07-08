@@ -3058,6 +3058,16 @@
   key_figures: ["Jensen Huang"]
   link: "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai"
   description: "At GTC Taipei, NVIDIA released Cosmos 3, an open 'omnimodel' for physical AI that combines vision reasoning, world generation, and action prediction for robotics and autonomous systems, shipping Super (32B) and Nano (8B) variants. It also launched a 'Cosmos Coalition' of robotics and world-model developers to advance open physical-AI models."
+
+- title: "Cloudflare Launches Monetization Gateway for AI Agent Payments"
+  date: "2026-07-01T08:00:00-07:00"
+  tags: ["Product", "Economic", "Technical"]
+  organizations: ["Cloudflare"]
+  impact_areas: ["Enterprise AI", "Market Competition"]
+  key_figures: ["Matthew Prince"]
+  link: "https://blog.cloudflare.com/monetization-gateway/"
+  description: "Content creators and API providers can now get paid every time an AI agent accesses their work, down to fractions of a cent per request — no signup, API key, or prior relationship needed. Cloudflare launched the Monetization Gateway, built on the open x402 protocol (named after HTTP's long-dormant 402 'Payment Required' status code), enabling micropayments settled in stablecoins within standard HTTP requests. The product reflects a fundamental shift: as AI agents replace human browsing, the ad-and-subscription model breaks down, and per-use machine payments become the next revenue layer of the internet."
+
 - title: "Anthropic's Interpretability Breakthrough Links AI Reasoning to Consciousness Theory"
   date: "2026-07-06T09:00:00-07:00"
   tags: ["Research", "Safety", "Technical"]
