@@ -28,7 +28,7 @@ Append new survey-wave estimates to `data/adoption/estimates.csv` and catch word
 
 ### Gallup Workforce Study (quarterly; waves field ~Feb/May/Aug/Oct-Nov)
 - Each wave gets a workplace article (stable URL) with the trend + survey-methods tables — that's the citation target; the Indicator page (gallup.com/699797) is living and gets overwritten (archive first).
-- Three derived measures per wave (total/frequent/daily users) → three rows. Stems remain unpublished (`wording_status=unpublished`, Gallup's own definitions only). Watch for: Gallup publishing an actual questionnaire (would resolve the standing gap — check the wave article's topline PDF link; the Q4 2025 one was image-locked), and any new break notes like the Q3 2025 "don't know" addition to the org item.
+- Three derived measures per wave (total/frequent/daily users) → three rows, plus a distribution row for the underlying item (Q619A, verbatim stem captured 2026-07-07 from the Q4 topline PDF — image-locked to text extraction; render in a browser, e.g. Google Docs viewer, and read the pages as screenshots). Each wave article links a topline PDF: grab it for the distribution and the item-level n (which can be a half-subsample — see the question rows). Watch for new break notes like the Q3 2025 "don't know" addition to the org item (Q653A).
 
 ### Pew ATP (annual adults wave, fields ~Feb; workers wave fields ~Sep-Oct)
 - New waves announce via pewresearch.org reports; each topline is a new stable PDF. Ingest from the topline only (short reads for combined figures the topline doesn't print, e.g. re-based work-use shares).
@@ -39,7 +39,7 @@ Append new survey-wave estimates to `data/adoption/estimates.csv` and catch word
 - genaiadoptiontracker.com is overwritten in place — archive at entry, quote the exact headline strings. Wave field dates for post-2024 waves remain unpublished (standing gap — check the Management Science version, doi.org/10.1287/mnsc.2025.02523, for an updated wave table).
 
 ## Candidate-promotion checks (each sweep, PRD §8.7)
-- **SHED**: verify whether the 2024-fielded questionnaire carried the D50-style genAI items (≥2-waves bar); if yes, promote (verbatim items + microdata URLs already in the recon doc). New wave fields each October.
+- **SHED**: 2024 questionnaire verified AI-free (2026-07-07) — Oct 2025 was the first AI wave. Promote if the Oct 2026 wave (report ~May 2027) repeats the D50-block (verbatim items + microdata URLs already in the recon doc).
 - **NTIA**: dead unless the final Nov 2025 instrument (tech docs post ~mid-late 2026) contradicts the fetched draft.
 - **Atlanta Fed SBU / Eurostat**: promote only on the human's call; note new waves if encountered.
 - New recurring surveys encountered during the sweep: candidates list in the recon doc, flagged for the human — never self-promoted.
