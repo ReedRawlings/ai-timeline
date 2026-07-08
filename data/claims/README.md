@@ -1,7 +1,12 @@
 # AI Claims Repository — schema and conventions
 
 Two tables, related by a foreign key. Designed to be read and edited by an LLM or a
-human. Current size: 44 referents, 51 claims. Expected to stay in the low hundreds.
+human. Current size: 38 referents, 45 claims. Expected to stay in the low hundreds.
+
+**Editing note:** these are plain CSV files. Edit them as text, or if using Apple
+Numbers, save back with File → Export To → CSV (overwriting the `.csv`) — a plain Save
+produces a `.numbers` file the build pipeline can't read. Watch for Numbers
+auto-capitalizing the literal `false` accuracy rating to `False`.
 
 *History: absorbed the stat provenance register (2026-07-05) — its four deep-researched
 rows became REF-GOOGLE-GEMINI-FOOTPRINT, REF-OPENAI-PERQUERY, REF-CHALLENGER-AI-CUTS
