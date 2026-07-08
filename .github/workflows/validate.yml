@@ -31,3 +31,6 @@ jobs:
 
       - name: Validate claims dataset
         run: python scripts/validate-claims.py
+
+      - name: Validate adoption panel
+        run: python scripts/validate-adoption.py

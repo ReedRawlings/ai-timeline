@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ':!docs' ':!data/layoffs'",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ':!docs' ':!data/layoffs' ':!data/adoption'",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/:path*" }
   ]
