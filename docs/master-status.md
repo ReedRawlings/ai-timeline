@@ -41,7 +41,9 @@ A public research project on how AI is changing people and society, with two mut
 
 - **Backlash tracker** — **State: Parked** → parked.md. Sources chosen, media boundary spec'd (`docs/prds/media-coverage-layer-prd.md`).
 - **Media Narrative Index** — **State: Parked** → parked.md. Never blended into any backlash composite (2026-07-01).
-- **Adoption/usage panel** — **State: Parked** → parked.md. Cheap and self-contained; good candidate for the next open build slot.
+- **Adoption/usage panel** (`data/adoption/`) — **State: Development** (Parked → Development 2026-07-07 under Reed's mid-session delegation "act without me, keep a record"; PRD provisionally approved, §8 resolved by Claude — **all recorded decisions await Reed's reflection pass**). v1 seed: `questions.csv` (21 question versions, wording breaks as linked versions) + `estimates.csv` (58 publisher-primary estimates) across Pew ATP + workers series, Gallup Workforce Study, Census BTOS, RPS/GenAI Adoption Tracker; `scripts/validate-adoption.py` in CI; `data/adoption` added to the Vercel deploy-skip. Detail: `data/adoption/README.md`, `docs/prds/adoption-usage-panel-prd.md` (+ `-recon.md` source record).
+  **Maintenance (once Deployed): Quarterly** (sweep spec in PRD §9; skill to be created at first sweep).
+  **Open:** Reed's review of the delegated decisions (PRD §8 resolutions block); backfill queue — BTOS biweekly points (JS-gated portal, needs browser), Gallup stem (OCR lead on the Q4 topline PDF), RPS post-2024 wave dates; SHED promotion on the ≥2-waves check.
 
 ---
 
@@ -92,5 +94,5 @@ A public research project on how AI is changing people and society, with two mut
 ## Cross-cutting open items
 
 1. Per-chat synthesis pass so each conversation leaves a durable context doc — not yet done for any chat.
-2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed and the Claims Repository (register absorbed) is the one asset in Development — within cap, but confirm the cap's meaning now that assets graduate to maintained.
+2. WIP-cap accounting: the cap is two active dataset builds; layoffs is Deployed, and Development now holds the Claims Repository + the adoption/usage panel (entered 2026-07-07) — **at cap**. Still open: confirm the cap's meaning now that assets graduate to maintained.
 3. Where the public assets live long-term (repo structure, publishing surface) — undecided. (The claims display-surface sub-question resolved 2026-07-06: it lives on the site as `claims.html`.)

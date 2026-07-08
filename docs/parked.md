@@ -26,7 +26,7 @@ The detail file for everything in state `Parked` (the registry of ALL artifacts,
 
 **Media Narrative Index** — PRD exists: `docs/prds/media-coverage-layer-prd.md`. NewsAPI.ai event-level pipeline measuring editorial/PR attention; **never blended into any backlash composite** (decided 2026-07-01); used for discovery and escalation flags. GDELT deferred. *Re-entry:* built alongside or after the backlash tracker, never before it — it's a covariate layer with nothing to be a covariate *of* until the grassroots signals exist. The NewsAPI.ai cost estimate (PRD §7.4) is the first concrete step.
 
-**Adoption/usage panel** — Quarterly survey-based genAI usage share (Pew, Gallup, Census BTOS), survey disagreement kept visible; the empirical brake on inferring prevalence from discourse volume. *Re-entry:* cheap and self-contained; ready whenever a build slot opens — a good candidate for the next slot after an active build ships.
+*(Adoption/usage panel moved to Development 2026-07-07 — see master-status W3; stanza retired per the parked-assets-only convention.)*
 
 ## Theme 4 — Claims & verification
 
