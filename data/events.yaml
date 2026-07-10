@@ -3275,3 +3275,21 @@
   impact_areas: ["Public Perception", "Enterprise AI"]
   link: "https://www.challengergray.com/blog/challenger-report-june-layoffs-cool-to-45849-down-53-from-may-ai-leads-reasons-for-fourth-consecutive-month/"
   description: "Challenger, Gray & Christmas reported 45,849 US job cuts in June (down 53% from May), with AI the most-cited reason for the fourth straight month at 14,029 cuts (31% of the total) and 101,743 year-to-date. Whether or not AI was the operative cause in each case, it had become the dominant narrative frame for layoffs."
+
+- title: "AI Futures Project Publishes 'AI 2040: Plan A' Scenario"
+  date: "2026-07-09T10:00:00-07:00"
+  tags: ["Policy", "Research", "Safety"]
+  organizations: ["AI Futures Project"]
+  impact_areas: ["Regulation", "Ethics", "Public Perception"]
+  key_figures: ["Thomas Larsen", "Romeo Dean", "Brendan Halstead", "Eli Lifland", "Ryan Greenblatt", "Daniel Kokotajlo"]
+  link: "https://ai-2040.com/"
+  description: "The AI Futures Project, authors of the AI 2027 scenario, published 'AI 2040: Plan A,' a follow-up scenario framed as a policy recommendation rather than a prediction. It proposes an international deal in which the US and China delay development of superintelligence until 2040, make AI research publicly transparent, allow a broader set of companies and countries to reach the frontier, and adopt a 'mutually assured compute destruction' deterrent as a verification backstop. [Publish date approximated to the date this event was added; site shows no explicit publish date and no independent coverage was found to confirm it.]"
+
+- title: "Apple Sues OpenAI Over Trade Secret Theft, Alleging Coordinated Scheme to Steal Hardware IP"
+  date: "2026-07-10T09:00:00-07:00"
+  tags: ["Corporate", "Policy"]
+  organizations: ["Apple", "OpenAI"]
+  impact_areas: ["Market Competition", "Regulation"]
+  key_figures: ["Tang Yew Tan", "Chang Liu"]
+  link: "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html"
+  description: "Apple's lawsuit could upend its high-profile 2024 AI partnership with OpenAI and reshape how the industry handles talent movement between competitors. Filed in the Northern District of California, Apple alleges a coordinated scheme by OpenAI and two former Apple employees to steal product designs, manufacturing processes, and supply chain strategies for OpenAI's AI hardware device. Apple claims one engineer exploited a bug to access confidential cloud files after leaving, and that OpenAI's hardware chief directed interviewees to bring 'actual parts' from unreleased Apple devices."
